@@ -1,24 +1,24 @@
-import src
+import pssapi
 
-src
-src.PssApiClient
+pssapi
+pssapi.PssApiClient
 
-src.entities
-src.entities.ItemDesign
-src.entities.ItemDesignFlags
-src.entities.ItemDesignMetadata
-src.entities.LatestVersion
+pssapi.entities
+pssapi.entities.ItemDesign
+pssapi.entities.ItemDesignFlags
+pssapi.entities.ItemDesignMetadata
+pssapi.entities.LatestVersion
 
-src.enums
-src.enums.CharacterPartType
-src.enums.DeviceType
-src.enums.EnhancementType
-src.enums.ItemDesignFlag
-src.enums.ItemSubType
-src.enums.ItemType
-src.enums.LanguageKey
-src.enums.ModuleType
+pssapi.enums
+pssapi.enums.CharacterPartType
+pssapi.enums.DeviceType
+pssapi.enums.EnhancementType
+pssapi.enums.ItemDesignFlag
+pssapi.enums.ItemSubType
+pssapi.enums.ItemType
+pssapi.enums.LanguageKey
+pssapi.enums.ModuleType
 
-src.utils
-src.utils.convert
-src.utils.parse
+pssapi.utils
+pssapi.utils.convert
+pssapi.utils.parse
