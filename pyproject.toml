@@ -1,0 +1,69 @@
+[project]
+name = "pssapi"
+version = '0.1.0'
+authors = [
+    { name = "The worst." },
+    { name = "Solevis" },
+]
+description = "Wrapper for the Pixel Starships API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries',
+    'Programming Language :: Python :: 3.11',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+]
+dependencies = [
+    'aiohttp==3.8.4',
+    'pytz==2022.7.1',
+]
+
+[project.optional-dependencies]
+dev = [
+    "autoflake==2.0.1",
+    "autopep8==2.0.1",
+    "flake8==6.0.0",
+    "flake8-bugbear==23.3.12",
+    "flake8-black==0.3.6",
+    "isort==5.12.0",
+    "black==23.1.0",
+]
+test = [
+    "pytest==7.2.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PSS-Tools-Development/pssapi.py"
+"Bug Tracker" = "https://github.com/PSS-Tools-Development/pssapi.py/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = [
+  "./src"
+]
+
+[tool.autoflake]
+in-place = true
+remove-all-unused-imports = true
+ignore-init-module-imports = true
+recursive = true
+
+[tool.isort]
+src_paths = ["src", "tests", "showcase.py"]
+profile = "black"
+line_length = 200
+
+[tool.black]
+line-length = 200
+target-version = ['py311']
+include = '\.pyi?$'

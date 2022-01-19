@@ -1,0 +1,43 @@
+from enum import IntEnum as _IntEnum
+
+"""
+This file has been be generated from decompilation and might require manual
+fixing, if Savy uses enum values that are python keywords.
+"""
+
+
+class ObjectiveType(_IntEnum):
+    NONE = 0
+    SCAN = 1
+    TRAIN = 2
+    LEVEL_UP_CREW = 3
+    UPGRADE_ROOMS = 4
+    WIN_PVP_BATTLES = 5
+    RECRUIT_CREW = 6
+    TRAVEL_LENGTH = 7
+    WIN_GROUND_BATTLES = 8
+    COLLECT_FLOATING_STARBUX = 9
+    WIN_DAILY_MISSIONS = 10
+    WIN_CHALLENGE_EVENT = 11
+    BLEND_CREW = 12
+    EJECT_ITEMS = 13
+    PURCHASE_STARBUX = 14
+    DONATE_CREW = 15
+    PRESTIGE_CHARACTER = 16
+    WIN_MISSION_DESIGN = 17
+    DESTROY_SHIP_OF_RACE = 18
+    DOVES = 19
+    WIN_MISSION_EVENT = 20
+    SUCCESSFUL_SALES = 21
+    BATTLE_REPORT = 22
+    DEPLOY_MINING_DRONE_COUNT = 23
+    CRAFT_ITEM_COUNT = 24
+    SELL_ITEM_COUNT = 25
+    RECYCLE_ITEM_COUNT = 26
+    USE_ITEM_COUNT = 27
+    EXPLORE_SYSTEM_COUNT = 28
+    TRAVEL_SYSTEM_COUNT = 29
+    COLLECT_GENERATED_MINERAL_COUNT = 30
+    COLLECT_GENERATED_GAS_COUNT = 31
+    DONATE_SUPPLY_COUNT = 32
+    REVENGE_BATTLE_COUNT = 33
