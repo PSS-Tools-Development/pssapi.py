@@ -1,5 +1,5 @@
-from .item import *
-from .latest_version import *
+from item import *
+from latest_version import *
 
 
 ###################################################
