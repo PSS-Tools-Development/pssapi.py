@@ -25,7 +25,7 @@ setup(
     packages=find_packages(exclude=('tests', 'docs')),
     python_requires='>=3.9',
     install_requires=[
-        'aiohttp==3.9.1',
+        'aiohttp==3.8.1',
         'jinja2==3.0.3',
         'pytz==2021.3',
         'strenum==0.4.7'
