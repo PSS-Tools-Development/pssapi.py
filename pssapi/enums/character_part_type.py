@@ -1,4 +1,4 @@
-from enum import Enum as _Enum
+from strenum import StrEnum as _StrEnum
 
 
 ########################################################
@@ -8,7 +8,7 @@ from enum import Enum as _Enum
 ########################################################
 
 
-class CharacterPartType(_Enum):
-    Head = 1
-    Body = 2
-    Leg = 3
+class CharacterPartType(_StrEnum):
+    Head = 'Head'
+    Body = 'Body'
+    Leg = 'Leg'

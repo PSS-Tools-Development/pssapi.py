@@ -1,24 +1,20 @@
+import asyncio as _asyncio
+
 import pssapi
 
-pssapi
-pssapi.PssApiClient
 
-pssapi.entities
-pssapi.entities.ItemDesign
-pssapi.entities.ItemDesignFlags
-pssapi.entities.ItemDesignMetadata
-pssapi.entities.LatestVersion
+async def main() -> None:
+    client = pssapi.PssApiClient(production_server='api2.pixelstarships.com')
+    print(f'Production server: {client.production_server}')
 
-pssapi.enums
-pssapi.enums.CharacterPartType
-pssapi.enums.DeviceType
-pssapi.enums.EnhancementType
-pssapi.enums.ItemDesignFlag
-pssapi.enums.ItemSubType
-pssapi.enums.ItemType
-pssapi.enums.LanguageKey
-pssapi.enums.ModuleType
+    item_designs = await client.item_service.list_item_designs_2()
+    print(f'Found {len(item_designs)} item designs.')
 
-pssapi.utils
-pssapi.utils.convert
-pssapi.utils.parse
+
+def run_main_synchronous() -> None:
+    loop = _asyncio.get_event_loop()
+    loop.run_until_complete(main())
+
+
+if __name__ == '__main__':
+    run_main_synchronous()

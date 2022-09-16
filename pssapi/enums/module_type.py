@@ -1,4 +1,4 @@
-from enum import Enum as _Enum
+from strenum import StrEnum as _StrEnum
 
 
 ########################################################
@@ -8,10 +8,10 @@ from enum import Enum as _Enum
 ########################################################
 
 
-class ModuleType(_Enum):
-    Trap = 1
-    Armor = 2
-    Enhancement = 3
-    Sandbag = 4
-    WaterSprinkler = 5
-    Turret = 6
+class ModuleType(_StrEnum):
+    Trap = 'Trap'
+    Armor = 'Armor'
+    Enhancement = 'Enhancement'
+    Sandbag = 'Sandbag'
+    WaterSprinkler = 'WaterSprinkler'
+    Turret = 'Turret'

@@ -1,4 +1,4 @@
-from enum import Enum as _Enum
+from strenum import StrEnum as _StrEnum
 
 
 ########################################################
@@ -8,11 +8,11 @@ from enum import Enum as _Enum
 ########################################################
 
 
-class ItemType(_Enum):
-    Mineral = 1
-    Gas = 2
-    Missile = 3
-    Craft = 4
-    Equipment = 5
-    Android = 6
-    Capacity = 7
+class ItemType(_StrEnum):
+    Mineral = 'Mineral'
+    Gas = 'Gas'
+    Missile = 'Missile'
+    Craft = 'Craft'
+    Equipment = 'Equipment'
+    Android = 'Android'
+    Capacity = 'Capacity'

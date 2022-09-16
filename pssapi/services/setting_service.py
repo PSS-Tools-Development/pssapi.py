@@ -1,26 +1,17 @@
 from .service_base import PssServiceBase as _ServiceBase
-from .. import core as _core
-from ..entities import LatestVersion as _LatestVersion
+from ..entities import Setting as _Setting
 from ..enums import DeviceType as _DeviceType
 from ..enums import LanguageKey as _LanguageKey
-from ..utils import convert as _convert
+
+from .raw import SettingServiceRaw as _SettingServiceRaw
 
 
-#######################################################################
-##   This file will be generated automatically from API inspection   ##
-#######################################################################
+########################################################################################
+##   This file will be generated automatically from API inspection on the first run   ##
+########################################################################################
 
 
 class SettingService(_ServiceBase):
-    GET_LATEST_VERSION_BASE_PATH: str = 'SettingService/GetLatestVersion3'
-
-
-    async def get_latest_version(self, device_type: _DeviceType, language_key: _LanguageKey) -> _LatestVersion:
-        params = {
-            'deviceType': str(device_type),
-            'languageKey': str(language_key),
-        }
-        raw_xml = await _core.get_data_from_path(self.production_server, SettingService.GET_LATEST_VERSION_BASE_PATH, **params)
-        raw_dict = _convert.xmltree_to_dict3(raw_xml)
-        result = [_LatestVersion(d) for d in raw_dict.values()]
+    async def get_latest_version_3(self, device_type: _DeviceType) -> _Setting:
+        result = await _SettingServiceRaw.get_latest_version_3(self.production_server, device_type, self.language_key)
         return result[0]

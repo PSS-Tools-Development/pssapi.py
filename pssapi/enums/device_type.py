@@ -1,4 +1,4 @@
-from enum import Enum as _Enum
+from strenum import StrEnum as _StrEnum
 
 
 ########################################################
@@ -8,11 +8,11 @@ from enum import Enum as _Enum
 ########################################################
 
 
-class DeviceType(_Enum):
-    DeviceTypeIPhone = 1
-    DeviceTypeAndroid = 2
-    DeviceTypeMac = 3
-    DeviceiOSWidget = 4
-    DeviceTypeSteam = 5
-    DeviceTypeWindows = 6
-    DeviceTypeGeneric = 7
+class DeviceType(_StrEnum):
+    DeviceTypeIPhone = 'DeviceTypeIPhone'
+    DeviceTypeAndroid = 'DeviceTypeAndroid'
+    DeviceTypeMac = 'DeviceTypeMac'
+    DeviceiOSWidget = 'DeviceiOSWidget'
+    DeviceTypeSteam = 'DeviceTypeSteam'
+    DeviceTypeWindows = 'DeviceTypeWindows'
+    DeviceTypeGeneric = 'DeviceTypeGeneric'
