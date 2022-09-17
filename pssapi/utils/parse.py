@@ -8,7 +8,6 @@ import pytz as _pytz
 from .. import constants as _constants
 
 
-
 def pss_bool(value: str, default: bool = None) -> _Optional[bool]:
     if not value:
         return default
