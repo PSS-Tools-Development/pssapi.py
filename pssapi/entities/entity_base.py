@@ -5,7 +5,6 @@ from .raw import EntityBaseRaw as _EntityBaseRaw
 
 class EntityBase(_EntityBaseRaw):
     @property
-    @abstractmethod
     def name(self):
         return self.XML_NODE_NAME
 
