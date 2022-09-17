@@ -1,7 +1,5 @@
 from typing import Dict as _Dict
 
-
-
 BOOL_VALUE_LOOKUP: _Dict[str, bool] = {
     'true': True,
     'false': False,
