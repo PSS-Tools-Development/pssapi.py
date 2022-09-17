@@ -6,7 +6,6 @@ from xml.etree import ElementTree as _ElementTree
 from pssapi.entities import EntityBase as _EntityBase
 
 
-
 async def get_entities_from_path(entity_type: _Type[_EntityBase], xml_parent_tag_name: str, production_server: str, path: str, **params) -> _List[_EntityBase]:
     raw_xml = await __get_data_from_path(production_server, path, **params)
     root = _ElementTree.fromstring(raw_xml)
@@ -32,7 +31,7 @@ async def __get_data_from_url(url: str, **params) -> str:
     return data
 
 
-def __get_raw_entity_xml(node: _ElementTree.Element) -> None:
+def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
         result[child.tag] = __get_raw_entity_xml(child)
