@@ -13,4 +13,4 @@ class EntityWithIdBase(EntityBase):
     @property
     @abstractmethod
     def id(self) -> int:
-        raise NotImplemented()
+        raise NotImplementedError()
