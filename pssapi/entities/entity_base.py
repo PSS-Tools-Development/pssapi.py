@@ -4,7 +4,10 @@ from .raw import EntityBaseRaw as _EntityBaseRaw
 
 
 class EntityBase(_EntityBaseRaw):
-    pass
+    @property
+    @abstractmethod
+    def name(self):
+        return self.XML_NODE_NAME
 
 
 class EntityWithIdBase(EntityBase):
