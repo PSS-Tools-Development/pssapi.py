@@ -1,11 +1,10 @@
 from enum import IntEnum as _IntEnum
 
-
-########################################################
-##   This file will be generated from decompilation   ##
-##    and might require manual fixing, if Savy uses   ##
-##    enum values that are python keywords.           ##
-########################################################
+"""
+    This file will be generated from decompilation
+    and might require manual fixing, if Savy uses
+    enum values that are python keywords.
+"""
 
 
 class ItemDesignFlag(_IntEnum):
