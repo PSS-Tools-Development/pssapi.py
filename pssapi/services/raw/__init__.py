@@ -1,28 +1,30 @@
-from . import achievement_service as AchievementServiceRaw
-from . import animation_service as AnimationServiceRaw
-from . import background_service as BackgroundServiceRaw
-from . import battle_service as BattleServiceRaw
-from . import challenge_service as ChallengeServiceRaw
-from . import character_service as CharacterServiceRaw
-from . import collection_service as CollectionServiceRaw
-from . import division_service as DivisionServiceRaw
-from . import file_service as FileServiceRaw
-from . import galaxy_service as GalaxyServiceRaw
-from . import item_service as ItemServiceRaw
-from . import ladder_service as LadderServiceRaw
-from . import league_service as LeagueServiceRaw
-from . import live_ops_service as LiveOpsServiceRaw
-from . import message_service as MessageServiceRaw
-from . import mission_service as MissionServiceRaw
-from . import promotion_service as PromotionServiceRaw
-from . import research_service as ResearchServiceRaw
-from . import reward_service as RewardServiceRaw
-from . import room_design_sprite_service as RoomDesignSpriteServiceRaw
-from . import room_service as RoomServiceRaw
-from . import season_service as SeasonServiceRaw
-from . import setting_service as SettingServiceRaw
-from . import ship_service as ShipServiceRaw
-from . import situation_service as SituationServiceRaw
-from . import task_service as TaskServiceRaw
-from . import training_service as TrainingServiceRaw
-from . import user_service as UserServiceRaw
+from .service_base_raw import ServiceBaseRaw
+
+from .achievement_service_raw import AchievementServiceRaw
+from .alliance_service_raw import AllianceServiceRaw
+from .animation_service_raw import AnimationServiceRaw
+from .background_service_raw import BackgroundServiceRaw
+from .challenge_service_raw import ChallengeServiceRaw
+from .character_service_raw import CharacterServiceRaw
+from .collection_service_raw import CollectionServiceRaw
+from .division_service_raw import DivisionServiceRaw
+from .file_service_raw import FileServiceRaw
+from .galaxy_service_raw import GalaxyServiceRaw
+from .item_service_raw import ItemServiceRaw
+from .ladder_service_raw import LadderServiceRaw
+from .league_service_raw import LeagueServiceRaw
+from .live_ops_service_raw import LiveOpsServiceRaw
+from .message_service_raw import MessageServiceRaw
+from .mission_service_raw import MissionServiceRaw
+from .promotion_service_raw import PromotionServiceRaw
+from .research_service_raw import ResearchServiceRaw
+from .reward_service_raw import RewardServiceRaw
+from .room_design_sprite_service_raw import RoomDesignSpriteServiceRaw
+from .room_service_raw import RoomServiceRaw
+from .season_service_raw import SeasonServiceRaw
+from .setting_service_raw import SettingServiceRaw
+from .ship_service_raw import ShipServiceRaw
+from .situation_service_raw import SituationServiceRaw
+from .task_service_raw import TaskServiceRaw
+from .training_service_raw import TrainingServiceRaw
+from .user_service_raw import UserServiceRaw

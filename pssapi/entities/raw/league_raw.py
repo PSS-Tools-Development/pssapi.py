@@ -1,12 +1,13 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class LeagueRaw():
+class LeagueRaw:
     XML_NODE_NAME: str = 'League'
 
     def __init__(self, league_info: _EntityInfo) -> None:
@@ -14,11 +15,15 @@ class LeagueRaw():
         self.__league_name: str = _parse.pss_str(league_info.get('LeagueName'))
         self.__min_trophy: int = _parse.pss_int(league_info.get('MinTrophy'))
         self.__max_trophy: int = _parse.pss_int(league_info.get('MaxTrophy'))
-        self.__mineral_reward: int = _parse.pss_int(league_info.get('MineralReward'))
+        self.__mineral_reward: int = _parse.pss_int(
+            league_info.get('MineralReward'))
         self.__gas_reward: int = _parse.pss_int(league_info.get('GasReward'))
-        self.__large_logo_sprite_id: int = _parse.pss_int(league_info.get('LargeLogoSpriteId'))
-        self.__logo_sprite_id: int = _parse.pss_int(league_info.get('LogoSpriteId'))
-        self.__background_sprite_id: int = _parse.pss_int(league_info.get('BackgroundSpriteId'))
+        self.__large_logo_sprite_id: int = _parse.pss_int(
+            league_info.get('LargeLogoSpriteId'))
+        self.__logo_sprite_id: int = _parse.pss_int(
+            league_info.get('LogoSpriteId'))
+        self.__background_sprite_id: int = _parse.pss_int(
+            league_info.get('BackgroundSpriteId'))
 
     @property
     def league_id(self) -> int:

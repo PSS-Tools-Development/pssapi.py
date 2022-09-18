@@ -1,65 +1,110 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ItemDesignRaw():
+class ItemDesignRaw:
     XML_NODE_NAME: str = 'ItemDesign'
 
     def __init__(self, item_design_info: _EntityInfo) -> None:
-        self.__item_design_id: int = _parse.pss_int(item_design_info.get('ItemDesignId'))
-        self.__item_design_name: str = _parse.pss_str(item_design_info.get('ItemDesignName'))
-        self.__item_design_key: str = _parse.pss_str(item_design_info.get('ItemDesignKey'))
-        self.__item_design_description: str = _parse.pss_str(item_design_info.get('ItemDesignDescription'))
-        self.__image_sprite_id: int = _parse.pss_int(item_design_info.get('ImageSpriteId'))
-        self.__logo_sprite_id: int = _parse.pss_int(item_design_info.get('LogoSpriteId'))
-        self.__item_space: int = _parse.pss_int(item_design_info.get('ItemSpace'))
-        self.__item_type: str = _parse.pss_str(item_design_info.get('ItemType'))
+        self.__item_design_id: int = _parse.pss_int(
+            item_design_info.get('ItemDesignId'))
+        self.__item_design_name: str = _parse.pss_str(
+            item_design_info.get('ItemDesignName'))
+        self.__item_design_key: str = _parse.pss_str(
+            item_design_info.get('ItemDesignKey'))
+        self.__item_design_description: str = _parse.pss_str(
+            item_design_info.get('ItemDesignDescription'))
+        self.__image_sprite_id: int = _parse.pss_int(
+            item_design_info.get('ImageSpriteId'))
+        self.__logo_sprite_id: int = _parse.pss_int(
+            item_design_info.get('LogoSpriteId'))
+        self.__item_space: int = _parse.pss_int(
+            item_design_info.get('ItemSpace'))
+        self.__item_type: str = _parse.pss_str(
+            item_design_info.get('ItemType'))
         self.__gas_cost: int = _parse.pss_int(item_design_info.get('GasCost'))
-        self.__mineral_cost: int = _parse.pss_int(item_design_info.get('MineralCost'))
+        self.__mineral_cost: int = _parse.pss_int(
+            item_design_info.get('MineralCost'))
         self.__rank: int = _parse.pss_int(item_design_info.get('Rank'))
-        self.__min_room_level: int = _parse.pss_int(item_design_info.get('MinRoomLevel'))
-        self.__build_time: int = _parse.pss_int(item_design_info.get('BuildTime'))
-        self.__root_item_design_id: int = _parse.pss_int(item_design_info.get('RootItemDesignId'))
-        self.__item_sub_type: str = _parse.pss_str(item_design_info.get('ItemSubType'))
-        self.__enhancement_type: str = _parse.pss_str(item_design_info.get('EnhancementType'))
-        self.__enhancement_value: int = _parse.pss_int(item_design_info.get('EnhancementValue'))
-        self.__market_price: int = _parse.pss_int(item_design_info.get('MarketPrice'))
-        self.__drop_chance: int = _parse.pss_int(item_design_info.get('DropChance'))
-        self.__ingredients: str = _parse.pss_str(item_design_info.get('Ingredients'))
+        self.__min_room_level: int = _parse.pss_int(
+            item_design_info.get('MinRoomLevel'))
+        self.__build_time: int = _parse.pss_int(
+            item_design_info.get('BuildTime'))
+        self.__root_item_design_id: int = _parse.pss_int(
+            item_design_info.get('RootItemDesignId'))
+        self.__item_sub_type: str = _parse.pss_str(
+            item_design_info.get('ItemSubType'))
+        self.__enhancement_type: str = _parse.pss_str(
+            item_design_info.get('EnhancementType'))
+        self.__enhancement_value: int = _parse.pss_int(
+            item_design_info.get('EnhancementValue'))
+        self.__market_price: int = _parse.pss_int(
+            item_design_info.get('MarketPrice'))
+        self.__drop_chance: int = _parse.pss_int(
+            item_design_info.get('DropChance'))
+        self.__ingredients: str = _parse.pss_str(
+            item_design_info.get('Ingredients'))
         self.__rarity: str = _parse.pss_str(item_design_info.get('Rarity'))
-        self.__module_type: str = _parse.pss_str(item_design_info.get('ModuleType'))
-        self.__module_argument: int = _parse.pss_int(item_design_info.get('ModuleArgument'))
+        self.__module_type: str = _parse.pss_str(
+            item_design_info.get('ModuleType'))
+        self.__module_argument: int = _parse.pss_int(
+            item_design_info.get('ModuleArgument'))
         self.__flags: int = _parse.pss_int(item_design_info.get('Flags'))
-        self.__fair_price: int = _parse.pss_int(item_design_info.get('FairPrice'))
-        self.__min_ship_level: int = _parse.pss_int(item_design_info.get('MinShipLevel'))
-        self.__manufacture_cost: str = _parse.pss_str(item_design_info.get('ManufactureCost'))
-        self.__item_design_name_en: str = _parse.pss_str(item_design_info.get('ItemDesignNameEN'))
+        self.__fair_price: int = _parse.pss_int(
+            item_design_info.get('FairPrice'))
+        self.__min_ship_level: int = _parse.pss_int(
+            item_design_info.get('MinShipLevel'))
+        self.__manufacture_cost: str = _parse.pss_str(
+            item_design_info.get('ManufactureCost'))
+        self.__item_design_name_en: str = _parse.pss_str(
+            item_design_info.get('ItemDesignNameEN'))
         self.__content: str = _parse.pss_str(item_design_info.get('Content'))
+        self.__our_price: int = _parse.pss_int(
+            item_design_info.get('OurPrice'))
         self.__metadata: str = _parse.pss_str(item_design_info.get('Metadata'))
         self.__priority: int = _parse.pss_int(item_design_info.get('Priority'))
-        self.__requirement_string: str = _parse.pss_str(item_design_info.get('RequirementString'))
-        self.__max_count: int = _parse.pss_int(item_design_info.get('MaxCount'))
+        self.__requirement_string: str = _parse.pss_str(
+            item_design_info.get('RequirementString'))
+        self.__max_count: int = _parse.pss_int(
+            item_design_info.get('MaxCount'))
         self.__level: int = _parse.pss_int(item_design_info.get('Level'))
+        self.__tags: str = _parse.pss_str(item_design_info.get('Tags'))
         self.__race_id: int = _parse.pss_int(item_design_info.get('RaceId'))
-        self.__required_research_design_id: int = _parse.pss_int(item_design_info.get('RequiredResearchDesignId'))
-        self.__parent_item_design_id: int = _parse.pss_int(item_design_info.get('ParentItemDesignId'))
-        self.__craft_design_id: int = _parse.pss_int(item_design_info.get('CraftDesignId'))
-        self.__missile_design_id: int = _parse.pss_int(item_design_info.get('MissileDesignId'))
-        self.__character_part_id: int = _parse.pss_int(item_design_info.get('CharacterPartId'))
-        self.__active_animation_id: int = _parse.pss_int(item_design_info.get('ActiveAnimationId'))
-        self.__animation_id: int = _parse.pss_int(item_design_info.get('AnimationId'))
-        self.__border_sprite_id: int = _parse.pss_int(item_design_info.get('BorderSpriteId'))
-        self.__sound_file_id: int = _parse.pss_int(item_design_info.get('SoundFileId'))
-        self.__character_design_id: int = _parse.pss_int(item_design_info.get('CharacterDesignId'))
-        self.__training_design_id: int = _parse.pss_int(item_design_info.get('TrainingDesignId'))
-        self.__room_design_id: int = _parse.pss_int(item_design_info.get('RoomDesignId'))
-        self.__particle_sprite_id: int = _parse.pss_int(item_design_info.get('ParticleSpriteId'))
-        self.__equip_sound_file_id: int = _parse.pss_int(item_design_info.get('EquipSoundFileId'))
-        self.__situation_design_id: int = _parse.pss_int(item_design_info.get('SituationDesignId'))
+        self.__required_research_design_id: int = _parse.pss_int(
+            item_design_info.get('RequiredResearchDesignId'))
+        self.__parent_item_design_id: int = _parse.pss_int(
+            item_design_info.get('ParentItemDesignId'))
+        self.__craft_design_id: int = _parse.pss_int(
+            item_design_info.get('CraftDesignId'))
+        self.__missile_design_id: int = _parse.pss_int(
+            item_design_info.get('MissileDesignId'))
+        self.__character_part_id: int = _parse.pss_int(
+            item_design_info.get('CharacterPartId'))
+        self.__active_animation_id: int = _parse.pss_int(
+            item_design_info.get('ActiveAnimationId'))
+        self.__animation_id: int = _parse.pss_int(
+            item_design_info.get('AnimationId'))
+        self.__border_sprite_id: int = _parse.pss_int(
+            item_design_info.get('BorderSpriteId'))
+        self.__sound_file_id: int = _parse.pss_int(
+            item_design_info.get('SoundFileId'))
+        self.__character_design_id: int = _parse.pss_int(
+            item_design_info.get('CharacterDesignId'))
+        self.__training_design_id: int = _parse.pss_int(
+            item_design_info.get('TrainingDesignId'))
+        self.__room_design_id: int = _parse.pss_int(
+            item_design_info.get('RoomDesignId'))
+        self.__particle_sprite_id: int = _parse.pss_int(
+            item_design_info.get('ParticleSpriteId'))
+        self.__equip_sound_file_id: int = _parse.pss_int(
+            item_design_info.get('EquipSoundFileId'))
+        self.__situation_design_id: int = _parse.pss_int(
+            item_design_info.get('SituationDesignId'))
 
     @property
     def item_design_id(self) -> int:
@@ -178,6 +223,10 @@ class ItemDesignRaw():
         return self.__content
 
     @property
+    def our_price(self) -> int:
+        return self.__our_price
+
+    @property
     def metadata(self) -> str:
         return self.__metadata
 
@@ -196,6 +245,10 @@ class ItemDesignRaw():
     @property
     def level(self) -> int:
         return self.__level
+
+    @property
+    def tags(self) -> str:
+        return self.__tags
 
     @property
     def race_id(self) -> int:

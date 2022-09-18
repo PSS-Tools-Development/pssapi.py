@@ -1,6 +1,7 @@
 from ..enums import LanguageKey as _LanguageKey
 from .raw import ServiceBaseRaw as _ServiceBaseRaw
 
+
 class ServiceBase(_ServiceBaseRaw):
     def __init__(self, production_server: str, language_key: _LanguageKey) -> None:
         self.__language_key: _LanguageKey = language_key

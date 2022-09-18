@@ -1,17 +1,19 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class SpriteRaw():
+class SpriteRaw:
     XML_NODE_NAME: str = 'Sprite'
 
     def __init__(self, sprite_info: _EntityInfo) -> None:
         self.__sprite_id: int = _parse.pss_int(sprite_info.get('SpriteId'))
-        self.__image_file_id: int = _parse.pss_int(sprite_info.get('ImageFileId'))
+        self.__image_file_id: int = _parse.pss_int(
+            sprite_info.get('ImageFileId'))
         self.__x: int = _parse.pss_int(sprite_info.get('X'))
         self.__y: int = _parse.pss_int(sprite_info.get('Y'))
         self.__width: int = _parse.pss_int(sprite_info.get('Width'))

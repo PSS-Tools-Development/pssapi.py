@@ -1,29 +1,43 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CollectionDesignRaw():
+class CollectionDesignRaw:
     XML_NODE_NAME: str = 'CollectionDesign'
 
     def __init__(self, collection_design_info: _EntityInfo) -> None:
-        self.__collection_design_id: int = _parse.pss_int(collection_design_info.get('CollectionDesignId'))
-        self.__collection_name: str = _parse.pss_str(collection_design_info.get('CollectionName'))
-        self.__min_combo: int = _parse.pss_int(collection_design_info.get('MinCombo'))
-        self.__max_combo: int = _parse.pss_int(collection_design_info.get('MaxCombo'))
-        self.__enhancement_type: str = _parse.pss_str(collection_design_info.get('EnhancementType'))
-        self.__base_enhancement_value: int = _parse.pss_int(collection_design_info.get('BaseEnhancementValue'))
+        self.__collection_design_id: int = _parse.pss_int(
+            collection_design_info.get('CollectionDesignId'))
+        self.__collection_name: str = _parse.pss_str(
+            collection_design_info.get('CollectionName'))
+        self.__min_combo: int = _parse.pss_int(
+            collection_design_info.get('MinCombo'))
+        self.__max_combo: int = _parse.pss_int(
+            collection_design_info.get('MaxCombo'))
+        self.__enhancement_type: str = _parse.pss_str(
+            collection_design_info.get('EnhancementType'))
+        self.__base_enhancement_value: int = _parse.pss_int(
+            collection_design_info.get('BaseEnhancementValue'))
         self.__flags: int = _parse.pss_int(collection_design_info.get('Flags'))
-        self.__collection_type: str = _parse.pss_str(collection_design_info.get('CollectionType'))
-        self.__collection_description: str = _parse.pss_str(collection_design_info.get('CollectionDescription'))
-        self.__sprite_id: int = _parse.pss_int(collection_design_info.get('SpriteId'))
-        self.__color_string: str = _parse.pss_str(collection_design_info.get('ColorString'))
-        self.__step_enhancement_value: int = _parse.pss_int(collection_design_info.get('StepEnhancementValue'))
-        self.__icon_sprite_id: int = _parse.pss_int(collection_design_info.get('IconSpriteId'))
-        self.__halo_animation_id: int = _parse.pss_int(collection_design_info.get('HaloAnimationId'))
+        self.__collection_type: str = _parse.pss_str(
+            collection_design_info.get('CollectionType'))
+        self.__collection_description: str = _parse.pss_str(
+            collection_design_info.get('CollectionDescription'))
+        self.__sprite_id: int = _parse.pss_int(
+            collection_design_info.get('SpriteId'))
+        self.__color_string: str = _parse.pss_str(
+            collection_design_info.get('ColorString'))
+        self.__step_enhancement_value: int = _parse.pss_int(
+            collection_design_info.get('StepEnhancementValue'))
+        self.__icon_sprite_id: int = _parse.pss_int(
+            collection_design_info.get('IconSpriteId'))
+        self.__halo_animation_id: int = _parse.pss_int(
+            collection_design_info.get('HaloAnimationId'))
 
     @property
     def collection_design_id(self) -> int:

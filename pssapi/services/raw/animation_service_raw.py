@@ -1,6 +1,6 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
 
 from typing import List as _List
 
@@ -8,19 +8,16 @@ from ... import core as _core
 from ...entities import Animation as _Animation
 
 
+class AnimationServiceRaw:
 
-# ---------- Constants ----------
+    SERVICE_NAME = 'AnimationService'
+    LIST_ANIMATIONS_BASE_PATH: str = 'AnimationService/ListAnimations'
 
-LIST_ANIMATIONS_BASE_PATH: str = 'AnimationService/ListAnimations'
-
-
-# ---------- Endpoints ----------
-
-async def list_animations(production_server: str, design_version: int, **params) -> _List[_Animation]:
-    params = {
-        'designVersion': design_version,
-    }
-    result = await _core.get_entities_from_path(_Animation, 'Animations', production_server, LIST_ANIMATIONS_BASE_PATH, **params)
-    return result
-
-
+    @staticmethod
+    async def _list_animations(production_server: str, design_version: int, **params) -> _List[_Animation]:
+        params = {
+            'designVersion': design_version,
+            **params
+        }
+        result = await _core.get_entities_from_path(_Animation, 'Animations', production_server, AnimationServiceRaw.LIST_ANIMATIONS_BASE_PATH, **params)
+        return result

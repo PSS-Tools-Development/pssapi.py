@@ -1,27 +1,34 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
 
 from typing import List as _List
 
 from ... import core as _core
+from ...entities import GetCatalogQuantity as _GetCatalogQuantity
 from ...entities import LiveOps as _LiveOps
 
 
+class LiveOpsServiceRaw:
 
-# ---------- Constants ----------
+    SERVICE_NAME = 'LiveOpsService'
+    GET_CATALOG_QUANTITY_BASE_PATH: str = 'LiveOpsService/GetCatalogQuantity'
+    GET_TODAY_LIVE_OPS_2_BASE_PATH: str = 'LiveOpsService/GetTodayLiveOps2'
 
-GET_TODAY_LIVE_OPS_BASE_PATH: str = 'LiveOpsService/GetTodayLiveOps'
+    @staticmethod
+    async def _get_catalog_quantity(production_server: str, **params) -> _List[_GetCatalogQuantity]:
+        params = {
+            **params
+        }
+        result = await _core.get_entities_from_path(_GetCatalogQuantity, 'LiveOpsService', production_server, LiveOpsServiceRaw.GET_CATALOG_QUANTITY_BASE_PATH, **params)
+        return result
 
-
-# ---------- Endpoints ----------
-
-async def get_today_live_ops(production_server: str, language_key: str, device_type: str, **params) -> _List[_LiveOps]:
-    params = {
-        'languageKey': language_key,
-        'deviceType': device_type,
-    }
-    result = await _core.get_entities_from_path(_LiveOps, 'GetTodayLiveOps', production_server, GET_TODAY_LIVE_OPS_BASE_PATH, **params)
-    return result
-
-
+    @staticmethod
+    async def _get_today_live_ops_2(production_server: str, language_key: str, device_type: str, **params) -> _List[_LiveOps]:
+        params = {
+            'languageKey': language_key,
+            'deviceType': device_type,
+            **params
+        }
+        result = await _core.get_entities_from_path(_LiveOps, 'GetTodayLiveOps', production_server, LiveOpsServiceRaw.GET_TODAY_LIVE_OPS_2_BASE_PATH, **params)
+        return result

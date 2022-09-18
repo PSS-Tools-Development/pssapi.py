@@ -1,8 +1,50 @@
 from .entity_base import *
+from .achievement_design import *
+from .action_type import *
+from .alliance import *
+from .animation import *
+from .background import *
+from .challenge_design import *
+from .character import *
+from .character_action import *
+from .character_design import *
+from .character_design_action import *
+from .character_part import *
+from .collection_design import *
+from .condition_type import *
+from .craft_design import *
+from .division_design import *
+from .draw_design import *
+from .file import *
+from .get_catalog_quantity import *
+from .item import *
 from .item_design import *
-from .setting import *
-
-
-###################################################
-##   This file COULD be generated automatically  ##
-###################################################
+from .item_design_action import *
+from .league import *
+from .live_ops import *
+from .message import *
+from .missile_design import *
+from .mission_design import *
+from .news_design import *
+from .promotion_design import *
+from .research import *
+from .research_design import *
+from .reward_design import *
+from .room import *
+from .room_design import *
+from .room_design_purchase import *
+from .room_design_sprite import *
+from .season_design import *
+from .ship import *
+from .ship_design import *
+from .situation_design import *
+from .sprite import *
+from .star_system import *
+from .star_system_link import *
+from .star_system_marker import *
+from .star_system_marker_generator import *
+from .task_design import *
+from .training_design import *
+from .user import *
+from .user_season import *
+from .user_star_system import *

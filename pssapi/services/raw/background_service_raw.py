@@ -1,6 +1,6 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
 
 from typing import List as _List
 
@@ -8,19 +8,16 @@ from ... import core as _core
 from ...entities import Background as _Background
 
 
+class BackgroundServiceRaw:
 
-# ---------- Constants ----------
+    SERVICE_NAME = 'BackgroundService'
+    LIST_BACKGROUNDS_BASE_PATH: str = 'BackgroundService/ListBackgrounds'
 
-LIST_BACKGROUNDS_BASE_PATH: str = 'BackgroundService/ListBackgrounds'
-
-
-# ---------- Endpoints ----------
-
-async def list_backgrounds(production_server: str, design_version: int, **params) -> _List[_Background]:
-    params = {
-        'designVersion': design_version,
-    }
-    result = await _core.get_entities_from_path(_Background, 'Backgrounds', production_server, LIST_BACKGROUNDS_BASE_PATH, **params)
-    return result
-
-
+    @staticmethod
+    async def _list_backgrounds(production_server: str, design_version: int, **params) -> _List[_Background]:
+        params = {
+            'designVersion': design_version,
+            **params
+        }
+        result = await _core.get_entities_from_path(_Background, 'Backgrounds', production_server, BackgroundServiceRaw.LIST_BACKGROUNDS_BASE_PATH, **params)
+        return result

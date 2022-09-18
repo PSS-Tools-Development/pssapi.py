@@ -1,28 +1,44 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class RoomDesignSpriteRaw():
+class RoomDesignSpriteRaw:
     XML_NODE_NAME: str = 'RoomDesignSprite'
 
     def __init__(self, room_design_sprite_info: _EntityInfo) -> None:
-        self.__room_design_sprite_id: int = _parse.pss_int(room_design_sprite_info.get('RoomDesignSpriteId'))
-        self.__room_design_id: int = _parse.pss_int(room_design_sprite_info.get('RoomDesignId'))
-        self.__sprite_id: int = _parse.pss_int(room_design_sprite_info.get('SpriteId'))
-        self.__room_sprite_type: str = _parse.pss_str(room_design_sprite_info.get('RoomSpriteType'))
-        self.__room_effect_type: str = _parse.pss_str(room_design_sprite_info.get('RoomEffectType'))
-        self.__room_effect_parameter: int = _parse.pss_int(room_design_sprite_info.get('RoomEffectParameter'))
-        self.__skin_name: str = _parse.pss_str(room_design_sprite_info.get('SkinName'))
-        self.__skin_description: str = _parse.pss_str(room_design_sprite_info.get('SkinDescription'))
-        self.__requirement_string: str = _parse.pss_str(room_design_sprite_info.get('RequirementString'))
-        self.__flags: int = _parse.pss_int(room_design_sprite_info.get('Flags'))
-        self.__race_id: int = _parse.pss_int(room_design_sprite_info.get('RaceId'))
-        self.__animation_id: int = _parse.pss_int(room_design_sprite_info.get('AnimationId'))
-        self.__skin_key: int = _parse.pss_int(room_design_sprite_info.get('SkinKey'))
+        self.__room_design_sprite_id: int = _parse.pss_int(
+            room_design_sprite_info.get('RoomDesignSpriteId'))
+        self.__room_design_id: int = _parse.pss_int(
+            room_design_sprite_info.get('RoomDesignId'))
+        self.__sprite_id: int = _parse.pss_int(
+            room_design_sprite_info.get('SpriteId'))
+        self.__room_sprite_type: str = _parse.pss_str(
+            room_design_sprite_info.get('RoomSpriteType'))
+        self.__room_effect_type: str = _parse.pss_str(
+            room_design_sprite_info.get('RoomEffectType'))
+        self.__room_effect_parameter: int = _parse.pss_int(
+            room_design_sprite_info.get('RoomEffectParameter'))
+        self.__skin_name: str = _parse.pss_str(
+            room_design_sprite_info.get('SkinName'))
+        self.__skin_description: str = _parse.pss_str(
+            room_design_sprite_info.get('SkinDescription'))
+        self.__requirement_string: str = _parse.pss_str(
+            room_design_sprite_info.get('RequirementString'))
+        self.__flags: int = _parse.pss_int(
+            room_design_sprite_info.get('Flags'))
+        self.__metadata: str = _parse.pss_str(
+            room_design_sprite_info.get('Metadata'))
+        self.__race_id: int = _parse.pss_int(
+            room_design_sprite_info.get('RaceId'))
+        self.__animation_id: int = _parse.pss_int(
+            room_design_sprite_info.get('AnimationId'))
+        self.__skin_key: int = _parse.pss_int(
+            room_design_sprite_info.get('SkinKey'))
 
     @property
     def room_design_sprite_id(self) -> int:
@@ -63,6 +79,10 @@ class RoomDesignSpriteRaw():
     @property
     def flags(self) -> int:
         return self.__flags
+
+    @property
+    def metadata(self) -> str:
+        return self.__metadata
 
     @property
     def race_id(self) -> int:

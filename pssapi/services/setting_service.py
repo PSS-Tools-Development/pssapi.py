@@ -1,17 +1,16 @@
-from .service_base import PssServiceBase as _ServiceBase
-from ..entities import Setting as _Setting
-from ..enums import DeviceType as _DeviceType
-from ..enums import LanguageKey as _LanguageKey
+from typing import List as _List
 
 from .raw import SettingServiceRaw as _SettingServiceRaw
+from .service_base import ServiceBase as _ServiceBase
+from ..entities import NewsDesign as _NewsDesign
 
 
-########################################################################################
-##   This file will be generated automatically from API inspection on the first run   ##
-########################################################################################
+class SettingService(_ServiceBase, _SettingServiceRaw):
+    async def list_all_news_designs(self, **params) -> _List[_NewsDesign]:
+        return self._list_all_news_designs(self.production_server, self.language_key, self.design_version, **params)
 
+    def __repr__(self) -> str:
+        return f'<SettingService: {self.name}>'
 
-class SettingService(_ServiceBase):
-    async def get_latest_version_3(self, device_type: _DeviceType) -> _Setting:
-        result = await _SettingServiceRaw.get_latest_version_3(self.production_server, device_type, self.language_key)
-        return result[0]
+    def __str__(self) -> str:
+        return f'<SettingService: {self.name}>'

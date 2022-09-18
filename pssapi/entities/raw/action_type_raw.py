@@ -1,29 +1,44 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ActionTypeRaw():
+class ActionTypeRaw:
     XML_NODE_NAME: str = 'ActionType'
 
     def __init__(self, action_type_info: _EntityInfo) -> None:
-        self.__action_type_id: int = _parse.pss_int(action_type_info.get('ActionTypeId'))
-        self.__action_type_name: str = _parse.pss_str(action_type_info.get('ActionTypeName'))
-        self.__room_type: str = _parse.pss_str(action_type_info.get('RoomType'))
-        self.__action_type_category: str = _parse.pss_str(action_type_info.get('ActionTypeCategory'))
-        self.__action_type_key: str = _parse.pss_str(action_type_info.get('ActionTypeKey'))
-        self.__action_type_parameter_value: int = _parse.pss_int(action_type_info.get('ActionTypeParameterValue'))
-        self.__action_type_description: str = _parse.pss_str(action_type_info.get('ActionTypeDescription'))
-        self.__action_type_parameter_relativity: str = _parse.pss_str(action_type_info.get('ActionTypeParameterRelativity'))
-        self.__image_sprite_id: int = _parse.pss_int(action_type_info.get('ImageSpriteId'))
-        self.__condition_type_category: str = _parse.pss_str(action_type_info.get('ConditionTypeCategory'))
-        self.__condition_type_parameter: str = _parse.pss_str(action_type_info.get('ConditionTypeParameter'))
-        self.__color_string: str = _parse.pss_str(action_type_info.get('ColorString'))
-        self.__required_research_design_id: int = _parse.pss_int(action_type_info.get('RequiredResearchDesignId'))
-        self.__order_index: int = _parse.pss_int(action_type_info.get('OrderIndex'))
+        self.__action_type_id: int = _parse.pss_int(
+            action_type_info.get('ActionTypeId'))
+        self.__action_type_name: str = _parse.pss_str(
+            action_type_info.get('ActionTypeName'))
+        self.__room_type: str = _parse.pss_str(
+            action_type_info.get('RoomType'))
+        self.__action_type_category: str = _parse.pss_str(
+            action_type_info.get('ActionTypeCategory'))
+        self.__action_type_key: str = _parse.pss_str(
+            action_type_info.get('ActionTypeKey'))
+        self.__action_type_parameter_value: int = _parse.pss_int(
+            action_type_info.get('ActionTypeParameterValue'))
+        self.__action_type_description: str = _parse.pss_str(
+            action_type_info.get('ActionTypeDescription'))
+        self.__action_type_parameter_relativity: str = _parse.pss_str(
+            action_type_info.get('ActionTypeParameterRelativity'))
+        self.__image_sprite_id: int = _parse.pss_int(
+            action_type_info.get('ImageSpriteId'))
+        self.__condition_type_category: str = _parse.pss_str(
+            action_type_info.get('ConditionTypeCategory'))
+        self.__condition_type_parameter: str = _parse.pss_str(
+            action_type_info.get('ConditionTypeParameter'))
+        self.__color_string: str = _parse.pss_str(
+            action_type_info.get('ColorString'))
+        self.__required_research_design_id: int = _parse.pss_int(
+            action_type_info.get('RequiredResearchDesignId'))
+        self.__order_index: int = _parse.pss_int(
+            action_type_info.get('OrderIndex'))
 
     @property
     def action_type_id(self) -> int:

@@ -1,64 +1,110 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CharacterDesignRaw():
+class CharacterDesignRaw:
     XML_NODE_NAME: str = 'CharacterDesign'
 
     def __init__(self, character_design_info: _EntityInfo) -> None:
-        self.__character_design_id: int = _parse.pss_int(character_design_info.get('CharacterDesignId'))
-        self.__character_design_name: str = _parse.pss_str(character_design_info.get('CharacterDesignName'))
-        self.__character_head_part_id: int = _parse.pss_int(character_design_info.get('CharacterHeadPartId'))
-        self.__character_body_part_id: int = _parse.pss_int(character_design_info.get('CharacterBodyPartId'))
-        self.__gender_type: str = _parse.pss_str(character_design_info.get('GenderType'))
-        self.__race_type: str = _parse.pss_str(character_design_info.get('RaceType'))
+        self.__character_design_id: int = _parse.pss_int(
+            character_design_info.get('CharacterDesignId'))
+        self.__character_design_name: str = _parse.pss_str(
+            character_design_info.get('CharacterDesignName'))
+        self.__character_head_part_id: int = _parse.pss_int(
+            character_design_info.get('CharacterHeadPartId'))
+        self.__character_body_part_id: int = _parse.pss_int(
+            character_design_info.get('CharacterBodyPartId'))
+        self.__gender_type: str = _parse.pss_str(
+            character_design_info.get('GenderType'))
+        self.__race_type: str = _parse.pss_str(
+            character_design_info.get('RaceType'))
         self.__hp: int = _parse.pss_int(character_design_info.get('Hp'))
         self.__pilot: int = _parse.pss_int(character_design_info.get('Pilot'))
-        self.__attack: int = _parse.pss_int(character_design_info.get('Attack'))
-        self.__fire_resistance: int = _parse.pss_int(character_design_info.get('FireResistance'))
-        self.__repair: int = _parse.pss_int(character_design_info.get('Repair'))
-        self.__weapon: int = _parse.pss_int(character_design_info.get('Weapon'))
-        self.__science: int = _parse.pss_int(character_design_info.get('Science'))
-        self.__engine: int = _parse.pss_int(character_design_info.get('Engine'))
-        self.__research: int = _parse.pss_int(character_design_info.get('Research'))
+        self.__attack: int = _parse.pss_int(
+            character_design_info.get('Attack'))
+        self.__fire_resistance: int = _parse.pss_int(
+            character_design_info.get('FireResistance'))
+        self.__repair: int = _parse.pss_int(
+            character_design_info.get('Repair'))
+        self.__weapon: int = _parse.pss_int(
+            character_design_info.get('Weapon'))
+        self.__science: int = _parse.pss_int(
+            character_design_info.get('Science'))
+        self.__engine: int = _parse.pss_int(
+            character_design_info.get('Engine'))
+        self.__research: int = _parse.pss_int(
+            character_design_info.get('Research'))
         self.__level: int = _parse.pss_int(character_design_info.get('Level'))
-        self.__walking_speed: int = _parse.pss_int(character_design_info.get('WalkingSpeed'))
-        self.__min_ship_level: int = _parse.pss_int(character_design_info.get('MinShipLevel'))
-        self.__final_hp: int = _parse.pss_int(character_design_info.get('FinalHp'))
-        self.__final_pilot: int = _parse.pss_int(character_design_info.get('FinalPilot'))
-        self.__final_attack: float = _parse.pss_float(character_design_info.get('FinalAttack'))
-        self.__final_repair: float = _parse.pss_float(character_design_info.get('FinalRepair'))
-        self.__final_weapon: int = _parse.pss_int(character_design_info.get('FinalWeapon'))
-        self.__final_science: int = _parse.pss_int(character_design_info.get('FinalScience'))
-        self.__final_engine: int = _parse.pss_int(character_design_info.get('FinalEngine'))
-        self.__final_research: int = _parse.pss_int(character_design_info.get('FinalResearch'))
-        self.__character_leg_part_id: int = _parse.pss_int(character_design_info.get('CharacterLegPartId'))
-        self.__rarity: str = _parse.pss_str(character_design_info.get('Rarity'))
-        self.__progression_type: str = _parse.pss_str(character_design_info.get('ProgressionType'))
-        self.__character_design_description: str = _parse.pss_str(character_design_info.get('CharacterDesignDescription'))
-        self.__xp_requirement_scale: int = _parse.pss_int(character_design_info.get('XpRequirementScale'))
-        self.__max_character_level: int = _parse.pss_int(character_design_info.get('MaxCharacterLevel'))
-        self.__special_ability_type: str = _parse.pss_str(character_design_info.get('SpecialAbilityType'))
-        self.__special_ability_argument: int = _parse.pss_int(character_design_info.get('SpecialAbilityArgument'))
-        self.__special_ability_final_argument: int = _parse.pss_int(character_design_info.get('SpecialAbilityFinalArgument'))
-        self.__profile_sprite_id: int = _parse.pss_int(character_design_info.get('ProfileSpriteId'))
-        self.__run_speed: int = _parse.pss_int(character_design_info.get('RunSpeed'))
-        self.__training_capacity: int = _parse.pss_int(character_design_info.get('TrainingCapacity'))
-        self.__equipment_mask: int = _parse.pss_int(character_design_info.get('EquipmentMask'))
-        self.__speech_voice: str = _parse.pss_str(character_design_info.get('SpeechVoice'))
-        self.__speech_phrases: str = _parse.pss_str(character_design_info.get('SpeechPhrases'))
-        self.__speech_rate: int = _parse.pss_int(character_design_info.get('SpeechRate'))
-        self.__speech_pitch: int = _parse.pss_int(character_design_info.get('SpeechPitch'))
+        self.__walking_speed: int = _parse.pss_int(
+            character_design_info.get('WalkingSpeed'))
+        self.__min_ship_level: int = _parse.pss_int(
+            character_design_info.get('MinShipLevel'))
+        self.__final_hp: int = _parse.pss_int(
+            character_design_info.get('FinalHp'))
+        self.__final_pilot: int = _parse.pss_int(
+            character_design_info.get('FinalPilot'))
+        self.__final_attack: float = _parse.pss_float(
+            character_design_info.get('FinalAttack'))
+        self.__final_repair: float = _parse.pss_float(
+            character_design_info.get('FinalRepair'))
+        self.__final_weapon: int = _parse.pss_int(
+            character_design_info.get('FinalWeapon'))
+        self.__final_science: int = _parse.pss_int(
+            character_design_info.get('FinalScience'))
+        self.__final_engine: int = _parse.pss_int(
+            character_design_info.get('FinalEngine'))
+        self.__final_research: int = _parse.pss_int(
+            character_design_info.get('FinalResearch'))
+        self.__character_leg_part_id: int = _parse.pss_int(
+            character_design_info.get('CharacterLegPartId'))
+        self.__rarity: str = _parse.pss_str(
+            character_design_info.get('Rarity'))
+        self.__progression_type: str = _parse.pss_str(
+            character_design_info.get('ProgressionType'))
+        self.__character_design_description: str = _parse.pss_str(
+            character_design_info.get('CharacterDesignDescription'))
+        self.__xp_requirement_scale: int = _parse.pss_int(
+            character_design_info.get('XpRequirementScale'))
+        self.__max_character_level: int = _parse.pss_int(
+            character_design_info.get('MaxCharacterLevel'))
+        self.__special_ability_type: str = _parse.pss_str(
+            character_design_info.get('SpecialAbilityType'))
+        self.__special_ability_argument: int = _parse.pss_int(
+            character_design_info.get('SpecialAbilityArgument'))
+        self.__special_ability_final_argument: int = _parse.pss_int(
+            character_design_info.get('SpecialAbilityFinalArgument'))
+        self.__profile_sprite_id: int = _parse.pss_int(
+            character_design_info.get('ProfileSpriteId'))
+        self.__run_speed: int = _parse.pss_int(
+            character_design_info.get('RunSpeed'))
+        self.__training_capacity: int = _parse.pss_int(
+            character_design_info.get('TrainingCapacity'))
+        self.__equipment_mask: int = _parse.pss_int(
+            character_design_info.get('EquipmentMask'))
+        self.__speech_voice: str = _parse.pss_str(
+            character_design_info.get('SpeechVoice'))
+        self.__speech_phrases: str = _parse.pss_str(
+            character_design_info.get('SpeechPhrases'))
+        self.__speech_rate: int = _parse.pss_int(
+            character_design_info.get('SpeechRate'))
+        self.__speech_pitch: int = _parse.pss_int(
+            character_design_info.get('SpeechPitch'))
         self.__flags: int = _parse.pss_int(character_design_info.get('Flags'))
-        self.__root_character_design_id: int = _parse.pss_int(character_design_info.get('RootCharacterDesignId'))
-        self.__max_count: int = _parse.pss_int(character_design_info.get('MaxCount'))
-        self.__tap_sound_file_id: int = _parse.pss_int(character_design_info.get('TapSoundFileId'))
-        self.__action_sound_file_id: int = _parse.pss_int(character_design_info.get('ActionSoundFileId'))
-        self.__collection_design_id: int = _parse.pss_int(character_design_info.get('CollectionDesignId'))
+        self.__root_character_design_id: int = _parse.pss_int(
+            character_design_info.get('RootCharacterDesignId'))
+        self.__max_count: int = _parse.pss_int(
+            character_design_info.get('MaxCount'))
+        self.__tap_sound_file_id: int = _parse.pss_int(
+            character_design_info.get('TapSoundFileId'))
+        self.__action_sound_file_id: int = _parse.pss_int(
+            character_design_info.get('ActionSoundFileId'))
+        self.__collection_design_id: int = _parse.pss_int(
+            character_design_info.get('CollectionDesignId'))
 
     @property
     def character_design_id(self) -> int:

@@ -1,66 +1,109 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ShipDesignRaw():
+class ShipDesignRaw:
     XML_NODE_NAME: str = 'ShipDesign'
 
     def __init__(self, ship_design_info: _EntityInfo) -> None:
-        self.__ship_design_id: int = _parse.pss_int(ship_design_info.get('ShipDesignId'))
-        self.__ship_design_name: str = _parse.pss_str(ship_design_info.get('ShipDesignName'))
-        self.__ship_description: str = _parse.pss_str(ship_design_info.get('ShipDescription'))
-        self.__ship_level: int = _parse.pss_int(ship_design_info.get('ShipLevel'))
+        self.__ship_design_id: int = _parse.pss_int(
+            ship_design_info.get('ShipDesignId'))
+        self.__ship_design_name: str = _parse.pss_str(
+            ship_design_info.get('ShipDesignName'))
+        self.__ship_description: str = _parse.pss_str(
+            ship_design_info.get('ShipDescription'))
+        self.__ship_level: int = _parse.pss_int(
+            ship_design_info.get('ShipLevel'))
         self.__rows: int = _parse.pss_int(ship_design_info.get('Rows'))
         self.__columns: int = _parse.pss_int(ship_design_info.get('Columns'))
         self.__mask: int = _parse.pss_int(ship_design_info.get('Mask'))
         self.__hp: int = _parse.pss_int(ship_design_info.get('Hp'))
-        self.__mineral_cost: int = _parse.pss_int(ship_design_info.get('MineralCost'))
-        self.__repair_time: int = _parse.pss_int(ship_design_info.get('RepairTime'))
-        self.__exterior_sprite_id: int = _parse.pss_int(ship_design_info.get('ExteriorSpriteId'))
-        self.__interior_sprite_id: int = _parse.pss_int(ship_design_info.get('InteriorSpriteId'))
-        self.__logo_sprite_id: int = _parse.pss_int(ship_design_info.get('LogoSpriteId'))
-        self.__upgrade_time: int = _parse.pss_int(ship_design_info.get('UpgradeTime'))
-        self.__room_frame_sprite_id: int = _parse.pss_int(ship_design_info.get('RoomFrameSpriteId'))
-        self.__upgrade_offset_rows: int = _parse.pss_int(ship_design_info.get('UpgradeOffsetRows'))
-        self.__upgrade_offset_columns: int = _parse.pss_int(ship_design_info.get('UpgradeOffsetColumns'))
-        self.__lift_sprite_id: int = _parse.pss_int(ship_design_info.get('LiftSpriteId'))
-        self.__door_frame_left_sprite_id: int = _parse.pss_int(ship_design_info.get('DoorFrameLeftSpriteId'))
-        self.__door_frame_right_sprite_id: int = _parse.pss_int(ship_design_info.get('DoorFrameRightSpriteId'))
-        self.__starbux_cost: int = _parse.pss_int(ship_design_info.get('StarbuxCost'))
+        self.__mineral_cost: int = _parse.pss_int(
+            ship_design_info.get('MineralCost'))
+        self.__repair_time: int = _parse.pss_int(
+            ship_design_info.get('RepairTime'))
+        self.__exterior_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('ExteriorSpriteId'))
+        self.__interior_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('InteriorSpriteId'))
+        self.__logo_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('LogoSpriteId'))
+        self.__upgrade_time: int = _parse.pss_int(
+            ship_design_info.get('UpgradeTime'))
+        self.__room_frame_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('RoomFrameSpriteId'))
+        self.__upgrade_offset_rows: int = _parse.pss_int(
+            ship_design_info.get('UpgradeOffsetRows'))
+        self.__upgrade_offset_columns: int = _parse.pss_int(
+            ship_design_info.get('UpgradeOffsetColumns'))
+        self.__lift_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('LiftSpriteId'))
+        self.__door_frame_left_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('DoorFrameLeftSpriteId'))
+        self.__door_frame_right_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('DoorFrameRightSpriteId'))
+        self.__starbux_cost: int = _parse.pss_int(
+            ship_design_info.get('StarbuxCost'))
         self.__engine_x: int = _parse.pss_int(ship_design_info.get('EngineX'))
         self.__engine_y: int = _parse.pss_int(ship_design_info.get('EngineY'))
-        self.__mineral_capacity: int = _parse.pss_int(ship_design_info.get('MineralCapacity'))
-        self.__gas_capacity: int = _parse.pss_int(ship_design_info.get('GasCapacity'))
-        self.__thrust_scale: float = _parse.pss_float(ship_design_info.get('ThrustScale'))
+        self.__mineral_capacity: int = _parse.pss_int(
+            ship_design_info.get('MineralCapacity'))
+        self.__gas_capacity: int = _parse.pss_int(
+            ship_design_info.get('GasCapacity'))
+        self.__thrust_scale: float = _parse.pss_float(
+            ship_design_info.get('ThrustScale'))
         self.__flag_x: int = _parse.pss_int(ship_design_info.get('FlagX'))
         self.__flag_y: int = _parse.pss_int(ship_design_info.get('FlagY'))
-        self.__mini_ship_sprite_id: int = _parse.pss_int(ship_design_info.get('MiniShipSpriteId'))
-        self.__allow_interacial: bool = _parse.pss_bool(ship_design_info.get('AllowInteracial'))
-        self.__equipment_capacity: int = _parse.pss_int(ship_design_info.get('EquipmentCapacity'))
-        self.__ship_type: str = _parse.pss_str(ship_design_info.get('ShipType'))
-        self.__upgrade_cost: str = _parse.pss_str(ship_design_info.get('UpgradeCost'))
-        self.__unlock_cost: str = _parse.pss_str(ship_design_info.get('UnlockCost'))
-        self.__requirement_string: str = _parse.pss_str(ship_design_info.get('RequirementString'))
-        self.__visibility_flags: str = _parse.pss_str(ship_design_info.get('VisibilityFlags'))
-        self.__unlock_from_ship_design_id: int = _parse.pss_int(ship_design_info.get('UnlockFromShipDesignId'))
-        self.__required_research_design_id: int = _parse.pss_int(ship_design_info.get('RequiredResearchDesignId'))
-        self.__thrust_particle_sprite_id: int = _parse.pss_int(ship_design_info.get('ThrustParticleSpriteId'))
-        self.__thrust_line_animation_id: int = _parse.pss_int(ship_design_info.get('ThrustLineAnimationId'))
-        self.__required_ship_design_id: int = _parse.pss_int(ship_design_info.get('RequiredShipDesignId'))
+        self.__mini_ship_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('MiniShipSpriteId'))
+        self.__allow_interacial: bool = _parse.pss_bool(
+            ship_design_info.get('AllowInteracial'))
+        self.__equipment_capacity: int = _parse.pss_int(
+            ship_design_info.get('EquipmentCapacity'))
+        self.__ship_type: str = _parse.pss_str(
+            ship_design_info.get('ShipType'))
+        self.__upgrade_cost: str = _parse.pss_str(
+            ship_design_info.get('UpgradeCost'))
+        self.__unlock_cost: str = _parse.pss_str(
+            ship_design_info.get('UnlockCost'))
+        self.__requirement_string: str = _parse.pss_str(
+            ship_design_info.get('RequirementString'))
+        self.__visibility_flags: str = _parse.pss_str(
+            ship_design_info.get('VisibilityFlags'))
+        self.__unlock_from_ship_design_id: int = _parse.pss_int(
+            ship_design_info.get('UnlockFromShipDesignId'))
+        self.__required_research_design_id: int = _parse.pss_int(
+            ship_design_info.get('RequiredResearchDesignId'))
+        self.__thrust_particle_sprite_id: int = _parse.pss_int(
+            ship_design_info.get('ThrustParticleSpriteId'))
+        self.__thrust_line_animation_id: int = _parse.pss_int(
+            ship_design_info.get('ThrustLineAnimationId'))
+        self.__required_ship_design_id: int = _parse.pss_int(
+            ship_design_info.get('RequiredShipDesignId'))
         self.__race_id: int = _parse.pss_int(ship_design_info.get('RaceId'))
-        self.__exterior_file_id: int = _parse.pss_int(ship_design_info.get('ExteriorFileId'))
-        self.__interior_file_id: int = _parse.pss_int(ship_design_info.get('InteriorFileId'))
-        self.__logo_file_id: int = _parse.pss_int(ship_design_info.get('LogoFileId'))
-        self.__room_frame_file_id: int = _parse.pss_int(ship_design_info.get('RoomFrameFileId'))
-        self.__lift_file_id: int = _parse.pss_int(ship_design_info.get('LiftFileId'))
-        self.__door_frame_left_file_id: int = _parse.pss_int(ship_design_info.get('DoorFrameLeftFileId'))
-        self.__door_frame_right_file_id: int = _parse.pss_int(ship_design_info.get('DoorFrameRightFileId'))
-        self.__foreground_asset_id: int = _parse.pss_int(ship_design_info.get('ForegroundAssetId'))
-        self.__background_asset_id: int = _parse.pss_int(ship_design_info.get('BackgroundAssetId'))
+        self.__exterior_file_id: int = _parse.pss_int(
+            ship_design_info.get('ExteriorFileId'))
+        self.__interior_file_id: int = _parse.pss_int(
+            ship_design_info.get('InteriorFileId'))
+        self.__logo_file_id: int = _parse.pss_int(
+            ship_design_info.get('LogoFileId'))
+        self.__room_frame_file_id: int = _parse.pss_int(
+            ship_design_info.get('RoomFrameFileId'))
+        self.__lift_file_id: int = _parse.pss_int(
+            ship_design_info.get('LiftFileId'))
+        self.__door_frame_left_file_id: int = _parse.pss_int(
+            ship_design_info.get('DoorFrameLeftFileId'))
+        self.__door_frame_right_file_id: int = _parse.pss_int(
+            ship_design_info.get('DoorFrameRightFileId'))
+        self.__foreground_asset_id: int = _parse.pss_int(
+            ship_design_info.get('ForegroundAssetId'))
+        self.__background_asset_id: int = _parse.pss_int(
+            ship_design_info.get('BackgroundAssetId'))
 
     @property
     def ship_design_id(self) -> int:

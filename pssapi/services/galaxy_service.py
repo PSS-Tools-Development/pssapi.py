@@ -1,36 +1,32 @@
-from datetime import datetime as _datetime
 from typing import List as _List
 
 from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
-from .service_base import PssServiceBase as _ServiceBase
-from ...entities import StarSystemMarker as _StarSystemMarker
-from ...entities import StarSystemLink as _StarSystemLink
-from ...entities import UserStarSystem as _UserStarSystem
-from ...entities import StarSystem as _StarSystem
+from .service_base import ServiceBase as _ServiceBase
+from ..entities import Ship as _Ship
+from ..entities import StarSystem as _StarSystem
+from ..entities import StarSystemLink as _StarSystemLink
+from ..entities import StarSystemMarker as _StarSystemMarker
+from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 
 
-class GalaxyService(_ServiceBase):
-    async def list_star_system_links(self, design_version: int) -> _List[_StarSystemLink]:
-        raise NotImplemented()
-        result = await _GalaxyServiceRaw.list_star_system_links(self.production_server, design_version: int)
-        return result
+class GalaxyService(_ServiceBase, _GalaxyServiceRaw):
+    async def go_to(self, **params) -> _List[_Ship]:
+        return self._go_to(self.production_server, self.star_system_id, self.client_date_time, self.checksum, self.access_token, **params)
 
+    async def list_marker_generator_designs(self, **params) -> _List[_StarSystemMarkerGenerator]:
+        return self._list_marker_generator_designs(self.production_server, self.language_key, self.design_version, **params)
 
-    async def list_star_systems(self, language_key: str, design_version: int) -> _List[_StarSystem]:
-        raise NotImplemented()
-        result = await _GalaxyServiceRaw.list_star_systems(self.production_server, language_key: str, design_version: int)
-        return result
+    async def list_star_system_links(self, **params) -> _List[_StarSystemLink]:
+        return self._list_star_system_links(self.production_server, self.design_version, **params)
 
+    async def list_star_system_markers(self, **params) -> _List[_StarSystemMarker]:
+        return self._list_star_system_markers(self.production_server, self.access_token, self.client_date_time, **params)
 
-    async def list_user_markers(self, access_token: str, client_date_time: _datetime) -> _List[_StarSystemMarker]:
-        raise NotImplemented()
-        result = await _GalaxyServiceRaw.list_user_markers(self.production_server, access_token: str, client_date_time: _datetime)
-        return result
+    async def list_star_systems(self, **params) -> _List[_StarSystem]:
+        return self._list_star_systems(self.production_server, self.language_key, self.design_version, **params)
 
+    def __repr__(self) -> str:
+        return f'<GalaxyService: {self.name}>'
 
-    async def list_user_star_systems(self, access_token: str, client_date_time: _datetime) -> _List[_UserStarSystem]:
-        raise NotImplemented()
-        result = await _GalaxyServiceRaw.list_user_star_systems(self.production_server, access_token: str, client_date_time: _datetime)
-        return result
-
-
+    def __str__(self) -> str:
+        return f'<GalaxyService: {self.name}>'

@@ -1,24 +1,34 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CharacterPartRaw():
+class CharacterPartRaw:
     XML_NODE_NAME: str = 'CharacterPart'
 
     def __init__(self, character_part_info: _EntityInfo) -> None:
-        self.__character_part_id: int = _parse.pss_int(character_part_info.get('CharacterPartId'))
-        self.__character_part_name: str = _parse.pss_str(character_part_info.get('CharacterPartName'))
-        self.__character_part_type: str = _parse.pss_str(character_part_info.get('CharacterPartType'))
-        self.__standard_sprite_id: int = _parse.pss_int(character_part_info.get('StandardSpriteId'))
-        self.__standard_file_id: int = _parse.pss_int(character_part_info.get('StandardFileId'))
-        self.__action_file_id: int = _parse.pss_int(character_part_info.get('ActionFileId'))
-        self.__standard_border_file_id: int = _parse.pss_int(character_part_info.get('StandardBorderFileId'))
-        self.__action_border_file_id: int = _parse.pss_int(character_part_info.get('ActionBorderFileId'))
-        self.__action_sprite_id: int = _parse.pss_int(character_part_info.get('ActionSpriteId'))
+        self.__character_part_id: int = _parse.pss_int(
+            character_part_info.get('CharacterPartId'))
+        self.__character_part_name: str = _parse.pss_str(
+            character_part_info.get('CharacterPartName'))
+        self.__character_part_type: str = _parse.pss_str(
+            character_part_info.get('CharacterPartType'))
+        self.__standard_sprite_id: int = _parse.pss_int(
+            character_part_info.get('StandardSpriteId'))
+        self.__standard_file_id: int = _parse.pss_int(
+            character_part_info.get('StandardFileId'))
+        self.__action_file_id: int = _parse.pss_int(
+            character_part_info.get('ActionFileId'))
+        self.__standard_border_file_id: int = _parse.pss_int(
+            character_part_info.get('StandardBorderFileId'))
+        self.__action_border_file_id: int = _parse.pss_int(
+            character_part_info.get('ActionBorderFileId'))
+        self.__action_sprite_id: int = _parse.pss_int(
+            character_part_info.get('ActionSpriteId'))
 
     @property
     def character_part_id(self) -> int:

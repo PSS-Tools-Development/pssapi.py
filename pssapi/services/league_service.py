@@ -1,14 +1,16 @@
 from typing import List as _List
 
 from .raw import LeagueServiceRaw as _LeagueServiceRaw
-from .service_base import PssServiceBase as _ServiceBase
-from ...entities import League as _League
+from .service_base import ServiceBase as _ServiceBase
+from ..entities import League as _League
 
 
-class LeagueService(_ServiceBase):
-    async def list_leagues_2(self, language_key: str, access_token: str, design_version: int) -> _List[_League]:
-        raise NotImplemented()
-        result = await _LeagueServiceRaw.list_leagues_2(self.production_server, language_key: str, access_token: str, design_version: int)
-        return result
+class LeagueService(_ServiceBase, _LeagueServiceRaw):
+    async def list_leagues_2(self, **params) -> _List[_League]:
+        return self._list_leagues_2(self.production_server, self.language_key, self.access_token, self.design_version, **params)
 
+    def __repr__(self) -> str:
+        return f'<LeagueService: {self.name}>'
 
+    def __str__(self) -> str:
+        return f'<LeagueService: {self.name}>'

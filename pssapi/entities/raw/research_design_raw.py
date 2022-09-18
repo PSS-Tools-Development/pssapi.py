@@ -1,31 +1,48 @@
-####################################################
-##   This file has been generated automatically   ##
-####################################################
+"""
+    This file has been generated automatically
+"""
+
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ResearchDesignRaw():
+class ResearchDesignRaw:
     XML_NODE_NAME: str = 'ResearchDesign'
 
     def __init__(self, research_design_info: _EntityInfo) -> None:
-        self.__research_design_id: int = _parse.pss_int(research_design_info.get('ResearchDesignId'))
-        self.__research_name: str = _parse.pss_str(research_design_info.get('ResearchName'))
-        self.__research_description: str = _parse.pss_str(research_design_info.get('ResearchDescription'))
-        self.__logo_sprite_id: int = _parse.pss_int(research_design_info.get('LogoSpriteId'))
-        self.__image_sprite_id: int = _parse.pss_int(research_design_info.get('ImageSpriteId'))
-        self.__gas_cost: int = _parse.pss_int(research_design_info.get('GasCost'))
-        self.__required_lab_level: int = _parse.pss_int(research_design_info.get('RequiredLabLevel'))
-        self.__research_time: int = _parse.pss_int(research_design_info.get('ResearchTime'))
-        self.__research_design_type: str = _parse.pss_str(research_design_info.get('ResearchDesignType'))
-        self.__argument: int = _parse.pss_int(research_design_info.get('Argument'))
-        self.__starbux_cost: int = _parse.pss_int(research_design_info.get('StarbuxCost'))
-        self.__root_research_design_id: int = _parse.pss_int(research_design_info.get('RootResearchDesignId'))
-        self.__availability_mask: int = _parse.pss_int(research_design_info.get('AvailabilityMask'))
-        self.__visibility_flags: str = _parse.pss_str(research_design_info.get('VisibilityFlags'))
-        self.__required_research_design_id: int = _parse.pss_int(research_design_info.get('RequiredResearchDesignId'))
-        self.__required_item_design_id: int = _parse.pss_int(research_design_info.get('RequiredItemDesignId'))
+        self.__research_design_id: int = _parse.pss_int(
+            research_design_info.get('ResearchDesignId'))
+        self.__research_name: str = _parse.pss_str(
+            research_design_info.get('ResearchName'))
+        self.__research_description: str = _parse.pss_str(
+            research_design_info.get('ResearchDescription'))
+        self.__logo_sprite_id: int = _parse.pss_int(
+            research_design_info.get('LogoSpriteId'))
+        self.__image_sprite_id: int = _parse.pss_int(
+            research_design_info.get('ImageSpriteId'))
+        self.__gas_cost: int = _parse.pss_int(
+            research_design_info.get('GasCost'))
+        self.__required_lab_level: int = _parse.pss_int(
+            research_design_info.get('RequiredLabLevel'))
+        self.__research_time: int = _parse.pss_int(
+            research_design_info.get('ResearchTime'))
+        self.__research_design_type: str = _parse.pss_str(
+            research_design_info.get('ResearchDesignType'))
+        self.__argument: int = _parse.pss_int(
+            research_design_info.get('Argument'))
+        self.__starbux_cost: int = _parse.pss_int(
+            research_design_info.get('StarbuxCost'))
+        self.__root_research_design_id: int = _parse.pss_int(
+            research_design_info.get('RootResearchDesignId'))
+        self.__availability_mask: int = _parse.pss_int(
+            research_design_info.get('AvailabilityMask'))
+        self.__visibility_flags: str = _parse.pss_str(
+            research_design_info.get('VisibilityFlags'))
+        self.__required_research_design_id: int = _parse.pss_int(
+            research_design_info.get('RequiredResearchDesignId'))
+        self.__required_item_design_id: int = _parse.pss_int(
+            research_design_info.get('RequiredItemDesignId'))
 
     @property
     def research_design_id(self) -> int:
