@@ -15,13 +15,13 @@ class MessageServiceRaw:
     LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH: str = 'MessageService/ListMessagesForChannelKey'
 
     @staticmethod
-    async def _list_active_marketplace_messages_5(production_server: str, access_token: str, item_design_id: int, item_sub_type: str, currency_type: str, user_id: int, rarity: str, **params) -> _List[_Message]:
+    async def _list_active_marketplace_messages_5(production_server: str, item_design_id: int, item_sub_type: str, access_token: str, user_id: int, currency_type: str, rarity: str, **params) -> _List[_Message]:
         params = {
-            'accessToken': access_token,
             'itemDesignId': item_design_id,
             'itemSubType': item_sub_type,
-            'currencyType': currency_type,
+            'accessToken': access_token,
             'userId': user_id,
+            'currencyType': currency_type,
             'rarity': rarity,
             **params
         }

@@ -26,10 +26,10 @@ class LadderServiceRaw:
         return result
 
     @staticmethod
-    async def _list_users_by_ranking(production_server: str, from_: int, access_token: str, **params) -> _List[_User]:
+    async def _list_users_by_ranking(production_server: str, from_: int, to: int, access_token: str, **params) -> _List[_User]:
         params = {
             'from': from_,
-            'to100': to_100,
+            'to': to,
             'accessToken': access_token,
             **params
         }

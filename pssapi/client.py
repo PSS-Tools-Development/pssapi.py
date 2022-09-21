@@ -174,61 +174,61 @@ class PssApiClient:
 
     def _update_services(self) -> None:
         self.__achievement_service: _AchievementService = _AchievementService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__alliance_service: _AllianceService = _AllianceService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__animation_service: _AnimationService = _AnimationService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__background_service: _BackgroundService = _BackgroundService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__challenge_service: _ChallengeService = _ChallengeService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__character_service: _CharacterService = _CharacterService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__collection_service: _CollectionService = _CollectionService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__division_service: _DivisionService = _DivisionService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__file_service: _FileService = _FileService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__galaxy_service: _GalaxyService = _GalaxyService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__item_service: _ItemService = _ItemService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__ladder_service: _LadderService = _LadderService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__league_service: _LeagueService = _LeagueService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__live_ops_service: _LiveOpsService = _LiveOpsService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__message_service: _MessageService = _MessageService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__mission_service: _MissionService = _MissionService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__promotion_service: _PromotionService = _PromotionService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__research_service: _ResearchService = _ResearchService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__reward_service: _RewardService = _RewardService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__room_design_sprite_service: _RoomDesignSpriteService = _RoomDesignSpriteService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__room_service: _RoomService = _RoomService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__season_service: _SeasonService = _SeasonService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__setting_service: _SettingService = _SettingService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__ship_service: _ShipService = _ShipService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__situation_service: _SituationService = _SituationService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__task_service: _TaskService = _TaskService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__training_service: _TrainingService = _TrainingService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
         self.__user_service: _UserService = _UserService(
-            self.production_server, self.device_type)
+            self.production_server, self.language_key)
 
 
 async def _get_production_server(device_type: _DeviceType, language_key: _LanguageKey) -> _Optional[str]:
