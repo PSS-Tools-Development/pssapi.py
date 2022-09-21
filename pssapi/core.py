@@ -25,6 +25,9 @@ async def __get_data_from_path(production_server: str, path: str, **params) -> s
 
 
 async def __get_data_from_url(url: str, **params) -> str:
+    # filter parameters with a None value
+    params = {key: value for (key, value) in params.items() if value}
+
     async with _aiohttp.ClientSession() as session:
         async with session.get(url, params=params) as response:
             data = await response.text(encoding='utf-8')
