@@ -16,7 +16,7 @@ class FileServiceRaw:
     LIST_SPRITES_2_BASE_PATH: str = 'FileService/ListSprites2'
 
     @staticmethod
-    async def _list_files_4(production_server: str, language_key: str, design_version: int, **params) -> _List[_File]:
+    async def _list_files_4(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_File]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
@@ -26,7 +26,7 @@ class FileServiceRaw:
         return result
 
     @staticmethod
-    async def _list_sprites_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_Sprite]:
+    async def _list_sprites_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_Sprite]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

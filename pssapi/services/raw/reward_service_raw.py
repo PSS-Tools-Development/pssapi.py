@@ -14,7 +14,7 @@ class RewardServiceRaw:
     LIST_ALL_REWARD_DESIGNS_2_BASE_PATH: str = 'RewardService/ListAllRewardDesigns2'
 
     @staticmethod
-    async def _list_all_reward_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_RewardDesign]:
+    async def _list_all_reward_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_RewardDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

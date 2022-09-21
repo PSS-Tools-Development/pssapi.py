@@ -16,7 +16,7 @@ class ItemServiceRaw:
     LIST_ITEM_DESIGNS_2_BASE_PATH: str = 'ItemService/ListItemDesigns2'
 
     @staticmethod
-    async def _list_item_design_actions(production_server: str, design_version: int, **params) -> _List[_ItemDesignAction]:
+    async def _list_item_design_actions(production_server: str, design_version: int = None, **params) -> _List[_ItemDesignAction]:
         params = {
             'designVersion': design_version,
             **params
@@ -25,7 +25,7 @@ class ItemServiceRaw:
         return result
 
     @staticmethod
-    async def _list_item_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ItemDesign]:
+    async def _list_item_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_ItemDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

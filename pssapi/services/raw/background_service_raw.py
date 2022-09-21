@@ -14,7 +14,7 @@ class BackgroundServiceRaw:
     LIST_BACKGROUNDS_BASE_PATH: str = 'BackgroundService/ListBackgrounds'
 
     @staticmethod
-    async def _list_backgrounds(production_server: str, design_version: int, **params) -> _List[_Background]:
+    async def _list_backgrounds(production_server: str, design_version: int = None, **params) -> _List[_Background]:
         params = {
             'designVersion': design_version,
             **params

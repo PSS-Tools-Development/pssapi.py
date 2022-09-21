@@ -14,7 +14,7 @@ class SettingServiceRaw:
     LIST_ALL_NEWS_DESIGNS_BASE_PATH: str = 'SettingService/ListAllNewsDesigns'
 
     @staticmethod
-    async def _list_all_news_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_NewsDesign]:
+    async def _list_all_news_designs(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_NewsDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

@@ -35,7 +35,7 @@ class GalaxyServiceRaw:
         return result
 
     @staticmethod
-    async def _list_marker_generator_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystemMarkerGenerator]:
+    async def _list_marker_generator_designs(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_StarSystemMarkerGenerator]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
@@ -45,7 +45,7 @@ class GalaxyServiceRaw:
         return result
 
     @staticmethod
-    async def _list_star_system_links(production_server: str, design_version: int, **params) -> _List[_StarSystemLink]:
+    async def _list_star_system_links(production_server: str, design_version: int = None, **params) -> _List[_StarSystemLink]:
         params = {
             'designVersion': design_version,
             **params
@@ -64,7 +64,7 @@ class GalaxyServiceRaw:
         return result
 
     @staticmethod
-    async def _list_star_systems(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystem]:
+    async def _list_star_systems(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_StarSystem]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

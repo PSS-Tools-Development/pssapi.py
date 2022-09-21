@@ -14,7 +14,7 @@ class LeagueServiceRaw:
     LIST_LEAGUES_2_BASE_PATH: str = 'LeagueService/ListLeagues2'
 
     @staticmethod
-    async def _list_leagues_2(production_server: str, language_key: str, access_token: str, design_version: int, **params) -> _List[_League]:
+    async def _list_leagues_2(production_server: str, language_key: str, access_token: str, design_version: int = None, **params) -> _List[_League]:
         params = {
             'languageKey': language_key,
             'accessToken': access_token,

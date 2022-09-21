@@ -14,7 +14,7 @@ class ResearchServiceRaw:
     LIST_ALL_RESEARCH_DESIGNS_2_BASE_PATH: str = 'ResearchService/ListAllResearchDesigns2'
 
     @staticmethod
-    async def _list_all_research_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ResearchDesign]:
+    async def _list_all_research_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_ResearchDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

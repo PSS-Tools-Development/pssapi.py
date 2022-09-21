@@ -18,7 +18,7 @@ class CharacterServiceRaw:
     LIST_ALL_DRAW_DESIGNS_BASE_PATH: str = 'CharacterService/ListAllDrawDesigns'
 
     @staticmethod
-    async def _list_all_character_design_actions(production_server: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
+    async def _list_all_character_design_actions(production_server: str, design_version: int = None, **params) -> _List[_CharacterDesignAction]:
         params = {
             'designVersion': design_version,
             **params
@@ -27,7 +27,7 @@ class CharacterServiceRaw:
         return result
 
     @staticmethod
-    async def _list_all_character_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_CharacterDesign]:
+    async def _list_all_character_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_CharacterDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
@@ -37,7 +37,7 @@ class CharacterServiceRaw:
         return result
 
     @staticmethod
-    async def _list_all_draw_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_DrawDesign]:
+    async def _list_all_draw_designs(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_DrawDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,

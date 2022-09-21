@@ -14,7 +14,7 @@ class AnimationServiceRaw:
     LIST_ANIMATIONS_BASE_PATH: str = 'AnimationService/ListAnimations'
 
     @staticmethod
-    async def _list_animations(production_server: str, design_version: int, **params) -> _List[_Animation]:
+    async def _list_animations(production_server: str, design_version: int = None, **params) -> _List[_Animation]:
         params = {
             'designVersion': design_version,
             **params

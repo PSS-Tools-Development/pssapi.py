@@ -14,7 +14,7 @@ class SituationServiceRaw:
     LIST_SITUATION_DESIGNS_BASE_PATH: str = 'SituationService/ListSituationDesigns'
 
     @staticmethod
-    async def _list_situation_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_SituationDesign]:
+    async def _list_situation_designs(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_SituationDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
