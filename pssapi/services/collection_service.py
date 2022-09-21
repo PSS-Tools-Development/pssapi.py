@@ -7,7 +7,7 @@ from ..entities import CollectionDesign as _CollectionDesign
 
 class CollectionService(_ServiceBase, _CollectionServiceRaw):
     async def list_all_collection_designs(self, **params) -> _List[_CollectionDesign]:
-        return self._list_all_collection_designs(self.production_server, self.language_key, **params)
+        return await self._list_all_collection_designs(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<CollectionService: {self.name}>'

@@ -7,7 +7,7 @@ from ..entities import Animation as _Animation
 
 class AnimationService(_ServiceBase, _AnimationServiceRaw):
     async def list_animations(self, **params) -> _List[_Animation]:
-        return self._list_animations(self.production_server, **params)
+        return await self._list_animations(self.production_server, **params)
 
     def __repr__(self) -> str:
         return f'<AnimationService: {self.name}>'

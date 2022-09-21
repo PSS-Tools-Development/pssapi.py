@@ -7,7 +7,7 @@ from ..entities import Background as _Background
 
 class BackgroundService(_ServiceBase, _BackgroundServiceRaw):
     async def list_backgrounds(self, **params) -> _List[_Background]:
-        return self._list_backgrounds(self.production_server, **params)
+        return await self._list_backgrounds(self.production_server, **params)
 
     def __repr__(self) -> str:
         return f'<BackgroundService: {self.name}>'

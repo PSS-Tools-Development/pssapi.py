@@ -7,7 +7,7 @@ from ..entities import SeasonDesign as _SeasonDesign
 
 class SeasonService(_ServiceBase, _SeasonServiceRaw):
     async def list_all_season_designs(self, **params) -> _List[_SeasonDesign]:
-        return self._list_all_season_designs(self.production_server, self.language_key, **params)
+        return await self._list_all_season_designs(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<SeasonService: {self.name}>'
