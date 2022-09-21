@@ -44,7 +44,7 @@ class RoomServiceRaw:
         return result
 
     @staticmethod
-    async def _list_craft_designs(production_server: str, design_version: int = None, **params) -> _List[_CraftDesign]:
+    async def _list_craft_designs(production_server: str, **params) -> _List[_CraftDesign]:
         params = {
             'designVersion': design_version,
             **params
@@ -53,7 +53,7 @@ class RoomServiceRaw:
         return result
 
     @staticmethod
-    async def _list_missile_designs(production_server: str, design_version: int = None, **params) -> _List[_MissileDesign]:
+    async def _list_missile_designs(production_server: str, **params) -> _List[_MissileDesign]:
         params = {
             'designVersion': design_version,
             **params
@@ -62,7 +62,7 @@ class RoomServiceRaw:
         return result
 
     @staticmethod
-    async def _list_room_design_purchase(production_server: str, design_version: int = None, **params) -> _List[_RoomDesignPurchase]:
+    async def _list_room_design_purchase(production_server: str, **params) -> _List[_RoomDesignPurchase]:
         params = {
             'designVersion': design_version,
             **params

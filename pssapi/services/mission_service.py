@@ -7,7 +7,7 @@ from ..entities import MissionDesign as _MissionDesign
 
 class MissionService(_ServiceBase, _MissionServiceRaw):
     async def list_all_mission_designs_4(self, **params) -> _List[_MissionDesign]:
-        return self._list_all_mission_designs_4(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_all_mission_designs_4(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<MissionService: {self.name}>'

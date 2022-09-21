@@ -7,7 +7,7 @@ from ..entities import ShipDesign as _ShipDesign
 
 class ShipService(_ServiceBase, _ShipServiceRaw):
     async def list_all_ship_designs_2(self, **params) -> _List[_ShipDesign]:
-        return self._list_all_ship_designs_2(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_all_ship_designs_2(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<ShipService: {self.name}>'

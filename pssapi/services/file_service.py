@@ -8,10 +8,10 @@ from ..entities import Sprite as _Sprite
 
 class FileService(_ServiceBase, _FileServiceRaw):
     async def list_files_4(self, **params) -> _List[_File]:
-        return self._list_files_4(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_files_4(self.production_server, self.language_key, **params)
 
     async def list_sprites_2(self, **params) -> _List[_Sprite]:
-        return self._list_sprites_2(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_sprites_2(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<FileService: {self.name}>'

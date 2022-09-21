@@ -45,7 +45,7 @@ class GalaxyServiceRaw:
         return result
 
     @staticmethod
-    async def _list_star_system_links(production_server: str, design_version: int = None, **params) -> _List[_StarSystemLink]:
+    async def _list_star_system_links(production_server: str, **params) -> _List[_StarSystemLink]:
         params = {
             'designVersion': design_version,
             **params

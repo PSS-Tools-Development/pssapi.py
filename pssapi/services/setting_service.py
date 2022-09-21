@@ -7,7 +7,7 @@ from ..entities import NewsDesign as _NewsDesign
 
 class SettingService(_ServiceBase, _SettingServiceRaw):
     async def list_all_news_designs(self, **params) -> _List[_NewsDesign]:
-        return self._list_all_news_designs(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_all_news_designs(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<SettingService: {self.name}>'

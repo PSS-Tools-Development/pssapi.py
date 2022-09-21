@@ -7,7 +7,7 @@ from ..entities import TrainingDesign as _TrainingDesign
 
 class TrainingService(_ServiceBase, _TrainingServiceRaw):
     async def list_all_training_designs_2(self, **params) -> _List[_TrainingDesign]:
-        return self._list_all_training_designs_2(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_all_training_designs_2(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<TrainingService: {self.name}>'

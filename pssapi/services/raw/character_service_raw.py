@@ -18,7 +18,7 @@ class CharacterServiceRaw:
     LIST_ALL_DRAW_DESIGNS_BASE_PATH: str = 'CharacterService/ListAllDrawDesigns'
 
     @staticmethod
-    async def _list_all_character_design_actions(production_server: str, design_version: int = None, **params) -> _List[_CharacterDesignAction]:
+    async def _list_all_character_design_actions(production_server: str, **params) -> _List[_CharacterDesignAction]:
         params = {
             'designVersion': design_version,
             **params

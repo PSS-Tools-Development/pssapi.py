@@ -14,16 +14,16 @@ class GalaxyService(_ServiceBase, _GalaxyServiceRaw):
         return self._go_to(self.production_server, self.star_system_id, self.client_date_time, self.checksum, self.access_token, **params)
 
     async def list_marker_generator_designs(self, **params) -> _List[_StarSystemMarkerGenerator]:
-        return self._list_marker_generator_designs(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_marker_generator_designs(self.production_server, self.language_key, **params)
 
     async def list_star_system_links(self, **params) -> _List[_StarSystemLink]:
-        return self._list_star_system_links(self.production_server, self.design_version, **params)
+        return self._list_star_system_links(self.production_server, **params)
 
     async def list_star_system_markers(self, **params) -> _List[_StarSystemMarker]:
         return self._list_star_system_markers(self.production_server, self.access_token, self.client_date_time, **params)
 
     async def list_star_systems(self, **params) -> _List[_StarSystem]:
-        return self._list_star_systems(self.production_server, self.language_key, self.design_version, **params)
+        return self._list_star_systems(self.production_server, self.language_key, **params)
 
     def __repr__(self) -> str:
         return f'<GalaxyService: {self.name}>'

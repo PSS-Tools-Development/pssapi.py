@@ -7,7 +7,7 @@ from ..entities import RoomDesignSprite as _RoomDesignSprite
 
 class RoomDesignSpriteService(_ServiceBase, _RoomDesignSpriteServiceRaw):
     async def list_room_design_sprites(self, **params) -> _List[_RoomDesignSprite]:
-        return self._list_room_design_sprites(self.production_server, self.design_version, **params)
+        return self._list_room_design_sprites(self.production_server, **params)
 
     def __repr__(self) -> str:
         return f'<RoomDesignSpriteService: {self.name}>'
