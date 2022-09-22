@@ -19,5 +19,6 @@ class UserServiceRaw:
             'searchString': search_string,
             **params
         }
+
         result = await _core.get_entities_from_path(_User, 'Users', production_server, UserServiceRaw.SEARCH_USERS_BASE_PATH, **params)
         return result

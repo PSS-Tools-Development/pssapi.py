@@ -25,6 +25,7 @@ class MessageServiceRaw:
             'rarity': rarity,
             **params
         }
+
         result = await _core.get_entities_from_path(_Message, 'Messages', production_server, MessageServiceRaw.LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH, **params)
         return result
 
@@ -35,5 +36,6 @@ class MessageServiceRaw:
             'accessToken': access_token,
             **params
         }
+
         result = await _core.get_entities_from_path(_Message, 'Messages', production_server, MessageServiceRaw.LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH, **params)
         return result

@@ -6,8 +6,8 @@ from ..entities import League as _League
 
 
 class LeagueService(_ServiceBase, _LeagueServiceRaw):
-    async def list_leagues_2(self, **params) -> _List[_League]:
-        return await self._list_leagues_2(self.production_server, self.language_key, self.access_token, **params)
+    async def list_leagues_2(self, access_token: str, design_version: int = None, **params) -> _List[_League]:
+        return await self._list_leagues_2(self.production_server, self.language_key, access_token, design_version, **params)
 
     def __repr__(self) -> str:
         return f'<LeagueService: {self.name}>'

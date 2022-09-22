@@ -232,6 +232,7 @@ class PssApiClient:
 
 
 async def _get_production_server(device_type: _DeviceType, language_key: _LanguageKey) -> _Optional[str]:
-    setting_service = _SettingService(_constants.DEFAULT_PRODUCTION_SERVER)
+    setting_service = _SettingService(
+        _constants.DEFAULT_PRODUCTION_SERVER, language_key)
     setting = await setting_service.get_latest_version_3(device_type, language_key)
     return setting.production_server

@@ -6,8 +6,8 @@ from ..entities import PromotionDesign as _PromotionDesign
 
 
 class PromotionService(_ServiceBase, _PromotionServiceRaw):
-    async def list_all_promotion_designs_2(self, **params) -> _List[_PromotionDesign]:
-        return await self._list_all_promotion_designs_2(self.production_server, self.language_key, **params)
+    async def list_all_promotion_designs_2(self, design_version: int = None, **params) -> _List[_PromotionDesign]:
+        return await self._list_all_promotion_designs_2(self.production_server, self.language_key, design_version, **params)
 
     def __repr__(self) -> str:
         return f'<PromotionService: {self.name}>'

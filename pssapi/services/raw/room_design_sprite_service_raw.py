@@ -14,10 +14,11 @@ class RoomDesignSpriteServiceRaw:
     LIST_ROOM_DESIGN_SPRITES_BASE_PATH: str = 'RoomDesignSpriteService/ListRoomDesignSprites'
 
     @staticmethod
-    async def _list_room_design_sprites(production_server: str, **params) -> _List[_RoomDesignSprite]:
+    async def _list_room_design_sprites(production_server: str, design_version: int, **params) -> _List[_RoomDesignSprite]:
         params = {
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_RoomDesignSprite, 'RoomDesignSprites', production_server, RoomDesignSpriteServiceRaw.LIST_ROOM_DESIGN_SPRITES_BASE_PATH, **params)
         return result

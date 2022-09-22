@@ -7,17 +7,17 @@ from ..entities import User as _User
 
 
 class AllianceService(_ServiceBase, _AllianceServiceRaw):
-    async def list_alliances_by_championship_score_ranking(self, **params) -> _List[_Alliance]:
-        return await self._list_alliances_by_championship_score_ranking(self.production_server, self.from_, self.to, self.access_token, **params)
+    async def list_alliances_by_championship_score_ranking(self, from_: int, to: int, access_token: str, **params) -> _List[_Alliance]:
+        return await self._list_alliances_by_championship_score_ranking(self.production_server, from_, to, access_token, **params)
 
-    async def list_alliances_by_ranking(self, **params) -> _List[_Alliance]:
-        return await self._list_alliances_by_ranking(self.production_server, self.skip, self.take, **params)
+    async def list_alliances_by_ranking(self, skip: int, take: int, **params) -> _List[_Alliance]:
+        return await self._list_alliances_by_ranking(self.production_server, skip, take, **params)
 
-    async def list_users_2(self, **params) -> _List[_User]:
-        return await self._list_users_2(self.production_server, self.alliance_id, self.skip, self.take, self.access_token, **params)
+    async def list_users_2(self, alliance_id: int, skip: int, take: int, access_token: str, **params) -> _List[_User]:
+        return await self._list_users_2(self.production_server, alliance_id, skip, take, access_token, **params)
 
-    async def search_alliances(self, **params) -> _List[_Alliance]:
-        return await self._search_alliances(self.production_server, self.name, self.skip, self.take, self.access_token, **params)
+    async def search_alliances(self, name: str, skip: int, take: int, access_token: str, **params) -> _List[_Alliance]:
+        return await self._search_alliances(self.production_server, name, skip, take, access_token, **params)
 
     def __repr__(self) -> str:
         return f'<AllianceService: {self.name}>'

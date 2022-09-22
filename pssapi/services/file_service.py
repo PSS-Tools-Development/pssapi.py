@@ -7,11 +7,11 @@ from ..entities import Sprite as _Sprite
 
 
 class FileService(_ServiceBase, _FileServiceRaw):
-    async def list_files_4(self, **params) -> _List[_File]:
-        return await self._list_files_4(self.production_server, self.language_key, **params)
+    async def list_files_4(self, design_version: int = None, **params) -> _List[_File]:
+        return await self._list_files_4(self.production_server, self.language_key, design_version, **params)
 
-    async def list_sprites_2(self, **params) -> _List[_Sprite]:
-        return await self._list_sprites_2(self.production_server, self.language_key, **params)
+    async def list_sprites_2(self, design_version: int = None, **params) -> _List[_Sprite]:
+        return await self._list_sprites_2(self.production_server, self.language_key, design_version, **params)
 
     def __repr__(self) -> str:
         return f'<FileService: {self.name}>'

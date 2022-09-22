@@ -20,6 +20,7 @@ class LiveOpsServiceRaw:
         params = {
             **params
         }
+
         result = await _core.get_entities_from_path(_GetCatalogQuantity, 'LiveOpsService', production_server, LiveOpsServiceRaw.GET_CATALOG_QUANTITY_BASE_PATH, **params)
         return result
 
@@ -30,5 +31,6 @@ class LiveOpsServiceRaw:
             'deviceType': device_type,
             **params
         }
+
         result = await _core.get_entities_from_path(_LiveOps, 'GetTodayLiveOps', production_server, LiveOpsServiceRaw.GET_TODAY_LIVE_OPS_2_BASE_PATH, **params)
         return result

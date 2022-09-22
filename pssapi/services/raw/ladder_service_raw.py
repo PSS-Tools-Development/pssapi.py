@@ -22,6 +22,7 @@ class LadderServiceRaw:
             'accessToken': access_token,
             **params
         }
+
         result = await _core.get_entities_from_path(_User, 'Users', production_server, LadderServiceRaw.LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, **params)
         return result
 
@@ -33,5 +34,6 @@ class LadderServiceRaw:
             'accessToken': access_token,
             **params
         }
+
         result = await _core.get_entities_from_path(_User, 'Users', production_server, LadderServiceRaw.LIST_USERS_BY_RANKING_BASE_PATH, **params)
         return result

@@ -18,30 +18,33 @@ class CharacterServiceRaw:
     LIST_ALL_DRAW_DESIGNS_BASE_PATH: str = 'CharacterService/ListAllDrawDesigns'
 
     @staticmethod
-    async def _list_all_character_design_actions(production_server: str, **params) -> _List[_CharacterDesignAction]:
+    async def _list_all_character_design_actions(production_server: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
         params = {
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_CharacterDesignAction, 'CharacterDesignActions', production_server, CharacterServiceRaw.LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_all_character_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_CharacterDesign]:
+    async def _list_all_character_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_CharacterDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_CharacterDesign, 'CharacterDesigns', production_server, CharacterServiceRaw.LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_all_draw_designs(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_DrawDesign]:
+    async def _list_all_draw_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_DrawDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_DrawDesign, 'DrawDesigns', production_server, CharacterServiceRaw.LIST_ALL_DRAW_DESIGNS_BASE_PATH, **params)
         return result

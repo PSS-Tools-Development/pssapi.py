@@ -24,58 +24,64 @@ class RoomServiceRaw:
     LIST_ROOM_DESIGNS_2_BASE_PATH: str = 'RoomService/ListRoomDesigns2'
 
     @staticmethod
-    async def _list_action_types_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_ActionType]:
+    async def _list_action_types_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ActionType]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_ActionType, 'ActionTypes', production_server, RoomServiceRaw.LIST_ACTION_TYPES_2_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_condition_types_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_ConditionType]:
+    async def _list_condition_types_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ConditionType]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_ConditionType, 'ConditionTypes', production_server, RoomServiceRaw.LIST_CONDITION_TYPES_2_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_craft_designs(production_server: str, **params) -> _List[_CraftDesign]:
+    async def _list_craft_designs(production_server: str, design_version: int, **params) -> _List[_CraftDesign]:
         params = {
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_CraftDesign, 'CraftDesigns', production_server, RoomServiceRaw.LIST_CRAFT_DESIGNS_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_missile_designs(production_server: str, **params) -> _List[_MissileDesign]:
+    async def _list_missile_designs(production_server: str, design_version: int, **params) -> _List[_MissileDesign]:
         params = {
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_MissileDesign, 'MissileDesigns', production_server, RoomServiceRaw.LIST_MISSILE_DESIGNS_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_room_design_purchase(production_server: str, **params) -> _List[_RoomDesignPurchase]:
+    async def _list_room_design_purchase(production_server: str, design_version: int, **params) -> _List[_RoomDesignPurchase]:
         params = {
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_RoomDesignPurchase, 'RoomDesignPurchases', production_server, RoomServiceRaw.LIST_ROOM_DESIGN_PURCHASE_BASE_PATH, **params)
         return result
 
     @staticmethod
-    async def _list_room_designs_2(production_server: str, language_key: str, design_version: int = None, **params) -> _List[_RoomDesign]:
+    async def _list_room_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_RoomDesign]:
         params = {
             'languageKey': language_key,
             'designVersion': design_version,
             **params
         }
+
         result = await _core.get_entities_from_path(_RoomDesign, 'RoomDesigns', production_server, RoomServiceRaw.LIST_ROOM_DESIGNS_2_BASE_PATH, **params)
         return result

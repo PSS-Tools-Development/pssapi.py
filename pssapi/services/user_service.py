@@ -6,8 +6,8 @@ from ..entities import User as _User
 
 
 class UserService(_ServiceBase, _UserServiceRaw):
-    async def search_users(self, **params) -> _List[_User]:
-        return await self._search_users(self.production_server, self.search_string, **params)
+    async def search_users(self, search_string: str, **params) -> _List[_User]:
+        return await self._search_users(self.production_server, search_string, **params)
 
     def __repr__(self) -> str:
         return f'<UserService: {self.name}>'

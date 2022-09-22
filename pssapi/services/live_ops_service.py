@@ -10,8 +10,8 @@ class LiveOpsService(_ServiceBase, _LiveOpsServiceRaw):
     async def get_catalog_quantity(self, **params) -> _List[_GetCatalogQuantity]:
         return await self._get_catalog_quantity(self.production_server, **params)
 
-    async def get_today_live_ops_2(self, **params) -> _List[_LiveOps]:
-        return await self._get_today_live_ops_2(self.production_server, self.language_key, self.device_type, **params)
+    async def get_today_live_ops_2(self, device_type: str, **params) -> _List[_LiveOps]:
+        return await self._get_today_live_ops_2(self.production_server, self.language_key, device_type, **params)
 
     def __repr__(self) -> str:
         return f'<LiveOpsService: {self.name}>'
