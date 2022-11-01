@@ -10,9 +10,9 @@ setup(
     version='1.0.0.dev1',
     description='Wrapper for the Pixel Starships API',
     long_description=long_description,
-    author='Zukunftsmusik',
+    author='PSS-Tools-Development',
     author_email='',
-    url='https://github.com/Zukunftsmusik/pssapi.py',
+    url='https://github.com/PSS-Tools-Development/pssapi.py',
     license='',
     classifiers=[
         'Development Status :: 3 - Alpha',
