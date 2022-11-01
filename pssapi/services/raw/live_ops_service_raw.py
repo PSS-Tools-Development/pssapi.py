@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import GetCatalogQuantity as _GetCatalogQuantity
 
-
 # ---------- Constants ----------
 
 GET_CATALOG_QUANTITY_BASE_PATH: str = 'LiveOpsService/GetCatalogQuantity'

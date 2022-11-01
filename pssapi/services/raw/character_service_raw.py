@@ -9,7 +9,6 @@ from ...entities import CharacterDesign as _CharacterDesign
 from ...entities import CharacterDesignAction as _CharacterDesignAction
 from ...entities import DrawDesign as _DrawDesign
 
-
 # ---------- Constants ----------
 
 LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH: str = 'CharacterService/ListAllCharacterDesignActions'

@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import MissionDesign as _MissionDesign
 
-
 # ---------- Constants ----------
 
 LIST_ALL_MISSION_DESIGNS_4_BASE_PATH: str = 'MissionService/ListAllMissionDesigns4'

@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import AchievementDesign as _AchievementDesign
 
-
 # ---------- Constants ----------
 
 LIST_ACHIEVEMENT_DESIGNS_2_BASE_PATH: str = 'AchievementService/ListAchievementDesigns2'

@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import User as _User
 
-
 # ---------- Constants ----------
 
 SEARCH_USERS_BASE_PATH: str = 'UserService/SearchUsers'

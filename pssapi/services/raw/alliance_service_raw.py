@@ -8,7 +8,6 @@ from ... import core as _core
 from ...entities import Alliance as _Alliance
 from ...entities import User as _User
 
-
 # ---------- Constants ----------
 
 LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH: str = 'AllianceService/ListAlliancesByChampionshipScoreRanking'

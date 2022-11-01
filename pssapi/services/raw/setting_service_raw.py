@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import NewsDesign as _NewsDesign
 
-
 # ---------- Constants ----------
 
 LIST_ALL_NEWS_DESIGNS_BASE_PATH: str = 'SettingService/ListAllNewsDesigns'

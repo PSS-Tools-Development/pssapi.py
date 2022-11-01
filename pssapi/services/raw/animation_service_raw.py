@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import Animation as _Animation
 
-
 # ---------- Constants ----------
 
 LIST_ANIMATIONS_BASE_PATH: str = 'AnimationService/ListAnimations'

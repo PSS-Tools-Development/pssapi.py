@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import Background as _Background
 
-
 # ---------- Constants ----------
 
 LIST_BACKGROUNDS_BASE_PATH: str = 'BackgroundService/ListBackgrounds'

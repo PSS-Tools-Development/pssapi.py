@@ -7,7 +7,6 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import TaskDesign as _TaskDesign
 
-
 # ---------- Constants ----------
 
 LIST_ALL_TASK_DESIGNS_2_BASE_PATH: str = 'TaskService/ListAllTaskDesigns2'

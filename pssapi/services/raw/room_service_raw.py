@@ -12,7 +12,6 @@ from ...entities import MissileDesign as _MissileDesign
 from ...entities import RoomDesign as _RoomDesign
 from ...entities import RoomDesignPurchase as _RoomDesignPurchase
 
-
 # ---------- Constants ----------
 
 LIST_ACTION_TYPES_2_BASE_PATH: str = 'RoomService/ListActionTypes2'

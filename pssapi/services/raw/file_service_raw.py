@@ -8,7 +8,6 @@ from ... import core as _core
 from ...entities import File as _File
 from ...entities import Sprite as _Sprite
 
-
 # ---------- Constants ----------
 
 LIST_FILES_4_BASE_PATH: str = 'FileService/ListFiles4'

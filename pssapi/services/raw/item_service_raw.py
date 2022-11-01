@@ -8,7 +8,6 @@ from ... import core as _core
 from ...entities import ItemDesign as _ItemDesign
 from ...entities import ItemDesignAction as _ItemDesignAction
 
-
 # ---------- Constants ----------
 
 LIST_ITEM_DESIGN_ACTIONS_BASE_PATH: str = 'ItemService/ListItemDesignActions'

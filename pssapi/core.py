@@ -1,7 +1,8 @@
-import aiohttp as _aiohttp
 from typing import List as _List
 from typing import Type as _Type
 from xml.etree import ElementTree as _ElementTree
+
+import aiohttp as _aiohttp
 
 from pssapi.entities import EntityBase as _EntityBase
 
