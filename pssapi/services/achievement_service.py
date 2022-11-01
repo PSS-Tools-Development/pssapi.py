@@ -5,12 +5,7 @@ from .service_base import ServiceBase as _ServiceBase
 from ..entities import AchievementDesign as _AchievementDesign
 
 
-class AchievementService(_ServiceBase, _AchievementServiceRaw):
-    async def list_achievement_designs_2(self, design_version: int = None, **params) -> _List[_AchievementDesign]:
-        return await self._list_achievement_designs_2(self.production_server, self.language_key, design_version, **params)
-
-    def __repr__(self) -> str:
-        return f'<AchievementService: {self.name}>'
-
-    def __str__(self) -> str:
-        return f'<AchievementService: {self.name}>'
+class AchievementService(_ServiceBase):
+    async def list_achievement_designs(self, design_version: int = None) -> _List[_AchievementDesign]:
+        result = await _AchievementServiceRaw.list_achievement_designs_2(self.production_server, self.language_key, design_version)
+        return result

@@ -9,10 +9,10 @@ class User(_EntityWithIdBase, _UserRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<User {self.id}: {self.name}>'
+        return f'<User {self.id}>'
 
     def __str__(self) -> str:
-        return f'<User {self.id}: {self.name}>'
+        return f'<User {self.id}>'
 
     @property
     def id(self) -> int:

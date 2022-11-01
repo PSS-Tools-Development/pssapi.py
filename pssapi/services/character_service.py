@@ -7,18 +7,15 @@ from ..entities import CharacterDesignAction as _CharacterDesignAction
 from ..entities import DrawDesign as _DrawDesign
 
 
-class CharacterService(_ServiceBase, _CharacterServiceRaw):
-    async def list_all_character_design_actions(self, design_version: int = None, **params) -> _List[_CharacterDesignAction]:
-        return await self._list_all_character_design_actions(self.production_server, design_version, **params)
+class CharacterService(_ServiceBase):
+    async def list_all_character_design_actions(self, design_version: int = None) -> _List[_CharacterDesignAction]:
+        result = await _CharacterServiceRaw.list_all_character_design_actions(self.production_server, design_version)
+        return result
 
-    async def list_all_character_designs_2(self, design_version: int = None, **params) -> _List[_CharacterDesign]:
-        return await self._list_all_character_designs_2(self.production_server, self.language_key, design_version, **params)
+    async def list_all_character_designs(self, design_version: int = None) -> _List[_CharacterDesign]:
+        result = await _CharacterServiceRaw.list_all_character_designs_2(self.production_server, self.language_key, design_version)
+        return result
 
-    async def list_all_draw_designs(self, design_version: int = None, **params) -> _List[_DrawDesign]:
-        return await self._list_all_draw_designs(self.production_server, self.language_key, design_version, **params)
-
-    def __repr__(self) -> str:
-        return f'<CharacterService: {self.name}>'
-
-    def __str__(self) -> str:
-        return f'<CharacterService: {self.name}>'
+    async def list_all_draw_designs(self, design_version: int = None) -> _List[_DrawDesign]:
+        result = await _CharacterServiceRaw.list_all_draw_designs(self.production_server, self.language_key, design_version)
+        return result

@@ -9,10 +9,10 @@ class File(_EntityWithIdBase, _FileRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<File {self.id}: {self.name}>'
+        return f'<File {self.id}>'
 
     def __str__(self) -> str:
-        return f'<File {self.id}: {self.name}>'
+        return f'<File {self.id}>'
 
     @property
     def id(self) -> int:

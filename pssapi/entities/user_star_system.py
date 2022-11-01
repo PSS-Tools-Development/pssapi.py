@@ -9,10 +9,10 @@ class UserStarSystem(_EntityWithIdBase, _UserStarSystemRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<UserStarSystem {self.id}: {self.name}>'
+        return f'<UserStarSystem {self.id}>'
 
     def __str__(self) -> str:
-        return f'<UserStarSystem {self.id}: {self.name}>'
+        return f'<UserStarSystem {self.id}>'
 
     @property
     def id(self) -> int:

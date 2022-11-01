@@ -9,10 +9,10 @@ class SituationDesign(_EntityWithIdBase, _SituationDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<SituationDesign {self.id}: {self.name}>'
+        return f'<SituationDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<SituationDesign {self.id}: {self.name}>'
+        return f'<SituationDesign {self.id}>'
 
     @property
     def id(self) -> int:

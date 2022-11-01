@@ -9,10 +9,10 @@ class Ship(_EntityWithIdBase, _ShipRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Ship {self.id}: {self.name}>'
+        return f'<Ship {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Ship {self.id}: {self.name}>'
+        return f'<Ship {self.id}>'
 
     @property
     def id(self) -> int:

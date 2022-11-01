@@ -9,10 +9,10 @@ class PromotionDesign(_EntityWithIdBase, _PromotionDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<PromotionDesign {self.id}: {self.name}>'
+        return f'<PromotionDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<PromotionDesign {self.id}: {self.name}>'
+        return f'<PromotionDesign {self.id}>'
 
     @property
     def id(self) -> int:

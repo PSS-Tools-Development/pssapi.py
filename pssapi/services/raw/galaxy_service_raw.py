@@ -2,7 +2,6 @@
     This file has been generated automatically
 """
 
-from datetime import datetime as _datetime
 from typing import List as _List
 
 from ... import core as _core
@@ -13,67 +12,63 @@ from ...entities import StarSystemMarker as _StarSystemMarker
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 
 
-class GalaxyServiceRaw:
+# ---------- Constants ----------
 
-    SERVICE_NAME = 'GalaxyService'
-    GO_TO_BASE_PATH: str = 'GalaxyService/GoTo'
-    LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = 'GalaxyService/ListMarkerGeneratorDesigns'
-    LIST_STAR_SYSTEM_LINKS_BASE_PATH: str = 'GalaxyService/ListStarSystemLinks'
-    LIST_STAR_SYSTEM_MARKERS_BASE_PATH: str = 'GalaxyService/ListStarSystemMarkers'
-    LIST_STAR_SYSTEMS_BASE_PATH: str = 'GalaxyService/ListStarSystems'
+GO_TO_BASE_PATH: str = 'GalaxyService/GoTo'
+LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = 'GalaxyService/ListMarkerGeneratorDesigns'
+LIST_STAR_SYSTEM_LINKS_BASE_PATH: str = 'GalaxyService/ListStarSystemLinks'
+LIST_STAR_SYSTEM_MARKERS_BASE_PATH: str = 'GalaxyService/ListStarSystemMarkers'
+LIST_STAR_SYSTEMS_BASE_PATH: str = 'GalaxyService/ListStarSystems'
 
-    @staticmethod
-    async def _go_to(production_server: str, star_system_id: int, client_date_time: _datetime, checksum: str, access_token: str, **params) -> _List[_Ship]:
-        params = {
-            'starSystemId': star_system_id,
-            'clientDateTime': client_date_time,
-            'checksum': checksum,
-            'accessToken': access_token,
-            **params
-        }
 
-        result = await _core.get_entities_from_path(_Ship, 'GoTo', production_server, GalaxyServiceRaw.GO_TO_BASE_PATH, **params)
-        return result
+# ---------- Endpoints ----------
 
-    @staticmethod
-    async def _list_marker_generator_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystemMarkerGenerator]:
-        params = {
-            'languageKey': language_key,
-            'designVersion': design_version,
-            **params
-        }
+async def go_to(production_server: str, star_system_id: int, client_date_time: str, checksum: str, access_token: str, **params) -> _List[_Ship]:
+    params = {
+        'starSystemId': star_system_id,
+        'clientDateTime': client_date_time,
+        'checksum': checksum,
+        'accessToken': access_token,
+        **params
+    }
+    result = await _core.get_entities_from_path(_Ship, 'GoTo', production_server, GO_TO_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_StarSystemMarkerGenerator, 'StarSystemMarkerGenerators', production_server, GalaxyServiceRaw.LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, **params)
-        return result
 
-    @staticmethod
-    async def _list_star_system_links(production_server: str, design_version: int, **params) -> _List[_StarSystemLink]:
-        params = {
-            'designVersion': design_version,
-            **params
-        }
+async def list_marker_generator_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystemMarkerGenerator]:
+    params = {
+        'languageKey': language_key,
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_StarSystemMarkerGenerator, 'StarSystemMarkerGenerators', production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_StarSystemLink, 'StarSystemLinks', production_server, GalaxyServiceRaw.LIST_STAR_SYSTEM_LINKS_BASE_PATH, **params)
-        return result
 
-    @staticmethod
-    async def _list_star_system_markers(production_server: str, access_token: str, client_date_time: _datetime, **params) -> _List[_StarSystemMarker]:
-        params = {
-            'accessToken': access_token,
-            'clientDateTime': client_date_time,
-            **params
-        }
+async def list_star_system_links(production_server: str, design_version: int, **params) -> _List[_StarSystemLink]:
+    params = {
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_StarSystemLink, 'StarSystemLinks', production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_StarSystemMarker, 'StarSystemMarkers', production_server, GalaxyServiceRaw.LIST_STAR_SYSTEM_MARKERS_BASE_PATH, **params)
-        return result
 
-    @staticmethod
-    async def _list_star_systems(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystem]:
-        params = {
-            'languageKey': language_key,
-            'designVersion': design_version,
-            **params
-        }
+async def list_star_system_markers(production_server: str, access_token: str, client_date_time: str, **params) -> _List[_StarSystemMarker]:
+    params = {
+        'accessToken': access_token,
+        'clientDateTime': client_date_time,
+        **params
+    }
+    result = await _core.get_entities_from_path(_StarSystemMarker, 'StarSystemMarkers', production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_StarSystem, 'StarSystems', production_server, GalaxyServiceRaw.LIST_STAR_SYSTEMS_BASE_PATH, **params)
-        return result
+
+async def list_star_systems(production_server: str, language_key: str, design_version: int, **params) -> _List[_StarSystem]:
+    params = {
+        'languageKey': language_key,
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_StarSystem, 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, **params)
+    return result

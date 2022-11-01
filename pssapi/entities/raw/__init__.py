@@ -22,7 +22,6 @@ from .item_raw import ItemRaw
 from .item_design_raw import ItemDesignRaw
 from .item_design_action_raw import ItemDesignActionRaw
 from .league_raw import LeagueRaw
-from .live_ops_raw import LiveOpsRaw
 from .message_raw import MessageRaw
 from .missile_design_raw import MissileDesignRaw
 from .mission_design_raw import MissionDesignRaw

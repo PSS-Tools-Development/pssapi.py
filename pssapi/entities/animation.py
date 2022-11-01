@@ -9,10 +9,10 @@ class Animation(_EntityWithIdBase, _AnimationRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Animation {self.id}: {self.name}>'
+        return f'<Animation {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Animation {self.id}: {self.name}>'
+        return f'<Animation {self.id}>'
 
     @property
     def id(self) -> int:

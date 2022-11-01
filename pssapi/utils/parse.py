@@ -1,5 +1,5 @@
 from datetime import datetime as _datetime
-from strenum import StrEnum as _StrEnum
+from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
 

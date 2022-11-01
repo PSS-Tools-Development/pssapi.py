@@ -9,10 +9,10 @@ class CollectionDesign(_EntityWithIdBase, _CollectionDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<CollectionDesign {self.id}: {self.name}>'
+        return f'<CollectionDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<CollectionDesign {self.id}: {self.name}>'
+        return f'<CollectionDesign {self.id}>'
 
     @property
     def id(self) -> int:

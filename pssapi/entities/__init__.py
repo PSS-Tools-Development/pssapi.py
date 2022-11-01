@@ -21,7 +21,6 @@ from .item import *
 from .item_design import *
 from .item_design_action import *
 from .league import *
-from .live_ops import *
 from .message import *
 from .missile_design import *
 from .mission_design import *

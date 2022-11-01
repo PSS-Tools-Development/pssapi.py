@@ -9,10 +9,10 @@ class CraftDesign(_EntityWithIdBase, _CraftDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<CraftDesign {self.id}: {self.name}>'
+        return f'<CraftDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<CraftDesign {self.id}: {self.name}>'
+        return f'<CraftDesign {self.id}>'
 
     @property
     def id(self) -> int:

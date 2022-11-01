@@ -9,10 +9,10 @@ class RewardDesign(_EntityWithIdBase, _RewardDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<RewardDesign {self.id}: {self.name}>'
+        return f'<RewardDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<RewardDesign {self.id}: {self.name}>'
+        return f'<RewardDesign {self.id}>'
 
     @property
     def id(self) -> int:

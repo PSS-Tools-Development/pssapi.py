@@ -9,10 +9,10 @@ class SeasonDesign(_EntityWithIdBase, _SeasonDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<SeasonDesign {self.id}: {self.name}>'
+        return f'<SeasonDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<SeasonDesign {self.id}: {self.name}>'
+        return f'<SeasonDesign {self.id}>'
 
     @property
     def id(self) -> int:

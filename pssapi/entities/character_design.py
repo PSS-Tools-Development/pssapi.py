@@ -9,10 +9,10 @@ class CharacterDesign(_EntityWithIdBase, _CharacterDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<CharacterDesign {self.id}: {self.name}>'
+        return f'<CharacterDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<CharacterDesign {self.id}: {self.name}>'
+        return f'<CharacterDesign {self.id}>'
 
     @property
     def id(self) -> int:

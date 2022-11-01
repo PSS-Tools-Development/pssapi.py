@@ -9,10 +9,10 @@ class RoomDesignSprite(_EntityWithIdBase, _RoomDesignSpriteRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<RoomDesignSprite {self.id}: {self.name}>'
+        return f'<RoomDesignSprite {self.id}>'
 
     def __str__(self) -> str:
-        return f'<RoomDesignSprite {self.id}: {self.name}>'
+        return f'<RoomDesignSprite {self.id}>'
 
     @property
     def id(self) -> int:

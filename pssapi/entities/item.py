@@ -9,10 +9,10 @@ class Item(_EntityWithIdBase, _ItemRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Item {self.id}: {self.name}>'
+        return f'<Item {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Item {self.id}: {self.name}>'
+        return f'<Item {self.id}>'
 
     @property
     def id(self) -> int:

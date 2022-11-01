@@ -11,38 +11,66 @@ class RoomDesignSpriteRaw:
     XML_NODE_NAME: str = 'RoomDesignSprite'
 
     def __init__(self, room_design_sprite_info: _EntityInfo) -> None:
+        self.__skin_name: str = _parse.pss_str(
+            room_design_sprite_info.get('SkinName'))
+        self.__room_effect_parameter: int = _parse.pss_int(
+            room_design_sprite_info.get('RoomEffectParameter'))
+        self.__requirement_string: str = _parse.pss_str(
+            room_design_sprite_info.get('RequirementString'))
+        self.__animation_id: int = _parse.pss_int(
+            room_design_sprite_info.get('AnimationId'))
+        self.__room_sprite_type: str = _parse.pss_str(
+            room_design_sprite_info.get('RoomSpriteType'))
+        self.__flags: int = _parse.pss_int(
+            room_design_sprite_info.get('Flags'))
         self.__room_design_sprite_id: int = _parse.pss_int(
             room_design_sprite_info.get('RoomDesignSpriteId'))
+        self.__skin_description: str = _parse.pss_str(
+            room_design_sprite_info.get('SkinDescription'))
         self.__room_design_id: int = _parse.pss_int(
             room_design_sprite_info.get('RoomDesignId'))
         self.__sprite_id: int = _parse.pss_int(
             room_design_sprite_info.get('SpriteId'))
-        self.__room_sprite_type: str = _parse.pss_str(
-            room_design_sprite_info.get('RoomSpriteType'))
-        self.__room_effect_type: str = _parse.pss_str(
-            room_design_sprite_info.get('RoomEffectType'))
-        self.__room_effect_parameter: int = _parse.pss_int(
-            room_design_sprite_info.get('RoomEffectParameter'))
-        self.__skin_name: str = _parse.pss_str(
-            room_design_sprite_info.get('SkinName'))
-        self.__skin_description: str = _parse.pss_str(
-            room_design_sprite_info.get('SkinDescription'))
-        self.__requirement_string: str = _parse.pss_str(
-            room_design_sprite_info.get('RequirementString'))
-        self.__flags: int = _parse.pss_int(
-            room_design_sprite_info.get('Flags'))
         self.__metadata: str = _parse.pss_str(
             room_design_sprite_info.get('Metadata'))
         self.__race_id: int = _parse.pss_int(
             room_design_sprite_info.get('RaceId'))
-        self.__animation_id: int = _parse.pss_int(
-            room_design_sprite_info.get('AnimationId'))
+        self.__room_effect_type: str = _parse.pss_str(
+            room_design_sprite_info.get('RoomEffectType'))
         self.__skin_key: int = _parse.pss_int(
             room_design_sprite_info.get('SkinKey'))
 
     @property
+    def skin_name(self) -> str:
+        return self.__skin_name
+
+    @property
+    def room_effect_parameter(self) -> int:
+        return self.__room_effect_parameter
+
+    @property
+    def requirement_string(self) -> str:
+        return self.__requirement_string
+
+    @property
+    def animation_id(self) -> int:
+        return self.__animation_id
+
+    @property
+    def room_sprite_type(self) -> str:
+        return self.__room_sprite_type
+
+    @property
+    def flags(self) -> int:
+        return self.__flags
+
+    @property
     def room_design_sprite_id(self) -> int:
         return self.__room_design_sprite_id
+
+    @property
+    def skin_description(self) -> str:
+        return self.__skin_description
 
     @property
     def room_design_id(self) -> int:
@@ -53,34 +81,6 @@ class RoomDesignSpriteRaw:
         return self.__sprite_id
 
     @property
-    def room_sprite_type(self) -> str:
-        return self.__room_sprite_type
-
-    @property
-    def room_effect_type(self) -> str:
-        return self.__room_effect_type
-
-    @property
-    def room_effect_parameter(self) -> int:
-        return self.__room_effect_parameter
-
-    @property
-    def skin_name(self) -> str:
-        return self.__skin_name
-
-    @property
-    def skin_description(self) -> str:
-        return self.__skin_description
-
-    @property
-    def requirement_string(self) -> str:
-        return self.__requirement_string
-
-    @property
-    def flags(self) -> int:
-        return self.__flags
-
-    @property
     def metadata(self) -> str:
         return self.__metadata
 
@@ -89,8 +89,8 @@ class RoomDesignSpriteRaw:
         return self.__race_id
 
     @property
-    def animation_id(self) -> int:
-        return self.__animation_id
+    def room_effect_type(self) -> str:
+        return self.__room_effect_type
 
     @property
     def skin_key(self) -> int:

@@ -9,10 +9,10 @@ class ChallengeDesign(_EntityWithIdBase, _ChallengeDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<ChallengeDesign {self.id}: {self.name}>'
+        return f'<ChallengeDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<ChallengeDesign {self.id}: {self.name}>'
+        return f'<ChallengeDesign {self.id}>'
 
     @property
     def id(self) -> int:

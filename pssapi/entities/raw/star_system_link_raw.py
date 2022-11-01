@@ -13,31 +13,31 @@ class StarSystemLinkRaw:
     def __init__(self, star_system_link_info: _EntityInfo) -> None:
         self.__star_system_link_id: int = _parse.pss_int(
             star_system_link_info.get('StarSystemLinkId'))
-        self.__from_star_system_id: int = _parse.pss_int(
-            star_system_link_info.get('FromStarSystemId'))
-        self.__to_star_system_id: int = _parse.pss_int(
-            star_system_link_info.get('ToStarSystemId'))
         self.__is_two_way: bool = _parse.pss_bool(
             star_system_link_info.get('IsTwoWay'))
+        self.__to_star_system_id: int = _parse.pss_int(
+            star_system_link_info.get('ToStarSystemId'))
         self.__travel_time: int = _parse.pss_int(
             star_system_link_info.get('TravelTime'))
+        self.__from_star_system_id: int = _parse.pss_int(
+            star_system_link_info.get('FromStarSystemId'))
 
     @property
     def star_system_link_id(self) -> int:
         return self.__star_system_link_id
 
     @property
-    def from_star_system_id(self) -> int:
-        return self.__from_star_system_id
+    def is_two_way(self) -> bool:
+        return self.__is_two_way
 
     @property
     def to_star_system_id(self) -> int:
         return self.__to_star_system_id
 
     @property
-    def is_two_way(self) -> bool:
-        return self.__is_two_way
-
-    @property
     def travel_time(self) -> int:
         return self.__travel_time
+
+    @property
+    def from_star_system_id(self) -> int:
+        return self.__from_star_system_id

@@ -9,10 +9,10 @@ class MissionDesign(_EntityWithIdBase, _MissionDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<MissionDesign {self.id}: {self.name}>'
+        return f'<MissionDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<MissionDesign {self.id}: {self.name}>'
+        return f'<MissionDesign {self.id}>'
 
     @property
     def id(self) -> int:

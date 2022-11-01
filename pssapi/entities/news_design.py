@@ -9,10 +9,10 @@ class NewsDesign(_EntityWithIdBase, _NewsDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<NewsDesign {self.id}: {self.name}>'
+        return f'<NewsDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<NewsDesign {self.id}: {self.name}>'
+        return f'<NewsDesign {self.id}>'
 
     @property
     def id(self) -> int:

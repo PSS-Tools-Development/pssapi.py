@@ -9,10 +9,10 @@ class Alliance(_EntityWithIdBase, _AllianceRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Alliance {self.id}: {self.name}>'
+        return f'<Alliance {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Alliance {self.id}: {self.name}>'
+        return f'<Alliance {self.id}>'
 
     @property
     def id(self) -> int:

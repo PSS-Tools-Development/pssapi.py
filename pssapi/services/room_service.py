@@ -10,27 +10,27 @@ from ..entities import RoomDesign as _RoomDesign
 from ..entities import RoomDesignPurchase as _RoomDesignPurchase
 
 
-class RoomService(_ServiceBase, _RoomServiceRaw):
-    async def list_action_types_2(self, design_version: int = None, **params) -> _List[_ActionType]:
-        return await self._list_action_types_2(self.production_server, self.language_key, design_version, **params)
+class RoomService(_ServiceBase):
+    async def list_action_types(self, design_version: int = None) -> _List[_ActionType]:
+        result = await _RoomServiceRaw.list_action_types_2(self.production_server, self.language_key, design_version)
+        return result
 
-    async def list_condition_types_2(self, design_version: int = None, **params) -> _List[_ConditionType]:
-        return await self._list_condition_types_2(self.production_server, self.language_key, design_version, **params)
+    async def list_condition_types(self, design_version: int = None) -> _List[_ConditionType]:
+        result = await _RoomServiceRaw.list_condition_types_2(self.production_server, self.language_key, design_version)
+        return result
 
-    async def list_craft_designs(self, design_version: int = None, **params) -> _List[_CraftDesign]:
-        return await self._list_craft_designs(self.production_server, design_version, **params)
+    async def list_craft_designs(self, design_version: int = None) -> _List[_CraftDesign]:
+        result = await _RoomServiceRaw.list_craft_designs(self.production_server, design_version)
+        return result
 
-    async def list_missile_designs(self, design_version: int = None, **params) -> _List[_MissileDesign]:
-        return await self._list_missile_designs(self.production_server, design_version, **params)
+    async def list_missile_designs(self, design_version: int = None) -> _List[_MissileDesign]:
+        result = await _RoomServiceRaw.list_missile_designs(self.production_server, design_version)
+        return result
 
-    async def list_room_design_purchase(self, design_version: int = None, **params) -> _List[_RoomDesignPurchase]:
-        return await self._list_room_design_purchase(self.production_server, design_version, **params)
+    async def list_room_design_purchase(self, design_version: int = None) -> _List[_RoomDesignPurchase]:
+        result = await _RoomServiceRaw.list_room_design_purchase(self.production_server, design_version)
+        return result
 
-    async def list_room_designs_2(self, design_version: int = None, **params) -> _List[_RoomDesign]:
-        return await self._list_room_designs_2(self.production_server, self.language_key, design_version, **params)
-
-    def __repr__(self) -> str:
-        return f'<RoomService: {self.name}>'
-
-    def __str__(self) -> str:
-        return f'<RoomService: {self.name}>'
+    async def list_room_designs(self, design_version: int = None) -> _List[_RoomDesign]:
+        result = await _RoomServiceRaw.list_room_designs_2(self.production_server, self.language_key, design_version)
+        return result

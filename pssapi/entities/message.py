@@ -9,10 +9,10 @@ class Message(_EntityWithIdBase, _MessageRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Message {self.id}: {self.name}>'
+        return f'<Message {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Message {self.id}: {self.name}>'
+        return f'<Message {self.id}>'
 
     @property
     def id(self) -> int:

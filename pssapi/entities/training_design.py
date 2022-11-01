@@ -9,10 +9,10 @@ class TrainingDesign(_EntityWithIdBase, _TrainingDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<TrainingDesign {self.id}: {self.name}>'
+        return f'<TrainingDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<TrainingDesign {self.id}: {self.name}>'
+        return f'<TrainingDesign {self.id}>'
 
     @property
     def id(self) -> int:

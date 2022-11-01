@@ -9,10 +9,10 @@ class RoomDesign(_EntityWithIdBase, _RoomDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<RoomDesign {self.id}: {self.name}>'
+        return f'<RoomDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<RoomDesign {self.id}: {self.name}>'
+        return f'<RoomDesign {self.id}>'
 
     @property
     def id(self) -> int:

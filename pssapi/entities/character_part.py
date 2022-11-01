@@ -9,10 +9,10 @@ class CharacterPart(_EntityWithIdBase, _CharacterPartRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<CharacterPart {self.id}: {self.name}>'
+        return f'<CharacterPart {self.id}>'
 
     def __str__(self) -> str:
-        return f'<CharacterPart {self.id}: {self.name}>'
+        return f'<CharacterPart {self.id}>'
 
     @property
     def id(self) -> int:

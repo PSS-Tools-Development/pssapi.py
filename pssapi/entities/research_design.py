@@ -9,10 +9,10 @@ class ResearchDesign(_EntityWithIdBase, _ResearchDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<ResearchDesign {self.id}: {self.name}>'
+        return f'<ResearchDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<ResearchDesign {self.id}: {self.name}>'
+        return f'<ResearchDesign {self.id}>'
 
     @property
     def id(self) -> int:

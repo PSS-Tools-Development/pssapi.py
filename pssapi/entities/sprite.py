@@ -9,10 +9,10 @@ class Sprite(_EntityWithIdBase, _SpriteRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Sprite {self.id}: {self.name}>'
+        return f'<Sprite {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Sprite {self.id}: {self.name}>'
+        return f'<Sprite {self.id}>'
 
     @property
     def id(self) -> int:

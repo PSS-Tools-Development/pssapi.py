@@ -6,15 +6,11 @@ from ..entities import File as _File
 from ..entities import Sprite as _Sprite
 
 
-class FileService(_ServiceBase, _FileServiceRaw):
-    async def list_files_4(self, design_version: int = None, **params) -> _List[_File]:
-        return await self._list_files_4(self.production_server, self.language_key, design_version, **params)
+class FileService(_ServiceBase):
+    async def list_files(self, design_version: int = None) -> _List[_File]:
+        result = await _FileServiceRaw.list_files_4(self.production_server, self.language_key, design_version)
+        return result
 
-    async def list_sprites_2(self, design_version: int = None, **params) -> _List[_Sprite]:
-        return await self._list_sprites_2(self.production_server, self.language_key, design_version, **params)
-
-    def __repr__(self) -> str:
-        return f'<FileService: {self.name}>'
-
-    def __str__(self) -> str:
-        return f'<FileService: {self.name}>'
+    async def list_sprites(self, design_version: int = None) -> _List[_Sprite]:
+        result = await _FileServiceRaw.list_sprites_2(self.production_server, self.language_key, design_version)
+        return result

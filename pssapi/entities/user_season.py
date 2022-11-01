@@ -9,10 +9,10 @@ class UserSeason(_EntityWithIdBase, _UserSeasonRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<UserSeason {self.id}: {self.name}>'
+        return f'<UserSeason {self.id}>'
 
     def __str__(self) -> str:
-        return f'<UserSeason {self.id}: {self.name}>'
+        return f'<UserSeason {self.id}>'
 
     @property
     def id(self) -> int:

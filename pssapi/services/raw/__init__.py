@@ -1,30 +1,28 @@
-from .service_base_raw import ServiceBaseRaw
-
-from .achievement_service_raw import AchievementServiceRaw
-from .alliance_service_raw import AllianceServiceRaw
-from .animation_service_raw import AnimationServiceRaw
-from .background_service_raw import BackgroundServiceRaw
-from .challenge_service_raw import ChallengeServiceRaw
-from .character_service_raw import CharacterServiceRaw
-from .collection_service_raw import CollectionServiceRaw
-from .division_service_raw import DivisionServiceRaw
-from .file_service_raw import FileServiceRaw
-from .galaxy_service_raw import GalaxyServiceRaw
-from .item_service_raw import ItemServiceRaw
-from .ladder_service_raw import LadderServiceRaw
-from .league_service_raw import LeagueServiceRaw
-from .live_ops_service_raw import LiveOpsServiceRaw
-from .message_service_raw import MessageServiceRaw
-from .mission_service_raw import MissionServiceRaw
-from .promotion_service_raw import PromotionServiceRaw
-from .research_service_raw import ResearchServiceRaw
-from .reward_service_raw import RewardServiceRaw
-from .room_design_sprite_service_raw import RoomDesignSpriteServiceRaw
-from .room_service_raw import RoomServiceRaw
-from .season_service_raw import SeasonServiceRaw
-from .setting_service_raw import SettingServiceRaw
-from .ship_service_raw import ShipServiceRaw
-from .situation_service_raw import SituationServiceRaw
-from .task_service_raw import TaskServiceRaw
-from .training_service_raw import TrainingServiceRaw
-from .user_service_raw import UserServiceRaw
+from . import achievement_service_raw as AchievementServiceRaw
+from . import alliance_service_raw as AllianceServiceRaw
+from . import animation_service_raw as AnimationServiceRaw
+from . import background_service_raw as BackgroundServiceRaw
+from . import challenge_service_raw as ChallengeServiceRaw
+from . import character_service_raw as CharacterServiceRaw
+from . import collection_service_raw as CollectionServiceRaw
+from . import division_service_raw as DivisionServiceRaw
+from . import file_service_raw as FileServiceRaw
+from . import galaxy_service_raw as GalaxyServiceRaw
+from . import item_service_raw as ItemServiceRaw
+from . import ladder_service_raw as LadderServiceRaw
+from . import league_service_raw as LeagueServiceRaw
+from . import live_ops_service_raw as LiveOpsServiceRaw
+from . import message_service_raw as MessageServiceRaw
+from . import mission_service_raw as MissionServiceRaw
+from . import promotion_service_raw as PromotionServiceRaw
+from . import research_service_raw as ResearchServiceRaw
+from . import reward_service_raw as RewardServiceRaw
+from . import room_design_sprite_service_raw as RoomDesignSpriteServiceRaw
+from . import room_service_raw as RoomServiceRaw
+from . import season_service_raw as SeasonServiceRaw
+from . import setting_service_raw as SettingServiceRaw
+from . import ship_service_raw as ShipServiceRaw
+from . import situation_service_raw as SituationServiceRaw
+from . import task_service_raw as TaskServiceRaw
+from . import training_service_raw as TrainingServiceRaw
+from . import user_service_raw as UserServiceRaw

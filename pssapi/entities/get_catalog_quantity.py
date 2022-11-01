@@ -9,7 +9,7 @@ class GetCatalogQuantity(_EntityBase, _GetCatalogQuantityRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<GetCatalogQuantity: {self.name}>'
+        return '<GetCatalogQuantity>'
 
     def __str__(self) -> str:
-        return f'<GetCatalogQuantity: {self.name}>'
+        return '<GetCatalogQuantity>'

@@ -36,8 +36,8 @@ from .enums import LanguageKey as _LanguageKey
 
 class PssApiClient:
     def __init__(self, device_type: _DeviceType = None, language_key: _LanguageKey = None, production_server: str = None) -> None:
-        self.__device_type: _DeviceType = device_type or _DeviceType.DeviceTypeAndroid
-        self.__language_key: _LanguageKey = language_key or _LanguageKey.English
+        self.__device_type: _DeviceType = device_type or _DeviceType.DEVICE_TYPE_ANDROID
+        self.__language_key: _LanguageKey = language_key or _LanguageKey.ENGLISH
         self.__production_server: str = production_server
         if not self.production_server:
             loop = _asyncio.get_event_loop()

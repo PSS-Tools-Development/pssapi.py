@@ -9,10 +9,10 @@ class ActionType(_EntityWithIdBase, _ActionTypeRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<ActionType {self.id}: {self.name}>'
+        return f'<ActionType {self.id}>'
 
     def __str__(self) -> str:
-        return f'<ActionType {self.id}: {self.name}>'
+        return f'<ActionType {self.id}>'
 
     @property
     def id(self) -> int:

@@ -9,10 +9,10 @@ class StarSystemMarkerGenerator(_EntityWithIdBase, _StarSystemMarkerGeneratorRaw
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<StarSystemMarkerGenerator {self.id}: {self.name}>'
+        return f'<StarSystemMarkerGenerator {self.id}>'
 
     def __str__(self) -> str:
-        return f'<StarSystemMarkerGenerator {self.id}: {self.name}>'
+        return f'<StarSystemMarkerGenerator {self.id}>'
 
     @property
     def id(self) -> int:

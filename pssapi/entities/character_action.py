@@ -9,10 +9,10 @@ class CharacterAction(_EntityWithIdBase, _CharacterActionRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<CharacterAction {self.id}: {self.name}>'
+        return f'<CharacterAction {self.id}>'
 
     def __str__(self) -> str:
-        return f'<CharacterAction {self.id}: {self.name}>'
+        return f'<CharacterAction {self.id}>'
 
     @property
     def id(self) -> int:

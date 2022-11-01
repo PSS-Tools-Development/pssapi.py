@@ -1,28 +1,26 @@
-from strenum import StrEnum as _StrEnum
+from enum import StrEnum as _StrEnum
 
 """
-    This file will be generated from decompilation
-    and might require manual fixing, if Savy uses
-    enum values that are python keywords.
+This file has been be generated from decompilation and might require manual
+fixing, if Savy uses enum values that are python keywords.
 """
 
 
 class EnhancementType(_StrEnum):
-    NoEnhancement = 'None'
-    Hp = 'Hp'
-    Attack = 'Attack'
-    Pilot = 'Pilot'
-    Repair = 'Repair'
-    Weapon = 'Weapon'
-    Science = 'Science'
-    Engine = 'Engine'
-    Stamina = 'Stamina'
-    Ability = 'Ability'
-    FireResistance = 'FireResistance'
-    SharpShooterSkill = 'SharpShooterSkill'
-    InstantKillSkill = 'InstantKillSkill'
-    ResurrectSkill = 'ResurrectSkill'
-    FreezeAttackSkill = 'FreezeAttackSkill'
-    EmpSkill = 'EmpSkill'
-    BloodThirstSkill = 'BloodThirstSkill'
-    MedicalSkill = 'MedicalSkill'
+    HP = 'Hp'
+    ATTACK = 'Attack'
+    PILOT = 'Pilot'
+    REPAIR = 'Repair'
+    WEAPON = 'Weapon'
+    SCIENCE = 'Science'
+    ENGINE = 'Engine'
+    STAMINA = 'Stamina'
+    ABILITY = 'Ability'
+    FIRE_RESISTANCE = 'FireResistance'
+    SHARP_SHOOTER_SKILL = 'SharpShooterSkill'
+    INSTANT_KILL_SKILL = 'InstantKillSkill'
+    RESURRECT_SKILL = 'ResurrectSkill'
+    FREEZE_ATTACK_SKILL = 'FreezeAttackSkill'
+    EMP_SKILL = 'EmpSkill'
+    BLOOD_THIRST_SKILL = 'BloodThirstSkill'
+    MEDICAL_SKILL = 'MedicalSkill'

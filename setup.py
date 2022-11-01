@@ -23,11 +23,10 @@ setup(
         'Operating System :: OS Independent',
     ],
     packages=find_packages(exclude=('tests', 'docs')),
-    python_requires='>=3.9',
+    python_requires='>=3.11',
     install_requires=[
         'aiohttp==3.8.3',
         'jinja2==3.1.2',
         'pytz==2022.2.1',
-        'strenum==0.4.8'
     ],
 )

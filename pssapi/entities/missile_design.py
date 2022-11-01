@@ -9,10 +9,10 @@ class MissileDesign(_EntityWithIdBase, _MissileDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<MissileDesign {self.id}: {self.name}>'
+        return f'<MissileDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<MissileDesign {self.id}: {self.name}>'
+        return f'<MissileDesign {self.id}>'
 
     @property
     def id(self) -> int:

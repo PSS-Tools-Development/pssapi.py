@@ -9,10 +9,10 @@ class Research(_EntityWithIdBase, _ResearchRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<Research {self.id}: {self.name}>'
+        return f'<Research {self.id}>'
 
     def __str__(self) -> str:
-        return f'<Research {self.id}: {self.name}>'
+        return f'<Research {self.id}>'
 
     @property
     def id(self) -> int:

@@ -9,10 +9,10 @@ class AchievementDesign(_EntityWithIdBase, _AchievementDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<AchievementDesign {self.id}: {self.name}>'
+        return f'<AchievementDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<AchievementDesign {self.id}: {self.name}>'
+        return f'<AchievementDesign {self.id}>'
 
     @property
     def id(self) -> int:

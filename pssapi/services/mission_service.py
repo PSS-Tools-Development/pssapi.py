@@ -5,12 +5,7 @@ from .service_base import ServiceBase as _ServiceBase
 from ..entities import MissionDesign as _MissionDesign
 
 
-class MissionService(_ServiceBase, _MissionServiceRaw):
-    async def list_all_mission_designs_4(self, design_version: int = None, **params) -> _List[_MissionDesign]:
-        return await self._list_all_mission_designs_4(self.production_server, self.language_key, design_version, **params)
-
-    def __repr__(self) -> str:
-        return f'<MissionService: {self.name}>'
-
-    def __str__(self) -> str:
-        return f'<MissionService: {self.name}>'
+class MissionService(_ServiceBase):
+    async def list_all_mission_designs(self, design_version: int = None) -> _List[_MissionDesign]:
+        result = await _MissionServiceRaw.list_all_mission_designs_4(self.production_server, self.language_key, design_version)
+        return result

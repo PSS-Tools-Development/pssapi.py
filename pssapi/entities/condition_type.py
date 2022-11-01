@@ -9,10 +9,10 @@ class ConditionType(_EntityWithIdBase, _ConditionTypeRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<ConditionType {self.id}: {self.name}>'
+        return f'<ConditionType {self.id}>'
 
     def __str__(self) -> str:
-        return f'<ConditionType {self.id}: {self.name}>'
+        return f'<ConditionType {self.id}>'
 
     @property
     def id(self) -> int:

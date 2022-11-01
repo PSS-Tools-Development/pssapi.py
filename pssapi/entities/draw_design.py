@@ -9,10 +9,10 @@ class DrawDesign(_EntityWithIdBase, _DrawDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<DrawDesign {self.id}: {self.name}>'
+        return f'<DrawDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<DrawDesign {self.id}: {self.name}>'
+        return f'<DrawDesign {self.id}>'
 
     @property
     def id(self) -> int:

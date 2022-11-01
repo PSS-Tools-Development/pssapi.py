@@ -10,41 +10,39 @@ from ...entities import CharacterDesignAction as _CharacterDesignAction
 from ...entities import DrawDesign as _DrawDesign
 
 
-class CharacterServiceRaw:
+# ---------- Constants ----------
 
-    SERVICE_NAME = 'CharacterService'
-    LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH: str = 'CharacterService/ListAllCharacterDesignActions'
-    LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH: str = 'CharacterService/ListAllCharacterDesigns2'
-    LIST_ALL_DRAW_DESIGNS_BASE_PATH: str = 'CharacterService/ListAllDrawDesigns'
+LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH: str = 'CharacterService/ListAllCharacterDesignActions'
+LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH: str = 'CharacterService/ListAllCharacterDesigns2'
+LIST_ALL_DRAW_DESIGNS_BASE_PATH: str = 'CharacterService/ListAllDrawDesigns'
 
-    @staticmethod
-    async def _list_all_character_design_actions(production_server: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
-        params = {
-            'designVersion': design_version,
-            **params
-        }
 
-        result = await _core.get_entities_from_path(_CharacterDesignAction, 'CharacterDesignActions', production_server, CharacterServiceRaw.LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, **params)
-        return result
+# ---------- Endpoints ----------
 
-    @staticmethod
-    async def _list_all_character_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_CharacterDesign]:
-        params = {
-            'languageKey': language_key,
-            'designVersion': design_version,
-            **params
-        }
+async def list_all_character_design_actions(production_server: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
+    params = {
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_CharacterDesignAction, 'CharacterDesignActions', production_server, LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_CharacterDesign, 'CharacterDesigns', production_server, CharacterServiceRaw.LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, **params)
-        return result
 
-    @staticmethod
-    async def _list_all_draw_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_DrawDesign]:
-        params = {
-            'languageKey': language_key,
-            'designVersion': design_version,
-            **params
-        }
+async def list_all_character_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_CharacterDesign]:
+    params = {
+        'languageKey': language_key,
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_CharacterDesign, 'CharacterDesigns', production_server, LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, **params)
+    return result
 
-        result = await _core.get_entities_from_path(_DrawDesign, 'DrawDesigns', production_server, CharacterServiceRaw.LIST_ALL_DRAW_DESIGNS_BASE_PATH, **params)
-        return result
+
+async def list_all_draw_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_DrawDesign]:
+    params = {
+        'languageKey': language_key,
+        'designVersion': design_version,
+        **params
+    }
+    result = await _core.get_entities_from_path(_DrawDesign, 'DrawDesigns', production_server, LIST_ALL_DRAW_DESIGNS_BASE_PATH, **params)
+    return result

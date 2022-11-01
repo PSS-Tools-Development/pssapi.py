@@ -9,10 +9,10 @@ class ItemDesignAction(_EntityWithIdBase, _ItemDesignActionRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<ItemDesignAction {self.id}: {self.name}>'
+        return f'<ItemDesignAction {self.id}>'
 
     def __str__(self) -> str:
-        return f'<ItemDesignAction {self.id}: {self.name}>'
+        return f'<ItemDesignAction {self.id}>'
 
     @property
     def id(self) -> int:

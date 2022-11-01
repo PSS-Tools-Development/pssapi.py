@@ -9,10 +9,10 @@ class TaskDesign(_EntityWithIdBase, _TaskDesignRaw):
         super().__init__(_info)
 
     def __repr__(self) -> str:
-        return f'<TaskDesign {self.id}: {self.name}>'
+        return f'<TaskDesign {self.id}>'
 
     def __str__(self) -> str:
-        return f'<TaskDesign {self.id}: {self.name}>'
+        return f'<TaskDesign {self.id}>'
 
     @property
     def id(self) -> int:
