@@ -26,7 +26,6 @@ setup(
     python_requires='>=3.11',
     install_requires=[
         'aiohttp==3.8.3',
-        'jinja2==3.1.2',
         'pytz==2022.2.1',
     ],
 )
