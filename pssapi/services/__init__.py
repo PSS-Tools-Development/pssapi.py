@@ -26,3 +26,6 @@ from .situation_service import SituationService
 from .task_service import TaskService
 from .training_service import TrainingService
 from .user_service import UserService
+
+# customs
+from .market_service import MarketService

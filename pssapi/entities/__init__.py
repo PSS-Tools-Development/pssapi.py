@@ -47,3 +47,6 @@ from .training_design import *
 from .user import *
 from .user_season import *
 from .user_star_system import *
+
+# customs
+from .sale import *
