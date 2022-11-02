@@ -14,10 +14,10 @@ LIST_ALL_COLLECTION_DESIGNS_BASE_PATH: str = 'CollectionService/ListAllCollectio
 
 # ---------- Endpoints ----------
 
-async def list_all_collection_designs(production_server: str, language_key: str, design_version: int, **params) -> _List[_CollectionDesign]:
+async def list_all_collection_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_CollectionDesign]:
     params = {
-        'languageKey': language_key,
         'designVersion': design_version,
+        'languageKey': language_key,
         **params
     }
     result = await _core.get_entities_from_path(_CollectionDesign, 'CollectionDesigns', production_server, LIST_ALL_COLLECTION_DESIGNS_BASE_PATH, **params)

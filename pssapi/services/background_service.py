@@ -7,5 +7,5 @@ from ..entities import Background as _Background
 
 class BackgroundService(_ServiceBase):
     async def list_backgrounds(self, design_version: int = None) -> _List[_Background]:
-        result = await _BackgroundServiceRaw.list_backgrounds(self.production_server, design_version)
+        result = await _BackgroundServiceRaw.list_backgrounds(production_server=self.production_server, design_version=design_version)
         return result

@@ -16,14 +16,14 @@ class UserSeasonRaw:
             user_season_info.get('UserSeasonId'))
         self.__season_design_id: int = _parse.pss_int(
             user_season_info.get('SeasonDesignId'))
-        self.__user_id: int = _parse.pss_int(user_season_info.get('UserId'))
-        self.__points: int = _parse.pss_int(user_season_info.get('Points'))
-        self.__unlocked_reward_design_ids: str = _parse.pss_str(
-            user_season_info.get('UnlockedRewardDesignIds'))
-        self.__purchase_vip_date: datetime = _parse.pss_datetime(
-            user_season_info.get('PurchaseVIPDate'))
         self.__purchase_vip_status: str = _parse.pss_str(
             user_season_info.get('PurchaseVIPStatus'))
+        self.__user_id: int = _parse.pss_int(user_season_info.get('UserId'))
+        self.__purchase_vip_date: datetime = _parse.pss_datetime(
+            user_season_info.get('PurchaseVIPDate'))
+        self.__unlocked_reward_design_ids: str = _parse.pss_str(
+            user_season_info.get('UnlockedRewardDesignIds'))
+        self.__points: int = _parse.pss_int(user_season_info.get('Points'))
 
     @property
     def user_season_id(self) -> int:
@@ -34,21 +34,21 @@ class UserSeasonRaw:
         return self.__season_design_id
 
     @property
+    def purchase_vip_status(self) -> str:
+        return self.__purchase_vip_status
+
+    @property
     def user_id(self) -> int:
         return self.__user_id
-
-    @property
-    def points(self) -> int:
-        return self.__points
-
-    @property
-    def unlocked_reward_design_ids(self) -> str:
-        return self.__unlocked_reward_design_ids
 
     @property
     def purchase_vip_date(self) -> datetime:
         return self.__purchase_vip_date
 
     @property
-    def purchase_vip_status(self) -> str:
-        return self.__purchase_vip_status
+    def unlocked_reward_design_ids(self) -> str:
+        return self.__unlocked_reward_design_ids
+
+    @property
+    def points(self) -> int:
+        return self.__points

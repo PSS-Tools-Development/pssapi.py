@@ -14,6 +14,7 @@ from .challenge_scoring_type import ChallengeScoringType
 from .challenge_type import ChallengeType
 from .change_type import ChangeType
 from .character_part_type import CharacterPartType
+from .checksum_type import ChecksumType
 from .collection_type import CollectionType
 from .completion_value_type import CompletionValueType
 from .condition_type_category import ConditionTypeCategory
@@ -22,6 +23,7 @@ from .condition_type_parameter import ConditionTypeParameter
 from .cost_type import CostType
 from .currency_type import CurrencyType
 from .daily_reward_status import DailyRewardStatus
+from .daily_reward_type import DailyRewardType
 from .device_type import DeviceType
 from .division_type import DivisionType
 from .draw_type import DrawType
@@ -62,6 +64,7 @@ from .room_effect_type import RoomEffectType
 from .room_sprite_type import RoomSpriteType
 from .room_status import RoomStatus
 from .room_type import RoomType
+from .sale_type import SaleType
 from .season_type import SeasonType
 from .ship_status import ShipStatus
 from .ship_type import ShipType

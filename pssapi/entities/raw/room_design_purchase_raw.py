@@ -11,22 +11,26 @@ class RoomDesignPurchaseRaw:
     XML_NODE_NAME: str = 'RoomDesignPurchase'
 
     def __init__(self, room_design_purchase_info: _EntityInfo) -> None:
-        self.__requirement_string: str = _parse.pss_str(
-            room_design_purchase_info.get('RequirementString'))
+        self.__room_design_purchase_id: int = _parse.pss_int(
+            room_design_purchase_info.get('RoomDesignPurchaseId'))
+        self.__quantity: int = _parse.pss_int(
+            room_design_purchase_info.get('Quantity'))
         self.__room_design_id: int = _parse.pss_int(
             room_design_purchase_info.get('RoomDesignId'))
         self.__availability_mask: int = _parse.pss_int(
             room_design_purchase_info.get('AvailabilityMask'))
-        self.__quantity: int = _parse.pss_int(
-            room_design_purchase_info.get('Quantity'))
-        self.__room_design_purchase_id: int = _parse.pss_int(
-            room_design_purchase_info.get('RoomDesignPurchaseId'))
+        self.__requirement_string: str = _parse.pss_str(
+            room_design_purchase_info.get('RequirementString'))
         self.__level: int = _parse.pss_int(
             room_design_purchase_info.get('Level'))
 
     @property
-    def requirement_string(self) -> str:
-        return self.__requirement_string
+    def room_design_purchase_id(self) -> int:
+        return self.__room_design_purchase_id
+
+    @property
+    def quantity(self) -> int:
+        return self.__quantity
 
     @property
     def room_design_id(self) -> int:
@@ -37,12 +41,8 @@ class RoomDesignPurchaseRaw:
         return self.__availability_mask
 
     @property
-    def quantity(self) -> int:
-        return self.__quantity
-
-    @property
-    def room_design_purchase_id(self) -> int:
-        return self.__room_design_purchase_id
+    def requirement_string(self) -> str:
+        return self.__requirement_string
 
     @property
     def level(self) -> int:

@@ -22,6 +22,7 @@ from .item_raw import ItemRaw
 from .item_design_raw import ItemDesignRaw
 from .item_design_action_raw import ItemDesignActionRaw
 from .league_raw import LeagueRaw
+from .live_ops_raw import LiveOpsRaw
 from .message_raw import MessageRaw
 from .missile_design_raw import MissileDesignRaw
 from .mission_design_raw import MissionDesignRaw
@@ -35,6 +36,7 @@ from .room_design_raw import RoomDesignRaw
 from .room_design_purchase_raw import RoomDesignPurchaseRaw
 from .room_design_sprite_raw import RoomDesignSpriteRaw
 from .season_design_raw import SeasonDesignRaw
+from .setting_raw import SettingRaw
 from .ship_raw import ShipRaw
 from .ship_design_raw import ShipDesignRaw
 from .situation_design_raw import SituationDesignRaw
@@ -46,5 +48,7 @@ from .star_system_marker_generator_raw import StarSystemMarkerGeneratorRaw
 from .task_design_raw import TaskDesignRaw
 from .training_design_raw import TrainingDesignRaw
 from .user_raw import UserRaw
+from .user_login_raw import UserLoginRaw
+from .user_marker_raw import UserMarkerRaw
 from .user_season_raw import UserSeasonRaw
 from .user_star_system_raw import UserStarSystemRaw

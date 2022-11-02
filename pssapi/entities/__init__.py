@@ -21,6 +21,7 @@ from .item import *
 from .item_design import *
 from .item_design_action import *
 from .league import *
+from .live_ops import *
 from .message import *
 from .missile_design import *
 from .mission_design import *
@@ -34,6 +35,7 @@ from .room_design import *
 from .room_design_purchase import *
 from .room_design_sprite import *
 from .season_design import *
+from .setting import *
 from .ship import *
 from .ship_design import *
 from .situation_design import *
@@ -45,6 +47,8 @@ from .star_system_marker_generator import *
 from .task_design import *
 from .training_design import *
 from .user import *
+from .user_login import *
+from .user_marker import *
 from .user_season import *
 from .user_star_system import *
 

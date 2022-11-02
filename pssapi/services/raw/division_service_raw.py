@@ -14,10 +14,10 @@ LIST_ALL_DIVISION_DESIGNS_2_BASE_PATH: str = 'DivisionService/ListAllDivisionDes
 
 # ---------- Endpoints ----------
 
-async def list_all_division_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_DivisionDesign]:
+async def list_all_division_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_DivisionDesign]:
     params = {
-        'languageKey': language_key,
         'designVersion': design_version,
+        'languageKey': language_key,
         **params
     }
     result = await _core.get_entities_from_path(_DivisionDesign, 'DivisionDesigns', production_server, LIST_ALL_DIVISION_DESIGNS_2_BASE_PATH, **params)

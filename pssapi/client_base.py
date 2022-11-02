@@ -1,6 +1,3 @@
-import asyncio as _asyncio
-from typing import Optional as _Optional
-
 from . import constants as _constants
 from .services import AchievementService as _AchievementService
 from .services import AllianceService as _AllianceService
@@ -39,11 +36,17 @@ class PssApiClientBase:
         self.__device_type: _DeviceType = device_type or _DeviceType.DEVICE_TYPE_ANDROID
         self.__language_key: _LanguageKey = language_key or _LanguageKey.ENGLISH
         self.__production_server: str = production_server
+
+    @classmethod
+    async def create(cls, device_type: _DeviceType = None, language_key: _LanguageKey = None, production_server: str = None):
+        self = cls(device_type, language_key, production_server)
+
         if not self.production_server:
-            loop = _asyncio.get_event_loop()
-            self.__production_server = loop.run_until_complete(
-                _get_production_server(self.device_type, self.language_key))
+            await self.init_production_server()
+
         self._update_services()
+
+        return self
 
     @property
     def device_type(self) -> _DeviceType:
@@ -56,6 +59,10 @@ class PssApiClientBase:
     @property
     def production_server(self) -> str:
         return self.__production_server
+
+    @production_server.setter
+    def production_server(self, value):
+        self.__production_server = value
 
     @property
     def achievement_service(self) -> _AchievementService:
@@ -169,8 +176,13 @@ class PssApiClientBase:
     def user_service(self) -> _UserService:
         return self.__user_service
 
-    async def get_production_server(self) -> str:
-        return await _get_production_server(self.device_type, self.language_key) or _constants.DEFAULT_PRODUCTION_SERVER
+    async def init_production_server(self) -> None:
+        setting_service = _SettingService(
+            _constants.DEFAULT_PRODUCTION_SERVER, self.language_key
+        )
+
+        settings = await setting_service.get_latest_version(self.device_type)
+        self.production_server = settings[0].production_server
 
     def _update_services(self) -> None:
         self.__achievement_service: _AchievementService = _AchievementService(
@@ -229,10 +241,3 @@ class PssApiClientBase:
             self.production_server, self.language_key)
         self.__user_service: _UserService = _UserService(
             self.production_server, self.language_key)
-
-
-async def _get_production_server(device_type: _DeviceType, language_key: _LanguageKey) -> _Optional[str]:
-    setting_service = _SettingService(
-        _constants.DEFAULT_PRODUCTION_SERVER, language_key)
-    setting = await setting_service.get_latest_version_3(device_type, language_key)
-    return setting.production_server

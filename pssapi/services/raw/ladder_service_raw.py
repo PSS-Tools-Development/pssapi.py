@@ -26,10 +26,11 @@ async def list_users_by_championship_score_ranking(production_server: str, from_
     return result
 
 
-async def list_users_by_ranking(production_server: str, from_: int, to_100: str, access_token: str, **params) -> _List[_User]:
+async def list_users_by_ranking(production_server: str, to_100: str, from_: int, to: str, access_token: str, **params) -> _List[_User]:
     params = {
-        'from': from_,
         'to100': to_100,
+        'from': from_,
+        'to': to,
         'accessToken': access_token,
         **params
     }

@@ -24,20 +24,20 @@ LIST_ROOM_DESIGNS_2_BASE_PATH: str = 'RoomService/ListRoomDesigns2'
 
 # ---------- Endpoints ----------
 
-async def list_action_types_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ActionType]:
+async def list_action_types_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_ActionType]:
     params = {
-        'languageKey': language_key,
         'designVersion': design_version,
+        'languageKey': language_key,
         **params
     }
     result = await _core.get_entities_from_path(_ActionType, 'ActionTypes', production_server, LIST_ACTION_TYPES_2_BASE_PATH, **params)
     return result
 
 
-async def list_condition_types_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_ConditionType]:
+async def list_condition_types_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_ConditionType]:
     params = {
-        'languageKey': language_key,
         'designVersion': design_version,
+        'languageKey': language_key,
         **params
     }
     result = await _core.get_entities_from_path(_ConditionType, 'ConditionTypes', production_server, LIST_CONDITION_TYPES_2_BASE_PATH, **params)
@@ -71,10 +71,10 @@ async def list_room_design_purchase(production_server: str, design_version: int,
     return result
 
 
-async def list_room_designs_2(production_server: str, language_key: str, design_version: int, **params) -> _List[_RoomDesign]:
+async def list_room_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_RoomDesign]:
     params = {
-        'languageKey': language_key,
         'designVersion': design_version,
+        'languageKey': language_key,
         **params
     }
     result = await _core.get_entities_from_path(_RoomDesign, 'RoomDesigns', production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, **params)

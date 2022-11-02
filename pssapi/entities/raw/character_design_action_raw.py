@@ -15,10 +15,10 @@ class CharacterDesignActionRaw:
             character_design_action_info.get('ConditionTypeId'))
         self.__action_type_id: int = _parse.pss_int(
             character_design_action_info.get('ActionTypeId'))
-        self.__character_design_action_id: int = _parse.pss_int(
-            character_design_action_info.get('CharacterDesignActionId'))
         self.__character_design_action_index: int = _parse.pss_int(
             character_design_action_info.get('CharacterDesignActionIndex'))
+        self.__character_design_action_id: int = _parse.pss_int(
+            character_design_action_info.get('CharacterDesignActionId'))
         self.__character_design_id: int = _parse.pss_int(
             character_design_action_info.get('CharacterDesignId'))
 
@@ -31,12 +31,12 @@ class CharacterDesignActionRaw:
         return self.__action_type_id
 
     @property
-    def character_design_action_id(self) -> int:
-        return self.__character_design_action_id
-
-    @property
     def character_design_action_index(self) -> int:
         return self.__character_design_action_index
+
+    @property
+    def character_design_action_id(self) -> int:
+        return self.__character_design_action_id
 
     @property
     def character_design_id(self) -> int:
