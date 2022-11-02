@@ -14,6 +14,11 @@ async def main() -> None:
 
     item_designs = await client.item_service.list_item_designs()
     print(f'Found {len(item_designs)} item designs.')
+    print(f'First item: {item_designs[0].item_design_name}')
+
+    sales = await client.market_service.list_sales_by_item_design_id(81, 'Sold', 0, 10)
+    print(f'Found {len(sales)} sales.')
+    print(f'First sale: {sales[0].sale_id}')
 
 
 def run_main_synchronous() -> None:
