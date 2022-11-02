@@ -1,11 +1,11 @@
-import asyncio as _asyncio
+import asyncio
 
 import pssapi
 from pssapi.entities import ShipDesign
 
 
 async def main() -> None:
-    client = pssapi.PssApiClient(production_server='api2.pixelstarships.com')
+    client = await pssapi.PssApiClient.create()
     print(f'Production server: {client.production_server}')
 
     ship_designs: list[ShipDesign] = await client.ship_service.list_all_ship_designs()
@@ -17,8 +17,12 @@ async def main() -> None:
 
 
 def run_main_synchronous() -> None:
-    loop = _asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        pass
 
 
 if __name__ == '__main__':
