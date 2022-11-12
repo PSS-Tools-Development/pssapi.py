@@ -6,7 +6,6 @@ from typing import List as _List
 
 from ... import core as _core
 from ...entities import PromotionDesign as _PromotionDesign
-from ...entities import User as _User
 
 # ---------- Constants ----------
 

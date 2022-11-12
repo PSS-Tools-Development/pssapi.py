@@ -2,7 +2,6 @@ from typing import List as _List
 
 from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
 from .service_base import ServiceBase as _ServiceBase
-from ..entities import Ship as _Ship
 from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
 from ..entities import StarSystemMarker as _StarSystemMarker

@@ -5,7 +5,6 @@
 from typing import List as _List
 
 from ... import core as _core
-from ...entities import Ship as _Ship
 from ...entities import StarSystem as _StarSystem
 from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarker as _StarSystemMarker

@@ -3,7 +3,6 @@ from typing import List as _List
 from .raw import PromotionServiceRaw as _PromotionServiceRaw
 from .service_base import ServiceBase as _ServiceBase
 from ..entities import PromotionDesign as _PromotionDesign
-from ..entities import User as _User
 
 
 class PromotionService(_ServiceBase):
