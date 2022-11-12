@@ -10,9 +10,6 @@ import aiohttp as _aiohttp
 from pssapi.entities import EntityBase as _EntityBase
 
 
-__SESSION: _aiohttp.ClientSession = _aiohttp.ClientSession()
-
-
 def create_request_content(structure: str, params: _Dict[str, _Any], content_type: str) -> str:
     if content_type == 'json':
         return __create_json_request_content(structure, params)
@@ -56,7 +53,7 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
     # filter parameters with a None value
     params = {key: value for (key, value) in params.items() if value}
 
-    async with __SESSION as session:
+    async with _aiohttp.ClientSession() as session:
         if method == 'GET':
             async with session.get(url, params=params) as response:
                 data = await response.text(encoding='utf-8')
