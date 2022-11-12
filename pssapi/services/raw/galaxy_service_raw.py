@@ -13,27 +13,13 @@ from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 
 # ---------- Constants ----------
 
-GO_TO_BASE_PATH: str = 'GalaxyService/GoTo'
 LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = 'GalaxyService/ListMarkerGeneratorDesigns'
 LIST_STAR_SYSTEM_LINKS_BASE_PATH: str = 'GalaxyService/ListStarSystemLinks'
 LIST_STAR_SYSTEM_MARKERS_BASE_PATH: str = 'GalaxyService/ListStarSystemMarkers'
 LIST_STAR_SYSTEMS_BASE_PATH: str = 'GalaxyService/ListStarSystems'
-UPDATE_MARKER_MOVEMENT_BASE_PATH: str = 'GalaxyService/UpdateMarkerMovement'
 
 
 # ---------- Endpoints ----------
-
-async def go_to(production_server: str, star_system_id: int, client_date_time: str, checksum: str, access_token: str, **params) -> _List[_Ship]:
-    params = {
-        'starSystemId': star_system_id,
-        'clientDateTime': client_date_time,
-        'checksum': checksum,
-        'accessToken': access_token,
-        **params
-    }
-    result = await _core.get_entities_from_path(_Ship, 'GoTo', production_server, GO_TO_BASE_PATH, **params)
-    return result
-
 
 async def list_marker_generator_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_StarSystemMarkerGenerator]:
     params = {
@@ -41,7 +27,8 @@ async def list_marker_generator_designs(production_server: str, design_version: 
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_StarSystemMarkerGenerator, 'StarSystemMarkerGenerators', production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_StarSystemMarkerGenerator, 'StarSystemMarkerGenerators', production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
@@ -50,17 +37,19 @@ async def list_star_system_links(production_server: str, design_version: int, **
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path(_StarSystemLink, 'StarSystemLinks', production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_StarSystemLink, 'StarSystemLinks', production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
-async def list_star_system_markers(production_server: str, client_date_time: str, access_token: str, **params) -> _List[_StarSystemMarker]:
+async def list_star_system_markers(production_server: str, access_token: str, client_date_time: str, **params) -> _List[_StarSystemMarker]:
     params = {
-        'clientDateTime': client_date_time,
         'accessToken': access_token,
+        'clientDateTime': client_date_time,
         **params
     }
-    result = await _core.get_entities_from_path(_StarSystemMarker, 'StarSystemMarkers', production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_StarSystemMarker, 'StarSystemMarkers', production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
@@ -70,17 +59,6 @@ async def list_star_systems(production_server: str, design_version: int, languag
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_StarSystem, 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, **params)
-    return result
-
-
-async def update_marker_movement(production_server: str, star_system_marker_id: int, checksum: str, client_date_time: str, access_token: str, **params) -> _List[_StarSystemMarker]:
-    params = {
-        'starSystemMarkerId': star_system_marker_id,
-        'checksum': checksum,
-        'clientDateTime': client_date_time,
-        'accessToken': access_token,
-        **params
-    }
-    result = await _core.get_entities_from_path(_StarSystemMarker, 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_StarSystem, 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, 'GET', request_content=content, **params)
     return result

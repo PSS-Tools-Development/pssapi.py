@@ -11,33 +11,13 @@ class CharacterActionRaw:
     XML_NODE_NAME: str = 'CharacterAction'
 
     def __init__(self, character_action_info: _EntityInfo) -> None:
-        self.__character_action_id: int = _parse.pss_int(
-            character_action_info.get('CharacterActionId'))
-        self.__character_id: int = _parse.pss_int(
-            character_action_info.get('CharacterId'))
-        self.__action_type_id: int = _parse.pss_int(
+        self.action_type_id: int = _parse.pss_int(
             character_action_info.get('ActionTypeId'))
-        self.__character_action_index: int = _parse.pss_int(
+        self.character_action_id: int = _parse.pss_int(
+            character_action_info.get('CharacterActionId'))
+        self.character_action_index: int = _parse.pss_int(
             character_action_info.get('CharacterActionIndex'))
-        self.__condition_type_id: int = _parse.pss_int(
+        self.character_id: int = _parse.pss_int(
+            character_action_info.get('CharacterId'))
+        self.condition_type_id: int = _parse.pss_int(
             character_action_info.get('ConditionTypeId'))
-
-    @property
-    def character_action_id(self) -> int:
-        return self.__character_action_id
-
-    @property
-    def character_id(self) -> int:
-        return self.__character_id
-
-    @property
-    def action_type_id(self) -> int:
-        return self.__action_type_id
-
-    @property
-    def character_action_index(self) -> int:
-        return self.__character_action_index
-
-    @property
-    def condition_type_id(self) -> int:
-        return self.__condition_type_id

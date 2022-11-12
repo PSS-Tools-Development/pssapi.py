@@ -20,5 +20,6 @@ async def list_all_training_designs_2(production_server: str, design_version: in
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_TrainingDesign, 'TrainingDesigns', production_server, LIST_ALL_TRAINING_DESIGNS_2_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_TrainingDesign, 'TrainingDesigns', production_server, LIST_ALL_TRAINING_DESIGNS_2_BASE_PATH, 'GET', request_content=content, **params)
     return result

@@ -20,5 +20,6 @@ async def list_all_mission_designs_4(production_server: str, design_version: int
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_MissionDesign, 'MissionDesigns', production_server, LIST_ALL_MISSION_DESIGNS_4_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_MissionDesign, 'MissionDesigns', production_server, LIST_ALL_MISSION_DESIGNS_4_BASE_PATH, 'GET', request_content=content, **params)
     return result

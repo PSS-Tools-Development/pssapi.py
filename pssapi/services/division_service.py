@@ -7,5 +7,5 @@ from ..entities import DivisionDesign as _DivisionDesign
 
 class DivisionService(_ServiceBase):
     async def list_all_division_designs(self, design_version: int = None) -> _List[_DivisionDesign]:
-        result = await _DivisionServiceRaw.list_all_division_designs_2(production_server=self.production_server, design_version=design_version, language_key=self.language_key)
+        result = await _DivisionServiceRaw.list_all_division_designs_2(self.production_server, design_version, self.language_key)
         return result

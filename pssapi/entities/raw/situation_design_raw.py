@@ -12,86 +12,29 @@ class SituationDesignRaw:
     XML_NODE_NAME: str = 'SituationDesign'
 
     def __init__(self, situation_design_info: _EntityInfo) -> None:
-        self.__chance: int = _parse.pss_int(
-            situation_design_info.get('Chance'))
-        self.__icon_sprite_id: int = _parse.pss_int(
-            situation_design_info.get('IconSpriteId'))
-        self.__situation_type: str = _parse.pss_str(
-            situation_design_info.get('SituationType'))
-        self.__situation_description: str = _parse.pss_str(
-            situation_design_info.get('SituationDescription'))
-        self.__from_date: datetime = _parse.pss_datetime(
-            situation_design_info.get('FromDate'))
-        self.__daily_occurrence_limit: int = _parse.pss_int(
-            situation_design_info.get('DailyOccurrenceLimit'))
-        self.__situation_design_id: int = _parse.pss_int(
-            situation_design_info.get('SituationDesignId'))
-        self.__end_date: datetime = _parse.pss_datetime(
-            situation_design_info.get('EndDate'))
-        self.__situation_name: str = _parse.pss_str(
-            situation_design_info.get('SituationName'))
-        self.__trigger_type: str = _parse.pss_str(
-            situation_design_info.get('TriggerType'))
-        self.__change_type: str = _parse.pss_str(
-            situation_design_info.get('ChangeType'))
-        self.__requirement_string: str = _parse.pss_str(
-            situation_design_info.get('RequirementString'))
-        self.__flags: int = _parse.pss_int(situation_design_info.get('Flags'))
-        self.__change_argument_string: str = _parse.pss_str(
+        self.chance: int = _parse.pss_int(situation_design_info.get('Chance'))
+        self.change_argument_string: str = _parse.pss_str(
             situation_design_info.get('ChangeArgumentString'))
-
-    @property
-    def chance(self) -> int:
-        return self.__chance
-
-    @property
-    def icon_sprite_id(self) -> int:
-        return self.__icon_sprite_id
-
-    @property
-    def situation_type(self) -> str:
-        return self.__situation_type
-
-    @property
-    def situation_description(self) -> str:
-        return self.__situation_description
-
-    @property
-    def from_date(self) -> datetime:
-        return self.__from_date
-
-    @property
-    def daily_occurrence_limit(self) -> int:
-        return self.__daily_occurrence_limit
-
-    @property
-    def situation_design_id(self) -> int:
-        return self.__situation_design_id
-
-    @property
-    def end_date(self) -> datetime:
-        return self.__end_date
-
-    @property
-    def situation_name(self) -> str:
-        return self.__situation_name
-
-    @property
-    def trigger_type(self) -> str:
-        return self.__trigger_type
-
-    @property
-    def change_type(self) -> str:
-        return self.__change_type
-
-    @property
-    def requirement_string(self) -> str:
-        return self.__requirement_string
-
-    @property
-    def flags(self) -> int:
-        return self.__flags
-
-    @property
-    def change_argument_string(self) -> str:
-        return self.__change_argument_string
+        self.change_type: str = _parse.pss_str(
+            situation_design_info.get('ChangeType'))
+        self.daily_occurrence_limit: int = _parse.pss_int(
+            situation_design_info.get('DailyOccurrenceLimit'))
+        self.end_date: datetime = _parse.pss_datetime(
+            situation_design_info.get('EndDate'))
+        self.flags: int = _parse.pss_int(situation_design_info.get('Flags'))
+        self.from_date: datetime = _parse.pss_datetime(
+            situation_design_info.get('FromDate'))
+        self.icon_sprite_id: int = _parse.pss_int(
+            situation_design_info.get('IconSpriteId'))
+        self.requirement_string: str = _parse.pss_str(
+            situation_design_info.get('RequirementString'))
+        self.situation_description: str = _parse.pss_str(
+            situation_design_info.get('SituationDescription'))
+        self.situation_design_id: int = _parse.pss_int(
+            situation_design_info.get('SituationDesignId'))
+        self.situation_name: str = _parse.pss_str(
+            situation_design_info.get('SituationName'))
+        self.situation_type: str = _parse.pss_str(
+            situation_design_info.get('SituationType'))
+        self.trigger_type: str = _parse.pss_str(
+            situation_design_info.get('TriggerType'))

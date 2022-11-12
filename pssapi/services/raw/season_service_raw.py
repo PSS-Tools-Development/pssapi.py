@@ -20,5 +20,6 @@ async def list_all_season_designs(production_server: str, design_version: int, l
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_SeasonDesign, 'SeasonDesigns', production_server, LIST_ALL_SEASON_DESIGNS_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_SeasonDesign, 'SeasonDesigns', production_server, LIST_ALL_SEASON_DESIGNS_BASE_PATH, 'GET', request_content=content, **params)
     return result

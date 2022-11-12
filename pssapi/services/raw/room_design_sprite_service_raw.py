@@ -19,5 +19,6 @@ async def list_room_design_sprites(production_server: str, design_version: int, 
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path(_RoomDesignSprite, 'RoomDesignSprites', production_server, LIST_ROOM_DESIGN_SPRITES_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_RoomDesignSprite, 'RoomDesignSprites', production_server, LIST_ROOM_DESIGN_SPRITES_BASE_PATH, 'GET', request_content=content, **params)
     return result

@@ -21,7 +21,8 @@ async def list_item_design_actions(production_server: str, design_version: int, 
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path(_ItemDesignAction, 'ItemDesignActions', production_server, LIST_ITEM_DESIGN_ACTIONS_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_ItemDesignAction, 'ItemDesignActions', production_server, LIST_ITEM_DESIGN_ACTIONS_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
@@ -31,5 +32,6 @@ async def list_item_designs_2(production_server: str, design_version: int, langu
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(_ItemDesign, 'ItemDesigns', production_server, LIST_ITEM_DESIGNS_2_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_ItemDesign, 'ItemDesigns', production_server, LIST_ITEM_DESIGNS_2_BASE_PATH, 'GET', request_content=content, **params)
     return result

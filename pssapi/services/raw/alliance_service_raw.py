@@ -18,46 +18,50 @@ SEARCH_ALLIANCES_BASE_PATH: str = 'AllianceService/SearchAlliances'
 
 # ---------- Endpoints ----------
 
-async def list_alliances_by_championship_score_ranking(production_server: str, from_: int, to: int, access_token: str, **params) -> _List[_Alliance]:
+async def list_alliances_by_championship_score_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> _List[_Alliance]:
     params = {
+        'accessToken': access_token,
         'from': from_,
         'to': to,
-        'accessToken': access_token,
         **params
     }
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
-async def list_alliances_by_ranking(production_server: str, take: int, skip: int, **params) -> _List[_Alliance]:
+async def list_alliances_by_ranking(production_server: str, skip: int, take: int, **params) -> _List[_Alliance]:
     params = {
-        'take': take,
         'skip': skip,
+        'take': take,
         **params
     }
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
-async def list_users_2(production_server: str, take: int, skip: int, access_token: str, alliance_id: int, **params) -> _List[_Message]:
+async def list_users_2(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _List[_Message]:
     params = {
-        'take': take,
-        'skip': skip,
         'accessToken': access_token,
         'allianceId': alliance_id,
+        'skip': skip,
+        'take': take,
         **params
     }
-    result = await _core.get_entities_from_path(_Message, 'Messages', production_server, LIST_USERS_2_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_Message, 'Messages', production_server, LIST_USERS_2_BASE_PATH, 'GET', request_content=content, **params)
     return result
 
 
-async def search_alliances(production_server: str, take: int, skip: int, access_token: str, name: str, **params) -> _List[_Alliance]:
+async def search_alliances(production_server: str, access_token: str, name: str, skip: int, take: int, **params) -> _List[_Alliance]:
     params = {
-        'take': take,
-        'skip': skip,
         'accessToken': access_token,
         'name': name,
+        'skip': skip,
+        'take': take,
         **params
     }
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, **params)
+    content = None
+    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', request_content=content, **params)
     return result

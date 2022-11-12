@@ -11,54 +11,17 @@ class CraftDesignRaw:
     XML_NODE_NAME: str = 'CraftDesign'
 
     def __init__(self, craft_design_info: _EntityInfo) -> None:
-        self.__volley: int = _parse.pss_int(craft_design_info.get('Volley'))
-        self.__flight_speed: int = _parse.pss_int(
-            craft_design_info.get('FlightSpeed'))
-        self.__craft_name: str = _parse.pss_str(
-            craft_design_info.get('CraftName'))
-        self.__sprite_id: int = _parse.pss_int(
-            craft_design_info.get('SpriteId'))
-        self.__hp: int = _parse.pss_int(craft_design_info.get('Hp'))
-        self.__reload: int = _parse.pss_int(craft_design_info.get('Reload'))
-        self.__volley_delay: int = _parse.pss_int(
-            craft_design_info.get('VolleyDelay'))
-        self.__craft_design_id: int = _parse.pss_int(
+        self.craft_design_id: int = _parse.pss_int(
             craft_design_info.get('CraftDesignId'))
-        self.__missile_design_id: int = _parse.pss_int(
+        self.craft_name: str = _parse.pss_str(
+            craft_design_info.get('CraftName'))
+        self.flight_speed: int = _parse.pss_int(
+            craft_design_info.get('FlightSpeed'))
+        self.hp: int = _parse.pss_int(craft_design_info.get('Hp'))
+        self.missile_design_id: int = _parse.pss_int(
             craft_design_info.get('MissileDesignId'))
-
-    @property
-    def volley(self) -> int:
-        return self.__volley
-
-    @property
-    def flight_speed(self) -> int:
-        return self.__flight_speed
-
-    @property
-    def craft_name(self) -> str:
-        return self.__craft_name
-
-    @property
-    def sprite_id(self) -> int:
-        return self.__sprite_id
-
-    @property
-    def hp(self) -> int:
-        return self.__hp
-
-    @property
-    def reload(self) -> int:
-        return self.__reload
-
-    @property
-    def volley_delay(self) -> int:
-        return self.__volley_delay
-
-    @property
-    def craft_design_id(self) -> int:
-        return self.__craft_design_id
-
-    @property
-    def missile_design_id(self) -> int:
-        return self.__missile_design_id
+        self.reload: int = _parse.pss_int(craft_design_info.get('Reload'))
+        self.sprite_id: int = _parse.pss_int(craft_design_info.get('SpriteId'))
+        self.volley: int = _parse.pss_int(craft_design_info.get('Volley'))
+        self.volley_delay: int = _parse.pss_int(
+            craft_design_info.get('VolleyDelay'))
