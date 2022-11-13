@@ -35,6 +35,7 @@ from .room_raw import RoomRaw
 from .room_design_raw import RoomDesignRaw
 from .room_design_purchase_raw import RoomDesignPurchaseRaw
 from .room_design_sprite_raw import RoomDesignSpriteRaw
+from .sale_raw import SaleRaw
 from .season_design_raw import SeasonDesignRaw
 from .setting_raw import SettingRaw
 from .ship_raw import ShipRaw

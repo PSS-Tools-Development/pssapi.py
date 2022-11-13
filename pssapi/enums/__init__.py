@@ -64,6 +64,7 @@ from .room_effect_type import RoomEffectType
 from .room_sprite_type import RoomSpriteType
 from .room_status import RoomStatus
 from .room_type import RoomType
+from .sale_status import SaleStatus
 from .sale_type import SaleType
 from .season_type import SeasonType
 from .ship_status import ShipStatus

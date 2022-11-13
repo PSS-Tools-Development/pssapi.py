@@ -12,6 +12,7 @@ from . import item_service_raw as ItemServiceRaw
 from . import ladder_service_raw as LadderServiceRaw
 from . import league_service_raw as LeagueServiceRaw
 from . import live_ops_service_raw as LiveOpsServiceRaw
+from . import market_service_raw as MarketServiceRaw
 from . import message_service_raw as MessageServiceRaw
 from . import mission_service_raw as MissionServiceRaw
 from . import promotion_service_raw as PromotionServiceRaw

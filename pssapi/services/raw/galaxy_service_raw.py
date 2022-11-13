@@ -5,6 +5,7 @@
 from typing import List as _List
 
 from ... import core as _core
+from ...entities import Ship as _Ship
 from ...entities import StarSystem as _StarSystem
 from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarker as _StarSystemMarker
@@ -12,13 +13,28 @@ from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 
 # ---------- Constants ----------
 
+GO_TO_BASE_PATH: str = 'GalaxyService/GoTo'
 LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = 'GalaxyService/ListMarkerGeneratorDesigns'
 LIST_STAR_SYSTEM_LINKS_BASE_PATH: str = 'GalaxyService/ListStarSystemLinks'
 LIST_STAR_SYSTEM_MARKERS_BASE_PATH: str = 'GalaxyService/ListStarSystemMarkers'
 LIST_STAR_SYSTEMS_BASE_PATH: str = 'GalaxyService/ListStarSystems'
+UPDATE_MARKER_MOVEMENT_BASE_PATH: str = 'GalaxyService/UpdateMarkerMovement'
 
 
 # ---------- Endpoints ----------
+
+async def go_to(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_id: int, **params) -> _List[_Ship]:
+    params = {
+        'accessToken': access_token,
+        'checksum': checksum,
+        'clientDateTime': client_date_time,
+        'starSystemId': star_system_id,
+        **params
+    }
+    content = None
+    result = await _core.get_entities_from_path(_Ship, 'GoTo', production_server, GO_TO_BASE_PATH, 'POST', request_content=content, **params)
+    return result
+
 
 async def list_marker_generator_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_StarSystemMarkerGenerator]:
     params = {
@@ -60,4 +76,17 @@ async def list_star_systems(production_server: str, design_version: int, languag
     }
     content = None
     result = await _core.get_entities_from_path(_StarSystem, 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, 'GET', request_content=content, **params)
+    return result
+
+
+async def update_marker_movement(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int, **params) -> _List[_StarSystemMarker]:
+    params = {
+        'accessToken': access_token,
+        'checksum': checksum,
+        'clientDateTime': client_date_time,
+        'starSystemMarkerId': star_system_marker_id,
+        **params
+    }
+    content = None
+    result = await _core.get_entities_from_path(_StarSystemMarker, 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', request_content=content, **params)
     return result

@@ -34,6 +34,7 @@ from .room import *
 from .room_design import *
 from .room_design_purchase import *
 from .room_design_sprite import *
+from .sale import *
 from .season_design import *
 from .setting import *
 from .ship import *
@@ -51,6 +52,3 @@ from .user_login import *
 from .user_marker import *
 from .user_season import *
 from .user_star_system import *
-
-# customs
-from .sale import *

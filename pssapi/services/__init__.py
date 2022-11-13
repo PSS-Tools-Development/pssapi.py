@@ -12,6 +12,7 @@ from .item_service import ItemService
 from .ladder_service import LadderService
 from .league_service import LeagueService
 from .live_ops_service import LiveOpsService
+from .market_service import MarketService
 from .message_service import MessageService
 from .mission_service import MissionService
 from .promotion_service import PromotionService
@@ -26,6 +27,3 @@ from .situation_service import SituationService
 from .task_service import TaskService
 from .training_service import TrainingService
 from .user_service import UserService
-
-# customs
-from .market_service import MarketService

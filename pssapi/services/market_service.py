@@ -1,18 +1,11 @@
 from typing import List as _List
 
+from .raw import MarketServiceRaw as _MarketServiceRaw
 from .service_base import ServiceBase as _ServiceBase
 from ..entities import Sale as _Sale
-from .. import core as _core
 
 
 class MarketService(_ServiceBase):
-    async def list_sales_by_item_design_id(self, item_design_id: int, sale_status: str, from_: int, to_: int) -> _List[_Sale]:
-        params = {
-            'itemDesignId': item_design_id,
-            'saleStatus': sale_status,
-            'from': from_,
-            'to': to_,
-        }
-
-        result = await _core.get_entities_from_path(_Sale, 'Sales', self.production_server, 'MarketService/ListSalesByItemDesignId', **params)
+    async def list_sales_by_item_design_id(self, item_design_id: int, sale_status: str, from_: int, to: int) -> _List[_Sale]:
+        result = await _MarketServiceRaw.list_sales_by_item_design_id(self.production_server, item_design_id, sale_status, from_, to)
         return result

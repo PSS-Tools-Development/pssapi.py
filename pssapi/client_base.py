@@ -13,6 +13,7 @@ from .services import ItemService as _ItemService
 from .services import LadderService as _LadderService
 from .services import LeagueService as _LeagueService
 from .services import LiveOpsService as _LiveOpsService
+from .services import MarketService as _MarketService
 from .services import MessageService as _MessageService
 from .services import MissionService as _MissionService
 from .services import PromotionService as _PromotionService
@@ -121,6 +122,10 @@ class PssApiClientBase:
         return self.__live_ops_service
 
     @property
+    def market_service(self) -> _MarketService:
+        return self.__market_service
+
+    @property
     def message_service(self) -> _MessageService:
         return self.__message_service
 
@@ -212,6 +217,8 @@ class PssApiClientBase:
         self.__league_service: _LeagueService = _LeagueService(
             self.production_server, self.language_key)
         self.__live_ops_service: _LiveOpsService = _LiveOpsService(
+            self.production_server, self.language_key)
+        self.__market_service: _MarketService = _MarketService(
             self.production_server, self.language_key)
         self.__message_service: _MessageService = _MessageService(
             self.production_server, self.language_key)
