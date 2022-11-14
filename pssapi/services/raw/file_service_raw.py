@@ -3,7 +3,6 @@
 """
 
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import File as _File
@@ -35,5 +34,3 @@ async def list_sprites_2(production_server: str, design_version: int, language_k
     }
     result = await _core.get_entities_from_path((_Sprite,), 'Sprites', production_server, LIST_SPRITES_2_BASE_PATH, 'GET', **params)
     return result
-
-

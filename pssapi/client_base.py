@@ -189,7 +189,6 @@ class PssApiClientBase:
         settings = await setting_service.get_latest_version(self.device_type)
         self.production_server = settings[0].production_server
 
-
     def _update_services(self) -> None:
         self.__achievement_service: _AchievementService = _AchievementService(self.production_server, self.language_key)
         self.__alliance_service: _AllianceService = _AllianceService(self.production_server, self.language_key)

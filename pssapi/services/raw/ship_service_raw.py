@@ -36,5 +36,3 @@ async def list_all_ship_designs_2(production_server: str, design_version: int, l
     }
     result = await _core.get_entities_from_path((_ShipDesign,), 'ShipDesigns', production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result
-
-

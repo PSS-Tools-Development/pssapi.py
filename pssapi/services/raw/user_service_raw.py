@@ -4,7 +4,6 @@
 
 from datetime import datetime as _datetime
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import User as _User
@@ -81,5 +80,3 @@ async def steam_login_6(production_server: str, access_token: str, advertising_k
     return result
 
 __STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"str","DeviceKey":"str","DeviceType":"int","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","Ticket":"str","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
-
-

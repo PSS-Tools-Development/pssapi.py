@@ -86,5 +86,3 @@ async def update_marker_movement(production_server: str, access_token: str, chec
     }
     result = await _core.get_entities_from_path((_StarSystemMarker, _UserMarker), 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', **params)
     return result
-
-

@@ -3,7 +3,6 @@
 """
 
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import ItemDesign as _ItemDesign
@@ -34,5 +33,3 @@ async def list_item_designs_2(production_server: str, design_version: int, langu
     }
     result = await _core.get_entities_from_path((_ItemDesign,), 'ItemDesigns', production_server, LIST_ITEM_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result
-
-
