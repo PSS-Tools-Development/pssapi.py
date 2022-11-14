@@ -16,4 +16,4 @@ class File(_EntityWithIdBase, _FileRaw):
 
     @property
     def id(self) -> int:
-        return self.id
+        return self.id_

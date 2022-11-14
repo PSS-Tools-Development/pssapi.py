@@ -23,8 +23,7 @@ async def list_all_character_design_actions(production_server: str, design_versi
         'designVersion': design_version,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_CharacterDesignAction, 'CharacterDesignActions', production_server, LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_CharacterDesignAction,), 'CharacterDesignActions', production_server, LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -34,8 +33,7 @@ async def list_all_character_designs_2(production_server: str, design_version: i
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_CharacterDesign, 'CharacterDesigns', production_server, LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_CharacterDesign,), 'CharacterDesigns', production_server, LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -45,6 +43,5 @@ async def list_all_draw_designs(production_server: str, design_version: int, lan
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_DrawDesign, 'DrawDesigns', production_server, LIST_ALL_DRAW_DESIGNS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_DrawDesign,), 'DrawDesigns', production_server, LIST_ALL_DRAW_DESIGNS_BASE_PATH, 'GET', **params)
     return result

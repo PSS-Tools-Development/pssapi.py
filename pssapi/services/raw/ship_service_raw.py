@@ -3,10 +3,12 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Ship as _Ship
 from ...entities import ShipDesign as _ShipDesign
+from ...entities import User as _User
 
 # ---------- Constants ----------
 
@@ -16,14 +18,13 @@ LIST_ALL_SHIP_DESIGNS_2_BASE_PATH: str = 'ShipService/ListAllShipDesigns2'
 
 # ---------- Endpoints ----------
 
-async def inspect_ship_2(production_server: str, access_token: str, user_id: int, **params) -> _List[_Ship]:
+async def inspect_ship_2(production_server: str, access_token: str, user_id: int, **params) -> _Tuple[_Ship, _User]:
     params = {
         'accessToken': access_token,
         'userId': user_id,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Ship, 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Ship, _User), 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -33,6 +34,5 @@ async def list_all_ship_designs_2(production_server: str, design_version: int, l
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_ShipDesign, 'ShipDesigns', production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_ShipDesign,), 'ShipDesigns', production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result

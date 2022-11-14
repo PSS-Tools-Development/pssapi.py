@@ -9,5 +9,3 @@ class PssApiClient(_PssApiClientBase):
 
     def _update_services(self):
         super()._update_services()
-
-        # declare here custom services

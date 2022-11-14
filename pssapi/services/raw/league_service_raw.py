@@ -21,6 +21,5 @@ async def list_leagues_2(production_server: str, access_token: str, design_versi
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_League, 'Leagues', production_server, LIST_LEAGUES_2_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_League,), 'Leagues', production_server, LIST_LEAGUES_2_BASE_PATH, 'GET', **params)
     return result

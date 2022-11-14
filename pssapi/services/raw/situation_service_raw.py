@@ -20,6 +20,5 @@ async def list_situation_designs(production_server: str, design_version: int, la
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_SituationDesign, 'SituationDesigns', production_server, LIST_SITUATION_DESIGNS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_SituationDesign,), 'SituationDesigns', production_server, LIST_SITUATION_DESIGNS_BASE_PATH, 'GET', **params)
     return result

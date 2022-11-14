@@ -1,4 +1,5 @@
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -7,6 +8,7 @@ from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
 from ..entities import StarSystemMarker as _StarSystemMarker
 from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
+from ..entities import UserMarker as _UserMarker
 
 
 class GalaxyService(_ServiceBase):
@@ -30,6 +32,6 @@ class GalaxyService(_ServiceBase):
         result = await _GalaxyServiceRaw.list_star_systems(self.production_server, design_version, self.language_key)
         return result
 
-    async def update_marker_movement(self, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int) -> _List[_StarSystemMarker]:
+    async def update_marker_movement(self, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int) -> _Tuple[_StarSystemMarker, _UserMarker]:
         result = await _GalaxyServiceRaw.update_marker_movement(self.production_server, access_token, checksum, client_date_time, star_system_marker_id)
         return result

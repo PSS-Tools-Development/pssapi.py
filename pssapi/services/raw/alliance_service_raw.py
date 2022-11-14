@@ -25,8 +25,7 @@ async def list_alliances_by_championship_score_ranking(production_server: str, a
         'to': to,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -36,8 +35,7 @@ async def list_alliances_by_ranking(production_server: str, skip: int, take: int
         'take': take,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -49,8 +47,7 @@ async def list_users_2(production_server: str, access_token: str, alliance_id: i
         'take': take,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Message, 'Messages', production_server, LIST_USERS_2_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Message,), 'Messages', production_server, LIST_USERS_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -62,6 +59,5 @@ async def search_alliances(production_server: str, access_token: str, name: str,
         'take': take,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Alliance, 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', **params)
     return result

@@ -16,4 +16,4 @@ class User(_EntityWithIdBase, _UserRaw):
 
     @property
     def id(self) -> int:
-        return self.id
+        return self.id_

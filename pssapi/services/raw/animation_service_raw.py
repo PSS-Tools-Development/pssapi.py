@@ -19,6 +19,5 @@ async def list_animations(production_server: str, design_version: int, **params)
         'designVersion': design_version,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_Animation, 'Animations', production_server, LIST_ANIMATIONS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_Animation,), 'Animations', production_server, LIST_ANIMATIONS_BASE_PATH, 'GET', **params)
     return result

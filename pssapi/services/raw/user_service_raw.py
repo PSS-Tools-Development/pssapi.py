@@ -38,9 +38,8 @@ async def device_login_12(production_server: str, access_token: str, advertising
         'Signal': signal,
         **params
     }
-    content = _core.create_request_content(
-        __DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, 'json')
-    result = await _core.get_entities_from_path(_UserLogin, 'UserService', production_server, DEVICE_LOGIN_12_BASE_PATH, 'POST', request_content=content, **params)
+    content = _core.create_request_content(__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, 'json')
+    result = await _core.get_entities_from_path((_UserLogin,), 'UserService', production_server, DEVICE_LOGIN_12_BASE_PATH, 'POST', request_content=content, **params)
     return result
 
 __DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"datetime","DeviceKey":"str","DeviceType":"int","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
@@ -51,8 +50,7 @@ async def search_users(production_server: str, search_string: str, **params) -> 
         'searchString': search_string,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_User, 'Users', production_server, SEARCH_USERS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_User,), 'Users', production_server, SEARCH_USERS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -77,9 +75,8 @@ async def steam_login_6(production_server: str, access_token: str, advertising_k
         'Ticket': ticket,
         **params
     }
-    content = _core.create_request_content(
-        __STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE, params, 'json')
-    result = await _core.get_entities_from_path(_UserLogin, 'UserService', production_server, STEAM_LOGIN_6_BASE_PATH, 'POST', request_content=content, **params)
+    content = _core.create_request_content(__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE, params, 'json')
+    result = await _core.get_entities_from_path((_UserLogin,), 'UserService', production_server, STEAM_LOGIN_6_BASE_PATH, 'POST', request_content=content, **params)
     return result
 
 __STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"str","DeviceKey":"str","DeviceType":"int","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","Ticket":"str","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
