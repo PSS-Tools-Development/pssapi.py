@@ -16,7 +16,7 @@ async def main() -> None:
     print(f'Found {len(item_designs)} item designs.')
     print(f'First item: {item_designs[0].item_design_name}')
 
-    sales = await client.market_service.list_sales_by_item_design_id(81, 'Sold', to=10)
+    sales = await client.market_service.list_sales_by_item_design_id(0, 81, 'Sold', 10)
     print(f'Found {len(sales)} sales.')
     print(f'First sale: {sales[0].id}')
 
