@@ -13,8 +13,8 @@ class TaskDesignRaw:
     XML_NODE_NAME: str = 'TaskDesign'
 
     def __init__(self, task_design_info: _EntityInfo) -> None:
-        self.available_from: _datetime = _parse.pss__datetime(task_design_info.get('AvailableFrom'))
-        self.available_to: _datetime = _parse.pss__datetime(task_design_info.get('AvailableTo'))
+        self.available_from: _datetime = _parse.pss_datetime(task_design_info.get('AvailableFrom'))
+        self.available_to: _datetime = _parse.pss_datetime(task_design_info.get('AvailableTo'))
         self.description: str = _parse.pss_str(task_design_info.get('Description'))
         self.flags: int = _parse.pss_int(task_design_info.get('Flags'))
         self.global_progress: int = _parse.pss_int(task_design_info.get('GlobalProgress'))

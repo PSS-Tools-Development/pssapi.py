@@ -42,7 +42,7 @@ async def get_entities_from_path(entity_types: _Union[_Type[_EntityBase], _Itera
     if isinstance(entity_types, _Iterable):
         for child in parent_node:
             for entity_type in entity_types:
-                if entity_type.name == child.tag:
+                if entity_type.__name__ == child.tag:
                     entity = entity_type(__get_raw_entity_xml(child))
                     result.append(entity)
     else:

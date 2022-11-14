@@ -15,7 +15,7 @@ class CharacterRaw:
     def __init__(self, character_info: _EntityInfo) -> None:
         self.ability_improvement: int = _parse.pss_int(character_info.get('AbilityImprovement'))
         self.attack_improvement: int = _parse.pss_int(character_info.get('AttackImprovement'))
-        self.available_date: _datetime = _parse.pss__datetime(character_info.get('AvailableDate'))
+        self.available_date: _datetime = _parse.pss_datetime(character_info.get('AvailableDate'))
         self.character_design_id: int = _parse.pss_int(character_info.get('CharacterDesignId'))
         self.character_id: int = _parse.pss_int(character_info.get('CharacterId'))
         self.character_name: str = _parse.pss_str(character_info.get('CharacterName'))

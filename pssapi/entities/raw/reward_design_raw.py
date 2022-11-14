@@ -15,9 +15,9 @@ class RewardDesignRaw:
     def __init__(self, reward_design_info: _EntityInfo) -> None:
         self.argument_string: str = _parse.pss_str(reward_design_info.get('ArgumentString'))
         self.available_every_x_days: int = _parse.pss_int(reward_design_info.get('AvailableEveryXDays'))
-        self.available_from: _datetime = _parse.pss__datetime(reward_design_info.get('AvailableFrom'))
+        self.available_from: _datetime = _parse.pss_datetime(reward_design_info.get('AvailableFrom'))
         self.available_quantity: int = _parse.pss_int(reward_design_info.get('AvailableQuantity'))
-        self.available_to: _datetime = _parse.pss__datetime(reward_design_info.get('AvailableTo'))
+        self.available_to: _datetime = _parse.pss_datetime(reward_design_info.get('AvailableTo'))
         self.background_sprite_id: int = _parse.pss_int(reward_design_info.get('BackgroundSpriteId'))
         self.battle_pass_tier_index: int = _parse.pss_int(reward_design_info.get('BattlePassTierIndex'))
         self.flags: int = _parse.pss_int(reward_design_info.get('Flags'))

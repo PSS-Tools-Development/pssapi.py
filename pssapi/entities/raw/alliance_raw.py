@@ -24,7 +24,7 @@ class AllianceRaw:
         self.credits: int = _parse.pss_int(alliance_info.get('Credits'))
         self.division_design_id: int = _parse.pss_int(alliance_info.get('DivisionDesignId'))
         self.enable_wars: bool = _parse.pss_bool(alliance_info.get('EnableWars'))
-        self.immunity_date: _datetime = _parse.pss__datetime(alliance_info.get('ImmunityDate'))
+        self.immunity_date: _datetime = _parse.pss_datetime(alliance_info.get('ImmunityDate'))
         self.min_trophy_required: int = _parse.pss_int(alliance_info.get('MinTrophyRequired'))
         self.number_of_approved_members: int = _parse.pss_int(alliance_info.get('NumberOfApprovedMembers'))
         self.number_of_members: int = _parse.pss_int(alliance_info.get('NumberOfMembers'))

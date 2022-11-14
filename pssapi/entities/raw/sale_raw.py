@@ -27,4 +27,4 @@ class SaleRaw:
         self.seller_ship_id: int = _parse.pss_int(sale_info.get('SellerShipId'))
         self.seller_ship_name: str = _parse.pss_str(sale_info.get('SellerShipName'))
         self.starbux_value: int = _parse.pss_int(sale_info.get('StarbuxValue'))
-        self.status_date: _datetime = _parse.pss__datetime(sale_info.get('StatusDate'))
+        self.status_date: _datetime = _parse.pss_datetime(sale_info.get('StatusDate'))

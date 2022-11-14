@@ -5,7 +5,6 @@
 from datetime import datetime as _datetime
 from typing import List as _List
 
-from ...entities import CharacterPart as _CharacterPart
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
@@ -14,6 +13,8 @@ class CharacterDesignRaw:
     XML_NODE_NAME: str = 'CharacterDesign'
 
     def __init__(self, character_design_info: _EntityInfo) -> None:
+        from ...entities import CharacterPart as _CharacterPart
+
         self.action_sound_file_id: int = _parse.pss_int(character_design_info.get('ActionSoundFileId'))
         self.attack: float = _parse.pss_float(character_design_info.get('Attack'))
         self.character_body_part_id: int = _parse.pss_int(character_design_info.get('CharacterBodyPartId'))
@@ -22,7 +23,7 @@ class CharacterDesignRaw:
         self.character_design_name: str = _parse.pss_str(character_design_info.get('CharacterDesignName'))
         self.character_head_part_id: int = _parse.pss_int(character_design_info.get('CharacterHeadPartId'))
         self.character_leg_part_id: int = _parse.pss_int(character_design_info.get('CharacterLegPartId'))
-        self.character_parts: _List[_CharacterPart] = [_CharacterPart(child_info) for child_info in character_design_info.get('CharacterParts')]
+        self.character_parts: _List[_CharacterPart] = [_CharacterPart(child_info) for child_info in character_design_info.get('CharacterParts')] if character_design_info.get('CharacterParts') else []
         self.collection_design_id: int = _parse.pss_int(character_design_info.get('CollectionDesignId'))
         self.engine: float = _parse.pss_float(character_design_info.get('Engine'))
         self.equipment_mask: int = _parse.pss_int(character_design_info.get('EquipmentMask'))

@@ -6,6 +6,6 @@ from ..entities import Sale as _Sale
 
 
 class MarketService(_ServiceBase):
-    async def list_sales_by_item_design_id(self, item_design_id: int, sale_status: str, from_: int, to: int) -> _List[_Sale]:
-        result = await _MarketServiceRaw.list_sales_by_item_design_id(self.production_server, item_design_id, sale_status, from_, to)
+    async def list_sales_by_item_design_id(self, item_design_id: int, sale_status: str, from_: int = 0, to: int = 100) -> _List[_Sale]:
+        result = await _MarketServiceRaw.list_sales_by_item_design_id(self.production_server, from_, item_design_id, sale_status, to)
         return result

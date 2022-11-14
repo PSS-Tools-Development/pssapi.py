@@ -3,7 +3,7 @@
 """
 
 from typing import List as _List
-from typing import List as _Tuple
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import RewardDesign as _RewardDesign
@@ -21,7 +21,7 @@ async def list_all_reward_designs_2(production_server: str, design_version: int,
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_RewardDesign), 'RewardDesigns', production_server, LIST_ALL_REWARD_DESIGNS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path((_RewardDesign,), 'RewardDesigns', production_server, LIST_ALL_REWARD_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result
 
 

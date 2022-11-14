@@ -3,7 +3,7 @@
 """
 
 from typing import List as _List
-from typing import List as _Tuple
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import PromotionDesign as _PromotionDesign
@@ -22,7 +22,7 @@ async def fix_user_promotions(production_server: str, access_token: str, **param
         'accessToken': access_token,
         **params
     }
-    result = await _core.get_entities_from_path((_User), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path((_User,), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
     return result
 
 
@@ -32,7 +32,7 @@ async def list_all_promotion_designs_2(production_server: str, design_version: i
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_PromotionDesign), 'PromotionDesigns', production_server, LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path((_PromotionDesign,), 'PromotionDesigns', production_server, LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result
 
 

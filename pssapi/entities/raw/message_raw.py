@@ -22,7 +22,7 @@ class MessageRaw:
         self.border_sprite_id: str = _parse.pss_str(message_info.get('BorderSpriteId'))
         self.channel_id: int = _parse.pss_int(message_info.get('ChannelId'))
         self.message: str = _parse.pss_str(message_info.get('Message'))
-        self.message_date: _datetime = _parse.pss__datetime(message_info.get('MessageDate'))
+        self.message_date: _datetime = _parse.pss_datetime(message_info.get('MessageDate'))
         self.message_id: int = _parse.pss_int(message_info.get('MessageId'))
         self.message_type: str = _parse.pss_str(message_info.get('MessageType'))
         self.sale_id: str = _parse.pss_str(message_info.get('SaleId'))

@@ -14,8 +14,8 @@ class MissionDesignRaw:
 
     def __init__(self, mission_design_info: _EntityInfo) -> None:
         self.available_every_x_days: int = _parse.pss_int(mission_design_info.get('AvailableEveryXDays'))
-        self.available_from: _datetime = _parse.pss__datetime(mission_design_info.get('AvailableFrom'))
-        self.available_to: _datetime = _parse.pss__datetime(mission_design_info.get('AvailableTo'))
+        self.available_from: _datetime = _parse.pss_datetime(mission_design_info.get('AvailableFrom'))
+        self.available_to: _datetime = _parse.pss_datetime(mission_design_info.get('AvailableTo'))
         self.background_sprite_id: int = _parse.pss_int(mission_design_info.get('BackgroundSpriteId'))
         self.chance: int = _parse.pss_int(mission_design_info.get('Chance'))
         self.condition: str = _parse.pss_str(mission_design_info.get('Condition'))
