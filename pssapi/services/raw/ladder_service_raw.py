@@ -3,6 +3,7 @@
 """
 
 from typing import List as _List
+from typing import List as _Tuple
 
 from ... import core as _core
 from ...entities import User as _User
@@ -22,8 +23,7 @@ async def list_users_by_championship_score_ranking(production_server: str, acces
         'to': to,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_User, 'Users', production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_User), 'Users', production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -34,6 +34,7 @@ async def list_users_by_ranking(production_server: str, access_token: str, from_
         'to': to,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_User, 'Users', production_server, LIST_USERS_BY_RANKING_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_User), 'Users', production_server, LIST_USERS_BY_RANKING_BASE_PATH, 'GET', **params)
     return result
+
+

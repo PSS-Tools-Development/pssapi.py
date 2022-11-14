@@ -3,6 +3,7 @@
 """
 
 from typing import List as _List
+from typing import List as _Tuple
 
 from ... import core as _core
 from ...entities import CollectionDesign as _CollectionDesign
@@ -20,6 +21,7 @@ async def list_all_collection_designs(production_server: str, design_version: in
         'languageKey': language_key,
         **params
     }
-    content = None
-    result = await _core.get_entities_from_path(_CollectionDesign, 'CollectionDesigns', production_server, LIST_ALL_COLLECTION_DESIGNS_BASE_PATH, 'GET', request_content=content, **params)
+    result = await _core.get_entities_from_path((_CollectionDesign), 'CollectionDesigns', production_server, LIST_ALL_COLLECTION_DESIGNS_BASE_PATH, 'GET', **params)
     return result
+
+

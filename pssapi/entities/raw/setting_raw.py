@@ -2,7 +2,8 @@
     This file has been generated automatically
 """
 
-from datetime import datetime
+from datetime import datetime as _datetime
+from typing import List as _List
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
@@ -12,235 +13,123 @@ class SettingRaw:
     XML_NODE_NAME: str = 'Setting'
 
     def __init__(self, setting_info: _EntityInfo) -> None:
-        self.ab_testing_rollout: int = _parse.pss_int(
-            setting_info.get('ABTestingRollout'))
-        self.ab_testing_start_date: datetime = _parse.pss_datetime(
-            setting_info.get('ABTestingStartDate'))
-        self.a_feature_mask: int = _parse.pss_int(
-            setting_info.get('AFeatureMask'))
-        self.ability_design_version: int = _parse.pss_int(
-            setting_info.get('AbilityDesignVersion'))
-        self.achievement_design_version: int = _parse.pss_int(
-            setting_info.get('AchievementDesignVersion'))
-        self.action_type_version: int = _parse.pss_int(
-            setting_info.get('ActionTypeVersion'))
-        self.alliance_badge_sprite_ids: str = _parse.pss_str(
-            setting_info.get('AllianceBadgeSpriteIds'))
-        self.animation_version: int = _parse.pss_int(
-            setting_info.get('AnimationVersion'))
-        self.asset_version: int = _parse.pss_int(
-            setting_info.get('AssetVersion'))
-        self.b_feature_mask: int = _parse.pss_int(
-            setting_info.get('BFeatureMask'))
-        self.background_id: int = _parse.pss_int(
-            setting_info.get('BackgroundId'))
-        self.background_version: int = _parse.pss_int(
-            setting_info.get('BackgroundVersion'))
-        self.battle_background_id: int = _parse.pss_int(
-            setting_info.get('BattleBackgroundId'))
-        self.boost_duration: int = _parse.pss_int(
-            setting_info.get('BoostDuration'))
-        self.boost_multiplier: int = _parse.pss_int(
-            setting_info.get('BoostMultiplier'))
+        self.ab_testing_rollout: int = _parse.pss_int(setting_info.get('ABTestingRollout'))
+        self.ab_testing_start_date: _datetime = _parse.pss__datetime(setting_info.get('ABTestingStartDate'))
+        self.a_feature_mask: int = _parse.pss_int(setting_info.get('AFeatureMask'))
+        self.ability_design_version: int = _parse.pss_int(setting_info.get('AbilityDesignVersion'))
+        self.achievement_design_version: int = _parse.pss_int(setting_info.get('AchievementDesignVersion'))
+        self.action_type_version: int = _parse.pss_int(setting_info.get('ActionTypeVersion'))
+        self.alliance_badge_sprite_ids: str = _parse.pss_str(setting_info.get('AllianceBadgeSpriteIds'))
+        self.animation_version: int = _parse.pss_int(setting_info.get('AnimationVersion'))
+        self.asset_version: int = _parse.pss_int(setting_info.get('AssetVersion'))
+        self.b_feature_mask: int = _parse.pss_int(setting_info.get('BFeatureMask'))
+        self.background_id: int = _parse.pss_int(setting_info.get('BackgroundId'))
+        self.background_version: int = _parse.pss_int(setting_info.get('BackgroundVersion'))
+        self.battle_background_id: int = _parse.pss_int(setting_info.get('BattleBackgroundId'))
+        self.boost_duration: int = _parse.pss_int(setting_info.get('BoostDuration'))
+        self.boost_multiplier: int = _parse.pss_int(setting_info.get('BoostMultiplier'))
         self.cargo_items: str = _parse.pss_str(setting_info.get('CargoItems'))
-        self.cargo_prices: str = _parse.pss_str(
-            setting_info.get('CargoPrices'))
-        self.challenge_design_version: int = _parse.pss_int(
-            setting_info.get('ChallengeDesignVersion'))
-        self.character_design_action_version: int = _parse.pss_int(
-            setting_info.get('CharacterDesignActionVersion'))
-        self.character_design_version: int = _parse.pss_int(
-            setting_info.get('CharacterDesignVersion'))
-        self.character_part_version: int = _parse.pss_int(
-            setting_info.get('CharacterPartVersion'))
-        self.checksum_type: str = _parse.pss_str(
-            setting_info.get('ChecksumType'))
-        self.client_translation_version: int = _parse.pss_int(
-            setting_info.get('ClientTranslationVersion'))
-        self.collection_design_version: int = _parse.pss_int(
-            setting_info.get('CollectionDesignVersion'))
-        self.common_crew_id: str = _parse.pss_str(
-            setting_info.get('CommonCrewId'))
-        self.condition_type_version: int = _parse.pss_int(
-            setting_info.get('ConditionTypeVersion'))
-        self.craft_design_version: int = _parse.pss_int(
-            setting_info.get('CraftDesignVersion'))
-        self.current_android_version: str = _parse.pss_str(
-            setting_info.get('CurrentAndroidVersion'))
-        self.daily_item_rewards: str = _parse.pss_str(
-            setting_info.get('DailyItemRewards'))
-        self.daily_reward_argument: str = _parse.pss_str(
-            setting_info.get('DailyRewardArgument'))
-        self.daily_reward_type: str = _parse.pss_str(
-            setting_info.get('DailyRewardType'))
-        self.division_design_version: int = _parse.pss_int(
-            setting_info.get('DivisionDesignVersion'))
-        self.draw_design_version: int = _parse.pss_int(
-            setting_info.get('DrawDesignVersion'))
-        self.feature_mask: int = _parse.pss_int(
-            setting_info.get('FeatureMask'))
-        self.file_version: int = _parse.pss_int(
-            setting_info.get('FileVersion'))
+        self.cargo_prices: str = _parse.pss_str(setting_info.get('CargoPrices'))
+        self.challenge_design_version: int = _parse.pss_int(setting_info.get('ChallengeDesignVersion'))
+        self.character_design_action_version: int = _parse.pss_int(setting_info.get('CharacterDesignActionVersion'))
+        self.character_design_version: int = _parse.pss_int(setting_info.get('CharacterDesignVersion'))
+        self.character_part_version: int = _parse.pss_int(setting_info.get('CharacterPartVersion'))
+        self.checksum_type: str = _parse.pss_str(setting_info.get('ChecksumType'))
+        self.client_translation_version: int = _parse.pss_int(setting_info.get('ClientTranslationVersion'))
+        self.collection_design_version: int = _parse.pss_int(setting_info.get('CollectionDesignVersion'))
+        self.common_crew_id: str = _parse.pss_str(setting_info.get('CommonCrewId'))
+        self.condition_type_version: int = _parse.pss_int(setting_info.get('ConditionTypeVersion'))
+        self.craft_design_version: int = _parse.pss_int(setting_info.get('CraftDesignVersion'))
+        self.current_android_version: str = _parse.pss_str(setting_info.get('CurrentAndroidVersion'))
+        self.daily_item_rewards: str = _parse.pss_str(setting_info.get('DailyItemRewards'))
+        self.daily_reward_argument: str = _parse.pss_str(setting_info.get('DailyRewardArgument'))
+        self.daily_reward_type: str = _parse.pss_str(setting_info.get('DailyRewardType'))
+        self.division_design_version: int = _parse.pss_int(setting_info.get('DivisionDesignVersion'))
+        self.draw_design_version: int = _parse.pss_int(setting_info.get('DrawDesignVersion'))
+        self.feature_mask: int = _parse.pss_int(setting_info.get('FeatureMask'))
+        self.file_version: int = _parse.pss_int(setting_info.get('FileVersion'))
         self.flags: int = _parse.pss_int(setting_info.get('Flags'))
-        self.grace_period: int = _parse.pss_int(
-            setting_info.get('GracePeriod'))
+        self.grace_period: int = _parse.pss_int(setting_info.get('GracePeriod'))
         self.hero_crew_id: str = _parse.pss_str(setting_info.get('HeroCrewId'))
         self.is_debug: bool = _parse.pss_bool(setting_info.get('IsDebug'))
-        self.item_design_action_version: int = _parse.pss_int(
-            setting_info.get('ItemDesignActionVersion'))
-        self.item_design_version: int = _parse.pss_int(
-            setting_info.get('ItemDesignVersion'))
-        self.league_version: int = _parse.pss_int(
-            setting_info.get('LeagueVersion'))
-        self.left_loading_sprite_id: int = _parse.pss_int(
-            setting_info.get('LeftLoadingSpriteId'))
-        self.legendary_battle_count: int = _parse.pss_int(
-            setting_info.get('LegendaryBattleCount'))
-        self.legendary_doves_amount: int = _parse.pss_int(
-            setting_info.get('LegendaryDovesAmount'))
-        self.legendary_loot_percentage: int = _parse.pss_int(
-            setting_info.get('LegendaryLootPercentage'))
-        self.legendary_result_reward_modifiers: str = _parse.pss_str(
-            setting_info.get('LegendaryResultRewardModifiers'))
-        self.legendary_result_trophy_modifiers: str = _parse.pss_str(
-            setting_info.get('LegendaryResultTrophyModifiers'))
-        self.legendary_rewards_text: str = _parse.pss_str(
-            setting_info.get('LegendaryRewardsText'))
-        self.legendary_rules_text: str = _parse.pss_str(
-            setting_info.get('LegendaryRulesText'))
-        self.legendary_trophy_in: int = _parse.pss_int(
-            setting_info.get('LegendaryTrophyIn'))
-        self.legendary_trophy_out: int = _parse.pss_int(
-            setting_info.get('LegendaryTrophyOut'))
-        self.limited_catalog_argument: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogArgument'))
-        self.limited_catalog_currency_amount: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogCurrencyAmount'))
-        self.limited_catalog_currency_type: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogCurrencyType'))
-        self.limited_catalog_expiry_date: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogExpiryDate'))
-        self.limited_catalog_max_total: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogMaxTotal'))
-        self.limited_catalog_quantity: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogQuantity'))
-        self.limited_catalog_restock_quantity: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogRestockQuantity'))
-        self.limited_catalog_type: str = _parse.pss_str(
-            setting_info.get('LimitedCatalogType'))
-        self.loading_ship_sprite_id: int = _parse.pss_int(
-            setting_info.get('LoadingShipSpriteId'))
-        self.loading_subtitle_sprite_id: int = _parse.pss_int(
-            setting_info.get('LoadingSubtitleSpriteId'))
-        self.loading_title_sprite_id: int = _parse.pss_int(
-            setting_info.get('LoadingTitleSpriteId'))
-        self.loot_modifiers: str = _parse.pss_str(
-            setting_info.get('LootModifiers'))
-        self.maintenance_message: str = _parse.pss_str(
-            setting_info.get('MaintenanceMessage'))
-        self.marker_generator_design_version: str = _parse.pss_str(
-            setting_info.get('MarkerGeneratorDesignVersion'))
-        self.max_boost_duration: int = _parse.pss_int(
-            setting_info.get('MaxBoostDuration'))
-        self.max_daily_draws: int = _parse.pss_int(
-            setting_info.get('MaxDailyDraws'))
-        self.minimum_client_version: str = _parse.pss_str(
-            setting_info.get('MinimumClientVersion'))
-        self.minimum_version: str = _parse.pss_str(
-            setting_info.get('MinimumVersion'))
-        self.missile_design_version: int = _parse.pss_int(
-            setting_info.get('MissileDesignVersion'))
-        self.mission_design_version: int = _parse.pss_int(
-            setting_info.get('MissionDesignVersion'))
-        self.new_user_count: int = _parse.pss_int(
-            setting_info.get('NewUserCount'))
+        self.item_design_action_version: int = _parse.pss_int(setting_info.get('ItemDesignActionVersion'))
+        self.item_design_version: int = _parse.pss_int(setting_info.get('ItemDesignVersion'))
+        self.league_version: int = _parse.pss_int(setting_info.get('LeagueVersion'))
+        self.left_loading_sprite_id: int = _parse.pss_int(setting_info.get('LeftLoadingSpriteId'))
+        self.legendary_battle_count: int = _parse.pss_int(setting_info.get('LegendaryBattleCount'))
+        self.legendary_doves_amount: int = _parse.pss_int(setting_info.get('LegendaryDovesAmount'))
+        self.legendary_loot_percentage: int = _parse.pss_int(setting_info.get('LegendaryLootPercentage'))
+        self.legendary_result_reward_modifiers: str = _parse.pss_str(setting_info.get('LegendaryResultRewardModifiers'))
+        self.legendary_result_trophy_modifiers: str = _parse.pss_str(setting_info.get('LegendaryResultTrophyModifiers'))
+        self.legendary_rewards_text: str = _parse.pss_str(setting_info.get('LegendaryRewardsText'))
+        self.legendary_rules_text: str = _parse.pss_str(setting_info.get('LegendaryRulesText'))
+        self.legendary_trophy_in: int = _parse.pss_int(setting_info.get('LegendaryTrophyIn'))
+        self.legendary_trophy_out: int = _parse.pss_int(setting_info.get('LegendaryTrophyOut'))
+        self.limited_catalog_argument: str = _parse.pss_str(setting_info.get('LimitedCatalogArgument'))
+        self.limited_catalog_currency_amount: str = _parse.pss_str(setting_info.get('LimitedCatalogCurrencyAmount'))
+        self.limited_catalog_currency_type: str = _parse.pss_str(setting_info.get('LimitedCatalogCurrencyType'))
+        self.limited_catalog_expiry_date: str = _parse.pss_str(setting_info.get('LimitedCatalogExpiryDate'))
+        self.limited_catalog_max_total: str = _parse.pss_str(setting_info.get('LimitedCatalogMaxTotal'))
+        self.limited_catalog_quantity: str = _parse.pss_str(setting_info.get('LimitedCatalogQuantity'))
+        self.limited_catalog_restock_quantity: str = _parse.pss_str(setting_info.get('LimitedCatalogRestockQuantity'))
+        self.limited_catalog_type: str = _parse.pss_str(setting_info.get('LimitedCatalogType'))
+        self.loading_ship_sprite_id: int = _parse.pss_int(setting_info.get('LoadingShipSpriteId'))
+        self.loading_subtitle_sprite_id: int = _parse.pss_int(setting_info.get('LoadingSubtitleSpriteId'))
+        self.loading_title_sprite_id: int = _parse.pss_int(setting_info.get('LoadingTitleSpriteId'))
+        self.loot_modifiers: str = _parse.pss_str(setting_info.get('LootModifiers'))
+        self.maintenance_message: str = _parse.pss_str(setting_info.get('MaintenanceMessage'))
+        self.marker_generator_design_version: str = _parse.pss_str(setting_info.get('MarkerGeneratorDesignVersion'))
+        self.max_boost_duration: int = _parse.pss_int(setting_info.get('MaxBoostDuration'))
+        self.max_daily_draws: int = _parse.pss_int(setting_info.get('MaxDailyDraws'))
+        self.minimum_client_version: str = _parse.pss_str(setting_info.get('MinimumClientVersion'))
+        self.minimum_version: str = _parse.pss_str(setting_info.get('MinimumVersion'))
+        self.missile_design_version: int = _parse.pss_int(setting_info.get('MissileDesignVersion'))
+        self.mission_design_version: int = _parse.pss_int(setting_info.get('MissionDesignVersion'))
+        self.new_user_count: int = _parse.pss_int(setting_info.get('NewUserCount'))
         self.news: str = _parse.pss_str(setting_info.get('News'))
-        self.news_design_version: int = _parse.pss_int(
-            setting_info.get('NewsDesignVersion'))
-        self.news_sprite_id: str = _parse.pss_str(
-            setting_info.get('NewsSpriteId'))
-        self.news_update_date: datetime = _parse.pss_datetime(
-            setting_info.get('NewsUpdateDate'))
-        self.planet_version: int = _parse.pss_int(
-            setting_info.get('PlanetVersion'))
-        self.prestige_top_character_design_id: int = _parse.pss_int(
-            setting_info.get('PrestigeTopCharacterDesignId'))
-        self.pro_bono_limit: int = _parse.pss_int(
-            setting_info.get('ProBonoLimit'))
-        self.production_server: str = _parse.pss_str(
-            setting_info.get('ProductionServer'))
-        self.promotion_design_version: int = _parse.pss_int(
-            setting_info.get('PromotionDesignVersion'))
-        self.purge_period: int = _parse.pss_int(
-            setting_info.get('PurgePeriod'))
-        self.recommended_version: str = _parse.pss_str(
-            setting_info.get('RecommendedVersion'))
-        self.replay_available_date: datetime = _parse.pss_datetime(
-            setting_info.get('ReplayAvailableDate'))
-        self.research_design_version: int = _parse.pss_int(
-            setting_info.get('ResearchDesignVersion'))
-        self.reward_design_version: int = _parse.pss_int(
-            setting_info.get('RewardDesignVersion'))
-        self.reward_point_percentage: int = _parse.pss_int(
-            setting_info.get('RewardPointPercentage'))
-        self.reward_video_time_reduction: int = _parse.pss_int(
-            setting_info.get('RewardVideoTimeReduction'))
-        self.right_loading_sprite_id: int = _parse.pss_int(
-            setting_info.get('RightLoadingSpriteId'))
-        self.room_design_purchase_version: int = _parse.pss_int(
-            setting_info.get('RoomDesignPurchaseVersion'))
-        self.room_design_sprite_version: int = _parse.pss_int(
-            setting_info.get('RoomDesignSpriteVersion'))
-        self.room_design_version: int = _parse.pss_int(
-            setting_info.get('RoomDesignVersion'))
-        self.rush_tier_cost: int = _parse.pss_int(
-            setting_info.get('RushTierCost'))
-        self.sale_argument: str = _parse.pss_str(
-            setting_info.get('SaleArgument'))
-        self.sale_end_date: str = _parse.pss_str(
-            setting_info.get('SaleEndDate'))
-        self.sale_item_mask: str = _parse.pss_str(
-            setting_info.get('SaleItemMask'))
-        self.sale_once_only: str = _parse.pss_str(
-            setting_info.get('SaleOnceOnly'))
-        self.sale_quantity: str = _parse.pss_str(
-            setting_info.get('SaleQuantity'))
-        self.sale_start_date: str = _parse.pss_str(
-            setting_info.get('SaleStartDate'))
+        self.news_design_version: int = _parse.pss_int(setting_info.get('NewsDesignVersion'))
+        self.news_sprite_id: str = _parse.pss_str(setting_info.get('NewsSpriteId'))
+        self.news_update_date: _datetime = _parse.pss__datetime(setting_info.get('NewsUpdateDate'))
+        self.planet_version: int = _parse.pss_int(setting_info.get('PlanetVersion'))
+        self.prestige_top_character_design_id: int = _parse.pss_int(setting_info.get('PrestigeTopCharacterDesignId'))
+        self.pro_bono_limit: int = _parse.pss_int(setting_info.get('ProBonoLimit'))
+        self.production_server: str = _parse.pss_str(setting_info.get('ProductionServer'))
+        self.promotion_design_version: int = _parse.pss_int(setting_info.get('PromotionDesignVersion'))
+        self.purge_period: int = _parse.pss_int(setting_info.get('PurgePeriod'))
+        self.recommended_version: str = _parse.pss_str(setting_info.get('RecommendedVersion'))
+        self.replay_available_date: _datetime = _parse.pss__datetime(setting_info.get('ReplayAvailableDate'))
+        self.research_design_version: int = _parse.pss_int(setting_info.get('ResearchDesignVersion'))
+        self.reward_design_version: int = _parse.pss_int(setting_info.get('RewardDesignVersion'))
+        self.reward_point_percentage: int = _parse.pss_int(setting_info.get('RewardPointPercentage'))
+        self.reward_video_time_reduction: int = _parse.pss_int(setting_info.get('RewardVideoTimeReduction'))
+        self.right_loading_sprite_id: int = _parse.pss_int(setting_info.get('RightLoadingSpriteId'))
+        self.room_design_purchase_version: int = _parse.pss_int(setting_info.get('RoomDesignPurchaseVersion'))
+        self.room_design_sprite_version: int = _parse.pss_int(setting_info.get('RoomDesignSpriteVersion'))
+        self.room_design_version: int = _parse.pss_int(setting_info.get('RoomDesignVersion'))
+        self.rush_tier_cost: int = _parse.pss_int(setting_info.get('RushTierCost'))
+        self.sale_argument: str = _parse.pss_str(setting_info.get('SaleArgument'))
+        self.sale_end_date: str = _parse.pss_str(setting_info.get('SaleEndDate'))
+        self.sale_item_mask: str = _parse.pss_str(setting_info.get('SaleItemMask'))
+        self.sale_once_only: str = _parse.pss_str(setting_info.get('SaleOnceOnly'))
+        self.sale_quantity: str = _parse.pss_str(setting_info.get('SaleQuantity'))
+        self.sale_start_date: str = _parse.pss_str(setting_info.get('SaleStartDate'))
         self.sale_title: str = _parse.pss_str(setting_info.get('SaleTitle'))
         self.sale_type: str = _parse.pss_str(setting_info.get('SaleType'))
-        self.season_design_version: int = _parse.pss_int(
-            setting_info.get('SeasonDesignVersion'))
-        self.server_setting_version: int = _parse.pss_int(
-            setting_info.get('ServerSettingVersion'))
+        self.season_design_version: int = _parse.pss_int(setting_info.get('SeasonDesignVersion'))
+        self.server_setting_version: int = _parse.pss_int(setting_info.get('ServerSettingVersion'))
         self.setting_id: int = _parse.pss_int(setting_info.get('SettingId'))
-        self.ship_design_version: int = _parse.pss_int(
-            setting_info.get('ShipDesignVersion'))
-        self.situation_design_version: int = _parse.pss_int(
-            setting_info.get('SituationDesignVersion'))
-        self.sprite_version: int = _parse.pss_int(
-            setting_info.get('SpriteVersion'))
-        self.star_system_link_version: int = _parse.pss_int(
-            setting_info.get('StarSystemLinkVersion'))
-        self.star_system_version: int = _parse.pss_int(
-            setting_info.get('StarSystemVersion'))
-        self.support_task_ran_date: datetime = _parse.pss_datetime(
-            setting_info.get('SupportTaskRanDate'))
-        self.task_design_version: int = _parse.pss_int(
-            setting_info.get('TaskDesignVersion'))
-        self.task_reroll_cost: int = _parse.pss_int(
-            setting_info.get('TaskRerollCost'))
-        self.task_reroll_max_count: int = _parse.pss_int(
-            setting_info.get('TaskRerollMaxCount'))
-        self.tournament_bonus_score: int = _parse.pss_int(
-            setting_info.get('TournamentBonusScore'))
-        self.tournament_final_duration: int = _parse.pss_int(
-            setting_info.get('TournamentFinalDuration'))
-        self.tournament_news: str = _parse.pss_str(
-            setting_info.get('TournamentNews'))
-        self.tournament_sprite_id: int = _parse.pss_int(
-            setting_info.get('TournamentSpriteId'))
-        self.training_design_version: int = _parse.pss_int(
-            setting_info.get('TrainingDesignVersion'))
-        self.vip_design_version: int = _parse.pss_int(
-            setting_info.get('VipDesignVersion'))
+        self.ship_design_version: int = _parse.pss_int(setting_info.get('ShipDesignVersion'))
+        self.situation_design_version: int = _parse.pss_int(setting_info.get('SituationDesignVersion'))
+        self.sprite_version: int = _parse.pss_int(setting_info.get('SpriteVersion'))
+        self.star_system_link_version: int = _parse.pss_int(setting_info.get('StarSystemLinkVersion'))
+        self.star_system_version: int = _parse.pss_int(setting_info.get('StarSystemVersion'))
+        self.support_task_ran_date: _datetime = _parse.pss__datetime(setting_info.get('SupportTaskRanDate'))
+        self.task_design_version: int = _parse.pss_int(setting_info.get('TaskDesignVersion'))
+        self.task_reroll_cost: int = _parse.pss_int(setting_info.get('TaskRerollCost'))
+        self.task_reroll_max_count: int = _parse.pss_int(setting_info.get('TaskRerollMaxCount'))
+        self.tournament_bonus_score: int = _parse.pss_int(setting_info.get('TournamentBonusScore'))
+        self.tournament_final_duration: int = _parse.pss_int(setting_info.get('TournamentFinalDuration'))
+        self.tournament_news: str = _parse.pss_str(setting_info.get('TournamentNews'))
+        self.tournament_sprite_id: int = _parse.pss_int(setting_info.get('TournamentSpriteId'))
+        self.training_design_version: int = _parse.pss_int(setting_info.get('TrainingDesignVersion'))
+        self.vip_design_version: int = _parse.pss_int(setting_info.get('VipDesignVersion'))
