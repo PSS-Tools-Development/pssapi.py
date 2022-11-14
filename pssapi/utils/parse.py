@@ -21,7 +21,8 @@ def pss_datetime(value: str) -> _Optional[_datetime]:
     try:
         result = _datetime.strptime(value, _constants.DATETIME_FORMAT_ISO)
     except ValueError:
-        result = _datetime.strptime(value, _constants.DATETIME_FORMAT_ISO_DETAILED)
+        result = _datetime.strptime(
+            value, _constants.DATETIME_FORMAT_ISO_DETAILED)
     result = _pytz.utc.localize(result)
     return result
 
