@@ -1,8 +1,10 @@
 import json as _json
 from typing import Any as _Any
 from typing import Dict as _Dict
+from typing import Iterable as _Iterable
 from typing import List as _List
 from typing import Type as _Type
+from typing import Union as _Union
 from xml.etree import ElementTree as _ElementTree
 
 import aiohttp as _aiohttp
@@ -31,14 +33,22 @@ def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
             d[key] = params[key]
 
 
-async def get_entities_from_path(entity_type: _Type[_EntityBase], xml_parent_tag_name: str, production_server: str, path: str, method: str, request_content: str = None, **params) -> _List[_EntityBase]:
+async def get_entities_from_path(entity_types: _Union[_Type[_EntityBase], _Iterable[_Type[_EntityBase]]], xml_parent_tag_name: str, production_server: str, path: str, method: str, request_content: str = None, **params) -> _List[_EntityBase]:
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
     root = _ElementTree.fromstring(raw_xml)
     parent_node = root.find(f'.//{xml_parent_tag_name}')
     result = []
-    for child in parent_node:
-        entity = entity_type(__get_raw_entity_xml(child))
-        result.append(entity)
+
+    if isinstance(entity_types, _Iterable):
+        for child in parent_node:
+            for entity_type in entity_types:
+                if entity_type.name == child.tag:
+                    entity = entity_type(__get_raw_entity_xml(child))
+                    result.append(entity)
+    else:
+        for child in parent_node:
+            entity = entity_types[0](__get_raw_entity_xml(child))
+            result.append(entity)
     return result
 
 
