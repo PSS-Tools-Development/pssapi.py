@@ -12,8 +12,8 @@ class UserRaw:
     XML_NODE_NAME: str = 'User'
 
     def __init__(self, user_info: _EntityInfo) -> None:
-        from ...entities import UserSeason as _UserSeason
         from ...entities import Alliance as _Alliance
+        from ...entities import UserSeason as _UserSeason
 
         self.activated_promotions: str = _parse.pss_str(user_info.get('ActivatedPromotions'))
         self.alliance: _Alliance = _Alliance(user_info.get('Alliance')) if user_info.get('Alliance') else None
