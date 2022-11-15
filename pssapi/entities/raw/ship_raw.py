@@ -13,10 +13,10 @@ class ShipRaw:
     XML_NODE_NAME: str = 'Ship'
 
     def __init__(self, ship_info: _EntityInfo) -> None:
-        from ...entities import Character as _Character
         from ...entities import Item as _Item
-        from ...entities import Room as _Room
         from ...entities import UserStarSystem as _UserStarSystem
+        from ...entities import Character as _Character
+        from ...entities import Room as _Room
 
         self.brightness_value: float = _parse.pss_float(ship_info.get('BrightnessValue'))
         self.characters: _List[_Character] = [_Character(child_info) for child_info in ship_info.get('Characters')] if ship_info.get('Characters') else []
