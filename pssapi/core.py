@@ -4,7 +4,6 @@ from typing import Dict as _Dict
 from typing import Iterable as _Iterable
 from typing import List as _List
 from typing import Type as _Type
-from typing import Union as _Union
 from xml.etree import ElementTree as _ElementTree
 
 import aiohttp as _aiohttp
