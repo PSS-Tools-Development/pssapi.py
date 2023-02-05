@@ -8,12 +8,14 @@ from xml.etree import ElementTree as _ElementTree
 
 import aiohttp as _aiohttp
 
-from pssapi.entities import EntityBase as _EntityBase
+from .entities import EntityBase as _EntityBase
+from .enums import DeviceType as _DeviceType
+from .enums import LanguageKey as _LanguageKey
 
 
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
-    'deviceType': 'DeviceTypeAndroid',
-    'languageKey': 'en',
+    'deviceType': str(_DeviceType.DEVICE_TYPE_ANDROID),
+    'languageKey': str(_LanguageKey.ENGLISH),
 }
 
 

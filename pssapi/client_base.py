@@ -6,35 +6,7 @@ from . import core as _core
 from . import utils as _utils
 from .enums import DeviceType as _DeviceType
 from .enums import LanguageKey as _LanguageKey
-from .services import AchievementService as _AchievementService
-from .services import AllianceService as _AllianceService
-from .services import AnimationService as _AnimationService
-from .services import BackgroundService as _BackgroundService
-from .services import ChallengeService as _ChallengeService
-from .services import CharacterService as _CharacterService
-from .services import CollectionService as _CollectionService
-from .services import DivisionService as _DivisionService
-from .services import FileService as _FileService
-from .services import GalaxyService as _GalaxyService
-from .services import ItemService as _ItemService
-from .services import LadderService as _LadderService
-from .services import LeagueService as _LeagueService
-from .services import LiveOpsService as _LiveOpsService
-from .services import MarketService as _MarketService
-from .services import MessageService as _MessageService
-from .services import MissionService as _MissionService
-from .services import PromotionService as _PromotionService
-from .services import ResearchService as _ResearchService
-from .services import RewardService as _RewardService
-from .services import RoomDesignSpriteService as _RoomDesignSpriteService
-from .services import RoomService as _RoomService
-from .services import SeasonService as _SeasonService
-from .services import SettingService as _SettingService
-from .services import ShipService as _ShipService
-from .services import SituationService as _SituationService
-from .services import TaskService as _TaskService
-from .services import TrainingService as _TrainingService
-from .services import UserService as _UserService
+import pssapi.services as _services
 
 
 class PssApiClientBase:
@@ -47,7 +19,6 @@ class PssApiClientBase:
         self.__production_server_cached: str = None
         self.__production_server_cached_at: _datetime = None
         self.__production_server_cache_lock: _Lock = _Lock()
-
 
         self._update_services()
 
@@ -69,119 +40,119 @@ class PssApiClientBase:
         self.__production_server = value
 
     @property
-    def achievement_service(self) -> _AchievementService:
+    def achievement_service(self) -> '_services.AchievementService':
         return self.__achievement_service
 
     @property
-    def alliance_service(self) -> _AllianceService:
+    def alliance_service(self) -> '_services.AllianceService':
         return self.__alliance_service
 
     @property
-    def animation_service(self) -> _AnimationService:
+    def animation_service(self) -> '_services.AnimationService':
         return self.__animation_service
 
     @property
-    def background_service(self) -> _BackgroundService:
+    def background_service(self) -> '_services.BackgroundService':
         return self.__background_service
 
     @property
-    def challenge_service(self) -> _ChallengeService:
+    def challenge_service(self) -> '_services.ChallengeService':
         return self.__challenge_service
 
     @property
-    def character_service(self) -> _CharacterService:
+    def character_service(self) -> '_services.CharacterService':
         return self.__character_service
 
     @property
-    def collection_service(self) -> _CollectionService:
+    def collection_service(self) -> '_services.CollectionService':
         return self.__collection_service
 
     @property
-    def division_service(self) -> _DivisionService:
+    def division_service(self) -> '_services.DivisionService':
         return self.__division_service
 
     @property
-    def file_service(self) -> _FileService:
+    def file_service(self) -> '_services.FileService':
         return self.__file_service
 
     @property
-    def galaxy_service(self) -> _GalaxyService:
+    def galaxy_service(self) -> '_services.GalaxyService':
         return self.__galaxy_service
 
     @property
-    def item_service(self) -> _ItemService:
+    def item_service(self) -> '_services.ItemService':
         return self.__item_service
 
     @property
-    def ladder_service(self) -> _LadderService:
+    def ladder_service(self) -> '_services.LadderService':
         return self.__ladder_service
 
     @property
-    def league_service(self) -> _LeagueService:
+    def league_service(self) -> '_services.LeagueService':
         return self.__league_service
 
     @property
-    def live_ops_service(self) -> _LiveOpsService:
+    def live_ops_service(self) -> '_services.LiveOpsService':
         return self.__live_ops_service
 
     @property
-    def market_service(self) -> _MarketService:
+    def market_service(self) -> '_services.MarketService':
         return self.__market_service
 
     @property
-    def message_service(self) -> _MessageService:
+    def message_service(self) -> '_services.MessageService':
         return self.__message_service
 
     @property
-    def mission_service(self) -> _MissionService:
+    def mission_service(self) -> '_services.MissionService':
         return self.__mission_service
 
     @property
-    def promotion_service(self) -> _PromotionService:
+    def promotion_service(self) -> '_services.PromotionService':
         return self.__promotion_service
 
     @property
-    def research_service(self) -> _ResearchService:
+    def research_service(self) -> '_services.ResearchService':
         return self.__research_service
 
     @property
-    def reward_service(self) -> _RewardService:
+    def reward_service(self) -> '_services.RewardService':
         return self.__reward_service
 
     @property
-    def room_design_sprite_service(self) -> _RoomDesignSpriteService:
+    def room_design_sprite_service(self) -> '_services.RoomDesignSpriteService':
         return self.__room_design_sprite_service
 
     @property
-    def room_service(self) -> _RoomService:
+    def room_service(self) -> '_services.RoomService':
         return self.__room_service
 
     @property
-    def season_service(self) -> _SeasonService:
+    def season_service(self) -> '_services.SeasonService':
         return self.__season_service
 
     @property
-    def setting_service(self) -> _SettingService:
+    def setting_service(self) -> '_services.SettingService':
         return self.__setting_service
 
     @property
-    def ship_service(self) -> _ShipService:
+    def ship_service(self) -> '_services.ShipService':
         return self.__ship_service
 
     @property
-    def situation_service(self) -> _SituationService:
+    def situation_service(self) -> '_services.SituationService':
         return self.__situation_service
 
     @property
-    def task_service(self) -> _TaskService:
+    def task_service(self) -> '_services.TaskService':
         return self.__task_service
 
     @property
-    def training_service(self) -> _TrainingService:
+    def training_service(self) -> '_services.TrainingService':
         return self.__training_service
 
     @property
-    def user_service(self) -> _UserService:
+    def user_service(self) -> '_services.UserService':
         return self.__user_service
 
 
@@ -191,46 +162,48 @@ class PssApiClientBase:
 
         with self.__production_server_cache_lock:
             utc_now = _utils.get_utc_now()
-            if not self.__production_server_cached or (self.__production_server_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
+            if not self.__production_server_cached or self.__production_server_cached_at is None or (self.__production_server_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
+                self.__production_server_cached_at = utc_now
                 self.__production_server_cached = (await _core.get_production_server())
             return self.__production_server_cached
 
 
     async def init_production_server(self) -> None:
-        setting_service = _SettingService(
+        setting_service = _services.SettingService(
             _constants.DEFAULT_PRODUCTION_SERVER, self.language_key
         )
 
         settings = await setting_service.get_latest_version(self.device_type)
         self.production_server = settings[0].production_server
 
+
     def _update_services(self) -> None:
-        self.__achievement_service: _AchievementService = _AchievementService(self)
-        self.__alliance_service: _AllianceService = _AllianceService(self)
-        self.__animation_service: _AnimationService = _AnimationService(self)
-        self.__background_service: _BackgroundService = _BackgroundService(self)
-        self.__challenge_service: _ChallengeService = _ChallengeService(self)
-        self.__character_service: _CharacterService = _CharacterService(self)
-        self.__collection_service: _CollectionService = _CollectionService(self)
-        self.__division_service: _DivisionService = _DivisionService(self)
-        self.__file_service: _FileService = _FileService(self)
-        self.__galaxy_service: _GalaxyService = _GalaxyService(self)
-        self.__item_service: _ItemService = _ItemService(self)
-        self.__ladder_service: _LadderService = _LadderService(self)
-        self.__league_service: _LeagueService = _LeagueService(self)
-        self.__live_ops_service: _LiveOpsService = _LiveOpsService(self)
-        self.__market_service: _MarketService = _MarketService(self)
-        self.__message_service: _MessageService = _MessageService(self)
-        self.__mission_service: _MissionService = _MissionService(self)
-        self.__promotion_service: _PromotionService = _PromotionService(self)
-        self.__research_service: _ResearchService = _ResearchService(self)
-        self.__reward_service: _RewardService = _RewardService(self)
-        self.__room_design_sprite_service: _RoomDesignSpriteService = _RoomDesignSpriteService(self)
-        self.__room_service: _RoomService = _RoomService(self)
-        self.__season_service: _SeasonService = _SeasonService(self)
-        self.__setting_service: _SettingService = _SettingService(self)
-        self.__ship_service: _ShipService = _ShipService(self)
-        self.__situation_service: _SituationService = _SituationService(self)
-        self.__task_service: _TaskService = _TaskService(self)
-        self.__training_service: _TrainingService = _TrainingService(self)
-        self.__user_service: _UserService = _UserService(self)
+        self.__achievement_service: _services.AchievementService = _services.AchievementService(self)
+        self.__alliance_service: _services.AllianceService = _services.AllianceService(self)
+        self.__animation_service: _services.AnimationService = _services.AnimationService(self)
+        self.__background_service: _services.BackgroundService = _services.BackgroundService(self)
+        self.__challenge_service: _services.ChallengeService = _services.ChallengeService(self)
+        self.__character_service: _services.CharacterService = _services.CharacterService(self)
+        self.__collection_service: _services.CollectionService = _services.CollectionService(self)
+        self.__division_service: _services.DivisionService = _services.DivisionService(self)
+        self.__file_service: _services.FileService = _services.FileService(self)
+        self.__galaxy_service: _services.GalaxyService = _services.GalaxyService(self)
+        self.__item_service: _services.ItemService = _services.ItemService(self)
+        self.__ladder_service: _services.LadderService = _services.LadderService(self)
+        self.__league_service: _services.LeagueService = _services.LeagueService(self)
+        self.__live_ops_service: _services.LiveOpsService = _services.LiveOpsService(self)
+        self.__market_service: _services.MarketService = _services.MarketService(self)
+        self.__message_service: _services.MessageService = _services.MessageService(self)
+        self.__mission_service: _services.MissionService = _services.MissionService(self)
+        self.__promotion_service: _services.PromotionService = _services.PromotionService(self)
+        self.__research_service: _services.ResearchService = _services.ResearchService(self)
+        self.__reward_service: _services.RewardService = _services.RewardService(self)
+        self.__room_design_sprite_service: _services.RoomDesignSpriteService = _services.RoomDesignSpriteService(self)
+        self.__room_service: _services.RoomService = _services.RoomService(self)
+        self.__season_service: _services.SeasonService = _services.SeasonService(self)
+        self.__setting_service: _services.SettingService = _services.SettingService(self)
+        self.__ship_service: _services.ShipService = _services.ShipService(self)
+        self.__situation_service: _services.SituationService = _services.SituationService(self)
+        self.__task_service: _services.TaskService = _services.TaskService(self)
+        self.__training_service: _services.TrainingService = _services.TrainingService(self)
+        self.__user_service: _services.UserService = _services.UserService(self)

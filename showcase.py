@@ -5,8 +5,8 @@ from pssapi.entities import ShipDesign
 
 
 async def main() -> None:
-    client = await pssapi.PssApiClient.create()
-    print(f'Production server: {client.production_server}')
+    client = pssapi.PssApiClient()
+    print(f'Production server: {client.production_server or (await client.get_production_server())}')
 
     ship_designs: list[ShipDesign] = await client.ship_service.list_all_ship_designs()
     print(f'Found {len(ship_designs)} ship designs.')
@@ -20,9 +20,9 @@ async def main() -> None:
     print(f'Found {len(sales)} sales.')
     print(f'First sale: {sales[0].id}')
 
-    users = await client.user_service.search_users('The worst')
+    users = await client.user_service.search_users('The worst.')
     print(f'Found {len(users)} users.')
-    print(f'First user: {users[0].id}, {users[0].name}')
+    print(f'First user: {users[0].id}, {users[0].name}, {users[0].trophy} trophies')
 
 
 def run_main_synchronous() -> None:

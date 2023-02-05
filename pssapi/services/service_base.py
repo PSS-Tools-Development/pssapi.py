@@ -1,15 +1,15 @@
-from ..client_base import PssApiClientBase as _PssApiClientBase
 from ..enums import LanguageKey as _LanguageKey
+import pssapi.client as _client
 
 
 class ServiceBase:
-    def __init__(self, client: _PssApiClientBase) -> None:
+    def __init__(self, client: _client.PssApiClient) -> None:
         if not client:
             raise ValueError('The parameter \'client\' must not be None.')
-        self.__client: _PssApiClientBase = client
+        self.__client = client
 
     @property
-    def client(self) -> _PssApiClientBase:
+    def client(self) -> _client.PssApiClient:
         return self.__client
 
     @property
