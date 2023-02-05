@@ -7,5 +7,5 @@ from ..entities import TrainingDesign as _TrainingDesign
 
 class TrainingService(_ServiceBase):
     async def list_all_training_designs(self, design_version: int = None) -> _List[_TrainingDesign]:
-        result = await _TrainingServiceRaw.list_all_training_designs_2(self.production_server, design_version, self.language_key)
+        result = await _TrainingServiceRaw.list_all_training_designs_2((await self.get_production_server()), design_version, self.language_key)
         return result

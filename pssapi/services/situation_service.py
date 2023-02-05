@@ -7,5 +7,5 @@ from ..entities import SituationDesign as _SituationDesign
 
 class SituationService(_ServiceBase):
     async def list_situation_designs(self, design_version: int = None) -> _List[_SituationDesign]:
-        result = await _SituationServiceRaw.list_situation_designs(self.production_server, design_version, self.language_key)
+        result = await _SituationServiceRaw.list_situation_designs((await self.get_production_server()), design_version, self.language_key)
         return result

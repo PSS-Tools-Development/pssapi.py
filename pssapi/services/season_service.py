@@ -7,5 +7,5 @@ from ..entities import SeasonDesign as _SeasonDesign
 
 class SeasonService(_ServiceBase):
     async def list_all_season_designs(self, design_version: int = None) -> _List[_SeasonDesign]:
-        result = await _SeasonServiceRaw.list_all_season_designs(self.production_server, design_version, self.language_key)
+        result = await _SeasonServiceRaw.list_all_season_designs((await self.get_production_server()), design_version, self.language_key)
         return result

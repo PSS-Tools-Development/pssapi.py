@@ -8,9 +8,9 @@ from ..entities import Sprite as _Sprite
 
 class FileService(_ServiceBase):
     async def list_files(self, design_version: int = None) -> _List[_File]:
-        result = await _FileServiceRaw.list_files_4(self.production_server, design_version, self.language_key)
+        result = await _FileServiceRaw.list_files_4((await self.get_production_server()), design_version, self.language_key)
         return result
 
     async def list_sprites(self, design_version: int = None) -> _List[_Sprite]:
-        result = await _FileServiceRaw.list_sprites_2(self.production_server, design_version, self.language_key)
+        result = await _FileServiceRaw.list_sprites_2((await self.get_production_server()), design_version, self.language_key)
         return result

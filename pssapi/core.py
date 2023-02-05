@@ -12,25 +12,17 @@ import aiohttp as _aiohttp
 from pssapi.entities import EntityBase as _EntityBase
 
 
+__LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
+    'deviceType': 'DeviceTypeAndroid',
+    'languageKey': 'en',
+}
+
+
 def create_request_content(structure: str, params: _Dict[str, _Any], content_type: str) -> str:
     if content_type == 'json':
         return __create_json_request_content(structure, params)
     elif content_type == 'xml':
         pass
-
-
-def __create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
-    d = _json.loads(structure)
-    __update_nested_dict_values(d, params)
-    return _json.dumps(d)
-
-
-def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
-    for key, value in d.items():
-        if isinstance(value, dict):
-            __update_nested_dict_values(value, params)
-        else:
-            d[key] = params[key]
 
 
 async def get_entities_from_path(entity_types: _Iterable[_Type[_EntityBase]], xml_parent_tag_name: str, production_server: str, path: str, method: str, request_content: str = None, **params) -> _List[_EntityBase]:
@@ -45,6 +37,22 @@ async def get_entities_from_path(entity_types: _Iterable[_Type[_EntityBase]], xm
                 entity = entity_type(__get_raw_entity_xml(child))
                 result.append(entity)
     return result
+
+
+async def get_production_server() -> str:
+    raw_xml = await __get_data_from_path('api.pixelstarships.com', 'SettingService/GetLatestVersion3', 'GET', **__LATEST_SETTINGS_BASE_PARAMS)
+    tree = _ElementTree.fromstring(raw_xml)
+    setting_node = tree.find('.//Setting')
+    result = setting_node.attrib.get('ProductionServer')
+    if not result:
+        raise Exception('Could not determine the production server! Use api.pixelstarships.com!')
+    return result
+
+
+def __create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
+    d = _json.loads(structure)
+    __update_nested_dict_values(d, params)
+    return _json.dumps(d)
 
 
 async def __get_data_from_path(production_server: str, path: str, method: str, content: str = None, **params) -> str:
@@ -73,3 +81,11 @@ def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     for child in node:
         result[child.tag] = __get_raw_entity_xml(child)
     return result
+
+
+def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
+    for key, value in d.items():
+        if isinstance(value, dict):
+            __update_nested_dict_values(value, params)
+        else:
+            d[key] = params[key]

@@ -7,5 +7,5 @@ from ..entities import CollectionDesign as _CollectionDesign
 
 class CollectionService(_ServiceBase):
     async def list_all_collection_designs(self, design_version: int = None) -> _List[_CollectionDesign]:
-        result = await _CollectionServiceRaw.list_all_collection_designs(self.production_server, design_version, self.language_key)
+        result = await _CollectionServiceRaw.list_all_collection_designs((await self.get_production_server()), design_version, self.language_key)
         return result

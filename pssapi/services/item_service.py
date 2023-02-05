@@ -8,9 +8,9 @@ from ..entities import ItemDesignAction as _ItemDesignAction
 
 class ItemService(_ServiceBase):
     async def list_item_design_actions(self, design_version: int = None) -> _List[_ItemDesignAction]:
-        result = await _ItemServiceRaw.list_item_design_actions(self.production_server, design_version)
+        result = await _ItemServiceRaw.list_item_design_actions((await self.get_production_server()), design_version)
         return result
 
     async def list_item_designs(self, design_version: int = None) -> _List[_ItemDesign]:
-        result = await _ItemServiceRaw.list_item_designs_2(self.production_server, design_version, self.language_key)
+        result = await _ItemServiceRaw.list_item_designs_2((await self.get_production_server()), design_version, self.language_key)
         return result
