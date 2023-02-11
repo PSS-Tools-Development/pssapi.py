@@ -3,6 +3,7 @@
 """
 
 from datetime import datetime as _datetime
+from typing import List as _List
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse

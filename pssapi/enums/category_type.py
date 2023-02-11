@@ -5,9 +5,9 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
-
 class CategoryType(_StrEnum):
-    WEAPON = 'Weapon'
-    DEFENCE = 'Defence'
-    SUPPORT = 'Support'
-    RESOURCES = 'Resources'
+        WEAPON = 'Weapon'
+        DEFENCE = 'Defence'
+        SUPPORT = 'Support'
+        RESOURCES = 'Resources'
+    

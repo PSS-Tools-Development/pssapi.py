@@ -1,10 +1,14 @@
-from .client_base import PssApiClientBase as _PssApiClientBase
-from .enums import DeviceType as _DeviceType
-from .enums import LanguageKey as _LanguageKey
+import pssapi.client_base as _client_base
+import pssapi.enums as _enums
 
 
-class PssApiClient(_PssApiClientBase):
-    def __init__(self, device_type: _DeviceType = None, language_key: _LanguageKey = None, production_server: str = None) -> None:
+class PssApiClient(_client_base.PssApiClientBase):
+    def __init__(
+        self,
+        device_type: '_enums.DeviceType' = None,
+        language_key: '_enums.LanguageKey' = None,
+        production_server: str = None
+    ):
         super().__init__(device_type, language_key, production_server)
 
     def _update_services(self):

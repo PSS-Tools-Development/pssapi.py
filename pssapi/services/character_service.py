@@ -1,4 +1,5 @@
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from .raw import CharacterServiceRaw as _CharacterServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -9,13 +10,17 @@ from ..entities import DrawDesign as _DrawDesign
 
 class CharacterService(_ServiceBase):
     async def list_all_character_design_actions(self, design_version: int = None) -> _List[_CharacterDesignAction]:
-        result = await _CharacterServiceRaw.list_all_character_design_actions((await self.get_production_server()), design_version)
+        production_server = await self.get_production_server()
+        result = await _CharacterServiceRaw.list_all_character_design_actions(production_server, design_version)
         return result
 
     async def list_all_character_designs(self, design_version: int = None) -> _List[_CharacterDesign]:
-        result = await _CharacterServiceRaw.list_all_character_designs_2((await self.get_production_server()), design_version, self.language_key)
+        production_server = await self.get_production_server()
+        result = await _CharacterServiceRaw.list_all_character_designs_2(production_server, design_version, self.language_key)
         return result
 
     async def list_all_draw_designs(self, design_version: int = None) -> _List[_DrawDesign]:
-        result = await _CharacterServiceRaw.list_all_draw_designs((await self.get_production_server()), design_version, self.language_key)
+        production_server = await self.get_production_server()
+        result = await _CharacterServiceRaw.list_all_draw_designs(production_server, design_version, self.language_key)
         return result
+

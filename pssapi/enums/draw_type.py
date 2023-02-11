@@ -5,6 +5,6 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
-
 class DrawType(_StrEnum):
-    CHARACTER = 'Character'
+        CHARACTER = 'Character'
+    

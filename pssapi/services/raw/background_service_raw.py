@@ -3,6 +3,7 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Background as _Background
@@ -21,3 +22,5 @@ async def list_backgrounds(production_server: str, design_version: int, **params
     }
     result = await _core.get_entities_from_path((_Background,), 'Backgrounds', production_server, LIST_BACKGROUNDS_BASE_PATH, 'GET', **params)
     return result
+
+

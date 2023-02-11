@@ -1,4 +1,5 @@
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from .raw import RoomDesignSpriteServiceRaw as _RoomDesignSpriteServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -7,5 +8,7 @@ from ..entities import RoomDesignSprite as _RoomDesignSprite
 
 class RoomDesignSpriteService(_ServiceBase):
     async def list_room_design_sprites(self, design_version: int = None) -> _List[_RoomDesignSprite]:
-        result = await _RoomDesignSpriteServiceRaw.list_room_design_sprites((await self.get_production_server()), design_version)
+        production_server = await self.get_production_server()
+        result = await _RoomDesignSpriteServiceRaw.list_room_design_sprites(production_server, design_version)
         return result
+

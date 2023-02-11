@@ -10,9 +10,12 @@ from ..entities import User as _User
 
 class ShipService(_ServiceBase):
     async def inspect_ship(self, access_token: str, user_id: int) -> _Tuple[_Ship, _User]:
-        result = await _ShipServiceRaw.inspect_ship_2((await self.get_production_server()), access_token, user_id)
+        production_server = await self.get_production_server()
+        result = await _ShipServiceRaw.inspect_ship_2(production_server, access_token, user_id)
         return result
 
     async def list_all_ship_designs(self, design_version: int = None) -> _List[_ShipDesign]:
-        result = await _ShipServiceRaw.list_all_ship_designs_2((await self.get_production_server()), design_version, self.language_key)
+        production_server = await self.get_production_server()
+        result = await _ShipServiceRaw.list_all_ship_designs_2(production_server, design_version, self.language_key)
         return result
+

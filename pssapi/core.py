@@ -8,14 +8,13 @@ from xml.etree import ElementTree as _ElementTree
 
 import aiohttp as _aiohttp
 
-from .entities import EntityBase as _EntityBase
-from .enums import DeviceType as _DeviceType
-from .enums import LanguageKey as _LanguageKey
+import pssapi.entities as _entities
+import pssapi.enums as _enums
 
 
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
-    'deviceType': str(_DeviceType.DEVICE_TYPE_ANDROID),
-    'languageKey': str(_LanguageKey.ENGLISH),
+    'deviceType': str(_enums.DeviceType.DEVICE_TYPE_ANDROID),
+    'languageKey': str(_enums.LanguageKey.ENGLISH),
 }
 
 
@@ -26,7 +25,15 @@ def create_request_content(structure: str, params: _Dict[str, _Any], content_typ
         pass
 
 
-async def get_entities_from_path(entity_types: _Iterable[_Type[_EntityBase]], xml_parent_tag_name: str, production_server: str, path: str, method: str, request_content: str = None, **params) -> _List[_EntityBase]:
+async def get_entities_from_path(
+    entity_types: _Iterable[_Type['_entities.EntityBase']],
+    xml_parent_tag_name: str,
+    production_server: str,
+    path: str,
+    method: str,
+    request_content: str = None,
+    **params
+) -> _List['_entities.EntityBase']:
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
     root = _ElementTree.fromstring(raw_xml)
     parent_node = root.find(f'.//{xml_parent_tag_name}')

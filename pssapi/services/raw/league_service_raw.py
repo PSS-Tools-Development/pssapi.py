@@ -3,6 +3,7 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import League as _League
@@ -23,3 +24,5 @@ async def list_leagues_2(production_server: str, access_token: str, design_versi
     }
     result = await _core.get_entities_from_path((_League,), 'Leagues', production_server, LIST_LEAGUES_2_BASE_PATH, 'GET', **params)
     return result
+
+

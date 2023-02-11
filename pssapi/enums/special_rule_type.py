@@ -5,8 +5,8 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
-
 class SpecialRuleType(_StrEnum):
-    CREW_LEVEL = 'CrewLevel'
-    CREW_REPLACEMENT = 'CrewReplacement'
-    COLLECTION_REPLACEMENT = 'CollectionReplacement'
+        CREW_LEVEL = 'CrewLevel'
+        CREW_REPLACEMENT = 'CrewReplacement'
+        COLLECTION_REPLACEMENT = 'CollectionReplacement'
+    

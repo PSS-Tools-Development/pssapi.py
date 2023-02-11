@@ -1,5 +1,5 @@
-from ..enums import LanguageKey as _LanguageKey
 import pssapi.client as _client
+import pssapi.enums as _enums
 
 
 class ServiceBase:
@@ -13,7 +13,7 @@ class ServiceBase:
         return self.__client
 
     @property
-    def language_key(self) -> _LanguageKey:
+    def language_key(self) -> _enums.LanguageKey:
         return self.client.language_key
 
 

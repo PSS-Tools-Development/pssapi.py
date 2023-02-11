@@ -5,8 +5,8 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
-
 class CostType(_StrEnum):
-    STARDUST = 'Stardust'
-    VOID_PARTICLE = 'VoidParticle'
-    RANDOM = 'Random'
+        STARDUST = 'Stardust'
+        VOID_PARTICLE = 'VoidParticle'
+        RANDOM = 'Random'
+    

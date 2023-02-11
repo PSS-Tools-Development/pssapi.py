@@ -1,21 +1,26 @@
 from datetime import datetime as _datetime
 from threading import Lock as _Lock
 
-from . import constants as _constants
-from . import core as _core
-from . import utils as _utils
-from .enums import DeviceType as _DeviceType
-from .enums import LanguageKey as _LanguageKey
+import pssapi.core as _core
+import pssapi.enums as _enums
 import pssapi.services as _services
+import pssapi.utils as _utils
 
 
 class PssApiClientBase:
-    __PRODUCTION_SERVER_CACHE_DURATION: float = 60.0
+    __PRODUCTION_SERVER_CACHE_DURATION: int = 60  # seconds
 
-    def __init__(self, device_type: _DeviceType = None, language_key: _LanguageKey = None, production_server: str = None) -> None:
-        self.__device_type: _DeviceType = device_type or _DeviceType.DEVICE_TYPE_ANDROID
-        self.__language_key: _LanguageKey = language_key or _LanguageKey.ENGLISH
+    def __init__(
+        self,
+        device_type: '_enums.DeviceType' = None,
+        language_key: '_enums.LanguageKey' = None,
+        production_server: str = None,
+        cache_production_server: bool = True
+    ):
+        self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.DEVICE_TYPE_ANDROID
+        self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
         self.__production_server: str = production_server or None # if it's none, it'll be checked and cached for any API call
+        self.__cache_production_server: bool = cache_production_server or False
         self.__production_server_cached: str = None
         self.__production_server_cached_at: _datetime = None
         self.__production_server_cache_lock: _Lock = _Lock()
@@ -24,11 +29,11 @@ class PssApiClientBase:
 
 
     @property
-    def device_type(self) -> _DeviceType:
+    def device_type(self) -> '_enums.DeviceType':
         return self.__device_type
 
     @property
-    def language_key(self) -> _LanguageKey:
+    def language_key(self) -> '_enums.LanguageKey':
         return self.__language_key
 
     @property
@@ -156,25 +161,19 @@ class PssApiClientBase:
         return self.__user_service
 
 
-    async def get_production_server(self) -> str:
+    async def get_production_server(self, use_cache: bool = True) -> str:
         if self.__production_server:
             return self.__production_server
 
-        with self.__production_server_cache_lock:
-            utc_now = _utils.get_utc_now()
-            if not self.__production_server_cached or self.__production_server_cached_at is None or (self.__production_server_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
-                self.__production_server_cached_at = utc_now
-                self.__production_server_cached = (await _core.get_production_server())
-            return self.__production_server_cached
-
-
-    async def init_production_server(self) -> None:
-        setting_service = _services.SettingService(
-            _constants.DEFAULT_PRODUCTION_SERVER, self.language_key
-        )
-
-        settings = await setting_service.get_latest_version(self.device_type)
-        self.production_server = settings[0].production_server
+        if self.__cache_production_server and use_cache:
+            with self.__production_server_cache_lock:
+                utc_now = _utils.get_utc_now()
+                if not self.__production_server_cached or self.__production_server_cached_at is None or (self.__production_server_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
+                    self.__production_server_cached_at = utc_now
+                    self.__production_server_cached = await _core.get_production_server()
+                return self.__production_server_cached
+        else:
+            return (await _core.get_production_server())
 
 
     def _update_services(self) -> None:

@@ -3,6 +3,7 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import GetCatalogQuantity as _GetCatalogQuantity
@@ -43,3 +44,5 @@ async def get_today_live_ops_2(production_server: str, device_type: str, languag
     }
     result = await _core.get_entities_from_path((_LiveOps,), 'GetTodayLiveOps', production_server, GET_TODAY_LIVE_OPS_2_BASE_PATH, 'GET', **params)
     return result
+
+

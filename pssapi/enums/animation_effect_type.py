@@ -5,9 +5,9 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
-
 class AnimationEffectType(_StrEnum):
-    NORMAL = 'Normal'
-    MULTIPLY = 'Multiply'
-    LASER = 'Laser'
-    TRAIL = 'Trail'
+        NORMAL = 'Normal'
+        MULTIPLY = 'Multiply'
+        LASER = 'Laser'
+        TRAIL = 'Trail'
+    
