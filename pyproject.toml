@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pssapi"
+version = '0.1.0'
+authors = [
+    { name = "The worst." },
+    { name = "Solevis" },
+]
+description = "Wrapper for the Pixel Starships API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries',
+    'Programming Language :: Python :: 3.11',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+]
+dependencies = [
+    'aiohttp==3.8.4',
+    'pytz==2022.7.1',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PSS-Tools-Development/pssapi.py"
+"Bug Tracker" = "https://github.com/PSS-Tools-Development/pssapi.py/issues"

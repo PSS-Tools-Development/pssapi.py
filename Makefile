@@ -7,4 +7,7 @@ test:
 requirements:
 	CUSTOM_COMPILE_COMMAND="make requirements" pip-compile requirements.in
 
-.PHONY: init test
+build:
+	python -m build
+
+.PHONY: init test requirements build
