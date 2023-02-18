@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import CharacterServiceRaw as _CharacterServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -23,4 +22,3 @@ class CharacterService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _CharacterServiceRaw.list_all_draw_designs(production_server, design_version, self.language_key)
         return result
-

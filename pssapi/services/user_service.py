@@ -1,6 +1,5 @@
 from datetime import datetime as _datetime
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import UserServiceRaw as _UserServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -23,4 +22,3 @@ class UserService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.steam_login_6(production_server, access_token, advertising_key, checksum, client_build, client_date_time, client_version, device_key, device_name, device_type, is_jail_broken, language_key, locale, os_build, os_version, refresh_token, signal, ticket)
         return result
-

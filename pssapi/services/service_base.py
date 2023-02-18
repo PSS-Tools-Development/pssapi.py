@@ -16,6 +16,5 @@ class ServiceBase:
     def language_key(self) -> _enums.LanguageKey:
         return self.client.language_key
 
-
     async def get_production_server(self) -> str:
         return (await self.client.get_production_server())

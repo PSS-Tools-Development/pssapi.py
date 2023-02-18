@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import BackgroundServiceRaw as _BackgroundServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -11,4 +10,3 @@ class BackgroundService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _BackgroundServiceRaw.list_backgrounds(production_server, design_version)
         return result
-

@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import AllianceServiceRaw as _AllianceServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -27,4 +26,3 @@ class AllianceService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.search_alliances(production_server, access_token, name, skip, take)
         return result
-

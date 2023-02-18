@@ -5,8 +5,8 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
+
 class HazardType(_StrEnum):
-        EMP = 'EMP'
-        FIRE = 'Fire'
-        FREEZE = 'Freeze'
-    
+    EMP = 'EMP'
+    FIRE = 'Fire'
+    FREEZE = 'Freeze'

@@ -41,4 +41,3 @@ class GalaxyService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.update_marker_movement(production_server, access_token, checksum, client_date_time, star_system_marker_id)
         return result
-

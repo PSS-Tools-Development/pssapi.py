@@ -18,4 +18,3 @@ class ShipService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.list_all_ship_designs_2(production_server, design_version, self.language_key)
         return result
-

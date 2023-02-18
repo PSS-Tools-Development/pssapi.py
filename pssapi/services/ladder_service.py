@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import LadderServiceRaw as _LadderServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -16,4 +15,3 @@ class LadderService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _LadderServiceRaw.list_users_by_ranking(production_server, access_token, from_, to)
         return result
-

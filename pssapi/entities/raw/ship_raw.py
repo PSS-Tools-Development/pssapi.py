@@ -13,9 +13,9 @@ class ShipRaw:
     XML_NODE_NAME: str = 'Ship'
 
     def __init__(self, ship_info: _EntityInfo) -> None:
+        from ...entities import Character as _Character
         from ...entities import Room as _Room
         from ...entities import UserStarSystem as _UserStarSystem
-        from ...entities import Character as _Character
         from ...entities import Item as _Item
 
         self.brightness_value: float = _parse.pss_float(ship_info.get('BrightnessValue'))

@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import FileServiceRaw as _FileServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -17,4 +16,3 @@ class FileService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _FileServiceRaw.list_sprites_2(production_server, design_version, self.language_key)
         return result
-

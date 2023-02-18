@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import CollectionServiceRaw as _CollectionServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -11,4 +10,3 @@ class CollectionService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _CollectionServiceRaw.list_all_collection_designs(production_server, design_version, self.language_key)
         return result
-

@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import RoomServiceRaw as _RoomServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -41,4 +40,3 @@ class RoomService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _RoomServiceRaw.list_room_designs_2(production_server, design_version, self.language_key)
         return result
-

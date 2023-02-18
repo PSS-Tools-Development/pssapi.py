@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import AnimationServiceRaw as _AnimationServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -11,4 +10,3 @@ class AnimationService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _AnimationServiceRaw.list_animations(production_server, design_version)
         return result
-

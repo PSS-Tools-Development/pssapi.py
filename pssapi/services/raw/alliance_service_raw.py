@@ -3,7 +3,6 @@
 """
 
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Alliance as _Alliance
@@ -62,5 +61,3 @@ async def search_alliances(production_server: str, access_token: str, name: str,
     }
     result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', **params)
     return result
-
-

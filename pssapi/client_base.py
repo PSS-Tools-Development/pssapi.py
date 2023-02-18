@@ -19,14 +19,13 @@ class PssApiClientBase:
     ):
         self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.DEVICE_TYPE_ANDROID
         self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
-        self.__production_server: str = production_server or None # if it's none, it'll be checked and cached for any API call
+        self.__production_server: str = production_server or None  # if it's none, it'll be checked and cached for any API call
         self.__cache_production_server: bool = cache_production_server or False
         self.__production_server_cached: str = None
         self.__production_server_cached_at: _datetime = None
         self.__production_server_cache_lock: _Lock = _Lock()
 
         self._update_services()
-
 
     @property
     def device_type(self) -> '_enums.DeviceType':
@@ -160,7 +159,6 @@ class PssApiClientBase:
     def user_service(self) -> '_services.UserService':
         return self.__user_service
 
-
     async def get_production_server(self, use_cache: bool = True) -> str:
         if self.__production_server:
             return self.__production_server
@@ -174,7 +172,6 @@ class PssApiClientBase:
                 return self.__production_server_cached
         else:
             return (await _core.get_production_server())
-
 
     def _update_services(self) -> None:
         self.__achievement_service: _services.AchievementService = _services.AchievementService(self)

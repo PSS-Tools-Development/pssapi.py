@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import LeagueServiceRaw as _LeagueServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -11,4 +10,3 @@ class LeagueService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _LeagueServiceRaw.list_leagues_2(production_server, access_token, design_version, self.language_key)
         return result
-

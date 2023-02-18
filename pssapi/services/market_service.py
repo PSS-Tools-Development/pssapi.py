@@ -1,5 +1,4 @@
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from .raw import MarketServiceRaw as _MarketServiceRaw
 from .service_base import ServiceBase as _ServiceBase
@@ -11,4 +10,3 @@ class MarketService(_ServiceBase):
         production_server = await self.get_production_server()
         result = await _MarketServiceRaw.list_sales_by_item_design_id(production_server, from_, item_design_id, sale_status, to)
         return result
-

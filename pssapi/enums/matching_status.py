@@ -5,8 +5,8 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
+
 class MatchingStatus(_StrEnum):
-        EXCLUDED = 'Excluded'
-        INACTIVE = 'Inactive'
-        ACTIVE = 'Active'
-    
+    EXCLUDED = 'Excluded'
+    INACTIVE = 'Inactive'
+    ACTIVE = 'Active'

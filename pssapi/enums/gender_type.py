@@ -5,7 +5,7 @@ This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
 """
 
+
 class GenderType(_StrEnum):
-        MALE = 'Male'
-        FEMALE = 'Female'
-    
+    MALE = 'Male'
+    FEMALE = 'Female'
