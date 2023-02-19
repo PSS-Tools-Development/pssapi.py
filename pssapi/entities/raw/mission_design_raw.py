@@ -2,8 +2,6 @@
     This file has been generated automatically
 """
 
-import json as _json
-
 from datetime import datetime as _datetime
 from typing import Any as _Any, Dict as _Dict
 
@@ -202,6 +200,3 @@ class MissionDesignRaw:
             }
 
         return self._dict
-
-    def to_json(self):
-        return _json.dumps(self, default=lambda o: o.__dict__)

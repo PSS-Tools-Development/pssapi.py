@@ -8,12 +8,13 @@ from ..entities import ShipDesign as _ShipDesign
 from ..entities import User as _User
 
 
-class ShipService(_service_base.ServiceBase):
+class ShipService(_service_base.CacheableServiceBase):
     async def inspect_ship(self, access_token: str, user_id: int) -> _Tuple[_Ship, _User]:
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.inspect_ship_2(production_server, access_token, user_id)
         return result
 
+    @_service_base.cache_endpoint('ShipDesignVersion')
     async def list_all_ship_designs(self, design_version: int = None) -> _List[_ShipDesign]:
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.list_all_ship_designs_2(production_server, design_version, self.language_key)

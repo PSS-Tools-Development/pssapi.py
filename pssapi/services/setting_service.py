@@ -6,12 +6,13 @@ from ..entities import NewsDesign as _NewsDesign
 from ..entities import Setting as _Setting
 
 
-class SettingService(_service_base.ServiceBase):
+class SettingService(_service_base.CacheableServiceBase):
     async def get_latest_version(self, device_type: str) -> _List[_Setting]:
         production_server = await self.get_production_server()
         result = await _SettingServiceRaw.get_latest_version_3(production_server, device_type, self.language_key)
         return result
 
+    @_service_base.cache_endpoint('NewsDesignVersion')
     async def list_all_news_designs(self, design_version: int = None) -> _List[_NewsDesign]:
         production_server = await self.get_production_server()
         result = await _SettingServiceRaw.list_all_news_designs(production_server, design_version, self.language_key)

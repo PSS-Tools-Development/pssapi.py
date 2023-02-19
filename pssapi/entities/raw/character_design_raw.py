@@ -2,8 +2,6 @@
     This file has been generated automatically
 """
 
-import json as _json
-
 from typing import Any as _Any, Dict as _Dict, List as _List
 
 import pssapi.entities as _entities
@@ -378,6 +376,3 @@ class CharacterDesignRaw:
             }
 
         return self._dict
-
-    def to_json(self):
-        return _json.dumps(self, default=lambda o: o.__dict__)

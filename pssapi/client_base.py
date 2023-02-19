@@ -2,8 +2,10 @@ from datetime import datetime as _datetime
 from threading import Lock as _Lock
 
 import pssapi.core as _core
+import pssapi.entities as _entities
 import pssapi.enums as _enums
 import pssapi.services as _services
+import pssapi.services.raw as _services_raw
 import pssapi.utils as _utils
 
 
@@ -15,15 +17,15 @@ class PssApiClientBase:
         device_type: '_enums.DeviceType' = None,
         language_key: '_enums.LanguageKey' = None,
         production_server: str = None,
-        cache_production_server: bool = True
+        use_cache: bool = True
     ):
         self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.DEVICE_TYPE_ANDROID
         self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
         self.__production_server: str = production_server or None  # if it's none, it'll be checked and cached for any API call
-        self.__cache_production_server: bool = cache_production_server or False
-        self.__production_server_cached: str = None
-        self.__production_server_cached_at: _datetime = None
-        self.__production_server_cache_lock: _Lock = _Lock()
+        self.__use_cache: bool = use_cache or False
+        self.__latest_version_cached: str = None
+        self.__latest_version_cached_at: _datetime = None
+        self.__latest_version_cache_lock: _Lock = _Lock()
 
         self._update_services()
 
@@ -159,19 +161,23 @@ class PssApiClientBase:
     def user_service(self) -> '_services.UserService':
         return self.__user_service
 
+    async def get_latest_version(self, use_cache: bool = True) -> '_entities.Setting':
+        if self.__use_cache and use_cache:
+            with self.__latest_version_cache_lock:
+                utc_now = _utils.get_utc_now()
+                if not self.__latest_version_cached or self.__latest_version_cached_at is None or (self.__latest_version_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
+                    production_server = await _core.get_production_server(self.device_type, self.language_key)
+                    self.__latest_version_cached = (await _services_raw.SettingServiceRaw.get_latest_version_3(production_server, self.device_type, self.language_key))[0]
+                    self.__latest_version_cached_at = _utils.get_utc_now()
+                return self.__latest_version_cached
+        else:
+            return (await self.setting_service.get_latest_version(self.device_type))
+
     async def get_production_server(self, use_cache: bool = True) -> str:
         if self.__production_server:
             return self.__production_server
 
-        if self.__cache_production_server and use_cache:
-            with self.__production_server_cache_lock:
-                utc_now = _utils.get_utc_now()
-                if not self.__production_server_cached or self.__production_server_cached_at is None or (self.__production_server_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
-                    self.__production_server_cached_at = utc_now
-                    self.__production_server_cached = await _core.get_production_server()
-                return self.__production_server_cached
-        else:
-            return await _core.get_production_server()
+        return (await self.get_latest_version(use_cache=use_cache)).production_server
 
     def _update_services(self) -> None:
         self.__achievement_service: _services.AchievementService = _services.AchievementService(self)

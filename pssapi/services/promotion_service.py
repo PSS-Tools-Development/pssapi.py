@@ -6,12 +6,13 @@ from ..entities import PromotionDesign as _PromotionDesign
 from ..entities import User as _User
 
 
-class PromotionService(_service_base.ServiceBase):
+class PromotionService(_service_base.CacheableServiceBase):
     async def fix_user_promotions(self, access_token: str) -> _List[_User]:
         production_server = await self.get_production_server()
         result = await _PromotionServiceRaw.fix_user_promotions(production_server, access_token)
         return result
 
+    @_service_base.cache_endpoint('PromotionDesignVersion')
     async def list_all_promotion_designs(self, design_version: int = None) -> _List[_PromotionDesign]:
         production_server = await self.get_production_server()
         result = await _PromotionServiceRaw.list_all_promotion_designs_2(production_server, design_version, self.language_key)

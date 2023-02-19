@@ -12,9 +12,6 @@ class EntityBaseRaw(_ABC):
     def __dict__():
         return {}
 
-    def to_json(self):
-        pass
-
     def __eq__(self, other):
         if isinstance(other, type(self)):
             return other._key() == self._key()

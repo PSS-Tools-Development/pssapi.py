@@ -2,8 +2,6 @@
     This file has been generated automatically
 """
 
-import json as _json
-
 from typing import Any as _Any, Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
@@ -397,6 +395,3 @@ class ItemDesignRaw:
             }
 
         return self._dict
-
-    def to_json(self):
-        return _json.dumps(self, default=lambda o: o.__dict__)

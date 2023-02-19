@@ -7,17 +7,20 @@ from ..entities import CharacterDesignAction as _CharacterDesignAction
 from ..entities import DrawDesign as _DrawDesign
 
 
-class CharacterService(_service_base.ServiceBase):
+class CharacterService(_service_base.CacheableServiceBase):
+    @_service_base.cache_endpoint('CharacterDesignActionVersion')
     async def list_all_character_design_actions(self, design_version: int = None) -> _List[_CharacterDesignAction]:
         production_server = await self.get_production_server()
         result = await _CharacterServiceRaw.list_all_character_design_actions(production_server, design_version)
         return result
 
+    @_service_base.cache_endpoint('CharacterDesignVersion')
     async def list_all_character_designs(self, design_version: int = None) -> _List[_CharacterDesign]:
         production_server = await self.get_production_server()
         result = await _CharacterServiceRaw.list_all_character_designs_2(production_server, design_version, self.language_key)
         return result
 
+    @_service_base.cache_endpoint('DrawDesignVersion')
     async def list_all_draw_designs(self, design_version: int = None) -> _List[_DrawDesign]:
         production_server = await self.get_production_server()
         result = await _CharacterServiceRaw.list_all_draw_designs(production_server, design_version, self.language_key)

@@ -5,7 +5,8 @@ import pssapi.services.service_base as _service_base
 from ..entities import Animation as _Animation
 
 
-class AnimationService(_service_base.ServiceBase):
+class AnimationService(_service_base.CacheableServiceBase):
+    @_service_base.cache_endpoint('AnimationVersion')
     async def list_animations(self, design_version: int = None) -> _List[_Animation]:
         production_server = await self.get_production_server()
         result = await _AnimationServiceRaw.list_animations(production_server, design_version)

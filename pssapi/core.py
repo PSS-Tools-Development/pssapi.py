@@ -47,8 +47,8 @@ async def get_entities_from_path(
     return result
 
 
-async def get_production_server() -> str:
-    raw_xml = await __get_data_from_path('api.pixelstarships.com', 'SettingService/GetLatestVersion3', 'GET', **__LATEST_SETTINGS_BASE_PARAMS)
+async def get_production_server(device_type: str, language_key: str) -> str:
+    raw_xml = await __get_data_from_path('api.pixelstarships.com', 'SettingService/GetLatestVersion3', 'GET', deviceType=device_type, languageKey=language_key)
     tree = _ElementTree.fromstring(raw_xml)
     setting_node = tree.find('.//Setting')
     result = setting_node.attrib.get('ProductionServer')
