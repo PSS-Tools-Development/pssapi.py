@@ -4,15 +4,9 @@ from .raw import CharacterActionRaw as _CharacterActionRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class CharacterAction(_EntityWithIdBase, _CharacterActionRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<CharacterAction {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<CharacterAction {self.id}>'
+class CharacterAction(_CharacterActionRaw, _EntityWithIdBase):
+    def __init__(self, character_action_info: _EntityInfo) -> None:
+        super().__init__(character_action_info)
 
     @property
     def id(self) -> int:

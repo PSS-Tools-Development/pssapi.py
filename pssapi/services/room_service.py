@@ -1,7 +1,7 @@
 from typing import List as _List
 
 from .raw import RoomServiceRaw as _RoomServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import ActionType as _ActionType
 from ..entities import ConditionType as _ConditionType
 from ..entities import CraftDesign as _CraftDesign
@@ -10,7 +10,7 @@ from ..entities import RoomDesign as _RoomDesign
 from ..entities import RoomDesignPurchase as _RoomDesignPurchase
 
 
-class RoomService(_ServiceBase):
+class RoomService(_service_base.ServiceBase):
     async def list_action_types(self, design_version: int = None) -> _List[_ActionType]:
         production_server = await self.get_production_server()
         result = await _RoomServiceRaw.list_action_types_2(production_server, design_version, self.language_key)

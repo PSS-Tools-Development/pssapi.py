@@ -4,15 +4,9 @@ from .raw import ConditionTypeRaw as _ConditionTypeRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class ConditionType(_EntityWithIdBase, _ConditionTypeRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<ConditionType {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<ConditionType {self.id}>'
+class ConditionType(_ConditionTypeRaw, _EntityWithIdBase):
+    def __init__(self, condition_type_info: _EntityInfo) -> None:
+        super().__init__(condition_type_info)
 
     @property
     def id(self) -> int:

@@ -4,15 +4,9 @@ from .raw import AchievementDesignRaw as _AchievementDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class AchievementDesign(_EntityWithIdBase, _AchievementDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<AchievementDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<AchievementDesign {self.id}>'
+class AchievementDesign(_AchievementDesignRaw, _EntityWithIdBase):
+    def __init__(self, achievement_design_info: _EntityInfo) -> None:
+        super().__init__(achievement_design_info)
 
     @property
     def id(self) -> int:

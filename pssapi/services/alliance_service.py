@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import AllianceServiceRaw as _AllianceServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import Alliance as _Alliance
 from ..entities import Message as _Message
 
 
-class AllianceService(_ServiceBase):
+class AllianceService(_service_base.ServiceBase):
     async def list_alliances_by_championship_score_ranking(self, access_token: str, from_: int, to: int) -> _List[_Alliance]:
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_by_championship_score_ranking(production_server, access_token, from_, to)

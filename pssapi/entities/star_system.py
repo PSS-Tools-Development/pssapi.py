@@ -4,15 +4,9 @@ from .raw import StarSystemRaw as _StarSystemRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class StarSystem(_EntityWithIdBase, _StarSystemRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<StarSystem {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<StarSystem {self.id}>'
+class StarSystem(_StarSystemRaw, _EntityWithIdBase):
+    def __init__(self, star_system_info: _EntityInfo) -> None:
+        super().__init__(star_system_info)
 
     @property
     def id(self) -> int:

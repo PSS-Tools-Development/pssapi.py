@@ -2,7 +2,7 @@ from typing import List as _List
 from typing import Tuple as _Tuple
 
 from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import Ship as _Ship
 from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
@@ -11,7 +11,7 @@ from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 from ..entities import UserMarker as _UserMarker
 
 
-class GalaxyService(_ServiceBase):
+class GalaxyService(_service_base.ServiceBase):
     async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _List[_Ship]:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.go_to(production_server, access_token, checksum, client_date_time, star_system_id)

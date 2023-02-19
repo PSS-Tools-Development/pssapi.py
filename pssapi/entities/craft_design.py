@@ -4,15 +4,9 @@ from .raw import CraftDesignRaw as _CraftDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class CraftDesign(_EntityWithIdBase, _CraftDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<CraftDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<CraftDesign {self.id}>'
+class CraftDesign(_CraftDesignRaw, _EntityWithIdBase):
+    def __init__(self, craft_design_info: _EntityInfo) -> None:
+        super().__init__(craft_design_info)
 
     @property
     def id(self) -> int:

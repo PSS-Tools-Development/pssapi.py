@@ -4,15 +4,9 @@ from .raw import TrainingDesignRaw as _TrainingDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class TrainingDesign(_EntityWithIdBase, _TrainingDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<TrainingDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<TrainingDesign {self.id}>'
+class TrainingDesign(_TrainingDesignRaw, _EntityWithIdBase):
+    def __init__(self, training_design_info: _EntityInfo) -> None:
+        super().__init__(training_design_info)
 
     @property
     def id(self) -> int:

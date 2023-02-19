@@ -4,15 +4,9 @@ from .raw import RewardDesignRaw as _RewardDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class RewardDesign(_EntityWithIdBase, _RewardDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<RewardDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<RewardDesign {self.id}>'
+class RewardDesign(_RewardDesignRaw, _EntityWithIdBase):
+    def __init__(self, reward_design_info: _EntityInfo) -> None:
+        super().__init__(reward_design_info)
 
     @property
     def id(self) -> int:

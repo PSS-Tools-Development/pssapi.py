@@ -4,12 +4,6 @@ from .raw import UserLoginRaw as _UserLoginRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class UserLogin(_EntityBase, _UserLoginRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return '<UserLogin>'
-
-    def __str__(self) -> str:
-        return '<UserLogin>'
+class UserLogin(_UserLoginRaw, _EntityBase):
+    def __init__(self, user_login_info: _EntityInfo) -> None:
+        super().__init__(user_login_info)

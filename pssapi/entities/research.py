@@ -4,15 +4,9 @@ from .raw import ResearchRaw as _ResearchRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Research(_EntityWithIdBase, _ResearchRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Research {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Research {self.id}>'
+class Research(_ResearchRaw, _EntityWithIdBase):
+    def __init__(self, research_info: _EntityInfo) -> None:
+        super().__init__(research_info)
 
     @property
     def id(self) -> int:

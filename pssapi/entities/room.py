@@ -4,15 +4,9 @@ from .raw import RoomRaw as _RoomRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Room(_EntityWithIdBase, _RoomRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Room {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Room {self.id}>'
+class Room(_RoomRaw, _EntityWithIdBase):
+    def __init__(self, room_info: _EntityInfo) -> None:
+        super().__init__(room_info)
 
     @property
     def id(self) -> int:

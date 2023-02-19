@@ -17,4 +17,4 @@ class ServiceBase:
         return self.client.language_key
 
     async def get_production_server(self) -> str:
-        return (await self.client.get_production_server())
+        return await self.client.get_production_server()

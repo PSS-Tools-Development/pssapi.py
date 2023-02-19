@@ -4,15 +4,9 @@ from .raw import ShipRaw as _ShipRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Ship(_EntityWithIdBase, _ShipRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Ship {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Ship {self.id}>'
+class Ship(_ShipRaw, _EntityWithIdBase):
+    def __init__(self, ship_info: _EntityInfo) -> None:
+        super().__init__(ship_info)
 
     @property
     def id(self) -> int:

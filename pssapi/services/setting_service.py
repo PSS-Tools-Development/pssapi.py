@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import SettingServiceRaw as _SettingServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import NewsDesign as _NewsDesign
 from ..entities import Setting as _Setting
 
 
-class SettingService(_ServiceBase):
+class SettingService(_service_base.ServiceBase):
     async def get_latest_version(self, device_type: str) -> _List[_Setting]:
         production_server = await self.get_production_server()
         result = await _SettingServiceRaw.get_latest_version_3(production_server, device_type, self.language_key)

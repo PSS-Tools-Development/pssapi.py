@@ -4,15 +4,9 @@ from .raw import DivisionDesignRaw as _DivisionDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class DivisionDesign(_EntityWithIdBase, _DivisionDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<DivisionDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<DivisionDesign {self.id}>'
+class DivisionDesign(_DivisionDesignRaw, _EntityWithIdBase):
+    def __init__(self, division_design_info: _EntityInfo) -> None:
+        super().__init__(division_design_info)
 
     @property
     def id(self) -> int:

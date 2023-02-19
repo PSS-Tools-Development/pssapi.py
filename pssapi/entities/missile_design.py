@@ -4,15 +4,9 @@ from .raw import MissileDesignRaw as _MissileDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class MissileDesign(_EntityWithIdBase, _MissileDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<MissileDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<MissileDesign {self.id}>'
+class MissileDesign(_MissileDesignRaw, _EntityWithIdBase):
+    def __init__(self, missile_design_info: _EntityInfo) -> None:
+        super().__init__(missile_design_info)
 
     @property
     def id(self) -> int:

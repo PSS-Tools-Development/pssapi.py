@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import FileServiceRaw as _FileServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import File as _File
 from ..entities import Sprite as _Sprite
 
 
-class FileService(_ServiceBase):
+class FileService(_service_base.ServiceBase):
     async def list_files(self, design_version: int = None) -> _List[_File]:
         production_server = await self.get_production_server()
         result = await _FileServiceRaw.list_files_4(production_server, design_version, self.language_key)

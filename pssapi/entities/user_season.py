@@ -4,15 +4,9 @@ from .raw import UserSeasonRaw as _UserSeasonRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class UserSeason(_EntityWithIdBase, _UserSeasonRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<UserSeason {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<UserSeason {self.id}>'
+class UserSeason(_UserSeasonRaw, _EntityWithIdBase):
+    def __init__(self, user_season_info: _EntityInfo) -> None:
+        super().__init__(user_season_info)
 
     @property
     def id(self) -> int:

@@ -4,15 +4,9 @@ from .raw import BackgroundRaw as _BackgroundRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Background(_EntityWithIdBase, _BackgroundRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Background {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Background {self.id}>'
+class Background(_BackgroundRaw, _EntityWithIdBase):
+    def __init__(self, background_info: _EntityInfo) -> None:
+        super().__init__(background_info)
 
     @property
     def id(self) -> int:

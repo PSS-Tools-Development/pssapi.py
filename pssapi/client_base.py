@@ -171,7 +171,7 @@ class PssApiClientBase:
                     self.__production_server_cached = await _core.get_production_server()
                 return self.__production_server_cached
         else:
-            return (await _core.get_production_server())
+            return await _core.get_production_server()
 
     def _update_services(self) -> None:
         self.__achievement_service: _services.AchievementService = _services.AchievementService(self)

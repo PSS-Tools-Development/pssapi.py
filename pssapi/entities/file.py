@@ -4,15 +4,9 @@ from .raw import FileRaw as _FileRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class File(_EntityWithIdBase, _FileRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<File {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<File {self.id}>'
+class File(_FileRaw, _EntityWithIdBase):
+    def __init__(self, file_info: _EntityInfo) -> None:
+        super().__init__(file_info)
 
     @property
     def id(self) -> int:

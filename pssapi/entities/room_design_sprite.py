@@ -4,15 +4,9 @@ from .raw import RoomDesignSpriteRaw as _RoomDesignSpriteRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class RoomDesignSprite(_EntityWithIdBase, _RoomDesignSpriteRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<RoomDesignSprite {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<RoomDesignSprite {self.id}>'
+class RoomDesignSprite(_RoomDesignSpriteRaw, _EntityWithIdBase):
+    def __init__(self, room_design_sprite_info: _EntityInfo) -> None:
+        super().__init__(room_design_sprite_info)
 
     @property
     def id(self) -> int:

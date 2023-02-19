@@ -4,15 +4,9 @@ from .raw import LiveOpsRaw as _LiveOpsRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class LiveOps(_EntityWithIdBase, _LiveOpsRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<LiveOps {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<LiveOps {self.id}>'
+class LiveOps(_LiveOpsRaw, _EntityWithIdBase):
+    def __init__(self, live_ops_info: _EntityInfo) -> None:
+        super().__init__(live_ops_info)
 
     @property
     def id(self) -> int:

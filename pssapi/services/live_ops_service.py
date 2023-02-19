@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import LiveOpsServiceRaw as _LiveOpsServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import GetCatalogQuantity as _GetCatalogQuantity
 from ..entities import LiveOps as _LiveOps
 
 
-class LiveOpsService(_ServiceBase):
+class LiveOpsService(_service_base.ServiceBase):
     async def get_catalog_quantity(self) -> _List[_GetCatalogQuantity]:
         production_server = await self.get_production_server()
         result = await _LiveOpsServiceRaw.get_catalog_quantity(production_server)

@@ -1,11 +1,11 @@
 from typing import List as _List
 
 from .raw import MessageServiceRaw as _MessageServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import Message as _Message
 
 
-class MessageService(_ServiceBase):
+class MessageService(_service_base.ServiceBase):
     async def list_active_marketplace_messages(self, access_token: str, currency_type: str, item_design_id: int, item_sub_type: str, rarity: str, user_id: int) -> _List[_Message]:
         production_server = await self.get_production_server()
         result = await _MessageServiceRaw.list_active_marketplace_messages_5(production_server, access_token, currency_type, item_design_id, item_sub_type, rarity, user_id)

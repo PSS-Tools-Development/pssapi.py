@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import PromotionServiceRaw as _PromotionServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import PromotionDesign as _PromotionDesign
 from ..entities import User as _User
 
 
-class PromotionService(_ServiceBase):
+class PromotionService(_service_base.ServiceBase):
     async def fix_user_promotions(self, access_token: str) -> _List[_User]:
         production_server = await self.get_production_server()
         result = await _PromotionServiceRaw.fix_user_promotions(production_server, access_token)

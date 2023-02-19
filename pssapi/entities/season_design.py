@@ -4,15 +4,9 @@ from .raw import SeasonDesignRaw as _SeasonDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class SeasonDesign(_EntityWithIdBase, _SeasonDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<SeasonDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<SeasonDesign {self.id}>'
+class SeasonDesign(_SeasonDesignRaw, _EntityWithIdBase):
+    def __init__(self, season_design_info: _EntityInfo) -> None:
+        super().__init__(season_design_info)
 
     @property
     def id(self) -> int:

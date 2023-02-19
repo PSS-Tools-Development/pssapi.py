@@ -4,15 +4,9 @@ from .raw import CollectionDesignRaw as _CollectionDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class CollectionDesign(_EntityWithIdBase, _CollectionDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<CollectionDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<CollectionDesign {self.id}>'
+class CollectionDesign(_CollectionDesignRaw, _EntityWithIdBase):
+    def __init__(self, collection_design_info: _EntityInfo) -> None:
+        super().__init__(collection_design_info)
 
     @property
     def id(self) -> int:

@@ -4,15 +4,9 @@ from .raw import DrawDesignRaw as _DrawDesignRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class DrawDesign(_EntityWithIdBase, _DrawDesignRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<DrawDesign {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<DrawDesign {self.id}>'
+class DrawDesign(_DrawDesignRaw, _EntityWithIdBase):
+    def __init__(self, draw_design_info: _EntityInfo) -> None:
+        super().__init__(draw_design_info)
 
     @property
     def id(self) -> int:

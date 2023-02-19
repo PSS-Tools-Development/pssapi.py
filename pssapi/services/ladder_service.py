@@ -1,11 +1,11 @@
 from typing import List as _List
 
 from .raw import LadderServiceRaw as _LadderServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import User as _User
 
 
-class LadderService(_ServiceBase):
+class LadderService(_service_base.ServiceBase):
     async def list_users_by_championship_score_ranking(self, access_token: str, from_: int, to: int) -> _List[_User]:
         production_server = await self.get_production_server()
         result = await _LadderServiceRaw.list_users_by_championship_score_ranking(production_server, access_token, from_, to)

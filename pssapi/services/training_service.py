@@ -1,11 +1,11 @@
 from typing import List as _List
 
 from .raw import TrainingServiceRaw as _TrainingServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import TrainingDesign as _TrainingDesign
 
 
-class TrainingService(_ServiceBase):
+class TrainingService(_service_base.ServiceBase):
     async def list_all_training_designs(self, design_version: int = None) -> _List[_TrainingDesign]:
         production_server = await self.get_production_server()
         result = await _TrainingServiceRaw.list_all_training_designs_2(production_server, design_version, self.language_key)

@@ -1,12 +1,12 @@
 from typing import List as _List
 
 from .raw import ItemServiceRaw as _ItemServiceRaw
-from .service_base import ServiceBase as _ServiceBase
+import pssapi.services.service_base as _service_base
 from ..entities import ItemDesign as _ItemDesign
 from ..entities import ItemDesignAction as _ItemDesignAction
 
 
-class ItemService(_ServiceBase):
+class ItemService(_service_base.ServiceBase):
     async def list_item_design_actions(self, design_version: int = None) -> _List[_ItemDesignAction]:
         production_server = await self.get_production_server()
         result = await _ItemServiceRaw.list_item_design_actions(production_server, design_version)

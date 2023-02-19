@@ -4,15 +4,9 @@ from .raw import StarSystemMarkerRaw as _StarSystemMarkerRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class StarSystemMarker(_EntityWithIdBase, _StarSystemMarkerRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<StarSystemMarker {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<StarSystemMarker {self.id}>'
+class StarSystemMarker(_StarSystemMarkerRaw, _EntityWithIdBase):
+    def __init__(self, star_system_marker_info: _EntityInfo) -> None:
+        super().__init__(star_system_marker_info)
 
     @property
     def id(self) -> int:

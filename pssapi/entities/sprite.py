@@ -4,15 +4,9 @@ from .raw import SpriteRaw as _SpriteRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Sprite(_EntityWithIdBase, _SpriteRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Sprite {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Sprite {self.id}>'
+class Sprite(_SpriteRaw, _EntityWithIdBase):
+    def __init__(self, sprite_info: _EntityInfo) -> None:
+        super().__init__(sprite_info)
 
     @property
     def id(self) -> int:

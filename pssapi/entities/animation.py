@@ -4,15 +4,9 @@ from .raw import AnimationRaw as _AnimationRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Animation(_EntityWithIdBase, _AnimationRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Animation {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Animation {self.id}>'
+class Animation(_AnimationRaw, _EntityWithIdBase):
+    def __init__(self, animation_info: _EntityInfo) -> None:
+        super().__init__(animation_info)
 
     @property
     def id(self) -> int:

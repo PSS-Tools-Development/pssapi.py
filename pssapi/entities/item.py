@@ -4,15 +4,9 @@ from .raw import ItemRaw as _ItemRaw
 from ..types import EntityInfo as _EntityInfo
 
 
-class Item(_EntityWithIdBase, _ItemRaw):
-    def __init__(self, _info: _EntityInfo) -> None:
-        super().__init__(_info)
-
-    def __repr__(self) -> str:
-        return f'<Item {self.id}>'
-
-    def __str__(self) -> str:
-        return f'<Item {self.id}>'
+class Item(_ItemRaw, _EntityWithIdBase):
+    def __init__(self, item_info: _EntityInfo) -> None:
+        super().__init__(item_info)
 
     @property
     def id(self) -> int:
