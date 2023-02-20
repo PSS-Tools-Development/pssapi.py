@@ -32,7 +32,11 @@ async def main() -> None:
 
     users = await client.user_service.search_users('The worst.')
     print(f'Found {len(users)} users.')
-    print(f'First user: {users[0].id}, {users[0].name}, {users[0].trophy} trophies')
+    user = users[0]
+    print(f'First user: {user.id}, {user.name}, {user.trophy} trophies')
+    has_highest_user_type_property = "UserType" in user
+    print(f'{user} has property "UserType": {has_highest_user_type_property}' + (f' (value: {user["UserType"]})' if has_highest_user_type_property else ''))
+    print(f'{user} has property "XYZ": {"XYZ" in user}')
 
 
 def run_main_synchronous() -> None:

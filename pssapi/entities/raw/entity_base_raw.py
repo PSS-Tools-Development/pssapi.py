@@ -4,12 +4,13 @@ from abc import ABC as _ABC
 class EntityBaseRaw(_ABC):
     XML_NODE_NAME: str = None
 
-    @staticmethod
-    def _key():
+    def _key(self):
         return tuple()
 
-    @staticmethod
-    def __dict__():
+    def __contains__(self, key):
+        return key in self.__dict__().keys()
+
+    def __dict__(self):
         return {}
 
     def __eq__(self, other):
