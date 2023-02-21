@@ -29,3 +29,8 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/PSS-Tools-Development/pssapi.py"
 "Bug Tracker" = "https://github.com/PSS-Tools-Development/pssapi.py/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
