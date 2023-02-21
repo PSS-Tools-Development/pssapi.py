@@ -13,11 +13,11 @@ def test_pss_bool():
     assert _parse.pss_bool(None, 1) == 1
 
     with _pytest.raises(Exception):
-        _parse.pss_bool(2)
+        _parse.pss_bool(2) # value is not str
     with _pytest.raises(Exception):
-        _parse.pss_bool('kek')
+        _parse.pss_bool('kek') # value has wrong format
     with _pytest.raises(Exception):
-        _parse.pss_bool(True)
+        _parse.pss_bool(True) # value is not str
 
 
 def test_pss_datetime():
@@ -26,11 +26,11 @@ def test_pss_datetime():
     assert _parse.pss_datetime('2023-05-01T23:55:43.367') == _pytz.utc.localize(_datetime.datetime(2023, 5, 1, 23, 55, 43, 367000))
 
     with _pytest.raises(Exception):
-        _parse.pss_datetime('ABC')
+        _parse.pss_datetime('ABC') # str has wrong format
     with _pytest.raises(Exception):
-        _parse.pss_datetime(2)
+        _parse.pss_datetime(2) # value is not str
     with _pytest.raises(Exception):
-        _parse.pss_datetime(True)
+        _parse.pss_datetime(True) # value is not str
 
 
 def test_pss_enum():
@@ -56,10 +56,13 @@ def test_pss_float():
     assert isinstance(result, float)
     assert result == 5.0
 
+    assert _parse.pss_float(8) == 8.0
+    assert _parse.pss_float(8.2) == 8.2
+
     with _pytest.raises(Exception):
-        _parse.pss_float('X')
+        _parse.pss_float('X') # value is wrong format
     with _pytest.raises(Exception):
-        _parse.pss_float('2023-05-01T23:55:43')
+        _parse.pss_float('2023-05-01T23:55:43') # value is wrong format
 
 
 def test_pss_int():
@@ -75,12 +78,14 @@ def test_pss_int():
     assert isinstance(result, int)
     assert result == 50000
 
+    assert _parse.pss_float(8) == 8
+
     with _pytest.raises(Exception):
-        _parse.pss_int('1.2')
+        _parse.pss_int('1.2') # value is wrong format (float)
     with _pytest.raises(Exception):
-        _parse.pss_int('X')
+        _parse.pss_int('X') # value is wrong format (str)
     with _pytest.raises(Exception):
-        _parse.pss_int('2023-05-01T23:55:43')
+        _parse.pss_int('2023-05-01T23:55:43') # value is wrong format (datetime)
 
 
 def test_pss_str():
