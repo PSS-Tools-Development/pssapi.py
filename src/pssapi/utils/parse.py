@@ -32,7 +32,7 @@ def pss_enum(value: str, enum: _Type[_StrEnum]) -> _Optional[_StrEnum]:
         return None
     for enum_value in enum:
         if value == enum_value.value:
-            return enum_value
+            return enum_value.name
     raise TypeError(f'{enum} does not have a member with value: {value}')
 
 
