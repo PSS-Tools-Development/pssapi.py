@@ -29,6 +29,7 @@ def test___create_json_request_content():
             'Level 3-1 Element 2': '1.000'
         }
     })
+
     assert _core.__create_json_request_content(content_structure, params) == expected_result
     assert _core.__create_json_request_content(content_structure, params2) != expected_result
 
