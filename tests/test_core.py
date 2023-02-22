@@ -1,10 +1,8 @@
-import datetime as _datetime
-import pytest as _pytest
-import pytz as _pytz
 import json as _json
 
+import pytest as _pytest
+
 import pssapi.core as _core
-import pssapi.enums as _enums
 
 
 def test___create_json_request_content():
@@ -26,11 +24,11 @@ def test___create_json_request_content():
     expected_result = _json.dumps({
         'Level 1 Element 1': 'XYZ',
         'Level 1 Element 2': '%20%20',
-        'Level 1 Element 3':{
+        'Level 1 Element 3': {
             'Level 3-1 Element 1': 1000,
             'Level 3-1 Element 2': '1.000'
-            }
-        })
+        }
+    })
     assert _core.__create_json_request_content(content_structure, params) == expected_result
     assert _core.__create_json_request_content(content_structure, params2) != expected_result
 
