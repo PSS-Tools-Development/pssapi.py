@@ -4,7 +4,11 @@ init:
 	pip-sync
 
 test:
-	py.test tests
+	pytest
+
+lint:
+	autoflake src/
+	autopep8 src/
 
 requirements:
 	CUSTOM_COMPILE_COMMAND="make requirements" pip-compile --resolver=backtracking requirements.in
