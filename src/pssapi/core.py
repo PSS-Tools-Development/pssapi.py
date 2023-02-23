@@ -72,7 +72,7 @@ async def __get_data_from_path(production_server: str, path: str, method: str, c
 
 async def __get_data_from_url(url: str, method: str, content: str = None, **params) -> str:
     # filter parameters with a None value
-    params = {key: value for (key, value) in params.items() if value}
+    params = {key: value for (key, value) in params.items() if value is not None}
 
     async with _aiohttp.ClientSession() as session:
         if method == 'GET':
