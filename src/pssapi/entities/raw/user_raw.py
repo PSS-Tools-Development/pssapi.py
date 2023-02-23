@@ -636,7 +636,7 @@ class UserRaw:
         if not self._dict:
             self._dict = {
                 'ActivatedPromotions': self.activated_promotions,
-                'Alliance': dict(self.alliance),
+                'Alliance': dict(self.alliance) if self.alliance else None,
                 'AllianceId': self.alliance_id,
                 'AllianceJoinDate': self.alliance_join_date,
                 'AllianceMembership': self.alliance_membership,
@@ -734,7 +734,7 @@ class UserRaw:
                 'UnreadMessageCount': self.unread_message_count,
                 'UpdateDate': self.update_date,
                 'UsedRewardPoints': self.used_reward_points,
-                'UserSeason': dict(self.user_season),
+                'UserSeason': dict(self.user_season) if self.user_season else None,
                 'UserType': self.user_type,
                 'VipExpiryDate': self.vip_expiry_date,
             }

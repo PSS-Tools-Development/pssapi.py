@@ -48,7 +48,7 @@ class UserLoginRaw:
         if not self._dict:
             self._dict = {
                 'PreviousLastLoginDate': self.previous_last_login_date,
-                'User': dict(self.user),
+                'User': dict(self.user) if self.user else None,
                 'UserId': self.user_id,
                 'accessToken': self.access_token,
             }
