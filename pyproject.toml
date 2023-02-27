@@ -43,6 +43,9 @@ build-backend = "setuptools.build_meta"
 addopts = [
     "--import-mode=importlib",
 ]
+pythonpath = [
+  "./src"
+]
 
 [tool.autoflake]
 in-place=true
