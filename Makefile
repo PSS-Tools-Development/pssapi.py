@@ -1,5 +1,5 @@
 init:
-	pip install --upgrade pi
+	pip install --upgrade pip
 	pip install pip-tools
 	pip-sync
 
