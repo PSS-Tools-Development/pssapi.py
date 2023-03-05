@@ -7,7 +7,7 @@ from ..entities import Setting as _Setting
 
 
 class SettingService(_service_base.CacheableServiceBase):
-    async def get_latest_version(self, device_type: str) -> _List[_Setting]:
+    async def get_latest_version(self, device_type: str) -> _Setting:
         production_server = await self.get_production_server()
         result = await _SettingServiceRaw.get_latest_version_3(production_server, device_type, self.language_key)
         return result

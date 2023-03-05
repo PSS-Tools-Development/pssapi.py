@@ -3,10 +3,12 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Alliance as _Alliance
 from ...entities import Message as _Message
+from ...entities import User as _User
 
 # ---------- Constants ----------
 
@@ -25,7 +27,7 @@ async def list_alliances_by_championship_score_ranking(production_server: str, a
         'to': to,
         **params
     }
-    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Alliance, 'Alliances', True),), 'Alliances', production_server, LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -35,11 +37,11 @@ async def list_alliances_by_ranking(production_server: str, skip: int, take: int
         'take': take,
         **params
     }
-    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Alliance, 'Alliances', True),), 'Alliances', production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
-async def list_users_2(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _List[_Message]:
+async def list_users_2(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _Tuple[_List[_Message], _List[_User]]:
     params = {
         'accessToken': access_token,
         'allianceId': alliance_id,
@@ -47,7 +49,7 @@ async def list_users_2(production_server: str, access_token: str, alliance_id: i
         'take': take,
         **params
     }
-    result = await _core.get_entities_from_path((_Message,), 'Messages', production_server, LIST_USERS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Message, 'Messages', True), (_User, 'Users', True)), 'ListUsers', production_server, LIST_USERS_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -59,5 +61,5 @@ async def search_alliances(production_server: str, access_token: str, name: str,
         'take': take,
         **params
     }
-    result = await _core.get_entities_from_path((_Alliance,), 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Alliance, 'Alliances', True),), 'Alliances', production_server, SEARCH_ALLIANCES_BASE_PATH, 'GET', **params)
     return result

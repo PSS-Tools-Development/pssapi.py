@@ -12,7 +12,7 @@ from ..entities import UserMarker as _UserMarker
 
 
 class GalaxyService(_service_base.CacheableServiceBase):
-    async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _List[_Ship]:
+    async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _Ship:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.go_to(production_server, access_token, checksum, client_date_time, star_system_id)
         return result

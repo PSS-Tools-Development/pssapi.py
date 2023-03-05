@@ -24,7 +24,7 @@ async def inspect_ship_2(production_server: str, access_token: str, user_id: int
         'userId': user_id,
         **params
     }
-    result = await _core.get_entities_from_path((_Ship, _User), 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Ship, 'InspectShip', False), (_User, 'InspectShip', False)), 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -34,5 +34,5 @@ async def list_all_ship_designs_2(production_server: str, design_version: int, l
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_ShipDesign,), 'ShipDesigns', production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_ShipDesign, 'ShipDesigns', True),), 'ShipDesigns', production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result

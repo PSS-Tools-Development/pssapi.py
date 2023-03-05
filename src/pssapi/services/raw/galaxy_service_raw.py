@@ -25,7 +25,7 @@ UPDATE_MARKER_MOVEMENT_BASE_PATH: str = 'GalaxyService/UpdateMarkerMovement'
 
 # ---------- Endpoints ----------
 
-async def go_to(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_id: int, **params) -> _List[_Ship]:
+async def go_to(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_id: int, **params) -> _Ship:
     params = {
         'accessToken': access_token,
         'checksum': checksum,
@@ -33,7 +33,7 @@ async def go_to(production_server: str, access_token: str, checksum: str, client
         'starSystemId': star_system_id,
         **params
     }
-    result = await _core.get_entities_from_path((_Ship,), 'GoTo', production_server, GO_TO_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_Ship, 'GoTo', False),), 'GoTo', production_server, GO_TO_BASE_PATH, 'POST', **params)
     return result
 
 
@@ -43,7 +43,7 @@ async def list_marker_generator_designs(production_server: str, design_version: 
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_StarSystemMarkerGenerator,), 'StarSystemMarkerGenerators', production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_StarSystemMarkerGenerator, 'StarSystemMarkerGenerators', True),), 'StarSystemMarkerGenerators', production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -52,7 +52,7 @@ async def list_star_system_links(production_server: str, design_version: int, **
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path((_StarSystemLink,), 'StarSystemLinks', production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_StarSystemLink, 'StarSystemLinks', True),), 'StarSystemLinks', production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -62,7 +62,7 @@ async def list_star_system_markers(production_server: str, access_token: str, cl
         'clientDateTime': client_date_time,
         **params
     }
-    result = await _core.get_entities_from_path((_StarSystemMarker,), 'StarSystemMarkers', production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_StarSystemMarker, 'StarSystemMarkers', True),), 'StarSystemMarkers', production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -72,7 +72,7 @@ async def list_star_systems(production_server: str, design_version: int, languag
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_StarSystem,), 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_StarSystem, 'StarSystems', True),), 'StarSystems', production_server, LIST_STAR_SYSTEMS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -84,5 +84,5 @@ async def update_marker_movement(production_server: str, access_token: str, chec
         'starSystemMarkerId': star_system_marker_id,
         **params
     }
-    result = await _core.get_entities_from_path((_StarSystemMarker, _UserMarker), 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_StarSystemMarker, 'UpdateMarkerMovement', False), (_UserMarker, 'UpdateMarkerMovement', False)), 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', **params)
     return result

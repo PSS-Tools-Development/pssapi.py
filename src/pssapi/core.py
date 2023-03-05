@@ -1,16 +1,17 @@
 import json as _json
+from datetime import datetime as _datetime
 from typing import Any as _Any
 from typing import Dict as _Dict
 from typing import Iterable as _Iterable
-from typing import List as _List
 from typing import Type as _Type
+from typing import Tuple as _Tuple
 from xml.etree import ElementTree as _ElementTree
 
 import aiohttp as _aiohttp
 
 import pssapi.entities as _entities
 import pssapi.enums as _enums
-
+import pssapi.constants as _constants
 
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
     'deviceType': str(_enums.DeviceType.DEVICE_TYPE_ANDROID),
@@ -26,25 +27,30 @@ def create_request_content(structure: str, params: _Dict[str, _Any], content_typ
 
 
 async def get_entities_from_path(
-    entity_types: _Iterable[_Type['_entities.EntityBase']],
+    entity_tags: _Iterable[_Tuple[_Type['_entities.EntityBase'], str, bool]],
     xml_parent_tag_name: str,
     production_server: str,
     path: str,
     method: str,
     request_content: str = None,
     **params
-) -> _List['_entities.EntityBase']:
+):
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
     root = _ElementTree.fromstring(raw_xml)
     parent_node = root.find(f'.//{xml_parent_tag_name}')
     result = []
 
-    for child in parent_node:
-        for entity_type in entity_types:
-            if entity_type.__name__ == child.tag:
-                entity = entity_type(__get_raw_entity_xml(child))
-                result.append(entity)
-    return result
+    for entity_type, parent_tag_name, is_list in entity_tags:
+        entity_parent_node = parent_node if xml_parent_tag_name == parent_tag_name else parent_node.find(f'.//{parent_tag_name}')
+        entities = [entity_type(__get_raw_entity_xml(entity)) for entity in entity_parent_node]
+        if is_list:
+            result.append(entities)
+        else:
+            result.append(entities[0])
+    if len(result) > 1:
+        return tuple(*result)
+    else:
+        return result[0]
 
 
 async def get_production_server(device_type: str, language_key: str) -> str:
@@ -95,5 +101,7 @@ def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
         if isinstance(value, dict):
             __update_nested_dict_values(value, params)
+        elif isinstance(value, _datetime):
+            d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
         else:
             d[key] = params[key]

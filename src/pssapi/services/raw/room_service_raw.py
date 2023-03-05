@@ -30,7 +30,7 @@ async def list_action_types_2(production_server: str, design_version: int, langu
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_ActionType,), 'ActionTypes', production_server, LIST_ACTION_TYPES_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_ActionType, 'ActionTypes', True),), 'ActionTypes', production_server, LIST_ACTION_TYPES_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -40,7 +40,7 @@ async def list_condition_types_2(production_server: str, design_version: int, la
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_ConditionType,), 'ConditionTypes', production_server, LIST_CONDITION_TYPES_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_ConditionType, 'ConditionTypes', True),), 'ConditionTypes', production_server, LIST_CONDITION_TYPES_2_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -49,7 +49,7 @@ async def list_craft_designs(production_server: str, design_version: int, **para
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path((_CraftDesign,), 'CraftDesigns', production_server, LIST_CRAFT_DESIGNS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_CraftDesign, 'CraftDesigns', True),), 'CraftDesigns', production_server, LIST_CRAFT_DESIGNS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -58,7 +58,7 @@ async def list_missile_designs(production_server: str, design_version: int, **pa
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path((_MissileDesign,), 'MissileDesigns', production_server, LIST_MISSILE_DESIGNS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_MissileDesign, 'MissileDesigns', True),), 'MissileDesigns', production_server, LIST_MISSILE_DESIGNS_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -67,7 +67,7 @@ async def list_room_design_purchase(production_server: str, design_version: int,
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path((_RoomDesignPurchase,), 'RoomDesignPurchases', production_server, LIST_ROOM_DESIGN_PURCHASE_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_RoomDesignPurchase, 'RoomDesignPurchases', True),), 'RoomDesignPurchases', production_server, LIST_ROOM_DESIGN_PURCHASE_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -77,5 +77,5 @@ async def list_room_designs_2(production_server: str, design_version: int, langu
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_RoomDesign,), 'RoomDesigns', production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_RoomDesign, 'RoomDesigns', True),), 'RoomDesigns', production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result

@@ -25,7 +25,7 @@ async def list_active_marketplace_messages_5(production_server: str, access_toke
         'userId': user_id,
         **params
     }
-    result = await _core.get_entities_from_path((_Message,), 'Messages', production_server, LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Message, 'Messages', True),), 'Messages', production_server, LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -35,5 +35,5 @@ async def list_messages_for_channel_key(production_server: str, access_token: st
         'channelKey': channel_key,
         **params
     }
-    result = await _core.get_entities_from_path((_Message,), 'Messages', production_server, LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Message, 'Messages', True),), 'Messages', production_server, LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH, 'GET', **params)
     return result

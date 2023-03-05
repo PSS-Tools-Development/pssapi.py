@@ -167,7 +167,7 @@ class PssApiClientBase:
                 utc_now = _utils.get_utc_now()
                 if not self.__latest_version_cached or self.__latest_version_cached_at is None or (self.__latest_version_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
                     production_server = await _core.get_production_server(self.device_type, self.language_key)
-                    self.__latest_version_cached = (await _services_raw.SettingServiceRaw.get_latest_version_3(production_server, self.device_type, self.language_key))[0]
+                    self.__latest_version_cached = (await _services_raw.SettingServiceRaw.get_latest_version_3(production_server, self.device_type, self.language_key))
                     self.__latest_version_cached_at = _utils.get_utc_now()
                 return self.__latest_version_cached
         else:

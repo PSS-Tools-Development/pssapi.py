@@ -16,12 +16,12 @@ LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH: str = 'PromotionService/ListAllPromotion
 
 # ---------- Endpoints ----------
 
-async def fix_user_promotions(production_server: str, access_token: str, **params) -> _List[_User]:
+async def fix_user_promotions(production_server: str, access_token: str, **params) -> _User:
     params = {
         'accessToken': access_token,
         **params
     }
-    result = await _core.get_entities_from_path((_User,), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_User, 'FixUserPromotions', False),), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
     return result
 
 
@@ -31,5 +31,5 @@ async def list_all_promotion_designs_2(production_server: str, design_version: i
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path((_PromotionDesign,), 'PromotionDesigns', production_server, LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_PromotionDesign, 'PromotionDesigns', True),), 'PromotionDesigns', production_server, LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH, 'GET', **params)
     return result

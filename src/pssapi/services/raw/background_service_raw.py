@@ -19,5 +19,5 @@ async def list_backgrounds(production_server: str, design_version: int, **params
         'designVersion': design_version,
         **params
     }
-    result = await _core.get_entities_from_path((_Background,), 'Backgrounds', production_server, LIST_BACKGROUNDS_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Background, 'Backgrounds', True),), 'Backgrounds', production_server, LIST_BACKGROUNDS_BASE_PATH, 'GET', **params)
     return result

@@ -7,7 +7,7 @@ from ..entities import User as _User
 
 
 class PromotionService(_service_base.CacheableServiceBase):
-    async def fix_user_promotions(self, access_token: str) -> _List[_User]:
+    async def fix_user_promotions(self, access_token: str) -> _User:
         production_server = await self.get_production_server()
         result = await _PromotionServiceRaw.fix_user_promotions(production_server, access_token)
         return result

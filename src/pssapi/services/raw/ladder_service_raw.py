@@ -22,7 +22,7 @@ async def list_users_by_championship_score_ranking(production_server: str, acces
         'to': to,
         **params
     }
-    result = await _core.get_entities_from_path((_User,), 'Users', production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_User, 'Users', True),), 'Users', production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, 'GET', **params)
     return result
 
 
@@ -33,5 +33,5 @@ async def list_users_by_ranking(production_server: str, access_token: str, from_
         'to': to,
         **params
     }
-    result = await _core.get_entities_from_path((_User,), 'Users', production_server, LIST_USERS_BY_RANKING_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_User, 'Users', True),), 'Users', production_server, LIST_USERS_BY_RANKING_BASE_PATH, 'GET', **params)
     return result
