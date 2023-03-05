@@ -36,8 +36,13 @@ async def get_entities_from_path(
     **params
 ):
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
+
     root = _ElementTree.fromstring(raw_xml)
-    parent_node = root.find(f'.//{xml_parent_tag_name}')
+    if root.tag != xml_parent_tag_name:
+        parent_node = root.find(f'.//{xml_parent_tag_name}')
+    else:
+        parent_node = root
+
     result = []
 
     for entity_type, parent_tag_name, is_list in entity_tags:
@@ -93,7 +98,7 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
             async with session.get(url, params=filtered_params) as response:
                 data = await response.text(encoding='utf-8')
         elif method == 'POST':
-            async with session.get(url, data=content.encode('utf-8'), params=filtered_params) as response:
+            async with session.post(url, data=content.encode('utf-8'), params=filtered_params) as response:
                 data = await response.text(encoding='utf-8')
     return data
 
