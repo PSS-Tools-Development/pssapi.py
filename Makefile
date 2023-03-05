@@ -1,7 +1,7 @@
 init:
 	pip install --upgrade pip
 	pip install pip-tools
-	pip-sync requirements.txt dev-requirements.txt
+	pip-sync dev-requirements.txt
 
 test:
 	pytest
