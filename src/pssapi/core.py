@@ -47,6 +47,9 @@ async def get_entities_from_path(
 
     for entity_type, parent_tag_name, is_list in entity_tags:
         entity_parent_node = parent_node if xml_parent_tag_name == parent_tag_name else parent_node.find(f'.//{parent_tag_name}')
+        if not entity_parent_node:
+            continue
+
         entities = [entity_type(__get_raw_entity_xml(entity)) for entity in entity_parent_node]
         if is_list:
             result.append(entities)
@@ -85,7 +88,7 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
     # filter parameters with a None value and format datetime
     filtered_params = {}
     for (key, value) in params.items():
-        if not value:
+        if value is None:
             continue
 
         if (isinstance(value, _datetime)):
