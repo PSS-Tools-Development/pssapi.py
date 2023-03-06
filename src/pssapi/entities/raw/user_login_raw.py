@@ -39,7 +39,7 @@ class UserLoginRaw:
     def _key(self):
         return (
             self.previous_last_login_date,
-            self.user._key(),
+            self.user._key() if self.user else None,
             self.user_id,
             self.access_token,
         )

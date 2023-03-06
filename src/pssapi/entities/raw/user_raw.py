@@ -529,7 +529,7 @@ class UserRaw:
     def _key(self):
         return (
             self.activated_promotions,
-            self.alliance._key(),
+            self.alliance._key() if self.alliance else None,
             self.alliance_id,
             self.alliance_join_date,
             self.alliance_membership,
@@ -627,7 +627,7 @@ class UserRaw:
             self.unread_message_count,
             self.update_date,
             self.used_reward_points,
-            self.user_season._key(),
+            self.user_season._key() if self.user_season else None,
             self.user_type,
             self.vip_expiry_date,
         )
