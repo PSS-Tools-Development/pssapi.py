@@ -24,7 +24,7 @@ async def inspect_ship_2(production_server: str, access_token: str, user_id: int
         'userId': user_id,
         **params
     }
-    result = await _core.get_entities_from_path(((_Ship, 'InspectShip', False), (_User, 'InspectShip', False)), 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Ship, 'Ship', False), (_User, 'User', False)), 'InspectShip', production_server, INSPECT_SHIP_2_BASE_PATH, 'GET', **params)
     return result
 
 

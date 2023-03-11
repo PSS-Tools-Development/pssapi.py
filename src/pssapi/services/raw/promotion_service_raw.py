@@ -21,7 +21,7 @@ async def fix_user_promotions(production_server: str, access_token: str, **param
         'accessToken': access_token,
         **params
     }
-    result = await _core.get_entities_from_path(((_User, 'FixUserPromotions', False),), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_User, 'User', False),), 'FixUserPromotions', production_server, FIX_USER_PROMOTIONS_BASE_PATH, 'POST', **params)
     return result
 
 

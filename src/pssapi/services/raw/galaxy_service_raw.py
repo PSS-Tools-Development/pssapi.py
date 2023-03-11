@@ -33,7 +33,7 @@ async def go_to(production_server: str, access_token: str, checksum: str, client
         'starSystemId': star_system_id,
         **params
     }
-    result = await _core.get_entities_from_path(((_Ship, 'GoTo', False),), 'GoTo', production_server, GO_TO_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_Ship, 'Ship', False),), 'GoTo', production_server, GO_TO_BASE_PATH, 'POST', **params)
     return result
 
 
@@ -84,5 +84,5 @@ async def update_marker_movement(production_server: str, access_token: str, chec
         'starSystemMarkerId': star_system_marker_id,
         **params
     }
-    result = await _core.get_entities_from_path(((_StarSystemMarker, 'UpdateMarkerMovement', False), (_UserMarker, 'UpdateMarkerMovement', False)), 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', **params)
+    result = await _core.get_entities_from_path(((_StarSystemMarker, 'StarSystemMarker', False), (_UserMarker, 'UserMarker', False)), 'UpdateMarkerMovement', production_server, UPDATE_MARKER_MOVEMENT_BASE_PATH, 'POST', **params)
     return result

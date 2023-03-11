@@ -22,7 +22,7 @@ async def get_latest_version_3(production_server: str, device_type: str, languag
         'languageKey': language_key,
         **params
     }
-    result = await _core.get_entities_from_path(((_Setting, 'GetLatestSetting', False),), 'GetLatestSetting', production_server, GET_LATEST_VERSION_3_BASE_PATH, 'GET', **params)
+    result = await _core.get_entities_from_path(((_Setting, 'Setting', False),), 'GetLatestSetting', production_server, GET_LATEST_VERSION_3_BASE_PATH, 'GET', **params)
     return result
 
 
