@@ -22,8 +22,8 @@ class CharacterDesignRaw:
         self._character_design_name: str = _parse.pss_str(character_design_info.get('CharacterDesignName'))
         self._character_head_part_id: int = _parse.pss_int(character_design_info.get('CharacterHeadPartId'))
         self._character_leg_part_id: int = _parse.pss_int(character_design_info.get('CharacterLegPartId'))
-        self._character_parts: _List[_entities.CharacterPart] = [_entities.CharacterPart(child_info[1]) for child_info in character_design_info.get(
-            'CharacterParts').items()] if character_design_info.get('CharacterParts') else []
+        self._character_parts: _List[_entities.CharacterPart] = [_entities.CharacterPart(
+            child_info) for child_info in character_design_info.get('CharacterParts')] if character_design_info.get('CharacterParts') else []
         self._collection_design_id: int = _parse.pss_int(character_design_info.get('CollectionDesignId'))
         self._engine: float = _parse.pss_float(character_design_info.get('Engine'))
         self._equipment_mask: int = _parse.pss_int(character_design_info.get('EquipmentMask'))

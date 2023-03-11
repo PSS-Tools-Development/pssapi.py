@@ -113,6 +113,15 @@ def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     return result
 
 
+def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
+    result = []
+
+    for child in node:
+        result.append(__get_raw_entity_xml(child))
+
+    return result
+
+
 def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
         if isinstance(value, dict):
