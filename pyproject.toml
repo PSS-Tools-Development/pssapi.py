@@ -25,7 +25,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "autoflake==2.0.1",
-    "autopep8==2.0.1"
+    "autopep8==2.0.1",
+    "flake8==6.0.0",
 ]
 test = [
     "pytest==7.2.1",

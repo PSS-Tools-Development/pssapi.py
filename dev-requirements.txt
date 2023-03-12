@@ -20,6 +20,8 @@ autopep8==2.0.1
     # via pssapi (pyproject.toml)
 charset-normalizer==3.0.1
     # via aiohttp
+flake8==6.0.0
+    # via pssapi (pyproject.toml)
 frozenlist==1.3.3
     # via
     #   aiohttp
@@ -28,6 +30,8 @@ idna==3.4
     # via yarl
 iniconfig==2.0.0
     # via pytest
+mccabe==0.7.0
+    # via flake8
 multidict==6.0.4
     # via
     #   aiohttp
@@ -37,9 +41,13 @@ packaging==23.0
 pluggy==1.0.0
     # via pytest
 pycodestyle==2.10.0
-    # via autopep8
+    # via
+    #   autopep8
+    #   flake8
 pyflakes==3.0.1
-    # via autoflake
+    # via
+    #   autoflake
+    #   flake8
 pytest==7.2.1
     # via pssapi (pyproject.toml)
 pytz==2022.7.1

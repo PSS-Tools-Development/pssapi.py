@@ -6,6 +6,9 @@ init:
 test:
 	pytest
 
+check:
+	flake8 src/
+
 lint:
 	autoflake src/
 	autopep8 src/
@@ -17,4 +20,4 @@ requirements:
 build:
 	python -m build
 
-.PHONY: init test requirements build
+.PHONY: init test check lint requirements build
