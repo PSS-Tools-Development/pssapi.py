@@ -1,11 +1,11 @@
 import asyncio
 
-import pssapi
+from pssapi import PssApiClient
 from pssapi.entities import ShipDesign
 
 
 async def main() -> None:
-    client = pssapi.PssApiClient()
+    client = PssApiClient()
     print(f'Production server: {client.production_server or (await client.get_production_server())}')
 
     ship_designs: list[ShipDesign] = await client.ship_service.list_all_ship_designs()

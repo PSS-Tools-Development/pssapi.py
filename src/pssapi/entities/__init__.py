@@ -1,54 +1,111 @@
-from .entity_base import *
-from .achievement_design import *
-from .action_type import *
-from .alliance import *
-from .animation import *
-from .background import *
-from .challenge_design import *
-from .character import *
-from .character_action import *
-from .character_design import *
-from .character_design_action import *
-from .character_part import *
-from .collection_design import *
-from .condition_type import *
-from .craft_design import *
-from .division_design import *
-from .draw_design import *
-from .file import *
-from .get_catalog_quantity import *
-from .item import *
-from .item_design import *
-from .item_design_action import *
-from .league import *
-from .live_ops import *
-from .message import *
-from .missile_design import *
-from .mission_design import *
-from .news_design import *
-from .promotion_design import *
-from .research import *
-from .research_design import *
-from .reward_design import *
-from .room import *
-from .room_design import *
-from .room_design_purchase import *
-from .room_design_sprite import *
-from .sale import *
-from .season_design import *
-from .setting import *
-from .ship import *
-from .ship_design import *
-from .situation_design import *
-from .sprite import *
-from .star_system import *
-from .star_system_link import *
-from .star_system_marker import *
-from .star_system_marker_generator import *
-from .task_design import *
-from .training_design import *
-from .user import *
-from .user_login import *
-from .user_marker import *
-from .user_season import *
-from .user_star_system import *
+from .entity_base import EntityBase
+from .achievement_design import AchievementDesign
+from .action_type import ActionType
+from .alliance import Alliance
+from .animation import Animation
+from .background import Background
+from .challenge_design import ChallengeDesign
+from .character import Character
+from .character_action import CharacterAction
+from .character_design import CharacterDesign
+from .character_design_action import CharacterDesignAction
+from .character_part import CharacterPart
+from .collection_design import CollectionDesign
+from .condition_type import ConditionType
+from .craft_design import CraftDesign
+from .division_design import DivisionDesign
+from .draw_design import DrawDesign
+from .file import File
+from .get_catalog_quantity import GetCatalogQuantity
+from .item import Item
+from .item_design import ItemDesign
+from .item_design_action import ItemDesignAction
+from .league import League
+from .live_ops import LiveOps
+from .message import Message
+from .missile_design import MissileDesign
+from .mission_design import MissionDesign
+from .news_design import NewsDesign
+from .promotion_design import PromotionDesign
+from .research import Research
+from .research_design import ResearchDesign
+from .reward_design import RewardDesign
+from .room import Room
+from .room_design import RoomDesign
+from .room_design_purchase import RoomDesignPurchase
+from .room_design_sprite import RoomDesignSprite
+from .sale import Sale
+from .season_design import SeasonDesign
+from .setting import Setting
+from .ship import Ship
+from .ship_design import ShipDesign
+from .situation_design import SituationDesign
+from .sprite import Sprite
+from .star_system import StarSystem
+from .star_system_link import StarSystemLink
+from .star_system_marker import StarSystemMarker
+from .star_system_marker_generator import StarSystemMarkerGenerator
+from .task_design import TaskDesign
+from .training_design import TrainingDesign
+from .user import User
+from .user_login import UserLogin
+from .user_marker import UserMarker
+from .user_season import UserSeason
+from .user_star_system import UserStarSystem
+
+__all__ = [
+    'EntityBase',
+    'AchievementDesign',
+    'ActionType',
+    'Alliance',
+    'Animation',
+    'Background',
+    'ChallengeDesign',
+    'Character',
+    'CharacterAction',
+    'CharacterDesign',
+    'CharacterDesignAction',
+    'CharacterPart',
+    'CollectionDesign',
+    'ConditionType',
+    'CraftDesign',
+    'DivisionDesign',
+    'DrawDesign',
+    'File',
+    'GetCatalogQuantity',
+    'Item',
+    'ItemDesign',
+    'ItemDesignAction',
+    'League',
+    'LiveOps',
+    'Message',
+    'MissileDesign',
+    'MissionDesign',
+    'NewsDesign',
+    'PromotionDesign',
+    'Research',
+    'ResearchDesign',
+    'RewardDesign',
+    'Room',
+    'RoomDesign',
+    'RoomDesignPurchase',
+    'RoomDesignSprite',
+    'Sale',
+    'SeasonDesign',
+    'Setting',
+    'Ship',
+    'ShipDesign',
+    'SituationDesign',
+    'Sprite',
+    'StarSystem',
+    'StarSystemLink',
+    'StarSystemMarker',
+    'StarSystemMarkerGenerator',
+    'TaskDesign',
+    'TrainingDesign',
+    'User',
+    'UserLogin',
+    'UserMarker',
+    'UserSeason',
+    'UserStarSystem',
+]

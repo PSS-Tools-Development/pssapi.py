@@ -27,3 +27,35 @@ from . import situation_service_raw as SituationServiceRaw
 from . import task_service_raw as TaskServiceRaw
 from . import training_service_raw as TrainingServiceRaw
 from . import user_service_raw as UserServiceRaw
+
+__all__ = [
+    'AchievementServiceRaw',
+    'AllianceServiceRaw',
+    'AnimationServiceRaw',
+    'BackgroundServiceRaw',
+    'ChallengeServiceRaw',
+    'CharacterServiceRaw',
+    'CollectionServiceRaw',
+    'DivisionServiceRaw',
+    'FileServiceRaw',
+    'GalaxyServiceRaw',
+    'ItemServiceRaw',
+    'LadderServiceRaw',
+    'LeagueServiceRaw',
+    'LiveOpsServiceRaw',
+    'MarketServiceRaw',
+    'MessageServiceRaw',
+    'MissionServiceRaw',
+    'PromotionServiceRaw',
+    'ResearchServiceRaw',
+    'RewardServiceRaw',
+    'RoomDesignSpriteServiceRaw',
+    'RoomServiceRaw',
+    'SeasonServiceRaw',
+    'SettingServiceRaw',
+    'ShipServiceRaw',
+    'SituationServiceRaw',
+    'TaskServiceRaw',
+    'TrainingServiceRaw',
+    'UserServiceRaw',
+]

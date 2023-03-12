@@ -27,3 +27,35 @@ from .situation_service import SituationService
 from .task_service import TaskService
 from .training_service import TrainingService
 from .user_service import UserService
+
+__all__ = [
+    'AchievementService',
+    'AllianceService',
+    'AnimationService',
+    'BackgroundService',
+    'ChallengeService',
+    'CharacterService',
+    'CollectionService',
+    'DivisionService',
+    'FileService',
+    'GalaxyService',
+    'ItemService',
+    'LadderService',
+    'LeagueService',
+    'LiveOpsService',
+    'MarketService',
+    'MessageService',
+    'MissionService',
+    'PromotionService',
+    'ResearchService',
+    'RewardService',
+    'RoomDesignSpriteService',
+    'RoomService',
+    'SeasonService',
+    'SettingService',
+    'ShipService',
+    'SituationService',
+    'TaskService',
+    'TrainingService',
+    'UserService',
+]
