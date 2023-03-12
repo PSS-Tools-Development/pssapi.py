@@ -47,8 +47,6 @@ async def get_entities_from_path(
 
     for entity_type, parent_tag_name, is_list in entity_tags:
         entity_parent_node = parent_node if xml_parent_tag_name == parent_tag_name else parent_node.find(f'.//{parent_tag_name}')
-        if not entity_parent_node:
-            continue
 
         if is_list:
             entities = [entity_type(__get_raw_entity_xml(entity)) for entity in entity_parent_node]

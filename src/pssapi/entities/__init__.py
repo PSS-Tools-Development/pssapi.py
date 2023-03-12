@@ -1,4 +1,4 @@
-from .entity_base import EntityBase
+from .entity_base import EntityBase, EntityWithIdBase
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
 from .alliance import Alliance
@@ -54,6 +54,7 @@ from .user_season import UserSeason
 from .user_star_system import UserStarSystem
 
 __all__ = [
+    'EntityWithIdBase',
     'EntityBase',
     'AchievementDesign',
     'ActionType',
