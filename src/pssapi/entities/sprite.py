@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import SpriteRaw as _SpriteRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Sprite(_SpriteRaw, _EntityWithIdBase):

@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import BackgroundRaw as _BackgroundRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Background(_BackgroundRaw, _EntityWithIdBase):

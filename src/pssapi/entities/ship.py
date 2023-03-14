@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import ShipRaw as _ShipRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Ship(_ShipRaw, _EntityWithIdBase):

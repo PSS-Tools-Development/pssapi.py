@@ -2,29 +2,30 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class DivisionDesignRaw:
-    XML_NODE_NAME: str = 'DivisionDesign'
+    XML_NODE_NAME: str = "DivisionDesign"
 
     def __init__(self, division_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_sprite_id: int = _parse.pss_int(division_design_info.get('BackgroundSpriteId'))
-        self._banner_sprite_ids: str = _parse.pss_str(division_design_info.get('BannerSpriteIds'))
-        self._division_design_id: int = _parse.pss_int(division_design_info.get('DivisionDesignId'))
-        self._division_name: str = _parse.pss_str(division_design_info.get('DivisionName'))
-        self._division_type: str = _parse.pss_str(division_design_info.get('DivisionType'))
-        self._finals_immunity_percentage: int = _parse.pss_int(division_design_info.get('FinalsImmunityPercentage'))
-        self._logo_sprite_id: int = _parse.pss_int(division_design_info.get('LogoSpriteId'))
-        self._max_rank: int = _parse.pss_int(division_design_info.get('MaxRank'))
-        self._min_rank: int = _parse.pss_int(division_design_info.get('MinRank'))
-        self._monthly_achievement_design_ids: str = _parse.pss_str(division_design_info.get('MonthlyAchievementDesignIds'))
-        self._reward_strings: str = _parse.pss_str(division_design_info.get('RewardStrings'))
-        self._yearly_achievement_design_ids: str = _parse.pss_str(division_design_info.get('YearlyAchievementDesignIds'))
+        self._background_sprite_id: int = _parse.pss_int(division_design_info.get("BackgroundSpriteId"))
+        self._banner_sprite_ids: str = _parse.pss_str(division_design_info.get("BannerSpriteIds"))
+        self._division_design_id: int = _parse.pss_int(division_design_info.get("DivisionDesignId"))
+        self._division_name: str = _parse.pss_str(division_design_info.get("DivisionName"))
+        self._division_type: str = _parse.pss_str(division_design_info.get("DivisionType"))
+        self._finals_immunity_percentage: int = _parse.pss_int(division_design_info.get("FinalsImmunityPercentage"))
+        self._logo_sprite_id: int = _parse.pss_int(division_design_info.get("LogoSpriteId"))
+        self._max_rank: int = _parse.pss_int(division_design_info.get("MaxRank"))
+        self._min_rank: int = _parse.pss_int(division_design_info.get("MinRank"))
+        self._monthly_achievement_design_ids: str = _parse.pss_str(division_design_info.get("MonthlyAchievementDesignIds"))
+        self._reward_strings: str = _parse.pss_str(division_design_info.get("RewardStrings"))
+        self._yearly_achievement_design_ids: str = _parse.pss_str(division_design_info.get("YearlyAchievementDesignIds"))
 
     @property
     def background_sprite_id(self) -> int:
@@ -93,18 +94,18 @@ class DivisionDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'BackgroundSpriteId': self.background_sprite_id,
-                'BannerSpriteIds': self.banner_sprite_ids,
-                'DivisionDesignId': self.division_design_id,
-                'DivisionName': self.division_name,
-                'DivisionType': self.division_type,
-                'FinalsImmunityPercentage': self.finals_immunity_percentage,
-                'LogoSpriteId': self.logo_sprite_id,
-                'MaxRank': self.max_rank,
-                'MinRank': self.min_rank,
-                'MonthlyAchievementDesignIds': self.monthly_achievement_design_ids,
-                'RewardStrings': self.reward_strings,
-                'YearlyAchievementDesignIds': self.yearly_achievement_design_ids,
+                "BackgroundSpriteId": self.background_sprite_id,
+                "BannerSpriteIds": self.banner_sprite_ids,
+                "DivisionDesignId": self.division_design_id,
+                "DivisionName": self.division_name,
+                "DivisionType": self.division_type,
+                "FinalsImmunityPercentage": self.finals_immunity_percentage,
+                "LogoSpriteId": self.logo_sprite_id,
+                "MaxRank": self.max_rank,
+                "MinRank": self.min_rank,
+                "MonthlyAchievementDesignIds": self.monthly_achievement_design_ids,
+                "RewardStrings": self.reward_strings,
+                "YearlyAchievementDesignIds": self.yearly_achievement_design_ids,
             }
 
         return self._dict

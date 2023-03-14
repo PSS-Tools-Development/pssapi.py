@@ -32,8 +32,8 @@ class EntityBaseRaw(_ABC):
         return not self.__eq__(other)
 
     def __repr__(self):
-        attributes = ', '.join(f'{key}={value}' for key, value in self.__iter__())
-        return f'<{type(self).__name__} {attributes}>'
+        attributes = ", ".join(f"{key}={value}" for key, value in self.__iter__())
+        return f"<{type(self).__name__} {attributes}>"
 
     def __str__(self):
         return self.__repr__()

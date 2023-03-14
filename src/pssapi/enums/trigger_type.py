@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class TriggerType(_StrEnum):
-    PV_P = 'PvP'
-    SCAN_SHIP = 'ScanShip'
-    COLLECT_RESOURCES = 'CollectResources'
+    PV_P = "PvP"
+    SCAN_SHIP = "ScanShip"
+    COLLECT_RESOURCES = "CollectResources"

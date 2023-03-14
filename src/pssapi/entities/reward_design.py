@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import RewardDesignRaw as _RewardDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class RewardDesign(_RewardDesignRaw, _EntityWithIdBase):

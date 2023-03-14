@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import UserRaw as _UserRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class User(_UserRaw, _EntityWithIdBase):

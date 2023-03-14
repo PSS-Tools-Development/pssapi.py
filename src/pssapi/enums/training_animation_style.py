@@ -7,10 +7,10 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class TrainingAnimationStyle(_StrEnum):
-    JUMPING = 'Jumping'
-    WEIGHTLIFTING = 'Weightlifting'
-    RUNNING = 'Running'
-    READING = 'Reading'
-    PUSHUP = 'Pushup'
-    PUNCHING = 'Punching'
-    MEDITATION = 'Meditation'
+    JUMPING = "Jumping"
+    WEIGHTLIFTING = "Weightlifting"
+    RUNNING = "Running"
+    READING = "Reading"
+    PUSHUP = "Pushup"
+    PUNCHING = "Punching"
+    MEDITATION = "Meditation"

@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import UserSeasonRaw as _UserSeasonRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class UserSeason(_UserSeasonRaw, _EntityWithIdBase):

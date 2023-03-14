@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class MissionDesignType(_StrEnum):
-    SINGLE = 'Single'
-    SURPRISE = 'Surprise'
-    INSTANT = 'Instant'
-    EXPLORATION = 'Exploration'
+    SINGLE = "Single"
+    SURPRISE = "Surprise"
+    INSTANT = "Instant"
+    EXPLORATION = "Exploration"

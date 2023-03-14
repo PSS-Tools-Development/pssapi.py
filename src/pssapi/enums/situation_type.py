@@ -7,5 +7,5 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class SituationType(_StrEnum):
-    ENVIRONMENTAL = 'Environmental'
-    USER = 'User'
+    ENVIRONMENTAL = "Environmental"
+    USER = "User"

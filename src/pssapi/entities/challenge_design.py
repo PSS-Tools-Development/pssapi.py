@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import ChallengeDesignRaw as _ChallengeDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class ChallengeDesign(_ChallengeDesignRaw, _EntityWithIdBase):

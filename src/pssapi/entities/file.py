@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import FileRaw as _FileRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class File(_FileRaw, _EntityWithIdBase):

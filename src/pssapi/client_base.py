@@ -12,13 +12,7 @@ import pssapi.utils as _utils
 class PssApiClientBase:
     __PRODUCTION_SERVER_CACHE_DURATION: int = 60  # seconds
 
-    def __init__(
-        self,
-        device_type: '_enums.DeviceType' = None,
-        language_key: '_enums.LanguageKey' = None,
-        production_server: str = None,
-        use_cache: bool = True
-    ):
+    def __init__(self, device_type: "_enums.DeviceType" = None, language_key: "_enums.LanguageKey" = None, production_server: str = None, use_cache: bool = True):
         self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.DEVICE_TYPE_ANDROID
         self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
         self.__production_server: str = production_server or None  # if it's none, it'll be checked and cached for any API call
@@ -30,11 +24,11 @@ class PssApiClientBase:
         self._update_services()
 
     @property
-    def device_type(self) -> '_enums.DeviceType':
+    def device_type(self) -> "_enums.DeviceType":
         return self.__device_type
 
     @property
-    def language_key(self) -> '_enums.LanguageKey':
+    def language_key(self) -> "_enums.LanguageKey":
         return self.__language_key
 
     @property
@@ -46,132 +40,136 @@ class PssApiClientBase:
         self.__production_server = value
 
     @property
-    def achievement_service(self) -> '_services.AchievementService':
+    def achievement_service(self) -> "_services.AchievementService":
         return self.__achievement_service
 
     @property
-    def alliance_service(self) -> '_services.AllianceService':
+    def alliance_service(self) -> "_services.AllianceService":
         return self.__alliance_service
 
     @property
-    def animation_service(self) -> '_services.AnimationService':
+    def animation_service(self) -> "_services.AnimationService":
         return self.__animation_service
 
     @property
-    def background_service(self) -> '_services.BackgroundService':
+    def background_service(self) -> "_services.BackgroundService":
         return self.__background_service
 
     @property
-    def challenge_service(self) -> '_services.ChallengeService':
+    def challenge_service(self) -> "_services.ChallengeService":
         return self.__challenge_service
 
     @property
-    def character_service(self) -> '_services.CharacterService':
+    def character_service(self) -> "_services.CharacterService":
         return self.__character_service
 
     @property
-    def collection_service(self) -> '_services.CollectionService':
+    def collection_service(self) -> "_services.CollectionService":
         return self.__collection_service
 
     @property
-    def division_service(self) -> '_services.DivisionService':
+    def division_service(self) -> "_services.DivisionService":
         return self.__division_service
 
     @property
-    def file_service(self) -> '_services.FileService':
+    def file_service(self) -> "_services.FileService":
         return self.__file_service
 
     @property
-    def galaxy_service(self) -> '_services.GalaxyService':
+    def galaxy_service(self) -> "_services.GalaxyService":
         return self.__galaxy_service
 
     @property
-    def item_service(self) -> '_services.ItemService':
+    def item_service(self) -> "_services.ItemService":
         return self.__item_service
 
     @property
-    def ladder_service(self) -> '_services.LadderService':
+    def ladder_service(self) -> "_services.LadderService":
         return self.__ladder_service
 
     @property
-    def league_service(self) -> '_services.LeagueService':
+    def league_service(self) -> "_services.LeagueService":
         return self.__league_service
 
     @property
-    def live_ops_service(self) -> '_services.LiveOpsService':
+    def live_ops_service(self) -> "_services.LiveOpsService":
         return self.__live_ops_service
 
     @property
-    def market_service(self) -> '_services.MarketService':
+    def market_service(self) -> "_services.MarketService":
         return self.__market_service
 
     @property
-    def message_service(self) -> '_services.MessageService':
+    def message_service(self) -> "_services.MessageService":
         return self.__message_service
 
     @property
-    def mission_service(self) -> '_services.MissionService':
+    def mission_service(self) -> "_services.MissionService":
         return self.__mission_service
 
     @property
-    def promotion_service(self) -> '_services.PromotionService':
+    def promotion_service(self) -> "_services.PromotionService":
         return self.__promotion_service
 
     @property
-    def research_service(self) -> '_services.ResearchService':
+    def research_service(self) -> "_services.ResearchService":
         return self.__research_service
 
     @property
-    def reward_service(self) -> '_services.RewardService':
+    def reward_service(self) -> "_services.RewardService":
         return self.__reward_service
 
     @property
-    def room_design_sprite_service(self) -> '_services.RoomDesignSpriteService':
+    def room_design_sprite_service(self) -> "_services.RoomDesignSpriteService":
         return self.__room_design_sprite_service
 
     @property
-    def room_service(self) -> '_services.RoomService':
+    def room_service(self) -> "_services.RoomService":
         return self.__room_service
 
     @property
-    def season_service(self) -> '_services.SeasonService':
+    def season_service(self) -> "_services.SeasonService":
         return self.__season_service
 
     @property
-    def setting_service(self) -> '_services.SettingService':
+    def setting_service(self) -> "_services.SettingService":
         return self.__setting_service
 
     @property
-    def ship_service(self) -> '_services.ShipService':
+    def ship_service(self) -> "_services.ShipService":
         return self.__ship_service
 
     @property
-    def situation_service(self) -> '_services.SituationService':
+    def situation_service(self) -> "_services.SituationService":
         return self.__situation_service
 
     @property
-    def task_service(self) -> '_services.TaskService':
+    def task_service(self) -> "_services.TaskService":
         return self.__task_service
 
     @property
-    def training_service(self) -> '_services.TrainingService':
+    def training_service(self) -> "_services.TrainingService":
         return self.__training_service
 
     @property
-    def user_service(self) -> '_services.UserService':
+    def user_service(self) -> "_services.UserService":
         return self.__user_service
 
-    async def get_latest_version(self, use_cache: bool = True) -> '_entities.Setting':
+    async def get_latest_version(self, use_cache: bool = True) -> "_entities.Setting":
         if self.__use_cache and use_cache:
             with self.__latest_version_cache_lock:
                 utc_now = _utils.get_utc_now()
-                if not self.__latest_version_cached or self.__latest_version_cached_at is None or (self.__latest_version_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION:
+                if (
+                    not self.__latest_version_cached
+                    or self.__latest_version_cached_at is None
+                    or (self.__latest_version_cached_at - utc_now).total_seconds() >= PssApiClientBase.__PRODUCTION_SERVER_CACHE_DURATION
+                ):
                     production_server = await _core.get_production_server(self.device_type, self.language_key)
-                    self.__latest_version_cached = (await _services_raw.SettingServiceRaw.get_latest_version_3(production_server, self.device_type, self.language_key))
+                    self.__latest_version_cached = await _services_raw.SettingServiceRaw.get_latest_version_3(production_server, self.device_type, self.language_key)
                     self.__latest_version_cached_at = _utils.get_utc_now()
                 return self.__latest_version_cached
         else:
-            return (await self.setting_service.get_latest_version(self.device_type))
+            return await self.setting_service.get_latest_version(self.device_type)
 
     async def get_production_server(self, use_cache: bool = True) -> str:
         if self.__production_server:

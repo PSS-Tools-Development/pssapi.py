@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class AuthenticationType(_StrEnum):
-    BASIC = 'Basic'
-    JWT = 'JWT'
-    SMS = 'SMS'
+    BASIC = "Basic"
+    JWT = "JWT"
+    SMS = "SMS"

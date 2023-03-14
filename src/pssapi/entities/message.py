@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import MessageRaw as _MessageRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Message(_MessageRaw, _EntityWithIdBase):

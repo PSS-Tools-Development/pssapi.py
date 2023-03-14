@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import DrawDesignRaw as _DrawDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class DrawDesign(_DrawDesignRaw, _EntityWithIdBase):

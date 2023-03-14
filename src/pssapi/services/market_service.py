@@ -1,8 +1,9 @@
 from typing import List as _List
 
-from .raw import MarketServiceRaw as _MarketServiceRaw
 import pssapi.services.service_base as _service_base
+
 from ..entities import Sale as _Sale
+from .raw import MarketServiceRaw as _MarketServiceRaw
 
 
 class MarketService(_service_base.ServiceBase):

@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import StarSystemMarkerGeneratorRaw as _StarSystemMarkerGeneratorRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class StarSystemMarkerGenerator(_StarSystemMarkerGeneratorRaw, _EntityWithIdBase):

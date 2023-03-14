@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import TaskDesignRaw as _TaskDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class TaskDesign(_TaskDesignRaw, _EntityWithIdBase):

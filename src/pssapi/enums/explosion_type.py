@@ -7,8 +7,8 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ExplosionType(_StrEnum):
-    SINGLE = 'Single'
-    RADIUS = 'Radius'
-    LINE = 'Line'
-    ALL = 'All'
-    RANDOM = 'Random'
+    SINGLE = "Single"
+    RADIUS = "Radius"
+    LINE = "Line"
+    ALL = "All"
+    RANDOM = "Random"

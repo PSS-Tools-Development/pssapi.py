@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class Argument(_StrEnum):
-    ALL = 'All'
-    POWER = 'Power'
-    TARGET = 'Target'
-    ITEM = 'Item'
+    ALL = "All"
+    POWER = "Power"
+    TARGET = "Target"
+    ITEM = "Item"

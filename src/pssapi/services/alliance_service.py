@@ -1,11 +1,12 @@
 from typing import List as _List
 from typing import Tuple as _Tuple
 
-from .raw import AllianceServiceRaw as _AllianceServiceRaw
 import pssapi.services.service_base as _service_base
+
 from ..entities import Alliance as _Alliance
 from ..entities import Message as _Message
 from ..entities import User as _User
+from .raw import AllianceServiceRaw as _AllianceServiceRaw
 
 
 class AllianceService(_service_base.ServiceBase):

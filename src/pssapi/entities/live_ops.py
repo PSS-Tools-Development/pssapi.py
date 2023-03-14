@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import LiveOpsRaw as _LiveOpsRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class LiveOps(_LiveOpsRaw, _EntityWithIdBase):

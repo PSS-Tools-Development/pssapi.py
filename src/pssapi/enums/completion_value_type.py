@@ -7,5 +7,5 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CompletionValueType(_StrEnum):
-    WINS = 'Wins'
-    HP = 'Hp'
+    WINS = "Wins"
+    HP = "Hp"

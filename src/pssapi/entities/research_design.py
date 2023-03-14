@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import ResearchDesignRaw as _ResearchDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class ResearchDesign(_ResearchDesignRaw, _EntityWithIdBase):

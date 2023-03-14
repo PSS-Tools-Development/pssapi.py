@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityBase as _EntityBase
 from .raw import GetCatalogQuantityRaw as _GetCatalogQuantityRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class GetCatalogQuantity(_GetCatalogQuantityRaw, _EntityBase):

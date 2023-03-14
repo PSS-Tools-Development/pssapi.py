@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import SaleRaw as _SaleRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Sale(_SaleRaw, _EntityWithIdBase):

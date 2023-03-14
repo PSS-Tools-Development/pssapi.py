@@ -7,5 +7,5 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DivisionType(_StrEnum):
-    INDIVIDUAL = 'Individual'
-    FLEET = 'Fleet'
+    INDIVIDUAL = "Individual"
+    FLEET = "Fleet"

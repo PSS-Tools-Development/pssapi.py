@@ -2,36 +2,37 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class RoomRaw:
-    XML_NODE_NAME: str = 'Room'
+    XML_NODE_NAME: str = "Room"
 
     def __init__(self, room_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._capacity_used: int = _parse.pss_int(room_info.get('CapacityUsed'))
-        self._column: int = _parse.pss_int(room_info.get('Column'))
-        self._construction_start_date: str = _parse.pss_str(room_info.get('ConstructionStartDate'))
-        self._current_skin_key: int = _parse.pss_int(room_info.get('CurrentSkinKey'))
-        self._item_ids: str = _parse.pss_str(room_info.get('ItemIds'))
-        self._manufacture_start_date: str = _parse.pss_str(room_info.get('ManufactureStartDate'))
-        self._manufacture_string: str = _parse.pss_str(room_info.get('ManufactureString'))
-        self._manufactured: int = _parse.pss_int(room_info.get('Manufactured'))
-        self._power_generated: int = _parse.pss_int(room_info.get('PowerGenerated'))
-        self._previous_skin_key: int = _parse.pss_int(room_info.get('PreviousSkinKey'))
-        self._random_seed: int = _parse.pss_int(room_info.get('RandomSeed'))
-        self._room_design_id: int = _parse.pss_int(room_info.get('RoomDesignId'))
-        self._room_id: int = _parse.pss_int(room_info.get('RoomId'))
-        self._room_status: str = _parse.pss_str(room_info.get('RoomStatus'))
-        self._row: int = _parse.pss_int(room_info.get('Row'))
-        self._salvage_string: str = _parse.pss_str(room_info.get('SalvageString'))
-        self._ship_id: int = _parse.pss_int(room_info.get('ShipId'))
-        self._target_manufacture_string: str = _parse.pss_str(room_info.get('TargetManufactureString'))
-        self._upgrade_room_design_id: int = _parse.pss_int(room_info.get('UpgradeRoomDesignId'))
+        self._capacity_used: int = _parse.pss_int(room_info.get("CapacityUsed"))
+        self._column: int = _parse.pss_int(room_info.get("Column"))
+        self._construction_start_date: str = _parse.pss_str(room_info.get("ConstructionStartDate"))
+        self._current_skin_key: int = _parse.pss_int(room_info.get("CurrentSkinKey"))
+        self._item_ids: str = _parse.pss_str(room_info.get("ItemIds"))
+        self._manufacture_start_date: str = _parse.pss_str(room_info.get("ManufactureStartDate"))
+        self._manufacture_string: str = _parse.pss_str(room_info.get("ManufactureString"))
+        self._manufactured: int = _parse.pss_int(room_info.get("Manufactured"))
+        self._power_generated: int = _parse.pss_int(room_info.get("PowerGenerated"))
+        self._previous_skin_key: int = _parse.pss_int(room_info.get("PreviousSkinKey"))
+        self._random_seed: int = _parse.pss_int(room_info.get("RandomSeed"))
+        self._room_design_id: int = _parse.pss_int(room_info.get("RoomDesignId"))
+        self._room_id: int = _parse.pss_int(room_info.get("RoomId"))
+        self._room_status: str = _parse.pss_str(room_info.get("RoomStatus"))
+        self._row: int = _parse.pss_int(room_info.get("Row"))
+        self._salvage_string: str = _parse.pss_str(room_info.get("SalvageString"))
+        self._ship_id: int = _parse.pss_int(room_info.get("ShipId"))
+        self._target_manufacture_string: str = _parse.pss_str(room_info.get("TargetManufactureString"))
+        self._upgrade_room_design_id: int = _parse.pss_int(room_info.get("UpgradeRoomDesignId"))
 
     @property
     def capacity_used(self) -> int:
@@ -135,25 +136,25 @@ class RoomRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'CapacityUsed': self.capacity_used,
-                'Column': self.column,
-                'ConstructionStartDate': self.construction_start_date,
-                'CurrentSkinKey': self.current_skin_key,
-                'ItemIds': self.item_ids,
-                'ManufactureStartDate': self.manufacture_start_date,
-                'ManufactureString': self.manufacture_string,
-                'Manufactured': self.manufactured,
-                'PowerGenerated': self.power_generated,
-                'PreviousSkinKey': self.previous_skin_key,
-                'RandomSeed': self.random_seed,
-                'RoomDesignId': self.room_design_id,
-                'RoomId': self.room_id,
-                'RoomStatus': self.room_status,
-                'Row': self.row,
-                'SalvageString': self.salvage_string,
-                'ShipId': self.ship_id,
-                'TargetManufactureString': self.target_manufacture_string,
-                'UpgradeRoomDesignId': self.upgrade_room_design_id,
+                "CapacityUsed": self.capacity_used,
+                "Column": self.column,
+                "ConstructionStartDate": self.construction_start_date,
+                "CurrentSkinKey": self.current_skin_key,
+                "ItemIds": self.item_ids,
+                "ManufactureStartDate": self.manufacture_start_date,
+                "ManufactureString": self.manufacture_string,
+                "Manufactured": self.manufactured,
+                "PowerGenerated": self.power_generated,
+                "PreviousSkinKey": self.previous_skin_key,
+                "RandomSeed": self.random_seed,
+                "RoomDesignId": self.room_design_id,
+                "RoomId": self.room_id,
+                "RoomStatus": self.room_status,
+                "Row": self.row,
+                "SalvageString": self.salvage_string,
+                "ShipId": self.ship_id,
+                "TargetManufactureString": self.target_manufacture_string,
+                "UpgradeRoomDesignId": self.upgrade_room_design_id,
             }
 
         return self._dict

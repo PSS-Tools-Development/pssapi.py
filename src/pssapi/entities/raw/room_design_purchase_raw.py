@@ -2,23 +2,24 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class RoomDesignPurchaseRaw:
-    XML_NODE_NAME: str = 'RoomDesignPurchase'
+    XML_NODE_NAME: str = "RoomDesignPurchase"
 
     def __init__(self, room_design_purchase_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._availability_mask: int = _parse.pss_int(room_design_purchase_info.get('AvailabilityMask'))
-        self._level: int = _parse.pss_int(room_design_purchase_info.get('Level'))
-        self._quantity: int = _parse.pss_int(room_design_purchase_info.get('Quantity'))
-        self._requirement_string: str = _parse.pss_str(room_design_purchase_info.get('RequirementString'))
-        self._room_design_id: int = _parse.pss_int(room_design_purchase_info.get('RoomDesignId'))
-        self._room_design_purchase_id: int = _parse.pss_int(room_design_purchase_info.get('RoomDesignPurchaseId'))
+        self._availability_mask: int = _parse.pss_int(room_design_purchase_info.get("AvailabilityMask"))
+        self._level: int = _parse.pss_int(room_design_purchase_info.get("Level"))
+        self._quantity: int = _parse.pss_int(room_design_purchase_info.get("Quantity"))
+        self._requirement_string: str = _parse.pss_str(room_design_purchase_info.get("RequirementString"))
+        self._room_design_id: int = _parse.pss_int(room_design_purchase_info.get("RoomDesignId"))
+        self._room_design_purchase_id: int = _parse.pss_int(room_design_purchase_info.get("RoomDesignPurchaseId"))
 
     @property
     def availability_mask(self) -> int:
@@ -57,12 +58,12 @@ class RoomDesignPurchaseRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'AvailabilityMask': self.availability_mask,
-                'Level': self.level,
-                'Quantity': self.quantity,
-                'RequirementString': self.requirement_string,
-                'RoomDesignId': self.room_design_id,
-                'RoomDesignPurchaseId': self.room_design_purchase_id,
+                "AvailabilityMask": self.availability_mask,
+                "Level": self.level,
+                "Quantity": self.quantity,
+                "RequirementString": self.requirement_string,
+                "RoomDesignId": self.room_design_id,
+                "RoomDesignPurchaseId": self.room_design_purchase_id,
             }
 
         return self._dict

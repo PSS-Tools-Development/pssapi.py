@@ -3,127 +3,129 @@
 """
 
 from datetime import datetime as _datetime
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 import pssapi.entities as _entities
+
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class UserRaw:
-    XML_NODE_NAME: str = 'User'
+    XML_NODE_NAME: str = "User"
 
     def __init__(self, user_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._activated_promotions: str = _parse.pss_str(user_info.get('ActivatedPromotions'))
-        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get('Alliance')) if user_info.get('Alliance') else None
-        self._alliance_id: int = _parse.pss_int(user_info.get('AllianceId'))
-        self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.get('AllianceJoinDate'))
-        self._alliance_membership: str = _parse.pss_str(user_info.get('AllianceMembership'))
-        self._alliance_name: str = _parse.pss_str(user_info.get('AllianceName'))
-        self._alliance_qualify_division_design_id: int = _parse.pss_int(user_info.get('AllianceQualifyDivisionDesignId'))
-        self._alliance_score: int = _parse.pss_int(user_info.get('AllianceScore'))
-        self._alliance_sprite_id: int = _parse.pss_int(user_info.get('AllianceSpriteId'))
-        self._alliance_supply_donation: int = _parse.pss_int(user_info.get('AllianceSupplyDonation'))
-        self._authentication_type: str = _parse.pss_str(user_info.get('AuthenticationType'))
-        self._block_auth_attempts_until_date: _datetime = _parse.pss_datetime(user_info.get('BlockAuthAttemptsUntilDate'))
-        self._boost_amount: int = _parse.pss_int(user_info.get('BoostAmount'))
-        self._boost_end_date: _datetime = _parse.pss_datetime(user_info.get('BoostEndDate'))
-        self._captain_character_design_id: int = _parse.pss_int(user_info.get('CaptainCharacterDesignId'))
-        self._challenge_design_id: int = _parse.pss_int(user_info.get('ChallengeDesignId'))
-        self._challenge_losses: int = _parse.pss_int(user_info.get('ChallengeLosses'))
-        self._challenge_wins: int = _parse.pss_int(user_info.get('ChallengeWins'))
-        self._championship_score: int = _parse.pss_int(user_info.get('ChampionshipScore'))
-        self._chat_appearance: int = _parse.pss_int(user_info.get('ChatAppearance'))
-        self._completed_mission_designs: str = _parse.pss_str(user_info.get('CompletedMissionDesigns'))
-        self._completed_mission_event_ids: str = _parse.pss_str(user_info.get('CompletedMissionEventIds'))
-        self._cooldown_expiry: _datetime = _parse.pss_datetime(user_info.get('CooldownExpiry'))
-        self._creation_date: _datetime = _parse.pss_datetime(user_info.get('CreationDate'))
-        self._credits: str = _parse.pss_str(user_info.get('Credits'))
-        self._crew_donated: int = _parse.pss_int(user_info.get('CrewDonated'))
-        self._crew_received: int = _parse.pss_int(user_info.get('CrewReceived'))
-        self._daily_challenge_win_streak: int = _parse.pss_int(user_info.get('DailyChallengeWinStreak'))
-        self._daily_missions_attempted: str = _parse.pss_str(user_info.get('DailyMissionsAttempted'))
-        self._daily_pvp_attacks: int = _parse.pss_int(user_info.get('DailyPVPAttacks'))
-        self._daily_pv_p_defence: int = _parse.pss_int(user_info.get('DailyPvPDefence'))
-        self._daily_reward_status: int = _parse.pss_int(user_info.get('DailyRewardStatus'))
-        self._draws_used_today: int = _parse.pss_int(user_info.get('DrawsUsedToday'))
-        self._email: str = _parse.pss_str(user_info.get('Email'))
-        self._email_verification_status: str = _parse.pss_str(user_info.get('EmailVerificationStatus'))
-        self._explored_star_system_ids: str = _parse.pss_str(user_info.get('ExploredStarSystemIds'))
-        self._facebook_token: str = _parse.pss_str(user_info.get('FacebookToken'))
-        self._facebook_token_expiry_date: _datetime = _parse.pss_datetime(user_info.get('FacebookTokenExpiryDate'))
-        self._flags: int = _parse.pss_int(user_info.get('Flags'))
-        self._free_starbux_received_today: int = _parse.pss_int(user_info.get('FreeStarbuxReceivedToday'))
-        self._game_center_friend_count: int = _parse.pss_int(user_info.get('GameCenterFriendCount'))
-        self._game_center_name: str = _parse.pss_str(user_info.get('GameCenterName'))
-        self._gender_type: str = _parse.pss_str(user_info.get('GenderType'))
-        self._google_play_access_token_expiry_date: str = _parse.pss_str(user_info.get('GooglePlayAccessTokenExpiryDate'))
-        self._google_play_id_token: str = _parse.pss_str(user_info.get('GooglePlayIdToken'))
-        self._google_play_name: str = _parse.pss_str(user_info.get('GooglePlayName'))
-        self._goole_play_auth_code: str = _parse.pss_str(user_info.get('GoolePlayAuthCode'))
-        self._hero_bonus_chance: int = _parse.pss_int(user_info.get('HeroBonusChance'))
-        self._highest_trophy: int = _parse.pss_int(user_info.get('HighestTrophy'))
-        self._icon_sprite_id: int = _parse.pss_int(user_info.get('IconSpriteId'))
-        self._id_: int = _parse.pss_int(user_info.get('Id'))
-        self._language_key: str = _parse.pss_str(user_info.get('LanguageKey'))
-        self._last_alert_date: str = _parse.pss_str(user_info.get('LastAlertDate'))
-        self._last_boost_date: _datetime = _parse.pss_datetime(user_info.get('LastBoostDate'))
-        self._last_catalog_purchase_date: _datetime = _parse.pss_datetime(user_info.get('LastCatalogPurchaseDate'))
-        self._last_challenge_design_id: int = _parse.pss_int(user_info.get('LastChallengeDesignId'))
-        self._last_heart_beat_date: _datetime = _parse.pss_datetime(user_info.get('LastHeartBeatDate'))
-        self._last_login_date: _datetime = _parse.pss_datetime(user_info.get('LastLoginDate'))
-        self._last_purchase_date: str = _parse.pss_str(user_info.get('LastPurchaseDate'))
-        self._last_reward_action_date: _datetime = _parse.pss_datetime(user_info.get('LastRewardActionDate'))
-        self._last_vip_claim_date: _datetime = _parse.pss_datetime(user_info.get('LastVipClaimDate'))
-        self._league_type: str = _parse.pss_str(user_info.get('LeagueType'))
-        self._loading_percentage: int = _parse.pss_int(user_info.get('LoadingPercentage'))
-        self._matching_status: str = _parse.pss_str(user_info.get('MatchingStatus'))
-        self._name: str = _parse.pss_str(user_info.get('Name'))
-        self._nowgg_user_id: str = _parse.pss_str(user_info.get('NowggUserId'))
-        self._owner_user_id: int = _parse.pss_int(user_info.get('OwnerUserId'))
-        self._pvp_attack_draws: int = _parse.pss_int(user_info.get('PVPAttackDraws'))
-        self._pvp_attack_losses: int = _parse.pss_int(user_info.get('PVPAttackLosses'))
-        self._pvp_attack_wins: int = _parse.pss_int(user_info.get('PVPAttackWins'))
-        self._pvp_defence_draws: int = _parse.pss_int(user_info.get('PVPDefenceDraws'))
-        self._pvp_defence_losses: int = _parse.pss_int(user_info.get('PVPDefenceLosses'))
-        self._pvp_defence_wins: int = _parse.pss_int(user_info.get('PVPDefenceWins'))
-        self._pass_points: int = _parse.pss_int(user_info.get('PassPoints'))
-        self._profile_image_url: str = _parse.pss_str(user_info.get('ProfileImageUrl'))
-        self._purchase_reward_points: int = _parse.pss_int(user_info.get('PurchaseRewardPoints'))
-        self._race_type: str = _parse.pss_str(user_info.get('RaceType'))
-        self._ranking: int = _parse.pss_int(user_info.get('Ranking'))
-        self._rewards_collectable: bool = _parse.pss_bool(user_info.get('RewardsCollectable'))
-        self._ship_design_id: int = _parse.pss_int(user_info.get('ShipDesignId'))
-        self._situation_occurrences: str = _parse.pss_str(user_info.get('SituationOccurrences'))
-        self._situation_occurrences_today: int = _parse.pss_int(user_info.get('SituationOccurrencesToday'))
-        self._status: int = _parse.pss_int(user_info.get('Status'))
-        self._steam_id: str = _parse.pss_str(user_info.get('SteamId'))
-        self._task_reroll_count: int = _parse.pss_int(user_info.get('TaskRerollCount'))
-        self._tip_status: int = _parse.pss_int(user_info.get('TipStatus'))
-        self._total_supply_donation: int = _parse.pss_int(user_info.get('TotalSupplyDonation'))
-        self._tournament_bonus_score: int = _parse.pss_int(user_info.get('TournamentBonusScore'))
-        self._tournament_reset_date: _datetime = _parse.pss_datetime(user_info.get('TournamentResetDate'))
-        self._tournament_reward_points: int = _parse.pss_int(user_info.get('TournamentRewardPoints'))
-        self._trophy: int = _parse.pss_int(user_info.get('Trophy'))
-        self._trophy_gained: int = _parse.pss_int(user_info.get('TrophyGained'))
-        self._tutorial_status: int = _parse.pss_int(user_info.get('TutorialStatus'))
-        self._unlocked_character_design_ids: str = _parse.pss_str(user_info.get('UnlockedCharacterDesignIds'))
-        self._unlocked_ship_design_ids: str = _parse.pss_str(user_info.get('UnlockedShipDesignIds'))
-        self._unlocked_skin_keys: str = _parse.pss_str(user_info.get('UnlockedSkinKeys'))
-        self._unread_message_count: str = _parse.pss_str(user_info.get('UnreadMessageCount'))
-        self._update_date: _datetime = _parse.pss_datetime(user_info.get('UpdateDate'))
-        self._used_reward_points: int = _parse.pss_int(user_info.get('UsedRewardPoints'))
-        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get('UserSeason')) if user_info.get('UserSeason') else None
-        self._user_type: str = _parse.pss_str(user_info.get('UserType'))
-        self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.get('VipExpiryDate'))
+        self._activated_promotions: str = _parse.pss_str(user_info.get("ActivatedPromotions"))
+        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")) if user_info.get("Alliance") else None
+        self._alliance_id: int = _parse.pss_int(user_info.get("AllianceId"))
+        self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.get("AllianceJoinDate"))
+        self._alliance_membership: str = _parse.pss_str(user_info.get("AllianceMembership"))
+        self._alliance_name: str = _parse.pss_str(user_info.get("AllianceName"))
+        self._alliance_qualify_division_design_id: int = _parse.pss_int(user_info.get("AllianceQualifyDivisionDesignId"))
+        self._alliance_score: int = _parse.pss_int(user_info.get("AllianceScore"))
+        self._alliance_sprite_id: int = _parse.pss_int(user_info.get("AllianceSpriteId"))
+        self._alliance_supply_donation: int = _parse.pss_int(user_info.get("AllianceSupplyDonation"))
+        self._authentication_type: str = _parse.pss_str(user_info.get("AuthenticationType"))
+        self._block_auth_attempts_until_date: _datetime = _parse.pss_datetime(user_info.get("BlockAuthAttemptsUntilDate"))
+        self._boost_amount: int = _parse.pss_int(user_info.get("BoostAmount"))
+        self._boost_end_date: _datetime = _parse.pss_datetime(user_info.get("BoostEndDate"))
+        self._captain_character_design_id: int = _parse.pss_int(user_info.get("CaptainCharacterDesignId"))
+        self._challenge_design_id: int = _parse.pss_int(user_info.get("ChallengeDesignId"))
+        self._challenge_losses: int = _parse.pss_int(user_info.get("ChallengeLosses"))
+        self._challenge_wins: int = _parse.pss_int(user_info.get("ChallengeWins"))
+        self._championship_score: int = _parse.pss_int(user_info.get("ChampionshipScore"))
+        self._chat_appearance: int = _parse.pss_int(user_info.get("ChatAppearance"))
+        self._completed_mission_designs: str = _parse.pss_str(user_info.get("CompletedMissionDesigns"))
+        self._completed_mission_event_ids: str = _parse.pss_str(user_info.get("CompletedMissionEventIds"))
+        self._cooldown_expiry: _datetime = _parse.pss_datetime(user_info.get("CooldownExpiry"))
+        self._creation_date: _datetime = _parse.pss_datetime(user_info.get("CreationDate"))
+        self._credits: str = _parse.pss_str(user_info.get("Credits"))
+        self._crew_donated: int = _parse.pss_int(user_info.get("CrewDonated"))
+        self._crew_received: int = _parse.pss_int(user_info.get("CrewReceived"))
+        self._daily_challenge_win_streak: int = _parse.pss_int(user_info.get("DailyChallengeWinStreak"))
+        self._daily_missions_attempted: str = _parse.pss_str(user_info.get("DailyMissionsAttempted"))
+        self._daily_pvp_attacks: int = _parse.pss_int(user_info.get("DailyPVPAttacks"))
+        self._daily_pv_p_defence: int = _parse.pss_int(user_info.get("DailyPvPDefence"))
+        self._daily_reward_status: int = _parse.pss_int(user_info.get("DailyRewardStatus"))
+        self._draws_used_today: int = _parse.pss_int(user_info.get("DrawsUsedToday"))
+        self._email: str = _parse.pss_str(user_info.get("Email"))
+        self._email_verification_status: str = _parse.pss_str(user_info.get("EmailVerificationStatus"))
+        self._explored_star_system_ids: str = _parse.pss_str(user_info.get("ExploredStarSystemIds"))
+        self._facebook_token: str = _parse.pss_str(user_info.get("FacebookToken"))
+        self._facebook_token_expiry_date: _datetime = _parse.pss_datetime(user_info.get("FacebookTokenExpiryDate"))
+        self._flags: int = _parse.pss_int(user_info.get("Flags"))
+        self._free_starbux_received_today: int = _parse.pss_int(user_info.get("FreeStarbuxReceivedToday"))
+        self._game_center_friend_count: int = _parse.pss_int(user_info.get("GameCenterFriendCount"))
+        self._game_center_name: str = _parse.pss_str(user_info.get("GameCenterName"))
+        self._gender_type: str = _parse.pss_str(user_info.get("GenderType"))
+        self._google_play_access_token_expiry_date: str = _parse.pss_str(user_info.get("GooglePlayAccessTokenExpiryDate"))
+        self._google_play_id_token: str = _parse.pss_str(user_info.get("GooglePlayIdToken"))
+        self._google_play_name: str = _parse.pss_str(user_info.get("GooglePlayName"))
+        self._goole_play_auth_code: str = _parse.pss_str(user_info.get("GoolePlayAuthCode"))
+        self._hero_bonus_chance: int = _parse.pss_int(user_info.get("HeroBonusChance"))
+        self._highest_trophy: int = _parse.pss_int(user_info.get("HighestTrophy"))
+        self._icon_sprite_id: int = _parse.pss_int(user_info.get("IconSpriteId"))
+        self._id_: int = _parse.pss_int(user_info.get("Id"))
+        self._language_key: str = _parse.pss_str(user_info.get("LanguageKey"))
+        self._last_alert_date: str = _parse.pss_str(user_info.get("LastAlertDate"))
+        self._last_boost_date: _datetime = _parse.pss_datetime(user_info.get("LastBoostDate"))
+        self._last_catalog_purchase_date: _datetime = _parse.pss_datetime(user_info.get("LastCatalogPurchaseDate"))
+        self._last_challenge_design_id: int = _parse.pss_int(user_info.get("LastChallengeDesignId"))
+        self._last_heart_beat_date: _datetime = _parse.pss_datetime(user_info.get("LastHeartBeatDate"))
+        self._last_login_date: _datetime = _parse.pss_datetime(user_info.get("LastLoginDate"))
+        self._last_purchase_date: str = _parse.pss_str(user_info.get("LastPurchaseDate"))
+        self._last_reward_action_date: _datetime = _parse.pss_datetime(user_info.get("LastRewardActionDate"))
+        self._last_vip_claim_date: _datetime = _parse.pss_datetime(user_info.get("LastVipClaimDate"))
+        self._league_type: str = _parse.pss_str(user_info.get("LeagueType"))
+        self._loading_percentage: int = _parse.pss_int(user_info.get("LoadingPercentage"))
+        self._matching_status: str = _parse.pss_str(user_info.get("MatchingStatus"))
+        self._name: str = _parse.pss_str(user_info.get("Name"))
+        self._nowgg_user_id: str = _parse.pss_str(user_info.get("NowggUserId"))
+        self._owner_user_id: int = _parse.pss_int(user_info.get("OwnerUserId"))
+        self._pvp_attack_draws: int = _parse.pss_int(user_info.get("PVPAttackDraws"))
+        self._pvp_attack_losses: int = _parse.pss_int(user_info.get("PVPAttackLosses"))
+        self._pvp_attack_wins: int = _parse.pss_int(user_info.get("PVPAttackWins"))
+        self._pvp_defence_draws: int = _parse.pss_int(user_info.get("PVPDefenceDraws"))
+        self._pvp_defence_losses: int = _parse.pss_int(user_info.get("PVPDefenceLosses"))
+        self._pvp_defence_wins: int = _parse.pss_int(user_info.get("PVPDefenceWins"))
+        self._pass_points: int = _parse.pss_int(user_info.get("PassPoints"))
+        self._profile_image_url: str = _parse.pss_str(user_info.get("ProfileImageUrl"))
+        self._purchase_reward_points: int = _parse.pss_int(user_info.get("PurchaseRewardPoints"))
+        self._race_type: str = _parse.pss_str(user_info.get("RaceType"))
+        self._ranking: int = _parse.pss_int(user_info.get("Ranking"))
+        self._rewards_collectable: bool = _parse.pss_bool(user_info.get("RewardsCollectable"))
+        self._ship_design_id: int = _parse.pss_int(user_info.get("ShipDesignId"))
+        self._situation_occurrences: str = _parse.pss_str(user_info.get("SituationOccurrences"))
+        self._situation_occurrences_today: int = _parse.pss_int(user_info.get("SituationOccurrencesToday"))
+        self._status: int = _parse.pss_int(user_info.get("Status"))
+        self._steam_id: str = _parse.pss_str(user_info.get("SteamId"))
+        self._task_reroll_count: int = _parse.pss_int(user_info.get("TaskRerollCount"))
+        self._tip_status: int = _parse.pss_int(user_info.get("TipStatus"))
+        self._total_supply_donation: int = _parse.pss_int(user_info.get("TotalSupplyDonation"))
+        self._tournament_bonus_score: int = _parse.pss_int(user_info.get("TournamentBonusScore"))
+        self._tournament_reset_date: _datetime = _parse.pss_datetime(user_info.get("TournamentResetDate"))
+        self._tournament_reward_points: int = _parse.pss_int(user_info.get("TournamentRewardPoints"))
+        self._trophy: int = _parse.pss_int(user_info.get("Trophy"))
+        self._trophy_gained: int = _parse.pss_int(user_info.get("TrophyGained"))
+        self._tutorial_status: int = _parse.pss_int(user_info.get("TutorialStatus"))
+        self._unlocked_character_design_ids: str = _parse.pss_str(user_info.get("UnlockedCharacterDesignIds"))
+        self._unlocked_ship_design_ids: str = _parse.pss_str(user_info.get("UnlockedShipDesignIds"))
+        self._unlocked_skin_keys: str = _parse.pss_str(user_info.get("UnlockedSkinKeys"))
+        self._unread_message_count: str = _parse.pss_str(user_info.get("UnreadMessageCount"))
+        self._update_date: _datetime = _parse.pss_datetime(user_info.get("UpdateDate"))
+        self._used_reward_points: int = _parse.pss_int(user_info.get("UsedRewardPoints"))
+        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")) if user_info.get("UserSeason") else None
+        self._user_type: str = _parse.pss_str(user_info.get("UserType"))
+        self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.get("VipExpiryDate"))
 
     @property
     def activated_promotions(self) -> str:
         return self._activated_promotions
 
     @property
-    def alliance(self) -> '_entities.Alliance':
+    def alliance(self) -> "_entities.Alliance":
         return self._alliance
 
     @property
@@ -515,7 +517,7 @@ class UserRaw:
         return self._used_reward_points
 
     @property
-    def user_season(self) -> '_entities.UserSeason':
+    def user_season(self) -> "_entities.UserSeason":
         return self._user_season
 
     @property
@@ -635,108 +637,108 @@ class UserRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'ActivatedPromotions': self.activated_promotions,
-                'Alliance': dict(self.alliance) if self.alliance else None,
-                'AllianceId': self.alliance_id,
-                'AllianceJoinDate': self.alliance_join_date,
-                'AllianceMembership': self.alliance_membership,
-                'AllianceName': self.alliance_name,
-                'AllianceQualifyDivisionDesignId': self.alliance_qualify_division_design_id,
-                'AllianceScore': self.alliance_score,
-                'AllianceSpriteId': self.alliance_sprite_id,
-                'AllianceSupplyDonation': self.alliance_supply_donation,
-                'AuthenticationType': self.authentication_type,
-                'BlockAuthAttemptsUntilDate': self.block_auth_attempts_until_date,
-                'BoostAmount': self.boost_amount,
-                'BoostEndDate': self.boost_end_date,
-                'CaptainCharacterDesignId': self.captain_character_design_id,
-                'ChallengeDesignId': self.challenge_design_id,
-                'ChallengeLosses': self.challenge_losses,
-                'ChallengeWins': self.challenge_wins,
-                'ChampionshipScore': self.championship_score,
-                'ChatAppearance': self.chat_appearance,
-                'CompletedMissionDesigns': self.completed_mission_designs,
-                'CompletedMissionEventIds': self.completed_mission_event_ids,
-                'CooldownExpiry': self.cooldown_expiry,
-                'CreationDate': self.creation_date,
-                'Credits': self.credits,
-                'CrewDonated': self.crew_donated,
-                'CrewReceived': self.crew_received,
-                'DailyChallengeWinStreak': self.daily_challenge_win_streak,
-                'DailyMissionsAttempted': self.daily_missions_attempted,
-                'DailyPVPAttacks': self.daily_pvp_attacks,
-                'DailyPvPDefence': self.daily_pv_p_defence,
-                'DailyRewardStatus': self.daily_reward_status,
-                'DrawsUsedToday': self.draws_used_today,
-                'Email': self.email,
-                'EmailVerificationStatus': self.email_verification_status,
-                'ExploredStarSystemIds': self.explored_star_system_ids,
-                'FacebookToken': self.facebook_token,
-                'FacebookTokenExpiryDate': self.facebook_token_expiry_date,
-                'Flags': self.flags,
-                'FreeStarbuxReceivedToday': self.free_starbux_received_today,
-                'GameCenterFriendCount': self.game_center_friend_count,
-                'GameCenterName': self.game_center_name,
-                'GenderType': self.gender_type,
-                'GooglePlayAccessTokenExpiryDate': self.google_play_access_token_expiry_date,
-                'GooglePlayIdToken': self.google_play_id_token,
-                'GooglePlayName': self.google_play_name,
-                'GoolePlayAuthCode': self.goole_play_auth_code,
-                'HeroBonusChance': self.hero_bonus_chance,
-                'HighestTrophy': self.highest_trophy,
-                'IconSpriteId': self.icon_sprite_id,
-                'Id': self.id_,
-                'LanguageKey': self.language_key,
-                'LastAlertDate': self.last_alert_date,
-                'LastBoostDate': self.last_boost_date,
-                'LastCatalogPurchaseDate': self.last_catalog_purchase_date,
-                'LastChallengeDesignId': self.last_challenge_design_id,
-                'LastHeartBeatDate': self.last_heart_beat_date,
-                'LastLoginDate': self.last_login_date,
-                'LastPurchaseDate': self.last_purchase_date,
-                'LastRewardActionDate': self.last_reward_action_date,
-                'LastVipClaimDate': self.last_vip_claim_date,
-                'LeagueType': self.league_type,
-                'LoadingPercentage': self.loading_percentage,
-                'MatchingStatus': self.matching_status,
-                'Name': self.name,
-                'NowggUserId': self.nowgg_user_id,
-                'OwnerUserId': self.owner_user_id,
-                'PVPAttackDraws': self.pvp_attack_draws,
-                'PVPAttackLosses': self.pvp_attack_losses,
-                'PVPAttackWins': self.pvp_attack_wins,
-                'PVPDefenceDraws': self.pvp_defence_draws,
-                'PVPDefenceLosses': self.pvp_defence_losses,
-                'PVPDefenceWins': self.pvp_defence_wins,
-                'PassPoints': self.pass_points,
-                'ProfileImageUrl': self.profile_image_url,
-                'PurchaseRewardPoints': self.purchase_reward_points,
-                'RaceType': self.race_type,
-                'Ranking': self.ranking,
-                'RewardsCollectable': self.rewards_collectable,
-                'ShipDesignId': self.ship_design_id,
-                'SituationOccurrences': self.situation_occurrences,
-                'SituationOccurrencesToday': self.situation_occurrences_today,
-                'Status': self.status,
-                'SteamId': self.steam_id,
-                'TaskRerollCount': self.task_reroll_count,
-                'TipStatus': self.tip_status,
-                'TotalSupplyDonation': self.total_supply_donation,
-                'TournamentBonusScore': self.tournament_bonus_score,
-                'TournamentResetDate': self.tournament_reset_date,
-                'TournamentRewardPoints': self.tournament_reward_points,
-                'Trophy': self.trophy,
-                'TrophyGained': self.trophy_gained,
-                'TutorialStatus': self.tutorial_status,
-                'UnlockedCharacterDesignIds': self.unlocked_character_design_ids,
-                'UnlockedShipDesignIds': self.unlocked_ship_design_ids,
-                'UnlockedSkinKeys': self.unlocked_skin_keys,
-                'UnreadMessageCount': self.unread_message_count,
-                'UpdateDate': self.update_date,
-                'UsedRewardPoints': self.used_reward_points,
-                'UserSeason': dict(self.user_season) if self.user_season else None,
-                'UserType': self.user_type,
-                'VipExpiryDate': self.vip_expiry_date,
+                "ActivatedPromotions": self.activated_promotions,
+                "Alliance": dict(self.alliance) if self.alliance else None,
+                "AllianceId": self.alliance_id,
+                "AllianceJoinDate": self.alliance_join_date,
+                "AllianceMembership": self.alliance_membership,
+                "AllianceName": self.alliance_name,
+                "AllianceQualifyDivisionDesignId": self.alliance_qualify_division_design_id,
+                "AllianceScore": self.alliance_score,
+                "AllianceSpriteId": self.alliance_sprite_id,
+                "AllianceSupplyDonation": self.alliance_supply_donation,
+                "AuthenticationType": self.authentication_type,
+                "BlockAuthAttemptsUntilDate": self.block_auth_attempts_until_date,
+                "BoostAmount": self.boost_amount,
+                "BoostEndDate": self.boost_end_date,
+                "CaptainCharacterDesignId": self.captain_character_design_id,
+                "ChallengeDesignId": self.challenge_design_id,
+                "ChallengeLosses": self.challenge_losses,
+                "ChallengeWins": self.challenge_wins,
+                "ChampionshipScore": self.championship_score,
+                "ChatAppearance": self.chat_appearance,
+                "CompletedMissionDesigns": self.completed_mission_designs,
+                "CompletedMissionEventIds": self.completed_mission_event_ids,
+                "CooldownExpiry": self.cooldown_expiry,
+                "CreationDate": self.creation_date,
+                "Credits": self.credits,
+                "CrewDonated": self.crew_donated,
+                "CrewReceived": self.crew_received,
+                "DailyChallengeWinStreak": self.daily_challenge_win_streak,
+                "DailyMissionsAttempted": self.daily_missions_attempted,
+                "DailyPVPAttacks": self.daily_pvp_attacks,
+                "DailyPvPDefence": self.daily_pv_p_defence,
+                "DailyRewardStatus": self.daily_reward_status,
+                "DrawsUsedToday": self.draws_used_today,
+                "Email": self.email,
+                "EmailVerificationStatus": self.email_verification_status,
+                "ExploredStarSystemIds": self.explored_star_system_ids,
+                "FacebookToken": self.facebook_token,
+                "FacebookTokenExpiryDate": self.facebook_token_expiry_date,
+                "Flags": self.flags,
+                "FreeStarbuxReceivedToday": self.free_starbux_received_today,
+                "GameCenterFriendCount": self.game_center_friend_count,
+                "GameCenterName": self.game_center_name,
+                "GenderType": self.gender_type,
+                "GooglePlayAccessTokenExpiryDate": self.google_play_access_token_expiry_date,
+                "GooglePlayIdToken": self.google_play_id_token,
+                "GooglePlayName": self.google_play_name,
+                "GoolePlayAuthCode": self.goole_play_auth_code,
+                "HeroBonusChance": self.hero_bonus_chance,
+                "HighestTrophy": self.highest_trophy,
+                "IconSpriteId": self.icon_sprite_id,
+                "Id": self.id_,
+                "LanguageKey": self.language_key,
+                "LastAlertDate": self.last_alert_date,
+                "LastBoostDate": self.last_boost_date,
+                "LastCatalogPurchaseDate": self.last_catalog_purchase_date,
+                "LastChallengeDesignId": self.last_challenge_design_id,
+                "LastHeartBeatDate": self.last_heart_beat_date,
+                "LastLoginDate": self.last_login_date,
+                "LastPurchaseDate": self.last_purchase_date,
+                "LastRewardActionDate": self.last_reward_action_date,
+                "LastVipClaimDate": self.last_vip_claim_date,
+                "LeagueType": self.league_type,
+                "LoadingPercentage": self.loading_percentage,
+                "MatchingStatus": self.matching_status,
+                "Name": self.name,
+                "NowggUserId": self.nowgg_user_id,
+                "OwnerUserId": self.owner_user_id,
+                "PVPAttackDraws": self.pvp_attack_draws,
+                "PVPAttackLosses": self.pvp_attack_losses,
+                "PVPAttackWins": self.pvp_attack_wins,
+                "PVPDefenceDraws": self.pvp_defence_draws,
+                "PVPDefenceLosses": self.pvp_defence_losses,
+                "PVPDefenceWins": self.pvp_defence_wins,
+                "PassPoints": self.pass_points,
+                "ProfileImageUrl": self.profile_image_url,
+                "PurchaseRewardPoints": self.purchase_reward_points,
+                "RaceType": self.race_type,
+                "Ranking": self.ranking,
+                "RewardsCollectable": self.rewards_collectable,
+                "ShipDesignId": self.ship_design_id,
+                "SituationOccurrences": self.situation_occurrences,
+                "SituationOccurrencesToday": self.situation_occurrences_today,
+                "Status": self.status,
+                "SteamId": self.steam_id,
+                "TaskRerollCount": self.task_reroll_count,
+                "TipStatus": self.tip_status,
+                "TotalSupplyDonation": self.total_supply_donation,
+                "TournamentBonusScore": self.tournament_bonus_score,
+                "TournamentResetDate": self.tournament_reset_date,
+                "TournamentRewardPoints": self.tournament_reward_points,
+                "Trophy": self.trophy,
+                "TrophyGained": self.trophy_gained,
+                "TutorialStatus": self.tutorial_status,
+                "UnlockedCharacterDesignIds": self.unlocked_character_design_ids,
+                "UnlockedShipDesignIds": self.unlocked_ship_design_ids,
+                "UnlockedSkinKeys": self.unlocked_skin_keys,
+                "UnreadMessageCount": self.unread_message_count,
+                "UpdateDate": self.update_date,
+                "UsedRewardPoints": self.used_reward_points,
+                "UserSeason": dict(self.user_season) if self.user_season else None,
+                "UserType": self.user_type,
+                "VipExpiryDate": self.vip_expiry_date,
             }
 
         return self._dict

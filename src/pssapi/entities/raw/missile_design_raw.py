@@ -2,49 +2,50 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class MissileDesignRaw:
-    XML_NODE_NAME: str = 'MissileDesign'
+    XML_NODE_NAME: str = "MissileDesign"
 
     def __init__(self, missile_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._animation_id: int = _parse.pss_int(missile_design_info.get('AnimationId'))
-        self._breach_chance: int = _parse.pss_int(missile_design_info.get('BreachChance'))
-        self._character_damage: float = _parse.pss_float(missile_design_info.get('CharacterDamage'))
-        self._direct_system_damage: float = _parse.pss_float(missile_design_info.get('DirectSystemDamage'))
-        self._emp_length: int = _parse.pss_int(missile_design_info.get('EMPLength'))
-        self._explosion_radius: int = _parse.pss_int(missile_design_info.get('ExplosionRadius'))
-        self._explosion_type: str = _parse.pss_str(missile_design_info.get('ExplosionType'))
-        self._fire_length: int = _parse.pss_int(missile_design_info.get('FireLength'))
-        self._flight_argument_x: int = _parse.pss_int(missile_design_info.get('FlightArgumentX'))
-        self._flight_argument_y: int = _parse.pss_int(missile_design_info.get('FlightArgumentY'))
-        self._flight_type: str = _parse.pss_str(missile_design_info.get('FlightType'))
-        self._hit_animation_id: int = _parse.pss_int(missile_design_info.get('HitAnimationId'))
-        self._hit_sound_file_id: int = _parse.pss_int(missile_design_info.get('HitSoundFileId'))
-        self._hull_damage: float = _parse.pss_float(missile_design_info.get('HullDamage'))
-        self._hull_percentage_damage: int = _parse.pss_int(missile_design_info.get('HullPercentageDamage'))
-        self._launch_animation_id: int = _parse.pss_int(missile_design_info.get('LaunchAnimationId'))
-        self._launch_sound_file_id: int = _parse.pss_int(missile_design_info.get('LaunchSoundFileId'))
-        self._logo_sprite_id: int = _parse.pss_int(missile_design_info.get('LogoSpriteId'))
-        self._mask_animation_id: int = _parse.pss_int(missile_design_info.get('MaskAnimationId'))
-        self._mask_hit_animation_id: int = _parse.pss_int(missile_design_info.get('MaskHitAnimationId'))
-        self._mask_launch_animation_id: int = _parse.pss_int(missile_design_info.get('MaskLaunchAnimationId'))
-        self._metadata: str = _parse.pss_str(missile_design_info.get('Metadata'))
-        self._missile_design_id: int = _parse.pss_int(missile_design_info.get('MissileDesignId'))
-        self._missile_design_name: str = _parse.pss_str(missile_design_info.get('MissileDesignName'))
-        self._missile_type: str = _parse.pss_str(missile_design_info.get('MissileType'))
-        self._shield_damage: float = _parse.pss_float(missile_design_info.get('ShieldDamage'))
-        self._speed: int = _parse.pss_int(missile_design_info.get('Speed'))
-        self._sprite_id: int = _parse.pss_int(missile_design_info.get('SpriteId'))
-        self._stun_length: int = _parse.pss_int(missile_design_info.get('StunLength'))
-        self._system_damage: float = _parse.pss_float(missile_design_info.get('SystemDamage'))
-        self._volley: int = _parse.pss_int(missile_design_info.get('Volley'))
-        self._volley_delay: int = _parse.pss_int(missile_design_info.get('VolleyDelay'))
+        self._animation_id: int = _parse.pss_int(missile_design_info.get("AnimationId"))
+        self._breach_chance: int = _parse.pss_int(missile_design_info.get("BreachChance"))
+        self._character_damage: float = _parse.pss_float(missile_design_info.get("CharacterDamage"))
+        self._direct_system_damage: float = _parse.pss_float(missile_design_info.get("DirectSystemDamage"))
+        self._emp_length: int = _parse.pss_int(missile_design_info.get("EMPLength"))
+        self._explosion_radius: int = _parse.pss_int(missile_design_info.get("ExplosionRadius"))
+        self._explosion_type: str = _parse.pss_str(missile_design_info.get("ExplosionType"))
+        self._fire_length: int = _parse.pss_int(missile_design_info.get("FireLength"))
+        self._flight_argument_x: int = _parse.pss_int(missile_design_info.get("FlightArgumentX"))
+        self._flight_argument_y: int = _parse.pss_int(missile_design_info.get("FlightArgumentY"))
+        self._flight_type: str = _parse.pss_str(missile_design_info.get("FlightType"))
+        self._hit_animation_id: int = _parse.pss_int(missile_design_info.get("HitAnimationId"))
+        self._hit_sound_file_id: int = _parse.pss_int(missile_design_info.get("HitSoundFileId"))
+        self._hull_damage: float = _parse.pss_float(missile_design_info.get("HullDamage"))
+        self._hull_percentage_damage: int = _parse.pss_int(missile_design_info.get("HullPercentageDamage"))
+        self._launch_animation_id: int = _parse.pss_int(missile_design_info.get("LaunchAnimationId"))
+        self._launch_sound_file_id: int = _parse.pss_int(missile_design_info.get("LaunchSoundFileId"))
+        self._logo_sprite_id: int = _parse.pss_int(missile_design_info.get("LogoSpriteId"))
+        self._mask_animation_id: int = _parse.pss_int(missile_design_info.get("MaskAnimationId"))
+        self._mask_hit_animation_id: int = _parse.pss_int(missile_design_info.get("MaskHitAnimationId"))
+        self._mask_launch_animation_id: int = _parse.pss_int(missile_design_info.get("MaskLaunchAnimationId"))
+        self._metadata: str = _parse.pss_str(missile_design_info.get("Metadata"))
+        self._missile_design_id: int = _parse.pss_int(missile_design_info.get("MissileDesignId"))
+        self._missile_design_name: str = _parse.pss_str(missile_design_info.get("MissileDesignName"))
+        self._missile_type: str = _parse.pss_str(missile_design_info.get("MissileType"))
+        self._shield_damage: float = _parse.pss_float(missile_design_info.get("ShieldDamage"))
+        self._speed: int = _parse.pss_int(missile_design_info.get("Speed"))
+        self._sprite_id: int = _parse.pss_int(missile_design_info.get("SpriteId"))
+        self._stun_length: int = _parse.pss_int(missile_design_info.get("StunLength"))
+        self._system_damage: float = _parse.pss_float(missile_design_info.get("SystemDamage"))
+        self._volley: int = _parse.pss_int(missile_design_info.get("Volley"))
+        self._volley_delay: int = _parse.pss_int(missile_design_info.get("VolleyDelay"))
 
     @property
     def animation_id(self) -> int:
@@ -213,38 +214,38 @@ class MissileDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'AnimationId': self.animation_id,
-                'BreachChance': self.breach_chance,
-                'CharacterDamage': self.character_damage,
-                'DirectSystemDamage': self.direct_system_damage,
-                'EMPLength': self.emp_length,
-                'ExplosionRadius': self.explosion_radius,
-                'ExplosionType': self.explosion_type,
-                'FireLength': self.fire_length,
-                'FlightArgumentX': self.flight_argument_x,
-                'FlightArgumentY': self.flight_argument_y,
-                'FlightType': self.flight_type,
-                'HitAnimationId': self.hit_animation_id,
-                'HitSoundFileId': self.hit_sound_file_id,
-                'HullDamage': self.hull_damage,
-                'HullPercentageDamage': self.hull_percentage_damage,
-                'LaunchAnimationId': self.launch_animation_id,
-                'LaunchSoundFileId': self.launch_sound_file_id,
-                'LogoSpriteId': self.logo_sprite_id,
-                'MaskAnimationId': self.mask_animation_id,
-                'MaskHitAnimationId': self.mask_hit_animation_id,
-                'MaskLaunchAnimationId': self.mask_launch_animation_id,
-                'Metadata': self.metadata,
-                'MissileDesignId': self.missile_design_id,
-                'MissileDesignName': self.missile_design_name,
-                'MissileType': self.missile_type,
-                'ShieldDamage': self.shield_damage,
-                'Speed': self.speed,
-                'SpriteId': self.sprite_id,
-                'StunLength': self.stun_length,
-                'SystemDamage': self.system_damage,
-                'Volley': self.volley,
-                'VolleyDelay': self.volley_delay,
+                "AnimationId": self.animation_id,
+                "BreachChance": self.breach_chance,
+                "CharacterDamage": self.character_damage,
+                "DirectSystemDamage": self.direct_system_damage,
+                "EMPLength": self.emp_length,
+                "ExplosionRadius": self.explosion_radius,
+                "ExplosionType": self.explosion_type,
+                "FireLength": self.fire_length,
+                "FlightArgumentX": self.flight_argument_x,
+                "FlightArgumentY": self.flight_argument_y,
+                "FlightType": self.flight_type,
+                "HitAnimationId": self.hit_animation_id,
+                "HitSoundFileId": self.hit_sound_file_id,
+                "HullDamage": self.hull_damage,
+                "HullPercentageDamage": self.hull_percentage_damage,
+                "LaunchAnimationId": self.launch_animation_id,
+                "LaunchSoundFileId": self.launch_sound_file_id,
+                "LogoSpriteId": self.logo_sprite_id,
+                "MaskAnimationId": self.mask_animation_id,
+                "MaskHitAnimationId": self.mask_hit_animation_id,
+                "MaskLaunchAnimationId": self.mask_launch_animation_id,
+                "Metadata": self.metadata,
+                "MissileDesignId": self.missile_design_id,
+                "MissileDesignName": self.missile_design_name,
+                "MissileType": self.missile_type,
+                "ShieldDamage": self.shield_damage,
+                "Speed": self.speed,
+                "SpriteId": self.sprite_id,
+                "StunLength": self.stun_length,
+                "SystemDamage": self.system_damage,
+                "Volley": self.volley,
+                "VolleyDelay": self.volley_delay,
             }
 
         return self._dict

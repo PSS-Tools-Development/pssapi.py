@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import CraftDesignRaw as _CraftDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class CraftDesign(_CraftDesignRaw, _EntityWithIdBase):

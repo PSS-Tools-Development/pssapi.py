@@ -1,8 +1,9 @@
 from typing import List as _List
 
-from .raw import MessageServiceRaw as _MessageServiceRaw
 import pssapi.services.service_base as _service_base
+
 from ..entities import Message as _Message
+from .raw import MessageServiceRaw as _MessageServiceRaw
 
 
 class MessageService(_service_base.ServiceBase):

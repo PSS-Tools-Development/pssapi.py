@@ -7,10 +7,10 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class Rarity(_StrEnum):
-    COMMON = 'Common'
-    ELITE = 'Elite'
-    UNIQUE = 'Unique'
-    EPIC = 'Epic'
-    HERO = 'Hero'
-    SPECIAL = 'Special'
-    LEGENDARY = 'Legendary'
+    COMMON = "Common"
+    ELITE = "Elite"
+    UNIQUE = "Unique"
+    EPIC = "Epic"
+    HERO = "Hero"
+    SPECIAL = "Special"
+    LEGENDARY = "Legendary"

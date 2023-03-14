@@ -3,51 +3,52 @@
 """
 
 from datetime import datetime as _datetime
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class PromotionDesignRaw:
-    XML_NODE_NAME: str = 'PromotionDesign'
+    XML_NODE_NAME: str = "PromotionDesign"
 
     def __init__(self, promotion_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._available_every_x_days: int = _parse.pss_int(promotion_design_info.get('AvailableEveryXDays'))
-        self._available_for_days: int = _parse.pss_int(promotion_design_info.get('AvailableForDays'))
-        self._background_sprite_id: int = _parse.pss_int(promotion_design_info.get('BackgroundSpriteId'))
-        self._bonus_frame_sprite_id: int = _parse.pss_int(promotion_design_info.get('BonusFrameSpriteId'))
-        self._button_sprite_id: int = _parse.pss_int(promotion_design_info.get('ButtonSpriteId'))
-        self._close_button_sprite_id: int = _parse.pss_int(promotion_design_info.get('CloseButtonSpriteId'))
-        self._cost_string: str = _parse.pss_str(promotion_design_info.get('CostString'))
-        self._description: str = _parse.pss_str(promotion_design_info.get('Description'))
-        self._extra_crew_draws: int = _parse.pss_int(promotion_design_info.get('ExtraCrewDraws'))
-        self._flags: int = _parse.pss_int(promotion_design_info.get('Flags'))
-        self._from_date: _datetime = _parse.pss_datetime(promotion_design_info.get('FromDate'))
-        self._icon_sprite_id: int = _parse.pss_int(promotion_design_info.get('IconSpriteId'))
-        self._metadata: str = _parse.pss_str(promotion_design_info.get('Metadata'))
-        self._name: str = _parse.pss_str(promotion_design_info.get('Name'))
-        self._order_index: int = _parse.pss_int(promotion_design_info.get('OrderIndex'))
-        self._pack_id: str = _parse.pss_str(promotion_design_info.get('PackId'))
-        self._promotion_design_id: int = _parse.pss_int(promotion_design_info.get('PromotionDesignId'))
-        self._promotion_type: str = _parse.pss_str(promotion_design_info.get('PromotionType'))
-        self._purchase_mask: int = _parse.pss_int(promotion_design_info.get('PurchaseMask'))
-        self._purchase_sprite_id: int = _parse.pss_int(promotion_design_info.get('PurchaseSpriteId'))
-        self._remaining_quantity: int = _parse.pss_int(promotion_design_info.get('RemainingQuantity'))
-        self._required_promotion_design_id: int = _parse.pss_int(promotion_design_info.get('RequiredPromotionDesignId'))
-        self._requirement_string: str = _parse.pss_str(promotion_design_info.get('RequirementString'))
-        self._resource_conversion_discount_percentage: int = _parse.pss_int(promotion_design_info.get('ResourceConversionDiscountPercentage'))
-        self._reward_store_discount_percentage: int = _parse.pss_int(promotion_design_info.get('RewardStoreDiscountPercentage'))
-        self._reward_string: str = _parse.pss_str(promotion_design_info.get('RewardString'))
-        self._speed_up_discount_percentage: int = _parse.pss_int(promotion_design_info.get('SpeedUpDiscountPercentage'))
-        self._sprite_id: int = _parse.pss_int(promotion_design_info.get('SpriteId'))
-        self._starbux_bonus_percentage: int = _parse.pss_int(promotion_design_info.get('StarbuxBonusPercentage'))
-        self._sub_title: str = _parse.pss_str(promotion_design_info.get('SubTitle'))
-        self._title: str = _parse.pss_str(promotion_design_info.get('Title'))
-        self._title_sprite_id: int = _parse.pss_int(promotion_design_info.get('TitleSpriteId'))
-        self._to_date: _datetime = _parse.pss_datetime(promotion_design_info.get('ToDate'))
-        self._xp_bonus_percentage: int = _parse.pss_int(promotion_design_info.get('XPBonusPercentage'))
+        self._available_every_x_days: int = _parse.pss_int(promotion_design_info.get("AvailableEveryXDays"))
+        self._available_for_days: int = _parse.pss_int(promotion_design_info.get("AvailableForDays"))
+        self._background_sprite_id: int = _parse.pss_int(promotion_design_info.get("BackgroundSpriteId"))
+        self._bonus_frame_sprite_id: int = _parse.pss_int(promotion_design_info.get("BonusFrameSpriteId"))
+        self._button_sprite_id: int = _parse.pss_int(promotion_design_info.get("ButtonSpriteId"))
+        self._close_button_sprite_id: int = _parse.pss_int(promotion_design_info.get("CloseButtonSpriteId"))
+        self._cost_string: str = _parse.pss_str(promotion_design_info.get("CostString"))
+        self._description: str = _parse.pss_str(promotion_design_info.get("Description"))
+        self._extra_crew_draws: int = _parse.pss_int(promotion_design_info.get("ExtraCrewDraws"))
+        self._flags: int = _parse.pss_int(promotion_design_info.get("Flags"))
+        self._from_date: _datetime = _parse.pss_datetime(promotion_design_info.get("FromDate"))
+        self._icon_sprite_id: int = _parse.pss_int(promotion_design_info.get("IconSpriteId"))
+        self._metadata: str = _parse.pss_str(promotion_design_info.get("Metadata"))
+        self._name: str = _parse.pss_str(promotion_design_info.get("Name"))
+        self._order_index: int = _parse.pss_int(promotion_design_info.get("OrderIndex"))
+        self._pack_id: str = _parse.pss_str(promotion_design_info.get("PackId"))
+        self._promotion_design_id: int = _parse.pss_int(promotion_design_info.get("PromotionDesignId"))
+        self._promotion_type: str = _parse.pss_str(promotion_design_info.get("PromotionType"))
+        self._purchase_mask: int = _parse.pss_int(promotion_design_info.get("PurchaseMask"))
+        self._purchase_sprite_id: int = _parse.pss_int(promotion_design_info.get("PurchaseSpriteId"))
+        self._remaining_quantity: int = _parse.pss_int(promotion_design_info.get("RemainingQuantity"))
+        self._required_promotion_design_id: int = _parse.pss_int(promotion_design_info.get("RequiredPromotionDesignId"))
+        self._requirement_string: str = _parse.pss_str(promotion_design_info.get("RequirementString"))
+        self._resource_conversion_discount_percentage: int = _parse.pss_int(promotion_design_info.get("ResourceConversionDiscountPercentage"))
+        self._reward_store_discount_percentage: int = _parse.pss_int(promotion_design_info.get("RewardStoreDiscountPercentage"))
+        self._reward_string: str = _parse.pss_str(promotion_design_info.get("RewardString"))
+        self._speed_up_discount_percentage: int = _parse.pss_int(promotion_design_info.get("SpeedUpDiscountPercentage"))
+        self._sprite_id: int = _parse.pss_int(promotion_design_info.get("SpriteId"))
+        self._starbux_bonus_percentage: int = _parse.pss_int(promotion_design_info.get("StarbuxBonusPercentage"))
+        self._sub_title: str = _parse.pss_str(promotion_design_info.get("SubTitle"))
+        self._title: str = _parse.pss_str(promotion_design_info.get("Title"))
+        self._title_sprite_id: int = _parse.pss_int(promotion_design_info.get("TitleSpriteId"))
+        self._to_date: _datetime = _parse.pss_datetime(promotion_design_info.get("ToDate"))
+        self._xp_bonus_percentage: int = _parse.pss_int(promotion_design_info.get("XPBonusPercentage"))
 
     @property
     def available_every_x_days(self) -> int:
@@ -226,40 +227,40 @@ class PromotionDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'AvailableEveryXDays': self.available_every_x_days,
-                'AvailableForDays': self.available_for_days,
-                'BackgroundSpriteId': self.background_sprite_id,
-                'BonusFrameSpriteId': self.bonus_frame_sprite_id,
-                'ButtonSpriteId': self.button_sprite_id,
-                'CloseButtonSpriteId': self.close_button_sprite_id,
-                'CostString': self.cost_string,
-                'Description': self.description,
-                'ExtraCrewDraws': self.extra_crew_draws,
-                'Flags': self.flags,
-                'FromDate': self.from_date,
-                'IconSpriteId': self.icon_sprite_id,
-                'Metadata': self.metadata,
-                'Name': self.name,
-                'OrderIndex': self.order_index,
-                'PackId': self.pack_id,
-                'PromotionDesignId': self.promotion_design_id,
-                'PromotionType': self.promotion_type,
-                'PurchaseMask': self.purchase_mask,
-                'PurchaseSpriteId': self.purchase_sprite_id,
-                'RemainingQuantity': self.remaining_quantity,
-                'RequiredPromotionDesignId': self.required_promotion_design_id,
-                'RequirementString': self.requirement_string,
-                'ResourceConversionDiscountPercentage': self.resource_conversion_discount_percentage,
-                'RewardStoreDiscountPercentage': self.reward_store_discount_percentage,
-                'RewardString': self.reward_string,
-                'SpeedUpDiscountPercentage': self.speed_up_discount_percentage,
-                'SpriteId': self.sprite_id,
-                'StarbuxBonusPercentage': self.starbux_bonus_percentage,
-                'SubTitle': self.sub_title,
-                'Title': self.title,
-                'TitleSpriteId': self.title_sprite_id,
-                'ToDate': self.to_date,
-                'XPBonusPercentage': self.xp_bonus_percentage,
+                "AvailableEveryXDays": self.available_every_x_days,
+                "AvailableForDays": self.available_for_days,
+                "BackgroundSpriteId": self.background_sprite_id,
+                "BonusFrameSpriteId": self.bonus_frame_sprite_id,
+                "ButtonSpriteId": self.button_sprite_id,
+                "CloseButtonSpriteId": self.close_button_sprite_id,
+                "CostString": self.cost_string,
+                "Description": self.description,
+                "ExtraCrewDraws": self.extra_crew_draws,
+                "Flags": self.flags,
+                "FromDate": self.from_date,
+                "IconSpriteId": self.icon_sprite_id,
+                "Metadata": self.metadata,
+                "Name": self.name,
+                "OrderIndex": self.order_index,
+                "PackId": self.pack_id,
+                "PromotionDesignId": self.promotion_design_id,
+                "PromotionType": self.promotion_type,
+                "PurchaseMask": self.purchase_mask,
+                "PurchaseSpriteId": self.purchase_sprite_id,
+                "RemainingQuantity": self.remaining_quantity,
+                "RequiredPromotionDesignId": self.required_promotion_design_id,
+                "RequirementString": self.requirement_string,
+                "ResourceConversionDiscountPercentage": self.resource_conversion_discount_percentage,
+                "RewardStoreDiscountPercentage": self.reward_store_discount_percentage,
+                "RewardString": self.reward_string,
+                "SpeedUpDiscountPercentage": self.speed_up_discount_percentage,
+                "SpriteId": self.sprite_id,
+                "StarbuxBonusPercentage": self.starbux_bonus_percentage,
+                "SubTitle": self.sub_title,
+                "Title": self.title,
+                "TitleSpriteId": self.title_sprite_id,
+                "ToDate": self.to_date,
+                "XPBonusPercentage": self.xp_bonus_percentage,
             }
 
         return self._dict

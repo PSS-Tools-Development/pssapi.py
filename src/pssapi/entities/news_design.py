@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import NewsDesignRaw as _NewsDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class NewsDesign(_NewsDesignRaw, _EntityWithIdBase):

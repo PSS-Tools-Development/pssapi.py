@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import ConditionTypeRaw as _ConditionTypeRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class ConditionType(_ConditionTypeRaw, _EntityWithIdBase):

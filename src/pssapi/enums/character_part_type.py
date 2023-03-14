@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CharacterPartType(_StrEnum):
-    HEAD = 'Head'
-    BODY = 'Body'
-    LEG = 'Leg'
+    HEAD = "Head"
+    BODY = "Body"
+    LEG = "Leg"

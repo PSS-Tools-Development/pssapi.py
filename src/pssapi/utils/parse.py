@@ -21,8 +21,7 @@ def pss_datetime(value: str) -> _Optional[_datetime]:
     try:
         result = _datetime.strptime(value, _constants.DATETIME_FORMAT_ISO)
     except ValueError:
-        result = _datetime.strptime(
-            value, _constants.DATETIME_FORMAT_ISO_DETAILED)
+        result = _datetime.strptime(value, _constants.DATETIME_FORMAT_ISO_DETAILED)
     result = _pytz.utc.localize(result)
     return result
 
@@ -33,7 +32,7 @@ def pss_enum(value: str, enum: _Type[_StrEnum]) -> _Optional[_StrEnum]:
     for enum_value in enum:
         if value == enum_value.value:
             return enum_value
-    raise TypeError(f'{enum} does not have a member with value: {value}')
+    raise TypeError(f"{enum} does not have a member with value: {value}")
 
 
 def pss_float(value: str, default: float = None) -> _Optional[float]:
@@ -49,6 +48,6 @@ def pss_int(value: str, default: int = None) -> _Optional[int]:
 
 
 def pss_str(value: str, default: str = None) -> _Optional[str]:
-    if not value or value == '0' or value.lower() == 'none':
+    if not value or value == "0" or value.lower() == "none":
         return default
     return str(value)

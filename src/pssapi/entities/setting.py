@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import SettingRaw as _SettingRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Setting(_SettingRaw, _EntityWithIdBase):

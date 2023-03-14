@@ -1,5 +1,7 @@
 import functools as _functools
-from typing import Any as _Any, Callable as _Callable, Dict as _Dict
+from typing import Any as _Any
+from typing import Callable as _Callable
+from typing import Dict as _Dict
 
 import pssapi.client as _client
 import pssapi.entities as _entities
@@ -9,7 +11,7 @@ import pssapi.enums as _enums
 class ServiceBase(object):
     def __init__(self, client: _client.PssApiClient) -> None:
         if not client:
-            raise ValueError('The parameter \'client\' must not be None.')
+            raise ValueError("The parameter 'client' must not be None.")
         self.__client = client
 
     @property
@@ -20,11 +22,11 @@ class ServiceBase(object):
     def language_key(self) -> _enums.LanguageKey:
         return self.client.language_key
 
-    async def get_latest_version(self) -> '_entities.Setting':
-        return (await self.client.get_latest_version())
+    async def get_latest_version(self) -> "_entities.Setting":
+        return await self.client.get_latest_version()
 
     async def get_production_server(self) -> str:
-        return (await self.client.get_production_server())
+        return await self.client.get_production_server()
 
 
 class CacheableServiceBase(ServiceBase):
@@ -59,5 +61,7 @@ def cache_endpoint(version_property_name: str):
                 return data
             else:
                 return await func(*args, **kwargs)
+
         return wrapper_endpoint_cache
+
     return decorator_endpoint_cache

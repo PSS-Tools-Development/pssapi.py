@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ChallengeType(_StrEnum):
-    AI = 'AI'
-    GALAXY_MAP = 'GalaxyMap'
-    SHIP_CHALLENGE = 'ShipChallenge'
+    AI = "AI"
+    GALAXY_MAP = "GalaxyMap"
+    SHIP_CHALLENGE = "ShipChallenge"

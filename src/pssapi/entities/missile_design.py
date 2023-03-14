@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import MissileDesignRaw as _MissileDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class MissileDesign(_MissileDesignRaw, _EntityWithIdBase):

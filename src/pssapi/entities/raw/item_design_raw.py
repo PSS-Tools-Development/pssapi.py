@@ -2,70 +2,71 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class ItemDesignRaw:
-    XML_NODE_NAME: str = 'ItemDesign'
+    XML_NODE_NAME: str = "ItemDesign"
 
     def __init__(self, item_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._active_animation_id: int = _parse.pss_int(item_design_info.get('ActiveAnimationId'))
-        self._animation_id: int = _parse.pss_int(item_design_info.get('AnimationId'))
-        self._border_sprite_id: int = _parse.pss_int(item_design_info.get('BorderSpriteId'))
-        self._build_time: int = _parse.pss_int(item_design_info.get('BuildTime'))
-        self._character_design_id: int = _parse.pss_int(item_design_info.get('CharacterDesignId'))
-        self._character_part_id: int = _parse.pss_int(item_design_info.get('CharacterPartId'))
-        self._content: str = _parse.pss_str(item_design_info.get('Content'))
-        self._craft_design_id: int = _parse.pss_int(item_design_info.get('CraftDesignId'))
-        self._drop_chance: int = _parse.pss_int(item_design_info.get('DropChance'))
-        self._enhancement_type: str = _parse.pss_str(item_design_info.get('EnhancementType'))
-        self._enhancement_value: float = _parse.pss_float(item_design_info.get('EnhancementValue'))
-        self._equip_sound_file_id: int = _parse.pss_int(item_design_info.get('EquipSoundFileId'))
-        self._fair_price: int = _parse.pss_int(item_design_info.get('FairPrice'))
-        self._flags: int = _parse.pss_int(item_design_info.get('Flags'))
-        self._gas_cost: int = _parse.pss_int(item_design_info.get('GasCost'))
-        self._image_sprite_id: int = _parse.pss_int(item_design_info.get('ImageSpriteId'))
-        self._ingredients: str = _parse.pss_str(item_design_info.get('Ingredients'))
-        self._item_design_description: str = _parse.pss_str(item_design_info.get('ItemDesignDescription'))
-        self._item_design_id: int = _parse.pss_int(item_design_info.get('ItemDesignId'))
-        self._item_design_key: str = _parse.pss_str(item_design_info.get('ItemDesignKey'))
-        self._item_design_name: str = _parse.pss_str(item_design_info.get('ItemDesignName'))
-        self._item_design_name_en: str = _parse.pss_str(item_design_info.get('ItemDesignNameEN'))
-        self._item_space: int = _parse.pss_int(item_design_info.get('ItemSpace'))
-        self._item_sub_type: str = _parse.pss_str(item_design_info.get('ItemSubType'))
-        self._item_type: str = _parse.pss_str(item_design_info.get('ItemType'))
-        self._level: int = _parse.pss_int(item_design_info.get('Level'))
-        self._logo_sprite_id: int = _parse.pss_int(item_design_info.get('LogoSpriteId'))
-        self._manufacture_cost: str = _parse.pss_str(item_design_info.get('ManufactureCost'))
-        self._market_price: int = _parse.pss_int(item_design_info.get('MarketPrice'))
-        self._max_count: int = _parse.pss_int(item_design_info.get('MaxCount'))
-        self._metadata: str = _parse.pss_str(item_design_info.get('Metadata'))
-        self._min_room_level: int = _parse.pss_int(item_design_info.get('MinRoomLevel'))
-        self._min_ship_level: int = _parse.pss_int(item_design_info.get('MinShipLevel'))
-        self._mineral_cost: int = _parse.pss_int(item_design_info.get('MineralCost'))
-        self._missile_design_id: int = _parse.pss_int(item_design_info.get('MissileDesignId'))
-        self._module_argument: int = _parse.pss_int(item_design_info.get('ModuleArgument'))
-        self._module_type: str = _parse.pss_str(item_design_info.get('ModuleType'))
-        self._our_price: str = _parse.pss_str(item_design_info.get('OurPrice'))
-        self._parent_item_design_id: int = _parse.pss_int(item_design_info.get('ParentItemDesignId'))
-        self._particle_sprite_id: int = _parse.pss_int(item_design_info.get('ParticleSpriteId'))
-        self._priority: int = _parse.pss_int(item_design_info.get('Priority'))
-        self._race_id: int = _parse.pss_int(item_design_info.get('RaceId'))
-        self._rank: int = _parse.pss_int(item_design_info.get('Rank'))
-        self._rarity: str = _parse.pss_str(item_design_info.get('Rarity'))
-        self._reload_time: str = _parse.pss_str(item_design_info.get('ReloadTime'))
-        self._required_research_design_id: int = _parse.pss_int(item_design_info.get('RequiredResearchDesignId'))
-        self._requirement_string: str = _parse.pss_str(item_design_info.get('RequirementString'))
-        self._room_design_id: int = _parse.pss_int(item_design_info.get('RoomDesignId'))
-        self._root_item_design_id: int = _parse.pss_int(item_design_info.get('RootItemDesignId'))
-        self._situation_design_id: int = _parse.pss_int(item_design_info.get('SituationDesignId'))
-        self._sound_file_id: int = _parse.pss_int(item_design_info.get('SoundFileId'))
-        self._tags: str = _parse.pss_str(item_design_info.get('Tags'))
-        self._training_design_id: int = _parse.pss_int(item_design_info.get('TrainingDesignId'))
+        self._active_animation_id: int = _parse.pss_int(item_design_info.get("ActiveAnimationId"))
+        self._animation_id: int = _parse.pss_int(item_design_info.get("AnimationId"))
+        self._border_sprite_id: int = _parse.pss_int(item_design_info.get("BorderSpriteId"))
+        self._build_time: int = _parse.pss_int(item_design_info.get("BuildTime"))
+        self._character_design_id: int = _parse.pss_int(item_design_info.get("CharacterDesignId"))
+        self._character_part_id: int = _parse.pss_int(item_design_info.get("CharacterPartId"))
+        self._content: str = _parse.pss_str(item_design_info.get("Content"))
+        self._craft_design_id: int = _parse.pss_int(item_design_info.get("CraftDesignId"))
+        self._drop_chance: int = _parse.pss_int(item_design_info.get("DropChance"))
+        self._enhancement_type: str = _parse.pss_str(item_design_info.get("EnhancementType"))
+        self._enhancement_value: float = _parse.pss_float(item_design_info.get("EnhancementValue"))
+        self._equip_sound_file_id: int = _parse.pss_int(item_design_info.get("EquipSoundFileId"))
+        self._fair_price: int = _parse.pss_int(item_design_info.get("FairPrice"))
+        self._flags: int = _parse.pss_int(item_design_info.get("Flags"))
+        self._gas_cost: int = _parse.pss_int(item_design_info.get("GasCost"))
+        self._image_sprite_id: int = _parse.pss_int(item_design_info.get("ImageSpriteId"))
+        self._ingredients: str = _parse.pss_str(item_design_info.get("Ingredients"))
+        self._item_design_description: str = _parse.pss_str(item_design_info.get("ItemDesignDescription"))
+        self._item_design_id: int = _parse.pss_int(item_design_info.get("ItemDesignId"))
+        self._item_design_key: str = _parse.pss_str(item_design_info.get("ItemDesignKey"))
+        self._item_design_name: str = _parse.pss_str(item_design_info.get("ItemDesignName"))
+        self._item_design_name_en: str = _parse.pss_str(item_design_info.get("ItemDesignNameEN"))
+        self._item_space: int = _parse.pss_int(item_design_info.get("ItemSpace"))
+        self._item_sub_type: str = _parse.pss_str(item_design_info.get("ItemSubType"))
+        self._item_type: str = _parse.pss_str(item_design_info.get("ItemType"))
+        self._level: int = _parse.pss_int(item_design_info.get("Level"))
+        self._logo_sprite_id: int = _parse.pss_int(item_design_info.get("LogoSpriteId"))
+        self._manufacture_cost: str = _parse.pss_str(item_design_info.get("ManufactureCost"))
+        self._market_price: int = _parse.pss_int(item_design_info.get("MarketPrice"))
+        self._max_count: int = _parse.pss_int(item_design_info.get("MaxCount"))
+        self._metadata: str = _parse.pss_str(item_design_info.get("Metadata"))
+        self._min_room_level: int = _parse.pss_int(item_design_info.get("MinRoomLevel"))
+        self._min_ship_level: int = _parse.pss_int(item_design_info.get("MinShipLevel"))
+        self._mineral_cost: int = _parse.pss_int(item_design_info.get("MineralCost"))
+        self._missile_design_id: int = _parse.pss_int(item_design_info.get("MissileDesignId"))
+        self._module_argument: int = _parse.pss_int(item_design_info.get("ModuleArgument"))
+        self._module_type: str = _parse.pss_str(item_design_info.get("ModuleType"))
+        self._our_price: str = _parse.pss_str(item_design_info.get("OurPrice"))
+        self._parent_item_design_id: int = _parse.pss_int(item_design_info.get("ParentItemDesignId"))
+        self._particle_sprite_id: int = _parse.pss_int(item_design_info.get("ParticleSpriteId"))
+        self._priority: int = _parse.pss_int(item_design_info.get("Priority"))
+        self._race_id: int = _parse.pss_int(item_design_info.get("RaceId"))
+        self._rank: int = _parse.pss_int(item_design_info.get("Rank"))
+        self._rarity: str = _parse.pss_str(item_design_info.get("Rarity"))
+        self._reload_time: str = _parse.pss_str(item_design_info.get("ReloadTime"))
+        self._required_research_design_id: int = _parse.pss_int(item_design_info.get("RequiredResearchDesignId"))
+        self._requirement_string: str = _parse.pss_str(item_design_info.get("RequirementString"))
+        self._room_design_id: int = _parse.pss_int(item_design_info.get("RoomDesignId"))
+        self._root_item_design_id: int = _parse.pss_int(item_design_info.get("RootItemDesignId"))
+        self._situation_design_id: int = _parse.pss_int(item_design_info.get("SituationDesignId"))
+        self._sound_file_id: int = _parse.pss_int(item_design_info.get("SoundFileId"))
+        self._tags: str = _parse.pss_str(item_design_info.get("Tags"))
+        self._training_design_id: int = _parse.pss_int(item_design_info.get("TrainingDesignId"))
 
     @property
     def active_animation_id(self) -> int:
@@ -339,59 +340,59 @@ class ItemDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'ActiveAnimationId': self.active_animation_id,
-                'AnimationId': self.animation_id,
-                'BorderSpriteId': self.border_sprite_id,
-                'BuildTime': self.build_time,
-                'CharacterDesignId': self.character_design_id,
-                'CharacterPartId': self.character_part_id,
-                'Content': self.content,
-                'CraftDesignId': self.craft_design_id,
-                'DropChance': self.drop_chance,
-                'EnhancementType': self.enhancement_type,
-                'EnhancementValue': self.enhancement_value,
-                'EquipSoundFileId': self.equip_sound_file_id,
-                'FairPrice': self.fair_price,
-                'Flags': self.flags,
-                'GasCost': self.gas_cost,
-                'ImageSpriteId': self.image_sprite_id,
-                'Ingredients': self.ingredients,
-                'ItemDesignDescription': self.item_design_description,
-                'ItemDesignId': self.item_design_id,
-                'ItemDesignKey': self.item_design_key,
-                'ItemDesignName': self.item_design_name,
-                'ItemDesignNameEN': self.item_design_name_en,
-                'ItemSpace': self.item_space,
-                'ItemSubType': self.item_sub_type,
-                'ItemType': self.item_type,
-                'Level': self.level,
-                'LogoSpriteId': self.logo_sprite_id,
-                'ManufactureCost': self.manufacture_cost,
-                'MarketPrice': self.market_price,
-                'MaxCount': self.max_count,
-                'Metadata': self.metadata,
-                'MinRoomLevel': self.min_room_level,
-                'MinShipLevel': self.min_ship_level,
-                'MineralCost': self.mineral_cost,
-                'MissileDesignId': self.missile_design_id,
-                'ModuleArgument': self.module_argument,
-                'ModuleType': self.module_type,
-                'OurPrice': self.our_price,
-                'ParentItemDesignId': self.parent_item_design_id,
-                'ParticleSpriteId': self.particle_sprite_id,
-                'Priority': self.priority,
-                'RaceId': self.race_id,
-                'Rank': self.rank,
-                'Rarity': self.rarity,
-                'ReloadTime': self.reload_time,
-                'RequiredResearchDesignId': self.required_research_design_id,
-                'RequirementString': self.requirement_string,
-                'RoomDesignId': self.room_design_id,
-                'RootItemDesignId': self.root_item_design_id,
-                'SituationDesignId': self.situation_design_id,
-                'SoundFileId': self.sound_file_id,
-                'Tags': self.tags,
-                'TrainingDesignId': self.training_design_id,
+                "ActiveAnimationId": self.active_animation_id,
+                "AnimationId": self.animation_id,
+                "BorderSpriteId": self.border_sprite_id,
+                "BuildTime": self.build_time,
+                "CharacterDesignId": self.character_design_id,
+                "CharacterPartId": self.character_part_id,
+                "Content": self.content,
+                "CraftDesignId": self.craft_design_id,
+                "DropChance": self.drop_chance,
+                "EnhancementType": self.enhancement_type,
+                "EnhancementValue": self.enhancement_value,
+                "EquipSoundFileId": self.equip_sound_file_id,
+                "FairPrice": self.fair_price,
+                "Flags": self.flags,
+                "GasCost": self.gas_cost,
+                "ImageSpriteId": self.image_sprite_id,
+                "Ingredients": self.ingredients,
+                "ItemDesignDescription": self.item_design_description,
+                "ItemDesignId": self.item_design_id,
+                "ItemDesignKey": self.item_design_key,
+                "ItemDesignName": self.item_design_name,
+                "ItemDesignNameEN": self.item_design_name_en,
+                "ItemSpace": self.item_space,
+                "ItemSubType": self.item_sub_type,
+                "ItemType": self.item_type,
+                "Level": self.level,
+                "LogoSpriteId": self.logo_sprite_id,
+                "ManufactureCost": self.manufacture_cost,
+                "MarketPrice": self.market_price,
+                "MaxCount": self.max_count,
+                "Metadata": self.metadata,
+                "MinRoomLevel": self.min_room_level,
+                "MinShipLevel": self.min_ship_level,
+                "MineralCost": self.mineral_cost,
+                "MissileDesignId": self.missile_design_id,
+                "ModuleArgument": self.module_argument,
+                "ModuleType": self.module_type,
+                "OurPrice": self.our_price,
+                "ParentItemDesignId": self.parent_item_design_id,
+                "ParticleSpriteId": self.particle_sprite_id,
+                "Priority": self.priority,
+                "RaceId": self.race_id,
+                "Rank": self.rank,
+                "Rarity": self.rarity,
+                "ReloadTime": self.reload_time,
+                "RequiredResearchDesignId": self.required_research_design_id,
+                "RequirementString": self.requirement_string,
+                "RoomDesignId": self.room_design_id,
+                "RootItemDesignId": self.root_item_design_id,
+                "SituationDesignId": self.situation_design_id,
+                "SoundFileId": self.sound_file_id,
+                "Tags": self.tags,
+                "TrainingDesignId": self.training_design_id,
             }
 
         return self._dict

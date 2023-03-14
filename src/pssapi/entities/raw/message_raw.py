@@ -3,35 +3,36 @@
 """
 
 from datetime import datetime as _datetime
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class MessageRaw:
-    XML_NODE_NAME: str = 'Message'
+    XML_NODE_NAME: str = "Message"
 
     def __init__(self, message_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._activity_argument: str = _parse.pss_str(message_info.get('ActivityArgument'))
-        self._activity_type: str = _parse.pss_str(message_info.get('ActivityType'))
-        self._alliance_id: int = _parse.pss_int(message_info.get('AllianceId'))
-        self._alliance_name: str = _parse.pss_str(message_info.get('AllianceName'))
-        self._alliance_sprite_id: int = _parse.pss_int(message_info.get('AllianceSpriteId'))
-        self._argument: str = _parse.pss_str(message_info.get('Argument'))
-        self._border_sprite_id: str = _parse.pss_str(message_info.get('BorderSpriteId'))
-        self._channel_id: int = _parse.pss_int(message_info.get('ChannelId'))
-        self._message: str = _parse.pss_str(message_info.get('Message'))
-        self._message_date: _datetime = _parse.pss_datetime(message_info.get('MessageDate'))
-        self._message_id: int = _parse.pss_int(message_info.get('MessageId'))
-        self._message_type: str = _parse.pss_str(message_info.get('MessageType'))
-        self._sale_id: str = _parse.pss_str(message_info.get('SaleId'))
-        self._ship_design_id: int = _parse.pss_int(message_info.get('ShipDesignId'))
-        self._trophy: int = _parse.pss_int(message_info.get('Trophy'))
-        self._user_id: int = _parse.pss_int(message_info.get('UserId'))
-        self._user_name: str = _parse.pss_str(message_info.get('UserName'))
-        self._user_sprite_id: int = _parse.pss_int(message_info.get('UserSpriteId'))
+        self._activity_argument: str = _parse.pss_str(message_info.get("ActivityArgument"))
+        self._activity_type: str = _parse.pss_str(message_info.get("ActivityType"))
+        self._alliance_id: int = _parse.pss_int(message_info.get("AllianceId"))
+        self._alliance_name: str = _parse.pss_str(message_info.get("AllianceName"))
+        self._alliance_sprite_id: int = _parse.pss_int(message_info.get("AllianceSpriteId"))
+        self._argument: str = _parse.pss_str(message_info.get("Argument"))
+        self._border_sprite_id: str = _parse.pss_str(message_info.get("BorderSpriteId"))
+        self._channel_id: int = _parse.pss_int(message_info.get("ChannelId"))
+        self._message: str = _parse.pss_str(message_info.get("Message"))
+        self._message_date: _datetime = _parse.pss_datetime(message_info.get("MessageDate"))
+        self._message_id: int = _parse.pss_int(message_info.get("MessageId"))
+        self._message_type: str = _parse.pss_str(message_info.get("MessageType"))
+        self._sale_id: str = _parse.pss_str(message_info.get("SaleId"))
+        self._ship_design_id: int = _parse.pss_int(message_info.get("ShipDesignId"))
+        self._trophy: int = _parse.pss_int(message_info.get("Trophy"))
+        self._user_id: int = _parse.pss_int(message_info.get("UserId"))
+        self._user_name: str = _parse.pss_str(message_info.get("UserName"))
+        self._user_sprite_id: int = _parse.pss_int(message_info.get("UserSpriteId"))
 
     @property
     def activity_argument(self) -> str:
@@ -130,24 +131,24 @@ class MessageRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'ActivityArgument': self.activity_argument,
-                'ActivityType': self.activity_type,
-                'AllianceId': self.alliance_id,
-                'AllianceName': self.alliance_name,
-                'AllianceSpriteId': self.alliance_sprite_id,
-                'Argument': self.argument,
-                'BorderSpriteId': self.border_sprite_id,
-                'ChannelId': self.channel_id,
-                'Message': self.message,
-                'MessageDate': self.message_date,
-                'MessageId': self.message_id,
-                'MessageType': self.message_type,
-                'SaleId': self.sale_id,
-                'ShipDesignId': self.ship_design_id,
-                'Trophy': self.trophy,
-                'UserId': self.user_id,
-                'UserName': self.user_name,
-                'UserSpriteId': self.user_sprite_id,
+                "ActivityArgument": self.activity_argument,
+                "ActivityType": self.activity_type,
+                "AllianceId": self.alliance_id,
+                "AllianceName": self.alliance_name,
+                "AllianceSpriteId": self.alliance_sprite_id,
+                "Argument": self.argument,
+                "BorderSpriteId": self.border_sprite_id,
+                "ChannelId": self.channel_id,
+                "Message": self.message,
+                "MessageDate": self.message_date,
+                "MessageId": self.message_id,
+                "MessageType": self.message_type,
+                "SaleId": self.sale_id,
+                "ShipDesignId": self.ship_design_id,
+                "Trophy": self.trophy,
+                "UserId": self.user_id,
+                "UserName": self.user_name,
+                "UserSpriteId": self.user_sprite_id,
             }
 
         return self._dict

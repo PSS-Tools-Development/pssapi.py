@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import AchievementDesignRaw as _AchievementDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class AchievementDesign(_AchievementDesignRaw, _EntityWithIdBase):

@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class MovementType(_StrEnum):
-    ONE_WAY = 'OneWay'
-    TWO_WAY = 'TwoWay'
-    WANDER = 'Wander'
+    ONE_WAY = "OneWay"
+    TWO_WAY = "TwoWay"
+    WANDER = "Wander"

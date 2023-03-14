@@ -3,44 +3,45 @@
 """
 
 from datetime import datetime as _datetime
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class CharacterRaw:
-    XML_NODE_NAME: str = 'Character'
+    XML_NODE_NAME: str = "Character"
 
     def __init__(self, character_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._ability_improvement: int = _parse.pss_int(character_info.get('AbilityImprovement'))
-        self._attack_improvement: int = _parse.pss_int(character_info.get('AttackImprovement'))
-        self._available_date: _datetime = _parse.pss_datetime(character_info.get('AvailableDate'))
-        self._character_design_id: int = _parse.pss_int(character_info.get('CharacterDesignId'))
-        self._character_id: int = _parse.pss_int(character_info.get('CharacterId'))
-        self._character_name: str = _parse.pss_str(character_info.get('CharacterName'))
-        self._deployment_date: str = _parse.pss_str(character_info.get('DeploymentDate'))
-        self._engine_improvement: int = _parse.pss_int(character_info.get('EngineImprovement'))
-        self._fatigue: int = _parse.pss_int(character_info.get('Fatigue'))
-        self._flags: int = _parse.pss_int(character_info.get('Flags'))
-        self._hp_improvement: int = _parse.pss_int(character_info.get('HpImprovement'))
-        self._is_new: bool = _parse.pss_bool(character_info.get('IsNew'))
-        self._item_ids: str = _parse.pss_str(character_info.get('ItemIds'))
-        self._level: int = _parse.pss_int(character_info.get('Level'))
-        self._owner_ship_id: int = _parse.pss_int(character_info.get('OwnerShipId'))
-        self._pilot_improvement: int = _parse.pss_int(character_info.get('PilotImprovement'))
-        self._repair_improvement: int = _parse.pss_int(character_info.get('RepairImprovement'))
-        self._room_id: int = _parse.pss_int(character_info.get('RoomId'))
-        self._science_improvement: int = _parse.pss_int(character_info.get('ScienceImprovement'))
-        self._ship_id: int = _parse.pss_int(character_info.get('ShipId'))
-        self._stamina: int = _parse.pss_int(character_info.get('Stamina'))
-        self._stamina_improvement: int = _parse.pss_int(character_info.get('StaminaImprovement'))
-        self._training_data: str = _parse.pss_str(character_info.get('TrainingData'))
-        self._training_design_id: int = _parse.pss_int(character_info.get('TrainingDesignId'))
-        self._training_end_date: str = _parse.pss_str(character_info.get('TrainingEndDate'))
-        self._weapon_improvement: int = _parse.pss_int(character_info.get('WeaponImprovement'))
-        self._xp: int = _parse.pss_int(character_info.get('Xp'))
+        self._ability_improvement: int = _parse.pss_int(character_info.get("AbilityImprovement"))
+        self._attack_improvement: int = _parse.pss_int(character_info.get("AttackImprovement"))
+        self._available_date: _datetime = _parse.pss_datetime(character_info.get("AvailableDate"))
+        self._character_design_id: int = _parse.pss_int(character_info.get("CharacterDesignId"))
+        self._character_id: int = _parse.pss_int(character_info.get("CharacterId"))
+        self._character_name: str = _parse.pss_str(character_info.get("CharacterName"))
+        self._deployment_date: str = _parse.pss_str(character_info.get("DeploymentDate"))
+        self._engine_improvement: int = _parse.pss_int(character_info.get("EngineImprovement"))
+        self._fatigue: int = _parse.pss_int(character_info.get("Fatigue"))
+        self._flags: int = _parse.pss_int(character_info.get("Flags"))
+        self._hp_improvement: int = _parse.pss_int(character_info.get("HpImprovement"))
+        self._is_new: bool = _parse.pss_bool(character_info.get("IsNew"))
+        self._item_ids: str = _parse.pss_str(character_info.get("ItemIds"))
+        self._level: int = _parse.pss_int(character_info.get("Level"))
+        self._owner_ship_id: int = _parse.pss_int(character_info.get("OwnerShipId"))
+        self._pilot_improvement: int = _parse.pss_int(character_info.get("PilotImprovement"))
+        self._repair_improvement: int = _parse.pss_int(character_info.get("RepairImprovement"))
+        self._room_id: int = _parse.pss_int(character_info.get("RoomId"))
+        self._science_improvement: int = _parse.pss_int(character_info.get("ScienceImprovement"))
+        self._ship_id: int = _parse.pss_int(character_info.get("ShipId"))
+        self._stamina: int = _parse.pss_int(character_info.get("Stamina"))
+        self._stamina_improvement: int = _parse.pss_int(character_info.get("StaminaImprovement"))
+        self._training_data: str = _parse.pss_str(character_info.get("TrainingData"))
+        self._training_design_id: int = _parse.pss_int(character_info.get("TrainingDesignId"))
+        self._training_end_date: str = _parse.pss_str(character_info.get("TrainingEndDate"))
+        self._weapon_improvement: int = _parse.pss_int(character_info.get("WeaponImprovement"))
+        self._xp: int = _parse.pss_int(character_info.get("Xp"))
 
     @property
     def ability_improvement(self) -> int:
@@ -184,33 +185,33 @@ class CharacterRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'AbilityImprovement': self.ability_improvement,
-                'AttackImprovement': self.attack_improvement,
-                'AvailableDate': self.available_date,
-                'CharacterDesignId': self.character_design_id,
-                'CharacterId': self.character_id,
-                'CharacterName': self.character_name,
-                'DeploymentDate': self.deployment_date,
-                'EngineImprovement': self.engine_improvement,
-                'Fatigue': self.fatigue,
-                'Flags': self.flags,
-                'HpImprovement': self.hp_improvement,
-                'IsNew': self.is_new,
-                'ItemIds': self.item_ids,
-                'Level': self.level,
-                'OwnerShipId': self.owner_ship_id,
-                'PilotImprovement': self.pilot_improvement,
-                'RepairImprovement': self.repair_improvement,
-                'RoomId': self.room_id,
-                'ScienceImprovement': self.science_improvement,
-                'ShipId': self.ship_id,
-                'Stamina': self.stamina,
-                'StaminaImprovement': self.stamina_improvement,
-                'TrainingData': self.training_data,
-                'TrainingDesignId': self.training_design_id,
-                'TrainingEndDate': self.training_end_date,
-                'WeaponImprovement': self.weapon_improvement,
-                'Xp': self.xp,
+                "AbilityImprovement": self.ability_improvement,
+                "AttackImprovement": self.attack_improvement,
+                "AvailableDate": self.available_date,
+                "CharacterDesignId": self.character_design_id,
+                "CharacterId": self.character_id,
+                "CharacterName": self.character_name,
+                "DeploymentDate": self.deployment_date,
+                "EngineImprovement": self.engine_improvement,
+                "Fatigue": self.fatigue,
+                "Flags": self.flags,
+                "HpImprovement": self.hp_improvement,
+                "IsNew": self.is_new,
+                "ItemIds": self.item_ids,
+                "Level": self.level,
+                "OwnerShipId": self.owner_ship_id,
+                "PilotImprovement": self.pilot_improvement,
+                "RepairImprovement": self.repair_improvement,
+                "RoomId": self.room_id,
+                "ScienceImprovement": self.science_improvement,
+                "ShipId": self.ship_id,
+                "Stamina": self.stamina,
+                "StaminaImprovement": self.stamina_improvement,
+                "TrainingData": self.training_data,
+                "TrainingDesignId": self.training_design_id,
+                "TrainingEndDate": self.training_end_date,
+                "WeaponImprovement": self.weapon_improvement,
+                "Xp": self.xp,
             }
 
         return self._dict

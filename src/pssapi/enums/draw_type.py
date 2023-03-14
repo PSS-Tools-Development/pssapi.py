@@ -7,4 +7,4 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DrawType(_StrEnum):
-    CHARACTER = 'Character'
+    CHARACTER = "Character"

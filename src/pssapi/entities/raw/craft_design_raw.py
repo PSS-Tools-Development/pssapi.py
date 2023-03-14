@@ -2,26 +2,27 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class CraftDesignRaw:
-    XML_NODE_NAME: str = 'CraftDesign'
+    XML_NODE_NAME: str = "CraftDesign"
 
     def __init__(self, craft_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._craft_design_id: int = _parse.pss_int(craft_design_info.get('CraftDesignId'))
-        self._craft_name: str = _parse.pss_str(craft_design_info.get('CraftName'))
-        self._flight_speed: int = _parse.pss_int(craft_design_info.get('FlightSpeed'))
-        self._hp: int = _parse.pss_int(craft_design_info.get('Hp'))
-        self._missile_design_id: int = _parse.pss_int(craft_design_info.get('MissileDesignId'))
-        self._reload: int = _parse.pss_int(craft_design_info.get('Reload'))
-        self._sprite_id: int = _parse.pss_int(craft_design_info.get('SpriteId'))
-        self._volley: int = _parse.pss_int(craft_design_info.get('Volley'))
-        self._volley_delay: int = _parse.pss_int(craft_design_info.get('VolleyDelay'))
+        self._craft_design_id: int = _parse.pss_int(craft_design_info.get("CraftDesignId"))
+        self._craft_name: str = _parse.pss_str(craft_design_info.get("CraftName"))
+        self._flight_speed: int = _parse.pss_int(craft_design_info.get("FlightSpeed"))
+        self._hp: int = _parse.pss_int(craft_design_info.get("Hp"))
+        self._missile_design_id: int = _parse.pss_int(craft_design_info.get("MissileDesignId"))
+        self._reload: int = _parse.pss_int(craft_design_info.get("Reload"))
+        self._sprite_id: int = _parse.pss_int(craft_design_info.get("SpriteId"))
+        self._volley: int = _parse.pss_int(craft_design_info.get("Volley"))
+        self._volley_delay: int = _parse.pss_int(craft_design_info.get("VolleyDelay"))
 
     @property
     def craft_design_id(self) -> int:
@@ -75,15 +76,15 @@ class CraftDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'CraftDesignId': self.craft_design_id,
-                'CraftName': self.craft_name,
-                'FlightSpeed': self.flight_speed,
-                'Hp': self.hp,
-                'MissileDesignId': self.missile_design_id,
-                'Reload': self.reload,
-                'SpriteId': self.sprite_id,
-                'Volley': self.volley,
-                'VolleyDelay': self.volley_delay,
+                "CraftDesignId": self.craft_design_id,
+                "CraftName": self.craft_name,
+                "FlightSpeed": self.flight_speed,
+                "Hp": self.hp,
+                "MissileDesignId": self.missile_design_id,
+                "Reload": self.reload,
+                "SpriteId": self.sprite_id,
+                "Volley": self.volley,
+                "VolleyDelay": self.volley_delay,
             }
 
         return self._dict

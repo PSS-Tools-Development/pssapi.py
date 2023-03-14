@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import LeagueRaw as _LeagueRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class League(_LeagueRaw, _EntityWithIdBase):

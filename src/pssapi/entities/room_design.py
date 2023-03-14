@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import RoomDesignRaw as _RoomDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class RoomDesign(_RoomDesignRaw, _EntityWithIdBase):

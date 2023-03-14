@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class BackgroundType(_StrEnum):
-    MAIN = 'Main'
-    BATTLE = 'Battle'
-    BOTH = 'Both'
-    SPECIAL = 'Special'
+    MAIN = "Main"
+    BATTLE = "Battle"
+    BOTH = "Both"
+    SPECIAL = "Special"

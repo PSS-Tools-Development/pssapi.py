@@ -1,8 +1,9 @@
 from typing import List as _List
 
-from .raw import LadderServiceRaw as _LadderServiceRaw
 import pssapi.services.service_base as _service_base
+
 from ..entities import User as _User
+from .raw import LadderServiceRaw as _LadderServiceRaw
 
 
 class LadderService(_service_base.ServiceBase):

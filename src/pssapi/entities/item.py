@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import ItemRaw as _ItemRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class Item(_ItemRaw, _EntityWithIdBase):

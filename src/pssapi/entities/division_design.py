@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import DivisionDesignRaw as _DivisionDesignRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class DivisionDesign(_DivisionDesignRaw, _EntityWithIdBase):

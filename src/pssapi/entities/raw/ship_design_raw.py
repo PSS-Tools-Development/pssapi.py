@@ -2,68 +2,69 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class ShipDesignRaw:
-    XML_NODE_NAME: str = 'ShipDesign'
+    XML_NODE_NAME: str = "ShipDesign"
 
     def __init__(self, ship_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._allow_interacial: bool = _parse.pss_bool(ship_design_info.get('AllowInteracial'))
-        self._background_asset_id: int = _parse.pss_int(ship_design_info.get('BackgroundAssetId'))
-        self._columns: int = _parse.pss_int(ship_design_info.get('Columns'))
-        self._door_frame_left_file_id: int = _parse.pss_int(ship_design_info.get('DoorFrameLeftFileId'))
-        self._door_frame_left_sprite_id: int = _parse.pss_int(ship_design_info.get('DoorFrameLeftSpriteId'))
-        self._door_frame_right_file_id: int = _parse.pss_int(ship_design_info.get('DoorFrameRightFileId'))
-        self._door_frame_right_sprite_id: int = _parse.pss_int(ship_design_info.get('DoorFrameRightSpriteId'))
-        self._engine_x: int = _parse.pss_int(ship_design_info.get('EngineX'))
-        self._engine_y: int = _parse.pss_int(ship_design_info.get('EngineY'))
-        self._equipment_capacity: int = _parse.pss_int(ship_design_info.get('EquipmentCapacity'))
-        self._exterior_file_id: int = _parse.pss_int(ship_design_info.get('ExteriorFileId'))
-        self._exterior_sprite_id: int = _parse.pss_int(ship_design_info.get('ExteriorSpriteId'))
-        self._flag_x: int = _parse.pss_int(ship_design_info.get('FlagX'))
-        self._flag_y: int = _parse.pss_int(ship_design_info.get('FlagY'))
-        self._foreground_asset_id: int = _parse.pss_int(ship_design_info.get('ForegroundAssetId'))
-        self._gas_capacity: int = _parse.pss_int(ship_design_info.get('GasCapacity'))
-        self._hp: int = _parse.pss_int(ship_design_info.get('Hp'))
-        self._interior_file_id: int = _parse.pss_int(ship_design_info.get('InteriorFileId'))
-        self._interior_sprite_id: int = _parse.pss_int(ship_design_info.get('InteriorSpriteId'))
-        self._lift_file_id: int = _parse.pss_int(ship_design_info.get('LiftFileId'))
-        self._lift_sprite_id: int = _parse.pss_int(ship_design_info.get('LiftSpriteId'))
-        self._logo_file_id: int = _parse.pss_int(ship_design_info.get('LogoFileId'))
-        self._logo_sprite_id: int = _parse.pss_int(ship_design_info.get('LogoSpriteId'))
-        self._mask: str = _parse.pss_str(ship_design_info.get('Mask'))
-        self._mineral_capacity: int = _parse.pss_int(ship_design_info.get('MineralCapacity'))
-        self._mineral_cost: int = _parse.pss_int(ship_design_info.get('MineralCost'))
-        self._mini_ship_sprite_id: int = _parse.pss_int(ship_design_info.get('MiniShipSpriteId'))
-        self._race_id: int = _parse.pss_int(ship_design_info.get('RaceId'))
-        self._repair_time: int = _parse.pss_int(ship_design_info.get('RepairTime'))
-        self._required_research_design_id: int = _parse.pss_int(ship_design_info.get('RequiredResearchDesignId'))
-        self._required_ship_design_id: int = _parse.pss_int(ship_design_info.get('RequiredShipDesignId'))
-        self._requirement_string: str = _parse.pss_str(ship_design_info.get('RequirementString'))
-        self._room_frame_file_id: int = _parse.pss_int(ship_design_info.get('RoomFrameFileId'))
-        self._room_frame_sprite_id: int = _parse.pss_int(ship_design_info.get('RoomFrameSpriteId'))
-        self._rows: int = _parse.pss_int(ship_design_info.get('Rows'))
-        self._ship_description: str = _parse.pss_str(ship_design_info.get('ShipDescription'))
-        self._ship_design_id: int = _parse.pss_int(ship_design_info.get('ShipDesignId'))
-        self._ship_design_name: str = _parse.pss_str(ship_design_info.get('ShipDesignName'))
-        self._ship_level: int = _parse.pss_int(ship_design_info.get('ShipLevel'))
-        self._ship_type: str = _parse.pss_str(ship_design_info.get('ShipType'))
-        self._starbux_cost: int = _parse.pss_int(ship_design_info.get('StarbuxCost'))
-        self._thrust_line_animation_id: int = _parse.pss_int(ship_design_info.get('ThrustLineAnimationId'))
-        self._thrust_particle_sprite_id: int = _parse.pss_int(ship_design_info.get('ThrustParticleSpriteId'))
-        self._thrust_scale: float = _parse.pss_float(ship_design_info.get('ThrustScale'))
-        self._unlock_cost: str = _parse.pss_str(ship_design_info.get('UnlockCost'))
-        self._unlock_from_ship_design_id: int = _parse.pss_int(ship_design_info.get('UnlockFromShipDesignId'))
-        self._upgrade_cost: str = _parse.pss_str(ship_design_info.get('UpgradeCost'))
-        self._upgrade_offset_columns: int = _parse.pss_int(ship_design_info.get('UpgradeOffsetColumns'))
-        self._upgrade_offset_rows: int = _parse.pss_int(ship_design_info.get('UpgradeOffsetRows'))
-        self._upgrade_time: int = _parse.pss_int(ship_design_info.get('UpgradeTime'))
-        self._visibility_flags: str = _parse.pss_str(ship_design_info.get('VisibilityFlags'))
+        self._allow_interacial: bool = _parse.pss_bool(ship_design_info.get("AllowInteracial"))
+        self._background_asset_id: int = _parse.pss_int(ship_design_info.get("BackgroundAssetId"))
+        self._columns: int = _parse.pss_int(ship_design_info.get("Columns"))
+        self._door_frame_left_file_id: int = _parse.pss_int(ship_design_info.get("DoorFrameLeftFileId"))
+        self._door_frame_left_sprite_id: int = _parse.pss_int(ship_design_info.get("DoorFrameLeftSpriteId"))
+        self._door_frame_right_file_id: int = _parse.pss_int(ship_design_info.get("DoorFrameRightFileId"))
+        self._door_frame_right_sprite_id: int = _parse.pss_int(ship_design_info.get("DoorFrameRightSpriteId"))
+        self._engine_x: int = _parse.pss_int(ship_design_info.get("EngineX"))
+        self._engine_y: int = _parse.pss_int(ship_design_info.get("EngineY"))
+        self._equipment_capacity: int = _parse.pss_int(ship_design_info.get("EquipmentCapacity"))
+        self._exterior_file_id: int = _parse.pss_int(ship_design_info.get("ExteriorFileId"))
+        self._exterior_sprite_id: int = _parse.pss_int(ship_design_info.get("ExteriorSpriteId"))
+        self._flag_x: int = _parse.pss_int(ship_design_info.get("FlagX"))
+        self._flag_y: int = _parse.pss_int(ship_design_info.get("FlagY"))
+        self._foreground_asset_id: int = _parse.pss_int(ship_design_info.get("ForegroundAssetId"))
+        self._gas_capacity: int = _parse.pss_int(ship_design_info.get("GasCapacity"))
+        self._hp: int = _parse.pss_int(ship_design_info.get("Hp"))
+        self._interior_file_id: int = _parse.pss_int(ship_design_info.get("InteriorFileId"))
+        self._interior_sprite_id: int = _parse.pss_int(ship_design_info.get("InteriorSpriteId"))
+        self._lift_file_id: int = _parse.pss_int(ship_design_info.get("LiftFileId"))
+        self._lift_sprite_id: int = _parse.pss_int(ship_design_info.get("LiftSpriteId"))
+        self._logo_file_id: int = _parse.pss_int(ship_design_info.get("LogoFileId"))
+        self._logo_sprite_id: int = _parse.pss_int(ship_design_info.get("LogoSpriteId"))
+        self._mask: str = _parse.pss_str(ship_design_info.get("Mask"))
+        self._mineral_capacity: int = _parse.pss_int(ship_design_info.get("MineralCapacity"))
+        self._mineral_cost: int = _parse.pss_int(ship_design_info.get("MineralCost"))
+        self._mini_ship_sprite_id: int = _parse.pss_int(ship_design_info.get("MiniShipSpriteId"))
+        self._race_id: int = _parse.pss_int(ship_design_info.get("RaceId"))
+        self._repair_time: int = _parse.pss_int(ship_design_info.get("RepairTime"))
+        self._required_research_design_id: int = _parse.pss_int(ship_design_info.get("RequiredResearchDesignId"))
+        self._required_ship_design_id: int = _parse.pss_int(ship_design_info.get("RequiredShipDesignId"))
+        self._requirement_string: str = _parse.pss_str(ship_design_info.get("RequirementString"))
+        self._room_frame_file_id: int = _parse.pss_int(ship_design_info.get("RoomFrameFileId"))
+        self._room_frame_sprite_id: int = _parse.pss_int(ship_design_info.get("RoomFrameSpriteId"))
+        self._rows: int = _parse.pss_int(ship_design_info.get("Rows"))
+        self._ship_description: str = _parse.pss_str(ship_design_info.get("ShipDescription"))
+        self._ship_design_id: int = _parse.pss_int(ship_design_info.get("ShipDesignId"))
+        self._ship_design_name: str = _parse.pss_str(ship_design_info.get("ShipDesignName"))
+        self._ship_level: int = _parse.pss_int(ship_design_info.get("ShipLevel"))
+        self._ship_type: str = _parse.pss_str(ship_design_info.get("ShipType"))
+        self._starbux_cost: int = _parse.pss_int(ship_design_info.get("StarbuxCost"))
+        self._thrust_line_animation_id: int = _parse.pss_int(ship_design_info.get("ThrustLineAnimationId"))
+        self._thrust_particle_sprite_id: int = _parse.pss_int(ship_design_info.get("ThrustParticleSpriteId"))
+        self._thrust_scale: float = _parse.pss_float(ship_design_info.get("ThrustScale"))
+        self._unlock_cost: str = _parse.pss_str(ship_design_info.get("UnlockCost"))
+        self._unlock_from_ship_design_id: int = _parse.pss_int(ship_design_info.get("UnlockFromShipDesignId"))
+        self._upgrade_cost: str = _parse.pss_str(ship_design_info.get("UpgradeCost"))
+        self._upgrade_offset_columns: int = _parse.pss_int(ship_design_info.get("UpgradeOffsetColumns"))
+        self._upgrade_offset_rows: int = _parse.pss_int(ship_design_info.get("UpgradeOffsetRows"))
+        self._upgrade_time: int = _parse.pss_int(ship_design_info.get("UpgradeTime"))
+        self._visibility_flags: str = _parse.pss_str(ship_design_info.get("VisibilityFlags"))
 
     @property
     def allow_interacial(self) -> bool:
@@ -327,57 +328,57 @@ class ShipDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'AllowInteracial': self.allow_interacial,
-                'BackgroundAssetId': self.background_asset_id,
-                'Columns': self.columns,
-                'DoorFrameLeftFileId': self.door_frame_left_file_id,
-                'DoorFrameLeftSpriteId': self.door_frame_left_sprite_id,
-                'DoorFrameRightFileId': self.door_frame_right_file_id,
-                'DoorFrameRightSpriteId': self.door_frame_right_sprite_id,
-                'EngineX': self.engine_x,
-                'EngineY': self.engine_y,
-                'EquipmentCapacity': self.equipment_capacity,
-                'ExteriorFileId': self.exterior_file_id,
-                'ExteriorSpriteId': self.exterior_sprite_id,
-                'FlagX': self.flag_x,
-                'FlagY': self.flag_y,
-                'ForegroundAssetId': self.foreground_asset_id,
-                'GasCapacity': self.gas_capacity,
-                'Hp': self.hp,
-                'InteriorFileId': self.interior_file_id,
-                'InteriorSpriteId': self.interior_sprite_id,
-                'LiftFileId': self.lift_file_id,
-                'LiftSpriteId': self.lift_sprite_id,
-                'LogoFileId': self.logo_file_id,
-                'LogoSpriteId': self.logo_sprite_id,
-                'Mask': self.mask,
-                'MineralCapacity': self.mineral_capacity,
-                'MineralCost': self.mineral_cost,
-                'MiniShipSpriteId': self.mini_ship_sprite_id,
-                'RaceId': self.race_id,
-                'RepairTime': self.repair_time,
-                'RequiredResearchDesignId': self.required_research_design_id,
-                'RequiredShipDesignId': self.required_ship_design_id,
-                'RequirementString': self.requirement_string,
-                'RoomFrameFileId': self.room_frame_file_id,
-                'RoomFrameSpriteId': self.room_frame_sprite_id,
-                'Rows': self.rows,
-                'ShipDescription': self.ship_description,
-                'ShipDesignId': self.ship_design_id,
-                'ShipDesignName': self.ship_design_name,
-                'ShipLevel': self.ship_level,
-                'ShipType': self.ship_type,
-                'StarbuxCost': self.starbux_cost,
-                'ThrustLineAnimationId': self.thrust_line_animation_id,
-                'ThrustParticleSpriteId': self.thrust_particle_sprite_id,
-                'ThrustScale': self.thrust_scale,
-                'UnlockCost': self.unlock_cost,
-                'UnlockFromShipDesignId': self.unlock_from_ship_design_id,
-                'UpgradeCost': self.upgrade_cost,
-                'UpgradeOffsetColumns': self.upgrade_offset_columns,
-                'UpgradeOffsetRows': self.upgrade_offset_rows,
-                'UpgradeTime': self.upgrade_time,
-                'VisibilityFlags': self.visibility_flags,
+                "AllowInteracial": self.allow_interacial,
+                "BackgroundAssetId": self.background_asset_id,
+                "Columns": self.columns,
+                "DoorFrameLeftFileId": self.door_frame_left_file_id,
+                "DoorFrameLeftSpriteId": self.door_frame_left_sprite_id,
+                "DoorFrameRightFileId": self.door_frame_right_file_id,
+                "DoorFrameRightSpriteId": self.door_frame_right_sprite_id,
+                "EngineX": self.engine_x,
+                "EngineY": self.engine_y,
+                "EquipmentCapacity": self.equipment_capacity,
+                "ExteriorFileId": self.exterior_file_id,
+                "ExteriorSpriteId": self.exterior_sprite_id,
+                "FlagX": self.flag_x,
+                "FlagY": self.flag_y,
+                "ForegroundAssetId": self.foreground_asset_id,
+                "GasCapacity": self.gas_capacity,
+                "Hp": self.hp,
+                "InteriorFileId": self.interior_file_id,
+                "InteriorSpriteId": self.interior_sprite_id,
+                "LiftFileId": self.lift_file_id,
+                "LiftSpriteId": self.lift_sprite_id,
+                "LogoFileId": self.logo_file_id,
+                "LogoSpriteId": self.logo_sprite_id,
+                "Mask": self.mask,
+                "MineralCapacity": self.mineral_capacity,
+                "MineralCost": self.mineral_cost,
+                "MiniShipSpriteId": self.mini_ship_sprite_id,
+                "RaceId": self.race_id,
+                "RepairTime": self.repair_time,
+                "RequiredResearchDesignId": self.required_research_design_id,
+                "RequiredShipDesignId": self.required_ship_design_id,
+                "RequirementString": self.requirement_string,
+                "RoomFrameFileId": self.room_frame_file_id,
+                "RoomFrameSpriteId": self.room_frame_sprite_id,
+                "Rows": self.rows,
+                "ShipDescription": self.ship_description,
+                "ShipDesignId": self.ship_design_id,
+                "ShipDesignName": self.ship_design_name,
+                "ShipLevel": self.ship_level,
+                "ShipType": self.ship_type,
+                "StarbuxCost": self.starbux_cost,
+                "ThrustLineAnimationId": self.thrust_line_animation_id,
+                "ThrustParticleSpriteId": self.thrust_particle_sprite_id,
+                "ThrustScale": self.thrust_scale,
+                "UnlockCost": self.unlock_cost,
+                "UnlockFromShipDesignId": self.unlock_from_ship_design_id,
+                "UpgradeCost": self.upgrade_cost,
+                "UpgradeOffsetColumns": self.upgrade_offset_columns,
+                "UpgradeOffsetRows": self.upgrade_offset_rows,
+                "UpgradeTime": self.upgrade_time,
+                "VisibilityFlags": self.visibility_flags,
             }
 
         return self._dict

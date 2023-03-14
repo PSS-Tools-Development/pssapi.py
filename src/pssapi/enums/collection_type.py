@@ -7,5 +7,5 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CollectionType(_StrEnum):
-    CHARACTER = 'Character'
-    ITEM = 'Item'
+    CHARACTER = "Character"
+    ITEM = "Item"

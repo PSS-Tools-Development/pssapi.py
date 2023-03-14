@@ -2,62 +2,63 @@
     This file has been generated automatically
 """
 
-from typing import Any as _Any, Dict as _Dict
+from typing import Any as _Any
+from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
 class RoomDesignRaw:
-    XML_NODE_NAME: str = 'RoomDesign'
+    XML_NODE_NAME: str = "RoomDesign"
 
     def __init__(self, room_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._capacity: int = _parse.pss_int(room_design_info.get('Capacity'))
-        self._category_type: str = _parse.pss_str(room_design_info.get('CategoryType'))
-        self._columns: int = _parse.pss_int(room_design_info.get('Columns'))
-        self._construction_sprite_id: int = _parse.pss_int(room_design_info.get('ConstructionSpriteId'))
-        self._construction_time: int = _parse.pss_int(room_design_info.get('ConstructionTime'))
-        self._cooldown_time: int = _parse.pss_int(room_design_info.get('CooldownTime'))
-        self._default_defence_bonus: int = _parse.pss_int(room_design_info.get('DefaultDefenceBonus'))
-        self._enhancement_type: str = _parse.pss_str(room_design_info.get('EnhancementType'))
-        self._exterior_asset_id: int = _parse.pss_int(room_design_info.get('ExteriorAssetId'))
-        self._flags: int = _parse.pss_int(room_design_info.get('Flags'))
-        self._flip_on_enemy_ship: bool = _parse.pss_bool(room_design_info.get('FlipOnEnemyShip'))
-        self._image_sprite_id: int = _parse.pss_int(room_design_info.get('ImageSpriteId'))
-        self._improvement_amounts: int = _parse.pss_int(room_design_info.get('ImprovementAmounts'))
-        self._interior_asset_id: int = _parse.pss_int(room_design_info.get('InteriorAssetId'))
-        self._item_rank: int = _parse.pss_int(room_design_info.get('ItemRank'))
-        self._level: int = _parse.pss_int(room_design_info.get('Level'))
-        self._logo_sprite_id: int = _parse.pss_int(room_design_info.get('LogoSpriteId'))
-        self._manufacture_capacity: int = _parse.pss_int(room_design_info.get('ManufactureCapacity'))
-        self._manufacture_rate: float = _parse.pss_float(room_design_info.get('ManufactureRate'))
-        self._manufacture_type: str = _parse.pss_str(room_design_info.get('ManufactureType'))
-        self._max_count: int = _parse.pss_int(room_design_info.get('MaxCount'))
-        self._max_power_generated: int = _parse.pss_int(room_design_info.get('MaxPowerGenerated'))
-        self._max_system_power: int = _parse.pss_int(room_design_info.get('MaxSystemPower'))
-        self._metadata: str = _parse.pss_str(room_design_info.get('Metadata'))
-        self._min_ship_level: int = _parse.pss_int(room_design_info.get('MinShipLevel'))
-        self._missile_design_id: int = _parse.pss_int(room_design_info.get('MissileDesignId'))
-        self._price_string: str = _parse.pss_str(room_design_info.get('PriceString'))
-        self._random_improvements: int = _parse.pss_int(room_design_info.get('RandomImprovements'))
-        self._range: int = _parse.pss_int(room_design_info.get('Range'))
-        self._refill_cost_string: str = _parse.pss_str(room_design_info.get('RefillCostString'))
-        self._refill_unit_cost: int = _parse.pss_int(room_design_info.get('RefillUnitCost'))
-        self._reload_time: int = _parse.pss_int(room_design_info.get('ReloadTime'))
-        self._requirement_string: str = _parse.pss_str(room_design_info.get('RequirementString'))
-        self._room_description: str = _parse.pss_str(room_design_info.get('RoomDescription'))
-        self._room_design_id: int = _parse.pss_int(room_design_info.get('RoomDesignId'))
-        self._room_name: str = _parse.pss_str(room_design_info.get('RoomName'))
-        self._room_short_name: str = _parse.pss_str(room_design_info.get('RoomShortName'))
-        self._room_type: str = _parse.pss_str(room_design_info.get('RoomType'))
-        self._root_room_design_id: int = _parse.pss_int(room_design_info.get('RootRoomDesignId'))
-        self._rotate: bool = _parse.pss_bool(room_design_info.get('Rotate'))
-        self._rows: int = _parse.pss_int(room_design_info.get('Rows'))
-        self._sort_index: int = _parse.pss_int(room_design_info.get('SortIndex'))
-        self._supported_grid_types: int = _parse.pss_int(room_design_info.get('SupportedGridTypes'))
-        self._target_type: str = _parse.pss_str(room_design_info.get('TargetType'))
-        self._upgrade_from_room_design_id: int = _parse.pss_int(room_design_info.get('UpgradeFromRoomDesignId'))
+        self._capacity: int = _parse.pss_int(room_design_info.get("Capacity"))
+        self._category_type: str = _parse.pss_str(room_design_info.get("CategoryType"))
+        self._columns: int = _parse.pss_int(room_design_info.get("Columns"))
+        self._construction_sprite_id: int = _parse.pss_int(room_design_info.get("ConstructionSpriteId"))
+        self._construction_time: int = _parse.pss_int(room_design_info.get("ConstructionTime"))
+        self._cooldown_time: int = _parse.pss_int(room_design_info.get("CooldownTime"))
+        self._default_defence_bonus: int = _parse.pss_int(room_design_info.get("DefaultDefenceBonus"))
+        self._enhancement_type: str = _parse.pss_str(room_design_info.get("EnhancementType"))
+        self._exterior_asset_id: int = _parse.pss_int(room_design_info.get("ExteriorAssetId"))
+        self._flags: int = _parse.pss_int(room_design_info.get("Flags"))
+        self._flip_on_enemy_ship: bool = _parse.pss_bool(room_design_info.get("FlipOnEnemyShip"))
+        self._image_sprite_id: int = _parse.pss_int(room_design_info.get("ImageSpriteId"))
+        self._improvement_amounts: int = _parse.pss_int(room_design_info.get("ImprovementAmounts"))
+        self._interior_asset_id: int = _parse.pss_int(room_design_info.get("InteriorAssetId"))
+        self._item_rank: int = _parse.pss_int(room_design_info.get("ItemRank"))
+        self._level: int = _parse.pss_int(room_design_info.get("Level"))
+        self._logo_sprite_id: int = _parse.pss_int(room_design_info.get("LogoSpriteId"))
+        self._manufacture_capacity: int = _parse.pss_int(room_design_info.get("ManufactureCapacity"))
+        self._manufacture_rate: float = _parse.pss_float(room_design_info.get("ManufactureRate"))
+        self._manufacture_type: str = _parse.pss_str(room_design_info.get("ManufactureType"))
+        self._max_count: int = _parse.pss_int(room_design_info.get("MaxCount"))
+        self._max_power_generated: int = _parse.pss_int(room_design_info.get("MaxPowerGenerated"))
+        self._max_system_power: int = _parse.pss_int(room_design_info.get("MaxSystemPower"))
+        self._metadata: str = _parse.pss_str(room_design_info.get("Metadata"))
+        self._min_ship_level: int = _parse.pss_int(room_design_info.get("MinShipLevel"))
+        self._missile_design_id: int = _parse.pss_int(room_design_info.get("MissileDesignId"))
+        self._price_string: str = _parse.pss_str(room_design_info.get("PriceString"))
+        self._random_improvements: int = _parse.pss_int(room_design_info.get("RandomImprovements"))
+        self._range: int = _parse.pss_int(room_design_info.get("Range"))
+        self._refill_cost_string: str = _parse.pss_str(room_design_info.get("RefillCostString"))
+        self._refill_unit_cost: int = _parse.pss_int(room_design_info.get("RefillUnitCost"))
+        self._reload_time: int = _parse.pss_int(room_design_info.get("ReloadTime"))
+        self._requirement_string: str = _parse.pss_str(room_design_info.get("RequirementString"))
+        self._room_description: str = _parse.pss_str(room_design_info.get("RoomDescription"))
+        self._room_design_id: int = _parse.pss_int(room_design_info.get("RoomDesignId"))
+        self._room_name: str = _parse.pss_str(room_design_info.get("RoomName"))
+        self._room_short_name: str = _parse.pss_str(room_design_info.get("RoomShortName"))
+        self._room_type: str = _parse.pss_str(room_design_info.get("RoomType"))
+        self._root_room_design_id: int = _parse.pss_int(room_design_info.get("RootRoomDesignId"))
+        self._rotate: bool = _parse.pss_bool(room_design_info.get("Rotate"))
+        self._rows: int = _parse.pss_int(room_design_info.get("Rows"))
+        self._sort_index: int = _parse.pss_int(room_design_info.get("SortIndex"))
+        self._supported_grid_types: int = _parse.pss_int(room_design_info.get("SupportedGridTypes"))
+        self._target_type: str = _parse.pss_str(room_design_info.get("TargetType"))
+        self._upgrade_from_room_design_id: int = _parse.pss_int(room_design_info.get("UpgradeFromRoomDesignId"))
 
     @property
     def capacity(self) -> int:
@@ -291,51 +292,51 @@ class RoomDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
-                'Capacity': self.capacity,
-                'CategoryType': self.category_type,
-                'Columns': self.columns,
-                'ConstructionSpriteId': self.construction_sprite_id,
-                'ConstructionTime': self.construction_time,
-                'CooldownTime': self.cooldown_time,
-                'DefaultDefenceBonus': self.default_defence_bonus,
-                'EnhancementType': self.enhancement_type,
-                'ExteriorAssetId': self.exterior_asset_id,
-                'Flags': self.flags,
-                'FlipOnEnemyShip': self.flip_on_enemy_ship,
-                'ImageSpriteId': self.image_sprite_id,
-                'ImprovementAmounts': self.improvement_amounts,
-                'InteriorAssetId': self.interior_asset_id,
-                'ItemRank': self.item_rank,
-                'Level': self.level,
-                'LogoSpriteId': self.logo_sprite_id,
-                'ManufactureCapacity': self.manufacture_capacity,
-                'ManufactureRate': self.manufacture_rate,
-                'ManufactureType': self.manufacture_type,
-                'MaxCount': self.max_count,
-                'MaxPowerGenerated': self.max_power_generated,
-                'MaxSystemPower': self.max_system_power,
-                'Metadata': self.metadata,
-                'MinShipLevel': self.min_ship_level,
-                'MissileDesignId': self.missile_design_id,
-                'PriceString': self.price_string,
-                'RandomImprovements': self.random_improvements,
-                'Range': self.range,
-                'RefillCostString': self.refill_cost_string,
-                'RefillUnitCost': self.refill_unit_cost,
-                'ReloadTime': self.reload_time,
-                'RequirementString': self.requirement_string,
-                'RoomDescription': self.room_description,
-                'RoomDesignId': self.room_design_id,
-                'RoomName': self.room_name,
-                'RoomShortName': self.room_short_name,
-                'RoomType': self.room_type,
-                'RootRoomDesignId': self.root_room_design_id,
-                'Rotate': self.rotate,
-                'Rows': self.rows,
-                'SortIndex': self.sort_index,
-                'SupportedGridTypes': self.supported_grid_types,
-                'TargetType': self.target_type,
-                'UpgradeFromRoomDesignId': self.upgrade_from_room_design_id,
+                "Capacity": self.capacity,
+                "CategoryType": self.category_type,
+                "Columns": self.columns,
+                "ConstructionSpriteId": self.construction_sprite_id,
+                "ConstructionTime": self.construction_time,
+                "CooldownTime": self.cooldown_time,
+                "DefaultDefenceBonus": self.default_defence_bonus,
+                "EnhancementType": self.enhancement_type,
+                "ExteriorAssetId": self.exterior_asset_id,
+                "Flags": self.flags,
+                "FlipOnEnemyShip": self.flip_on_enemy_ship,
+                "ImageSpriteId": self.image_sprite_id,
+                "ImprovementAmounts": self.improvement_amounts,
+                "InteriorAssetId": self.interior_asset_id,
+                "ItemRank": self.item_rank,
+                "Level": self.level,
+                "LogoSpriteId": self.logo_sprite_id,
+                "ManufactureCapacity": self.manufacture_capacity,
+                "ManufactureRate": self.manufacture_rate,
+                "ManufactureType": self.manufacture_type,
+                "MaxCount": self.max_count,
+                "MaxPowerGenerated": self.max_power_generated,
+                "MaxSystemPower": self.max_system_power,
+                "Metadata": self.metadata,
+                "MinShipLevel": self.min_ship_level,
+                "MissileDesignId": self.missile_design_id,
+                "PriceString": self.price_string,
+                "RandomImprovements": self.random_improvements,
+                "Range": self.range,
+                "RefillCostString": self.refill_cost_string,
+                "RefillUnitCost": self.refill_unit_cost,
+                "ReloadTime": self.reload_time,
+                "RequirementString": self.requirement_string,
+                "RoomDescription": self.room_description,
+                "RoomDesignId": self.room_design_id,
+                "RoomName": self.room_name,
+                "RoomShortName": self.room_short_name,
+                "RoomType": self.room_type,
+                "RootRoomDesignId": self.root_room_design_id,
+                "Rotate": self.rotate,
+                "Rows": self.rows,
+                "SortIndex": self.sort_index,
+                "SupportedGridTypes": self.supported_grid_types,
+                "TargetType": self.target_type,
+                "UpgradeFromRoomDesignId": self.upgrade_from_room_design_id,
             }
 
         return self._dict

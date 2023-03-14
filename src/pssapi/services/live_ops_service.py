@@ -1,8 +1,8 @@
-
-from .raw import LiveOpsServiceRaw as _LiveOpsServiceRaw
 import pssapi.services.service_base as _service_base
+
 from ..entities import GetCatalogQuantity as _GetCatalogQuantity
 from ..entities import LiveOps as _LiveOps
+from .raw import LiveOpsServiceRaw as _LiveOpsServiceRaw
 
 
 class LiveOpsService(_service_base.ServiceBase):

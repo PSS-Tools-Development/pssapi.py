@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class RoomEffectType(_StrEnum):
-    LIGHT = 'Light'
-    SMOKE = 'Smoke'
-    PARTICLE = 'Particle'
+    LIGHT = "Light"
+    SMOKE = "Smoke"
+    PARTICLE = "Particle"

@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class MissileType(_StrEnum):
-    LASER = 'Laser'
-    ROCKET = 'Rocket'
-    LONG_DISTANCE_MISSILE = 'LongDistanceMissile'
+    LASER = "Laser"
+    ROCKET = "Rocket"
+    LONG_DISTANCE_MISSILE = "LongDistanceMissile"

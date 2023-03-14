@@ -1,7 +1,6 @@
-
+from ..types import EntityInfo as _EntityInfo
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import CharacterActionRaw as _CharacterActionRaw
-from ..types import EntityInfo as _EntityInfo
 
 
 class CharacterAction(_CharacterActionRaw, _EntityWithIdBase):
