@@ -42,7 +42,7 @@ def test_pss_enum():
     with _pytest.raises(TypeError):  # The enum doesn't have such a value
         _parse.pss_enum("DeviceType", _enums.DeviceType)
     with _pytest.raises(TypeError):  # The enum doesn't have such a value
-        _parse.pss_enum("3", _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYSSHOW
+        assert _parse.pss_enum("3", _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYSSHOW
 
 
 def test_pss_float():
