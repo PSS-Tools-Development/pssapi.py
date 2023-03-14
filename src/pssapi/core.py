@@ -104,7 +104,7 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
 def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
-        if len(list(child)) > 0:
+        if len(list(child)) > 1:
             result[child.tag] = __get_raw_entities_xml(child)
         else:
             result[child.tag] = __get_raw_entity_xml(child)
