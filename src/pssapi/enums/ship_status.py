@@ -7,8 +7,8 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ShipStatus(_StrEnum):
-    ONLINE = "Online"
-    OFFLINE = "Offline"
     ATTACKING = "Attacking"
     DEFENDING = "Defending"
+    OFFLINE = "Offline"
+    ONLINE = "Online"
     SEARCHING = "Searching"

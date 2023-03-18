@@ -27,6 +27,7 @@ class SituationDesignRaw:
         self._situation_description: str = _parse.pss_str(situation_design_info.get("SituationDescription"))
         self._situation_design_id: int = _parse.pss_int(situation_design_info.get("SituationDesignId"))
         self._situation_name: str = _parse.pss_str(situation_design_info.get("SituationName"))
+        self._situation_tags: str = _parse.pss_str(situation_design_info.get("SituationTags"))
         self._situation_type: str = _parse.pss_str(situation_design_info.get("SituationType"))
         self._trigger_type: str = _parse.pss_str(situation_design_info.get("TriggerType"))
 
@@ -79,6 +80,10 @@ class SituationDesignRaw:
         return self._situation_name
 
     @property
+    def situation_tags(self) -> str:
+        return self._situation_tags
+
+    @property
     def situation_type(self) -> str:
         return self._situation_type
 
@@ -100,6 +105,7 @@ class SituationDesignRaw:
             self.situation_description,
             self.situation_design_id,
             self.situation_name,
+            self.situation_tags,
             self.situation_type,
             self.trigger_type,
         )
@@ -119,6 +125,7 @@ class SituationDesignRaw:
                 "SituationDescription": self.situation_description,
                 "SituationDesignId": self.situation_design_id,
                 "SituationName": self.situation_name,
+                "SituationTags": self.situation_tags,
                 "SituationType": self.situation_type,
                 "TriggerType": self.trigger_type,
             }

@@ -45,7 +45,7 @@ class StarSystemMarkerRaw:
         self._sprite_id: int = _parse.pss_int(star_system_marker_info.get("SpriteId"))
         self._star_system_arrival_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("StarSystemArrivalDate"))
         self._star_system_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemId"))
-        self._star_system_marker_generator_id: str = _parse.pss_str(star_system_marker_info.get("StarSystemMarkerGeneratorId"))
+        self._star_system_marker_generator_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemMarkerGeneratorId"))
         self._star_system_marker_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemMarkerId"))
         self._title: str = _parse.pss_str(star_system_marker_info.get("Title"))
         self._travel_cool_down_time: int = _parse.pss_int(star_system_marker_info.get("TravelCoolDownTime"))
@@ -174,7 +174,7 @@ class StarSystemMarkerRaw:
         return self._star_system_id
 
     @property
-    def star_system_marker_generator_id(self) -> str:
+    def star_system_marker_generator_id(self) -> int:
         return self._star_system_marker_generator_id
 
     @property

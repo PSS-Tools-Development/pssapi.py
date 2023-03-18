@@ -5,6 +5,7 @@ from . import background_service_raw as BackgroundServiceRaw
 from . import challenge_service_raw as ChallengeServiceRaw
 from . import character_service_raw as CharacterServiceRaw
 from . import collection_service_raw as CollectionServiceRaw
+from . import design_service_raw as DesignServiceRaw
 from . import division_service_raw as DivisionServiceRaw
 from . import file_service_raw as FileServiceRaw
 from . import galaxy_service_raw as GalaxyServiceRaw
@@ -36,6 +37,7 @@ __all__ = [
     "ChallengeServiceRaw",
     "CharacterServiceRaw",
     "CollectionServiceRaw",
+    "DesignServiceRaw",
     "DivisionServiceRaw",
     "FileServiceRaw",
     "GalaxyServiceRaw",

@@ -60,7 +60,7 @@ class UserRaw:
         self._game_center_friend_count: int = _parse.pss_int(user_info.get("GameCenterFriendCount"))
         self._game_center_name: str = _parse.pss_str(user_info.get("GameCenterName"))
         self._gender_type: str = _parse.pss_str(user_info.get("GenderType"))
-        self._google_play_access_token_expiry_date: str = _parse.pss_str(user_info.get("GooglePlayAccessTokenExpiryDate"))
+        self._google_play_access_token_expiry_date: _datetime = _parse.pss_datetime(user_info.get("GooglePlayAccessTokenExpiryDate"))
         self._google_play_id_token: str = _parse.pss_str(user_info.get("GooglePlayIdToken"))
         self._google_play_name: str = _parse.pss_str(user_info.get("GooglePlayName"))
         self._goole_play_auth_code: str = _parse.pss_str(user_info.get("GoolePlayAuthCode"))
@@ -68,6 +68,7 @@ class UserRaw:
         self._highest_trophy: int = _parse.pss_int(user_info.get("HighestTrophy"))
         self._icon_sprite_id: int = _parse.pss_int(user_info.get("IconSpriteId"))
         self._id_: int = _parse.pss_int(user_info.get("Id"))
+        self._is_under_age: bool = _parse.pss_bool(user_info.get("IsUnderAge"))
         self._language_key: str = _parse.pss_str(user_info.get("LanguageKey"))
         self._last_alert_date: str = _parse.pss_str(user_info.get("LastAlertDate"))
         self._last_boost_date: _datetime = _parse.pss_datetime(user_info.get("LastBoostDate"))
@@ -293,7 +294,7 @@ class UserRaw:
         return self._gender_type
 
     @property
-    def google_play_access_token_expiry_date(self) -> str:
+    def google_play_access_token_expiry_date(self) -> _datetime:
         return self._google_play_access_token_expiry_date
 
     @property
@@ -323,6 +324,10 @@ class UserRaw:
     @property
     def id_(self) -> int:
         return self._id_
+
+    @property
+    def is_under_age(self) -> bool:
+        return self._is_under_age
 
     @property
     def language_key(self) -> str:
@@ -581,6 +586,7 @@ class UserRaw:
             self.highest_trophy,
             self.icon_sprite_id,
             self.id_,
+            self.is_under_age,
             self.language_key,
             self.last_alert_date,
             self.last_boost_date,
@@ -688,6 +694,7 @@ class UserRaw:
                 "HighestTrophy": self.highest_trophy,
                 "IconSpriteId": self.icon_sprite_id,
                 "Id": self.id_,
+                "IsUnderAge": self.is_under_age,
                 "LanguageKey": self.language_key,
                 "LastAlertDate": self.last_alert_date,
                 "LastBoostDate": self.last_boost_date,

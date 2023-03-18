@@ -51,13 +51,14 @@ class ItemDesignRaw:
         self._missile_design_id: int = _parse.pss_int(item_design_info.get("MissileDesignId"))
         self._module_argument: int = _parse.pss_int(item_design_info.get("ModuleArgument"))
         self._module_type: str = _parse.pss_str(item_design_info.get("ModuleType"))
-        self._our_price: str = _parse.pss_str(item_design_info.get("OurPrice"))
+        self._our_price: int = _parse.pss_int(item_design_info.get("OurPrice"))
         self._parent_item_design_id: int = _parse.pss_int(item_design_info.get("ParentItemDesignId"))
         self._particle_sprite_id: int = _parse.pss_int(item_design_info.get("ParticleSpriteId"))
         self._priority: int = _parse.pss_int(item_design_info.get("Priority"))
         self._race_id: int = _parse.pss_int(item_design_info.get("RaceId"))
         self._rank: int = _parse.pss_int(item_design_info.get("Rank"))
         self._rarity: str = _parse.pss_str(item_design_info.get("Rarity"))
+        self._reload_modifier: int = _parse.pss_int(item_design_info.get("ReloadModifier"))
         self._reload_time: str = _parse.pss_str(item_design_info.get("ReloadTime"))
         self._required_research_design_id: int = _parse.pss_int(item_design_info.get("RequiredResearchDesignId"))
         self._requirement_string: str = _parse.pss_str(item_design_info.get("RequirementString"))
@@ -217,7 +218,7 @@ class ItemDesignRaw:
         return self._module_type
 
     @property
-    def our_price(self) -> str:
+    def our_price(self) -> int:
         return self._our_price
 
     @property
@@ -243,6 +244,10 @@ class ItemDesignRaw:
     @property
     def rarity(self) -> str:
         return self._rarity
+
+    @property
+    def reload_modifier(self) -> int:
+        return self._reload_modifier
 
     @property
     def reload_time(self) -> str:
@@ -326,6 +331,7 @@ class ItemDesignRaw:
             self.race_id,
             self.rank,
             self.rarity,
+            self.reload_modifier,
             self.reload_time,
             self.required_research_design_id,
             self.requirement_string,
@@ -384,6 +390,7 @@ class ItemDesignRaw:
                 "RaceId": self.race_id,
                 "Rank": self.rank,
                 "Rarity": self.rarity,
+                "ReloadModifier": self.reload_modifier,
                 "ReloadTime": self.reload_time,
                 "RequiredResearchDesignId": self.required_research_design_id,
                 "RequirementString": self.requirement_string,

@@ -31,6 +31,7 @@ class PromotionDesignRaw:
         self._name: str = _parse.pss_str(promotion_design_info.get("Name"))
         self._order_index: int = _parse.pss_int(promotion_design_info.get("OrderIndex"))
         self._pack_id: str = _parse.pss_str(promotion_design_info.get("PackId"))
+        self._product_key: str = _parse.pss_str(promotion_design_info.get("ProductKey"))
         self._promotion_design_id: int = _parse.pss_int(promotion_design_info.get("PromotionDesignId"))
         self._promotion_type: str = _parse.pss_str(promotion_design_info.get("PromotionType"))
         self._purchase_mask: int = _parse.pss_int(promotion_design_info.get("PurchaseMask"))
@@ -113,6 +114,10 @@ class PromotionDesignRaw:
     @property
     def pack_id(self) -> str:
         return self._pack_id
+
+    @property
+    def product_key(self) -> str:
+        return self._product_key
 
     @property
     def promotion_design_id(self) -> int:
@@ -204,6 +209,7 @@ class PromotionDesignRaw:
             self.name,
             self.order_index,
             self.pack_id,
+            self.product_key,
             self.promotion_design_id,
             self.promotion_type,
             self.purchase_mask,
@@ -243,6 +249,7 @@ class PromotionDesignRaw:
                 "Name": self.name,
                 "OrderIndex": self.order_index,
                 "PackId": self.pack_id,
+                "ProductKey": self.product_key,
                 "PromotionDesignId": self.promotion_design_id,
                 "PromotionType": self.promotion_type,
                 "PurchaseMask": self.purchase_mask,

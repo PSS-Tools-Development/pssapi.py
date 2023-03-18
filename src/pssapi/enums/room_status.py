@@ -8,6 +8,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 class RoomStatus(_StrEnum):
     BUILDING = "Building"
-    NORMAL = "Normal"
     INVENTORY = "Inventory"
+    NORMAL = "Normal"
     UPGRADING = "Upgrading"

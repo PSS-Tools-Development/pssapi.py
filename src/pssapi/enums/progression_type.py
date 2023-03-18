@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ProgressionType(_StrEnum):
-    LINEAR = "Linear"
     EASE_IN = "EaseIn"
     EASE_OUT = "EaseOut"
+    LINEAR = "Linear"

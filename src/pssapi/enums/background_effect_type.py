@@ -7,9 +7,9 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class BackgroundEffectType(_StrEnum):
-    NORMAL = "Normal"
-    LIGHTNING = "Lightning"
-    NEBULA = "Nebula"
     ASTEROID = "Asteroid"
+    LIGHTNING = "Lightning"
     MIRROR = "Mirror"
+    NEBULA = "Nebula"
+    NORMAL = "Normal"
     SOLAR = "Solar"

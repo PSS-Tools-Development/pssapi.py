@@ -6,24 +6,36 @@ from typing import List as _List
 from typing import Tuple as _Tuple
 
 from ... import core as _core
+from ...entities import Item as _Item
 from ...entities import Ship as _Ship
 from ...entities import StarSystem as _StarSystem
 from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarker as _StarSystemMarker
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
+from ...entities import User as _User
 from ...entities import UserMarker as _UserMarker
 
 # ---------- Constants ----------
 
+COLLECT_MARKER_2_BASE_PATH: str = "GalaxyService/CollectMarker2"
 GO_TO_BASE_PATH: str = "GalaxyService/GoTo"
 LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = "GalaxyService/ListMarkerGeneratorDesigns"
 LIST_STAR_SYSTEM_LINKS_BASE_PATH: str = "GalaxyService/ListStarSystemLinks"
 LIST_STAR_SYSTEM_MARKERS_BASE_PATH: str = "GalaxyService/ListStarSystemMarkers"
+LIST_STAR_SYSTEM_MARKERS_AND_USER_MARKERS_BASE_PATH: str = "GalaxyService/ListStarSystemMarkersAndUserMarkers"
 LIST_STAR_SYSTEMS_BASE_PATH: str = "GalaxyService/ListStarSystems"
 UPDATE_MARKER_MOVEMENT_BASE_PATH: str = "GalaxyService/UpdateMarkerMovement"
 
 
 # ---------- Endpoints ----------
+
+
+async def collect_marker_2(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int, **params) -> _Tuple[_Item, _StarSystemMarker, _User]:
+    params = {"accessToken": access_token, "checksum": checksum, "clientDateTime": client_date_time, "starSystemMarkerId": star_system_marker_id, **params}
+    result = await _core.get_entities_from_path(
+        ((_Item, "Item", False), (_StarSystemMarker, "StarSystemMarker", False), (_User, "User", False)), "CollectMarker", production_server, COLLECT_MARKER_2_BASE_PATH, "POST", **params
+    )
+    return result
 
 
 async def go_to(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_id: int, **params) -> _Ship:
@@ -49,6 +61,19 @@ async def list_star_system_links(production_server: str, design_version: int, **
 async def list_star_system_markers(production_server: str, access_token: str, client_date_time: str, **params) -> _List[_StarSystemMarker]:
     params = {"accessToken": access_token, "clientDateTime": client_date_time, **params}
     result = await _core.get_entities_from_path(((_StarSystemMarker, "StarSystemMarkers", True),), "StarSystemMarkers", production_server, LIST_STAR_SYSTEM_MARKERS_BASE_PATH, "GET", **params)
+    return result
+
+
+async def list_star_system_markers_and_user_markers(production_server: str, access_token: str, **params) -> _Tuple[_List[_StarSystemMarker], _List[_UserMarker]]:
+    params = {"accessToken": access_token, **params}
+    result = await _core.get_entities_from_path(
+        ((_StarSystemMarker, "StarSystemMarkers", True), (_UserMarker, "UserMarkers", True)),
+        "ListStarSystemMarkersAndUserMarkers",
+        production_server,
+        LIST_STAR_SYSTEM_MARKERS_AND_USER_MARKERS_BASE_PATH,
+        "GET",
+        **params,
+    )
     return result
 
 

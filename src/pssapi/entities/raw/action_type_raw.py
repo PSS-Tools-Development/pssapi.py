@@ -27,6 +27,7 @@ class ActionTypeRaw:
         self._image_sprite_id: int = _parse.pss_int(action_type_info.get("ImageSpriteId"))
         self._order_index: int = _parse.pss_int(action_type_info.get("OrderIndex"))
         self._required_research_design_id: int = _parse.pss_int(action_type_info.get("RequiredResearchDesignId"))
+        self._room_category_type: str = _parse.pss_str(action_type_info.get("RoomCategoryType"))
         self._room_type: str = _parse.pss_str(action_type_info.get("RoomType"))
 
     @property
@@ -82,6 +83,10 @@ class ActionTypeRaw:
         return self._required_research_design_id
 
     @property
+    def room_category_type(self) -> str:
+        return self._room_category_type
+
+    @property
     def room_type(self) -> str:
         return self._room_type
 
@@ -100,6 +105,7 @@ class ActionTypeRaw:
             self.image_sprite_id,
             self.order_index,
             self.required_research_design_id,
+            self.room_category_type,
             self.room_type,
         )
 
@@ -119,6 +125,7 @@ class ActionTypeRaw:
                 "ImageSpriteId": self.image_sprite_id,
                 "OrderIndex": self.order_index,
                 "RequiredResearchDesignId": self.required_research_design_id,
+                "RoomCategoryType": self.room_category_type,
                 "RoomType": self.room_type,
             }
 

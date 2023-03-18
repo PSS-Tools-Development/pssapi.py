@@ -4,6 +4,9 @@
 
 from typing import Any as _Any
 from typing import Dict as _Dict
+from typing import List as _List
+
+import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
@@ -25,6 +28,7 @@ class RoomRaw:
         self._power_generated: int = _parse.pss_int(room_info.get("PowerGenerated"))
         self._previous_skin_key: int = _parse.pss_int(room_info.get("PreviousSkinKey"))
         self._random_seed: int = _parse.pss_int(room_info.get("RandomSeed"))
+        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.get("RoomActions")] if room_info.get("RoomActions") else []
         self._room_design_id: int = _parse.pss_int(room_info.get("RoomDesignId"))
         self._room_id: int = _parse.pss_int(room_info.get("RoomId"))
         self._room_status: str = _parse.pss_str(room_info.get("RoomStatus"))
@@ -79,6 +83,10 @@ class RoomRaw:
         return self._random_seed
 
     @property
+    def room_actions(self) -> _List["_entities.RoomAction"]:
+        return self._room_actions
+
+    @property
     def room_design_id(self) -> int:
         return self._room_design_id
 
@@ -123,6 +131,7 @@ class RoomRaw:
             self.power_generated,
             self.previous_skin_key,
             self.random_seed,
+            tuple(child._key() for child in self.room_actions),
             self.room_design_id,
             self.room_id,
             self.room_status,
@@ -147,6 +156,7 @@ class RoomRaw:
                 "PowerGenerated": self.power_generated,
                 "PreviousSkinKey": self.previous_skin_key,
                 "RandomSeed": self.random_seed,
+                "RoomActions": [dict(child) for child in self.room_actions],
                 "RoomDesignId": self.room_design_id,
                 "RoomId": self.room_id,
                 "RoomStatus": self.room_status,

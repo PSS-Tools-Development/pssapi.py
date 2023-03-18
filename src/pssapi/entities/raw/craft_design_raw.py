@@ -14,8 +14,10 @@ class CraftDesignRaw:
 
     def __init__(self, craft_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._craft_attack_type: str = _parse.pss_str(craft_design_info.get("CraftAttackType"))
         self._craft_design_id: int = _parse.pss_int(craft_design_info.get("CraftDesignId"))
         self._craft_name: str = _parse.pss_str(craft_design_info.get("CraftName"))
+        self._craft_target_type: str = _parse.pss_str(craft_design_info.get("CraftTargetType"))
         self._flight_speed: int = _parse.pss_int(craft_design_info.get("FlightSpeed"))
         self._hp: int = _parse.pss_int(craft_design_info.get("Hp"))
         self._missile_design_id: int = _parse.pss_int(craft_design_info.get("MissileDesignId"))
@@ -25,12 +27,20 @@ class CraftDesignRaw:
         self._volley_delay: int = _parse.pss_int(craft_design_info.get("VolleyDelay"))
 
     @property
+    def craft_attack_type(self) -> str:
+        return self._craft_attack_type
+
+    @property
     def craft_design_id(self) -> int:
         return self._craft_design_id
 
     @property
     def craft_name(self) -> str:
         return self._craft_name
+
+    @property
+    def craft_target_type(self) -> str:
+        return self._craft_target_type
 
     @property
     def flight_speed(self) -> int:
@@ -62,8 +72,10 @@ class CraftDesignRaw:
 
     def _key(self):
         return (
+            self.craft_attack_type,
             self.craft_design_id,
             self.craft_name,
+            self.craft_target_type,
             self.flight_speed,
             self.hp,
             self.missile_design_id,
@@ -76,8 +88,10 @@ class CraftDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "CraftAttackType": self.craft_attack_type,
                 "CraftDesignId": self.craft_design_id,
                 "CraftName": self.craft_name,
+                "CraftTargetType": self.craft_target_type,
                 "FlightSpeed": self.flight_speed,
                 "Hp": self.hp,
                 "MissileDesignId": self.missile_design_id,

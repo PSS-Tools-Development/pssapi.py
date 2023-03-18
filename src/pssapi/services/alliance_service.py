@@ -10,6 +10,16 @@ from .raw import AllianceServiceRaw as _AllianceServiceRaw
 
 
 class AllianceService(_service_base.ServiceBase):
+    async def get_alliance(self, access_token: str, alliance_id: int) -> _Alliance:
+        production_server = await self.get_production_server()
+        result = await _AllianceServiceRaw.get_alliance(production_server, access_token, alliance_id)
+        return result
+
+    async def interact_with_starbase_room(self, access_token: str, checksum: str, client_date_time: str, room_id: int) -> _User:
+        production_server = await self.get_production_server()
+        result = await _AllianceServiceRaw.interact_with_starbase_room(production_server, access_token, checksum, client_date_time, room_id)
+        return result
+
     async def list_alliances_by_championship_score_ranking(self, access_token: str, from_: int, to: int) -> _List[_Alliance]:
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_by_championship_score_ranking(production_server, access_token, from_, to)

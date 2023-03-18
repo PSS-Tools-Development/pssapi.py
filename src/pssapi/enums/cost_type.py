@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CostType(_StrEnum):
+    RANDOM = "Random"
     STARDUST = "Stardust"
     VOID_PARTICLE = "VoidParticle"
-    RANDOM = "Random"

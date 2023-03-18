@@ -8,10 +8,10 @@ fixing, if Savy uses enum values that are python keywords.
 
 class AllianceMembership(_StrEnum):
     CANDIDATE = "Candidate"
+    COMMANDER = "Commander"
     ENSIGN = "Ensign"
+    FLEET_ADMIRAL = "FleetAdmiral"
     LIEUTENANT = "Lieutenant"
     MAJOR = "Major"
-    COMMANDER = "Commander"
-    VICE_ADMIRAL = "ViceAdmiral"
-    FLEET_ADMIRAL = "FleetAdmiral"
     STARBASE = "Starbase"
+    VICE_ADMIRAL = "ViceAdmiral"

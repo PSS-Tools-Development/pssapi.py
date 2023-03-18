@@ -7,9 +7,9 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ModuleType(_StrEnum):
-    TRAP = "Trap"
     ARMOR = "Armor"
     ENHANCEMENT = "Enhancement"
     SANDBAG = "Sandbag"
-    WATER_SPRINKLER = "WaterSprinkler"
+    TRAP = "Trap"
     TURRET = "Turret"
+    WATER_SPRINKLER = "WaterSprinkler"

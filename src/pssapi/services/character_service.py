@@ -5,6 +5,7 @@ import pssapi.services.service_base as _service_base
 from ..entities import CharacterDesign as _CharacterDesign
 from ..entities import CharacterDesignAction as _CharacterDesignAction
 from ..entities import DrawDesign as _DrawDesign
+from ..entities import Prestige as _Prestige
 from .raw import CharacterServiceRaw as _CharacterServiceRaw
 
 
@@ -25,4 +26,14 @@ class CharacterService(_service_base.CacheableServiceBase):
     async def list_all_draw_designs(self, design_version: int = None) -> _List[_DrawDesign]:
         production_server = await self.get_production_server()
         result = await _CharacterServiceRaw.list_all_draw_designs(production_server, design_version, self.language_key)
+        return result
+
+    async def prestige_character_from(self, character_design_id: int) -> _List[_Prestige]:
+        production_server = await self.get_production_server()
+        result = await _CharacterServiceRaw.prestige_character_from(production_server, character_design_id, self.language_key)
+        return result
+
+    async def prestige_character_to(self, character_design_id: int) -> _List[_Prestige]:
+        production_server = await self.get_production_server()
+        result = await _CharacterServiceRaw.prestige_character_to(production_server, character_design_id, self.language_key)
         return result

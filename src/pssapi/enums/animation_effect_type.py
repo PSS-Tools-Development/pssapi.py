@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class AnimationEffectType(_StrEnum):
-    NORMAL = "Normal"
-    MULTIPLY = "Multiply"
     LASER = "Laser"
+    MULTIPLY = "Multiply"
+    NORMAL = "Normal"
     TRAIL = "Trail"

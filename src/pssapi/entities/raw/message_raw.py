@@ -29,6 +29,7 @@ class MessageRaw:
         self._message_type: str = _parse.pss_str(message_info.get("MessageType"))
         self._sale_id: str = _parse.pss_str(message_info.get("SaleId"))
         self._ship_design_id: int = _parse.pss_int(message_info.get("ShipDesignId"))
+        self._to_user_id: int = _parse.pss_int(message_info.get("ToUserId"))
         self._trophy: int = _parse.pss_int(message_info.get("Trophy"))
         self._user_id: int = _parse.pss_int(message_info.get("UserId"))
         self._user_name: str = _parse.pss_str(message_info.get("UserName"))
@@ -91,6 +92,10 @@ class MessageRaw:
         return self._ship_design_id
 
     @property
+    def to_user_id(self) -> int:
+        return self._to_user_id
+
+    @property
     def trophy(self) -> int:
         return self._trophy
 
@@ -122,6 +127,7 @@ class MessageRaw:
             self.message_type,
             self.sale_id,
             self.ship_design_id,
+            self.to_user_id,
             self.trophy,
             self.user_id,
             self.user_name,
@@ -145,6 +151,7 @@ class MessageRaw:
                 "MessageType": self.message_type,
                 "SaleId": self.sale_id,
                 "ShipDesignId": self.ship_design_id,
+                "ToUserId": self.to_user_id,
                 "Trophy": self.trophy,
                 "UserId": self.user_id,
                 "UserName": self.user_name,

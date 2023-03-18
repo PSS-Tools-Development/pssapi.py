@@ -1,8 +1,11 @@
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
+from .add_starbux import AddStarbux
 from .alliance import Alliance
 from .animation import Animation
+from .asset import Asset
 from .background import Background
+from .battle import Battle
 from .challenge_design import ChallengeDesign
 from .character import Character
 from .character_action import CharacterAction
@@ -17,6 +20,7 @@ from .draw_design import DrawDesign
 from .entity_base import EntityBase, EntityWithIdBase
 from .file import File
 from .get_catalog_quantity import GetCatalogQuantity
+from .get_current_resources import GetCurrentResources
 from .item import Item
 from .item_design import ItemDesign
 from .item_design_action import ItemDesignAction
@@ -25,12 +29,15 @@ from .live_ops import LiveOps
 from .message import Message
 from .missile_design import MissileDesign
 from .mission_design import MissionDesign
+from .mission_event import MissionEvent
 from .news_design import NewsDesign
+from .prestige import Prestige
 from .promotion_design import PromotionDesign
 from .research import Research
 from .research_design import ResearchDesign
 from .reward_design import RewardDesign
 from .room import Room
+from .room_action import RoomAction
 from .room_design import RoomDesign
 from .room_design_purchase import RoomDesignPurchase
 from .room_design_sprite import RoomDesignSprite
@@ -58,9 +65,12 @@ __all__ = [
     "EntityBase",
     "AchievementDesign",
     "ActionType",
+    "AddStarbux",
     "Alliance",
     "Animation",
+    "Asset",
     "Background",
+    "Battle",
     "ChallengeDesign",
     "Character",
     "CharacterAction",
@@ -74,6 +84,7 @@ __all__ = [
     "DrawDesign",
     "File",
     "GetCatalogQuantity",
+    "GetCurrentResources",
     "Item",
     "ItemDesign",
     "ItemDesignAction",
@@ -82,12 +93,15 @@ __all__ = [
     "Message",
     "MissileDesign",
     "MissionDesign",
+    "MissionEvent",
     "NewsDesign",
+    "Prestige",
     "PromotionDesign",
     "Research",
     "ResearchDesign",
     "RewardDesign",
     "Room",
+    "RoomAction",
     "RoomDesign",
     "RoomDesignPurchase",
     "RoomDesignSprite",

@@ -32,7 +32,7 @@ class ShipRaw:
         self._power_score: int = _parse.pss_int(ship_info.get("PowerScore"))
         self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.get("Rooms")] if ship_info.get("Rooms") else []
         self._salvage_argument: int = _parse.pss_int(ship_info.get("SalvageArgument"))
-        self._saturation_value: int = _parse.pss_int(ship_info.get("SaturationValue"))
+        self._saturation_value: float = _parse.pss_float(ship_info.get("SaturationValue"))
         self._shield: int = _parse.pss_int(ship_info.get("Shield"))
         self._ship_design_id: int = _parse.pss_int(ship_info.get("ShipDesignId"))
         self._ship_id: int = _parse.pss_int(ship_info.get("ShipId"))
@@ -40,6 +40,7 @@ class ShipRaw:
         self._ship_name: str = _parse.pss_str(ship_info.get("ShipName"))
         self._ship_status: str = _parse.pss_str(ship_info.get("ShipStatus"))
         self._skin_item_design_id: int = _parse.pss_int(ship_info.get("SkinItemDesignId"))
+        self._skin_opacity_value: float = _parse.pss_float(ship_info.get("SkinOpacityValue"))
         self._standard_character_draws: int = _parse.pss_int(ship_info.get("StandardCharacterDraws"))
         self._star_system_arrival_date: _datetime = _parse.pss_datetime(ship_info.get("StarSystemArrivalDate"))
         self._star_system_id: int = _parse.pss_int(ship_info.get("StarSystemId"))
@@ -110,7 +111,7 @@ class ShipRaw:
         return self._salvage_argument
 
     @property
-    def saturation_value(self) -> int:
+    def saturation_value(self) -> float:
         return self._saturation_value
 
     @property
@@ -140,6 +141,10 @@ class ShipRaw:
     @property
     def skin_item_design_id(self) -> int:
         return self._skin_item_design_id
+
+    @property
+    def skin_opacity_value(self) -> float:
+        return self._skin_opacity_value
 
     @property
     def standard_character_draws(self) -> int:
@@ -213,6 +218,7 @@ class ShipRaw:
             self.ship_name,
             self.ship_status,
             self.skin_item_design_id,
+            self.skin_opacity_value,
             self.standard_character_draws,
             self.star_system_arrival_date,
             self.star_system_id,
@@ -252,6 +258,7 @@ class ShipRaw:
                 "ShipName": self.ship_name,
                 "ShipStatus": self.ship_status,
                 "SkinItemDesignId": self.skin_item_design_id,
+                "SkinOpacityValue": self.skin_opacity_value,
                 "StandardCharacterDraws": self.standard_character_draws,
                 "StarSystemArrivalDate": self.star_system_arrival_date,
                 "StarSystemId": self.star_system_id,

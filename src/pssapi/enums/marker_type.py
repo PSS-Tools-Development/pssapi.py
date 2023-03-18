@@ -7,9 +7,9 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class MarkerType(_StrEnum):
-    MISSION_OBJECTIVE = "MissionObjective"
-    COMBAT_OBJECTIVE = "CombatObjective"
-    MINING = "Mining"
-    NPC_SHIP = "NPCShip"
     CASINO = "Casino"
+    COMBAT_OBJECTIVE = "CombatObjective"
     MERCHANT_SHIP = "MerchantShip"
+    MINING = "Mining"
+    MISSION_OBJECTIVE = "MissionObjective"
+    NPC_SHIP = "NPCShip"

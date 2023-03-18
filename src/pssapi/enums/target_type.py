@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class TargetType(_StrEnum):
-    SINGLE_ROOM = "SingleRoom"
-    RANDOM_ROOM = "RandomRoom"
     CRAFT = "Craft"
+    RANDOM_ROOM = "RandomRoom"
+    SINGLE_ROOM = "SingleRoom"

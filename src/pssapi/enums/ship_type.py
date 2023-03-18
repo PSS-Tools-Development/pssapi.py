@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ShipType(_StrEnum):
-    PLAYER = "Player"
     ALLIANCE = "Alliance"
     BOTH = "Both"
+    PLAYER = "Player"
     TEMPLATE = "Template"

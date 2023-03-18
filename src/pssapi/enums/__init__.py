@@ -3,11 +3,14 @@ from .action_type_category import ActionTypeCategory
 from .action_type_parameter_relativity import ActionTypeParameterRelativity
 from .activity_type import ActivityType
 from .alliance_membership import AllianceMembership
+from .ammo_category import AmmoCategory
 from .animation_effect_type import AnimationEffectType
 from .argument import Argument
+from .asset_type import AssetType
 from .authentication_type import AuthenticationType
 from .background_effect_type import BackgroundEffectType
 from .background_type import BackgroundType
+from .battle_type import BattleType
 from .behavior_flags import BehaviorFlags
 from .category_type import CategoryType
 from .challenge_scoring_type import ChallengeScoringType
@@ -21,11 +24,14 @@ from .condition_type_category import ConditionTypeCategory
 from .condition_type_comparison import ConditionTypeComparison
 from .condition_type_parameter import ConditionTypeParameter
 from .cost_type import CostType
+from .craft_attack_type import CraftAttackType
+from .craft_target_type import CraftTargetType
 from .currency_type import CurrencyType
 from .daily_reward_status import DailyRewardStatus
 from .daily_reward_type import DailyRewardType
 from .device_type import DeviceType
 from .division_type import DivisionType
+from .download_type import DownloadType
 from .draw_type import DrawType
 from .duration_type import DurationType
 from .email_verification_status import EmailVerificationStatus
@@ -49,10 +55,12 @@ from .message_type import MessageType
 from .missile_type import MissileType
 from .mission_design_status import MissionDesignStatus
 from .mission_design_type import MissionDesignType
+from .mission_event_type import MissionEventType
 from .module_type import ModuleType
 from .movement_type import MovementType
 from .objective_type import ObjectiveType
 from .orbit_anchor_alignment import OrbitAnchorAlignment
+from .outcome_type import OutcomeType
 from .progression_type import ProgressionType
 from .promotion_type import PromotionType
 from .purchase_vip_status import PurchaseVIPStatus
@@ -87,11 +95,14 @@ __all__ = [
     "ActionTypeParameterRelativity",
     "ActivityType",
     "AllianceMembership",
+    "AmmoCategory",
     "AnimationEffectType",
     "Argument",
+    "AssetType",
     "AuthenticationType",
     "BackgroundEffectType",
     "BackgroundType",
+    "BattleType",
     "BehaviorFlags",
     "CategoryType",
     "ChallengeScoringType",
@@ -105,11 +116,14 @@ __all__ = [
     "ConditionTypeComparison",
     "ConditionTypeParameter",
     "CostType",
+    "CraftAttackType",
+    "CraftTargetType",
     "CurrencyType",
     "DailyRewardStatus",
     "DailyRewardType",
     "DeviceType",
     "DivisionType",
+    "DownloadType",
     "DrawType",
     "DurationType",
     "EmailVerificationStatus",
@@ -132,10 +146,12 @@ __all__ = [
     "MissileType",
     "MissionDesignStatus",
     "MissionDesignType",
+    "MissionEventType",
     "ModuleType",
     "MovementType",
     "ObjectiveType",
     "OrbitAnchorAlignment",
+    "OutcomeType",
     "ProgressionType",
     "PromotionType",
     "PurchaseVIPStatus",

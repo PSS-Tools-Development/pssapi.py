@@ -5,6 +5,7 @@ from .background_service import BackgroundService
 from .challenge_service import ChallengeService
 from .character_service import CharacterService
 from .collection_service import CollectionService
+from .design_service import DesignService
 from .division_service import DivisionService
 from .file_service import FileService
 from .galaxy_service import GalaxyService
@@ -36,6 +37,7 @@ __all__ = [
     "ChallengeService",
     "CharacterService",
     "CollectionService",
+    "DesignService",
     "DivisionService",
     "FileService",
     "GalaxyService",

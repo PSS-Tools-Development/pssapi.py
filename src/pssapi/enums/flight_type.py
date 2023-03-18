@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class FlightType(_StrEnum):
-    IMMEDIATE = "Immediate"
-    LINEAR = "Linear"
-    ION = "Ion"
     HOMING = "Homing"
+    IMMEDIATE = "Immediate"
+    ION = "Ion"
+    LINEAR = "Linear"

@@ -7,8 +7,8 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ActionTypeParameterRelativity(_StrEnum):
-    RELATIVE = "Relative"
     ABSOLUTE = "Absolute"
-    PERCENTAGE = "Percentage"
     HIGHEST = "Highest"
     LOWEST = "Lowest"
+    PERCENTAGE = "Percentage"
+    RELATIVE = "Relative"

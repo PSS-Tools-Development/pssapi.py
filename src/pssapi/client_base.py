@@ -68,6 +68,10 @@ class PssApiClientBase:
         return self.__collection_service
 
     @property
+    def design_service(self) -> "_services.DesignService":
+        return self.__design_service
+
+    @property
     def division_service(self) -> "_services.DivisionService":
         return self.__division_service
 
@@ -185,6 +189,7 @@ class PssApiClientBase:
         self.__challenge_service: _services.ChallengeService = _services.ChallengeService(self)
         self.__character_service: _services.CharacterService = _services.CharacterService(self)
         self.__collection_service: _services.CollectionService = _services.CollectionService(self)
+        self.__design_service: _services.DesignService = _services.DesignService(self)
         self.__division_service: _services.DivisionService = _services.DivisionService(self)
         self.__file_service: _services.FileService = _services.FileService(self)
         self.__galaxy_service: _services.GalaxyService = _services.GalaxyService(self)

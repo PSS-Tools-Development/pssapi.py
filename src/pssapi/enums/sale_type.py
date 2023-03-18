@@ -7,9 +7,9 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class SaleType(_StrEnum):
-    CHARACTER = "Character"
     BONUS = "Bonus"
-    ROOM = "Room"
-    ITEM = "Item"
-    SHIP = "Ship"
+    CHARACTER = "Character"
     FLEET_GIFT = "FleetGift"
+    ITEM = "Item"
+    ROOM = "Room"
+    SHIP = "Ship"

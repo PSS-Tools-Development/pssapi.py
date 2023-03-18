@@ -7,12 +7,12 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ConditionTypeComparison(_StrEnum):
-    HIGHER = "Higher"
-    LOWER = "Lower"
     EQUAL = "Equal"
-    HIGHER_PERCENTAGE = "HigherPercentage"
-    LOWER_PERCENTAGE = "LowerPercentage"
     EQUAL_PERCENTAGE = "EqualPercentage"
-    NOT_EQUAL = "NotEqual"
+    HIGHER = "Higher"
     HIGHER_OR_EQUAL_PERCENTAGE = "HigherOrEqualPercentage"
+    HIGHER_PERCENTAGE = "HigherPercentage"
+    LOWER = "Lower"
     LOWER_OR_EQUAL_PERCENTAGE = "LowerOrEqualPercentage"
+    LOWER_PERCENTAGE = "LowerPercentage"
+    NOT_EQUAL = "NotEqual"

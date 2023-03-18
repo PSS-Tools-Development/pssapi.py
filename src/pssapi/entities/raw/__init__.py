@@ -1,8 +1,11 @@
 from .achievement_design_raw import AchievementDesignRaw
 from .action_type_raw import ActionTypeRaw
+from .add_starbux_raw import AddStarbuxRaw
 from .alliance_raw import AllianceRaw
 from .animation_raw import AnimationRaw
+from .asset_raw import AssetRaw
 from .background_raw import BackgroundRaw
+from .battle_raw import BattleRaw
 from .challenge_design_raw import ChallengeDesignRaw
 from .character_action_raw import CharacterActionRaw
 from .character_design_action_raw import CharacterDesignActionRaw
@@ -17,6 +20,7 @@ from .draw_design_raw import DrawDesignRaw
 from .entity_base_raw import EntityBaseRaw
 from .file_raw import FileRaw
 from .get_catalog_quantity_raw import GetCatalogQuantityRaw
+from .get_current_resources_raw import GetCurrentResourcesRaw
 from .item_design_action_raw import ItemDesignActionRaw
 from .item_design_raw import ItemDesignRaw
 from .item_raw import ItemRaw
@@ -25,11 +29,14 @@ from .live_ops_raw import LiveOpsRaw
 from .message_raw import MessageRaw
 from .missile_design_raw import MissileDesignRaw
 from .mission_design_raw import MissionDesignRaw
+from .mission_event_raw import MissionEventRaw
 from .news_design_raw import NewsDesignRaw
+from .prestige_raw import PrestigeRaw
 from .promotion_design_raw import PromotionDesignRaw
 from .research_design_raw import ResearchDesignRaw
 from .research_raw import ResearchRaw
 from .reward_design_raw import RewardDesignRaw
+from .room_action_raw import RoomActionRaw
 from .room_design_purchase_raw import RoomDesignPurchaseRaw
 from .room_design_raw import RoomDesignRaw
 from .room_design_sprite_raw import RoomDesignSpriteRaw
@@ -57,9 +64,12 @@ __all__ = [
     "EntityBaseRaw",
     "AchievementDesignRaw",
     "ActionTypeRaw",
+    "AddStarbuxRaw",
     "AllianceRaw",
     "AnimationRaw",
+    "AssetRaw",
     "BackgroundRaw",
+    "BattleRaw",
     "ChallengeDesignRaw",
     "CharacterRaw",
     "CharacterActionRaw",
@@ -73,6 +83,7 @@ __all__ = [
     "DrawDesignRaw",
     "FileRaw",
     "GetCatalogQuantityRaw",
+    "GetCurrentResourcesRaw",
     "ItemRaw",
     "ItemDesignRaw",
     "ItemDesignActionRaw",
@@ -81,12 +92,15 @@ __all__ = [
     "MessageRaw",
     "MissileDesignRaw",
     "MissionDesignRaw",
+    "MissionEventRaw",
     "NewsDesignRaw",
+    "PrestigeRaw",
     "PromotionDesignRaw",
     "ResearchRaw",
     "ResearchDesignRaw",
     "RewardDesignRaw",
     "RoomRaw",
+    "RoomActionRaw",
     "RoomDesignRaw",
     "RoomDesignPurchaseRaw",
     "RoomDesignSpriteRaw",

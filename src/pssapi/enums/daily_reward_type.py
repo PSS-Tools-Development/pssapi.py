@@ -7,8 +7,8 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DailyRewardType(_StrEnum):
-    STARBUX = "Starbux"
-    MINERAL = "Mineral"
+    CREW = "Crew"
     GAS = "Gas"
     ITEM = "Item"
-    CREW = "Crew"
+    MINERAL = "Mineral"
+    STARBUX = "Starbux"

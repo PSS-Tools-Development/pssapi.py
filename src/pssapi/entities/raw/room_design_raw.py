@@ -20,6 +20,7 @@ class RoomDesignRaw:
         self._construction_sprite_id: int = _parse.pss_int(room_design_info.get("ConstructionSpriteId"))
         self._construction_time: int = _parse.pss_int(room_design_info.get("ConstructionTime"))
         self._cooldown_time: int = _parse.pss_int(room_design_info.get("CooldownTime"))
+        self._craft_design_id: int = _parse.pss_int(room_design_info.get("CraftDesignId"))
         self._default_defence_bonus: int = _parse.pss_int(room_design_info.get("DefaultDefenceBonus"))
         self._enhancement_type: str = _parse.pss_str(room_design_info.get("EnhancementType"))
         self._exterior_asset_id: int = _parse.pss_int(room_design_info.get("ExteriorAssetId"))
@@ -83,6 +84,10 @@ class RoomDesignRaw:
     @property
     def cooldown_time(self) -> int:
         return self._cooldown_time
+
+    @property
+    def craft_design_id(self) -> int:
+        return self._craft_design_id
 
     @property
     def default_defence_bonus(self) -> int:
@@ -248,6 +253,7 @@ class RoomDesignRaw:
             self.construction_sprite_id,
             self.construction_time,
             self.cooldown_time,
+            self.craft_design_id,
             self.default_defence_bonus,
             self.enhancement_type,
             self.exterior_asset_id,
@@ -298,6 +304,7 @@ class RoomDesignRaw:
                 "ConstructionSpriteId": self.construction_sprite_id,
                 "ConstructionTime": self.construction_time,
                 "CooldownTime": self.cooldown_time,
+                "CraftDesignId": self.craft_design_id,
                 "DefaultDefenceBonus": self.default_defence_bonus,
                 "EnhancementType": self.enhancement_type,
                 "ExteriorAssetId": self.exterior_asset_id,

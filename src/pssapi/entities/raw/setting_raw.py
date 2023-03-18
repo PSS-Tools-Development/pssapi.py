@@ -29,6 +29,8 @@ class SettingRaw:
         self._background_version: int = _parse.pss_int(setting_info.get("BackgroundVersion"))
         self._battle_background_id: int = _parse.pss_int(setting_info.get("BattleBackgroundId"))
         self._boost_duration: int = _parse.pss_int(setting_info.get("BoostDuration"))
+        self._boost_gauge_mobile: int = _parse.pss_int(setting_info.get("BoostGaugeMobile"))
+        self._boost_gauge_pc: int = _parse.pss_int(setting_info.get("BoostGaugePC"))
         self._boost_multiplier: int = _parse.pss_int(setting_info.get("BoostMultiplier"))
         self._cargo_items: str = _parse.pss_str(setting_info.get("CargoItems"))
         self._cargo_prices: str = _parse.pss_str(setting_info.get("CargoPrices"))
@@ -80,9 +82,10 @@ class SettingRaw:
         self._loading_title_sprite_id: int = _parse.pss_int(setting_info.get("LoadingTitleSpriteId"))
         self._loot_modifiers: str = _parse.pss_str(setting_info.get("LootModifiers"))
         self._maintenance_message: str = _parse.pss_str(setting_info.get("MaintenanceMessage"))
-        self._marker_generator_design_version: str = _parse.pss_str(setting_info.get("MarkerGeneratorDesignVersion"))
+        self._marker_generator_design_version: int = _parse.pss_int(setting_info.get("MarkerGeneratorDesignVersion"))
         self._max_boost_duration: int = _parse.pss_int(setting_info.get("MaxBoostDuration"))
         self._max_daily_draws: int = _parse.pss_int(setting_info.get("MaxDailyDraws"))
+        self._merchant_ship_sprite_id: int = _parse.pss_int(setting_info.get("MerchantShipSpriteId"))
         self._minimum_client_version: str = _parse.pss_str(setting_info.get("MinimumClientVersion"))
         self._minimum_version: str = _parse.pss_str(setting_info.get("MinimumVersion"))
         self._missile_design_version: int = _parse.pss_int(setting_info.get("MissileDesignVersion"))
@@ -92,6 +95,7 @@ class SettingRaw:
         self._news_design_version: int = _parse.pss_int(setting_info.get("NewsDesignVersion"))
         self._news_sprite_id: str = _parse.pss_str(setting_info.get("NewsSpriteId"))
         self._news_update_date: _datetime = _parse.pss_datetime(setting_info.get("NewsUpdateDate"))
+        self._number_of_vote_options: int = _parse.pss_int(setting_info.get("NumberOfVoteOptions"))
         self._planet_version: int = _parse.pss_int(setting_info.get("PlanetVersion"))
         self._prestige_top_character_design_id: int = _parse.pss_int(setting_info.get("PrestigeTopCharacterDesignId"))
         self._pro_bono_limit: int = _parse.pss_int(setting_info.get("ProBonoLimit"))
@@ -122,9 +126,11 @@ class SettingRaw:
         self._setting_id: int = _parse.pss_int(setting_info.get("SettingId"))
         self._ship_design_version: int = _parse.pss_int(setting_info.get("ShipDesignVersion"))
         self._situation_design_version: int = _parse.pss_int(setting_info.get("SituationDesignVersion"))
+        self._situation_tags: str = _parse.pss_str(setting_info.get("SituationTags"))
         self._sprite_version: int = _parse.pss_int(setting_info.get("SpriteVersion"))
         self._star_system_link_version: int = _parse.pss_int(setting_info.get("StarSystemLinkVersion"))
         self._star_system_version: int = _parse.pss_int(setting_info.get("StarSystemVersion"))
+        self._support_email: str = _parse.pss_str(setting_info.get("SupportEmail"))
         self._support_task_ran_date: _datetime = _parse.pss_datetime(setting_info.get("SupportTaskRanDate"))
         self._task_design_version: int = _parse.pss_int(setting_info.get("TaskDesignVersion"))
         self._task_reroll_cost: int = _parse.pss_int(setting_info.get("TaskRerollCost"))
@@ -135,6 +141,7 @@ class SettingRaw:
         self._tournament_sprite_id: int = _parse.pss_int(setting_info.get("TournamentSpriteId"))
         self._training_design_version: int = _parse.pss_int(setting_info.get("TrainingDesignVersion"))
         self._vip_design_version: int = _parse.pss_int(setting_info.get("VipDesignVersion"))
+        self._voting_duration: int = _parse.pss_int(setting_info.get("VotingDuration"))
 
     @property
     def ab_testing_rollout(self) -> int:
@@ -191,6 +198,14 @@ class SettingRaw:
     @property
     def boost_duration(self) -> int:
         return self._boost_duration
+
+    @property
+    def boost_gauge_mobile(self) -> int:
+        return self._boost_gauge_mobile
+
+    @property
+    def boost_gauge_pc(self) -> int:
+        return self._boost_gauge_pc
 
     @property
     def boost_multiplier(self) -> int:
@@ -397,7 +412,7 @@ class SettingRaw:
         return self._maintenance_message
 
     @property
-    def marker_generator_design_version(self) -> str:
+    def marker_generator_design_version(self) -> int:
         return self._marker_generator_design_version
 
     @property
@@ -407,6 +422,10 @@ class SettingRaw:
     @property
     def max_daily_draws(self) -> int:
         return self._max_daily_draws
+
+    @property
+    def merchant_ship_sprite_id(self) -> int:
+        return self._merchant_ship_sprite_id
 
     @property
     def minimum_client_version(self) -> str:
@@ -443,6 +462,10 @@ class SettingRaw:
     @property
     def news_update_date(self) -> _datetime:
         return self._news_update_date
+
+    @property
+    def number_of_vote_options(self) -> int:
+        return self._number_of_vote_options
 
     @property
     def planet_version(self) -> int:
@@ -565,6 +588,10 @@ class SettingRaw:
         return self._situation_design_version
 
     @property
+    def situation_tags(self) -> str:
+        return self._situation_tags
+
+    @property
     def sprite_version(self) -> int:
         return self._sprite_version
 
@@ -575,6 +602,10 @@ class SettingRaw:
     @property
     def star_system_version(self) -> int:
         return self._star_system_version
+
+    @property
+    def support_email(self) -> str:
+        return self._support_email
 
     @property
     def support_task_ran_date(self) -> _datetime:
@@ -616,6 +647,10 @@ class SettingRaw:
     def vip_design_version(self) -> int:
         return self._vip_design_version
 
+    @property
+    def voting_duration(self) -> int:
+        return self._voting_duration
+
     def _key(self):
         return (
             self.ab_testing_rollout,
@@ -632,6 +667,8 @@ class SettingRaw:
             self.background_version,
             self.battle_background_id,
             self.boost_duration,
+            self.boost_gauge_mobile,
+            self.boost_gauge_pc,
             self.boost_multiplier,
             self.cargo_items,
             self.cargo_prices,
@@ -686,6 +723,7 @@ class SettingRaw:
             self.marker_generator_design_version,
             self.max_boost_duration,
             self.max_daily_draws,
+            self.merchant_ship_sprite_id,
             self.minimum_client_version,
             self.minimum_version,
             self.missile_design_version,
@@ -695,6 +733,7 @@ class SettingRaw:
             self.news_design_version,
             self.news_sprite_id,
             self.news_update_date,
+            self.number_of_vote_options,
             self.planet_version,
             self.prestige_top_character_design_id,
             self.pro_bono_limit,
@@ -725,9 +764,11 @@ class SettingRaw:
             self.setting_id,
             self.ship_design_version,
             self.situation_design_version,
+            self.situation_tags,
             self.sprite_version,
             self.star_system_link_version,
             self.star_system_version,
+            self.support_email,
             self.support_task_ran_date,
             self.task_design_version,
             self.task_reroll_cost,
@@ -738,6 +779,7 @@ class SettingRaw:
             self.tournament_sprite_id,
             self.training_design_version,
             self.vip_design_version,
+            self.voting_duration,
         )
 
     def __dict__(self):
@@ -757,6 +799,8 @@ class SettingRaw:
                 "BackgroundVersion": self.background_version,
                 "BattleBackgroundId": self.battle_background_id,
                 "BoostDuration": self.boost_duration,
+                "BoostGaugeMobile": self.boost_gauge_mobile,
+                "BoostGaugePC": self.boost_gauge_pc,
                 "BoostMultiplier": self.boost_multiplier,
                 "CargoItems": self.cargo_items,
                 "CargoPrices": self.cargo_prices,
@@ -811,6 +855,7 @@ class SettingRaw:
                 "MarkerGeneratorDesignVersion": self.marker_generator_design_version,
                 "MaxBoostDuration": self.max_boost_duration,
                 "MaxDailyDraws": self.max_daily_draws,
+                "MerchantShipSpriteId": self.merchant_ship_sprite_id,
                 "MinimumClientVersion": self.minimum_client_version,
                 "MinimumVersion": self.minimum_version,
                 "MissileDesignVersion": self.missile_design_version,
@@ -820,6 +865,7 @@ class SettingRaw:
                 "NewsDesignVersion": self.news_design_version,
                 "NewsSpriteId": self.news_sprite_id,
                 "NewsUpdateDate": self.news_update_date,
+                "NumberOfVoteOptions": self.number_of_vote_options,
                 "PlanetVersion": self.planet_version,
                 "PrestigeTopCharacterDesignId": self.prestige_top_character_design_id,
                 "ProBonoLimit": self.pro_bono_limit,
@@ -850,9 +896,11 @@ class SettingRaw:
                 "SettingId": self.setting_id,
                 "ShipDesignVersion": self.ship_design_version,
                 "SituationDesignVersion": self.situation_design_version,
+                "SituationTags": self.situation_tags,
                 "SpriteVersion": self.sprite_version,
                 "StarSystemLinkVersion": self.star_system_link_version,
                 "StarSystemVersion": self.star_system_version,
+                "SupportEmail": self.support_email,
                 "SupportTaskRanDate": self.support_task_ran_date,
                 "TaskDesignVersion": self.task_design_version,
                 "TaskRerollCost": self.task_reroll_cost,
@@ -863,6 +911,7 @@ class SettingRaw:
                 "TournamentSpriteId": self.tournament_sprite_id,
                 "TrainingDesignVersion": self.training_design_version,
                 "VipDesignVersion": self.vip_design_version,
+                "VotingDuration": self.voting_duration,
             }
 
         return self._dict

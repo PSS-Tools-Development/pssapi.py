@@ -26,6 +26,7 @@ class MissionDesignRaw:
         self._is_single_play: bool = _parse.pss_bool(mission_design_info.get("IsSinglePlay"))
         self._max_attempts_per_day: int = _parse.pss_int(mission_design_info.get("MaxAttemptsPerDay"))
         self._max_ship_level: int = _parse.pss_int(mission_design_info.get("MaxShipLevel"))
+        self._metadata: str = _parse.pss_str(mission_design_info.get("Metadata"))
         self._min_duration_since_last_event: int = _parse.pss_int(mission_design_info.get("MinDurationSinceLastEvent"))
         self._min_ship_level: int = _parse.pss_int(mission_design_info.get("MinShipLevel"))
         self._mission_description: str = _parse.pss_str(mission_design_info.get("MissionDescription"))
@@ -84,6 +85,10 @@ class MissionDesignRaw:
     @property
     def max_ship_level(self) -> int:
         return self._max_ship_level
+
+    @property
+    def metadata(self) -> str:
+        return self._metadata
 
     @property
     def min_duration_since_last_event(self) -> int:
@@ -154,6 +159,7 @@ class MissionDesignRaw:
             self.is_single_play,
             self.max_attempts_per_day,
             self.max_ship_level,
+            self.metadata,
             self.min_duration_since_last_event,
             self.min_ship_level,
             self.mission_description,
@@ -184,6 +190,7 @@ class MissionDesignRaw:
                 "IsSinglePlay": self.is_single_play,
                 "MaxAttemptsPerDay": self.max_attempts_per_day,
                 "MaxShipLevel": self.max_ship_level,
+                "Metadata": self.metadata,
                 "MinDurationSinceLastEvent": self.min_duration_since_last_event,
                 "MinShipLevel": self.min_ship_level,
                 "MissionDescription": self.mission_description,

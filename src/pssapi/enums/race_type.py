@@ -7,9 +7,9 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class RaceType(_StrEnum):
-    ASIAN = "Asian"
-    WHITE = "White"
-    BLACK = "Black"
-    ANIMAL = "Animal"
     ALIEN = "Alien"
+    ANIMAL = "Animal"
+    ASIAN = "Asian"
+    BLACK = "Black"
     ROBOT = "Robot"
+    WHITE = "White"

@@ -7,7 +7,8 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CategoryType(_StrEnum):
-    WEAPON = "Weapon"
     DEFENCE = "Defence"
-    SUPPORT = "Support"
     RESOURCES = "Resources"
+    SUPERWEAPON = "Superweapon"
+    SUPPORT = "Support"
+    WEAPON = "Weapon"
