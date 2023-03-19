@@ -21,7 +21,7 @@ class ShipRaw:
         self._brightness_value: float = _parse.pss_float(ship_info.get("BrightnessValue"))
         self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.get("Characters")] if ship_info.get("Characters") else []
         self._from_star_system_id: int = _parse.pss_int(ship_info.get("FromStarSystemId"))
-        self._hp: int = _parse.pss_int(ship_info.get("Hp"))
+        self._hp: float = _parse.pss_float(ship_info.get("Hp"))
         self._hue_value: float = _parse.pss_float(ship_info.get("HueValue"))
         self._immunity_date: _datetime = _parse.pss_datetime(ship_info.get("ImmunityDate"))
         self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.get("Items")] if ship_info.get("Items") else []
@@ -67,7 +67,7 @@ class ShipRaw:
         return self._from_star_system_id
 
     @property
-    def hp(self) -> int:
+    def hp(self) -> float:
         return self._hp
 
     @property
