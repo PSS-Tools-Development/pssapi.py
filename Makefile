@@ -1,3 +1,6 @@
+.PHONY: all
+all: format check test
+
 .PHONY: init
 init:
 	pip install --upgrade pip
