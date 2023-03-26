@@ -7,5 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ResearchState(_StrEnum):
+    NONE = "None"
     COMPLETED = "Completed"
     RESEARCHING = "Researching"

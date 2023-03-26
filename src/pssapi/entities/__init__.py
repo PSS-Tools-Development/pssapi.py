@@ -1,6 +1,5 @@
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
-from .add_starbux import AddStarbux
 from .alliance import Alliance
 from .animation import Animation
 from .asset import Asset
@@ -19,18 +18,21 @@ from .division_design import DivisionDesign
 from .draw_design import DrawDesign
 from .entity_base import EntityBase, EntityWithIdBase
 from .file import File
+from .friend import Friend
 from .get_catalog_quantity import GetCatalogQuantity
-from .get_current_resources import GetCurrentResources
+from .history import History
 from .item import Item
 from .item_design import ItemDesign
 from .item_design_action import ItemDesignAction
 from .league import League
+from .list_friends import ListFriends
 from .live_ops import LiveOps
 from .message import Message
 from .missile_design import MissileDesign
 from .mission_design import MissionDesign
 from .mission_event import MissionEvent
 from .news_design import NewsDesign
+from .planet import Planet
 from .prestige import Prestige
 from .promotion_design import PromotionDesign
 from .research import Research
@@ -55,6 +57,7 @@ from .star_system_marker_generator import StarSystemMarkerGenerator
 from .task_design import TaskDesign
 from .training_design import TrainingDesign
 from .user import User
+from .user_email_password_authorize import UserEmailPasswordAuthorize
 from .user_login import UserLogin
 from .user_marker import UserMarker
 from .user_season import UserSeason
@@ -65,7 +68,6 @@ __all__ = [
     "EntityBase",
     "AchievementDesign",
     "ActionType",
-    "AddStarbux",
     "Alliance",
     "Animation",
     "Asset",
@@ -83,18 +85,21 @@ __all__ = [
     "DivisionDesign",
     "DrawDesign",
     "File",
+    "Friend",
     "GetCatalogQuantity",
-    "GetCurrentResources",
+    "History",
     "Item",
     "ItemDesign",
     "ItemDesignAction",
     "League",
+    "ListFriends",
     "LiveOps",
     "Message",
     "MissileDesign",
     "MissionDesign",
     "MissionEvent",
     "NewsDesign",
+    "Planet",
     "Prestige",
     "PromotionDesign",
     "Research",
@@ -119,6 +124,7 @@ __all__ = [
     "TaskDesign",
     "TrainingDesign",
     "User",
+    "UserEmailPasswordAuthorize",
     "UserLogin",
     "UserMarker",
     "UserSeason",

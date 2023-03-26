@@ -4,22 +4,28 @@ from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
-from ..entities import AddStarbux as _AddStarbux
-from ..entities import Item as _Item
+from ..entities import Friend as _Friend
+from ..entities import ListFriends as _ListFriends
 from ..entities import User as _User
+from ..entities import UserEmailPasswordAuthorize as _UserEmailPasswordAuthorize
 from ..entities import UserLogin as _UserLogin
 from .raw import UserServiceRaw as _UserServiceRaw
 
 
 class UserService(_service_base.ServiceBase):
-    async def add_starbux(self, access_token: str, checksum: int, client_date_time: str, quantity: int) -> _Tuple[_AddStarbux, _AddStarbux]:
+    async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _Friend:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.add_starbux_2(production_server, access_token, checksum, client_date_time, quantity)
+        result = await _UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
         return result
 
-    async def collect_daily_reward(self, access_token: str, argument: int, daily_reward_status: str) -> _List[_Item]:
+    async def add_friend(self, access_token: str, friend_user_id: int) -> _Friend:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.collect_daily_reward_2(production_server, access_token, argument, daily_reward_status)
+        result = await _UserServiceRaw.add_friend_2(production_server, access_token, friend_user_id)
+        return result
+
+    async def decline_friend_request(self, access_token: str, friend_user_id: int) -> _Friend:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.decline_friend_request(production_server, access_token, friend_user_id)
         return result
 
     async def device_login(
@@ -63,9 +69,9 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def purchase_catalog(self, access_token: str, argument: int, checksum: int, client_date_time: str) -> _User:
+    async def list_friends(self, user_id: int, access_token: str) -> _ListFriends:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.purchase_catalog_2(production_server, access_token, argument, checksum, client_date_time)
+        result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
         return result
 
     async def search_users(self, search_string: str) -> _List[_User]:
@@ -114,4 +120,11 @@ class UserService(_service_base.ServiceBase):
             signal,
             ticket,
         )
+        return result
+
+    async def user_email_password_authorize(
+        self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str
+    ) -> _Tuple[_UserEmailPasswordAuthorize, _UserEmailPasswordAuthorize]:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.user_email_password_authorize_2(production_server, access_token, checksum, client_date_time, device_key, email, password)
         return result

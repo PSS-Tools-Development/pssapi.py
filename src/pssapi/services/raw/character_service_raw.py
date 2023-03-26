@@ -42,13 +42,13 @@ async def list_all_draw_designs(production_server: str, design_version: int, lan
     return result
 
 
-async def prestige_character_from(production_server: str, character_design_id: int, language_key: str, **params) -> _List[_Prestige]:
-    params = {"characterDesignId": character_design_id, "languageKey": language_key, **params}
+async def prestige_character_from(production_server: str, character_design_id: int, **params) -> _List[_Prestige]:
+    params = {"characterDesignId": character_design_id, **params}
     result = await _core.get_entities_from_path(((_Prestige, "Prestiges", True),), "Prestiges", production_server, PRESTIGE_CHARACTER_FROM_BASE_PATH, "GET", **params)
     return result
 
 
-async def prestige_character_to(production_server: str, character_design_id: int, language_key: str, **params) -> _List[_Prestige]:
-    params = {"characterDesignId": character_design_id, "languageKey": language_key, **params}
+async def prestige_character_to(production_server: str, character_design_id: int, **params) -> _List[_Prestige]:
+    params = {"characterDesignId": character_design_id, **params}
     result = await _core.get_entities_from_path(((_Prestige, "Prestiges", True),), "Prestiges", production_server, PRESTIGE_CHARACTER_TO_BASE_PATH, "GET", **params)
     return result

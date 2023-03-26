@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class AllianceMembership(_StrEnum):
+    NONE = "None"
     CANDIDATE = "Candidate"
     COMMANDER = "Commander"
     ENSIGN = "Ensign"

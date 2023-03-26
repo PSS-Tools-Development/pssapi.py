@@ -76,7 +76,7 @@ class UserRaw:
         self._last_challenge_design_id: int = _parse.pss_int(user_info.get("LastChallengeDesignId"))
         self._last_heart_beat_date: _datetime = _parse.pss_datetime(user_info.get("LastHeartBeatDate"))
         self._last_login_date: _datetime = _parse.pss_datetime(user_info.get("LastLoginDate"))
-        self._last_purchase_date: str = _parse.pss_str(user_info.get("LastPurchaseDate"))
+        self._last_purchase_date: _datetime = _parse.pss_datetime(user_info.get("LastPurchaseDate"))
         self._last_reward_action_date: _datetime = _parse.pss_datetime(user_info.get("LastRewardActionDate"))
         self._last_vip_claim_date: _datetime = _parse.pss_datetime(user_info.get("LastVipClaimDate"))
         self._league_type: str = _parse.pss_str(user_info.get("LeagueType"))
@@ -358,7 +358,7 @@ class UserRaw:
         return self._last_login_date
 
     @property
-    def last_purchase_date(self) -> str:
+    def last_purchase_date(self) -> _datetime:
         return self._last_purchase_date
 
     @property

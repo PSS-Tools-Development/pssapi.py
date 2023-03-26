@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class Rarity(_StrEnum):
+    NONE = "None"
     COMMON = "Common"
     ELITE = "Elite"
     EPIC = "Epic"

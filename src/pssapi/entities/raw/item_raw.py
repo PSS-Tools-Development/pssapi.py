@@ -15,7 +15,7 @@ class ItemRaw:
     def __init__(self, item_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._bonus_enhancement_type: str = _parse.pss_str(item_info.get("BonusEnhancementType"))
-        self._bonus_enhancement_value: float = _parse.pss_float(item_info.get("BonusEnhancementValue"))
+        self._bonus_enhancement_value: str = _parse.pss_str(item_info.get("BonusEnhancementValue"))
         self._is_new: bool = _parse.pss_bool(item_info.get("IsNew"))
         self._item_design_id: int = _parse.pss_int(item_info.get("ItemDesignId"))
         self._item_id: int = _parse.pss_int(item_info.get("ItemId"))
@@ -27,7 +27,7 @@ class ItemRaw:
         return self._bonus_enhancement_type
 
     @property
-    def bonus_enhancement_value(self) -> float:
+    def bonus_enhancement_value(self) -> str:
         return self._bonus_enhancement_value
 
     @property

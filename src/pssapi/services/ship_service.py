@@ -3,7 +3,6 @@ from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
-from ..entities import GetCurrentResources as _GetCurrentResources
 from ..entities import Ship as _Ship
 from ..entities import ShipDesign as _ShipDesign
 from ..entities import User as _User
@@ -11,9 +10,9 @@ from .raw import ShipServiceRaw as _ShipServiceRaw
 
 
 class ShipService(_service_base.CacheableServiceBase):
-    async def get_current_resources(self, access_token: str, user_id: int) -> _GetCurrentResources:
+    async def get_ship_by_user_id(self, access_token: str, client_date_time: str, user_id: int) -> _Ship:
         production_server = await self.get_production_server()
-        result = await _ShipServiceRaw.get_current_resources(production_server, access_token, user_id)
+        result = await _ShipServiceRaw.get_ship_by_user_id(production_server, access_token, client_date_time, user_id)
         return result
 
     async def inspect_ship(self, access_token: str, user_id: int) -> _Tuple[_Ship, _User]:

@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ConditionTypeCategory(_StrEnum):
+    NONE = "None"
     CURRENT = "Current"
     CURRENT_ROOM = "CurrentRoom"
     ENEMY_CHARACTER = "EnemyCharacter"

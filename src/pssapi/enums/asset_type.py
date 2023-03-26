@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class AssetType(_StrEnum):
+    NONE = "None"
     SOUND = "Sound"
     SPRITE = "Sprite"
     TEXTURE = "Texture"

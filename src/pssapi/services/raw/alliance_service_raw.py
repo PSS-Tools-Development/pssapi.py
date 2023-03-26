@@ -7,15 +7,18 @@ from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Alliance as _Alliance
+from ...entities import Character as _Character
 from ...entities import Message as _Message
 from ...entities import User as _User
 
 # ---------- Constants ----------
 
 GET_ALLIANCE_BASE_PATH: str = "AllianceService/GetAlliance"
-INTERACT_WITH_STARBASE_ROOM_BASE_PATH: str = "AllianceService/InteractWithStarbaseRoom"
+GET_USER_BASE_PATH: str = "AllianceService/GetUser"
 LIST_ALLIANCES_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH: str = "AllianceService/ListAlliancesByChampionshipScoreRanking"
 LIST_ALLIANCES_BY_RANKING_BASE_PATH: str = "AllianceService/ListAlliancesByRanking"
+LIST_ALLIANCES_WITH_DIVISION_BASE_PATH: str = "AllianceService/ListAlliancesWithDivision"
+LIST_CHARACTERS_GIVEN_IN_ALLIANCE_BASE_PATH: str = "AllianceService/ListCharactersGivenInAlliance"
 LIST_USERS_2_BASE_PATH: str = "AllianceService/ListUsers2"
 SEARCH_ALLIANCES_BASE_PATH: str = "AllianceService/SearchAlliances"
 
@@ -29,9 +32,9 @@ async def get_alliance(production_server: str, access_token: str, alliance_id: i
     return result
 
 
-async def interact_with_starbase_room(production_server: str, access_token: str, checksum: str, client_date_time: str, room_id: int, **params) -> _User:
-    params = {"accessToken": access_token, "checksum": checksum, "clientDateTime": client_date_time, "roomId": room_id, **params}
-    result = await _core.get_entities_from_path(((_User, "User", False),), "InteractWithStarbaseRoom", production_server, INTERACT_WITH_STARBASE_ROOM_BASE_PATH, "POST", **params)
+async def get_user(production_server: str, access_token: str, user_id: int, **params) -> _User:
+    params = {"accessToken": access_token, "userId": user_id, **params}
+    result = await _core.get_entities_from_path(((_User, "User", False),), "GetUser", production_server, GET_USER_BASE_PATH, "GET", **params)
     return result
 
 
@@ -44,6 +47,18 @@ async def list_alliances_by_championship_score_ranking(production_server: str, a
 async def list_alliances_by_ranking(production_server: str, skip: int, take: int, **params) -> _List[_Alliance]:
     params = {"skip": skip, "take": take, **params}
     result = await _core.get_entities_from_path(((_Alliance, "Alliances", True),), "Alliances", production_server, LIST_ALLIANCES_BY_RANKING_BASE_PATH, "GET", **params)
+    return result
+
+
+async def list_alliances_with_division(production_server: str, division_design_id: int, **params) -> _List[_Alliance]:
+    params = {"divisionDesignId": division_design_id, **params}
+    result = await _core.get_entities_from_path(((_Alliance, "Alliances", True),), "Alliances", production_server, LIST_ALLIANCES_WITH_DIVISION_BASE_PATH, "GET", **params)
+    return result
+
+
+async def list_characters_given_in_alliance(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _List[_Character]:
+    params = {"accessToken": access_token, "allianceId": alliance_id, "skip": skip, "take": take, **params}
+    result = await _core.get_entities_from_path(((_Character, "Characters", True),), "Characters", production_server, LIST_CHARACTERS_GIVEN_IN_ALLIANCE_BASE_PATH, "GET", **params)
     return result
 
 

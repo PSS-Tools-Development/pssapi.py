@@ -23,7 +23,7 @@ class AllianceRaw:
         self._alliance_sprite_id: int = _parse.pss_int(alliance_info.get("AllianceSpriteId"))
         self._championship_score: int = _parse.pss_int(alliance_info.get("ChampionshipScore"))
         self._channel_id: int = _parse.pss_int(alliance_info.get("ChannelId"))
-        self._credits: int = _parse.pss_int(alliance_info.get("Credits"))
+        self._credits: str = _parse.pss_str(alliance_info.get("Credits"))
         self._division_design_id: int = _parse.pss_int(alliance_info.get("DivisionDesignId"))
         self._enable_wars: bool = _parse.pss_bool(alliance_info.get("EnableWars"))
         self._immunity_date: _datetime = _parse.pss_datetime(alliance_info.get("ImmunityDate"))
@@ -68,7 +68,7 @@ class AllianceRaw:
         return self._channel_id
 
     @property
-    def credits(self) -> int:
+    def credits(self) -> str:
         return self._credits
 
     @property

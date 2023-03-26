@@ -1,4 +1,4 @@
-from enum import IntEnum as _IntEnum
+from enum import StrEnum as _StrEnum
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,6 +6,6 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class LeagueType(_IntEnum):
-    STANDARD = 0
-    LEGENDARY = 1
+class LeagueType(_StrEnum):
+    STANDARD = "0"
+    LEGENDARY = "1"

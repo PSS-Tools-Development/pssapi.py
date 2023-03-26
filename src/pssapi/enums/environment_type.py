@@ -7,5 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class EnvironmentType(_StrEnum):
+    NONE = "None"
     ASTEROID = "Asteroid"
     SOLAR = "Solar"

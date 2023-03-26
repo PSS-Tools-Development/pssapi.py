@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class EnhancementType(_StrEnum):
+    NONE = "None"
     ABILITY = "Ability"
     ATTACK = "Attack"
     BLOOD_THIRST_SKILL = "BloodThirstSkill"

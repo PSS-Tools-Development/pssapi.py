@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class TargetType(_StrEnum):
+    NONE = "None"
     CRAFT = "Craft"
     RANDOM_ROOM = "RandomRoom"
     SINGLE_ROOM = "SingleRoom"

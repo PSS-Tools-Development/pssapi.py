@@ -5,18 +5,20 @@ import pssapi.services.service_base as _service_base
 from ..entities import ActionType as _ActionType
 from ..entities import ConditionType as _ConditionType
 from ..entities import CraftDesign as _CraftDesign
-from ..entities import Item as _Item
 from ..entities import MissileDesign as _MissileDesign
-from ..entities import Room as _Room
 from ..entities import RoomDesign as _RoomDesign
-from ..entities import RoomDesignPurchase as _RoomDesignPurchase
 from .raw import RoomServiceRaw as _RoomServiceRaw
 
 
 class RoomService(_service_base.CacheableServiceBase):
-    async def collect_all_resources(self, access_token: str, collect_date: str, item_type: str) -> _List[_Item]:
+    async def get_missile_design(self, missile_design_id: int) -> _MissileDesign:
         production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.collect_all_resources(production_server, access_token, collect_date, item_type)
+        result = await _RoomServiceRaw.get_missile_design(production_server, self.language_key, missile_design_id)
+        return result
+
+    async def get_room_design(self, room_design_id: int) -> _RoomDesign:
+        production_server = await self.get_production_server()
+        result = await _RoomServiceRaw.get_room_design(production_server, self.language_key, room_design_id)
         return result
 
     @_service_base.cache_endpoint("ActionTypeVersion")
@@ -43,24 +45,8 @@ class RoomService(_service_base.CacheableServiceBase):
         result = await _RoomServiceRaw.list_missile_designs(production_server, design_version)
         return result
 
-    @_service_base.cache_endpoint("RoomDesignPurchaseVersion")
-    async def list_room_design_purchase(self, design_version: int = None) -> _List[_RoomDesignPurchase]:
-        production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.list_room_design_purchase(production_server, design_version)
-        return result
-
     @_service_base.cache_endpoint("RoomDesignVersion")
     async def list_room_designs(self, design_version: int = None) -> _List[_RoomDesign]:
         production_server = await self.get_production_server()
         result = await _RoomServiceRaw.list_room_designs_2(production_server, design_version, self.language_key)
-        return result
-
-    async def move_room(self, access_token: str, column: int, room_id: int, row: int) -> _Room:
-        production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.move_room(production_server, access_token, column, room_id, row)
-        return result
-
-    async def rebuild_ammo(self, access_token: str, ammo_category: str, checksum: str, client_date_time: str) -> _List[_Room]:
-        production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.rebuild_ammo_2(production_server, access_token, ammo_category, checksum, client_date_time)
         return result

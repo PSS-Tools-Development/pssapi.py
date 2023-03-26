@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DurationType(_StrEnum):
+    NONE = "None"
     MONTHLY = "Monthly"
     PERMANENT = "Permanent"
     YEARLY = "Yearly"

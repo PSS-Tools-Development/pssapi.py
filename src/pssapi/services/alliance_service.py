@@ -4,6 +4,7 @@ from typing import Tuple as _Tuple
 import pssapi.services.service_base as _service_base
 
 from ..entities import Alliance as _Alliance
+from ..entities import Character as _Character
 from ..entities import Message as _Message
 from ..entities import User as _User
 from .raw import AllianceServiceRaw as _AllianceServiceRaw
@@ -15,9 +16,9 @@ class AllianceService(_service_base.ServiceBase):
         result = await _AllianceServiceRaw.get_alliance(production_server, access_token, alliance_id)
         return result
 
-    async def interact_with_starbase_room(self, access_token: str, checksum: str, client_date_time: str, room_id: int) -> _User:
+    async def get_user(self, access_token: str, user_id: int) -> _User:
         production_server = await self.get_production_server()
-        result = await _AllianceServiceRaw.interact_with_starbase_room(production_server, access_token, checksum, client_date_time, room_id)
+        result = await _AllianceServiceRaw.get_user(production_server, access_token, user_id)
         return result
 
     async def list_alliances_by_championship_score_ranking(self, access_token: str, from_: int, to: int) -> _List[_Alliance]:
@@ -28,6 +29,16 @@ class AllianceService(_service_base.ServiceBase):
     async def list_alliances_by_ranking(self, skip: int, take: int) -> _List[_Alliance]:
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_by_ranking(production_server, skip, take)
+        return result
+
+    async def list_alliances_with_division(self, division_design_id: int) -> _List[_Alliance]:
+        production_server = await self.get_production_server()
+        result = await _AllianceServiceRaw.list_alliances_with_division(production_server, division_design_id)
+        return result
+
+    async def list_characters_given_in_alliance(self, access_token: str, alliance_id: int, skip: int, take: int) -> _List[_Character]:
+        production_server = await self.get_production_server()
+        result = await _AllianceServiceRaw.list_characters_given_in_alliance(production_server, access_token, alliance_id, skip, take)
         return result
 
     async def list_users(self, access_token: str, alliance_id: int, skip: int, take: int) -> _Tuple[_List[_Message], _List[_User]]:

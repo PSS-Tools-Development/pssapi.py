@@ -13,7 +13,7 @@ class PssApiClientBase:
     __PRODUCTION_SERVER_CACHE_DURATION: int = 60  # seconds
 
     def __init__(self, device_type: "_enums.DeviceType" = None, language_key: "_enums.LanguageKey" = None, production_server: str = None, use_cache: bool = True):
-        self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.DEVICE_TYPE_ANDROID
+        self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.ANDROID
         self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
         self.__production_server: str = production_server or None  # if it's none, it'll be checked and cached for any API call
         self.__use_cache: bool = use_cache or False
@@ -82,6 +82,10 @@ class PssApiClientBase:
     @property
     def galaxy_service(self) -> "_services.GalaxyService":
         return self.__galaxy_service
+
+    @property
+    def history_service(self) -> "_services.HistoryService":
+        return self.__history_service
 
     @property
     def item_service(self) -> "_services.ItemService":
@@ -193,6 +197,7 @@ class PssApiClientBase:
         self.__division_service: _services.DivisionService = _services.DivisionService(self)
         self.__file_service: _services.FileService = _services.FileService(self)
         self.__galaxy_service: _services.GalaxyService = _services.GalaxyService(self)
+        self.__history_service: _services.HistoryService = _services.HistoryService(self)
         self.__item_service: _services.ItemService = _services.ItemService(self)
         self.__ladder_service: _services.LadderService = _services.LadderService(self)
         self.__league_service: _services.LeagueService = _services.LeagueService(self)

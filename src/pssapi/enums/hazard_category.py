@@ -7,5 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class HazardCategory(_StrEnum):
+    NONE = "None"
     INITIAL = "Initial"
     INTERVAL = "Interval"

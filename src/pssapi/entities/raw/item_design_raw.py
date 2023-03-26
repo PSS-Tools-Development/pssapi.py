@@ -59,7 +59,7 @@ class ItemDesignRaw:
         self._rank: int = _parse.pss_int(item_design_info.get("Rank"))
         self._rarity: str = _parse.pss_str(item_design_info.get("Rarity"))
         self._reload_modifier: int = _parse.pss_int(item_design_info.get("ReloadModifier"))
-        self._reload_time: str = _parse.pss_str(item_design_info.get("ReloadTime"))
+        self._reload_time: int = _parse.pss_int(item_design_info.get("ReloadTime"))
         self._required_research_design_id: int = _parse.pss_int(item_design_info.get("RequiredResearchDesignId"))
         self._requirement_string: str = _parse.pss_str(item_design_info.get("RequirementString"))
         self._room_design_id: int = _parse.pss_int(item_design_info.get("RoomDesignId"))
@@ -250,7 +250,7 @@ class ItemDesignRaw:
         return self._reload_modifier
 
     @property
-    def reload_time(self) -> str:
+    def reload_time(self) -> int:
         return self._reload_time
 
     @property

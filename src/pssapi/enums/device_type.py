@@ -7,13 +7,13 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DeviceType(_StrEnum):
-    DEVICE_TYPE_ANDROID = "DeviceTypeAndroid"
-    DEVICE_TYPE_ANDROID_WEB = "DeviceTypeAndroidWeb"
-    DEVICE_TYPE_GENERIC = "DeviceTypeGeneric"
-    DEVICE_TYPE_I_PHONE = "DeviceTypeIPhone"
-    DEVICE_TYPE_MAC = "DeviceTypeMac"
-    DEVICE_TYPE_STEAM = "DeviceTypeSteam"
-    DEVICE_TYPE_WEB = "DeviceTypeWeb"
-    DEVICE_TYPE_WEB_TRAIL = "DeviceTypeWebTrail"
-    DEVICE_TYPE_WINDOWS = "DeviceTypeWindows"
+    ANDROID = "DeviceTypeAndroid"
+    ANDROID_WEB = "DeviceTypeAndroidWeb"
+    GENERIC = "DeviceTypeGeneric"
+    I_PHONE = "DeviceTypeIPhone"
+    MAC = "DeviceTypeMac"
+    STEAM = "DeviceTypeSteam"
+    WEB = "DeviceTypeWeb"
+    WEB_TRAIL = "DeviceTypeWebTrail"
+    WINDOWS = "DeviceTypeWindows"
     DEVICEI_OS_WIDGET = "DeviceiOSWidget"

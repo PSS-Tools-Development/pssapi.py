@@ -30,10 +30,10 @@ class CharacterService(_service_base.CacheableServiceBase):
 
     async def prestige_character_from(self, character_design_id: int) -> _List[_Prestige]:
         production_server = await self.get_production_server()
-        result = await _CharacterServiceRaw.prestige_character_from(production_server, character_design_id, self.language_key)
+        result = await _CharacterServiceRaw.prestige_character_from(production_server, character_design_id)
         return result
 
     async def prestige_character_to(self, character_design_id: int) -> _List[_Prestige]:
         production_server = await self.get_production_server()
-        result = await _CharacterServiceRaw.prestige_character_to(production_server, character_design_id, self.language_key)
+        result = await _CharacterServiceRaw.prestige_character_to(production_server, character_design_id)
         return result

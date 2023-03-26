@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ConditionTypeParameter(_StrEnum):
+    NONE = "None"
     BREACH_CHANCE = "BreachChance"
     CHARACTER_DAMAGE = "CharacterDamage"
     CLOAKING_DURATION = "CloakingDuration"

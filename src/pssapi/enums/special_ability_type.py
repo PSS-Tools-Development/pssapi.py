@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class SpecialAbilityType(_StrEnum):
+    NONE = "None"
     ADD_RELOAD = "AddReload"
     BLOODLUST = "Bloodlust"
     CLONE = "Clone"

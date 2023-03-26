@@ -41,12 +41,12 @@ class SettingRaw:
         self._checksum_type: str = _parse.pss_str(setting_info.get("ChecksumType"))
         self._client_translation_version: int = _parse.pss_int(setting_info.get("ClientTranslationVersion"))
         self._collection_design_version: int = _parse.pss_int(setting_info.get("CollectionDesignVersion"))
-        self._common_crew_id: str = _parse.pss_str(setting_info.get("CommonCrewId"))
+        self._common_crew_id: int = _parse.pss_int(setting_info.get("CommonCrewId"))
         self._condition_type_version: int = _parse.pss_int(setting_info.get("ConditionTypeVersion"))
         self._craft_design_version: int = _parse.pss_int(setting_info.get("CraftDesignVersion"))
         self._current_android_version: str = _parse.pss_str(setting_info.get("CurrentAndroidVersion"))
         self._daily_item_rewards: str = _parse.pss_str(setting_info.get("DailyItemRewards"))
-        self._daily_reward_argument: str = _parse.pss_str(setting_info.get("DailyRewardArgument"))
+        self._daily_reward_argument: int = _parse.pss_int(setting_info.get("DailyRewardArgument"))
         self._daily_reward_type: str = _parse.pss_str(setting_info.get("DailyRewardType"))
         self._division_design_version: int = _parse.pss_int(setting_info.get("DivisionDesignVersion"))
         self._draw_design_version: int = _parse.pss_int(setting_info.get("DrawDesignVersion"))
@@ -54,7 +54,7 @@ class SettingRaw:
         self._file_version: int = _parse.pss_int(setting_info.get("FileVersion"))
         self._flags: int = _parse.pss_int(setting_info.get("Flags"))
         self._grace_period: int = _parse.pss_int(setting_info.get("GracePeriod"))
-        self._hero_crew_id: str = _parse.pss_str(setting_info.get("HeroCrewId"))
+        self._hero_crew_id: int = _parse.pss_int(setting_info.get("HeroCrewId"))
         self._is_debug: bool = _parse.pss_bool(setting_info.get("IsDebug"))
         self._item_design_action_version: int = _parse.pss_int(setting_info.get("ItemDesignActionVersion"))
         self._item_design_version: int = _parse.pss_int(setting_info.get("ItemDesignVersion"))
@@ -69,13 +69,13 @@ class SettingRaw:
         self._legendary_rules_text: str = _parse.pss_str(setting_info.get("LegendaryRulesText"))
         self._legendary_trophy_in: int = _parse.pss_int(setting_info.get("LegendaryTrophyIn"))
         self._legendary_trophy_out: int = _parse.pss_int(setting_info.get("LegendaryTrophyOut"))
-        self._limited_catalog_argument: str = _parse.pss_str(setting_info.get("LimitedCatalogArgument"))
-        self._limited_catalog_currency_amount: str = _parse.pss_str(setting_info.get("LimitedCatalogCurrencyAmount"))
+        self._limited_catalog_argument: int = _parse.pss_int(setting_info.get("LimitedCatalogArgument"))
+        self._limited_catalog_currency_amount: int = _parse.pss_int(setting_info.get("LimitedCatalogCurrencyAmount"))
         self._limited_catalog_currency_type: str = _parse.pss_str(setting_info.get("LimitedCatalogCurrencyType"))
-        self._limited_catalog_expiry_date: str = _parse.pss_str(setting_info.get("LimitedCatalogExpiryDate"))
-        self._limited_catalog_max_total: str = _parse.pss_str(setting_info.get("LimitedCatalogMaxTotal"))
-        self._limited_catalog_quantity: str = _parse.pss_str(setting_info.get("LimitedCatalogQuantity"))
-        self._limited_catalog_restock_quantity: str = _parse.pss_str(setting_info.get("LimitedCatalogRestockQuantity"))
+        self._limited_catalog_expiry_date: _datetime = _parse.pss_datetime(setting_info.get("LimitedCatalogExpiryDate"))
+        self._limited_catalog_max_total: int = _parse.pss_int(setting_info.get("LimitedCatalogMaxTotal"))
+        self._limited_catalog_quantity: int = _parse.pss_int(setting_info.get("LimitedCatalogQuantity"))
+        self._limited_catalog_restock_quantity: int = _parse.pss_int(setting_info.get("LimitedCatalogRestockQuantity"))
         self._limited_catalog_type: str = _parse.pss_str(setting_info.get("LimitedCatalogType"))
         self._loading_ship_sprite_id: int = _parse.pss_int(setting_info.get("LoadingShipSpriteId"))
         self._loading_subtitle_sprite_id: int = _parse.pss_int(setting_info.get("LoadingSubtitleSpriteId"))
@@ -93,7 +93,7 @@ class SettingRaw:
         self._new_user_count: int = _parse.pss_int(setting_info.get("NewUserCount"))
         self._news: str = _parse.pss_str(setting_info.get("News"))
         self._news_design_version: int = _parse.pss_int(setting_info.get("NewsDesignVersion"))
-        self._news_sprite_id: str = _parse.pss_str(setting_info.get("NewsSpriteId"))
+        self._news_sprite_id: int = _parse.pss_int(setting_info.get("NewsSpriteId"))
         self._news_update_date: _datetime = _parse.pss_datetime(setting_info.get("NewsUpdateDate"))
         self._number_of_vote_options: int = _parse.pss_int(setting_info.get("NumberOfVoteOptions"))
         self._planet_version: int = _parse.pss_int(setting_info.get("PlanetVersion"))
@@ -113,12 +113,12 @@ class SettingRaw:
         self._room_design_sprite_version: int = _parse.pss_int(setting_info.get("RoomDesignSpriteVersion"))
         self._room_design_version: int = _parse.pss_int(setting_info.get("RoomDesignVersion"))
         self._rush_tier_cost: int = _parse.pss_int(setting_info.get("RushTierCost"))
-        self._sale_argument: str = _parse.pss_str(setting_info.get("SaleArgument"))
-        self._sale_end_date: str = _parse.pss_str(setting_info.get("SaleEndDate"))
-        self._sale_item_mask: str = _parse.pss_str(setting_info.get("SaleItemMask"))
-        self._sale_once_only: str = _parse.pss_str(setting_info.get("SaleOnceOnly"))
-        self._sale_quantity: str = _parse.pss_str(setting_info.get("SaleQuantity"))
-        self._sale_start_date: str = _parse.pss_str(setting_info.get("SaleStartDate"))
+        self._sale_argument: int = _parse.pss_int(setting_info.get("SaleArgument"))
+        self._sale_end_date: _datetime = _parse.pss_datetime(setting_info.get("SaleEndDate"))
+        self._sale_item_mask: int = _parse.pss_int(setting_info.get("SaleItemMask"))
+        self._sale_once_only: bool = _parse.pss_bool(setting_info.get("SaleOnceOnly"))
+        self._sale_quantity: int = _parse.pss_int(setting_info.get("SaleQuantity"))
+        self._sale_start_date: _datetime = _parse.pss_datetime(setting_info.get("SaleStartDate"))
         self._sale_title: str = _parse.pss_str(setting_info.get("SaleTitle"))
         self._sale_type: str = _parse.pss_str(setting_info.get("SaleType"))
         self._season_design_version: int = _parse.pss_int(setting_info.get("SeasonDesignVersion"))
@@ -248,7 +248,7 @@ class SettingRaw:
         return self._collection_design_version
 
     @property
-    def common_crew_id(self) -> str:
+    def common_crew_id(self) -> int:
         return self._common_crew_id
 
     @property
@@ -268,7 +268,7 @@ class SettingRaw:
         return self._daily_item_rewards
 
     @property
-    def daily_reward_argument(self) -> str:
+    def daily_reward_argument(self) -> int:
         return self._daily_reward_argument
 
     @property
@@ -300,7 +300,7 @@ class SettingRaw:
         return self._grace_period
 
     @property
-    def hero_crew_id(self) -> str:
+    def hero_crew_id(self) -> int:
         return self._hero_crew_id
 
     @property
@@ -360,11 +360,11 @@ class SettingRaw:
         return self._legendary_trophy_out
 
     @property
-    def limited_catalog_argument(self) -> str:
+    def limited_catalog_argument(self) -> int:
         return self._limited_catalog_argument
 
     @property
-    def limited_catalog_currency_amount(self) -> str:
+    def limited_catalog_currency_amount(self) -> int:
         return self._limited_catalog_currency_amount
 
     @property
@@ -372,19 +372,19 @@ class SettingRaw:
         return self._limited_catalog_currency_type
 
     @property
-    def limited_catalog_expiry_date(self) -> str:
+    def limited_catalog_expiry_date(self) -> _datetime:
         return self._limited_catalog_expiry_date
 
     @property
-    def limited_catalog_max_total(self) -> str:
+    def limited_catalog_max_total(self) -> int:
         return self._limited_catalog_max_total
 
     @property
-    def limited_catalog_quantity(self) -> str:
+    def limited_catalog_quantity(self) -> int:
         return self._limited_catalog_quantity
 
     @property
-    def limited_catalog_restock_quantity(self) -> str:
+    def limited_catalog_restock_quantity(self) -> int:
         return self._limited_catalog_restock_quantity
 
     @property
@@ -456,7 +456,7 @@ class SettingRaw:
         return self._news_design_version
 
     @property
-    def news_sprite_id(self) -> str:
+    def news_sprite_id(self) -> int:
         return self._news_sprite_id
 
     @property
@@ -536,27 +536,27 @@ class SettingRaw:
         return self._rush_tier_cost
 
     @property
-    def sale_argument(self) -> str:
+    def sale_argument(self) -> int:
         return self._sale_argument
 
     @property
-    def sale_end_date(self) -> str:
+    def sale_end_date(self) -> _datetime:
         return self._sale_end_date
 
     @property
-    def sale_item_mask(self) -> str:
+    def sale_item_mask(self) -> int:
         return self._sale_item_mask
 
     @property
-    def sale_once_only(self) -> str:
+    def sale_once_only(self) -> bool:
         return self._sale_once_only
 
     @property
-    def sale_quantity(self) -> str:
+    def sale_quantity(self) -> int:
         return self._sale_quantity
 
     @property
-    def sale_start_date(self) -> str:
+    def sale_start_date(self) -> _datetime:
         return self._sale_start_date
 
     @property

@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class GuideType(_StrEnum):
+    NONE = "None"
     BUY_CHARACTER = "BuyCharacter"
     BUY_ROOM = "BuyRoom"
     BUY_SHIP = "BuyShip"

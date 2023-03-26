@@ -2,6 +2,7 @@
     This file has been generated automatically
 """
 
+from datetime import datetime as _datetime
 from typing import Any as _Any
 from typing import Dict as _Dict
 from typing import List as _List
@@ -19,10 +20,10 @@ class RoomRaw:
         self._dict: _Dict[str, _Any] = {}
         self._capacity_used: int = _parse.pss_int(room_info.get("CapacityUsed"))
         self._column: int = _parse.pss_int(room_info.get("Column"))
-        self._construction_start_date: str = _parse.pss_str(room_info.get("ConstructionStartDate"))
+        self._construction_start_date: _datetime = _parse.pss_datetime(room_info.get("ConstructionStartDate"))
         self._current_skin_key: int = _parse.pss_int(room_info.get("CurrentSkinKey"))
         self._item_ids: str = _parse.pss_str(room_info.get("ItemIds"))
-        self._manufacture_start_date: str = _parse.pss_str(room_info.get("ManufactureStartDate"))
+        self._manufacture_start_date: _datetime = _parse.pss_datetime(room_info.get("ManufactureStartDate"))
         self._manufacture_string: str = _parse.pss_str(room_info.get("ManufactureString"))
         self._manufactured: int = _parse.pss_int(room_info.get("Manufactured"))
         self._power_generated: int = _parse.pss_int(room_info.get("PowerGenerated"))
@@ -47,7 +48,7 @@ class RoomRaw:
         return self._column
 
     @property
-    def construction_start_date(self) -> str:
+    def construction_start_date(self) -> _datetime:
         return self._construction_start_date
 
     @property
@@ -59,7 +60,7 @@ class RoomRaw:
         return self._item_ids
 
     @property
-    def manufacture_start_date(self) -> str:
+    def manufacture_start_date(self) -> _datetime:
         return self._manufacture_start_date
 
     @property

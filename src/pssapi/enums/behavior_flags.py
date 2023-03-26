@@ -1,4 +1,4 @@
-from enum import IntEnum as _IntEnum
+from enum import IntFlag as _IntFlag
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,5 +6,5 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class BehaviorFlags(_IntEnum):
-    pass
+class BehaviorFlags(_IntFlag):
+    NONE = 0

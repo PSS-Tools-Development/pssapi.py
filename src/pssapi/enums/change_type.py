@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ChangeType(_StrEnum):
+    NONE = "None"
     ADD_CREW = "AddCrew"
     ADD_EXP = "AddEXP"
     ADD_LEAGUE_BONUS_GAS = "AddLeagueBonusGas"

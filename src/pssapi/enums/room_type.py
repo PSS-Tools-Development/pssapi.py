@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class RoomType(_StrEnum):
+    NONE = "None"
     ANDROID = "Android"
     ANTI_CRAFT = "AntiCraft"
     BEDROOM = "Bedroom"

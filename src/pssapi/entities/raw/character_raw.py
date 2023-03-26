@@ -5,6 +5,9 @@
 from datetime import datetime as _datetime
 from typing import Any as _Any
 from typing import Dict as _Dict
+from typing import List as _List
+
+import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
@@ -18,18 +21,23 @@ class CharacterRaw:
         self._ability_improvement: int = _parse.pss_int(character_info.get("AbilityImprovement"))
         self._attack_improvement: int = _parse.pss_int(character_info.get("AttackImprovement"))
         self._available_date: _datetime = _parse.pss_datetime(character_info.get("AvailableDate"))
+        self._character_actions: _List[_entities.CharacterAction] = (
+            [_entities.CharacterAction(child_info) for child_info in character_info.get("CharacterActions")] if character_info.get("CharacterActions") else []
+        )
         self._character_design_id: int = _parse.pss_int(character_info.get("CharacterDesignId"))
         self._character_id: int = _parse.pss_int(character_info.get("CharacterId"))
         self._character_name: str = _parse.pss_str(character_info.get("CharacterName"))
-        self._deployment_date: str = _parse.pss_str(character_info.get("DeploymentDate"))
+        self._deployment_date: _datetime = _parse.pss_datetime(character_info.get("DeploymentDate"))
         self._engine_improvement: int = _parse.pss_int(character_info.get("EngineImprovement"))
         self._fatigue: int = _parse.pss_int(character_info.get("Fatigue"))
         self._flags: int = _parse.pss_int(character_info.get("Flags"))
         self._hp_improvement: int = _parse.pss_int(character_info.get("HpImprovement"))
         self._is_new: bool = _parse.pss_bool(character_info.get("IsNew"))
         self._item_ids: str = _parse.pss_str(character_info.get("ItemIds"))
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in character_info.get("Items")] if character_info.get("Items") else []
         self._level: int = _parse.pss_int(character_info.get("Level"))
         self._owner_ship_id: int = _parse.pss_int(character_info.get("OwnerShipId"))
+        self._owner_username: str = _parse.pss_str(character_info.get("OwnerUsername"))
         self._pilot_improvement: int = _parse.pss_int(character_info.get("PilotImprovement"))
         self._repair_improvement: int = _parse.pss_int(character_info.get("RepairImprovement"))
         self._room_id: int = _parse.pss_int(character_info.get("RoomId"))
@@ -39,7 +47,7 @@ class CharacterRaw:
         self._stamina_improvement: int = _parse.pss_int(character_info.get("StaminaImprovement"))
         self._training_data: str = _parse.pss_str(character_info.get("TrainingData"))
         self._training_design_id: int = _parse.pss_int(character_info.get("TrainingDesignId"))
-        self._training_end_date: str = _parse.pss_str(character_info.get("TrainingEndDate"))
+        self._training_end_date: _datetime = _parse.pss_datetime(character_info.get("TrainingEndDate"))
         self._weapon_improvement: int = _parse.pss_int(character_info.get("WeaponImprovement"))
         self._xp: int = _parse.pss_int(character_info.get("Xp"))
 
@@ -56,6 +64,10 @@ class CharacterRaw:
         return self._available_date
 
     @property
+    def character_actions(self) -> _List["_entities.CharacterAction"]:
+        return self._character_actions
+
+    @property
     def character_design_id(self) -> int:
         return self._character_design_id
 
@@ -68,7 +80,7 @@ class CharacterRaw:
         return self._character_name
 
     @property
-    def deployment_date(self) -> str:
+    def deployment_date(self) -> _datetime:
         return self._deployment_date
 
     @property
@@ -96,12 +108,20 @@ class CharacterRaw:
         return self._item_ids
 
     @property
+    def items(self) -> _List["_entities.Item"]:
+        return self._items
+
+    @property
     def level(self) -> int:
         return self._level
 
     @property
     def owner_ship_id(self) -> int:
         return self._owner_ship_id
+
+    @property
+    def owner_username(self) -> str:
+        return self._owner_username
 
     @property
     def pilot_improvement(self) -> int:
@@ -140,7 +160,7 @@ class CharacterRaw:
         return self._training_design_id
 
     @property
-    def training_end_date(self) -> str:
+    def training_end_date(self) -> _datetime:
         return self._training_end_date
 
     @property
@@ -156,6 +176,7 @@ class CharacterRaw:
             self.ability_improvement,
             self.attack_improvement,
             self.available_date,
+            tuple(child._key() for child in self.character_actions),
             self.character_design_id,
             self.character_id,
             self.character_name,
@@ -166,8 +187,10 @@ class CharacterRaw:
             self.hp_improvement,
             self.is_new,
             self.item_ids,
+            tuple(child._key() for child in self.items),
             self.level,
             self.owner_ship_id,
+            self.owner_username,
             self.pilot_improvement,
             self.repair_improvement,
             self.room_id,
@@ -188,6 +211,7 @@ class CharacterRaw:
                 "AbilityImprovement": self.ability_improvement,
                 "AttackImprovement": self.attack_improvement,
                 "AvailableDate": self.available_date,
+                "CharacterActions": [dict(child) for child in self.character_actions],
                 "CharacterDesignId": self.character_design_id,
                 "CharacterId": self.character_id,
                 "CharacterName": self.character_name,
@@ -198,8 +222,10 @@ class CharacterRaw:
                 "HpImprovement": self.hp_improvement,
                 "IsNew": self.is_new,
                 "ItemIds": self.item_ids,
+                "Items": [dict(child) for child in self.items],
                 "Level": self.level,
                 "OwnerShipId": self.owner_ship_id,
+                "OwnerUsername": self.owner_username,
                 "PilotImprovement": self.pilot_improvement,
                 "RepairImprovement": self.repair_improvement,
                 "RoomId": self.room_id,

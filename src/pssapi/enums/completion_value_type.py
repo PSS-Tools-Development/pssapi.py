@@ -7,5 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CompletionValueType(_StrEnum):
+    NONE = "None"
     HP = "Hp"
     WINS = "Wins"

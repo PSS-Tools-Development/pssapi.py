@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class MissionDesignType(_StrEnum):
+    NONE = "None"
     EXPLORATION = "Exploration"
     HYBRID = "Hybrid"
     INSTANT = "Instant"

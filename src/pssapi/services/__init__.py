@@ -9,6 +9,7 @@ from .design_service import DesignService
 from .division_service import DivisionService
 from .file_service import FileService
 from .galaxy_service import GalaxyService
+from .history_service import HistoryService
 from .item_service import ItemService
 from .ladder_service import LadderService
 from .league_service import LeagueService
@@ -41,6 +42,7 @@ __all__ = [
     "DivisionService",
     "FileService",
     "GalaxyService",
+    "HistoryService",
     "ItemService",
     "LadderService",
     "LeagueService",

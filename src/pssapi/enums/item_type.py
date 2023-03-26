@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class ItemType(_StrEnum):
+    NONE = "None"
     ANDROID = "Android"
     CAPACITY = "Capacity"
     CRAFT = "Craft"

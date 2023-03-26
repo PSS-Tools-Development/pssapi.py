@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class SpecialRuleType(_StrEnum):
+    NONE = "None"
     COLLECTION_REPLACEMENT = "CollectionReplacement"
     CREW_LEVEL = "CrewLevel"
     CREW_REPLACEMENT = "CrewReplacement"

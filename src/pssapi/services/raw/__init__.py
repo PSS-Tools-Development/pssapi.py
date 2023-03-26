@@ -9,6 +9,7 @@ from . import design_service_raw as DesignServiceRaw
 from . import division_service_raw as DivisionServiceRaw
 from . import file_service_raw as FileServiceRaw
 from . import galaxy_service_raw as GalaxyServiceRaw
+from . import history_service_raw as HistoryServiceRaw
 from . import item_service_raw as ItemServiceRaw
 from . import ladder_service_raw as LadderServiceRaw
 from . import league_service_raw as LeagueServiceRaw
@@ -41,6 +42,7 @@ __all__ = [
     "DivisionServiceRaw",
     "FileServiceRaw",
     "GalaxyServiceRaw",
+    "HistoryServiceRaw",
     "ItemServiceRaw",
     "LadderServiceRaw",
     "LeagueServiceRaw",

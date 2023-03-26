@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class PromotionType(_StrEnum):
+    NONE = "None"
     CODE = "Code"
     DAILY_DEAL_OFFER = "DailyDealOffer"
     NON_PREMIUM_DAILY_DEAL_OFFER = "NonPremiumDailyDealOffer"

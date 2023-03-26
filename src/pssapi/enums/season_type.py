@@ -1,4 +1,4 @@
-from enum import IntEnum as _IntEnum
+from enum import StrEnum as _StrEnum
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,5 +6,5 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class SeasonType(_IntEnum):
-    pass
+class SeasonType(_StrEnum):
+    NONE = "None"

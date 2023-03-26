@@ -3,23 +3,17 @@ from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
-from ..entities import Item as _Item
+from ..entities import Planet as _Planet
 from ..entities import Ship as _Ship
 from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
 from ..entities import StarSystemMarker as _StarSystemMarker
 from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
-from ..entities import User as _User
 from ..entities import UserMarker as _UserMarker
 from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
 
 
 class GalaxyService(_service_base.CacheableServiceBase):
-    async def collect_marker(self, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int) -> _Tuple[_Item, _StarSystemMarker, _User]:
-        production_server = await self.get_production_server()
-        result = await _GalaxyServiceRaw.collect_marker_2(production_server, access_token, checksum, client_date_time, star_system_marker_id)
-        return result
-
     async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _Ship:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.go_to(production_server, access_token, checksum, client_date_time, star_system_id)
@@ -29,6 +23,12 @@ class GalaxyService(_service_base.CacheableServiceBase):
     async def list_marker_generator_designs(self, design_version: int = None) -> _List[_StarSystemMarkerGenerator]:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_marker_generator_designs(production_server, design_version, self.language_key)
+        return result
+
+    @_service_base.cache_endpoint("PlanetVersion")
+    async def list_planets(self, design_version: int = None) -> _List[_Planet]:
+        production_server = await self.get_production_server()
+        result = await _GalaxyServiceRaw.list_planets(production_server, design_version)
         return result
 
     @_service_base.cache_endpoint("StarSystemLinkVersion")
@@ -51,9 +51,4 @@ class GalaxyService(_service_base.CacheableServiceBase):
     async def list_star_systems(self, design_version: int = None) -> _List[_StarSystem]:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_systems(production_server, design_version, self.language_key)
-        return result
-
-    async def update_marker_movement(self, access_token: str, checksum: str, client_date_time: str, star_system_marker_id: int) -> _Tuple[_StarSystemMarker, _UserMarker]:
-        production_server = await self.get_production_server()
-        result = await _GalaxyServiceRaw.update_marker_movement(production_server, access_token, checksum, client_date_time, star_system_marker_id)
         return result

@@ -1,4 +1,4 @@
-from enum import IntEnum as _IntEnum
+from enum import StrEnum as _StrEnum
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,11 +6,12 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class FileDownloadCategory(_IntEnum):
-    NEWGAME = 1
-    MAINSCENE = 2
-    BATTLESCENE = 3
-    CHARACTERSCENE = 4
-    SCRATCHYSCENE = 5
-    WARSCENE = 6
-    BATTLEPASS = 7
+class FileDownloadCategory(_StrEnum):
+    NONE = "0"
+    NEW_GAME = "1"
+    MAIN_SCENE = "2"
+    BATTLE_SCENE = "3"
+    CHARACTER_SCENE = "4"
+    SCRATCHY_SCENE = "5"
+    WAR_SCENE = "6"
+    BATTLE_PASS = "7"

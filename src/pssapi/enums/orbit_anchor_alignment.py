@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class OrbitAnchorAlignment(_StrEnum):
+    NONE = "None"
     BOTTOM = "Bottom"
     BOTTOM_LEFT = "BottomLeft"
     BOTTOM_RIGHT = "BottomRight"
