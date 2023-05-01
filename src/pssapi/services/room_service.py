@@ -7,6 +7,7 @@ from ..entities import ConditionType as _ConditionType
 from ..entities import CraftDesign as _CraftDesign
 from ..entities import MissileDesign as _MissileDesign
 from ..entities import RoomDesign as _RoomDesign
+from ..entities import RoomDesignPurchase as _RoomDesignPurchase
 from .raw import RoomServiceRaw as _RoomServiceRaw
 
 
@@ -49,4 +50,10 @@ class RoomService(_service_base.CacheableServiceBase):
     async def list_room_designs(self, design_version: int = None) -> _List[_RoomDesign]:
         production_server = await self.get_production_server()
         result = await _RoomServiceRaw.list_room_designs_2(production_server, design_version, self.language_key)
+        return result
+
+    @_service_base.cache_endpoint("RoomDesignPurchaseVersion")
+    async def list_room_design_purchase(self, design_version: int = None) -> _List[_RoomDesignPurchase]:
+        production_server = await self.get_production_server()
+        result = await _RoomServiceRaw.list_room_design_purchase(production_server, design_version)
         return result

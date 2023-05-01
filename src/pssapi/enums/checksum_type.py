@@ -1,4 +1,4 @@
-from enum import StrEnum as _StrEnum
+from enum import IntEnum as _IntEnum
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,6 +6,6 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class ChecksumType(_StrEnum):
-    BUILD_KEY_CHECKSUM = "0"
-    HARDCODED_CHECKSUM = "1"
+class ChecksumType(_IntEnum):
+    BUILD_KEY_CHECKSUM = 0
+    HARDCODED_CHECKSUM = 1
