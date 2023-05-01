@@ -1,6 +1,5 @@
 from datetime import datetime as _datetime
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
@@ -74,6 +73,10 @@ class UserService(_service_base.ServiceBase):
         result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
         return result
 
+    async def remove_friend(self, access_token: str, friend_user_id: int) -> None:
+        production_server = await self.get_production_server()
+        await _UserServiceRaw.remove_friend(production_server, access_token, friend_user_id)
+
     async def search_users(self, search_string: str) -> _List[_User]:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.search_users(production_server, search_string)
@@ -122,9 +125,7 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def user_email_password_authorize(
-        self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str
-    ) -> _Tuple[_UserEmailPasswordAuthorize, _UserEmailPasswordAuthorize]:
+    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str) -> _UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.user_email_password_authorize_2(production_server, access_token, checksum, client_date_time, device_key, email, password)
         return result
