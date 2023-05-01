@@ -1,7 +1,10 @@
 from datetime import datetime as _datetime
+from enum import IntEnum as _IntEnum
+from enum import IntFlag as _IntFlag
 from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
+from typing import Union as _Union
 
 import pytz as _pytz
 
@@ -26,13 +29,27 @@ def pss_datetime(value: str) -> _Optional[_datetime]:
     return result
 
 
-def pss_enum(value: str, enum: _Type[_StrEnum]) -> _Optional[_StrEnum]:
+def pss_int_enum(value: str, enum: _Type[_IntEnum]) -> _Optional[_IntEnum]:
+    value = pss_int(value)
     if not value:
         return None
-    for enum_value in enum:
-        if value == enum_value.value:
-            return enum_value
-    raise TypeError(f"{enum} does not have a member with value: {value}")
+    return enum(value)
+
+
+def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
+    int_value = pss_int(value)
+    if int_value is None:
+        return None
+    max_value = int(enum(-1))
+    if int_value < -max_value or int_value > max_value:
+        raise ValueError(f'{value} is not a valid member of {enum}!')
+    return enum(int_value)
+
+
+def pss_str_enum(value: str, enum: _Type[_StrEnum]) -> _Optional[_StrEnum]:
+    if not value:
+        return None
+    return enum(value)
 
 
 def pss_float(value: str, default: float = None) -> _Optional[float]:
@@ -48,6 +65,6 @@ def pss_int(value: str, default: int = None) -> _Optional[int]:
 
 
 def pss_str(value: str, default: str = None) -> _Optional[str]:
-    if not value or value == "0" or value.lower() == "none":
+    if not value or value == '0' or value.lower() == 'none':
         return default
     return str(value)
