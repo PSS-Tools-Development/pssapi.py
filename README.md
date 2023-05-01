@@ -18,3 +18,13 @@ make format
 make check
 make test
 ```
+
+## Showcase
+
+```bash
+# install locally pssapi.py
+pip install -e .
+
+# run the showcase with examples
+python showcase.py
+```
