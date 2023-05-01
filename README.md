@@ -6,8 +6,15 @@
 make init
 ```
 
-## Test
+## Format code
 
 ```bash
+make format
+```
+
+## Check & Test
+
+```bash
+make check
 make test
 ```
