@@ -4,7 +4,6 @@ from enum import IntFlag as _IntFlag
 from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
-from typing import Union as _Union
 
 import pytz as _pytz
 
