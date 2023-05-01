@@ -4,7 +4,6 @@ from enum import IntFlag as _IntFlag
 from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
-from typing import Union as _Union
 
 import pytz as _pytz
 
@@ -42,7 +41,7 @@ def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
         return None
     max_value = int(enum(-1))
     if int_value < -max_value or int_value > max_value:
-        raise ValueError(f'{value} is not a valid member of {enum}!')
+        raise ValueError(f"{value} is not a valid member of {enum}!")
     return enum(int_value)
 
 
@@ -65,6 +64,6 @@ def pss_int(value: str, default: int = None) -> _Optional[int]:
 
 
 def pss_str(value: str, default: str = None) -> _Optional[str]:
-    if not value or value == '0' or value.lower() == 'none':
+    if not value or value == "0" or value.lower() == "none":
         return default
     return str(value)
