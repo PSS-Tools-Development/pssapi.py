@@ -1,6 +1,6 @@
 [project]
 name = "pssapi"
-version = "0.1.0"
+dynamic = ["version"]
 authors = [
     { name = "The worst.", email = "theworstpss@gmail.com" },
     { name = "Solevis" },
