@@ -1,42 +1,41 @@
 # Wrapper for the Pixel Starships API
 
+This library allows you to request the Pixel Starships API through a Python Wrapper.
+
+## Supported Platforms
+
+- Python: 3.11
+
 ## Usage
 
 ### Installation
 
+You can install this module using your package management method. For example:
+
 ```bash
-pip install -e git+ssh://git@github.com/PSS-Tools-Development/pssapi.py.git@v0.1.0#egg=pssapi
+pip install pssapi
 ```
 
-### Example
+### Get started
 
 ```python
 import asyncio
 
 from pssapi import PssApiClient
-from pssapi.entities import ShipDesign
 
 
-async def main() -> None:
+async def main():
     client = PssApiClient()
-    print(f"Production server: {client.production_server or (await client.get_production_server())}")
 
     item_designs = await client.item_service.list_item_designs()
     print(f"Found {len(item_designs)} item designs.")
     print(f"First item: {item_designs[0].item_design_name}")
 
 
-def run_main_synchronous() -> None:
+if __name__ == "__main__":
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        pass
-
-
-if __name__ == "__main__":
-    run_main_synchronous()
+    asyncio.run(main())
 ```
 
 ## Contributing
