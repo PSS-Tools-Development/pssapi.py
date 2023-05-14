@@ -6,18 +6,17 @@ from typing import List as _List
 
 import pssapi.services.service_base as _service_base
 
-from ..entities import Friend as _Friend
-from ..entities import ListFriends as _ListFriends
-from ..entities import User as _User
-from ..entities import UserEmailPasswordAuthorize as _UserEmailPasswordAuthorize
-from ..entities import UserLogin as _UserLogin
+from .. import entities as _entities
+from .. import enums as _enums
 from .raw import UserServiceRaw as _UserServiceRaw
+from .. import utils as _utils
 
 
 
 class __UserServiceUtils():
-    def create_device_checksum(device_key: str, device_type: str, client_datetime: str, checksum_key: str) -> str:
-        result = _hashlib.md5(f'{device_key}{client_datetime}{device_type}{checksum_key}savysoda'.encode('utf-8')).hexdigest()
+    def create_device_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime, checksum_key: str) -> str:
+        timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
+        result = _hashlib.md5(f'{device_key}{timestamp}{device_type}{checksum_key}savysoda'.encode('utf-8')).hexdigest()
         return result
 
     def _create_device_key() -> str:
@@ -33,17 +32,17 @@ class __UserServiceUtils():
 class UserService(_service_base.ServiceBase):
     utils = __UserServiceUtils()
     
-    async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _Friend:
+    async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
         return result
 
-    async def add_friend(self, access_token: str, friend_user_id: int) -> _Friend:
+    async def add_friend(self, access_token: str, friend_user_id: int) -> _entities.Friend:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.add_friend_2(production_server, access_token, friend_user_id)
         return result
 
-    async def decline_friend_request(self, access_token: str, friend_user_id: int) -> _Friend:
+    async def decline_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.decline_friend_request(production_server, access_token, friend_user_id)
         return result
@@ -66,7 +65,7 @@ class UserService(_service_base.ServiceBase):
         os_version: str,
         refresh_token: str,
         signal: bool,
-    ) -> _UserLogin:
+    ) -> _entities.UserLogin:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.device_login_15(
             production_server,
@@ -89,7 +88,7 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def list_friends(self, user_id: int, access_token: str) -> _ListFriends:
+    async def list_friends(self, user_id: int, access_token: str) -> _entities.ListFriends:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
         return result
@@ -98,7 +97,7 @@ class UserService(_service_base.ServiceBase):
         production_server = await self.get_production_server()
         await _UserServiceRaw.remove_friend(production_server, access_token, friend_user_id)
 
-    async def search_users(self, search_string: str) -> _List[_User]:
+    async def search_users(self, search_string: str) -> _List[_entities.User]:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.search_users(production_server, search_string)
         return result
@@ -122,7 +121,7 @@ class UserService(_service_base.ServiceBase):
         refresh_token: str,
         signal: bool,
         ticket: str,
-    ) -> _UserLogin:
+    ) -> _entities.UserLogin:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.steam_login_6(
             production_server,
@@ -146,7 +145,7 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str) -> _UserEmailPasswordAuthorize:
+    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str) -> _entities.UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.user_email_password_authorize_2(production_server, access_token, checksum, client_date_time, device_key, email, password)
         return result
