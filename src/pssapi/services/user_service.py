@@ -1,4 +1,7 @@
 from datetime import datetime as _datetime
+import hashlib as _hashlib
+import random as _random
+import string as _string
 from typing import List as _List
 
 import pssapi.services.service_base as _service_base
@@ -11,7 +14,25 @@ from ..entities import UserLogin as _UserLogin
 from .raw import UserServiceRaw as _UserServiceRaw
 
 
+
+class __UserServiceUtils():
+    def create_device_checksum(device_key: str, device_type: str, client_datetime: str, checksum_key: str) -> str:
+        result = _hashlib.md5(f'{device_key}{client_datetime}{device_type}{checksum_key}savysoda'.encode('utf-8')).hexdigest()
+        return result
+
+    def _create_device_key() -> str:
+        result = ''.join(
+            _random.choice(_string.hexdigits)
+            + _random.choice('26ae')
+            + _random.choices(_string.hexdigits, k=10)
+        )
+        return result
+
+
+
 class UserService(_service_base.ServiceBase):
+    utils = __UserServiceUtils()
+    
     async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _Friend:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
