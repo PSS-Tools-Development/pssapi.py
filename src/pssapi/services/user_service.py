@@ -13,7 +13,7 @@ from .. import utils as _utils
 
 
 
-class __UserServiceUtils():
+class _UserServiceUtils():
     def create_device_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime, checksum_key: str) -> str:
         timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
         result = _hashlib.md5(f'{device_key}{timestamp}{device_type}{checksum_key}savysoda'.encode('utf-8')).hexdigest()
@@ -30,7 +30,7 @@ class __UserServiceUtils():
 
 
 class UserService(_service_base.ServiceBase):
-    utils = __UserServiceUtils()
+    utils = _UserServiceUtils()
     
     async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
         production_server = await self.get_production_server()
