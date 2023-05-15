@@ -1,37 +1,33 @@
-from datetime import datetime as _datetime
 import hashlib as _hashlib
 import random as _random
 import string as _string
+from datetime import datetime as _datetime
 from typing import List as _List
 
 import pssapi.services.service_base as _service_base
 
 from .. import entities as _entities
 from .. import enums as _enums
-from .raw import UserServiceRaw as _UserServiceRaw
 from .. import utils as _utils
+from .raw import UserServiceRaw as _UserServiceRaw
 
 
-
-class _UserServiceUtils():
+class _UserServiceUtils:
+    @staticmethod
     def create_device_login_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime, checksum_key: str) -> str:
         timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
-        result = _hashlib.md5(f'{device_key}{timestamp}{device_type}{checksum_key}savysoda'.encode('utf-8')).hexdigest()
+        result = _hashlib.md5(f"{device_key}{timestamp}{device_type}{checksum_key}savysoda".encode("utf-8")).hexdigest()
         return result
 
+    @staticmethod
     def _create_device_key() -> str:
-        result = ''.join(
-            _random.choice(_string.hexdigits)
-            + _random.choice('26ae')
-            + _random.choices(_string.hexdigits, k=10)
-        )
+        result = "".join(_random.choice(_string.hexdigits) + _random.choice("26ae") + _random.choices(_string.hexdigits, k=10))
         return result
-
 
 
 class UserService(_service_base.ServiceBase):
     utils = _UserServiceUtils()
-    
+
     async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
@@ -64,7 +60,7 @@ class UserService(_service_base.ServiceBase):
         os_build: int = None,
         os_version: str = None,
         refresh_token: str = None,
-        signal: bool = None
+        signal: bool = None,
     ) -> _entities.UserLogin:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.device_login_15(
