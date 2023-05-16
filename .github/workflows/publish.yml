@@ -5,23 +5,11 @@ on:
 jobs:
   pypi:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Publish PyPI package
+        uses: code-specialists/pypi-poetry-publish@v1
         with:
-          fetch-depth: 0
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v3
-        with:
-          python-version: "3.11"
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install poetry
-          poetry install
-      - name: Build package
-        run: poetry build
-      - name: Publish package
-        run: |
-          poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
-          poetry publish
+          ACCESS_TOKEN: ${{ secrets.POETRY_PUBLISH_GITHUB_TOKEN }}
+          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
