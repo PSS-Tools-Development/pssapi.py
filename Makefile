@@ -7,18 +7,18 @@ init:
 
 .PHONY: test
 test:
-	pytest
+	poetry run pytest
 
 .PHONY: format
 format:
-	@autoflake .
-	@isort .
-	@black .
+	@poetry run autoflake .
+	@poetry run isort .
+	@poetry run black .
 
 .PHONY: check
 check:
-	@flake8 .
+	@poetry run flake8 .
 
 .PHONY: build
 build:
-	python -m build
+	poetry build
