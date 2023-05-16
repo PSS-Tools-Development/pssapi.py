@@ -10,6 +10,12 @@ from .raw import CharacterServiceRaw as _CharacterServiceRaw
 
 
 class CharacterService(_service_base.CacheableServiceBase):
+    async def to_character(self, character_name: str, design_version: int = None) -> _List[_CharacterDesign]:
+        characters = await self.list_all_character_designs(design_version)
+        result = list(filter(lambda character: character_name.lower() in character.character_design_name.lower(), characters))
+
+        return result
+
     @_service_base.cache_endpoint("CharacterDesignActionVersion")
     async def list_all_character_design_actions(self, design_version: int = None) -> _List[_CharacterDesignAction]:
         production_server = await self.get_production_server()
