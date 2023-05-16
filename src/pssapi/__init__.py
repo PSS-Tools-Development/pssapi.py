@@ -8,3 +8,5 @@ __all__ = [
     "utils",
     "PssApiClient",
 ]
+
+__version__ = "0.1.1"
