@@ -8,6 +8,12 @@ from .raw import ItemServiceRaw as _ItemServiceRaw
 
 
 class ItemService(_service_base.CacheableServiceBase):
+    async def to_item(self, item_name: str, design_version: int = None) -> _List[_ItemDesign]:
+        items = await self.list_item_designs(design_version)
+        result = list(filter(lambda item: item_name.lower() in item.item_design_name.lower(), items))
+
+        return result
+
     @_service_base.cache_endpoint("ItemDesignActionVersion")
     async def list_item_design_actions(self, design_version: int = None) -> _List[_ItemDesignAction]:
         production_server = await self.get_production_server()
