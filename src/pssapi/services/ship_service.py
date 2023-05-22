@@ -10,12 +10,6 @@ from .raw import ShipServiceRaw as _ShipServiceRaw
 
 
 class ShipService(_service_base.CacheableServiceBase):
-    async def to_ship(self, ship_name: str, design_version: int = None) -> _List[_ShipDesign]:
-        ships = await self.list_all_ship_designs(design_version)
-        result = list(filter(lambda ship: ship_name.lower() in ship.ship_design_name.lower(), ships))
-
-        return result
-
     async def get_ship_by_user_id(self, access_token: str, client_date_time: str, user_id: int) -> _Ship:
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.get_ship_by_user_id(production_server, access_token, client_date_time, user_id)
