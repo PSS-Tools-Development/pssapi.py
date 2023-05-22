@@ -41,22 +41,42 @@ if __name__ == "__main__":
 ## Contributing
 
 ### Install development dependencies
+Linux:
 
 ```bash
 make init
 ```
 
+Windows:
+
+```bash
+./win init
+```
+
 ### Format code
+Linux:
 
 ```bash
 make format
 ```
 
+Windows:
+```bash
+./win format
+```
+
 ### Check & Test
+Linux:
 
 ```bash
 make check
 make test
+```
+
+Windows:
+```bash
+./win check
+./win test
 ```
 
 ### Showcase
