@@ -13,4 +13,6 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-          PYTHON_VERSION: 3.11
+          PYTHON_VERSION: "3.11"
+          BRANCH: "main"
+          PACKAGE_DIRECTORY: "./src/pssapi/"
