@@ -1,5 +1,6 @@
 from datetime import datetime as _datetime
 from threading import Lock as _Lock
+from typing import Union as _Union
 
 import pssapi.core as _core
 import pssapi.entities as _entities
@@ -12,10 +13,11 @@ import pssapi.utils as _utils
 class PssApiClientBase:
     __PRODUCTION_SERVER_CACHE_DURATION: int = 60  # seconds
 
-    def __init__(self, device_type: "_enums.DeviceType" = None, language_key: "_enums.LanguageKey" = None, production_server: str = None, use_cache: bool = True):
+    def __init__(self, device_type: "_enums.DeviceType" = None, language_key: "_enums.LanguageKey" = None, production_server: _Union[str, "_enums.ProductionServer"] = None, use_cache: bool = True):
         self.__device_type: _enums.DeviceType = device_type or _enums.DeviceType.ANDROID
         self.__language_key: _enums.LanguageKey = language_key or _enums.LanguageKey.ENGLISH
-        self.__production_server: str = production_server or None  # if it's none, it'll be checked and cached for any API call
+        self.__production_server: str = None
+        self.production_server: str = production_server  # if it's none, it'll be checked and cached for any API call
         self.__use_cache: bool = use_cache or False
         self.__latest_version_cached: str = None
         self.__latest_version_cached_at: _datetime = None
@@ -37,7 +39,7 @@ class PssApiClientBase:
 
     @production_server.setter
     def production_server(self, value):
-        self.__production_server = value
+        self.__production_server = str(value) if value else None
 
     @property
     def achievement_service(self) -> "_services.AchievementService":
