@@ -12,6 +12,7 @@ from .background_type import BackgroundType
 from .battle_type import BattleType
 from .behavior_flags import BehaviorFlags
 from .category_type import CategoryType
+from .challenge_flags import ChallengeFlags
 from .challenge_scoring_type import ChallengeScoringType
 from .challenge_type import ChallengeType
 from .change_type import ChangeType
@@ -116,6 +117,7 @@ __all__ = [
     "BattleType",
     "BehaviorFlags",
     "CategoryType",
+    "ChallengeFlags",
     "ChallengeScoringType",
     "ChallengeType",
     "ChangeType",
