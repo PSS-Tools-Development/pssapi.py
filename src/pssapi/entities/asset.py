@@ -1,8 +1,8 @@
+from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
+from ..utils import parse as _parse
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
 from .raw import AssetRaw as _AssetRaw
-from .. import enums as _enums
-from ..utils import parse as _parse
 
 
 class Asset(_AssetRaw, _EntityWithIdBase):

@@ -1,8 +1,9 @@
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import ActionTypeRaw as _ActionTypeRaw
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
+from .entity_base import EntityWithIdBase as _EntityWithIdBase
+from .raw import ActionTypeRaw as _ActionTypeRaw
+
 
 class ActionType(_ActionTypeRaw, _EntityWithIdBase):
     def __init__(self, action_type_info: _EntityInfo) -> None:

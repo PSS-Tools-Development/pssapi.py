@@ -1,8 +1,8 @@
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import AnimationRaw as _AnimationRaw
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
+from .entity_base import EntityWithIdBase as _EntityWithIdBase
+from .raw import AnimationRaw as _AnimationRaw
 
 
 class Animation(_AnimationRaw, _EntityWithIdBase):

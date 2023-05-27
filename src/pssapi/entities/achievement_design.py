@@ -1,8 +1,8 @@
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import AchievementDesignRaw as _AchievementDesignRaw
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
+from .entity_base import EntityWithIdBase as _EntityWithIdBase
+from .raw import AchievementDesignRaw as _AchievementDesignRaw
 
 
 class AchievementDesign(_AchievementDesignRaw, _EntityWithIdBase):
@@ -15,15 +15,15 @@ class AchievementDesign(_AchievementDesignRaw, _EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.achievement_design_id
-    
+
     @property
     def achievement_type_enum(self) -> "_enums.AchievementType":
         return self._achievement_type_enum
-    
+
     @property
     def duration_type_enum(self) -> "_enums.DurationType":
         return self._duration_type_enum
-    
+
     @property
     def guide_type_enum(self) -> "_enums.GuideType":
         return self._guide_type_enum
