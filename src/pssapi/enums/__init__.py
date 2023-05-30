@@ -29,6 +29,7 @@ from .condition_type_parameter import ConditionTypeParameter
 from .cost_type import CostType
 from .craft_attack_type import CraftAttackType
 from .craft_target_type import CraftTargetType
+from .crew_rarity import CrewRarity
 from .currency_type import CurrencyType
 from .daily_reward_status import DailyRewardStatus
 from .daily_reward_type import DailyRewardType
@@ -136,6 +137,7 @@ __all__ = [
     "CostType",
     "CraftAttackType",
     "CraftTargetType",
+    "CrewRarity",
     "CurrencyType",
     "DailyRewardStatus",
     "DailyRewardType",
