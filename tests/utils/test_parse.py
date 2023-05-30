@@ -39,6 +39,8 @@ def test_pss_int_enum():
     assert _parse.pss_int_enum("", _enums.VisibilityFlags) is None
     assert _parse.pss_int_enum("3", _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
     assert _parse.pss_int_enum(3, _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
+    assert _parse.pss_int_enum("0", _enums.CrewRarity) == _enums.CrewRarity.COMMON
+    assert _parse.pss_int_enum(0, _enums.CrewRarity) == _enums.CrewRarity.COMMON
 
     with _pytest.raises(ValueError):  # The enum doesn't have such a value
         _parse.pss_int_enum("10", _enums.VisibilityFlags)
@@ -96,6 +98,13 @@ def test_pss_int():
     assert _parse.pss_int(None) is None
     assert _parse.pss_int(None, 1) == 1
     assert _parse.pss_int(None, "A") == "A"
+    assert _parse.pss_int("") is None
+    assert _parse.pss_int("", 1) == 1
+    assert _parse.pss_int("", "A") == "A"
+
+    result = _parse.pss_int("0")
+    assert isinstance(result, int)
+    assert result == 0
 
     result = _parse.pss_int("1")
     assert isinstance(result, int)
@@ -105,7 +114,9 @@ def test_pss_int():
     assert isinstance(result, int)
     assert result == 50000
 
-    assert _parse.pss_float(8) == 8
+    assert _parse.pss_int(0) == 0
+    assert _parse.pss_int(0, 1) == 0
+    assert _parse.pss_int(8) == 8
 
     with _pytest.raises(Exception):
         _parse.pss_int("1.2")  # value is wrong format (float)
