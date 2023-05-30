@@ -22,6 +22,7 @@ from .character_part_type import CharacterPartType
 from .checksum_type import ChecksumType
 from .collection_type import CollectionType
 from .completion_value_type import CompletionValueType
+from .condition_type_availability_mask import ConditionTypeAvailabilityMask
 from .condition_type_category import ConditionTypeCategory
 from .condition_type_comparison import ConditionTypeComparison
 from .condition_type_parameter import ConditionTypeParameter
@@ -128,6 +129,7 @@ __all__ = [
     "ChecksumType",
     "CollectionType",
     "CompletionValueType",
+    "ConditionTypeAvailabilityMask",
     "ConditionTypeCategory",
     "ConditionTypeComparison",
     "ConditionTypeParameter",
