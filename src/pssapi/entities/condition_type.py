@@ -9,11 +9,11 @@ class ConditionType(_ConditionTypeRaw, _EntityWithIdBase):
     def __init__(self, condition_type_info: _EntityInfo) -> None:
         super().__init__(condition_type_info)
         self._condition_type_availability_enum: _enums.ConditionTypeAvailabilityMask = _parse.pss_int_flag(self.condition_type_availability, _enums.ConditionTypeAvailabilityMask)
-        self._condition_type_category_enum: _enums.ConditionTypeCategory = _parse.pss_int_flag(self.condition_type_category, _enums.ConditionTypeCategory)
-        self._condition_type_comparison_enum: _enums.ConditionTypeComparison = _parse.pss_int_flag(self.condition_type_comparison, _enums.ConditionTypeComparison)
-        self._condition_type_parameter_enum: _enums.ConditionTypeParameter = _parse.pss_int_flag(self.condition_type_parameter, _enums.ConditionTypeParameter)
-        self._room_category_type_enum: _enums.CategoryType = _parse.pss_int_flag(self.room_category_type, _enums.CategoryType)
-        self._room_type_enum: _enums.RoomType = _parse.pss_int_flag(self.room_type, _enums.RoomType)
+        self._condition_type_category_enum: _enums.ConditionTypeCategory = _parse.pss_str_enum(self.condition_type_category, _enums.ConditionTypeCategory)
+        self._condition_type_comparison_enum: _enums.ConditionTypeComparison = _parse.pss_str_enum(self.condition_type_comparison, _enums.ConditionTypeComparison)
+        self._condition_type_parameter_enum: _enums.ConditionTypeParameter = _parse.pss_str_enum(self.condition_type_parameter, _enums.ConditionTypeParameter)
+        self._room_category_type_enum: _enums.CategoryType = _parse.pss_str_enum(self.room_category_type, _enums.CategoryType)
+        self._room_type_enum: _enums.RoomType = _parse.pss_str_enum(self.room_type, _enums.RoomType)
 
     @property
     def id(self) -> int:
