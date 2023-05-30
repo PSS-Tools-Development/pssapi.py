@@ -9,7 +9,7 @@ class CharacterDesign(_CharacterDesignRaw, _EntityWithIdBase):
     def __init__(self, character_design_info: _EntityInfo) -> None:
         super().__init__(character_design_info)
         self._equipment_mask_enum: _enums.EquipmentMaskFlag = _parse.pss_int_flag(self.equipment_mask, _enums.EquipmentMaskFlag)
-        self._flags_enum: _enums.CharacterFlags = _parse.pss_int_flag(self.flags, _enums.CharacterFlags)
+        self._flags_enum: _enums.CharacterDesignFlagType = _parse.pss_int_flag(self.flags, _enums.CharacterDesignFlagType)
         self._gender_type_enum: _enums.GenderType = _parse.pss_str_enum(self.gender_type, _enums.GenderType)
         self._progression_type_enum: _enums.ProgressionType = _parse.pss_str_enum(self.progression_type, _enums.ProgressionType)
         self._race_type_enum: _enums.RaceType = _parse.pss_str_enum(self.race_type, _enums.RaceType)
@@ -25,7 +25,7 @@ class CharacterDesign(_CharacterDesignRaw, _EntityWithIdBase):
         return self._equipment_mask_enum
 
     @property
-    def flags_enum(self) -> "_enums.CharacterFlags":
+    def flags_enum(self) -> "_enums.CharacterDesignFlagType":
         return self._flags_enum
 
     @property
