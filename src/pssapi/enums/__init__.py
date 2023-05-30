@@ -39,6 +39,7 @@ from .duration_type import DurationType
 from .email_verification_status import EmailVerificationStatus
 from .enhancement_type import EnhancementType
 from .environment_type import EnvironmentType
+from .equipment_mask_flag import EquipmentMaskFlag
 from .explosion_type import ExplosionType
 from .file_download_category import FileDownloadCategory
 from .flight_type import FlightType
@@ -144,6 +145,7 @@ __all__ = [
     "EmailVerificationStatus",
     "EnhancementType",
     "EnvironmentType",
+    "EquipmentMaskFlag",
     "ExplosionType",
     "FileDownloadCategory",
     "FlightType",
