@@ -85,6 +85,7 @@ from .room_effect_type import RoomEffectType
 from .room_sprite_type import RoomSpriteType
 from .room_status import RoomStatus
 from .room_type import RoomType
+from .sale_item_mask import SaleItemMask
 from .sale_status import SaleStatus
 from .sale_type import SaleType
 from .season_type import SeasonType
@@ -192,6 +193,7 @@ __all__ = [
     "RoomSpriteType",
     "RoomStatus",
     "RoomType",
+    "SaleItemMask",
     "SaleStatus",
     "SaleType",
     "SeasonType",
