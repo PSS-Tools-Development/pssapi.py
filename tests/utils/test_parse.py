@@ -55,6 +55,14 @@ def test_pss_int_flag():
     assert _parse.pss_int_flag(3, _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP | _enums.SituationDesignFlag.AFFECT_DEFENDING_SHIP
     assert _parse.pss_int_flag("3", _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP | _enums.SituationDesignFlag.AFFECT_DEFENDING_SHIP
 
+    # If '0' shall be parsed for an IntFlag enum without a matching value, return None
+    assert _parse.pss_int_flag("0", _enums.SaleItemMask) is None
+    assert _parse.pss_int_flag(0, _enums.SaleItemMask) is None
+
+    # If '0' shall be parsed for an IntFlag enum with a matching value, return None, too
+    assert _parse.pss_int_flag("0", _enums.SituationDesignFlag) is None
+    assert _parse.pss_int_flag(0, _enums.SituationDesignFlag) is None
+
     with _pytest.raises(ValueError):  # The value is out of bounds
         _parse.pss_int_flag(64, _enums.SituationDesignFlag)
     with _pytest.raises(ValueError):  # The value is out of bounds

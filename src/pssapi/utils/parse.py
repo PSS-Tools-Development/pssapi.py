@@ -37,7 +37,7 @@ def pss_int_enum(value: str, enum: _Type[_IntEnum]) -> _Optional[_IntEnum]:
 
 def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
     int_value = pss_int(value)
-    if int_value is None:
+    if not int_value: # Return None if the value parses to 0 or None
         return None
     max_value = int(enum(-1))
     if int_value < -max_value or int_value > max_value:
