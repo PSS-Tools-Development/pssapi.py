@@ -16,7 +16,7 @@ class Setting(_SettingRaw, _EntityWithIdBase):
         self._flags_enum: _enums.SettingFlags = _parse.pss_int(self.flags, _enums.SettingFlags)
         self._limited_catalog_currency_type_enum: _enums.CurrencyType = _parse.pss_str(self.limited_catalog_currency_type, _enums.CurrencyType)
         self._limited_catalog_type_enum: _enums.SaleType = _parse.pss_str(self.limited_catalog_type, _enums.SaleType)
-        # self._production_server_enum: _enums.ProductionServer = _parse.pss_str(self.production_server, _enums.ProductionServer)
+        self._production_server_enum: _enums.ProductionServer = _parse.pss_str(self.production_server, _enums.ProductionServer)
         self._sale_item_mask_enum: _enums.SaleItemMask = _parse.pss_int(self.sale_item_mask, _enums.SaleItemMask)
         self._sale_type_enum: _enums.SaleType = _parse.pss_str(self.sale_type, _enums.SaleType)
 
@@ -56,9 +56,9 @@ class Setting(_SettingRaw, _EntityWithIdBase):
     def limited_catalog_type_enum(self) -> "_enums.SaleType":
         return self._limited_catalog_type_enum
 
-    # @property
-    # def production_server_enum(self) -> "_enums.ProductionServer":
-    #    return self._production_server_enum
+    @property
+    def production_server_enum(self) -> "_enums.ProductionServer":
+        return self._production_server_enum
 
     @property
     def sale_item_mask_enum(self) -> "_enums.SaleItemMask":
