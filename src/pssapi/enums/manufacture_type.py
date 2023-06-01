@@ -10,4 +10,3 @@ class ManufactureType(_StrEnum):
     GAS = "Gas"
     MINERAL = "Mineral"
     MISSILE = "Missile"
-    
