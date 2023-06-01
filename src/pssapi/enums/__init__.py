@@ -49,6 +49,7 @@ from .flight_type import FlightType
 from .friend_type import FriendType
 from .gender_type import GenderType
 from .generation_flags import GenerationFlags
+from .grid_type_flag import GridTypeFlag
 from .guide_type import GuideType
 from .hazard_category import HazardCategory
 from .hazard_type import HazardType
@@ -161,6 +162,7 @@ __all__ = [
     "FriendType",
     "GenderType",
     "GenerationFlags",
+    "GridTypeFlag",
     "GuideType",
     "HazardCategory",
     "HazardType",
