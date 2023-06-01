@@ -77,6 +77,7 @@ from .promotion_type import PromotionType
 from .purchase_vip_status import PurchaseVIPStatus
 from .race_type import RaceType
 from .rarity import Rarity
+from .research_availability_mask import ResearchAvailabilityMask
 from .research_design_type import ResearchDesignType
 from .research_state import ResearchState
 from .reward_type import RewardType
@@ -185,6 +186,7 @@ __all__ = [
     "PurchaseVIPStatus",
     "RaceType",
     "Rarity",
+    "ResearchAvailabilityMask",
     "ResearchDesignType",
     "ResearchState",
     "RewardType",
