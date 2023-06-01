@@ -104,6 +104,7 @@ from .task_design_flags_type import TaskDesignFlagsType
 from .training_animation_style import TrainingAnimationStyle
 from .trigger_type import TriggerType
 from .user_flags import UserFlags
+from .user_status import UserStatus
 from .user_type import UserType
 from .visibility_flags import VisibilityFlags
 
@@ -213,6 +214,7 @@ __all__ = [
     "TrainingAnimationStyle",
     "TriggerType",
     "UserFlags",
+    "UserStatus",
     "UserType",
     "VisibilityFlags",
     "LanguageKey",
