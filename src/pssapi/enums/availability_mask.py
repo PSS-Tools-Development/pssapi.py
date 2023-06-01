@@ -1,7 +1,7 @@
 from enum import IntFlag as _IntFlag
 
 
-class ResearchAvailabilityMask(_IntFlag):
+class AvailabilityMask(_IntFlag):
     PLAYER = 1
     """Available on a player's ship."""
     ALLIANCE = 2
