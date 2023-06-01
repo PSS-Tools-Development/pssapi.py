@@ -44,6 +44,7 @@ from .enhancement_type import EnhancementType
 from .environment_type import EnvironmentType
 from .equipment_mask_flag import EquipmentMaskFlag
 from .explosion_type import ExplosionType
+from .feature_flag import FeatureFlag
 from .file_download_category import FileDownloadCategory
 from .flight_type import FlightType
 from .friend_type import FriendType
@@ -157,6 +158,7 @@ __all__ = [
     "EnvironmentType",
     "EquipmentMaskFlag",
     "ExplosionType",
+    "FeatureFlag",
     "FileDownloadCategory",
     "FlightType",
     "FriendType",
