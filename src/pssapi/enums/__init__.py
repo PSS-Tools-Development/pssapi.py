@@ -58,6 +58,7 @@ from .item_sub_type import ItemSubType
 from .item_type import ItemType
 from .language_key import LanguageKey
 from .league_type import LeagueType
+from .manufacture_type import ManufactureType
 from .marker_type import MarkerType
 from .matching_status import MatchingStatus
 from .message_type import MessageType
@@ -168,6 +169,7 @@ __all__ = [
     "ItemSubType",
     "ItemType",
     "LeagueType",
+    "ManufactureType",
     "MarkerType",
     "MatchingStatus",
     "MessageType",
