@@ -83,6 +83,7 @@ from .research_state import ResearchState
 from .reward_type import RewardType
 from .room_design_sprite_flag import RoomDesignSpriteFlag
 from .room_effect_type import RoomEffectType
+from .room_flags import RoomFlags
 from .room_sprite_type import RoomSpriteType
 from .room_status import RoomStatus
 from .room_type import RoomType
@@ -193,6 +194,7 @@ __all__ = [
     "RewardType",
     "RoomDesignSpriteFlag",
     "RoomEffectType",
+    "RoomFlags",
     "RoomSpriteType",
     "RoomStatus",
     "RoomType",
