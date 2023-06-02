@@ -13,12 +13,12 @@ class PromotionDesign(_PromotionDesignRaw, _EntityWithIdBase):
         self._purchase_mask_enum: _enums.SaleItemMask = _parse.pss_int_flag(self.purchase_mask, _enums.SaleItemMask)
 
     @property
-    def flags_enum(self) -> int:
-        return self._flags_enum
-
-    @property
     def id(self) -> "_enums.PromotionDesignFlag":
         return self.promotion_design_id
+
+    @property
+    def flags_enum(self) -> int:
+        return self._flags_enum
 
     @property
     def promotion_type_enum(self) -> "_enums.PromotionType":
