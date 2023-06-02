@@ -28,8 +28,8 @@ class Battle(_BattleRaw, _EntityWithIdBase):
         return self._client_outcome_type_enum
 
     @property
-    def defending_client_outcome_type(self) -> "_enums.OutcomeType":
-        return self._defending_client_outcome_type
+    def defending_client_outcome_type_enum(self) -> "_enums.OutcomeType":
+        return self._defending_client_outcome_type_enum
 
     @property
     def league_type_enum(self) -> "_enums.LeagueType":
