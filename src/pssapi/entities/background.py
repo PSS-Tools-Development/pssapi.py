@@ -11,7 +11,7 @@ class Background(_BackgroundRaw, _EntityWithIdBase):
         self._background_effect_type_enum: _enums.BackgroundEffectType = _parse.pss_str_enum(self.background_effect_type, _enums.BackgroundEffectType)
         self._background_type_enum: _enums.BackgroundType = _parse.pss_str_enum(self.background_type, _enums.BackgroundType)
         self._environment_type_enum: _enums.EnvironmentType = _parse.pss_str_enum(self.environment_type, _enums.EnvironmentType)
-        self._hazard_category: _enums.HazardCategory = _parse.pss_str_enum(self.hazard_category, _enums.HazardCategory)
+        self._hazard_category_enum: _enums.HazardCategory = _parse.pss_str_enum(self.hazard_category, _enums.HazardCategory)
         self._hazard_type_enum: _enums.HazardType = _parse.pss_str_enum(self.hazard_type, _enums.HazardType)
         self._orbit_anchor_alignment_enum: _enums.OrbitAnchorAlignment = _parse.pss_str_enum(self.orbit_anchor_alignment, _enums.OrbitAnchorAlignment)
 
@@ -32,8 +32,8 @@ class Background(_BackgroundRaw, _EntityWithIdBase):
         return self._environment_type_enum
 
     @property
-    def hazard_category(self) -> "_enums.HazardCategory":
-        return self._hazard_category
+    def hazard_category_enum(self) -> "_enums.HazardCategory":
+        return self._hazard_category_enum
 
     @property
     def hazard_type_enum(self) -> "_enums.HazardType":
