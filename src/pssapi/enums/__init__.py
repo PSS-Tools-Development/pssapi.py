@@ -7,7 +7,7 @@ from .animation_effect_type import AnimationEffectType
 from .argument import Argument
 from .asset_type import AssetType
 from .authentication_type import AuthenticationType
-from .availability_mask import AvailabilityMask
+from .availability_mask import AvailabilityMask, AvailabilityMaskObject
 from .background_effect_type import BackgroundEffectType
 from .background_type import BackgroundType
 from .battle_type import BattleType
@@ -124,6 +124,8 @@ __all__ = [
     "Argument",
     "AssetType",
     "AuthenticationType",
+    "AvailabilityMask",
+    "AvailabilityMaskObject",
     "BackgroundEffectType",
     "BackgroundType",
     "BattleType",
@@ -198,7 +200,6 @@ __all__ = [
     "PurchaseVIPStatus",
     "RaceType",
     "Rarity",
-    "AvailabilityMask",
     "ResearchDesignType",
     "ResearchState",
     "RewardType",
