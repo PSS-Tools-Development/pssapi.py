@@ -9,6 +9,7 @@ class RoomDesignPurchase(_RoomDesignPurchaseRaw, _EntityWithIdBase):
     def __init__(self, room_design_purchase_info: _EntityInfo) -> None:
         super().__init__(room_design_purchase_info)
         self._availability_mask_enum: _enums.AvailabilityMask = _parse.pss_int_flag(self.availability_mask, _enums.AvailabilityMask)
+        self._room_design_purchase_availability_mask: _enums.AvailabilityMaskObject = _enums.AvailabilityMaskObject(self.availability_mask_enum)
 
     @property
     def id(self) -> int:
@@ -17,3 +18,7 @@ class RoomDesignPurchase(_RoomDesignPurchaseRaw, _EntityWithIdBase):
     @property
     def availability_mask_enum(self) -> "_enums.AvailabilityMask":
         return self._availability_mask_enum
+
+    @property
+    def room_design_purchase_availability_mask(self) -> "_enums.AvailabilityMaskObject":
+        return self._room_design_purchase_availability_mask
