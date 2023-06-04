@@ -10,8 +10,8 @@ class ConditionTypeAvailabilityMask(_IntFlag):
 
 
 class ConditionTypeAvailabilityMaskObject(_IntFlagObjectBase):
-    def __init__(self, character_flags: ConditionTypeAvailabilityMask):
-        super().__init__(character_flags)
+    def __init__(self, condition_type_availability_mask: ConditionTypeAvailabilityMask):
+        super().__init__(condition_type_availability_mask)
 
     @property
     def target_character(self) -> bool:
