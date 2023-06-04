@@ -23,23 +23,23 @@ class CharacterDesignFlagTypeObject(_IntFlagObjectBase):
 
     @property
     def available_in_dropship(self) -> bool:
-        return self.value & CharacterDesignFlagType.AVAILABLE_IN_DROPSHIP or False
+        return bool(self.value & CharacterDesignFlagType.AVAILABLE_IN_DROPSHIP)
 
     @property
     def can_create_via_prestige(self) -> bool:
-        return self.value & CharacterDesignFlagType.CAN_CREATE_VIA_PRESTIGE or False
+        return bool(self.value & CharacterDesignFlagType.CAN_CREATE_VIA_PRESTIGE)
 
     @property
     def is_captain(self) -> bool:
-        return self.value & CharacterDesignFlagType.IS_CAPTAIN or False
+        return bool(self.value & CharacterDesignFlagType.IS_CAPTAIN)
 
     @property
     def is_crew(self) -> bool:
-        return self.value & CharacterDesignFlagType.IS_CREW or False
+        return bool(self.value & CharacterDesignFlagType.IS_CREW)
 
     @property
     def is_prize(self) -> bool:
-        return self.value & CharacterDesignFlagType.IS_PRIZE or False
+        return bool(self.value & CharacterDesignFlagType.IS_PRIZE)
 
     @property
     def value(self) -> CharacterDesignFlagType:

@@ -17,11 +17,11 @@ class AvailabilityMaskObject(_IntFlagObjectBase):
 
     @property
     def player(self) -> bool:
-        return self.value & AvailabilityMask.PLAYER or False
+        return bool(self.value & AvailabilityMask.PLAYER)
 
     @property
     def alliance(self) -> bool:
-        return self.value & AvailabilityMask.ALLIANCE or False
+        return bool(self.value & AvailabilityMask.ALLIANCE)
 
     @property
     def value(self) -> AvailabilityMask:

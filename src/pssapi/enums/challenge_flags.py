@@ -22,19 +22,19 @@ class ChallengeFlagsObject(_IntFlagObjectBase):
 
     @property
     def is_first_free(self) -> bool:
-        return self.value & ChallengeFlags.IS_FIRST_FREE or False
+        return bool(self.value & ChallengeFlags.IS_FIRST_FREE)
 
     @property
     def is_manual_command_enabled(self) -> bool:
-        return self.value & ChallengeFlags.IS_MANUAL_COMMAND_ENABLED or False
+        return bool(self.value & ChallengeFlags.IS_MANUAL_COMMAND_ENABLED)
 
     @property
     def is_real_time(self) -> bool:
-        return self.value & ChallengeFlags.IS_REAL_TIME or False
+        return bool(self.value & ChallengeFlags.IS_REAL_TIME)
 
     @property
     def is_single_play(self) -> bool:
-        return self.value & ChallengeFlags.IS_SINGLE_PLAY or False
+        return bool(self.value & ChallengeFlags.IS_SINGLE_PLAY)
 
     @property
     def value(self) -> ChallengeFlags:

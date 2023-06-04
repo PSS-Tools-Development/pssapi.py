@@ -19,7 +19,7 @@ class CharacterFlagsObject(_IntFlagObjectBase):
 
     @property
     def favourite(self) -> bool:
-        return self.value & CharacterFlags.FAVOURITE or False
+        return bool(self.value & CharacterFlags.FAVOURITE)
 
     @property
     def value(self) -> CharacterFlags:
