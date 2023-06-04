@@ -9,6 +9,7 @@ class ResearchDesign(_ResearchDesignRaw, _EntityWithIdBase):
     def __init__(self, research_design_info: _EntityInfo) -> None:
         super().__init__(research_design_info)
         self._availability_mask_enum: _enums.AvailabilityMask = _parse.pss_int_flag(self.availability_mask, _enums.AvailabilityMask)
+        self._availability_mask_flags: _enums.AvailabilityMaskObject = _enums.AvailabilityMaskObject(self.availability_mask_enum)
         self._research_design_type_enum: _enums.ResearchDesignType = _parse.pss_str_enum(self.research_design_type, _enums.ResearchDesignType)
         self._visibility_flags_enum: _enums.VisibilityFlags = _parse.pss_str_enum(self.visibility_flags, _enums.VisibilityFlags)
 
@@ -19,6 +20,10 @@ class ResearchDesign(_ResearchDesignRaw, _EntityWithIdBase):
     @property
     def availability_mask_enum(self) -> "_enums.AvailabilityMask":
         return self._availability_mask_enum
+
+    @property
+    def availability_mask_flags(self) -> "_enums.AvailabilityMaskObject":
+        return self._availability_mask_flags
 
     @property
     def research_design_type_enum(self) -> "_enums.ResearchDesignType":
