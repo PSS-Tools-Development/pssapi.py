@@ -16,12 +16,12 @@ class AvailabilityMaskObject(_IntFlagObjectBase):
         super().__init__(availability_mask)
 
     @property
-    def player(self) -> bool:
-        return bool(self.value & AvailabilityMask.PLAYER)
-
-    @property
     def alliance(self) -> bool:
         return bool(self.value & AvailabilityMask.ALLIANCE)
+
+    @property
+    def player(self) -> bool:
+        return bool(self.value & AvailabilityMask.PLAYER)
 
     @property
     def value(self) -> AvailabilityMask:

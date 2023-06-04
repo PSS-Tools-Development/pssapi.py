@@ -2,11 +2,6 @@ from enum import IntFlag as _IntFlag
 
 from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
 
-"""
-This file has been be generated from decompilation and might require manual
-fixing, if Savy uses enum values that are python keywords.
-"""
-
 
 class ItemDesignFlagType(_IntFlag):
     NONE = 0
@@ -87,14 +82,6 @@ class ItemDesignFlagTypeObject(_IntFlagObjectBase):
         return bool(self.value & ItemDesignFlagType.RECYCLING_BUILD)
 
     @property
-    def use_on_crew(self) -> bool:
-        return bool(self.value & ItemDesignFlagType.USE_ON_CREW)
-
-    @property
-    def used_item(self) -> bool:
-        return bool(self.value & ItemDesignFlagType.USED_ITEM)
-
-    @property
     def task_prize(self) -> bool:
         return bool(self.value & ItemDesignFlagType.TASK_PRIZE)
 
@@ -103,8 +90,16 @@ class ItemDesignFlagTypeObject(_IntFlagObjectBase):
         return bool(self.value & ItemDesignFlagType.UNIQUE_CONTENT_REWARD)
 
     @property
+    def use_on_crew(self) -> bool:
+        return bool(self.value & ItemDesignFlagType.USE_ON_CREW)
+
+    @property
     def use_on_room(self) -> bool:
         return bool(self.value & ItemDesignFlagType.USE_ON_ROOM)
+
+    @property
+    def used_item(self) -> bool:
+        return bool(self.value & ItemDesignFlagType.USED_ITEM)
 
     @property
     def value(self) -> ItemDesignFlagType:

@@ -34,26 +34,6 @@ class SaleItemMaskObject(_IntFlagObjectBase):
         super().__init__(sale_item_mask)
 
     @property
-    def starbux_500(self) -> bool:
-        return bool(self.value & SaleItemMask.STARBUX_500)
-
-    @property
-    def starbux_1200(self) -> bool:
-        return bool(self.value & SaleItemMask.STARBUX_1200)
-
-    @property
-    def starbux_2500(self) -> bool:
-        return bool(self.value & SaleItemMask.STARBUX_2500)
-
-    @property
-    def starbux_6500(self) -> bool:
-        return bool(self.value & SaleItemMask.STARBUX_6500)
-
-    @property
-    def starbux_14000(self) -> bool:
-        return bool(self.value & SaleItemMask.STARBUX_14000)
-
-    @property
     def sale_1(self) -> bool:
         return bool(self.value & SaleItemMask.SALE_1)
 
@@ -76,6 +56,26 @@ class SaleItemMaskObject(_IntFlagObjectBase):
     @property
     def sale_6(self) -> bool:
         return bool(self.value & SaleItemMask.SALE_6)
+
+    @property
+    def starbux_1200(self) -> bool:
+        return bool(self.value & SaleItemMask.STARBUX_1200)
+
+    @property
+    def starbux_14000(self) -> bool:
+        return bool(self.value & SaleItemMask.STARBUX_14000)
+
+    @property
+    def starbux_2500(self) -> bool:
+        return bool(self.value & SaleItemMask.STARBUX_2500)
+
+    @property
+    def starbux_500(self) -> bool:
+        return bool(self.value & SaleItemMask.STARBUX_500)
+
+    @property
+    def starbux_6500(self) -> bool:
+        return bool(self.value & SaleItemMask.STARBUX_6500)
 
     @property
     def value(self) -> SaleItemMask:

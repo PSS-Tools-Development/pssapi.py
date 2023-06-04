@@ -17,16 +17,12 @@ class PromotionDesignFlagObject(_IntFlagObjectBase):
         super().__init__(promotion_design_flag)
 
     @property
-    def show_splash(self) -> bool:
-        return bool(self.value & PromotionDesignFlag.SHOW_SPLASH)
-
-    @property
     def show_badge(self) -> bool:
         return bool(self.value & PromotionDesignFlag.SHOW_BADGE)
 
     @property
-    def stacks(self) -> bool:
-        return bool(self.value & PromotionDesignFlag.STACKS)
+    def show_splash(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.SHOW_SPLASH)
 
     @property
     def single_purchase(self) -> bool:
@@ -35,6 +31,10 @@ class PromotionDesignFlagObject(_IntFlagObjectBase):
     @property
     def single_purchase_per_day(self) -> bool:
         return bool(self.value & PromotionDesignFlag.SINGLE_PURCHASE_PER_DAY)
+
+    @property
+    def stacks(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.STACKS)
 
     @property
     def value(self) -> PromotionDesignFlag:

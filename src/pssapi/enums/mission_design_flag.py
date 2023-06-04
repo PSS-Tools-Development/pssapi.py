@@ -2,11 +2,6 @@ from enum import IntFlag as _IntFlag
 
 from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
 
-"""
-This file has been be generated from decompilation and might require manual
-fixing, if Savy uses enum values that are python keywords.
-"""
-
 
 class MissionDesignFlag(_IntFlag):
     NONE = 0
