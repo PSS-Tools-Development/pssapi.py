@@ -1,9 +1,6 @@
 from enum import IntFlag as _IntFlag
 
-"""
-This file has been be generated from decompilation and might require manual
-fixing, if Savy uses enum values that are python keywords.
-"""
+from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
 
 
 class PromotionDesignFlag(_IntFlag):
@@ -13,3 +10,32 @@ class PromotionDesignFlag(_IntFlag):
     STACKS = 4
     SINGLE_PURCHASE = 8
     SINGLE_PURCHASE_PER_DAY = 16
+
+
+class PromotionDesignFlagObject(_IntFlagObjectBase):
+    def __init__(self, promotion_design_flag: PromotionDesignFlag):
+        super().__init__(promotion_design_flag)
+
+    @property
+    def show_splash(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.SHOW_SPLASH)
+
+    @property
+    def show_badge(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.SHOW_BADGE)
+
+    @property
+    def stacks(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.STACKS)
+
+    @property
+    def single_purchase(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.SINGLE_PURCHASE)
+
+    @property
+    def single_purchase_per_day(self) -> bool:
+        return bool(self.value & PromotionDesignFlag.SINGLE_PURCHASE_PER_DAY)
+
+    @property
+    def value(self) -> PromotionDesignFlag:
+        return self._value
