@@ -13,8 +13,8 @@ class FeatureFlag(_IntFlag):
 
 
 class FeatureFlagObject(_IntFlagObjectBase):
-    def __init__(self, equipment_mask_flag: FeatureFlag):
-        super().__init__(equipment_mask_flag)
+    def __init__(self, feature_flag: FeatureFlag):
+        super().__init__(feature_flag)
 
     @property
     def appsflyer(self) -> bool:
