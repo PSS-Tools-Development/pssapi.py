@@ -2,6 +2,7 @@ from enum import IntFlag as _IntFlag
 
 
 class SaleItemMask(_IntFlag):
+    NONE = 0
     STARBUX_500 = 1
     """Clip of Starbux"""
     STARBUX_1200 = 2

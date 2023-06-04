@@ -7,4 +7,5 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class CharacterFlags(_IntFlag):
+    NONE = 0
     FAVOURITE = 1
