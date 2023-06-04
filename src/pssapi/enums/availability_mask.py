@@ -1,5 +1,7 @@
 from enum import IntFlag as _IntFlag
 
+from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
+
 
 class AvailabilityMask(_IntFlag):
     NONE = 0
@@ -9,18 +11,18 @@ class AvailabilityMask(_IntFlag):
     """Available on a fleet's starbase."""
 
 
-class AvailabilityMaskObject(object):
+class AvailabilityMaskObject(_IntFlagObjectBase):
     def __init__(self, availability_mask: AvailabilityMask):
-        self._player: bool = False
-        self._alliance: bool = False
-        if availability_mask:
-            self._player: bool = availability_mask & AvailabilityMask.PLAYER or False
-            self._alliance: bool = availability_mask & AvailabilityMask.PLAYER or False
+        super().__init__(availability_mask)
 
     @property
     def player(self) -> bool:
-        return self._player
+        return self.value & AvailabilityMask.PLAYER or False
 
     @property
     def alliance(self) -> bool:
-        return self._alliance
+        return self.value & AvailabilityMask.ALLIANCE or False
+
+    @property
+    def value(self) -> AvailabilityMask:
+        return self._value

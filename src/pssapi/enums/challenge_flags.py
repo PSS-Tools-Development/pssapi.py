@@ -1,5 +1,7 @@
 from enum import IntFlag as _IntFlag
 
+from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
+
 """
 This file has been be generated from decompilation and might require manual
 fixing, if Savy uses enum values that are python keywords.
@@ -14,30 +16,26 @@ class ChallengeFlags(_IntFlag):
     IS_MANUAL_COMMAND_ENABLED = 8
 
 
-class ChallengeFlagsObject(object):
+class ChallengeFlagsObject(_IntFlagObjectBase):
     def __init__(self, challenge_flags: ChallengeFlags):
-        self._is_real_time: bool = False
-        self._is_first_free: bool = False
-        self._is_single_play: bool = False
-        self._is_manual_command_enabled: bool = False
-        if challenge_flags:
-            self._is_real_time = challenge_flags & ChallengeFlags.IS_REAL_TIME or False
-            self._is_first_free = challenge_flags & ChallengeFlags.IS_FIRST_FREE or False
-            self._is_single_play = challenge_flags & ChallengeFlags.IS_SINGLE_PLAY or False
-            self._is_manual_command_enabled = challenge_flags & ChallengeFlags.IS_MANUAL_COMMAND_ENABLED or False
-
-    @property
-    def is_real_time(self) -> bool:
-        return self._is_real_time
+        super().__init__(challenge_flags)
 
     @property
     def is_first_free(self) -> bool:
-        return self._is_first_free
-
-    @property
-    def is_single_play(self) -> bool:
-        return self._is_single_play
+        return self.value & ChallengeFlags.IS_FIRST_FREE or False
 
     @property
     def is_manual_command_enabled(self) -> bool:
-        return self._is_manual_command_enabled
+        return self.value & ChallengeFlags.IS_MANUAL_COMMAND_ENABLED or False
+
+    @property
+    def is_real_time(self) -> bool:
+        return self.value & ChallengeFlags.IS_REAL_TIME or False
+
+    @property
+    def is_single_play(self) -> bool:
+        return self.value & ChallengeFlags.IS_SINGLE_PLAY or False
+
+    @property
+    def value(self) -> ChallengeFlags:
+        return self._value
