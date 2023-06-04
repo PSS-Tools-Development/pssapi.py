@@ -1,10 +1,16 @@
 from enum import IntFlag as _IntFlag
 
-"""
-This file has been be generated from decompilation and might require manual
-fixing, if Savy uses enum values that are python keywords.
-"""
+from .int_flag_object_base import IntFlagObjectBase as _IntFlagObjectBase
 
 
 class TaskDesignFlagsType(_IntFlag):
     NONE = 1
+
+
+class TaskDesignFlagsTypeObject(_IntFlagObjectBase):
+    def __init__(self, task_design_flags_type: TaskDesignFlagsType):
+        super().__init__(task_design_flags_type)
+
+    @property
+    def value(self) -> TaskDesignFlagsType:
+        return self._value
