@@ -5,6 +5,7 @@ from .mission_design_metadata import MissionDesignMetadata
 from .promotion_design_metadata import PromotionDesignMetadata
 from .reward_design_metadata import RewardDesignMetadata
 from .room_design_metadata import RoomDesignMetadata
+from .room_design_sprite_metadata import RoomDesignSpriteMetadata
 
 all = [
     Color.__name__,
@@ -14,4 +15,5 @@ all = [
     PromotionDesignMetadata.__name__,
     RewardDesignMetadata.__name__,
     RoomDesignMetadata.__name__,
+    RoomDesignSpriteMetadata.__name__,
 ]
