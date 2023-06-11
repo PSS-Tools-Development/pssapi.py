@@ -11,6 +11,8 @@ import pssapi.constants as _constants
 
 
 def pss_bool(value: str, default: bool = None) -> _Optional[bool]:
+    if isinstance(value, bool):
+        return value
     if not value:
         return default
     return _constants.BOOL_VALUE_LOOKUP[value.lower()]
