@@ -1,11 +1,12 @@
 from ...utils import parse as _parse
 from .entity_metadata_base import EntityMetadata as _EntityMetadata
+from .metadata_color import Color as _Color
 
 
 class RoomDesignMetadata(_EntityMetadata):
     def __init__(self, metadata: str):
         super().__init__(metadata)
-        self._ChargingColor: str = _parse.pss_str(self._metadata_dict.get("ChargingColor"))
+        self._ChargingColor: _Color = _parse.pss_color(self._metadata_dict.get("ChargingColor"))
         self._ChargingParticleMainTexture: int = _parse.pss_int(self._metadata_dict.get("ChargingParticleMainTexture"))
         self._ChargingParticleTrailTexture: int = _parse.pss_int(self._metadata_dict.get("ChargingParticleTrailTexture"))
         self._ChargingRadius: int = _parse.pss_int(self._metadata_dict.get("ChargingRadius"))

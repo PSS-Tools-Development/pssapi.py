@@ -1,5 +1,6 @@
 from ...utils import parse as _parse
 from .entity_metadata_base import EntityMetadata as _EntityMetadata
+from .metadata_color import Color as _Color
 
 
 class ItemDesignMetadata(_EntityMetadata):
@@ -9,10 +10,10 @@ class ItemDesignMetadata(_EntityMetadata):
         self._destroyed_sprite_id: int = _parse.pss_int(self._metadata_dict.get("DestroyedSpriteId"))
         self._force_reward_scene: bool = _parse.pss_bool(self._metadata_dict.get("ForceRewardScene"))
         self._idle_animation_id: int = _parse.pss_int(self._metadata_dict.get("IdleAnimationId"))
-        self._meta_liquid_falling_color: str = _parse.pss_str(self._metadata_dict.get("MetaLiquidFallingColor"))
+        self._meta_liquid_falling_color: _Color = _parse.pss_color(self._metadata_dict.get("MetaLiquidFallingColor"))
         self._meta_liquid_falling_count: int = _parse.pss_int(self._metadata_dict.get("MetaLiquidFallingCount"))
         self._meta_liquid_falling_sprite_id: int = _parse.pss_int(self._metadata_dict.get("MetaLiquidFallingSpriteId"))
-        self._meta_liquid_floating_color: str = _parse.pss_str(self._metadata_dict.get("MetaLiquidFloatingColor"))
+        self._meta_liquid_floating_color: _Color = _parse.pss_color(self._metadata_dict.get("MetaLiquidFloatingColor"))
         self._meta_liquid_floating_count: int = _parse.pss_int(self._metadata_dict.get("MetaLiquidFloatingCount"))
         self._meta_liquid_floating_sprite_id: int = _parse.pss_int(self._metadata_dict.get("MetaLiquidFloatingSpriteId"))
         self._meta_skin_type: int = _parse.pss_int(self._metadata_dict.get("MetaSkinType"))
