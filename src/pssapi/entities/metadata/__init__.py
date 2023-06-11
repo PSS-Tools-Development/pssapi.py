@@ -7,6 +7,7 @@ from .reward_design_metadata import RewardDesignMetadata
 from .room_design_metadata import RoomDesignMetadata
 from .room_design_sprite_metadata import RoomDesignSpriteMetadata
 from .season_design_metadata import SeasonDesignMetadata
+from .star_system_marker_generator_metadata import StarSystemMarkerGeneratorMetadata
 
 all = [
     Color.__name__,
@@ -18,4 +19,5 @@ all = [
     RoomDesignMetadata.__name__,
     RoomDesignSpriteMetadata.__name__,
     SeasonDesignMetadata.__name__,
+    StarSystemMarkerGeneratorMetadata.__name__,
 ]
