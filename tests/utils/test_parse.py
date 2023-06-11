@@ -26,12 +26,12 @@ def test_pss_color():
     assert _parse.pss_color("") is None
     assert _parse.pss_color("  ") is None
 
-    color_1 = _parse.pss_color('64,128,255')
+    color_1 = _parse.pss_color("64,128,255")
     assert color_1.red == 64
     assert color_1.green == 128
     assert color_1.blue == 255
 
-    color_2 = _parse.pss_color('#4080FF')
+    color_2 = _parse.pss_color("#4080FF")
     assert color_2.red == 64
     assert color_2.green == 128
     assert color_2.blue == 255

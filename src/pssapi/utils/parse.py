@@ -4,11 +4,11 @@ from enum import IntFlag as _IntFlag
 from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
-from pssapi.entities.metadata import Color as _Color
 
 import pytz as _pytz
 
 import pssapi.constants as _constants
+from pssapi.entities.metadata import Color as _Color
 
 
 def pss_bool(value: str, default: bool = None) -> _Optional[bool]:
