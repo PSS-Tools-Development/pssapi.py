@@ -3,6 +3,7 @@ from .missile_design_metadata import MissileDesignMetadata
 from .mission_design_metadata import MissionDesignMetadata
 from .promotion_design_metadata import PromotionDesignMetadata
 from .reward_design_metadata import RewardDesignMetadata
+from .room_design_metadata import RoomDesignMetadata
 
 all = [
     ItemDesignMetadata.__name__,
@@ -10,4 +11,5 @@ all = [
     MissionDesignMetadata.__name__,
     PromotionDesignMetadata.__name__,
     RewardDesignMetadata.__name__,
+    RoomDesignMetadata.__name__,
 ]
