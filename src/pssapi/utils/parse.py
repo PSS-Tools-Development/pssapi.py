@@ -4,6 +4,7 @@ from enum import IntFlag as _IntFlag
 from enum import StrEnum as _StrEnum
 from typing import Optional as _Optional
 from typing import Type as _Type
+from pssapi.entities.metadata import Color as _Color
 
 import pytz as _pytz
 
@@ -16,6 +17,12 @@ def pss_bool(value: str, default: bool = None) -> _Optional[bool]:
     if not value:
         return default
     return _constants.BOOL_VALUE_LOOKUP[value.lower()]
+
+
+def pss_color(value: str) -> _Optional[_Color]:
+    if not value or not value.strip():
+        return None
+    return _Color(value)
 
 
 def pss_datetime(value: str) -> _Optional[_datetime]:

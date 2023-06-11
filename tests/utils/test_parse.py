@@ -21,6 +21,22 @@ def test_pss_bool():
         _parse.pss_bool("kek")  # value has wrong format
 
 
+def test_pss_color():
+    assert _parse.pss_color(None) is None
+    assert _parse.pss_color("") is None
+    assert _parse.pss_color("  ") is None
+
+    color_1 = _parse.pss_color('64,128,255')
+    assert color_1.red == 64
+    assert color_1.green == 128
+    assert color_1.blue == 255
+
+    color_2 = _parse.pss_color('#4080FF')
+    assert color_2.red == 64
+    assert color_2.green == 128
+    assert color_2.blue == 255
+
+
 def test_pss_datetime():
     assert _parse.pss_datetime(None) is None
     assert _parse.pss_datetime("2023-05-01T23:55:43") == _pytz.utc.localize(_datetime.datetime(2023, 5, 1, 23, 55, 43))
