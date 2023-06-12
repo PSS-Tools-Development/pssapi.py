@@ -8,12 +8,21 @@ from typing import Type as _Type
 import pytz as _pytz
 
 import pssapi.constants as _constants
+from pssapi.entities.metadata import Color as _Color
 
 
 def pss_bool(value: str, default: bool = None) -> _Optional[bool]:
+    if isinstance(value, bool):
+        return value
     if not value:
         return default
     return _constants.BOOL_VALUE_LOOKUP[value.lower()]
+
+
+def pss_color(value: str) -> _Optional[_Color]:
+    if not value or not value.strip():
+        return None
+    return _Color(value)
 
 
 def pss_datetime(value: str) -> _Optional[_datetime]:

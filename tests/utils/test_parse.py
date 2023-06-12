@@ -12,13 +12,29 @@ def test_pss_bool():
     assert _parse.pss_bool("true")
     assert not _parse.pss_bool("false")
     assert _parse.pss_bool(None, 1) == 1
+    assert _parse.pss_bool(False) == False
+    assert _parse.pss_bool(True) == True
 
     with _pytest.raises(Exception):
         _parse.pss_bool(2)  # value is not str
     with _pytest.raises(Exception):
         _parse.pss_bool("kek")  # value has wrong format
-    with _pytest.raises(Exception):
-        _parse.pss_bool(True)  # value is not str
+
+
+def test_pss_color():
+    assert _parse.pss_color(None) is None
+    assert _parse.pss_color("") is None
+    assert _parse.pss_color("  ") is None
+
+    color_1 = _parse.pss_color("64,128,255")
+    assert color_1.red == 64
+    assert color_1.green == 128
+    assert color_1.blue == 255
+
+    color_2 = _parse.pss_color("#4080FF")
+    assert color_2.red == 64
+    assert color_2.green == 128
+    assert color_2.blue == 255
 
 
 def test_pss_datetime():

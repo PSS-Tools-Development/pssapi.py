@@ -1,3 +1,4 @@
+from . import metadata
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
 from .alliance import Alliance
@@ -66,6 +67,7 @@ from .user_star_system import UserStarSystem
 __all__ = [
     "EntityWithIdBase",
     "EntityBase",
+    "metadata",
     "AchievementDesign",
     "ActionType",
     "Alliance",
