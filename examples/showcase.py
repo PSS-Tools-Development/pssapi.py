@@ -1,22 +1,21 @@
 import asyncio
 
-from pssapi import PssApiClient
-from pssapi.entities import ShipDesign
+from pssapi import PssApiClient, entities
 
 
 async def main() -> None:
     client = PssApiClient()
     print(f"Production server: {client.production_server or (await client.get_production_server())}")
 
-    ship_designs: list[ShipDesign] = await client.ship_service.list_all_ship_designs()
+    ship_designs: list[entities.ShipDesign] = await client.ship_service.list_all_ship_designs()
     print(f"Found {len(ship_designs)} ship designs.")
     print(f"First ship: {ship_designs[0].ship_design_name}")
 
-    item_designs = await client.item_service.list_item_designs()
+    item_designs: list[entities.ItemDesign] = await client.item_service.list_item_designs()
     print(f"Found {len(item_designs)} item designs.")
     print(f"First item: {item_designs[0].item_design_name}")
 
-    item_designs_cached = await client.item_service.list_item_designs()
+    item_designs_cached: list[entities.ItemDesign] = await client.item_service.list_item_designs()
     print(f"Found {len(item_designs_cached)} cached item designs.")
     print(f"First cached item: {item_designs_cached[0].item_design_name}")
 

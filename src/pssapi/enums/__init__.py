@@ -7,11 +7,13 @@ from .animation_effect_type import AnimationEffectType
 from .argument import Argument
 from .asset_type import AssetType
 from .authentication_type import AuthenticationType
+from .availability_mask import AvailabilityMask
 from .background_effect_type import BackgroundEffectType
 from .background_type import BackgroundType
 from .battle_type import BattleType
 from .behavior_flags import BehaviorFlags
 from .category_type import CategoryType
+from .challenge_flags import ChallengeFlags
 from .challenge_scoring_type import ChallengeScoringType
 from .challenge_type import ChallengeType
 from .change_type import ChangeType
@@ -21,12 +23,14 @@ from .character_part_type import CharacterPartType
 from .checksum_type import ChecksumType
 from .collection_type import CollectionType
 from .completion_value_type import CompletionValueType
+from .condition_type_availability_mask import ConditionTypeAvailabilityMask
 from .condition_type_category import ConditionTypeCategory
 from .condition_type_comparison import ConditionTypeComparison
 from .condition_type_parameter import ConditionTypeParameter
 from .cost_type import CostType
 from .craft_attack_type import CraftAttackType
 from .craft_target_type import CraftTargetType
+from .crew_rarity import CrewRarity
 from .currency_type import CurrencyType
 from .daily_reward_status import DailyRewardStatus
 from .daily_reward_type import DailyRewardType
@@ -38,12 +42,15 @@ from .duration_type import DurationType
 from .email_verification_status import EmailVerificationStatus
 from .enhancement_type import EnhancementType
 from .environment_type import EnvironmentType
+from .equipment_mask_flag import EquipmentMaskFlag
 from .explosion_type import ExplosionType
+from .feature_flag import FeatureFlag
 from .file_download_category import FileDownloadCategory
 from .flight_type import FlightType
 from .friend_type import FriendType
 from .gender_type import GenderType
 from .generation_flags import GenerationFlags
+from .grid_type_flag import GridTypeFlag
 from .guide_type import GuideType
 from .hazard_category import HazardCategory
 from .hazard_type import HazardType
@@ -53,6 +60,8 @@ from .item_sub_type import ItemSubType
 from .item_type import ItemType
 from .language_key import LanguageKey
 from .league_type import LeagueType
+from .manufacture_type import ManufactureType
+from .marker_flag import MarkerFlag
 from .marker_type import MarkerType
 from .matching_status import MatchingStatus
 from .message_type import MessageType
@@ -79,9 +88,11 @@ from .research_state import ResearchState
 from .reward_type import RewardType
 from .room_design_sprite_flag import RoomDesignSpriteFlag
 from .room_effect_type import RoomEffectType
+from .room_flags import RoomFlags
 from .room_sprite_type import RoomSpriteType
 from .room_status import RoomStatus
 from .room_type import RoomType
+from .sale_item_mask import SaleItemMask
 from .sale_status import SaleStatus
 from .sale_type import SaleType
 from .season_type import SeasonType
@@ -99,6 +110,7 @@ from .task_design_flags_type import TaskDesignFlagsType
 from .training_animation_style import TrainingAnimationStyle
 from .trigger_type import TriggerType
 from .user_flags import UserFlags
+from .user_status import UserStatus
 from .user_type import UserType
 from .visibility_flags import VisibilityFlags
 
@@ -117,6 +129,7 @@ __all__ = [
     "BattleType",
     "BehaviorFlags",
     "CategoryType",
+    "ChallengeFlags",
     "ChallengeScoringType",
     "ChallengeType",
     "ChangeType",
@@ -126,12 +139,14 @@ __all__ = [
     "ChecksumType",
     "CollectionType",
     "CompletionValueType",
+    "ConditionTypeAvailabilityMask",
     "ConditionTypeCategory",
     "ConditionTypeComparison",
     "ConditionTypeParameter",
     "CostType",
     "CraftAttackType",
     "CraftTargetType",
+    "CrewRarity",
     "CurrencyType",
     "DailyRewardStatus",
     "DailyRewardType",
@@ -143,12 +158,15 @@ __all__ = [
     "EmailVerificationStatus",
     "EnhancementType",
     "EnvironmentType",
+    "EquipmentMaskFlag",
     "ExplosionType",
+    "FeatureFlag",
     "FileDownloadCategory",
     "FlightType",
     "FriendType",
     "GenderType",
     "GenerationFlags",
+    "GridTypeFlag",
     "GuideType",
     "HazardCategory",
     "HazardType",
@@ -157,6 +175,8 @@ __all__ = [
     "ItemSubType",
     "ItemType",
     "LeagueType",
+    "ManufactureType",
+    "MarkerFlag",
     "MarkerType",
     "MatchingStatus",
     "MessageType",
@@ -178,14 +198,17 @@ __all__ = [
     "PurchaseVIPStatus",
     "RaceType",
     "Rarity",
+    "AvailabilityMask",
     "ResearchDesignType",
     "ResearchState",
     "RewardType",
     "RoomDesignSpriteFlag",
     "RoomEffectType",
+    "RoomFlags",
     "RoomSpriteType",
     "RoomStatus",
     "RoomType",
+    "SaleItemMask",
     "SaleStatus",
     "SaleType",
     "SeasonType",
@@ -203,6 +226,7 @@ __all__ = [
     "TrainingAnimationStyle",
     "TriggerType",
     "UserFlags",
+    "UserStatus",
     "UserType",
     "VisibilityFlags",
     "LanguageKey",

@@ -39,14 +39,14 @@ def pss_datetime(value: str) -> _Optional[_datetime]:
 
 def pss_int_enum(value: str, enum: _Type[_IntEnum]) -> _Optional[_IntEnum]:
     value = pss_int(value)
-    if not value:
+    if value is None:
         return None
     return enum(value)
 
 
 def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
     int_value = pss_int(value)
-    if int_value is None:
+    if not int_value:  # Return None if the value parses to 0 or None
         return None
     max_value = int(enum(-1))
     if int_value < -max_value or int_value > max_value:
@@ -67,7 +67,7 @@ def pss_float(value: str, default: float = None) -> _Optional[float]:
 
 
 def pss_int(value: str, default: int = None) -> _Optional[int]:
-    if not value:
+    if value is None or value == "":
         return default
     return int(value)
 
