@@ -2,6 +2,7 @@ from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
 from .entity_base import EntityWithIdBase as _EntityWithIdBase
+from .metadata import StarSystemMarkerGeneratorMetadata as _StarSystemMarkerGeneratorMetadata
 from .raw import StarSystemMarkerRaw as _StarSystemMarkerRaw
 
 
@@ -14,6 +15,7 @@ class StarSystemMarker(_StarSystemMarkerRaw, _EntityWithIdBase):
         self._marker_type_enum: _enums.MarkerType = _parse.pss_str_enum(self.marker_type, _enums.MarkerType)
         self._movement_type_enum: _enums.MovementType = _parse.pss_str_enum(self.movement_type, _enums.MovementType)
         # self._purchase_flags_enum: _enums. = _parse.pss_int_flag(self.purchase_flags)   # enum doesn't exist up to PSS v0.994.1
+        self._star_system_marker_metadata: _StarSystemMarkerGeneratorMetadata = _StarSystemMarkerGeneratorMetadata(self.metadata)
 
     @property
     def id(self) -> int:
@@ -42,3 +44,7 @@ class StarSystemMarker(_StarSystemMarkerRaw, _EntityWithIdBase):
     # @property   # enum doesn't exist up to v 0.994.1
     # def purchase_flags_enum(self) -> "_enums.":
     #    return self._purchase_flags_enum
+
+    @property
+    def star_system_marker_metadata(self) -> _StarSystemMarkerGeneratorMetadata:
+        return self._star_system_marker_metadata
