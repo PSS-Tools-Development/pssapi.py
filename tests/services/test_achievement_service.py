@@ -1,5 +1,6 @@
 import pytest
-from pssapi import PssApiClient, enums
+
+from pssapi import PssApiClient
 
 
 @pytest.mark.asyncio
