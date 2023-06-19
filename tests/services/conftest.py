@@ -2,12 +2,12 @@ import os
 
 import pytest
 
-from pssapi import PssApiClient, enums
+import pssapi
 
 
 @pytest.fixture(scope="session")
-def client() -> PssApiClient:
-    client = PssApiClient(device_type=enums.DeviceType.ANDROID, language_key=enums.LanguageKey.ENGLISH, production_server="api.pixelstarships.com")
+def client() -> pssapi.PssApiClient:
+    client = pssapi.PssApiClient(device_type=pssapi.enums.DeviceType.ANDROID, language_key=pssapi.enums.LanguageKey.ENGLISH, production_server="api.pixelstarships.com")
     return client
 
 
