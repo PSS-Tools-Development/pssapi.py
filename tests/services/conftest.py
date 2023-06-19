@@ -11,6 +11,11 @@ def client() -> PssApiClient:
     return client
 
 
+@pytest.fixture(scope="session")
+def access_token() -> str:
+    return os.environ.get("PSS_ACCESS_TOKEN")
+
+
 @pytest.fixture(scope="module")
 def vcr_config():
     return {
