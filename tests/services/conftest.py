@@ -24,6 +24,13 @@ def vcr_config():
     }
 
 
+@pytest.fixture(scope="function")
+def vcr_cassette_name(request):
+    cassette_name = request.node.name.removeprefix("test_")
+    return cassette_name
+
+
 @pytest.fixture(scope="module")
 def vcr_cassette_dir(request):
-    return "tests/cassettes/"
+    folder_name = request.module.__name__.split(".")[-1].removeprefix("test_")
+    return f"tests/cassettes/{folder_name}"

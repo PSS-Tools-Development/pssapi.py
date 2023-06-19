@@ -14,7 +14,7 @@ interactions:
         that requires a minimum of 25 stars per tournament - activity is mandatory.
         Min trophies : 2600. Min hull lvl : 10. Activity on discord mandatory : https://discord.gg/cBcB3ap.
         AWOOOOOO!!" AllianceCountryCode="" EnableWars="true" Credits="2500" Score="0"
-        ChampionshipScore="50" Trophy="354872" Ranking="0" AllianceSpriteId="19349"
+        ChampionshipScore="50" Trophy="354880" Ranking="0" AllianceSpriteId="19349"
         ChannelId="120" NumberOfMembers="98" NumberOfApprovedMembers="0" AllianceShipUserId="2624870"
         ImmunityDate="2023-06-20T04:09:15" DivisionDesignId="0" /></Alliances></SearchAlliances></AllianceService>'
     headers:
@@ -31,23 +31,23 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '687'
+      - '688'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 20:42:57 GMT
+      - Mon, 19 Jun 2023 21:23:08 GMT
       Expires:
-      - Mon, 19 Jun 2023 20:43:57 GMT
+      - Mon, 19 Jun 2023 21:24:08 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 20:42:57 GMT
+      - Mon, 19 Jun 2023 21:23:08 GMT
       Server:
       - Microsoft-IIS/10.0
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 9da69b2a3e09ed415586f37a6b06b2da.cloudfront.net (CloudFront)
+      - 1.1 bc66fd12bea603144bf0b6c1578cb3e0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - BRFR1HlaDtJKKULoVADtMmWgMk0jo5mFQrSkMpGbWN-kORyBfFcRHQ==
+      - rci4RKbSXSVvLdoYyaBF_vgMZYAxylApJislmrx3Mk1AvAW15-9Ksw==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

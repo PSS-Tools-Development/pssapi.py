@@ -1,5 +1,4 @@
 import pytest
-import vcr
 
 from pssapi import PssApiClient
 
