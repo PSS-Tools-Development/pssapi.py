@@ -1,0 +1,567 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="1950548"
+        MinimumClientVersion="0.996.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2078" SpriteVersion="2789" CharacterDesignVersion="1070" CharacterPartVersion="866"
+        AnimationVersion="708" RoomDesignVersion="851" MissileDesignVersion="532"
+        ResearchDesignVersion="520" RoomDesignSpriteVersion="731" AchievementDesignVersion="558"
+        ConditionTypeVersion="485" CraftDesignVersion="457" ItemDesignVersion="164367"
+        ActionTypeVersion="440" RoomDesignPurchaseVersion="679" ShipDesignVersion="644"
+        LeagueVersion="440" BackgroundVersion="478" MissionDesignVersion="750" TrainingDesignVersion="421"
+        FeatureMask="3" ChallengeDesignVersion="574" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="376" RewardDesignVersion="306753"
+        TournamentFinalDuration="7" DivisionDesignVersion="510" CollectionDesignVersion="375"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="343" AbilityDesignVersion="327"
+        VipDesignVersion="327" StarSystemVersion="336" StarSystemLinkVersion="332"
+        PlanetVersion="311" MaxDailyDraws="12" CurrentAndroidVersion="0.996.1" PromotionDesignVersion="1071"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="478" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="474" ProBonoLimit="10" TaskDesignVersion="740094"
+        NewsDesignVersion="334" MinimumVersion="0.996.1" RecommendedVersion="0.996.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="73"
+        ClientTranslationVersion="66" SeasonDesignVersion="76" AssetVersion="59" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="34"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-06-19T21:57:09" TournamentSpriteId="8000" NewUserCount="2808"
+        NewsUpdateDate="2023-06-19T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19413"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2300'
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 19 Jun 2023 21:58:15 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f1c3d16033a0215071d66d8a8c247af4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - uEb1JeEVW86kPDurGoxSDpf-vg6NrF4uE3SoM8ikQ-lv29eLpIiVBg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="1950548"
+        MinimumClientVersion="0.996.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2078" SpriteVersion="2789" CharacterDesignVersion="1070" CharacterPartVersion="866"
+        AnimationVersion="708" RoomDesignVersion="851" MissileDesignVersion="532"
+        ResearchDesignVersion="520" RoomDesignSpriteVersion="731" AchievementDesignVersion="558"
+        ConditionTypeVersion="485" CraftDesignVersion="457" ItemDesignVersion="164367"
+        ActionTypeVersion="440" RoomDesignPurchaseVersion="679" ShipDesignVersion="644"
+        LeagueVersion="440" BackgroundVersion="478" MissionDesignVersion="750" TrainingDesignVersion="421"
+        FeatureMask="3" ChallengeDesignVersion="574" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="376" RewardDesignVersion="306753"
+        TournamentFinalDuration="7" DivisionDesignVersion="510" CollectionDesignVersion="375"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="343" AbilityDesignVersion="327"
+        VipDesignVersion="327" StarSystemVersion="336" StarSystemLinkVersion="332"
+        PlanetVersion="311" MaxDailyDraws="12" CurrentAndroidVersion="0.996.1" PromotionDesignVersion="1071"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="478" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="474" ProBonoLimit="10" TaskDesignVersion="740094"
+        NewsDesignVersion="334" MinimumVersion="0.996.1" RecommendedVersion="0.996.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="73"
+        ClientTranslationVersion="66" SeasonDesignVersion="76" AssetVersion="59" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="34"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-06-19T21:57:09" TournamentSpriteId="8000" NewUserCount="2793"
+        NewsUpdateDate="2023-06-19T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19413"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2300'
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 19 Jun 2023 21:58:15 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b4415e223ef4b4a1db5d4b79b555fe2e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - VJv8CpBrQ1LS4rs7f9Za0KKe1OsFNGBHz6BVFk5pAlpyuCnAugn0cA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/ChallengeService/ListAllChallengeDesigns2?languageKey=en
+  response:
+    body:
+      string: '<ChallengeService><ListAllChallengeDesigns version="574"><ChallengeDesigns><ChallengeDesign
+        IsRealtime="true" IsFirstFree="true" ChallengeDesignId="1" Name="Live AI Event"
+        Description="Live AI PVP Challenge Event. Manual control is not permitted.
+        Test your skills against other online captains." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100"
+        SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-01-25T00:00:00"
+        EndDate="2018-01-26T00:00:00" RootAchievementDesignId="43" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="2"
+        Name="Veteran Crew" Description="Live AI PVP Event. All Crews are experienced
+        veterans and are raised to Level 40." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="40" OpponentShipIds="" Flags="3" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewLevel" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2022-08-05T00:00:00"
+        EndDate="2022-08-09T00:00:00" RootAchievementDesignId="60" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="3"
+        Name="Live AI Hustle" Description="Live AI PVP Challenge Event. Manual control
+        is not permitted. Test your skills against other online captains." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="25" BasePrize="10" MinBattlePrize="10"
+        MaxBattlePrize="50" SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString=""
+        RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2017-08-04T00:00:00"
+        EndDate="2017-08-08T00:00:00" RootAchievementDesignId="45" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="4"
+        Name="Classic Live AI" Description="Classic Live AI PVP Challenge. Manual
+        control is not permitted. Test your skills against other online captains."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2017-09-02T00:00:00" EndDate="2017-09-05T00:00:00"
+        RootAchievementDesignId="43" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="5" Name="Phone Live AI" Description="A
+        Special Live AI Event to Celebrate PSS on Google Play PC. Manual control is
+        not permitted." ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3"
+        EntryFee="40" BasePrize="30" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="3" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2022-10-14T00:00:00" EndDate="2022-10-18T00:00:00"
+        RootAchievementDesignId="46" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="6" Name="Halloween Challenge" Description="A
+        Special Live AI Event to Celebrate Halloween! Everyone turns into zombies
+        in this AI only Event." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100"
+        SpecialRuleArgument="120" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2017-10-27T00:00:00"
+        EndDate="2017-10-30T00:00:00" RootAchievementDesignId="47" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="7"
+        Name="Classic Live AI" Description="Classic Live AI PVP Returns for just 48
+        Hours. Manual control is not permitted. Test your skills against other online
+        captains." ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2017-11-11T00:00:00" EndDate="2017-11-13T00:00:00"
+        RootAchievementDesignId="43" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="8" Name="Thanksgiving" Description="A
+        Special Live AI Event to Celebrate Thanksgiving! Your crews will turn into
+        turkeys during this event." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100"
+        SpecialRuleArgument="128" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2017-11-25T00:00:00"
+        EndDate="2017-11-27T00:00:00" RootAchievementDesignId="56" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="9"
+        Name="Classic Live AI" Description="Classic Live AI PVP Returns for just 48
+        Hours. Manual control is not permitted. Test your skills against other online
+        captains." ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2017-12-02T00:00:00" EndDate="2017-12-04T00:00:00"
+        RootAchievementDesignId="43" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="10" Name="Elfy" Description="Elfy Live
+        Event. Battle it out this Xmas using Santa''s Helpers!" ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="40" BasePrize="30" MinBattlePrize="30"
+        MaxBattlePrize="110" SpecialRuleArgument="204" OpponentShipIds="" Flags="3"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2022-12-16T00:00:00" EndDate="2022-12-20T00:00:00" RootAchievementDesignId="58"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="11" Name="Santa" Description="It''s the first annual 4
+        day Christmas live PVP event! Only Santa''s allowed!" ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20"
+        MaxBattlePrize="100" SpecialRuleArgument="132" OpponentShipIds="" Flags="0"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2017-12-23T00:00:00" EndDate="2017-12-27T00:00:00" RootAchievementDesignId="59"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="12" Name="Classic Live AI 2018" Description="Classic Live
+        AI PVP Returns for just 48 Hours. Manual control is not permitted. Test your
+        skills against other online captains." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100"
+        SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-01-13T00:00:00"
+        EndDate="2018-01-15T00:00:00" RootAchievementDesignId="43" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="13"
+        Name="Android Challenge" Description="To celebrate public availability of
+        Android Edition on Google Play. Special Challenge Event using only Dolores."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="190"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2018-01-26T00:00:00" EndDate="2018-02-01T00:00:00"
+        RootAchievementDesignId="59" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="14" Name="Rookie Crew" Description="Live
+        AI PVP Event. All Crews are fresh graduates and limited to Level 10." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="40" BasePrize="30" MinBattlePrize="20"
+        MaxBattlePrize="100" SpecialRuleArgument="10" OpponentShipIds="" Flags="3"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewLevel"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2023-03-24T00:00:00" EndDate="2023-03-28T00:00:00" RootAchievementDesignId="44"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="15" Name="Lunar New Year" Description="Live AI PVP Event.
+        All Crews turned into ancient folklore heroes." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="40" BasePrize="30" MinBattlePrize="30" MaxBattlePrize="110"
+        SpecialRuleArgument="89" OpponentShipIds="" Flags="3" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2023-01-20T00:00:00"
+        EndDate="2023-01-24T00:00:00" RootAchievementDesignId="61" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="16"
+        Name="Pre Seasons" Description="Live AI PVP Event. All Star Crews for a nice
+        jersey pin." ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3"
+        EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95" SpecialRuleArgument="113"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2018-03-02T00:00:00" EndDate="2018-03-05T00:00:00"
+        RootAchievementDesignId="62" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="17" Name="Balanced Live AI" Description="Revised
+        Live AI Event! Now balanced with Increased joining cost for repeat winners."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2018-03-19T00:00:00" EndDate="2018-03-26T00:00:00"
+        RootAchievementDesignId="43" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="18" Name="Pool Party" Description="Balanced
+        Live AI PVP Event. Join the early Pool Party, all crews are Barot." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20"
+        MaxBattlePrize="95" SpecialRuleArgument="228" OpponentShipIds="" Flags="0"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2018-04-07T00:00:00" EndDate="2018-04-09T00:00:00" RootAchievementDesignId="78"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="19" Name="Taurus" Description="Live AI Event during the
+        Taurus Constellation. Ships manned by Taura only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="148" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-05-12T00:00:00"
+        EndDate="2018-05-14T00:00:00" RootAchievementDesignId="80" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="20"
+        Name="Gemini" Description="Live AI Event during the Gemini Constellation.
+        Ships manned by Gemini only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="40" BasePrize="40" MinBattlePrize="40" MaxBattlePrize="110"
+        SpecialRuleArgument="256" OpponentShipIds="" Flags="3" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2023-06-16T00:00:00"
+        EndDate="2023-06-20T00:00:00" RootAchievementDesignId="81" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="22"
+        Name="Soccer" Description="Celebratory AI event for the Galaxy Cup! All Crew
+        are changed to: Ron" ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3"
+        EntryFee="40" BasePrize="30" MinBattlePrize="30" MaxBattlePrize="110" SpecialRuleArgument="112"
+        OpponentShipIds="" Flags="3" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2022-11-11T00:00:00" EndDate="2022-11-15T00:00:00"
+        RootAchievementDesignId="82" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="23" Name="Leo" Description="Live AI
+        Event during the Leo Constellation. Ships manned by Leos only." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20"
+        MaxBattlePrize="95" SpecialRuleArgument="267" OpponentShipIds="" Flags="0"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2018-08-04T00:00:00" EndDate="2018-08-07T00:00:00" RootAchievementDesignId="84"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="24" Name="August Classics" Description="Classic Live AI
+        PVP Returns for just 48 Hours. Manual control is not permitted. Test your
+        skills against other online captains." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100"
+        SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-08-18T00:00:00"
+        EndDate="2018-08-20T00:00:00" RootAchievementDesignId="43" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="25"
+        Name="Virgo" Description="Live AI Event during the Virgo Constellation. Ships
+        manned by Virgos only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="280" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-09-08T00:00:00"
+        EndDate="2018-09-10T00:00:00" RootAchievementDesignId="85" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="26"
+        Name="Libra" Description="Live AI Event during the Libra Constellation. Ships
+        manned by Libras only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="260" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-10-13T00:00:00"
+        EndDate="2018-10-15T00:00:00" RootAchievementDesignId="89" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="27"
+        Name="Scorpio" Description="Live AI Event during the Scorpio Constellation.
+        Ships manned by Scorpios only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="206" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-11-13T00:00:00"
+        EndDate="2018-11-15T00:00:00" RootAchievementDesignId="90" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="28"
+        Name="Sagittarius" Description="Live AI Event during the Sagittarius Constellation.
+        Ships manned by Sagitas only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="206" OpponentShipIds="" Flags="0" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2018-12-08T00:00:00"
+        EndDate="2018-12-11T00:00:00" RootAchievementDesignId="91" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="29"
+        Name="Christmas 18" Description="The Christmas Live AI event is here for 2018!
+        Using new matching algorithms! Battle out against other Santas for 2 days
+        only!" ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="20" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="132"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2018-12-22T00:00:00" EndDate="2018-12-24T00:00:00"
+        RootAchievementDesignId="59" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="30" Name="Capricorn" Description="Live
+        AI Event during the Capricorn Constellation. Ships manned by Capricorns only."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95" SpecialRuleArgument="322"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2019-01-05T00:00:00" EndDate="2019-01-07T00:00:00"
+        RootAchievementDesignId="102" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="31" Name="Aquarius" Description="Live
+        AI Event during the Aquarius Constellation. Ships manned by Aquarius only."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="40"
+        BasePrize="30" MinBattlePrize="30" MaxBattlePrize="110" SpecialRuleArgument="324"
+        OpponentShipIds="" Flags="3" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2023-02-17T00:00:00" EndDate="2023-02-21T00:00:00"
+        RootAchievementDesignId="103" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="32" Name="Pisces" Description="Live
+        AI Event during the Pisces Constellation. Ships manned by Pisces only." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20"
+        MaxBattlePrize="95" SpecialRuleArgument="326" OpponentShipIds="" Flags="0"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2019-03-02T00:00:00" EndDate="2019-03-04T00:00:00" RootAchievementDesignId="104"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="33" Name="Aries" Description="Live AI Event during the
+        Aries Constellation. Ships manned by Aries only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="40" BasePrize="30" MinBattlePrize="30" MaxBattlePrize="110"
+        SpecialRuleArgument="330" OpponentShipIds="" Flags="3" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2023-04-21T00:00:00"
+        EndDate="2023-04-25T00:00:00" RootAchievementDesignId="105" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="34"
+        Name="Taurus" Description="Live AI Event during the Taurus Constellation.
+        Ships manned by Taura only." ChallengeArgument="3" ChallengeScoringArgument="9"
+        Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95"
+        SpecialRuleArgument="148" OpponentShipIds="" Flags="3" RewardString="" RequirementString=""
+        ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard"
+        ChallengeType="AI" ButtonAnimationId="165" StartDate="2023-05-13T00:00:00"
+        EndDate="2023-05-16T00:00:00" RootAchievementDesignId="80" PosterSpriteId="4550"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="35"
+        Name="Classic Live AI" Description="Classic Live AI PVP Challenge. Manual
+        control is not permitted. Test your skills against other online captains."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="25" MinBattlePrize="20" MaxBattlePrize="100" SpecialRuleArgument="0"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="None" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2019-05-18T00:00:00" EndDate="2019-05-20T00:00:00"
+        RootAchievementDesignId="43" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="36" Name="Gemini 2021" Description="Live
+        AI Event during the Gemini Constellation. Ships manned by Gemini only." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20"
+        MaxBattlePrize="95" SpecialRuleArgument="256" OpponentShipIds="" Flags="0"
+        RewardString="" RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CrewReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2021-05-22T00:00:00" EndDate="2021-05-24T00:00:00" RootAchievementDesignId="81"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="37" Name="Galaxies Event Horizon" Description="A special
+        event where you get to preview and explore a part of the Galaxy! You may also
+        complete special Global tasks to earn rewards. Start exploring now!" ChallengeArgument="50"
+        ChallengeScoringArgument="9" Lives="1" EntryFee="0" BasePrize="0" MinBattlePrize="0"
+        MaxBattlePrize="0" SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString=""
+        RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="GalaxyMap" ButtonAnimationId="1413" StartDate="2019-07-17T00:00:00"
+        EndDate="2019-07-23T00:00:00" RootAchievementDesignId="0" PosterSpriteId="12677"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="38"
+        Name="Galaxies Event Horizon II" Description="Changes are happening in the
+        Galaxy all the time. A second preview event tests some new mission mechanics
+        and focuses on resource management. Start exploring now!" ChallengeArgument="50"
+        ChallengeScoringArgument="9" Lives="1" EntryFee="0" BasePrize="0" MinBattlePrize="0"
+        MaxBattlePrize="0" SpecialRuleArgument="0" OpponentShipIds="" Flags="0" RewardString=""
+        RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="None" ChallengeScoringType="Standard"
+        ChallengeType="GalaxyMap" ButtonAnimationId="1413" StartDate="2019-08-21T00:00:00"
+        EndDate="2019-08-25T00:00:00" RootAchievementDesignId="0" PosterSpriteId="12677"
+        /><ChallengeDesign IsRealtime="true" IsFirstFree="true" ChallengeDesignId="39"
+        Name="Cat Attack" Description="The abandoned kittens of the Jackson nebula
+        have started their own fight club. May be purriest paw win. No master intervention
+        allowed." ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95" SpecialRuleArgument="3"
+        OpponentShipIds="" Flags="3" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CollectionReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2022-09-16T00:00:00" EndDate="2022-09-20T00:00:00"
+        RootAchievementDesignId="126" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="40" Name="Scorpio" Description="Live
+        AI Event during the Scorpio Constellation. Ships manned by Scorpios only."
+        ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3" EntryFee="50"
+        BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95" SpecialRuleArgument="206"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CrewReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2019-11-09T00:00:00" EndDate="2019-11-12T00:00:00"
+        RootAchievementDesignId="90" PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true"
+        IsFirstFree="true" ChallengeDesignId="42" Name="Cat Attack" Description="The
+        abandoned kittens of the Jackson nebula have started their own fight club.
+        May be purriest paw win. No master intervention allowed." ChallengeArgument="3"
+        ChallengeScoringArgument="9" Lives="3" EntryFee="50" BasePrize="25" MinBattlePrize="20"
+        MaxBattlePrize="95" SpecialRuleArgument="3" OpponentShipIds="" Flags="0" RewardString=""
+        RequirementString="" ChallengeDesignMetadata="" SpecialRuleType="CollectionReplacement"
+        ChallengeScoringType="Standard" ChallengeType="AI" ButtonAnimationId="165"
+        StartDate="2019-12-06T00:00:00" EndDate="2019-12-09T00:00:00" RootAchievementDesignId="126"
+        PosterSpriteId="4550" /><ChallengeDesign IsRealtime="true" IsFirstFree="true"
+        ChallengeDesignId="43" Name="Sango Attack" Description="The Lunar New Year
+        is upon us! All Sango generals are coming together to duke it out to the achieve
+        the highest honour!" ChallengeArgument="3" ChallengeScoringArgument="9" Lives="3"
+        EntryFee="50" BasePrize="25" MinBattlePrize="20" MaxBattlePrize="95" SpecialRuleArgument="2"
+        OpponentShipIds="" Flags="0" RewardString="" RequirementString="" ChallengeDesignMetadata=""
+        SpecialRuleType="CollectionReplacement" ChallengeScoringType="Standard" ChallengeType="AI"
+        ButtonAnimationId="165" StartDate="2020-01-17T00:00:00" EndDate="2022-01-20T00:00:00"
+        RootAchievementDesignId="130" PosterSpriteId="4550" /></ChallengeDesigns></ListAllChallengeDesigns></ChallengeService>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '3954'
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 19 Jun 2023 21:58:16 GMT
+      Expires:
+      - Mon, 19 Jun 2023 22:18:15 GMT
+      Last-Modified:
+      - Mon, 19 Jun 2023 21:58:15 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BT_sJPekrP_s_6Apu61WTdPtNB4MGjNRSAg-OeiKWAPJI2yLiGUKMw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/ChallengeService/ListAllChallengeDesigns2?languageKey=en
+version: 1
