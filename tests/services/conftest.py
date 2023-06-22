@@ -6,14 +6,19 @@ import pssapi
 
 
 @pytest.fixture(scope="session")
+def access_token() -> str:
+    return os.environ.get("PSS_ACCESS_TOKEN")
+
+
+@pytest.fixture(scope="session")
 def client() -> pssapi.PssApiClient:
     client = pssapi.PssApiClient(device_type=pssapi.enums.DeviceType.ANDROID, language_key=pssapi.enums.LanguageKey.ENGLISH, production_server="api.pixelstarships.com")
     return client
 
 
 @pytest.fixture(scope="session")
-def access_token() -> str:
-    return os.environ.get("PSS_ACCESS_TOKEN")
+def client_date_time() -> str:
+    return pssapi.utils.datetime.convert_to_pss_timestamp(pssapi.utils.get_utc_now())
 
 
 @pytest.fixture(scope="module")
