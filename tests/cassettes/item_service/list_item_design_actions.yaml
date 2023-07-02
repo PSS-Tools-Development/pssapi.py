@@ -1,0 +1,405 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2023500"
+        MinimumClientVersion="0.997" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2084" SpriteVersion="2795" CharacterDesignVersion="1073" CharacterPartVersion="869"
+        AnimationVersion="712" RoomDesignVersion="854" MissileDesignVersion="536"
+        ResearchDesignVersion="522" RoomDesignSpriteVersion="734" AchievementDesignVersion="560"
+        ConditionTypeVersion="487" CraftDesignVersion="459" ItemDesignVersion="164399"
+        ActionTypeVersion="442" RoomDesignPurchaseVersion="682" ShipDesignVersion="646"
+        LeagueVersion="442" BackgroundVersion="480" MissionDesignVersion="752" TrainingDesignVersion="423"
+        FeatureMask="3" ChallengeDesignVersion="576" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="378" RewardDesignVersion="308860"
+        TournamentFinalDuration="7" DivisionDesignVersion="513" CollectionDesignVersion="377"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="345" AbilityDesignVersion="329"
+        VipDesignVersion="329" StarSystemVersion="338" StarSystemLinkVersion="334"
+        PlanetVersion="313" MaxDailyDraws="12" CurrentAndroidVersion="0.997" PromotionDesignVersion="1088"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="484" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810894"
+        NewsDesignVersion="336" MinimumVersion="0.997" RecommendedVersion="0.997"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="75"
+        ClientTranslationVersion="68" SeasonDesignVersion="78" AssetVersion="61" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-02T16:07:09" TournamentSpriteId="8000" NewUserCount="3008"
+        NewsUpdateDate="2023-07-02T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="37" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19413"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19749" MerchantShipExteriorSpriteId="19748" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2345'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 02 Jul 2023 16:08:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 787cf49a4e6239fec6165a3996af88ea.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hnunwODf48RGmRg9YMWRafGfqV7_pQYysoJdEId6Odm44IPeMrB7YA==
+      X-Amz-Cf-Pop:
+      - LHR62-C4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2023500"
+        MinimumClientVersion="0.997" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2084" SpriteVersion="2795" CharacterDesignVersion="1073" CharacterPartVersion="869"
+        AnimationVersion="712" RoomDesignVersion="854" MissileDesignVersion="536"
+        ResearchDesignVersion="522" RoomDesignSpriteVersion="734" AchievementDesignVersion="560"
+        ConditionTypeVersion="487" CraftDesignVersion="459" ItemDesignVersion="164399"
+        ActionTypeVersion="442" RoomDesignPurchaseVersion="682" ShipDesignVersion="646"
+        LeagueVersion="442" BackgroundVersion="480" MissionDesignVersion="752" TrainingDesignVersion="423"
+        FeatureMask="3" ChallengeDesignVersion="576" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="378" RewardDesignVersion="308860"
+        TournamentFinalDuration="7" DivisionDesignVersion="513" CollectionDesignVersion="377"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="345" AbilityDesignVersion="329"
+        VipDesignVersion="329" StarSystemVersion="338" StarSystemLinkVersion="334"
+        PlanetVersion="313" MaxDailyDraws="12" CurrentAndroidVersion="0.997" PromotionDesignVersion="1088"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="484" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810894"
+        NewsDesignVersion="336" MinimumVersion="0.997" RecommendedVersion="0.997"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="75"
+        ClientTranslationVersion="68" SeasonDesignVersion="78" AssetVersion="61" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-02T16:07:09" TournamentSpriteId="8000" NewUserCount="3008"
+        NewsUpdateDate="2023-07-02T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="37" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19413"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19749" MerchantShipExteriorSpriteId="19748" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2345'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 02 Jul 2023 16:08:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 9503482155e233e99173b53da4a996fe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Kz8Mwl9q2_DxV75HHe9NN3V3ZHZtYte65u8bhV5VyUonKZTL41wPyQ==
+      X-Amz-Cf-Pop:
+      - LHR62-C4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/ItemService/ListItemDesignActions
+  response:
+    body:
+      string: <ItemService><ListItemDesignActions version="164399"><ItemDesignActions><ItemDesignAction
+        ItemDesignActionId="1" ItemDesignId="749" ItemDesignActionIndex="0" ConditionTypeId="107"
+        ActionTypeId="39" /><ItemDesignAction ItemDesignActionId="2" ItemDesignId="749"
+        ItemDesignActionIndex="1" ConditionTypeId="51" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="3" ItemDesignId="749" ItemDesignActionIndex="2" ConditionTypeId="96"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="4" ItemDesignId="749"
+        ItemDesignActionIndex="3" ConditionTypeId="93" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="5" ItemDesignId="751" ItemDesignActionIndex="0" ConditionTypeId="53"
+        ActionTypeId="39" /><ItemDesignAction ItemDesignActionId="6" ItemDesignId="751"
+        ItemDesignActionIndex="1" ConditionTypeId="43" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="7" ItemDesignId="751" ItemDesignActionIndex="2" ConditionTypeId="51"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="8" ItemDesignId="751"
+        ItemDesignActionIndex="3" ConditionTypeId="42" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="9" ItemDesignId="751" ItemDesignActionIndex="4" ConditionTypeId="1"
+        ActionTypeId="19" /><ItemDesignAction ItemDesignActionId="10" ItemDesignId="752"
+        ItemDesignActionIndex="0" ConditionTypeId="53" ActionTypeId="39" /><ItemDesignAction
+        ItemDesignActionId="11" ItemDesignId="752" ItemDesignActionIndex="1" ConditionTypeId="49"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="12" ItemDesignId="752"
+        ItemDesignActionIndex="2" ConditionTypeId="38" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="13" ItemDesignId="752" ItemDesignActionIndex="3" ConditionTypeId="35"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="14" ItemDesignId="752"
+        ItemDesignActionIndex="4" ConditionTypeId="39" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="15" ItemDesignId="752" ItemDesignActionIndex="5" ConditionTypeId="36"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="16" ItemDesignId="752"
+        ItemDesignActionIndex="6" ConditionTypeId="1" ActionTypeId="21" /><ItemDesignAction
+        ItemDesignActionId="17" ItemDesignId="753" ItemDesignActionIndex="0" ConditionTypeId="107"
+        ActionTypeId="39" /><ItemDesignAction ItemDesignActionId="18" ItemDesignId="753"
+        ItemDesignActionIndex="1" ConditionTypeId="67" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="19" ItemDesignId="753" ItemDesignActionIndex="2" ConditionTypeId="41"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="20" ItemDesignId="753"
+        ItemDesignActionIndex="3" ConditionTypeId="47" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="21" ItemDesignId="753" ItemDesignActionIndex="4" ConditionTypeId="1"
+        ActionTypeId="23" /><ItemDesignAction ItemDesignActionId="22" ItemDesignId="753"
+        ItemDesignActionIndex="5" ConditionTypeId="1" ActionTypeId="43" /><ItemDesignAction
+        ItemDesignActionId="23" ItemDesignId="753" ItemDesignActionIndex="6" ConditionTypeId="1"
+        ActionTypeId="13" /><ItemDesignAction ItemDesignActionId="24" ItemDesignId="735"
+        ItemDesignActionIndex="0" ConditionTypeId="53" ActionTypeId="39" /><ItemDesignAction
+        ItemDesignActionId="25" ItemDesignId="735" ItemDesignActionIndex="1" ConditionTypeId="43"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="26" ItemDesignId="735"
+        ItemDesignActionIndex="2" ConditionTypeId="51" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="27" ItemDesignId="735" ItemDesignActionIndex="3" ConditionTypeId="42"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="28" ItemDesignId="735"
+        ItemDesignActionIndex="4" ConditionTypeId="1" ActionTypeId="19" /><ItemDesignAction
+        ItemDesignActionId="29" ItemDesignId="736" ItemDesignActionIndex="0" ConditionTypeId="1"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="30" ItemDesignId="736"
+        ItemDesignActionIndex="1" ConditionTypeId="21" ActionTypeId="41" /><ItemDesignAction
+        ItemDesignActionId="31" ItemDesignId="736" ItemDesignActionIndex="2" ConditionTypeId="21"
+        ActionTypeId="25" /><ItemDesignAction ItemDesignActionId="32" ItemDesignId="736"
+        ItemDesignActionIndex="3" ConditionTypeId="92" ActionTypeId="35" /><ItemDesignAction
+        ItemDesignActionId="33" ItemDesignId="736" ItemDesignActionIndex="4" ConditionTypeId="18"
+        ActionTypeId="37" /><ItemDesignAction ItemDesignActionId="34" ItemDesignId="736"
+        ItemDesignActionIndex="5" ConditionTypeId="18" ActionTypeId="6" /><ItemDesignAction
+        ItemDesignActionId="35" ItemDesignId="736" ItemDesignActionIndex="6" ConditionTypeId="1"
+        ActionTypeId="35" /><ItemDesignAction ItemDesignActionId="36" ItemDesignId="736"
+        ItemDesignActionIndex="7" ConditionTypeId="1" ActionTypeId="33" /><ItemDesignAction
+        ItemDesignActionId="37" ItemDesignId="736" ItemDesignActionIndex="8" ConditionTypeId="1"
+        ActionTypeId="12" /><ItemDesignAction ItemDesignActionId="38" ItemDesignId="750"
+        ItemDesignActionIndex="0" ConditionTypeId="2" ActionTypeId="55" /><ItemDesignAction
+        ItemDesignActionId="39" ItemDesignId="750" ItemDesignActionIndex="1" ConditionTypeId="1"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="40" ItemDesignId="754"
+        ItemDesignActionIndex="0" ConditionTypeId="22" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="41" ItemDesignId="754" ItemDesignActionIndex="1" ConditionTypeId="65"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="42" ItemDesignId="754"
+        ItemDesignActionIndex="2" ConditionTypeId="36" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="43" ItemDesignId="754" ItemDesignActionIndex="3" ConditionTypeId="39"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="44" ItemDesignId="754"
+        ItemDesignActionIndex="4" ConditionTypeId="1" ActionTypeId="12" /><ItemDesignAction
+        ItemDesignActionId="45" ItemDesignId="755" ItemDesignActionIndex="0" ConditionTypeId="61"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="46" ItemDesignId="755"
+        ItemDesignActionIndex="1" ConditionTypeId="1" ActionTypeId="2" /><ItemDesignAction
+        ItemDesignActionId="47" ItemDesignId="756" ItemDesignActionIndex="0" ConditionTypeId="1"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="48" ItemDesignId="756"
+        ItemDesignActionIndex="1" ConditionTypeId="18" ActionTypeId="6" /><ItemDesignAction
+        ItemDesignActionId="49" ItemDesignId="756" ItemDesignActionIndex="2" ConditionTypeId="39"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="50" ItemDesignId="756"
+        ItemDesignActionIndex="3" ConditionTypeId="37" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="51" ItemDesignId="756" ItemDesignActionIndex="4" ConditionTypeId="65"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="52" ItemDesignId="756"
+        ItemDesignActionIndex="5" ConditionTypeId="36" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="53" ItemDesignId="756" ItemDesignActionIndex="6" ConditionTypeId="91"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="54" ItemDesignId="756"
+        ItemDesignActionIndex="7" ConditionTypeId="1" ActionTypeId="2" /><ItemDesignAction
+        ItemDesignActionId="55" ItemDesignId="757" ItemDesignActionIndex="0" ConditionTypeId="13"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="56" ItemDesignId="757"
+        ItemDesignActionIndex="1" ConditionTypeId="13" ActionTypeId="27" /><ItemDesignAction
+        ItemDesignActionId="57" ItemDesignId="757" ItemDesignActionIndex="2" ConditionTypeId="28"
+        ActionTypeId="2" /><ItemDesignAction ItemDesignActionId="58" ItemDesignId="758"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="59" ItemDesignId="759" ItemDesignActionIndex="0" ConditionTypeId="83"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="60" ItemDesignId="759"
+        ItemDesignActionIndex="1" ConditionTypeId="1" ActionTypeId="2" /><ItemDesignAction
+        ItemDesignActionId="61" ItemDesignId="760" ItemDesignActionIndex="0" ConditionTypeId="36"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="62" ItemDesignId="760"
+        ItemDesignActionIndex="1" ConditionTypeId="1" ActionTypeId="2" /><ItemDesignAction
+        ItemDesignActionId="63" ItemDesignId="761" ItemDesignActionIndex="0" ConditionTypeId="1"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="64" ItemDesignId="761"
+        ItemDesignActionIndex="1" ConditionTypeId="1" ActionTypeId="36" /><ItemDesignAction
+        ItemDesignActionId="65" ItemDesignId="761" ItemDesignActionIndex="2" ConditionTypeId="1"
+        ActionTypeId="5" /><ItemDesignAction ItemDesignActionId="66" ItemDesignId="761"
+        ItemDesignActionIndex="3" ConditionTypeId="1" ActionTypeId="12" /><ItemDesignAction
+        ItemDesignActionId="67" ItemDesignId="762" ItemDesignActionIndex="0" ConditionTypeId="1"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="68" ItemDesignId="762"
+        ItemDesignActionIndex="1" ConditionTypeId="1" ActionTypeId="45" /><ItemDesignAction
+        ItemDesignActionId="69" ItemDesignId="762" ItemDesignActionIndex="2" ConditionTypeId="1"
+        ActionTypeId="33" /><ItemDesignAction ItemDesignActionId="70" ItemDesignId="762"
+        ItemDesignActionIndex="3" ConditionTypeId="1" ActionTypeId="42" /><ItemDesignAction
+        ItemDesignActionId="71" ItemDesignId="762" ItemDesignActionIndex="4" ConditionTypeId="1"
+        ActionTypeId="12" /><ItemDesignAction ItemDesignActionId="72" ItemDesignId="763"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="73" ItemDesignId="763" ItemDesignActionIndex="1" ConditionTypeId="35"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="74" ItemDesignId="763"
+        ItemDesignActionIndex="2" ConditionTypeId="38" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="75" ItemDesignId="763" ItemDesignActionIndex="3" ConditionTypeId="3"
+        ActionTypeId="2" /><ItemDesignAction ItemDesignActionId="76" ItemDesignId="764"
+        ItemDesignActionIndex="0" ConditionTypeId="28" ActionTypeId="2" /><ItemDesignAction
+        ItemDesignActionId="77" ItemDesignId="764" ItemDesignActionIndex="1" ConditionTypeId="26"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="78" ItemDesignId="765"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="3" /><ItemDesignAction
+        ItemDesignActionId="79" ItemDesignId="765" ItemDesignActionIndex="1" ConditionTypeId="1"
+        ActionTypeId="27" /><ItemDesignAction ItemDesignActionId="80" ItemDesignId="766"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="81" ItemDesignId="766" ItemDesignActionIndex="1" ConditionTypeId="21"
+        ActionTypeId="41" /><ItemDesignAction ItemDesignActionId="82" ItemDesignId="766"
+        ItemDesignActionIndex="2" ConditionTypeId="21" ActionTypeId="25" /><ItemDesignAction
+        ItemDesignActionId="83" ItemDesignId="766" ItemDesignActionIndex="3" ConditionTypeId="92"
+        ActionTypeId="35" /><ItemDesignAction ItemDesignActionId="84" ItemDesignId="766"
+        ItemDesignActionIndex="4" ConditionTypeId="18" ActionTypeId="37" /><ItemDesignAction
+        ItemDesignActionId="85" ItemDesignId="766" ItemDesignActionIndex="5" ConditionTypeId="18"
+        ActionTypeId="6" /><ItemDesignAction ItemDesignActionId="86" ItemDesignId="766"
+        ItemDesignActionIndex="6" ConditionTypeId="1" ActionTypeId="35" /><ItemDesignAction
+        ItemDesignActionId="87" ItemDesignId="766" ItemDesignActionIndex="7" ConditionTypeId="1"
+        ActionTypeId="33" /><ItemDesignAction ItemDesignActionId="88" ItemDesignId="766"
+        ItemDesignActionIndex="8" ConditionTypeId="1" ActionTypeId="12" /><ItemDesignAction
+        ItemDesignActionId="89" ItemDesignId="767" ItemDesignActionIndex="0" ConditionTypeId="22"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="90" ItemDesignId="767"
+        ItemDesignActionIndex="1" ConditionTypeId="38" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="91" ItemDesignId="767" ItemDesignActionIndex="2" ConditionTypeId="1"
+        ActionTypeId="6" /><ItemDesignAction ItemDesignActionId="92" ItemDesignId="768"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="93" ItemDesignId="768" ItemDesignActionIndex="1" ConditionTypeId="18"
+        ActionTypeId="6" /><ItemDesignAction ItemDesignActionId="94" ItemDesignId="768"
+        ItemDesignActionIndex="2" ConditionTypeId="39" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="95" ItemDesignId="768" ItemDesignActionIndex="3" ConditionTypeId="37"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="96" ItemDesignId="768"
+        ItemDesignActionIndex="4" ConditionTypeId="65" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="97" ItemDesignId="768" ItemDesignActionIndex="5" ConditionTypeId="36"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="98" ItemDesignId="768"
+        ItemDesignActionIndex="6" ConditionTypeId="91" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="99" ItemDesignId="768" ItemDesignActionIndex="7" ConditionTypeId="1"
+        ActionTypeId="2" /><ItemDesignAction ItemDesignActionId="100" ItemDesignId="769"
+        ItemDesignActionIndex="0" ConditionTypeId="8" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="101" ItemDesignId="769" ItemDesignActionIndex="1" ConditionTypeId="58"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="102" ItemDesignId="769"
+        ItemDesignActionIndex="2" ConditionTypeId="35" ActionTypeId="29" /><ItemDesignAction
+        ItemDesignActionId="103" ItemDesignId="769" ItemDesignActionIndex="3" ConditionTypeId="38"
+        ActionTypeId="29" /><ItemDesignAction ItemDesignActionId="104" ItemDesignId="769"
+        ItemDesignActionIndex="4" ConditionTypeId="1" ActionTypeId="55" /><ItemDesignAction
+        ItemDesignActionId="105" ItemDesignId="770" ItemDesignActionIndex="0" ConditionTypeId="1"
+        ActionTypeId="55" /><ItemDesignAction ItemDesignActionId="106" ItemDesignId="770"
+        ItemDesignActionIndex="1" ConditionTypeId="26" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="107" ItemDesignId="770" ItemDesignActionIndex="2" ConditionTypeId="3"
+        ActionTypeId="2" /><ItemDesignAction ItemDesignActionId="108" ItemDesignId="771"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="3" /><ItemDesignAction
+        ItemDesignActionId="109" ItemDesignId="771" ItemDesignActionIndex="1" ConditionTypeId="1"
+        ActionTypeId="27" /><ItemDesignAction ItemDesignActionId="110" ItemDesignId="772"
+        ItemDesignActionIndex="0" ConditionTypeId="1" ActionTypeId="55" /><ItemDesignAction
+        ItemDesignActionId="111" ItemDesignId="772" ItemDesignActionIndex="1" ConditionTypeId="26"
+        ActionTypeId="1" /><ItemDesignAction ItemDesignActionId="112" ItemDesignId="773"
+        ItemDesignActionIndex="0" ConditionTypeId="144" ActionTypeId="1" /><ItemDesignAction
+        ItemDesignActionId="113" ItemDesignId="773" ItemDesignActionIndex="1" ConditionTypeId="1"
+        ActionTypeId="2" /></ItemDesignActions></ListItemDesignActions></ItemService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2351'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 02 Jul 2023 16:08:19 GMT
+      Expires:
+      - Sun, 02 Jul 2023 16:28:19 GMT
+      Last-Modified:
+      - Sun, 02 Jul 2023 16:08:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 8c4a64cf3c62b5095bb752f800deb114.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - GHweBmTna6uWBI2PQa-xRUwyd4ZCzdphtG7bQvBvTJiHxDyYZyeg6A==
+      X-Amz-Cf-Pop:
+      - LHR62-C4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/ItemService/ListItemDesignActions
+version: 1
