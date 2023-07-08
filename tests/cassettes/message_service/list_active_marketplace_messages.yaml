@@ -1,0 +1,153 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/MessageService/ListActiveMarketplaceMessages5?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&currencyType=Unknown&itemDesignId=0&itemSubType=None&rarity=None&skip=0&take=20&userId=0
+  response:
+    body:
+      string: "<MessageService><ListActiveMarketplaceMessages><Messages><Message MessageId=\"450484693\"
+        UserId=\"9840136\" Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442 1
+        Mecha-Clamp\" UserName=\"Alexis Samuel\" UserSpriteId=\"10006\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:4\"
+        Argument=\"item:420x1\" AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\"
+        MessageDate=\"2023-07-04T06:34:05\" Trophy=\"1371\" ShipDesignId=\"0\" SaleId=\"30839362\"
+        /><Message MessageId=\"450484706\" UserId=\"9215292\" Message=\"Selling 1
+        Void Particle\" UserName=\"Deviset_\" UserSpriteId=\"12751\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"mineral:1125000\"
+        Argument=\"item:778x1\" AllianceName=\"Trek Wolfpack\" AllianceSpriteId=\"19349\"
+        AllianceId=\"21\" MessageDate=\"2023-07-04T06:34:09\" Trophy=\"2737\" ShipDesignId=\"0\"
+        SaleId=\"30839363\" /><Message MessageId=\"450484726\" UserId=\"10025369\"
+        Message=\"Vende 1 Female Synth Leg\" UserName=\"Brynh\" UserSpriteId=\"5513\"
+        MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:200\"
+        Argument=\"item:223x1\" AllianceName=\"La Legion\" AllianceSpriteId=\"19390\"
+        AllianceId=\"25961\" MessageDate=\"2023-07-04T06:34:19\" Trophy=\"2757\" ShipDesignId=\"0\"
+        SaleId=\"30839364\" /><Message MessageId=\"450484730\" UserId=\"9840136\"
+        Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442 1 Qtarian Mini-Satellite\"
+        UserName=\"Alexis Samuel\" UserSpriteId=\"10280\" MessageType=\"Market\" ChannelId=\"3\"
+        ActivityType=\"MarketListed\" ActivityArgument=\"starbux:4\" Argument=\"item:486x1\"
+        AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\" MessageDate=\"2023-07-04T06:34:23\"
+        Trophy=\"1371\" ShipDesignId=\"0\" SaleId=\"30839365\" /><Message MessageId=\"450484735\"
+        UserId=\"10025369\" Message=\"Vende 1 Female Synth Arm\" UserName=\"Brynh\"
+        UserSpriteId=\"5510\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:600\" Argument=\"item:222x1\" AllianceName=\"La
+        Legion\" AllianceSpriteId=\"19390\" AllianceId=\"25961\" MessageDate=\"2023-07-04T06:34:28\"
+        Trophy=\"2757\" ShipDesignId=\"0\" SaleId=\"30839366\" /><Message MessageId=\"450484826\"
+        UserId=\"9840136\" Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442 1
+        Tin Shield\" UserName=\"Alexis Samuel\" UserSpriteId=\"3845\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:22\"
+        Argument=\"item:185x1\" AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\"
+        MessageDate=\"2023-07-04T06:35:02\" Trophy=\"1371\" ShipDesignId=\"0\" SaleId=\"30839370\"
+        /><Message MessageId=\"450484855\" UserId=\"9511098\" Message=\"\u5728\u5356
+        1 Summit's Edge (+9 Science)\" UserName=\"\u51B2\u950B\u53F7-\u8239\u957F\u540D\u5B57\u6BD4\u8F83\u725B\"
+        UserSpriteId=\"18246\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:5600\" Argument=\"item:1496x1\" AllianceName=\"Summit\"
+        AllianceSpriteId=\"19374\" AllianceId=\"43776\" MessageDate=\"2023-07-04T06:35:22\"
+        Trophy=\"5038\" ShipDesignId=\"0\" SaleId=\"30839371\" /><Message MessageId=\"450485031\"
+        UserId=\"10282629\" Message=\"Vendita 1 QBot\" UserName=\"Kricchetto\" UserSpriteId=\"7548\"
+        MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:100\"
+        Argument=\"item:308x1\" AllianceName=\"Italian pixels\" AllianceSpriteId=\"2273\"
+        AllianceId=\"43836\" MessageDate=\"2023-07-04T06:36:46\" Trophy=\"1949\" ShipDesignId=\"0\"
+        SaleId=\"30839376\" /><Message MessageId=\"450485035\" UserId=\"10371182\"
+        Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442 1 Small Mineral Crate\"
+        UserName=\"Pincky3\" UserSpriteId=\"3486\" MessageType=\"Market\" ChannelId=\"3\"
+        ActivityType=\"MarketListed\" ActivityArgument=\"gas:370000\" Argument=\"item:81x1\"
+        AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\" MessageDate=\"2023-07-04T06:36:47\"
+        Trophy=\"1244\" ShipDesignId=\"0\" SaleId=\"30839377\" /><Message MessageId=\"450485044\"
+        UserId=\"10238989\" Message=\"\u5728\u5356 1 Mystic Chick\" UserName=\"\u4F11\u73ED\u5229\u5B89\u53F7\"
+        UserSpriteId=\"9979\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:550\" Argument=\"item:433x1\" AllianceName=\"\u9F99\u6E0A\u9601\"
+        AllianceSpriteId=\"2282\" AllianceId=\"44291\" MessageDate=\"2023-07-04T06:36:55\"
+        Trophy=\"2146\" ShipDesignId=\"0\" SaleId=\"30839378\" /><Message MessageId=\"450485072\"
+        UserId=\"9276156\" Message=\"Selling 1 Eye Roll Emoji Sticker\" UserName=\"Champion990\"
+        UserSpriteId=\"12235\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:100\" Argument=\"item:701x1\" AllianceName=\"\"
+        AllianceSpriteId=\"0\" AllianceId=\"0\" MessageDate=\"2023-07-04T06:37:11\"
+        Trophy=\"2476\" ShipDesignId=\"0\" SaleId=\"30839379\" /><Message MessageId=\"450485141\"
+        UserId=\"9276156\" Message=\"Selling 1 Xmas Gift Mine\" UserName=\"Champion990\"
+        UserSpriteId=\"11364\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:150\" Argument=\"item:541x1\" AllianceName=\"\"
+        AllianceSpriteId=\"0\" AllianceId=\"0\" MessageDate=\"2023-07-04T06:37:40\"
+        Trophy=\"2476\" ShipDesignId=\"0\" SaleId=\"30839382\" /><Message MessageId=\"450485196\"
+        UserId=\"919041\" Message=\"\u5728\u5356 58 Scratchy\" UserName=\"Stepfeng\"
+        UserSpriteId=\"4321\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:1450\" Argument=\"item:131x58\" AllianceName=\"HYDRA\u9F8D\"
+        AllianceSpriteId=\"19348\" AllianceId=\"11946\" MessageDate=\"2023-07-04T06:38:05\"
+        Trophy=\"5232\" ShipDesignId=\"0\" SaleId=\"30839386\" /><Message MessageId=\"450485202\"
+        UserId=\"10401283\" Message=\"\u0110ang b\xE1n 1 Void Particle\" UserName=\"Sunshine0513\"
+        UserSpriteId=\"12751\" MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\"
+        ActivityArgument=\"starbux:100\" Argument=\"item:778x1\" AllianceName=\"New
+        ZLandia\" AllianceSpriteId=\"2279\" AllianceId=\"44613\" MessageDate=\"2023-07-04T06:38:10\"
+        Trophy=\"1363\" ShipDesignId=\"0\" SaleId=\"30839387\" /><Message MessageId=\"450485204\"
+        UserId=\"10250869\" Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442 1
+        Heavy Shield\" UserName=\"s219s\" UserSpriteId=\"11561\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:40\"
+        Argument=\"item:693x1\" AllianceName=\"\u043D\u0443 \u0437\u0434\u043E\u0440\u043E\u0432\u043E
+        \u043E\u0442\u0435\u0446\" AllianceSpriteId=\"2261\" AllianceId=\"44294\"
+        MessageDate=\"2023-07-04T06:38:11\" Trophy=\"2764\" ShipDesignId=\"0\" SaleId=\"30839389\"
+        /><Message MessageId=\"450485216\" UserId=\"7041784\" Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442
+        1 Energy Shield\" UserName=\"TakTucT\" UserSpriteId=\"11562\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:1200\"
+        Argument=\"item:695x1\" AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\"
+        MessageDate=\"2023-07-04T06:38:15\" Trophy=\"2827\" ShipDesignId=\"0\" SaleId=\"30839390\"
+        /><Message MessageId=\"450485292\" UserId=\"10244363\" Message=\"Selling 1
+        Improved Combat Armor\" UserName=\"kobadidnowrong\" UserSpriteId=\"3470\"
+        MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:19\"
+        Argument=\"item:92x1\" AllianceName=\"Blue Star Vikings\" AllianceSpriteId=\"19359\"
+        AllianceId=\"30828\" MessageDate=\"2023-07-04T06:38:51\" Trophy=\"3720\" ShipDesignId=\"0\"
+        SaleId=\"30839396\" /><Message MessageId=\"450485295\" UserId=\"9276156\"
+        Message=\"Selling 1 Pilot Sidearm\" UserName=\"Champion990\" UserSpriteId=\"9967\"
+        MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"mineral:1000000\"
+        Argument=\"item:440x1\" AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\"
+        MessageDate=\"2023-07-04T06:38:52\" Trophy=\"2476\" ShipDesignId=\"0\" SaleId=\"30839397\"
+        /><Message MessageId=\"450485312\" UserId=\"7041784\" Message=\"\u041F\u0440\u043E\u0434\u0430\u0435\u0442
+        1 Visiri Gunner Helm Alpha (+30.9 FireResistance)\" UserName=\"TakTucT\" UserSpriteId=\"12777\"
+        MessageType=\"Market\" ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:600\"
+        Argument=\"item:790x1\" AllianceName=\"\" AllianceSpriteId=\"0\" AllianceId=\"0\"
+        MessageDate=\"2023-07-04T06:38:56\" Trophy=\"2827\" ShipDesignId=\"0\" SaleId=\"30839398\"
+        /><Message MessageId=\"450485323\" UserId=\"7060791\" Message=\"\u0110ang
+        b\xE1n 1 Super Gas Crate\" UserName=\"sentoruy\" UserSpriteId=\"4615\" MessageType=\"Market\"
+        ChannelId=\"3\" ActivityType=\"MarketListed\" ActivityArgument=\"starbux:600\"
+        Argument=\"item:242x1\" AllianceName=\"Star Pickles\" AllianceSpriteId=\"19385\"
+        AllianceId=\"44519\" MessageDate=\"2023-07-04T06:39:03\" Trophy=\"1839\" ShipDesignId=\"0\"
+        SaleId=\"30839399\" /></Messages></ListActiveMarketplaceMessages></MessageService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2349'
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 04 Jul 2023 06:39:12 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - lwZ3K8VWayU3Nz7-B81PAa1jsRDllh0Q6rS0fb_910KiNeqVmnLBRw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/MessageService/ListActiveMarketplaceMessages5?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&currencyType=Unknown&itemDesignId=0&itemSubType=None&rarity=None&skip=0&take=20&userId=0
+version: 1
