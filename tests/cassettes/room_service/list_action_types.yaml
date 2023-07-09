@@ -1,0 +1,577 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025005"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310316"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T10:41:27" TournamentSpriteId="8000" NewUserCount="3033"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2346'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 10:41:50 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 cb643617ee4bca09492409ac12401bfc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 484QRRH1ll09kAueTz3sCEimgEAfq32_v2VTDPUg1eRiIVZV5n7ukA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025005"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310316"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T10:41:27" TournamentSpriteId="8000" NewUserCount="3044"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2346'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 10:41:50 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PsEwu7AnQystaOGMKWG9_VZfW5nyPMCNxWJDf1ocQ-li_EEL8wg33A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/ListActionTypes2?languageKey=en
+  response:
+    body:
+      string: <RoomService><ListActionTypes version="445"><ActionTypes><ActionType
+        ActionTypeId="1" ActionTypeName="Set Maximum Power" RoomType="None" ActionTypeCategory="SetPower"
+        ActionTypeKey="SetMaximumPower" ActionTypeParameterValue="999" ActionTypeDescription="Sets
+        current assigned power to the maximum available" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="2" RoomCategoryType="None"
+        /><ActionType ActionTypeId="2" ActionTypeName="Set Zero Power" RoomType="None"
+        ActionTypeCategory="SetPower" ActionTypeKey="SetZeroPower" ActionTypeParameterValue="0"
+        ActionTypeDescription="Resets all assigned power to 0" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="3" RoomCategoryType="None"
+        /><ActionType ActionTypeId="3" ActionTypeName="Increase Power By 1" RoomType="None"
+        ActionTypeCategory="SetPower" ActionTypeKey="IncreasePowerBy1" ActionTypeParameterValue="1"
+        ActionTypeDescription="Increases assigned power by 1 if available" ActionTypeParameterRelativity="Relative"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="4" ActionTypeName="Decrease Power By 1" RoomType="None"
+        ActionTypeCategory="SetPower" ActionTypeKey="DecreasePowerBy1" ActionTypeParameterValue="-1"
+        ActionTypeDescription="Decreases assigned power by 1" ActionTypeParameterRelativity="Relative"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ActionType ActionTypeId="5" ActionTypeName="Target Enemy Laser" RoomType="Laser"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyLasers" ActionTypeParameterValue="0"
+        ActionTypeDescription="Set current target to an enemy ammo-less type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="6" ActionTypeName="Target
+        Enemy Shield Room" RoomType="Shield" ActionTypeCategory="Target" ActionTypeKey="TargetEnemyShields"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        an enemy Shield type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="9" ActionTypeName="Target Enemy Engine" RoomType="Engine" ActionTypeCategory="Target"
+        ActionTypeKey="TargetEnemyEngines" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current target to an enemy Engine type room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="12" ActionTypeName="Target Enemy Reactor" RoomType="Reactor"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyReactors" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Reactor type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="13" ActionTypeName="Target
+        Your Laser" RoomType="Laser" ActionTypeCategory="Target" ActionTypeKey="TargetYourLasers"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly ammo-less type weapon room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="16" ActionTypeName="Target Your Engine" RoomType="Engine"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourEngines" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly Engine type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="19" ActionTypeName="Target
+        Your Shield Room" RoomType="Shield" ActionTypeCategory="Target" ActionTypeKey="TargetYourShields"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Shield type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="20" ActionTypeName="Target Your Reactor" RoomType="Reactor"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourReactors" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly Reactor type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="21" ActionTypeName="Target
+        Random Enemy Room" RoomType="None" ActionTypeCategory="Target" ActionTypeKey="TargetRandomEnemyRoom"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a valid random enemy room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="22" ActionTypeName="Target Enemy Missile Room" RoomType="Missile"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyMissiles" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Missile type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="23" ActionTypeName="Target
+        Your Missile Room" RoomType="Missile" ActionTypeCategory="Target" ActionTypeKey="TargetYourMissiles"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Missile type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="25" ActionTypeName="Target Enemy Teleport Room" RoomType="Teleport"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyTeleport" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Teleport type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="26" ActionTypeName="Target
+        Your Teleport" RoomType="Teleport" ActionTypeCategory="Target" ActionTypeKey="TargetYourTeleport"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Teleport type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="27" ActionTypeName="Set Cheapest Items" RoomType="None" ActionTypeCategory="SetItem"
+        ActionTypeKey="SetCheapestItems" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current assigned ammo to the cheapest available" ActionTypeParameterRelativity="Lowest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="Cost"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="6" RoomCategoryType="None"
+        /><ActionType ActionTypeId="28" ActionTypeName="Set Dearest Items" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetDearestItems" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current assigned ammo to the most expensive available"
+        ActionTypeParameterRelativity="Highest" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="Cost" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="7" RoomCategoryType="None" /><ActionType ActionTypeId="29" ActionTypeName="Target
+        Condition Room" RoomType="None" ActionTypeCategory="Target" ActionTypeKey="TargetConditionRoom"
+        ActionTypeParameterValue="0" ActionTypeDescription="Target condition room
+        that satisfies conditions" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="None" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None" /><ActionType
+        ActionTypeId="30" ActionTypeName="Target Your Hangar" RoomType="Carrier" ActionTypeCategory="Target"
+        ActionTypeKey="TargetYourHangar" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current target to a friendly Hangar type room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="31" ActionTypeName="Target Enemy Hangar" RoomType="Carrier"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyHangar" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Hangar type room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="32" ActionTypeName="Target Your AntiCraft Room"
+        RoomType="AntiCraft" ActionTypeCategory="Target" ActionTypeKey="TargetYourAntiCraft"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Anti-craft type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="33" ActionTypeName="Target Enemy AntiCraft Room" RoomType="AntiCraft"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyAntiCraft" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Anti-craft type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="34" ActionTypeName="Use
+        Special Power" RoomType="None" ActionTypeCategory="UseSpecialPower" ActionTypeKey="UseSpecialPower"
+        ActionTypeParameterValue="1" ActionTypeDescription="Activates crew special
+        abilities if unused. This AI command will be run last and separately from
+        other AI commands." ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="None" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="35" ActionTypeName="Set Highest System Damage" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetHighestSystemDamage" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current assigned ammo to the highest system damage
+        ammo available" ActionTypeParameterRelativity="Highest" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="SystemDamage" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None" /><ActionType
+        ActionTypeId="36" ActionTypeName="Set Highest Hull Damage" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetHighestHullDamage" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current assigned ammo to the highest hull damage
+        ammo available" ActionTypeParameterRelativity="Highest" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="HullDamage" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="10" RoomCategoryType="None" /><ActionType
+        ActionTypeId="37" ActionTypeName="Set Highest EMP" RoomType="None" ActionTypeCategory="SetItem"
+        ActionTypeKey="SetHighestEMP" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current assigned ammo to the highest EMP stat ammo available" ActionTypeParameterRelativity="Highest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="EMPLength"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="14" RoomCategoryType="None"
+        /><ActionType ActionTypeId="38" ActionTypeName="Set Highest Character Damage"
+        RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetHighestCharacterDamage"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current assigned
+        ammo to the highest crew damage ammo available" ActionTypeParameterRelativity="Highest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="CharacterDamage"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
+        /><ActionType ActionTypeId="39" ActionTypeName="Target Your Medical Room"
+        RoomType="Medical" ActionTypeCategory="Target" ActionTypeKey="TargetYourMedicals"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Medical type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="40" ActionTypeName="Target Enemy Medical Room" RoomType="Medical"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyMedicals" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Medical type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="41" ActionTypeName="Set
+        Highest Fire Items" RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetHighestFire"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current assigned
+        ammo to the highest Incendiary stat ammo available" ActionTypeParameterRelativity="Highest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="FireLength"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="13" RoomCategoryType="None"
+        /><ActionType ActionTypeId="42" ActionTypeName="Target Enemy Cannon" RoomType="Cannon"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyCannon" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Cannon type room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="43" ActionTypeName="Target Your Cannon" RoomType="Cannon"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourCannon" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly Cannon type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="44" ActionTypeName="Continue
+        Current Job" RoomType="None" ActionTypeCategory="Target" ActionTypeKey="TargetCurrentTarget"
+        ActionTypeParameterValue="0" ActionTypeDescription="Continues performing currently
+        assigned actions" ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="None"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="45" ActionTypeName="Target
+        Enemy Security Room" RoomType="Trap" ActionTypeCategory="Target" ActionTypeKey="TargetEnemySecurityRoom"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        an enemy Security type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="46" ActionTypeName="Target Your Security Room" RoomType="Trap"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourSecurityRoom" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly Security type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="47" ActionTypeName="Target
+        Your Android Room" RoomType="Android" ActionTypeCategory="Target" ActionTypeKey="TargetYouAndroidRoom"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        a friendly Android type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="48" ActionTypeName="Target Enemy Android Room" RoomType="Android"
+        ActionTypeCategory="Target" ActionTypeKey="TargetEnemyAndroidRoom" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to an enemy Android type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="EnemyShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="49" ActionTypeName="Target
+        Enemy Radar" RoomType="Radar" ActionTypeCategory="Target" ActionTypeKey="TargetEnemyRadar"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        an enemy Radar type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="50" ActionTypeName="Target Your Radar" RoomType="Radar" ActionTypeCategory="Target"
+        ActionTypeKey="TargetYourRadar" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current target to a friendly Radar type room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="51" ActionTypeName="Target Enemy Cloaking Room"
+        RoomType="Stealth" ActionTypeCategory="Target" ActionTypeKey="TargetEnemyCloakingRoom"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current target to
+        an enemy Cloak type room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ActionType
+        ActionTypeId="52" ActionTypeName="Target Your Cloaking Room" RoomType="Stealth"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourCloakingRoom" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly Cloak type room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="53" ActionTypeName="Set
+        Highest AP Damage" RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetHighestAPDamage"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current assigned
+        ammo to the highest AP damage ammo available" ActionTypeParameterRelativity="Highest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="DirectSystemDamage"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="12" RoomCategoryType="None"
+        /><ActionType ActionTypeId="54" ActionTypeName="Set Highest Shield Damage"
+        RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetHighestShieldDamage"
+        ActionTypeParameterValue="0" ActionTypeDescription="Sets current assigned
+        ammo to the highest shield damage ammo available" ActionTypeParameterRelativity="Highest"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="ShieldDamage"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="11" RoomCategoryType="None"
+        /><ActionType ActionTypeId="55" ActionTypeName="Set Power To 1" RoomType="None"
+        ActionTypeCategory="SetPower" ActionTypeKey="SetOnePower" ActionTypeParameterValue="1"
+        ActionTypeDescription="Sets current assigned power to 1" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="4" RoomCategoryType="None"
+        /><ActionType ActionTypeId="56" ActionTypeName="Set Item to None" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetItemToNone" ActionTypeParameterValue="0"
+        ActionTypeDescription="Unassigns any currently equipped ammo" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="15" RoomCategoryType="None"
+        /><ActionType ActionTypeId="57" ActionTypeName="Set Power To 2" RoomType="None"
+        ActionTypeCategory="SetPower" ActionTypeKey="SetTwoPower" ActionTypeParameterValue="2"
+        ActionTypeDescription="Sets current assigned power to 2" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ActionType ActionTypeId="58" ActionTypeName="Do Not Use Special Power"
+        RoomType="None" ActionTypeCategory="UseSpecialPower" ActionTypeKey="DoNotUseSpecialPower"
+        ActionTypeParameterValue="0" ActionTypeDescription="Will prevent 'Use Special
+        Power' action from running" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="None" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None" /><ActionType
+        ActionTypeId="59" ActionTypeName="Target Current Room" RoomType="None" ActionTypeCategory="Target"
+        ActionTypeKey="TargetCurrentRoom" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current target to the subject's current room" ActionTypeParameterRelativity="None"
+        ImageSpriteId="4" ConditionTypeCategory="CurrentRoom" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="60" ActionTypeName="Target Origin Room" RoomType="None"
+        ActionTypeCategory="Target" ActionTypeKey="TargetOriginRoom" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to the subject's starting room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="OriginRoom"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ActionType ActionTypeId="61" ActionTypeName="Target
+        Enemy Superweapon" RoomType="None" ActionTypeCategory="Target" ActionTypeKey="TargetEnemySuperweapon"
+        ActionTypeParameterValue="0" ActionTypeDescription="Set current target to
+        an enemy superweapon room" ActionTypeParameterRelativity="None" ImageSpriteId="4"
+        ConditionTypeCategory="EnemyShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="Superweapon"
+        /><ActionType ActionTypeId="62" ActionTypeName="Target Your Superweapon" RoomType="None"
+        ActionTypeCategory="Target" ActionTypeKey="TargetYourSuperweapon" ActionTypeParameterValue="0"
+        ActionTypeDescription="Sets current target to a friendly superweapon room"
+        ActionTypeParameterRelativity="None" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="None" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="Superweapon" /><ActionType ActionTypeId="65"
+        ActionTypeName="Set Power To 3" RoomType="None" ActionTypeCategory="SetPower"
+        ActionTypeKey="SetThreePower" ActionTypeParameterValue="3" ActionTypeDescription="Sets
+        current assigned power to 3" ActionTypeParameterRelativity="Absolute" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="94" OrderIndex="6" RoomCategoryType="None" /><ActionType
+        ActionTypeId="66" ActionTypeName="Set Power To 4" RoomType="None" ActionTypeCategory="SetPower"
+        ActionTypeKey="SetFourPower" ActionTypeParameterValue="4" ActionTypeDescription="Sets
+        current assigned power to 4" ActionTypeParameterRelativity="Absolute" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None" /><ActionType
+        ActionTypeId="67" ActionTypeName="Set Power To 5" RoomType="None" ActionTypeCategory="SetPower"
+        ActionTypeKey="SetFivePower" ActionTypeParameterValue="5" ActionTypeDescription="Sets
+        current assigned power to 5" ActionTypeParameterRelativity="Absolute" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None" /><ActionType
+        ActionTypeId="68" ActionTypeName="Set Power To 6" RoomType="None" ActionTypeCategory="SetPower"
+        ActionTypeKey="SetSixPower" ActionTypeParameterValue="6" ActionTypeDescription="Sets
+        current assigned power to 6" ActionTypeParameterRelativity="Absolute" ImageSpriteId="4"
+        ConditionTypeCategory="YourShip" ConditionTypeParameter="None" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="9" RoomCategoryType="None" /><ActionType
+        ActionTypeId="70" ActionTypeName="Set Item {0}" RoomType="None" ActionTypeCategory="SetItem"
+        ActionTypeKey="SetItem0" ActionTypeParameterValue="0" ActionTypeDescription="Sets
+        current assigned ammo to the specified ammo type" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="OrderIndex"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ActionType ActionTypeId="71" ActionTypeName="Set Item {1}" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetItem1" ActionTypeParameterValue="1"
+        ActionTypeDescription="Sets current assigned ammo to the specified ammo type"
+        ActionTypeParameterRelativity="Absolute" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="OrderIndex" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="1" RoomCategoryType="None" /><ActionType ActionTypeId="72" ActionTypeName="Set
+        Item {2}" RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetItem2"
+        ActionTypeParameterValue="2" ActionTypeDescription="Sets current assigned
+        ammo to the specified ammo type" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="OrderIndex"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="2" RoomCategoryType="None"
+        /><ActionType ActionTypeId="73" ActionTypeName="Set Item {3}" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetItem3" ActionTypeParameterValue="3"
+        ActionTypeDescription="Sets current assigned ammo to the specified ammo type"
+        ActionTypeParameterRelativity="Absolute" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="OrderIndex" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="3" RoomCategoryType="None" /><ActionType ActionTypeId="74" ActionTypeName="Set
+        Item {4}" RoomType="None" ActionTypeCategory="SetItem" ActionTypeKey="SetItem4"
+        ActionTypeParameterValue="4" ActionTypeDescription="Sets current assigned
+        ammo to the specified ammo type" ActionTypeParameterRelativity="Absolute"
+        ImageSpriteId="4" ConditionTypeCategory="YourShip" ConditionTypeParameter="OrderIndex"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="4" RoomCategoryType="None"
+        /><ActionType ActionTypeId="75" ActionTypeName="Set Item {5}" RoomType="None"
+        ActionTypeCategory="SetItem" ActionTypeKey="SetItem5" ActionTypeParameterValue="5"
+        ActionTypeDescription="Sets current assigned ammo to the specified ammo type"
+        ActionTypeParameterRelativity="Absolute" ImageSpriteId="4" ConditionTypeCategory="YourShip"
+        ConditionTypeParameter="OrderIndex" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="5" RoomCategoryType="None" /></ActionTypes></ListActionTypes></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4110'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 10:41:50 GMT
+      Expires:
+      - Sun, 09 Jul 2023 11:01:50 GMT
+      Last-Modified:
+      - Sun, 09 Jul 2023 10:41:50 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 21cd80a95d2ef60d4456da600a333140.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - dPswKBG1KEyD0OPYhF4_cG6mTTgfWp63uU-fkgV4x9r7VNVrthtV1Q==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/RoomService/ListActionTypes2?languageKey=en
+version: 1
