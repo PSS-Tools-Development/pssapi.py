@@ -12,8 +12,8 @@ def test_pss_bool():
     assert _parse.pss_bool("true")
     assert not _parse.pss_bool("false")
     assert _parse.pss_bool(None, 1) == 1
-    assert _parse.pss_bool(False) == False
-    assert _parse.pss_bool(True) == True
+    assert _parse.pss_bool(False) is False
+    assert _parse.pss_bool(True) is True
 
     with _pytest.raises(Exception):
         _parse.pss_bool(2)  # value is not str

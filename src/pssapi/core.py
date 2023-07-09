@@ -32,7 +32,9 @@ async def get_entities_from_path(
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
 
     root = _ElementTree.fromstring(raw_xml)
-    if root.tag != xml_parent_tag_name:
+    if "errorMessage" in root.attrib:
+        raise Exception(root.attrib["errorMessage"])
+    if xml_parent_tag_name and root.tag != xml_parent_tag_name:
         parent_node = root.find(f".//{xml_parent_tag_name}")
     else:
         parent_node = root
@@ -52,7 +54,7 @@ async def get_entities_from_path(
             result.append(entity)
     if len(result) > 1:
         return tuple(result)
-    else:
+    elif len(result) == 1:
         return result[0]
 
 
@@ -96,7 +98,8 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
             async with session.get(url, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
         elif method == "POST":
-            async with session.post(url, data=content.encode("utf-8")) as response:
+            data = content.encode("utf-8") if content else None
+            async with session.post(url, data=data, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
     return data
 
@@ -104,19 +107,14 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
 def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
-        if len(list(child)) > 1:
-            result[child.tag] = __get_raw_entities_xml(child)
-        else:
-            result[child.tag] = __get_raw_entity_xml(child)
+        result.setdefault(child.tag, []).append(__get_raw_entity_xml(child))
     return result
 
 
 def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = []
-
     for child in node:
         result.append(__get_raw_entity_xml(child))
-
     return result
 
 
@@ -124,7 +122,7 @@ def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
         if isinstance(value, dict):
             __update_nested_dict_values(value, params)
-        elif value == "datetime":
+        elif value == "datetime" and isinstance(params[key], _datetime):
             d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
         else:
             d[key] = params[key]

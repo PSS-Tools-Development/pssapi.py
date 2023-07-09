@@ -55,7 +55,7 @@ class UserService(_service_base.ServiceBase):
         client_build: int = None,
         client_version: str = None,
         device_name: str = None,
-        is_jail_broken: bool = None,
+        is_jail_broken: bool = False,
         locale: str = None,
         os_build: int = None,
         os_version: str = None,
