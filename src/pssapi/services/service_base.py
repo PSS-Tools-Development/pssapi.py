@@ -27,7 +27,7 @@ class ServiceBase(object):
     def language_key(self) -> _enums.LanguageKey:
         return self.client.language_key
 
-    async def get_latest_version(self) -> "_entities.Setting":
+    async def get_settings(self) -> "_entities.Setting":
         return await self.client.get_latest_version()
 
     async def get_production_server(self) -> str:
@@ -48,7 +48,7 @@ def cache_endpoint(version_property_name: str):
             if isinstance(self, CacheableServiceBase) and self._enable_endpoint_cache:
                 endpoint_name = func.__name__
                 service_cache = self._SERVICE_CACHE
-                latest_version = await self.get_latest_version()
+                latest_version = await self.get_settings()
                 endpoint_data_version = latest_version[version_property_name]
 
                 endpoint_cache = service_cache.get(endpoint_name, {})
