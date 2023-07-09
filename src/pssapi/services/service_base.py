@@ -2,10 +2,15 @@ import functools as _functools
 from typing import Any as _Any
 from typing import Callable as _Callable
 from typing import Dict as _Dict
+from typing import ParamSpec as _ParamSpec
+from typing import TypeVar as _TypeVar
 
 import pssapi.client as _client
 import pssapi.entities as _entities
 import pssapi.enums as _enums
+
+T = _TypeVar("T")
+P = _ParamSpec("P")
 
 
 class ServiceBase(object):
@@ -22,7 +27,7 @@ class ServiceBase(object):
     def language_key(self) -> _enums.LanguageKey:
         return self.client.language_key
 
-    async def get_latest_version(self) -> "_entities.Setting":
+    async def get_settings(self) -> "_entities.Setting":
         return await self.client.get_latest_version()
 
     async def get_production_server(self) -> str:
@@ -37,13 +42,13 @@ class CacheableServiceBase(ServiceBase):
 
 
 def cache_endpoint(version_property_name: str):
-    def decorator_endpoint_cache(func: _Callable):
+    def decorator_endpoint_cache(func: _Callable[P, T]) -> _Callable[P, T]:
         @_functools.wraps(func)
         async def wrapper_endpoint_cache(self, *args, **kwargs):
             if isinstance(self, CacheableServiceBase) and self._enable_endpoint_cache:
                 endpoint_name = func.__name__
                 service_cache = self._SERVICE_CACHE
-                latest_version = await self.get_latest_version()
+                latest_version = await self.get_settings()
                 endpoint_data_version = latest_version[version_property_name]
 
                 endpoint_cache = service_cache.get(endpoint_name, {})

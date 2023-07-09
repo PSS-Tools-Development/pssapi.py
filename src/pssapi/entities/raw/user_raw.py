@@ -18,7 +18,7 @@ class UserRaw:
     def __init__(self, user_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._activated_promotions: str = _parse.pss_str(user_info.get("ActivatedPromotions"))
-        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")) if user_info.get("Alliance") else None
+        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")[0]) if user_info.get("Alliance", []) else None
         self._alliance_id: int = _parse.pss_int(user_info.get("AllianceId"))
         self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.get("AllianceJoinDate"))
         self._alliance_membership: str = _parse.pss_str(user_info.get("AllianceMembership"))
@@ -117,7 +117,7 @@ class UserRaw:
         self._unread_message_count: str = _parse.pss_str(user_info.get("UnreadMessageCount"))
         self._update_date: _datetime = _parse.pss_datetime(user_info.get("UpdateDate"))
         self._used_reward_points: int = _parse.pss_int(user_info.get("UsedRewardPoints"))
-        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")) if user_info.get("UserSeason") else None
+        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")[0]) if user_info.get("UserSeason", []) else None
         self._user_type: str = _parse.pss_str(user_info.get("UserType"))
         self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.get("VipExpiryDate"))
 

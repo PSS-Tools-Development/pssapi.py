@@ -150,7 +150,7 @@ async def list_friends(production_server: str, user_id: int, access_token: str, 
 
 async def remove_friend(production_server: str, access_token: str, friend_user_id: int, **params) -> None:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    await _core.get_entities_from_path((), "None", production_server, REMOVE_FRIEND_BASE_PATH, "POST", **params)
+    await _core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", **params)
 
 
 async def search_users(production_server: str, search_string: str, **params) -> _List[_User]:

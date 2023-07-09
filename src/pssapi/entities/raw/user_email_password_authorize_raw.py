@@ -17,7 +17,7 @@ class UserEmailPasswordAuthorizeRaw:
     def __init__(self, user_email_password_authorize_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._require_reload: str = _parse.pss_str(user_email_password_authorize_info.get("RequireReload"))
-        self._user: _entities.User = _entities.User(user_email_password_authorize_info.get("User")) if user_email_password_authorize_info.get("User") else None
+        self._user: _entities.User = _entities.User(user_email_password_authorize_info.get("User")[0]) if user_email_password_authorize_info.get("User", []) else None
         self._user_id: str = _parse.pss_str(user_email_password_authorize_info.get("UserId"))
         self._error_message: str = _parse.pss_str(user_email_password_authorize_info.get("errorMessage"))
 
