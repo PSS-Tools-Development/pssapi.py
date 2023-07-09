@@ -1,0 +1,1365 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025010"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310321"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T11:47:09" TournamentSpriteId="8000" NewUserCount="3041"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2351'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:51:22 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f67cb1e6517f8abcedeb3b0734a257bc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - b_vOW8lBSdt65oYlu808joBiL65XNezuO4rZogGKyfxZSv_K8E1HCg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025010"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310321"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T11:47:09" TournamentSpriteId="8000" NewUserCount="3039"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2350'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:51:22 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 21cd80a95d2ef60d4456da600a333140.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - QI9wFlw8ScB5SZcLZWyHL3xguJZzUQBFZR5vXdjlmw8vru8CoMMMdQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/TaskService/ListAllTaskDesigns2?languageKey=en
+  response:
+    body:
+      string: '<TaskService><ListAllTaskDesigns version="810897"><TaskDesigns><TaskDesign
+        TaskDesignId="6927" Name="The Dig" Description="Deploy 3 Mining Drones" IconSpriteId="16632"
+        TaskCategory="BattlePassSeason" ObjectiveType="DeployMiningDroneCount" ObjectiveArgument=""
+        ObjectiveAmount="3" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-12T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6928"
+        Name="Make It So" Description="Craft 5 Items" IconSpriteId="10011" TaskCategory="BattlePassSeason"
+        ObjectiveType="CraftItemCount" ObjectiveArgument="" ObjectiveAmount="5" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-12T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6929" Name="They''re in the Vents!" Description="Complete
+        1 Ship Battles without any Lift Rooms" IconSpriteId="3394" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(FriendlyRoomsOfType:4)
+        == 0" ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-12T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6930"
+        Name="Now Hear This" Description="Donate 10 Supplies to a Fleet" IconSpriteId="7002"
+        TaskCategory="BattlePassSeason" ObjectiveType="DonateSupplyCount" ObjectiveArgument=""
+        ObjectiveAmount="10" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-12T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6931"
+        Name="Asteroid Mining" Description="Collect 5000 Minerals from Collectors"
+        IconSpriteId="4614" TaskCategory="BattlePassSeason" ObjectiveType="CollectGeneratedMineralCount"
+        ObjectiveArgument="" ObjectiveAmount="5000" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-12T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6932"
+        Name="Cosmic Dust" Description="Break Down 2 Items" IconSpriteId="12719" TaskCategory="BattlePassSeason"
+        ObjectiveType="RecycleItemCount" ObjectiveArgument="" ObjectiveAmount="2"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-12T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7205" Name="Beat cop - Win
+        5 daily missions" Description="Local law enforcement has its hands full dealing
+        with an outbreak of Krixian superlice, and are offering compensation to anyone
+        who''ll keep an eye on things for a few days." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="WinDailyMissions" ObjectiveArgument="5" ObjectiveAmount="5"
+        RewardString="mineral:15000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-11T00:00:00"
+        AvailableTo="2023-07-12T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7206"
+        Name="Brawler - Win 8 PvP battles" Description="Captains have been getting
+        rowdy in the Archenar system, and the pirate queen is not pleased. She''s
+        willing to pay anyone who''ll knock some heads together to restore order."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinPVPBattles"
+        ObjectiveArgument="8" ObjectiveAmount="8" RewardString="starbux:3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-11T00:00:00"
+        AvailableTo="2023-07-12T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7207"
+        Name="Promotions all round! - Level up crew 2 times" Description="An on-the-job
+        training initiative has begun trialing. Demonstrate your crew''s basic competency,
+        and earn some easy resources!" IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="LevelUpCrew" ObjectiveArgument="2" ObjectiveAmount="2" RewardString="item:83x1"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-11T00:00:00" AvailableTo="2023-07-12T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7208" Name="Saboteur" Description="Destroy
+        1 Module in Ship Battles" IconSpriteId="16018" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-11T00:00:00" AvailableTo="2023-07-12T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7209" Name="Fill Order: Minerals"
+        Description="Collect 1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-11T00:00:00" AvailableTo="2023-07-12T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7210" Name="Fill Order: Gas"
+        Description="Collect 1000 Gas from Collectors" IconSpriteId="3491" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-11T00:00:00" AvailableTo="2023-07-12T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7199" Name="Set phasers to
+        stun - Win 1 ground battles" Description="The concensus is in: Your crew is
+        suffering from cabin fever. Finding some excuses to get out and stretch your
+        legs will do a world of good for everyone, not least of all your wallet."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="starbux:1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-10T00:00:00"
+        AvailableTo="2023-07-11T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7200"
+        Name="Making friends - Recruit 5 crew" Description="In an effort to boost
+        graduate employment, the star academy is funding an apprenticeship program.
+        Take some fresh recruits out and show them the ropes. Survival is optional
+        but prefered." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="RecruitCrew"
+        ObjectiveArgument="5" ObjectiveAmount="5" RewardString="starbux:20" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-10T00:00:00"
+        AvailableTo="2023-07-11T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7201"
+        Name="Gym Junkie - Finish 2 training" Description="Knowledge is power, but
+        might makes right. Bulk your crew up with a few sessions at the gym, and mop
+        the floor with those other weaker captains." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="Train" ObjectiveArgument="2" ObjectiveAmount="2" RewardString="mineral:30000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-10T00:00:00" AvailableTo="2023-07-11T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7202" Name="Multi-Pass" Description="Use
+        1 Item" IconSpriteId="5396" TaskCategory="BattlePassDaily" ObjectiveType="UseItemCount"
+        ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-10T00:00:00"
+        AvailableTo="2023-07-11T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7203"
+        Name="Bux Capacitor" Description="Sell 1 Item" IconSpriteId="3502" TaskCategory="BattlePassDaily"
+        ObjectiveType="SellItemCount" ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-10T00:00:00" AvailableTo="2023-07-11T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7204" Name="Warp Speed" Description="Win 1 Ship
+        Battle before 1 Minute has passed" IconSpriteId="13880" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &lt;= 60" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-10T00:00:00"
+        AvailableTo="2023-07-11T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7193"
+        Name="Gym Junkie - Finish 2 training" Description="Knowledge is power, but
+        might makes right. Bulk your crew up with a few sessions at the gym, and mop
+        the floor with those other weaker captains." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="Train" ObjectiveArgument="2" ObjectiveAmount="2" RewardString="mineral:30000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7194" Name="Renovator - Upgrade
+        rooms 1 times" Description="Apparently an old crewmate hid a stash of loot
+        somewhere in your ship. A little renovation will serve as a good cover to
+        track it down!" IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="UpgradeRooms"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="item:560x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7195"
+        Name="Making friends - Recruit 4 crew" Description="In an effort to boost
+        graduate employment, the star academy is funding an apprenticeship program.
+        Take some fresh recruits out and show them the ropes. Survival is optional
+        but prefered." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="RecruitCrew"
+        ObjectiveArgument="4" ObjectiveAmount="4" RewardString="item:87x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7196"
+        Name="Collateral Damage" Description="Deal 2 total System Damage in Ship Battles"
+        IconSpriteId="12118" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemySystemDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7197" Name="Fill Order: Minerals" Description="Collect
+        1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7198" Name="Bombardment" Description="Deal
+        2 damage to Modules in Ship Battles" IconSpriteId="5077" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDamage" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6866" Name="Fill Order: Minerals"
+        Description="Collect 1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6867" Name="Fill Order: Gas"
+        Description="Collect 1000 Gas from Collectors" IconSpriteId="3491" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6868" Name="Fix it - Fix it
+        - Fix it!" Description="Repair 3 Room HP in Ship Battles" IconSpriteId="235"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyRepairedRoomHP"
+        ObjectiveAmount="3" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6869"
+        Name="Extreme Prejudice" Description="Kill 2 Enemy Crews in Ship Battles"
+        IconSpriteId="10035" TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCrewDeaths" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6870" Name="Medic!" Description="Heal 3 Crew HP
+        in Ship Battles" IconSpriteId="2705" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="BattleReport" ObjectiveArgument="FriendlyHealedCrewHP" ObjectiveAmount="3"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6871" Name="Split Salvo" Description="Deal
+        3 total Crew Damage in Ship Battles" IconSpriteId="8867" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCrewDamage" ObjectiveAmount="3"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6872" Name="Brace, Brace!"
+        Description="Receive 2 total Crew Damage in Ship Battles" IconSpriteId="5057"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyCrewDamage"
+        ObjectiveAmount="2" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6873"
+        Name="Target: Shields" Description="Deal 2 total Shield Damage in Ship Battles"
+        IconSpriteId="2419" TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6874" Name="Breach, Breach!" Description="Deal
+        2 total Hull Damage in Ship Battles" IconSpriteId="498" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyHullDamage" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6875" Name="Collateral Damage"
+        Description="Deal 2 total System Damage in Ship Battles" IconSpriteId="12118"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="EnemySystemDamage"
+        ObjectiveAmount="2" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6876"
+        Name="It''s A Trap!" Description="Destroy 1 Trap Rooms in Ship Battles" IconSpriteId="16407"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:20)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6877"
+        Name="Power Underwhelming" Description="Destroy 1 Reactor Room in Ship Battles"
+        IconSpriteId="16568" TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6878" Name="Bux Capacitor"
+        Description="Sell 1 Item" IconSpriteId="3502" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="SellItemCount" ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6879" Name="Multi-Pass" Description="Use 1 Item"
+        IconSpriteId="5396" TaskCategory="BattlePassDailyReroll" ObjectiveType="UseItemCount"
+        ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6880"
+        Name="Plunder: Minerals" Description="Loot 1000 Minerals from Ship Battles"
+        IconSpriteId="101" TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6881" Name="Plunder: Gas" Description="Loot 1000
+        Gas from Ship Battles" IconSpriteId="637" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6882" Name="Steady as She
+        Goes" Description="Win 1 Ship Battle after 1 Minute has passed" IconSpriteId="13251"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome
+        == 1 &amp;&amp; BattleTime &gt;= 60" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6883" Name="Warp Speed" Description="Win 1 Ship
+        Battle before 1 Minute has passed" IconSpriteId="13880" TaskCategory="BattlePassDailyReroll"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &lt;= 60" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6884"
+        Name="Saboteur" Description="Destroy 1 Module in Ship Battles" IconSpriteId="16018"
+        TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-09T00:00:00"
+        AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6885"
+        Name="Bombardment" Description="Deal 2 damage to Modules in Ship Battles"
+        IconSpriteId="5077" TaskCategory="BattlePassDailyReroll" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyModulesDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-09T00:00:00" AvailableTo="2023-07-10T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7187" Name="Birds and Bees - Prestige 1 times"
+        Description="It might not be exactly like they taught you in health class,
+        but rest assured it''s all perfectly normal. Just put two crew in a room together,
+        and let nature take its course." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="PrestigeCharacter" ObjectiveArgument="1" ObjectiveAmount="1"
+        RewardString="item:778x5" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-07-08T00:00:00"
+        AvailableTo="2023-07-09T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7188"
+        Name="Penny pincher - Collect 4 floating starbux" Description="Your mum may
+        be right about money not growing on trees, but she never said anything about
+        money not tumbling randomly through the infinite void of space." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="CollectFloatingStarbux" ObjectiveArgument="4"
+        ObjectiveAmount="4" RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-08T00:00:00"
+        AvailableTo="2023-07-09T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7189"
+        Name="Set phasers to stun - Win 2 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="2" ObjectiveAmount="2" RewardString="item:82x2" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-08T00:00:00"
+        AvailableTo="2023-07-09T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7190"
+        Name="Plunder: Gas" Description="Loot 1000 Gas from Ship Battles" IconSpriteId="637"
+        TaskCategory="BattlePassDaily" ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)"
+        ObjectiveAmount="1000" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-08T00:00:00"
+        AvailableTo="2023-07-09T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7191"
+        Name="Power Underwhelming" Description="Destroy 1 Reactor Room in Ship Battles"
+        IconSpriteId="16568" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-08T00:00:00" AvailableTo="2023-07-09T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7192" Name="It''s A Trap!"
+        Description="Destroy 1 Trap Rooms in Ship Battles" IconSpriteId="16407" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:20)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-08T00:00:00"
+        AvailableTo="2023-07-09T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7181"
+        Name="Birds and Bees - Prestige 1 times" Description="It might not be exactly
+        like they taught you in health class, but rest assured it''s all perfectly
+        normal. Just put two crew in a room together, and let nature take its course."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="PrestigeCharacter"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="item:360x3|gas:30000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-07-07T00:00:00"
+        AvailableTo="2023-07-08T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7182"
+        Name="Gym Junkie - Finish 2 training" Description="Knowledge is power, but
+        might makes right. Bulk your crew up with a few sessions at the gym, and mop
+        the floor with those other weaker captains." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="Train" ObjectiveArgument="2" ObjectiveAmount="2" RewardString="mineral:30000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-07T00:00:00" AvailableTo="2023-07-08T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7183" Name="Promotions all
+        round! - Level up crew 3 times" Description="An on-the-job training initiative
+        has begun trialing. Demonstrate your crew''s basic competency, and earn some
+        easy resources!" IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="LevelUpCrew"
+        ObjectiveArgument="3" ObjectiveAmount="3" RewardString="item:86x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-07T00:00:00"
+        AvailableTo="2023-07-08T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7184"
+        Name="Steady as She Goes" Description="Win 1 Ship Battle after 1 Minute has
+        passed" IconSpriteId="13251" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="BattleOutcome == 1 &amp;&amp; BattleTime &gt;= 60" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-07T00:00:00" AvailableTo="2023-07-08T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7185" Name="Plunder: Minerals"
+        Description="Loot 1000 Minerals from Ship Battles" IconSpriteId="101" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-07T00:00:00" AvailableTo="2023-07-08T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7186" Name="Plunder: Gas"
+        Description="Loot 1000 Gas from Ship Battles" IconSpriteId="637" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-07T00:00:00" AvailableTo="2023-07-08T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7175" Name="Beat cop - Win
+        4 daily missions" Description="Local law enforcement has its hands full dealing
+        with an outbreak of Krixian superlice, and are offering compensation to anyone
+        who''ll keep an eye on things for a few days." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="WinDailyMissions" ObjectiveArgument="4" ObjectiveAmount="4"
+        RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-06T00:00:00"
+        AvailableTo="2023-07-07T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7176"
+        Name="Set phasers to stun - Win 1 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-06T00:00:00"
+        AvailableTo="2023-07-07T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7177"
+        Name="Scanner calibration - Scan 2 ships" Description="The software for the
+        ships scanner has undergone yet another update, and has defaulted to factory
+        settings. We''ll need to run a few easy scans to recalibrate it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="Scan" ObjectiveArgument="2" ObjectiveAmount="2"
+        RewardString="starbux:4" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-06T00:00:00"
+        AvailableTo="2023-07-07T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7178"
+        Name="Multi-Pass" Description="Use 1 Item" IconSpriteId="5396" TaskCategory="BattlePassDaily"
+        ObjectiveType="UseItemCount" ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-07T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7179" Name="Fill Order: Gas" Description="Collect
+        1000 Gas from Collectors" IconSpriteId="3491" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-07T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7180" Name="Bombardment" Description="Deal
+        2 damage to Modules in Ship Battles" IconSpriteId="5077" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDamage" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-07T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6921" Name="Jettison Escape
+        Pods" Description="Complete 1 Ship Battles without losing any Crew" IconSpriteId="7221"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyCrewDeaths
+        == 0" ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-06T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6922"
+        Name="Fire at Will!" Description="Launch 12 Missiles in Ship Battles" IconSpriteId="5708"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyMissilesUsed"
+        ObjectiveAmount="12" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-06T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6923"
+        Name="Great Shot, Kid!" Description="Deal 8 total Damage to Enemy Crafts in
+        Ship Battles" IconSpriteId="9044" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCraftDamage" ObjectiveAmount="8" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6924" Name="Circuits with Bad Haircuts" Description="Deploy
+        4 Androids in Ship Battles" IconSpriteId="9774" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="FriendlyAndroidsUsed" ObjectiveAmount="4"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6925" Name="Stay on Target"
+        Description="Destroy 5 Crafts in Ship Battles" IconSpriteId="2404" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCraftsDestroyed" ObjectiveAmount="5"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6926" Name="I am the Captain
+        Now" Description="Win 3 Ship Battles only using AI" IconSpriteId="8796" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        ManualCommandCount == 0" ObjectiveAmount="3" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-06T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7169" Name="Brawler - Win 5 PvP battles" Description="Captains
+        have been getting rowdy in the Archenar system, and the pirate queen is not
+        pleased. She''s willing to pay anyone who''ll knock some heads together to
+        restore order." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinPVPBattles"
+        ObjectiveArgument="5" ObjectiveAmount="5" RewardString="mineral:30000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-05T00:00:00"
+        AvailableTo="2023-07-06T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7170"
+        Name="Promotions all round! - Level up crew 1 times" Description="An on-the-job
+        training initiative has begun trialing. Demonstrate your crew''s basic competency,
+        and earn some easy resources!" IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="LevelUpCrew" ObjectiveArgument="1" ObjectiveAmount="1" RewardString="gas:20000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-05T00:00:00" AvailableTo="2023-07-06T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7171" Name="Mad science - Blend
+        3 crew" Description="Prof. Brenda needs some raw genetic material for her
+        research, preferrably without having to go through the stuffy university ethics
+        commitee. If you can source some, she''ll pay well for it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="BlendCrew" ObjectiveArgument="3" ObjectiveAmount="3"
+        RewardString="mineral:60000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-05T00:00:00"
+        AvailableTo="2023-07-06T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7172"
+        Name="Power Underwhelming" Description="Destroy 1 Reactor Room in Ship Battles"
+        IconSpriteId="16568" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-05T00:00:00" AvailableTo="2023-07-06T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7173" Name="Steady as She
+        Goes" Description="Win 1 Ship Battle after 1 Minute has passed" IconSpriteId="13251"
+        TaskCategory="BattlePassDaily" ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome
+        == 1 &amp;&amp; BattleTime &gt;= 60" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-05T00:00:00" AvailableTo="2023-07-06T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7174" Name="Fill Order: Minerals" Description="Collect
+        1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-05T00:00:00" AvailableTo="2023-07-06T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7163" Name="Mad science -
+        Blend 4 crew" Description="Prof. Brenda needs some raw genetic material for
+        her research, preferrably without having to go through the stuffy university
+        ethics commitee. If you can source some, she''ll pay well for it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="BlendCrew" ObjectiveArgument="4" ObjectiveAmount="4"
+        RewardString="mineral:90000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-04T00:00:00"
+        AvailableTo="2023-07-05T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7164"
+        Name="Set phasers to stun - Win 2 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="2" ObjectiveAmount="2" RewardString="gas:20000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-04T00:00:00"
+        AvailableTo="2023-07-05T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7165"
+        Name="Brawler - Win 6 PvP battles" Description="Captains have been getting
+        rowdy in the Archenar system, and the pirate queen is not pleased. She''s
+        willing to pay anyone who''ll knock some heads together to restore order."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinPVPBattles"
+        ObjectiveArgument="6" ObjectiveAmount="6" RewardString="gas:20000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-04T00:00:00"
+        AvailableTo="2023-07-05T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7166"
+        Name="Plunder: Gas" Description="Loot 1000 Gas from Ship Battles" IconSpriteId="637"
+        TaskCategory="BattlePassDaily" ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)"
+        ObjectiveAmount="1000" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-04T00:00:00"
+        AvailableTo="2023-07-05T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7167"
+        Name="Target: Shields" Description="Deal 2 total Shield Damage in Ship Battles"
+        IconSpriteId="2419" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-04T00:00:00" AvailableTo="2023-07-05T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7168" Name="Steady as She Goes" Description="Win
+        1 Ship Battle after 1 Minute has passed" IconSpriteId="13251" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &gt;= 60" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-04T00:00:00"
+        AvailableTo="2023-07-05T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7157"
+        Name="Volunteering - Donate 3 crew" Description="Fleet leadership is looking
+        for able-bodied young recruits to do some menial tasks around the starbase.
+        If you''ve got any crew who need a little extra discipline, send them on over."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="DonateCrew" ObjectiveArgument="3"
+        ObjectiveAmount="3" RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-03T00:00:00"
+        AvailableTo="2023-07-04T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7158"
+        Name="Birds and Bees - Prestige 1 times" Description="It might not be exactly
+        like they taught you in health class, but rest assured it''s all perfectly
+        normal. Just put two crew in a room together, and let nature take its course."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="PrestigeCharacter"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="item:360x3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-07-03T00:00:00"
+        AvailableTo="2023-07-04T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7159"
+        Name="Promotions all round! - Level up crew 2 times" Description="An on-the-job
+        training initiative has begun trialing. Demonstrate your crew''s basic competency,
+        and earn some easy resources!" IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="LevelUpCrew" ObjectiveArgument="2" ObjectiveAmount="2" RewardString="gas:40000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-03T00:00:00" AvailableTo="2023-07-04T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7160" Name="Bombardment" Description="Deal
+        2 damage to Modules in Ship Battles" IconSpriteId="5077" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDamage" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-03T00:00:00" AvailableTo="2023-07-04T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7161" Name="Warp Speed" Description="Win
+        1 Ship Battle before 1 Minute has passed" IconSpriteId="13880" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &lt;= 60" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-03T00:00:00"
+        AvailableTo="2023-07-04T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7162"
+        Name="Breach, Breach!" Description="Deal 2 total Hull Damage in Ship Battles"
+        IconSpriteId="498" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyHullDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-03T00:00:00" AvailableTo="2023-07-04T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7151" Name="Set phasers to stun - Win 3 ground
+        battles" Description="The concensus is in: Your crew is suffering from cabin
+        fever. Finding some excuses to get out and stretch your legs will do a world
+        of good for everyone, not least of all your wallet." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="WinGroundBattles" ObjectiveArgument="3"
+        ObjectiveAmount="3" RewardString="item:82x3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-02T00:00:00"
+        AvailableTo="2023-07-03T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7152"
+        Name="Gym Junkie - Finish 3 training" Description="Knowledge is power, but
+        might makes right. Bulk your crew up with a few sessions at the gym, and mop
+        the floor with those other weaker captains." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="Train" ObjectiveArgument="3" ObjectiveAmount="3" RewardString="mineral:45000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-02T00:00:00" AvailableTo="2023-07-03T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7153" Name="Making friends
+        - Recruit 3 crew" Description="In an effort to boost graduate employment,
+        the star academy is funding an apprenticeship program. Take some fresh recruits
+        out and show them the ropes. Survival is optional but prefered." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="RecruitCrew" ObjectiveArgument="3"
+        ObjectiveAmount="3" RewardString="item:361x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-02T00:00:00"
+        AvailableTo="2023-07-03T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7154"
+        Name="Target: Shields" Description="Deal 2 total Shield Damage in Ship Battles"
+        IconSpriteId="2419" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-02T00:00:00" AvailableTo="2023-07-03T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7155" Name="Power Underwhelming" Description="Destroy
+        1 Reactor Room in Ship Battles" IconSpriteId="16568" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-02T00:00:00"
+        AvailableTo="2023-07-03T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7156"
+        Name="Extreme Prejudice" Description="Kill 2 Enemy Crews in Ship Battles"
+        IconSpriteId="10035" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCrewDeaths" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-07-02T00:00:00" AvailableTo="2023-07-03T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7145" Name="Penny pincher - Collect 5 floating
+        starbux" Description="Your mum may be right about money not growing on trees,
+        but she never said anything about money not tumbling randomly through the
+        infinite void of space." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="CollectFloatingStarbux"
+        ObjectiveArgument="5" ObjectiveAmount="5" RewardString="mineral:15000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-01T00:00:00"
+        AvailableTo="2023-07-02T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7146"
+        Name="Scanner calibration - Scan 2 ships" Description="The software for the
+        ships scanner has undergone yet another update, and has defaulted to factory
+        settings. We''ll need to run a few easy scans to recalibrate it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="Scan" ObjectiveArgument="2" ObjectiveAmount="2"
+        RewardString="starbux:4" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-07-01T00:00:00"
+        AvailableTo="2023-07-02T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7147"
+        Name="Promotions all round! - Level up crew 3 times" Description="An on-the-job
+        training initiative has begun trialing. Demonstrate your crew''s basic competency,
+        and earn some easy resources!" IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="LevelUpCrew" ObjectiveArgument="3" ObjectiveAmount="3" RewardString="gas:60000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-01T00:00:00" AvailableTo="2023-07-02T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7148" Name="Plunder: Gas" Description="Loot
+        1000 Gas from Ship Battles" IconSpriteId="637" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-01T00:00:00" AvailableTo="2023-07-02T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7149" Name="Fill Order: Minerals"
+        Description="Collect 1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-01T00:00:00" AvailableTo="2023-07-02T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7150" Name="Saboteur" Description="Destroy
+        1 Module in Ship Battles" IconSpriteId="16018" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-07-01T00:00:00" AvailableTo="2023-07-02T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7139" Name="Making friends
+        - Recruit 3 crew" Description="In an effort to boost graduate employment,
+        the star academy is funding an apprenticeship program. Take some fresh recruits
+        out and show them the ropes. Survival is optional but prefered." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="RecruitCrew" ObjectiveArgument="3"
+        ObjectiveAmount="3" RewardString="mineral:180000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-30T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7140"
+        Name="Scanner calibration - Scan 2 ships" Description="The software for the
+        ships scanner has undergone yet another update, and has defaulted to factory
+        settings. We''ll need to run a few easy scans to recalibrate it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="Scan" ObjectiveArgument="2" ObjectiveAmount="2"
+        RewardString="starbux:4" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-30T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7141"
+        Name="Set phasers to stun - Win 3 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="3" ObjectiveAmount="3" RewardString="item:82x3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-30T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7142"
+        Name="Plunder: Minerals" Description="Loot 1000 Minerals from Ship Battles"
+        IconSpriteId="101" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-30T00:00:00" AvailableTo="2023-07-01T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7143" Name="Power Underwhelming" Description="Destroy
+        1 Reactor Room in Ship Battles" IconSpriteId="16568" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-30T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7144"
+        Name="It''s A Trap!" Description="Destroy 1 Trap Rooms in Ship Battles" IconSpriteId="16407"
+        TaskCategory="BattlePassDaily" ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:20)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-30T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7133"
+        Name="Set phasers to stun - Win 3 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="3" ObjectiveAmount="3" RewardString="starbux:3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-06-30T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7134"
+        Name="Mad science - Blend 4 crew" Description="Prof. Brenda needs some raw
+        genetic material for her research, preferrably without having to go through
+        the stuffy university ethics commitee. If you can source some, she''ll pay
+        well for it." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="BlendCrew"
+        ObjectiveArgument="4" ObjectiveAmount="4" RewardString="item:560x3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-06-30T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7135"
+        Name="Birds and Bees - Prestige 1 times" Description="It might not be exactly
+        like they taught you in health class, but rest assured it''s all perfectly
+        normal. Just put two crew in a room together, and let nature take its course."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="PrestigeCharacter"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="gas:150000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-06-30T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7136"
+        Name="Saboteur" Description="Destroy 1 Module in Ship Battles" IconSpriteId="16018"
+        TaskCategory="BattlePassDaily" ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-06-30T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7137"
+        Name="Multi-Pass" Description="Use 1 Item" IconSpriteId="5396" TaskCategory="BattlePassDaily"
+        ObjectiveType="UseItemCount" ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-29T00:00:00" AvailableTo="2023-06-30T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7138" Name="Medic!" Description="Heal 3 Crew HP
+        in Ship Battles" IconSpriteId="2705" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="FriendlyHealedCrewHP" ObjectiveAmount="3" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-29T00:00:00" AvailableTo="2023-06-30T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6915" Name="Clip Their Wings" Description="Destroy
+        1 Hangar Rooms in Ship Battles" IconSpriteId="7470" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:17)"
+        ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6916"
+        Name="Jamming Enemy Radar" Description="Destroy 1 Radar Rooms in Ship Battles"
+        IconSpriteId="15169" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfType:21)" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-29T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6917" Name="Laser Tag" Description="Destroy
+        10 Laser Rooms in Ship Battles" IconSpriteId="12839" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:1)"
+        ObjectiveAmount="10" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6918"
+        Name="Continuous Rapid Fire" Description="Destroy 20 Weapon Rooms in Ship
+        Battles" IconSpriteId="2654" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfCategory:0)" ObjectiveAmount="20"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-29T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6919" Name="Covering Fire"
+        Description="Destroy 20 Defense Rooms in Ship Battles" IconSpriteId="56" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfCategory:1)"
+        ObjectiveAmount="20" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-29T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6920"
+        Name="Suppressive Fire" Description="Destroy 6 Support Rooms in Ship Battles"
+        IconSpriteId="57" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfCategory:2)" ObjectiveAmount="6"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-29T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7127" Name="Brawler - Win
+        9 PvP battles" Description="Captains have been getting rowdy in the Archenar
+        system, and the pirate queen is not pleased. She''s willing to pay anyone
+        who''ll knock some heads together to restore order." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="WinPVPBattles" ObjectiveArgument="9"
+        ObjectiveAmount="9" RewardString="mineral:45000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-28T00:00:00"
+        AvailableTo="2023-06-29T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7128"
+        Name="Renovator - Upgrade rooms 3 times" Description="Apparently an old crewmate
+        hid a stash of loot somewhere in your ship. A little renovation will serve
+        as a good cover to track it down!" IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="UpgradeRooms" ObjectiveArgument="3" ObjectiveAmount="3" RewardString="item:83x2"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-28T00:00:00" AvailableTo="2023-06-29T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7129" Name="Birds and Bees
+        - Prestige 1 times" Description="It might not be exactly like they taught
+        you in health class, but rest assured it''s all perfectly normal. Just put
+        two crew in a room together, and let nature take its course." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="PrestigeCharacter" ObjectiveArgument="1"
+        ObjectiveAmount="1" RewardString="item:562x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-06-28T00:00:00"
+        AvailableTo="2023-06-29T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7130"
+        Name="Plunder: Minerals" Description="Loot 1000 Minerals from Ship Battles"
+        IconSpriteId="101" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-28T00:00:00" AvailableTo="2023-06-29T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7131" Name="Split Salvo" Description="Deal 3 total
+        Crew Damage in Ship Battles" IconSpriteId="8867" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCrewDamage" ObjectiveAmount="3"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-28T00:00:00" AvailableTo="2023-06-29T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7132" Name="Extreme Prejudice"
+        Description="Kill 2 Enemy Crews in Ship Battles" IconSpriteId="10035" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCrewDeaths" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-28T00:00:00" AvailableTo="2023-06-29T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7121" Name="Set phasers to
+        stun - Win 1 ground battles" Description="The concensus is in: Your crew is
+        suffering from cabin fever. Finding some excuses to get out and stretch your
+        legs will do a world of good for everyone, not least of all your wallet."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-27T00:00:00"
+        AvailableTo="2023-06-28T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7122"
+        Name="Gym Junkie - Finish 4 training" Description="Knowledge is power, but
+        might makes right. Bulk your crew up with a few sessions at the gym, and mop
+        the floor with those other weaker captains." IconSpriteId="12528" TaskCategory="Standard"
+        ObjectiveType="Train" ObjectiveArgument="4" ObjectiveAmount="4" RewardString="starbux:4"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-27T00:00:00" AvailableTo="2023-06-28T00:00:00"
+        SeasonDesignId="0" /><TaskDesign TaskDesignId="7123" Name="Birds and Bees
+        - Prestige 1 times" Description="It might not be exactly like they taught
+        you in health class, but rest assured it''s all perfectly normal. Just put
+        two crew in a room together, and let nature take its course." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="PrestigeCharacter" ObjectiveArgument="1"
+        ObjectiveAmount="1" RewardString="item:562x1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-06-27T00:00:00"
+        AvailableTo="2023-06-28T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7124"
+        Name="Collateral Damage" Description="Deal 2 total System Damage in Ship Battles"
+        IconSpriteId="12118" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemySystemDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-27T00:00:00" AvailableTo="2023-06-28T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7125" Name="Plunder: Gas" Description="Loot 1000
+        Gas from Ship Battles" IconSpriteId="637" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="1000" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-27T00:00:00" AvailableTo="2023-06-28T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7126" Name="Multi-Pass" Description="Use 1 Item"
+        IconSpriteId="5396" TaskCategory="BattlePassDaily" ObjectiveType="UseItemCount"
+        ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-27T00:00:00"
+        AvailableTo="2023-06-28T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7115"
+        Name="Birds and Bees - Prestige 1 times" Description="It might not be exactly
+        like they taught you in health class, but rest assured it''s all perfectly
+        normal. Just put two crew in a room together, and let nature take its course."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="PrestigeCharacter"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="item:360x3|mineral:45000"
+        RewardDistributionString="100,80,60,60,60,40,40" Flags="0" GlobalProgress="0"
+        RequirementString="shipLevel &gt;= 10" AvailableFrom="2023-06-26T00:00:00"
+        AvailableTo="2023-06-27T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7116"
+        Name="Beat cop - Win 6 daily missions" Description="Local law enforcement
+        has its hands full dealing with an outbreak of Krixian superlice, and are
+        offering compensation to anyone who''ll keep an eye on things for a few days."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinDailyMissions"
+        ObjectiveArgument="6" ObjectiveAmount="6" RewardString="mineral:15000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-26T00:00:00"
+        AvailableTo="2023-06-27T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7117"
+        Name="Brawler - Win 6 PvP battles" Description="Captains have been getting
+        rowdy in the Archenar system, and the pirate queen is not pleased. She''s
+        willing to pay anyone who''ll knock some heads together to restore order."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinPVPBattles"
+        ObjectiveArgument="6" ObjectiveAmount="6" RewardString="mineral:30000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-26T00:00:00"
+        AvailableTo="2023-06-27T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7118"
+        Name="Split Salvo" Description="Deal 3 total Crew Damage in Ship Battles"
+        IconSpriteId="8867" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCrewDamage" ObjectiveAmount="3" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-26T00:00:00" AvailableTo="2023-06-27T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7119" Name="Power Underwhelming" Description="Destroy
+        1 Reactor Room in Ship Battles" IconSpriteId="16568" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-26T00:00:00"
+        AvailableTo="2023-06-27T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7120"
+        Name="Warp Speed" Description="Win 1 Ship Battle before 1 Minute has passed"
+        IconSpriteId="13880" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="BattleOutcome == 1 &amp;&amp; BattleTime &lt;= 60" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-26T00:00:00" AvailableTo="2023-06-27T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7109" Name="Renovator - Upgrade
+        rooms 1 times" Description="Apparently an old crewmate hid a stash of loot
+        somewhere in your ship. A little renovation will serve as a good cover to
+        track it down!" IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="UpgradeRooms"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="starbux:3" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-25T00:00:00"
+        AvailableTo="2023-06-26T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7110"
+        Name="Scanner calibration - Scan 3 ships" Description="The software for the
+        ships scanner has undergone yet another update, and has defaulted to factory
+        settings. We''ll need to run a few easy scans to recalibrate it." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="Scan" ObjectiveArgument="3" ObjectiveAmount="3"
+        RewardString="mineral:90000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-25T00:00:00"
+        AvailableTo="2023-06-26T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7111"
+        Name="Volunteering - Donate 2 crew" Description="Fleet leadership is looking
+        for able-bodied young recruits to do some menial tasks around the starbase.
+        If you''ve got any crew who need a little extra discipline, send them on over."
+        IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="DonateCrew" ObjectiveArgument="2"
+        ObjectiveAmount="2" RewardString="gas:10000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-25T00:00:00"
+        AvailableTo="2023-06-26T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7112"
+        Name="Fill Order: Gas" Description="Collect 1000 Gas from Collectors" IconSpriteId="3491"
+        TaskCategory="BattlePassDaily" ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument=""
+        ObjectiveAmount="1000" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-25T00:00:00"
+        AvailableTo="2023-06-26T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7113"
+        Name="Breach, Breach!" Description="Deal 2 total Hull Damage in Ship Battles"
+        IconSpriteId="498" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyHullDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-25T00:00:00" AvailableTo="2023-06-26T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7114" Name="Multi-Pass" Description="Use 1 Item"
+        IconSpriteId="5396" TaskCategory="BattlePassDaily" ObjectiveType="UseItemCount"
+        ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-25T00:00:00"
+        AvailableTo="2023-06-26T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="7103"
+        Name="Set phasers to stun - Win 1 ground battles" Description="The concensus
+        is in: Your crew is suffering from cabin fever. Finding some excuses to get
+        out and stretch your legs will do a world of good for everyone, not least
+        of all your wallet." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="WinGroundBattles"
+        ObjectiveArgument="1" ObjectiveAmount="1" RewardString="starbux:1" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-24T00:00:00"
+        AvailableTo="2023-06-25T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7104"
+        Name="Mad science - Blend 4 crew" Description="Prof. Brenda needs some raw
+        genetic material for her research, preferrably without having to go through
+        the stuffy university ethics commitee. If you can source some, she''ll pay
+        well for it." IconSpriteId="12528" TaskCategory="Standard" ObjectiveType="BlendCrew"
+        ObjectiveArgument="4" ObjectiveAmount="4" RewardString="item:82x6" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-24T00:00:00"
+        AvailableTo="2023-06-25T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7105"
+        Name="Penny pincher - Collect 4 floating starbux" Description="Your mum may
+        be right about money not growing on trees, but she never said anything about
+        money not tumbling randomly through the infinite void of space." IconSpriteId="12528"
+        TaskCategory="Standard" ObjectiveType="CollectFloatingStarbux" ObjectiveArgument="4"
+        ObjectiveAmount="4" RewardString="mineral:15000" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-24T00:00:00"
+        AvailableTo="2023-06-25T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="7106"
+        Name="Target: Shields" Description="Deal 2 total Shield Damage in Ship Battles"
+        IconSpriteId="2419" TaskCategory="BattlePassDaily" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-24T00:00:00" AvailableTo="2023-06-25T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="7107" Name="Plunder: Minerals" Description="Loot
+        1000 Minerals from Ship Battles" IconSpriteId="101" TaskCategory="BattlePassDaily"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-24T00:00:00" AvailableTo="2023-06-25T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7108" Name="Fill Order: Gas"
+        Description="Collect 1000 Gas from Collectors" IconSpriteId="3491" TaskCategory="BattlePassDaily"
+        ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-24T00:00:00" AvailableTo="2023-06-25T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="7096" Name="Party Like ''twas
+        1776!" Description="Win 75,000 PvP battles. This is a Global Task - All players
+        share progress." IconSpriteId="16458" TaskCategory="Global" ObjectiveType="WinPVPBattles"
+        ObjectiveArgument="0" ObjectiveAmount="75000" RewardString="item:1187x5" RewardDistributionString="100,80,60,60,60,40,40"
+        Flags="0" GlobalProgress="75000" RequirementString="" AvailableFrom="2023-06-23T00:00:00"
+        AvailableTo="2023-07-01T00:00:00" SeasonDesignId="0" /><TaskDesign TaskDesignId="6933"
+        Name="That''s No Moon..." Description="Complete 1 Ship Battles without any
+        Super Weapon Rooms" IconSpriteId="16765" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(FriendlyRoomsOfCategory:4) == 0" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-22T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6910" Name="Precision Probing"
+        Description="Activate Critical Strike Ability 1 times in Battle" IconSpriteId="2708"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="count(FriendlyCrewActivationsOfType:8)"
+        ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-22T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6911"
+        Name="Gas Giant" Description="Activate Poison Gas Ability 1 times in Battle"
+        IconSpriteId="2706" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(FriendlyCrewActivationsOfType:7)" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-22T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6912" Name="Ground Control
+        to Major Tom" Description="Win 1 Ship Battles with 1 Crew Member" IconSpriteId="14460"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome
+        == 1 &amp;&amp; FriendlyStartingCrews == 1" ObjectiveAmount="1" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-22T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6913" Name="Punch It, Chihuahua!" Description="Win
+        5 Ship Battles in 1 Minute or Less" IconSpriteId="9056" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &lt;= 60" ObjectiveAmount="5" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-22T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6914"
+        Name="The 51 Year Maneuver" Description="Win 1 Ship Battles with 30 seconds
+        or less remaining" IconSpriteId="13254" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="BattleOutcome == 1 &amp;&amp; BattleTime &gt;= 150" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-22T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6904" Name="Tour of Duty"
+        Description="Complete 10 Daily Missions" IconSpriteId="8967" TaskCategory="BattlePassSeason"
+        ObjectiveType="WinDailyMissions" ObjectiveArgument="" ObjectiveAmount="10"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-15T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6905" Name="The Fastest Hunk
+        of Junk" Description="Activate Urgent Repair Ability 1 times in Battle" IconSpriteId="2709"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="count(FriendlyCrewActivationsOfType:5)"
+        ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-15T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6906"
+        Name="Its Just a Phase" Description="Activate Phase Shift Ability 1 times
+        in Battle" IconSpriteId="13319" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(FriendlyCrewActivationsOfType:17)" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-15T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6907" Name="Beam This!" Description="Destroy
+        1 Teleport Rooms in Ship Battles" IconSpriteId="10364" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:10)"
+        ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-15T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6908"
+        Name="The Frost Line" Description="Activate Freeze Ability 1 times in Battle"
+        IconSpriteId="5390" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(FriendlyCrewActivationsOfType:11)" ObjectiveAmount="1"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-15T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6909" Name="Mobile Medbay"
+        Description="Activate First Aid Ability 1 times in Battle" IconSpriteId="2707"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="count(FriendlyCrewActivationsOfType:1)"
+        ObjectiveAmount="1" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-15T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6898"
+        Name="It''s Game Over, Man" Description="Deal 50 total Hull Damage in Ship
+        Battles" IconSpriteId="10200" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyHullDamage" ObjectiveAmount="50" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-08T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6899" Name="System Shock" Description="Deal 20
+        total System Damage in Ship Battles" IconSpriteId="12748" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemySystemDamage" ObjectiveAmount="20"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-08T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6900" Name="Dishonorable Disengage"
+        Description="Retreat from Battles while ship HP &lt; 50%" IconSpriteId="4639"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome
+        == 3 &amp;&amp; FriendlyShipHPPercentage &lt; 50" ObjectiveAmount="1" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-08T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6901" Name="A Risky Re-Tweet" Description="Retreat
+        from Battles while ship HP &lt; 25%" IconSpriteId="11408" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 3 &amp;&amp;
+        FriendlyShipHPPercentage &lt; 25" ObjectiveAmount="1" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-08T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6902" Name="Anti-Missile, Missile" Description="Destroy
+        4 Missile Rooms in Ship Battles" IconSpriteId="7127" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:9)"
+        ObjectiveAmount="4" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-08T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6903"
+        Name="Hat-Trick" Description="Win 3 Ship Battles" IconSpriteId="13954" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1" ObjectiveAmount="3"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-08T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6892" Name="You want to live
+        forever?" Description="Receive 20 total Crew Damage in Ship Battles" IconSpriteId="7609"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyCrewDamage"
+        ObjectiveAmount="20" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-01T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6893"
+        Name="Spoils of War: Minerals" Description="Loot 5000 Minerals from Ship Battles"
+        IconSpriteId="79" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="5000" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-01T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6894" Name="Spoils of War: Gas" Description="Loot
+        5000 Gas from Ship Battles" IconSpriteId="82" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="5000"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-01T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6895" Name="Vandal" Description="Destroy
+        5 Modules in Ship Battles" IconSpriteId="16038" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed" ObjectiveAmount="5"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-06-01T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6896" Name="Demolitions Expert"
+        Description="Deal 10 damage to Modules in Ship Battles" IconSpriteId="5081"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDamage"
+        ObjectiveAmount="10" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-06-01T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6897"
+        Name="Sorry to Burst Your Bubble" Description="Deal 50 total Shield Damage
+        in Ship Battles" IconSpriteId="2867" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="50" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-06-01T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6886" Name="Repair Aware" Description="Repair
+        10 Room HP in Ship Battles" IconSpriteId="9707" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="FriendlyRepairedRoomHP" ObjectiveAmount="10"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6887" Name="No Mercy, No Quarter"
+        Description="Kill 20 Enemy Crews in Ship Battles" IconSpriteId="10039" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCrewDeaths" ObjectiveAmount="20"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6888" Name="Starlight Express!"
+        Description="Teleport 5 Crew in Ship Battles" IconSpriteId="3168" TaskCategory="BattlePassSeason"
+        ObjectiveType="BattleReport" ObjectiveArgument="FriendlyTeleportedCrew" ObjectiveAmount="5"
+        RewardString="passpoints:10" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6889" Name="Shields Holding
+        Steady" Description="Activate Shield 50 Times in Ship Battles" IconSpriteId="10621"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="count(FriendlyRoomActivationsOfType:6)"
+        ObjectiveAmount="50" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6890"
+        Name="Transorbital Triage" Description="Heal 20 Crew HP in Ship Battles" IconSpriteId="16616"
+        TaskCategory="BattlePassSeason" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyHealedCrewHP"
+        ObjectiveAmount="20" RewardString="passpoints:10" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6891"
+        Name="Exterminate Life Forms" Description="Deal 50 total Crew Damage in Ship
+        Battles" IconSpriteId="15114" TaskCategory="BattlePassSeason" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCrewDamage" ObjectiveAmount="50" RewardString="passpoints:10"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6846" Name="Fill Order: Minerals" Description="Collect
+        1000 Minerals from Collectors" IconSpriteId="3488" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="CollectGeneratedMineralCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6847" Name="Fill Order: Gas"
+        Description="Collect 1000 Gas from Collectors" IconSpriteId="3491" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="CollectGeneratedGasCount" ObjectiveArgument="" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6848" Name="Fix it - Fix it
+        - Fix it!" Description="Repair 3 Room HP in Ship Battles" IconSpriteId="235"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyRepairedRoomHP"
+        ObjectiveAmount="3" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6849"
+        Name="Extreme Prejudice" Description="Kill 2 Enemy Crews in Ship Battles"
+        IconSpriteId="10035" TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyCrewDeaths" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6850" Name="Medic!" Description="Heal 3 Crew HP
+        in Ship Battles" IconSpriteId="2705" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="BattleReport" ObjectiveArgument="FriendlyHealedCrewHP" ObjectiveAmount="3"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6851" Name="Split Salvo" Description="Deal
+        3 total Crew Damage in Ship Battles" IconSpriteId="8867" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyCrewDamage" ObjectiveAmount="3"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6852" Name="Brace, Brace!"
+        Description="Receive 2 total Crew Damage in Ship Battles" IconSpriteId="5057"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="FriendlyCrewDamage"
+        ObjectiveAmount="2" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6853"
+        Name="Target: Shields" Description="Deal 2 total Shield Damage in Ship Battles"
+        IconSpriteId="2419" TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyShieldDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6854" Name="Breach, Breach!" Description="Deal
+        2 total Hull Damage in Ship Battles" IconSpriteId="498" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="BattleReport" ObjectiveArgument="EnemyHullDamage" ObjectiveAmount="2"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6855" Name="Collateral Damage"
+        Description="Deal 2 total System Damage in Ship Battles" IconSpriteId="12118"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="EnemySystemDamage"
+        ObjectiveAmount="2" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6856"
+        Name="It''s A Trap!" Description="Destroy 1 Trap Rooms in Ship Battles" IconSpriteId="16407"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="count(EnemyDestroyedRoomsOfType:20)"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6857"
+        Name="Power Underwhelming" Description="Destroy 1 Reactor Room in Ship Battles"
+        IconSpriteId="16568" TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(EnemyDestroyedRoomsOfType:8)" ObjectiveAmount="1"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6858" Name="Bux Capacitor"
+        Description="Sell 1 Item" IconSpriteId="3502" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="SellItemCount" ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6859" Name="Multi-Pass" Description="Use 1 Item"
+        IconSpriteId="5396" TaskCategory="BattlePassDailyTemplate" ObjectiveType="UseItemCount"
+        ObjectiveArgument="" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6860"
+        Name="Plunder: Minerals" Description="Loot 1000 Minerals from Ship Battles"
+        IconSpriteId="101" TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport"
+        ObjectiveArgument="count(WinItems:3)" ObjectiveAmount="1000" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6861" Name="Plunder: Gas" Description="Loot 1000
+        Gas from Ship Battles" IconSpriteId="637" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="BattleReport" ObjectiveArgument="count(WinItems:2)" ObjectiveAmount="1000"
+        RewardString="passpoints:5" RewardDistributionString="" Flags="0" GlobalProgress="0"
+        RequirementString="" AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00"
+        SeasonDesignId="12" /><TaskDesign TaskDesignId="6862" Name="Steady as She
+        Goes" Description="Win 1 Ship Battle after 1 Minute has passed" IconSpriteId="13251"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome
+        == 1 &amp;&amp; BattleTime &gt;= 60" ObjectiveAmount="1" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /><TaskDesign TaskDesignId="6863" Name="Warp Speed" Description="Win 1 Ship
+        Battle before 1 Minute has passed" IconSpriteId="13880" TaskCategory="BattlePassDailyTemplate"
+        ObjectiveType="BattleReport" ObjectiveArgument="BattleOutcome == 1 &amp;&amp;
+        BattleTime &lt;= 60" ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6864"
+        Name="Saboteur" Description="Destroy 1 Module in Ship Battles" IconSpriteId="16018"
+        TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport" ObjectiveArgument="EnemyModulesDestroyed"
+        ObjectiveAmount="1" RewardString="passpoints:5" RewardDistributionString=""
+        Flags="0" GlobalProgress="0" RequirementString="" AvailableFrom="2023-05-25T00:00:00"
+        AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12" /><TaskDesign TaskDesignId="6865"
+        Name="Bombardment" Description="Deal 2 damage to Modules in Ship Battles"
+        IconSpriteId="5077" TaskCategory="BattlePassDailyTemplate" ObjectiveType="BattleReport"
+        ObjectiveArgument="EnemyModulesDamage" ObjectiveAmount="2" RewardString="passpoints:5"
+        RewardDistributionString="" Flags="0" GlobalProgress="0" RequirementString=""
+        AvailableFrom="2023-05-25T00:00:00" AvailableTo="2023-07-14T00:00:00" SeasonDesignId="12"
+        /></TaskDesigns></ListAllTaskDesigns></TaskService>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=20
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '16003'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:51:22 GMT
+      Expires:
+      - Sun, 09 Jul 2023 11:51:42 GMT
+      Last-Modified:
+      - Sun, 09 Jul 2023 11:51:22 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - XB9q36pfoQnfR96nR9oN-ad8F_P3y0VRnUVDazvItdQTHde02IKXbA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/TaskService/ListAllTaskDesigns2?languageKey=en
+version: 1
