@@ -54,7 +54,7 @@ async def get_entities_from_path(
             result.append(entity)
     if len(result) > 1:
         return tuple(result)
-    else:
+    elif len(result) == 1:
         return result[0]
 
 
