@@ -96,7 +96,8 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
             async with session.get(url, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
         elif method == "POST":
-            async with session.post(url, data=content.encode("utf-8")) as response:
+            data = content.encode("utf-8") if content else None
+            async with session.post(url, data=data, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
     return data
 
