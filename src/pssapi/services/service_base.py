@@ -2,10 +2,15 @@ import functools as _functools
 from typing import Any as _Any
 from typing import Callable as _Callable
 from typing import Dict as _Dict
+from typing import ParamSpec as _ParamSpec
+from typing import TypeVar as _TypeVar
 
 import pssapi.client as _client
 import pssapi.entities as _entities
 import pssapi.enums as _enums
+
+T = _TypeVar("T")
+P = _ParamSpec("P")
 
 
 class ServiceBase(object):
@@ -37,7 +42,7 @@ class CacheableServiceBase(ServiceBase):
 
 
 def cache_endpoint(version_property_name: str):
-    def decorator_endpoint_cache(func: _Callable):
+    def decorator_endpoint_cache(func: _Callable[P, T]) -> _Callable[P, T]:
         @_functools.wraps(func)
         async def wrapper_endpoint_cache(self, *args, **kwargs):
             if isinstance(self, CacheableServiceBase) and self._enable_endpoint_cache:
