@@ -104,19 +104,14 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
 def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
-        if len(list(child)) > 1:
-            result[child.tag] = __get_raw_entities_xml(child)
-        else:
-            result[child.tag] = __get_raw_entity_xml(child)
+        result.setdefault(child.tag, []).append(__get_raw_entity_xml(child))
     return result
 
 
 def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = []
-
     for child in node:
         result.append(__get_raw_entity_xml(child))
-
     return result
 
 
@@ -124,7 +119,7 @@ def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
         if isinstance(value, dict):
             __update_nested_dict_values(value, params)
-        elif value == "datetime":
+        elif value == "datetime" and isinstance(params[key], _datetime):
             d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
         else:
             d[key] = params[key]
