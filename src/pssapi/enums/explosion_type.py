@@ -11,4 +11,5 @@ class ExplosionType(_StrEnumBase):
     LINE = "Line"
     RADIUS = "Radius"
     RANDOM = "Random"
+    RANDOM_UNIQUE = "RandomUnique"
     SINGLE = "Single"
