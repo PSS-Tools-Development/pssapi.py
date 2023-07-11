@@ -1,7 +1,7 @@
-from enum import StrEnum as _StrEnum
+from .str_enum_base import StrEnumBase as _StrEnumBase
 
 
-class ProductionServer(_StrEnum):
+class ProductionServer(_StrEnumBase):
     BACKUP = "apibackup.pixelstarships.com"
     CHINA = "api.pixship.anjy.net"
     CHINA_DEV = "apidev.pixship.anjy.net"

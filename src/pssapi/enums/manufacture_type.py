@@ -1,7 +1,7 @@
-from enum import StrEnum as _StrEnum
+from .str_enum_base import StrEnumBase as _StrEnumBase
 
 
-class ManufactureType(_StrEnum):
+class ManufactureType(_StrEnumBase):
     NONE = "None"
     ANDROID = "Android"
     CAPACITY = "Capacity"

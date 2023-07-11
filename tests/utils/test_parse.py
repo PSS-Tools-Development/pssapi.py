@@ -51,17 +51,17 @@ def test_pss_datetime():
 
 
 def test_pss_int_enum():
-    assert _parse.pss_int_enum(None, _enums.VisibilityFlags) is None
-    assert _parse.pss_int_enum("", _enums.VisibilityFlags) is None
-    assert _parse.pss_int_enum("3", _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
-    assert _parse.pss_int_enum(3, _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
+    assert _parse.pss_int_enum(None, _enums.CrewRarity) is None
+    assert _parse.pss_int_enum("", _enums.CrewRarity) is None
+    assert _parse.pss_int_enum("3", _enums.CrewRarity) == _enums.CrewRarity.EPIC
+    assert _parse.pss_int_enum(3, _enums.CrewRarity) == _enums.CrewRarity.EPIC
     assert _parse.pss_int_enum("0", _enums.CrewRarity) == _enums.CrewRarity.COMMON
     assert _parse.pss_int_enum(0, _enums.CrewRarity) == _enums.CrewRarity.COMMON
 
     with _pytest.raises(ValueError):  # The enum doesn't have such a value
-        _parse.pss_int_enum("10", _enums.VisibilityFlags)
+        _parse.pss_int_enum("10", _enums.CrewRarity)
     with _pytest.raises(ValueError):  # The enum doesn't have such a value
-        _parse.pss_int_enum("f", _enums.VisibilityFlags)
+        _parse.pss_int_enum("f", _enums.CrewRarity)
 
 
 def test_pss_int_flag():

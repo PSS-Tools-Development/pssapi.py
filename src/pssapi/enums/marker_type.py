@@ -1,4 +1,4 @@
-from enum import StrEnum as _StrEnum
+from .str_enum_base import StrEnumBase as _StrEnumBase
 
 """
 This file has been be generated from decompilation and might require manual
@@ -6,7 +6,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class MarkerType(_StrEnum):
+class MarkerType(_StrEnumBase):
     NONE = "None"
     CASINO = "Casino"
     COMBAT_OBJECTIVE = "CombatObjective"

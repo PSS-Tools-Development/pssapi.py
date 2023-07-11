@@ -1,7 +1,8 @@
-from enum import IntEnum as _IntEnum
+from enum import IntFlag as _IntFlag
 
 
-class UserStatus(_IntEnum):
+class UserStatus(_IntFlag):
+    NONE = 0
     LIKED_FACEBOOK = 1
     FOLLOWED_TWITTER = 2
     CHANGED_USERNAME = 4

@@ -1,0 +1,501 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025010"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310321"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T11:47:09" TournamentSpriteId="8000" NewUserCount="3042"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2351'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:50:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 4786bcd6a5ee692459814ef0ab252684.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - e9NH6ZYEXTFm2Xw9I_Jk9twS7EFZhNIIziLI9Lm7bmmMikIciAjmeg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2025010"
+        MinimumClientVersion="0.997.1" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2091" SpriteVersion="2802" CharacterDesignVersion="1080" CharacterPartVersion="876"
+        AnimationVersion="716" RoomDesignVersion="860" MissileDesignVersion="540"
+        ResearchDesignVersion="525" RoomDesignSpriteVersion="739" AchievementDesignVersion="563"
+        ConditionTypeVersion="491" CraftDesignVersion="466" ItemDesignVersion="164420"
+        ActionTypeVersion="445" RoomDesignPurchaseVersion="688" ShipDesignVersion="649"
+        LeagueVersion="445" BackgroundVersion="483" MissionDesignVersion="757" TrainingDesignVersion="426"
+        FeatureMask="3" ChallengeDesignVersion="581" ProductionServer="api.pixelstarships.com"
+        Flags="298104537" CharacterDesignActionVersion="381" RewardDesignVersion="310321"
+        TournamentFinalDuration="7" DivisionDesignVersion="516" CollectionDesignVersion="380"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="348" AbilityDesignVersion="332"
+        VipDesignVersion="332" StarSystemVersion="341" StarSystemLinkVersion="337"
+        PlanetVersion="316" MaxDailyDraws="12" CurrentAndroidVersion="0.997.1" PromotionDesignVersion="1097"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="487" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="477" ProBonoLimit="10" TaskDesignVersion="810897"
+        NewsDesignVersion="339" MinimumVersion="0.997.1" RecommendedVersion="0.997.1"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="78"
+        ClientTranslationVersion="71" SeasonDesignVersion="81" AssetVersion="64" TaskRerollCost="15"
+        RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12" LegendaryRulesText="Welcome
+        to Legendary League! You've proven yourself one of the top-ranked captains
+        in the galaxy, and have been entered into an exclusive matchmaking pool for
+        captains in the Legend rank. Captains in the Legend rank trophy range gain
+        no active immunity (except from items) and are allowed only a limited amount
+        of battles a day, so make them count! Additionally, a failed attack attempt
+        in Legendary League will not result in a loss of trophies, although failed
+        defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="35"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="0" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2023-07-09T11:47:09" TournamentSpriteId="8000" NewUserCount="3039"
+        NewsUpdateDate="2023-07-09T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="7" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="19513"
+        LeftLoadingSpriteId="17260" RightLoadingSpriteId="17261" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="4344" MerchantShipExteriorSpriteId="3263" /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2350'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:50:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - AScA2iVyTp5bplbL6pw9hJt8q0x2WqMxw82EnLQTmukadktuURVdgg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SituationService/ListSituationDesigns?languageKey=en
+  response:
+    body:
+      string: <SituationService><ListSituationDesigns version="487"><SituationDesigns><SituationDesign
+        SituationDesignId="1" SituationName="Grave Day" SituationDescription="Grave
+        Day. Ghosts will be created during the battle" SituationType="None" Flags="37"
+        ChangeType="AddCrew" ChangeArgumentString="character:327" RequirementString="room:223
+        &gt;= 1 &amp;&amp; mission:156 &gt;= 1" DailyOccurrenceLimit="20" TriggerType="None"
+        Chance="100" SituationTags="" FromDate="2015-07-22T01:58:08" EndDate="2019-04-30T01:58:08"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="2" SituationName="Egg
+        for Easter" SituationDescription="Egg will dropped randomly" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:713x1" RequirementString=""
+        DailyOccurrenceLimit="20" TriggerType="PvP" Chance="25" SituationTags="" FromDate="2015-07-22T01:58:08"
+        EndDate="2019-04-30T01:58:08" IconSpriteId="0" /><SituationDesign SituationDesignId="3"
+        SituationName="Egg for Easter" SituationDescription="Egg will dropped randomly"
+        SituationType="Environmental" Flags="1" ChangeType="AddLoot" ChangeArgumentString="item:713x1"
+        RequirementString="" DailyOccurrenceLimit="20" TriggerType="ScanShip" Chance="50"
+        SituationTags="" FromDate="2015-07-22T01:58:08" EndDate="2019-04-30T01:58:08"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="4" SituationName="Carbon
+        Salvage" SituationDescription="Carbon Fragment will Drop afterBattle" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:729x1" RequirementString=""
+        DailyOccurrenceLimit="7" TriggerType="PvP" Chance="50" SituationTags="" FromDate="2015-07-22T01:58:08"
+        EndDate="2019-05-30T01:58:08" IconSpriteId="0" /><SituationDesign SituationDesignId="5"
+        SituationName="Hyper EXP Event" SituationDescription="EXP books will be dropped"
+        SituationType="Environmental" Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:560x1"
+        RequirementString="" DailyOccurrenceLimit="20" TriggerType="PvP" Chance="100"
+        SituationTags="" FromDate="2019-08-10T00:00:00" EndDate="2020-12-12T00:00:00"
+        IconSpriteId="57" /><SituationDesign SituationDesignId="6" SituationName="Super
+        EXP Event" SituationDescription="EXP books will be dropped" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:560x2" RequirementString="shipLevel
+        &gt;= 6 &amp;&amp; shipLevel &lt;= 10" DailyOccurrenceLimit="20" TriggerType="PvP"
+        Chance="60" SituationTags="" FromDate="2019-08-10T00:00:00" EndDate="2019-08-12T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="7" SituationName="Ultra
+        EXP Event" SituationDescription="EXP books will be dropped" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:561x3" RequirementString="shipLevel
+        &gt;= 9 &amp;&amp; shipLevel &lt;= 11" DailyOccurrenceLimit="20" TriggerType="PvP"
+        Chance="40" SituationTags="" FromDate="2019-08-10T00:00:00" EndDate="2019-08-12T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="8" SituationName="Super
+        EXP Event 2" SituationDescription="EXP books will be dropped" SituationType="Environmental"
+        Flags="1" ChangeType="AddLoot" ChangeArgumentString="item:561x1" RequirementString="shipLevel
+        &gt;= 6 &amp;&amp; shipLevel &lt;= 8" DailyOccurrenceLimit="20" TriggerType="PvP"
+        Chance="60" SituationTags="" FromDate="2019-08-10T00:00:00" EndDate="2019-08-12T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="9" SituationName="Ultra
+        EXP Event 2" SituationDescription="EXP books will be dropped" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:562x1" RequirementString="shipLevel
+        &gt;= 9 &amp;&amp; shipLevel &lt;= 11" DailyOccurrenceLimit="20" TriggerType="PvP"
+        Chance="40" SituationTags="" FromDate="2019-08-10T00:00:00" EndDate="2019-08-12T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="10" SituationName="Ultra
+        EXP Event 3" SituationDescription="EXP books will be dropped" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:563x1" RequirementString="shipLevel
+        == 11" DailyOccurrenceLimit="20" TriggerType="PvP" Chance="20" SituationTags=""
+        FromDate="2019-08-10T00:00:00" EndDate="2019-08-12T00:00:00" IconSpriteId="0"
+        /><SituationDesign SituationDesignId="11" SituationName="Scrap Fragment Drop
+        Event" SituationDescription="Scrap Fragments will be dropped" SituationType="Environmental"
+        Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:728x1" RequirementString=""
+        DailyOccurrenceLimit="15" TriggerType="PvP" Chance="25" SituationTags="" FromDate="2019-09-06T00:00:00"
+        EndDate="2019-09-09T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="12"
+        SituationName="Carbon Fragment Drop Event" SituationDescription="Carbon Fragments
+        will be dropped" SituationType="Environmental" Flags="37" ChangeType="AddLoot"
+        ChangeArgumentString="item:729x1" RequirementString="" DailyOccurrenceLimit="15"
+        TriggerType="PvP" Chance="20" SituationTags="" FromDate="2019-09-06T00:00:00"
+        EndDate="2019-09-09T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="13"
+        SituationName="Void Particle Drop Event" SituationDescription="Void Particles
+        will be dropped" SituationType="Environmental" Flags="1" ChangeType="AddLoot"
+        ChangeArgumentString="item:778x1" RequirementString="" DailyOccurrenceLimit="15"
+        TriggerType="PvP" Chance="10" SituationTags="" FromDate="2019-09-06T00:00:00"
+        EndDate="2019-09-09T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="14"
+        SituationName="Moon Festival!" SituationDescription="Moon Cakes can drop in
+        Missions and PvP Battles." SituationType="Environmental" Flags="13" ChangeType="AddLoot"
+        ChangeArgumentString="item:806x2" RequirementString="" DailyOccurrenceLimit="6"
+        TriggerType="PvP" Chance="30" SituationTags="" FromDate="2020-10-01T00:00:00"
+        EndDate="2020-10-07T00:00:00" IconSpriteId="12974" /><SituationDesign SituationDesignId="15"
+        SituationName="Ninja VS Alien" SituationDescription="Grave Day. Ghosts will
+        be created during the battle" SituationType="None" Flags="47" ChangeType="AddCrew"
+        ChangeArgumentString="character:30" RequirementString="room:212 &gt;= 1" DailyOccurrenceLimit="999999"
+        TriggerType="None" Chance="60" SituationTags="" FromDate="2019-09-14T01:58:08"
+        EndDate="2019-09-17T01:58:08" IconSpriteId="0" /><SituationDesign SituationDesignId="17"
+        SituationName="Ninja VS Alien" SituationDescription="Grave Day. Ghosts will
+        be created during the battle" SituationType="None" Flags="47" ChangeType="AddCrew"
+        ChangeArgumentString="character:47" RequirementString="room:212 &gt;= 1" DailyOccurrenceLimit="999999"
+        TriggerType="None" Chance="60" SituationTags="" FromDate="2019-09-14T01:58:08"
+        EndDate="2019-09-17T01:58:08" IconSpriteId="0" /><SituationDesign SituationDesignId="18"
+        SituationName="Halloween Spooktacular!" SituationDescription="Pumpkins can
+        drop in Missions and PvP Battles." SituationType="Environmental" Flags="45"
+        ChangeType="AddLoot" ChangeArgumentString="item:814x3" RequirementString="shipLevel
+        &gt; 3" DailyOccurrenceLimit="10" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2022-10-20T00:00:00" EndDate="2022-11-03T00:00:00" IconSpriteId="16910"
+        /><SituationDesign SituationDesignId="19" SituationName="Gifts for Christmas"
+        SituationDescription="Gifts will be dropped randomly" SituationType="Environmental"
+        Flags="45" ChangeType="AddLoot" ChangeArgumentString="item:544x1" RequirementString=""
+        DailyOccurrenceLimit="10" TriggerType="PvP" Chance="10" SituationTags="" FromDate="2019-12-11T00:00:00"
+        EndDate="2019-12-11T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="21"
+        SituationName="Void Particle Drop Event" SituationDescription="Void Particles
+        will be dropped" SituationType="Environmental" Flags="37" ChangeType="AddLoot"
+        ChangeArgumentString="item:778x2" RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="5"
+        TriggerType="PvP" Chance="50" SituationTags="" FromDate="2020-03-07T00:00:00"
+        EndDate="2020-03-10T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="22"
+        SituationName="Egg for Easter" SituationDescription="Egg will dropped randomly"
+        SituationType="Environmental" Flags="1" ChangeType="AddLoot" ChangeArgumentString="item:713x1"
+        RequirementString="" DailyOccurrenceLimit="20" TriggerType="PvP" Chance="25"
+        SituationTags="" FromDate="2020-04-10T00:00:00" EndDate="2020-04-17T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="23" SituationName="Egg
+        for Easter" SituationDescription="Egg will dropped randomly" SituationType="Environmental"
+        Flags="1" ChangeType="AddLoot" ChangeArgumentString="item:713x1" RequirementString=""
+        DailyOccurrenceLimit="20" TriggerType="ScanShip" Chance="50" SituationTags=""
+        FromDate="2020-04-10T00:00:00" EndDate="2020-04-17T00:00:00" IconSpriteId="0"
+        /><SituationDesign SituationDesignId="24" SituationName="Bonus EXP Situation"
+        SituationDescription=" XP Situation" SituationType="Environmental" Flags="37"
+        ChangeType="AddEXP" ChangeArgumentString="100" RequirementString="shipLevel
+        &gt;= 3 &amp;&amp; shipLevel &lt;= 11" DailyOccurrenceLimit="20" TriggerType="PvP"
+        Chance="100" SituationTags="" FromDate="2020-04-17T00:00:00" EndDate="2020-04-20T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="25" SituationName="Scrap
+        Fragment Drop Event" SituationDescription="Scrap Fragments will be dropped"
+        SituationType="Environmental" Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:728x1"
+        RequirementString="" DailyOccurrenceLimit="4" TriggerType="PvP" Chance="25"
+        SituationTags="" FromDate="2020-05-15T00:00:00" EndDate="2020-05-18T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="26" SituationName="Carbon
+        Fragment Drop Event" SituationDescription="Carbon Fragments will be dropped"
+        SituationType="Environmental" Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:955x1"
+        RequirementString="" DailyOccurrenceLimit="5" TriggerType="PvP" Chance="20"
+        SituationTags="" FromDate="2020-06-20T00:00:00" EndDate="2020-06-22T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="27" SituationName="Bonus
+        EXP Situation" SituationDescription=" XP Situation" SituationType="Environmental"
+        Flags="37" ChangeType="AddEXP" ChangeArgumentString="100" RequirementString="shipLevel
+        &gt;= 3 &amp;&amp; shipLevel &lt;= 12" DailyOccurrenceLimit="9999" TriggerType="PvP"
+        Chance="100" SituationTags="" FromDate="2020-06-05T00:00:00" EndDate="2020-06-08T00:00:00"
+        IconSpriteId="0" /><SituationDesign SituationDesignId="28" SituationName="Fortune
+        zongzi Drop Event" SituationDescription="Fortune zongzi will be dropped" SituationType="Environmental"
+        Flags="5" ChangeType="AddLoot" ChangeArgumentString="item:955x1" RequirementString=""
+        DailyOccurrenceLimit="5" TriggerType="PvP" Chance="20" SituationTags="" FromDate="2020-06-20T00:00:00"
+        EndDate="2020-06-22T00:00:00" IconSpriteId="0" /><SituationDesign SituationDesignId="29"
+        SituationName="Double Gas Weekend!" SituationDescription="Double League Bonus
+        Gas from PvP Battles." SituationType="Environmental" Flags="5" ChangeType="AddLeagueBonusGas"
+        ChangeArgumentString="100" RequirementString="shipLevel &gt;= 3 &amp;&amp;
+        shipLevel &lt;= 12" DailyOccurrenceLimit="9999" TriggerType="PvP" Chance="100"
+        SituationTags="" FromDate="2023-06-30T00:00:00" EndDate="2023-07-04T00:00:00"
+        IconSpriteId="637" /><SituationDesign SituationDesignId="30" SituationName="Void
+        Particle PvP Event" SituationDescription="Void Particles drop in PvP" SituationType="Environmental"
+        Flags="5" ChangeType="AddLoot" ChangeArgumentString="item:778x2" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="5" TriggerType="PvP" Chance="50" SituationTags=""
+        FromDate="2020-08-15T00:00:00" EndDate="2020-08-17T00:00:00" IconSpriteId="0"
+        /><SituationDesign SituationDesignId="31" SituationName="Double XP Weekend!"
+        SituationDescription="Get double XP from PvP Battles." SituationType="Environmental"
+        Flags="37" ChangeType="AddEXP" ChangeArgumentString="100" RequirementString="shipLevel
+        &gt;= 3" DailyOccurrenceLimit="9999" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2023-06-23T00:00:00" EndDate="2023-06-27T00:00:00" IconSpriteId="14743"
+        /><SituationDesign SituationDesignId="32" SituationName="Void Storm!" SituationDescription="Void
+        Particles have a chance to drop in PvP Battles." SituationType="Environmental"
+        Flags="5" ChangeType="AddLoot" ChangeArgumentString="item:778x3" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="20" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2023-06-09T00:00:00" EndDate="2023-06-13T00:00:00" IconSpriteId="12751"
+        /><SituationDesign SituationDesignId="33" SituationName="Oktoberfest!" SituationDescription="Root
+        Beer can drop in Missions and PvP Battles." SituationType="Environmental"
+        Flags="45" ChangeType="AddLoot" ChangeArgumentString="item:965x3" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="10" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2022-09-22T00:00:00" EndDate="2022-10-06T00:00:00" IconSpriteId="15057"
+        /><SituationDesign SituationDesignId="35" SituationName="Thanksgiving Throwdown!"
+        SituationDescription="Acorns can drop in Missions and PvP Battles." SituationType="Environmental"
+        Flags="45" ChangeType="AddLoot" ChangeArgumentString="item:986x3" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="10" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2022-11-17T00:00:00" EndDate="2022-12-01T00:00:00" IconSpriteId="15175"
+        /><SituationDesign SituationDesignId="39" SituationName="Intergalactic Xmas!"
+        SituationDescription="Robo Santa Tech can drop in Missions and PvP Battles."
+        SituationType="Environmental" Flags="45" ChangeType="AddLoot" ChangeArgumentString="item:1022x3"
+        RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="12" TriggerType="PvP"
+        Chance="100" SituationTags="" FromDate="2022-01-15T00:00:00" EndDate="2022-01-16T00:00:00"
+        IconSpriteId="7436" /><SituationDesign SituationDesignId="40" SituationName="Year
+        of the Rabbit!" SituationDescription="Lucky Red Coins can drop in PvP Battles."
+        SituationType="Environmental" Flags="37" ChangeType="AddLoot" ChangeArgumentString="item:1029x3"
+        RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="10" TriggerType="PvP"
+        Chance="100" SituationTags="" FromDate="2023-01-06T00:00:00" EndDate="2023-01-23T00:00:00"
+        IconSpriteId="15651" /><SituationDesign SituationDesignId="42" SituationName="Eggstra
+        Planetary Easter!" SituationDescription="Carrotene can drop in Missions and
+        PvP Battles." SituationType="Environmental" Flags="13" ChangeType="AddLoot"
+        ChangeArgumentString="item:1136x3" RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="20"
+        TriggerType="PvP" Chance="100" SituationTags="" FromDate="2023-04-01T00:00:00"
+        EndDate="2023-04-13T00:00:00" IconSpriteId="4424" /><SituationDesign SituationDesignId="43"
+        SituationName="Interstellar Independence!" SituationDescription="Musket Balls
+        can drop in Missions and PvP Battles." SituationType="Environmental" Flags="45"
+        ChangeType="AddLoot" ChangeArgumentString="item:1186x3" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="20" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2023-06-23T00:00:00" EndDate="2023-07-07T00:00:00" IconSpriteId="16502"
+        /><SituationDesign SituationDesignId="44" SituationName="Summer Splash!" SituationDescription="Solar
+        Cells can drop in Missions and PvP Battles." SituationType="Environmental"
+        Flags="45" ChangeType="AddLoot" ChangeArgumentString="item:1221x5" RequirementString="shipLevel
+        &gt; 2" DailyOccurrenceLimit="12" TriggerType="PvP" Chance="100" SituationTags=""
+        FromDate="2022-08-04T00:00:00" EndDate="2022-08-18T00:00:00" IconSpriteId="16648"
+        /><SituationDesign SituationDesignId="45" SituationName="Double XP" SituationDescription="Double
+        Experience from PvP Battles." SituationType="User" Flags="37" ChangeType="AddEXP"
+        ChangeArgumentString="100" RequirementString="" DailyOccurrenceLimit="999999"
+        TriggerType="PvP" Chance="100" SituationTags="" FromDate="2019-01-01T00:00:00"
+        EndDate="2019-12-12T00:00:00" IconSpriteId="16698" /><SituationDesign SituationDesignId="46"
+        SituationName="Moon Festival!" SituationDescription="Moon Cake Cuts can drop
+        in Missions and PvP Battles." SituationType="Environmental" Flags="45" ChangeType="AddLoot"
+        ChangeArgumentString="item:806x3" RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="12"
+        TriggerType="PvP" Chance="100" SituationTags="" FromDate="2022-09-01T00:00:00"
+        EndDate="2022-09-14T00:00:00" IconSpriteId="16826" /><SituationDesign SituationDesignId="47"
+        SituationName="Double Resources" SituationDescription="Double Resources from
+        PvP Battles." SituationType="User" Flags="37" ChangeType="AddLoot" ChangeArgumentString="100"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="" FromDate="2019-01-01T00:00:00" EndDate="2019-12-12T00:00:00"
+        IconSpriteId="16700" /><SituationDesign SituationDesignId="48" SituationName="Halloween
+        Spooktacular!" SituationDescription="Pumpkins can drop in Missions and PvP
+        Battles." SituationType="Environmental" Flags="13" ChangeType="AddLoot" ChangeArgumentString="item:814x3"
+        RequirementString="shipLevel &gt; 2" DailyOccurrenceLimit="12" TriggerType="PvP"
+        Chance="100" SituationTags="" FromDate="2021-10-21T00:00:00" EndDate="2021-11-04T00:00:00"
+        IconSpriteId="16910" /><SituationDesign SituationDesignId="50" SituationName="Electro
+        Magnetic Field" SituationDescription="Random Rooms on all Ships receive the
+        EMP status effect at random times during Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:23"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2022-11-10T00:00:00" EndDate="2022-11-12T00:00:00"
+        IconSpriteId="8874" /><SituationDesign SituationDesignId="51" SituationName="Solar
+        Storm" SituationDescription="Random Rooms on all Ships are set on Fire at
+        random times during Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:24"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2019-01-01T00:00:00" EndDate="2019-12-12T00:00:00"
+        IconSpriteId="5389" /><SituationDesign SituationDesignId="52" SituationName="Frostbite"
+        SituationDescription="Random Crew on all Ships receive the Frozen status effect
+        at random times during Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:25"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2019-01-01T00:00:00" EndDate="2019-12-12T00:00:00"
+        IconSpriteId="13265" /><SituationDesign SituationDesignId="53" SituationName="Electro
+        Magnetic Pulse" SituationDescription="Random Rooms on all Ships receive an
+        extended EMP status effect at the start of Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:20"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2019-01-01T00:00:00" EndDate="2019-12-12T00:00:00"
+        IconSpriteId="12126" /><SituationDesign SituationDesignId="54" SituationName="Solar
+        Wind" SituationDescription="Random Rooms on all Ships are set on Fire for
+        an extended time at the start of Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:21"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2023-01-25T00:00:00" EndDate="2023-02-01T00:00:00"
+        IconSpriteId="12201" /><SituationDesign SituationDesignId="55" SituationName="Permafrost"
+        SituationDescription="Random Crew on all Ships receive an extended Freeze
+        status effect at the start of Tournament PvP Battles." SituationType="Environmental"
+        Flags="48" ChangeType="Background" ChangeArgumentString="backgroundId:22"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100"
+        SituationTags="hazard" FromDate="2022-12-25T00:00:00" EndDate="2023-01-01T00:00:00"
+        IconSpriteId="12199" /><SituationDesign SituationDesignId="56" SituationName="Spice
+        War" SituationDescription="Spice Trader Stockpiles have a chance to drop in
+        Tournament Battles." SituationType="Environmental" Flags="33" ChangeType="AddLoot"
+        ChangeArgumentString="item:1489x1" RequirementString="" DailyOccurrenceLimit="999999"
+        TriggerType="PvP" Chance="25" SituationTags="hazard" FromDate="2023-01-01T00:00:00"
+        EndDate="2023-01-01T00:00:00" IconSpriteId="18221" /><SituationDesign SituationDesignId="58"
+        SituationName="Storage Wars" SituationDescription="Mineral and Gas Requisitions
+        have a small chance to drop in Tournament Battles." SituationType="Environmental"
+        Flags="33" ChangeType="AddLoot" ChangeArgumentString="item:1418x1|item:1419x1"
+        RequirementString="" DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="15"
+        SituationTags="hazard" FromDate="2023-01-01T00:00:00" EndDate="2023-01-01T00:00:00"
+        IconSpriteId="13849" /><SituationDesign SituationDesignId="59" SituationName="Tour
+        of Duty" SituationDescription="Heroic Training Consumables have a small chance
+        to drop in Tournament Battles." SituationType="Environmental" Flags="33" ChangeType="AddLoot"
+        ChangeArgumentString="item:1639x1" RequirementString="" DailyOccurrenceLimit="999999"
+        TriggerType="PvP" Chance="15" SituationTags="hazard" FromDate="2023-05-25T00:00:00"
+        EndDate="2023-06-01T00:00:00" IconSpriteId="3167" /><SituationDesign SituationDesignId="60"
+        SituationName="Lost Profits" SituationDescription="Lost Profits from Annual
+        Events have a chance to drop in Tournament Battles." SituationType="Environmental"
+        Flags="33" ChangeType="AddLoot" ChangeArgumentString="item:1655x1" RequirementString=""
+        DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="25" SituationTags="hazard"
+        FromDate="2023-06-24T00:00:00" EndDate="2023-07-01T00:00:00" IconSpriteId="16692"
+        /><SituationDesign SituationDesignId="61" SituationName="Fortunate Zon" SituationDescription="Fortune
+        Zongzi always drop in successful Tournament Attacks." SituationType="Environmental"
+        Flags="33" ChangeType="AddLoot" ChangeArgumentString="item:955x1" RequirementString=""
+        DailyOccurrenceLimit="999999" TriggerType="PvP" Chance="100" SituationTags="hazard"
+        FromDate="2023-04-24T00:00:00" EndDate="2023-05-01T00:00:00" IconSpriteId="14578"
+        /></SituationDesigns></ListSituationDesigns></SituationService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '3645'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 11:50:26 GMT
+      Expires:
+      - Sun, 09 Jul 2023 12:10:26 GMT
+      Last-Modified:
+      - Sun, 09 Jul 2023 11:50:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 e94bd6405e7651c50e73077af1691486.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - re2yxVCg5_uqOe4B6GQesyx_L5LWMzmRNAxMsLc_9gLrPhGibLousA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/SituationService/ListSituationDesigns?languageKey=en
+version: 1

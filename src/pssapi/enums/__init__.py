@@ -104,6 +104,7 @@ from .situation_type import SituationType
 from .special_ability_type import SpecialAbilityType
 from .special_rule_type import SpecialRuleType
 from .status import Status
+from .str_enum_base import StrEnumBase
 from .target_type import TargetType
 from .task_category import TaskCategory
 from .task_design_flags_type import TaskDesignFlagsType

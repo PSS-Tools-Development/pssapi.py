@@ -1,0 +1,1397 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/ListConditionTypes2?languageKey=en
+  response:
+    body:
+      string: <RoomService><ListConditionTypes version="491"><ConditionTypes><ConditionType
+        ConditionTypeId="1" ConditionTypeName="None" ConditionTypeDescription="This
+        condition will always be true and will execute the action" ConditionTypeAvailability="3"
+        ConditionTypeCategory="None" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="None" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="None"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="2" ConditionTypeName="Enemy Ship HP &lt;
+        25%" ConditionTypeDescription="This condition is true when opponent ship has
+        less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="3" ConditionTypeName="Enemy Ship HP &lt;
+        50%" ConditionTypeDescription="This condition is true when opponent ship has
+        less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="5" ConditionTypeName="Enemy Ship HP &lt;
+        100%" ConditionTypeDescription="This condition is true when opponent ship
+        has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="8" ConditionTypeName="Enemy Ship HP &gt;
+        50%" ConditionTypeDescription="This condition is true when opponent ship has
+        more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="10" ConditionTypeName="Your Ship HP &lt;
+        25%" ConditionTypeDescription="This condition is true when your ship has less
+        than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="11" ConditionTypeName="Your Ship HP &lt;
+        50%" ConditionTypeDescription="This condition is true when your ship has less
+        than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="13" ConditionTypeName="Your Ship HP &lt;
+        100%" ConditionTypeDescription="This condition is true when your ship has
+        sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="16" ConditionTypeName="Your Ship HP &gt;
+        50%" ConditionTypeDescription="This condition is true when your ship has more
+        than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="18" ConditionTypeName="Enemy Ship has Shields"
+        ConditionTypeDescription="This condition is true when opponent ship's shield
+        HP is more than 0" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Shield" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Shield"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="21" ConditionTypeName="Enemy Ship no Active
+        Shields" ConditionTypeDescription="This condition is true when opponent ship's
+        shield HP is 0" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="Shield"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Shield" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="22" ConditionTypeName="Enemy Ship has Full Shields" ConditionTypeDescription="This
+        condition is true when opponent ship's shield HP is at maximum" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherOrEqualPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="26"
+        ConditionTypeName="Your Ship has no Active Shields" ConditionTypeDescription="This
+        condition is true when your ship's shield HP is 0" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Shield" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Shield"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="27" ConditionTypeName="Your Ship has Active
+        Shields" ConditionTypeDescription="This condition is true when your ship's
+        shield HP is more than 0" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Shield" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Shield"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="28" ConditionTypeName="Your Ship has Full
+        Shields" ConditionTypeDescription="This condition is true when your ship's
+        shield HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Shield" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Shield"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="32" ConditionTypeName="Enemy Room HP &gt;
+        0%" ConditionTypeDescription="This condition is true when any enemy room has
+        HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="33" ConditionTypeName="Friendly Room HP
+        &lt; 100%" ConditionTypeDescription="This condition is true when any of your
+        rooms has sustained damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="34" ConditionTypeName="Enemy Engine Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Engine type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Engine" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="35" ConditionTypeName="Enemy Shield Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Shield type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Shield" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="36" ConditionTypeName="Enemy Missile Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Missile type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Missile" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="37" ConditionTypeName="Enemy Teleport Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Teleport type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Teleport" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="38" ConditionTypeName="Enemy Reactor HP
+        &gt; 0%" ConditionTypeDescription="This condition is true when any enemy Reactor
+        type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Reactor" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="39" ConditionTypeName="Enemy Laser HP &gt;
+        0%" ConditionTypeDescription="This condition is true when any enemy ammo-less
+        type weapon rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Laser" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="40" ConditionTypeName="Your Laser HP &lt;
+        100%" ConditionTypeDescription="This condition is true when any friendly ammo-less
+        type weapon rooms has sustained damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Laser" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="41" ConditionTypeName="Your Laser HP &lt;
+        50%" ConditionTypeDescription="This condition is true when any friendly ammo-less
+        type weapon rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Laser" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="42" ConditionTypeName="Your Shield Room
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        Shield type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Shield" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="43"
+        ConditionTypeName="Your Shield Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Shield type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Shield"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="44" ConditionTypeName="Your
+        Engine HP &lt; 100%" ConditionTypeDescription="This condition is true when
+        any friendly Engine type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Engine" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="45"
+        ConditionTypeName="Your Engine HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Engine type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Engine"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="46" ConditionTypeName="Your
+        Missile Room HP &lt; 100%" ConditionTypeDescription="This condition is true
+        when any friendly Missile type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Missile" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="47"
+        ConditionTypeName="Your Missile Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Missile type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Missile"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="48" ConditionTypeName="Your
+        Teleport Room HP &lt; 100%" ConditionTypeDescription="This condition is true
+        when any friendly Teleport type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Teleport" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="49"
+        ConditionTypeName="Your Teleport Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Teleport type rooms has less than 50%
+        HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Teleport"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="50" ConditionTypeName="Your
+        Reactor HP &lt; 100%" ConditionTypeDescription="This condition is true when
+        any friendly Reactor type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Reactor" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="51"
+        ConditionTypeName="Your Reactor HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Reactor type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Reactor"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="52" ConditionTypeName="Current
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when the subject
+        has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="53" ConditionTypeName="Current HP &lt; 50%"
+        ConditionTypeDescription="This condition is true when the subject has less
+        than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="54" ConditionTypeName="Current HP &lt; 25%"
+        ConditionTypeDescription="This condition is true when the subject has less
+        than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="55" ConditionTypeName="Your Hangar HP &lt;
+        100%" ConditionTypeDescription="This condition is true when any friendly Hangar
+        type rooms has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="56" ConditionTypeName="Your Hangar HP &lt;
+        50%" ConditionTypeDescription="This condition is true when any friendly Hangar
+        type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="57" ConditionTypeName="Enemy Hangar HP &gt;
+        0%" ConditionTypeDescription="This condition is true when any enemy Hangar
+        type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="58" ConditionTypeName="Enemy AntiCraft Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Anti-craft type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="AntiCraft" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="59" ConditionTypeName="Your AntiCraft Room
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        Anti-craft type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="AntiCraft" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="60"
+        ConditionTypeName="Your AntiCraft Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Anti-craft type rooms has less than 50%
+        HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="AntiCraft"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="61" ConditionTypeName="Enemy
+        Has Active Craft" ConditionTypeDescription="This condition is true when any
+        enemy crafts are currently active in battle" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyCraft" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Count" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Count"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="62" ConditionTypeName="Your Medical Room
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        Medical type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Medical" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="63"
+        ConditionTypeName="Your Medical Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Medical type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Medical"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="64" ConditionTypeName="Enemy
+        Medical Room HP &gt; 0%" ConditionTypeDescription="This condition is true
+        when any enemy Medical type rooms has HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Medical"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="65" ConditionTypeName="Enemy
+        Cannon HP &gt; 0%" ConditionTypeDescription="This condition is true when any
+        enemy Cannon type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Cannon" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="66" ConditionTypeName="Your Cannon HP &lt;
+        100%" ConditionTypeDescription="This condition is true when any friendly Cannon
+        type rooms has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Cannon" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="67" ConditionTypeName="Your Cannon HP &lt;
+        50%" ConditionTypeDescription="This condition is true when any friendly Cannon
+        type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Cannon" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="68" ConditionTypeName="Friendly Room Has
+        Enemy Crew" ConditionTypeDescription="This condition is true when any friendly
+        room has enemy crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="69" ConditionTypeName="Target Room HP &lt; 100%" ConditionTypeDescription="This
+        condition is true when the currently targeted room has sustained any damage"
+        ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="70"
+        ConditionTypeName="Target Room Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when the currently targeted room has enemy crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EnemyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="71"
+        ConditionTypeName="Target Room Has No Enemy Crew" ConditionTypeDescription="This
+        condition is true when the currently targeted room has no enemy crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EnemyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="1" RoomCategoryType="None" /><ConditionType ConditionTypeId="72"
+        ConditionTypeName="Target Room Has Friendly Crew" ConditionTypeDescription="This
+        condition is true when the currently targeted room has friendly crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="2" RoomCategoryType="None" /><ConditionType ConditionTypeId="73"
+        ConditionTypeName="Target Room Has No Friendly Crew" ConditionTypeDescription="This
+        condition is true when the currently targeted room has no friendly crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="3" RoomCategoryType="None" /><ConditionType ConditionTypeId="74"
+        ConditionTypeName="Target Room Destroyed" ConditionTypeDescription="This condition
+        is true when the currently targeted room has no HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="TargetRoom" ConditionTypeComparison="LowerOrEqualPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="96" OrderIndex="0"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="75" ConditionTypeName="Enemy
+        Security Room HP &gt; 0%" ConditionTypeDescription="This condition is true
+        when any enemy Security type rooms has HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Trap"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="76" ConditionTypeName="Your
+        Security Room HP &lt; 100%" ConditionTypeDescription="This condition is true
+        when any friendly Security type rooms has sustained any damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Trap" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="77"
+        ConditionTypeName="Your Android Room HP &lt; 100%" ConditionTypeDescription="This
+        condition is true when any friendly Android type rooms has sustained any damage"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="Android" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="78"
+        ConditionTypeName="Your Android Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when any friendly Android type rooms has less than 50% HP"
+        ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Android"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="79" ConditionTypeName="Enemy
+        Android Room HP &gt; 0%" ConditionTypeDescription="This condition is true
+        when any enemy Android type rooms has HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Android"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="80" ConditionTypeName="Enemy
+        has no deployed craft(s)" ConditionTypeDescription="This condition is true
+        when there are no enemy crafts currently active in battle " ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyCraft" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Count" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Count"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="81" ConditionTypeName="You have deployed
+        craft(s)" ConditionTypeDescription="This condition is true when there are
+        friendly crafts currently active in battle" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourCraft" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Count" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Count"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="82" ConditionTypeName="You have no deployed
+        craft(s)" ConditionTypeDescription="This condition is true when there are
+        no friendly crafts currently active in battle" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourCraft" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Count" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Count"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="83" ConditionTypeName="Enemy Ship Has Cloak"
+        ConditionTypeDescription="This condition is true when opponent ship has active
+        cloak" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="CloakingDuration" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="CloakingDuration" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="84"
+        ConditionTypeName="Your Ship Has Cloak" ConditionTypeDescription="This condition
+        is true when your ship has active cloak" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="CloakingDuration"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="CloakingDuration"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="85" ConditionTypeName="Your Cloak Room HP
+        &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        Cloak type rooms has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Stealth" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="86" ConditionTypeName="Your Cloak Room HP
+        &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        Cloak type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Stealth" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="87" ConditionTypeName="Your Radar Room HP
+        &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        Radar type rooms has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Radar" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="88" ConditionTypeName="Your Radar Room HP
+        &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        Radar type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Radar" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="89" ConditionTypeName="Enemy Radar Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Radar type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Radar" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="90" ConditionTypeName="Enemy Cloak Room
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        Cloak type rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Stealth" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="91" ConditionTypeName="Enemy Room HP &gt;
+        50%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="92" ConditionTypeName="Enemy Room HP &lt;
+        50%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="93" ConditionTypeName="Friendly Room HP
+        &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="94" ConditionTypeName="Friendly Room HP
+        &gt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        rooms has more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="95" ConditionTypeName="Enemy Room HP &lt;
+        25%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="96" ConditionTypeName="Friendly Room HP
+        &lt; 25%" ConditionTypeDescription="This condition is true when any friendly
+        rooms has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="97" ConditionTypeName="Target Room HP is
+        Full" ConditionTypeDescription="This condition is true when the currently
+        targeted room's HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="98" ConditionTypeName="Target Room HP &gt;
+        50%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="99" ConditionTypeName="Friendly Room has
+        Full HP" ConditionTypeDescription="This condition is true when any friendly
+        room's HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="100" ConditionTypeName="Enemy Room has Full
+        HP" ConditionTypeDescription="This condition is true when any enemy Room's
+        HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="101" ConditionTypeName="Enemy Room Has Friendly
+        Crew" ConditionTypeDescription="This condition is true when any enemy room
+        has friendly crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="102" ConditionTypeName="Target Room HP &gt; 0%" ConditionTypeDescription="This
+        condition is true when the currently targeted room has HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="TargetRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="96" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="103" ConditionTypeName="Enemy
+        Room HP &lt; 100%" ConditionTypeDescription="This condition is true when any
+        enemy room has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="104" ConditionTypeName="Target Room HP &lt;
+        50%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="105" ConditionTypeName="Enemy Ship HP &lt;
+        75%" ConditionTypeDescription="This condition is true when opponent ship has
+        less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="106" ConditionTypeName="Your Ship HP &lt;
+        75%" ConditionTypeDescription="This condition is true when your ship has less
+        than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="107" ConditionTypeName="Current HP &lt;
+        75%" ConditionTypeDescription="This condition is true when the subject has
+        less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="108" ConditionTypeName="Current HP &gt;
+        25%" ConditionTypeDescription="This condition is true when the subject has
+        more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="109" ConditionTypeName="Current HP &gt;
+        50%" ConditionTypeDescription="This condition is true when the subject has
+        more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="110" ConditionTypeName="Enemy Ship Has Full
+        HP" ConditionTypeDescription="This condition is true when opponent ship has
+        full HP." ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="111" ConditionTypeName="Your Ship Has Full
+        HP" ConditionTypeDescription="This condition is true when your ship's HP is
+        full." ConditionTypeAvailability="3" ConditionTypeCategory="YourShip" ConditionTypeComparison="HigherOrEqualPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="112"
+        ConditionTypeName="Enemy Room HP &lt; 75%" ConditionTypeDescription="This
+        condition is true when any enemy rooms has less than 75% HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="75" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="6"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="113" ConditionTypeName="Friendly
+        Room HP &lt; 75%" ConditionTypeDescription="This condition is true when any
+        of your rooms has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="114" ConditionTypeName="Target Room HP &lt;
+        75%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="115" ConditionTypeName="Current HP is Full"
+        ConditionTypeDescription="This condition is true when the subject's HP is
+        at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="116" ConditionTypeName="Enemy Ship HP &gt;
+        25%" ConditionTypeDescription="This condition is true when opponent ship has
+        more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="117" ConditionTypeName="Enemy Ship HP &gt;
+        75%" ConditionTypeDescription="This condition is true when opponent ship has
+        more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="118" ConditionTypeName="Your Ship HP &gt;
+        25%" ConditionTypeDescription="This condition is true when your ship has more
+        than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="119" ConditionTypeName="Your Ship HP &gt;
+        75%" ConditionTypeDescription="This condition is true when your ship has more
+        than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="120" ConditionTypeName="Enemy Ship Has No
+        Cloak" ConditionTypeDescription="This condition is true when opponent ship
+        has no active cloak" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="CloakingDuration"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="CloakingDuration"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="121" ConditionTypeName="Your Ship Has No
+        Cloak" ConditionTypeDescription="This condition is true when your ship has
+        no active cloak" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="CloakingDuration"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="CloakingDuration"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="122" ConditionTypeName="Enemy Room HP &gt;
+        25%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="123" ConditionTypeName="Friendly Room HP
+        &gt; 25%" ConditionTypeDescription="This condition is true when any friendly
+        rooms has more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="124" ConditionTypeName="Current HP &gt;
+        75%" ConditionTypeDescription="This condition is true when the subject has
+        more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="125" ConditionTypeName="Enemy Room HP &gt;
+        75%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="126" ConditionTypeName="Friendly Room HP
+        &gt; 75%" ConditionTypeDescription="This condition is true when any friendly
+        rooms has more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="127" ConditionTypeName="Target Room HP &gt;
+        75%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="128" ConditionTypeName="Target Room HP &lt;
+        25%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="129" ConditionTypeName="Target Room HP &gt;
+        25%" ConditionTypeDescription="This condition is true when the currently targeted
+        room has more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="130" ConditionTypeName="Friendly Room Is
+        On Fire" ConditionTypeDescription="This condition is true when one of friendly
+        rooms is on fire" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FireLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FireLength" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="131" ConditionTypeName="Enemy Room Is On Fire" ConditionTypeDescription="This
+        condition is true when one of enemy rooms is on fire" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="FireLength" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FireLength"
+        ColorString="" RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="132" ConditionTypeName="Target Room Is On
+        Fire" ConditionTypeDescription="This condition is true when the target room
+        is on fire" ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FireLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FireLength" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="133" ConditionTypeName="Friendly Room Is EMPed" ConditionTypeDescription="This
+        condition is true when one of friendly rooms is under the EMP effect" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EMPLength" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EMPLength"
+        ColorString="" RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="134" ConditionTypeName="Enemy Room Is EMPed"
+        ConditionTypeDescription="This condition is true when one of enemy rooms is
+        under the EMP effect" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="EMPLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EMPLength" ColorString=""
+        RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="135" ConditionTypeName="Target Room Is EMPed" ConditionTypeDescription="This
+        condition is true when the target room is under the EMP effect" ConditionTypeAvailability="3"
+        ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EMPLength" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EMPLength"
+        ColorString="" RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="136" ConditionTypeName="Current Room Is
+        On Fire" ConditionTypeDescription="This condition is true when the subject's
+        current room is on fire" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FireLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FireLength" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="137" ConditionTypeName="Friendly Room HP &gt; 0%" ConditionTypeDescription="This
+        condition is true when any friendly room has HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="138" ConditionTypeName="Current
+        Room HP &lt; 100%" ConditionTypeDescription="This condition is true when the
+        subject's current room has sustained damage" ConditionTypeAvailability="2"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="139"
+        ConditionTypeName="Current Room Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when the subject's current room has enemy crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EnemyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="140"
+        ConditionTypeName="Current Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when the subject's current room has less than 50% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="141" ConditionTypeName="Current
+        Room HP &gt; 50%" ConditionTypeDescription="This condition is true when the
+        subject's current room has more than 50% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="5"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="142" ConditionTypeName="Current
+        Room HP &lt; 25%" ConditionTypeDescription="This condition is true when the
+        subject's current room has less than 25% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="2"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="143" ConditionTypeName="Current
+        Room has Full HP" ConditionTypeDescription="This condition is true when the
+        subject's current room HP is at maximum" ConditionTypeAvailability="2" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="144" ConditionTypeName="Current Room Has
+        Friendly Crew" ConditionTypeDescription="This condition is true when the subject's
+        current room has friendly crews targeting it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="FriendlyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="145" ConditionTypeName="Current Room HP
+        &lt; 75%" ConditionTypeDescription="This condition is true when the subject's
+        current room has less than 75% HP" ConditionTypeAvailability="2" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="146" ConditionTypeName="Current Room HP
+        &gt; 25%" ConditionTypeDescription="This condition is true when the subject's
+        current room has more than 25% HP" ConditionTypeAvailability="2" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="147" ConditionTypeName="Current Room HP
+        &gt; 75%" ConditionTypeDescription="This condition is true when the subject's
+        current room has more than 75% HP" ConditionTypeAvailability="2" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="148" ConditionTypeName="Origin Room Is On
+        Fire" ConditionTypeDescription="This condition is true when the subject's
+        starting room is on fire" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FireLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FireLength" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="149" ConditionTypeName="Current Room Is EMPed" ConditionTypeDescription="This
+        condition is true when the subject's current room is under the EMP effect"
+        ConditionTypeAvailability="2" ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EMPLength" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EMPLength" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="150"
+        ConditionTypeName="Current Room HP &gt; 0%" ConditionTypeDescription="This
+        condition is true when the subject's current room has HP remaining" ConditionTypeAvailability="2"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0" OrderIndex="1"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="151" ConditionTypeName="Origin
+        Room HP &lt; 100%" ConditionTypeDescription="This condition is true when the
+        subject's starting room has sustained damage" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="152"
+        ConditionTypeName="Origin Room Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when the subject's starting room has enemy crews targeting
+        it" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EnemyCount" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="153"
+        ConditionTypeName="Origin Room HP &lt; 50%" ConditionTypeDescription="This
+        condition is true when the subject's starting room has less than 50% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="4"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="154" ConditionTypeName="Origin
+        Room HP &gt; 50%" ConditionTypeDescription="This condition is true when the
+        subject's starting room has more than 50% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="94" OrderIndex="5"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="155" ConditionTypeName="Origin
+        Room HP &lt; 25%" ConditionTypeDescription="This condition is true when the
+        subject's starting room has less than 25% HP" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="2"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="156" ConditionTypeName="Origin
+        Room has Full HP" ConditionTypeDescription="This condition is true when the
+        subject's starting room HP is at maximum" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="157" ConditionTypeName="Origin Room has
+        Friendly Crew" ConditionTypeDescription="This condition is true when the subject's
+        starting room has friendly crews targeting it" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="FriendlyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="158" ConditionTypeName="Origin Room HP &lt;
+        75%" ConditionTypeDescription="This condition is true when the subject's starting
+        room has less than 75% HP" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="159" ConditionTypeName="Origin Room HP &gt;
+        25%" ConditionTypeDescription="This condition is true when the subject's starting
+        room has more than 25% HP" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="160" ConditionTypeName="Origin Room HP &gt;
+        75%" ConditionTypeDescription="This condition is true when the subject's starting
+        room has more than 75% HP" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="161" ConditionTypeName="Origin Room HP &gt;
+        0%" ConditionTypeDescription="This condition is true when the subject's starting
+        room has HP remaining" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="162" ConditionTypeName="Origin Room Is EMPed"
+        ConditionTypeDescription="This condition is true when the subject's starting
+        room is under the EMP effect" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="EMPLength"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EMPLength" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="163" ConditionTypeName="Current Room Destroyed" ConditionTypeDescription="This
+        condition is true when the subject's current room has no HP remaining" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="LowerOrEqualPercentage"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
+        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="96" OrderIndex="0"
+        RoomCategoryType="None" /><ConditionType ConditionTypeId="164" ConditionTypeName="Origin
+        Room Destroyed" ConditionTypeDescription="This condition is true when the
+        subject's origin room has no HP remaining" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="LowerOrEqualPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="165" ConditionTypeName="Enemy Superweapon
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="1" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="166" ConditionTypeName="Your Superweapon
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon rooms has sustained damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="8" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="167" ConditionTypeName="Your Superweapon
+        HP &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="4" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="173" ConditionTypeName="Current Room Has
+        No Enemy Crew" ConditionTypeDescription="This condition is true when the subject's
+        current room has no enemy crews targeting it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EnemyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="174" ConditionTypeName="Friendly Room Has
+        No Enemy Crew" ConditionTypeDescription="This condition is true when any friendly
+        room has no enemy crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="175" ConditionTypeName="Origin Room Has No Enemy Crew" ConditionTypeDescription="This
+        condition is true when the subject's starting room has no enemy crews targeting
+        it" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="EnemyCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="176"
+        ConditionTypeName="Origin Room has No Friendly Crew" ConditionTypeDescription="This
+        condition is true when the subject's starting room has no friendly crews targeting
+        it" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="1" RoomCategoryType="None" /><ConditionType ConditionTypeId="177"
+        ConditionTypeName="Current Room Has No Friendly Crew" ConditionTypeDescription="This
+        condition is true when the subject's current room has no friendly crews targeting
+        it" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="1" RoomCategoryType="None" /><ConditionType ConditionTypeId="178"
+        ConditionTypeName="Enemy Room Has No Friendly Crew" ConditionTypeDescription="This
+        condition is true when any enemy room has no friendly crews targeting it"
+        ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="179"
+        ConditionTypeName="Enemy Room Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when any enemy room has enemy crews targeting it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EnemyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount"
+        ColorString="" RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="180" ConditionTypeName="Enemy Room Has No
+        Enemy Crew" ConditionTypeDescription="This condition is true when any enemy
+        room has no enemy crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount" ColorString=""
+        RequiredResearchDesignId="63" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="181" ConditionTypeName="Friendly Room Has Friendly Crew"
+        ConditionTypeDescription="This condition is true when any friendly room has
+        friendly crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="182" ConditionTypeName="Friendly Room Has No Friendly Crew"
+        ConditionTypeDescription="This condition is true when any friendly room has
+        no friendly crews targeting it" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString=""
+        RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="184" ConditionTypeName="Enemy Ship Shields &lt; 25%" ConditionTypeDescription="This
+        condition is true when opponent ship has less than 25% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="2" RoomCategoryType="None" /><ConditionType ConditionTypeId="185"
+        ConditionTypeName="Enemy Ship Shields &lt; 50%" ConditionTypeDescription="This
+        condition is true when opponent ship has less than 50% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="4" RoomCategoryType="None" /><ConditionType ConditionTypeId="186"
+        ConditionTypeName="Enemy Ship Shields &lt; 100%" ConditionTypeDescription="This
+        condition is true when opponent ship has sustained any Shield damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="187"
+        ConditionTypeName="Enemy Ship Shields &gt; 50%" ConditionTypeDescription="This
+        condition is true when opponent ship has more than 50% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="5" RoomCategoryType="None" /><ConditionType ConditionTypeId="188"
+        ConditionTypeName="Enemy Ship Shields &lt; 75%" ConditionTypeDescription="This
+        condition is true when opponent ship has less than 75% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="75" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="6" RoomCategoryType="None" /><ConditionType ConditionTypeId="189"
+        ConditionTypeName="Enemy Ship Shields &gt; 25%" ConditionTypeDescription="This
+        condition is true when opponent ship has more than 25% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="190"
+        ConditionTypeName="Enemy Ship Shields &gt; 75%" ConditionTypeDescription="This
+        condition is true when opponent ship has more than 75% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="75" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="7" RoomCategoryType="None" /><ConditionType ConditionTypeId="191"
+        ConditionTypeName="Your Ship Shields &lt; 25%" ConditionTypeDescription="This
+        condition is true when your ship has less than 25% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="2" RoomCategoryType="None" /><ConditionType ConditionTypeId="192"
+        ConditionTypeName="Your Ship Shields &lt; 50%" ConditionTypeDescription="This
+        condition is true when your ship has less than 50% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="4" RoomCategoryType="None" /><ConditionType ConditionTypeId="193"
+        ConditionTypeName="Your Ship Shields &lt; 100%" ConditionTypeDescription="This
+        condition is true when your ship has sustained any Shield damage" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="194"
+        ConditionTypeName="Your Ship Shields &gt; 50%" ConditionTypeDescription="This
+        condition is true when your ship has more than 50% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="50" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="94"
+        OrderIndex="5" RoomCategoryType="None" /><ConditionType ConditionTypeId="195"
+        ConditionTypeName="Your Ship Shields &lt; 75%" ConditionTypeDescription="This
+        condition is true when your ship has less than 75% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="75" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="6" RoomCategoryType="None" /><ConditionType ConditionTypeId="196"
+        ConditionTypeName="Your Ship Shields &gt; 25%" ConditionTypeDescription="This
+        condition is true when your ship has more than 25% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="25" ConditionTypeKey="Shield" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="3" RoomCategoryType="None" /><ConditionType ConditionTypeId="197"
+        ConditionTypeName="Your Ship Shields &gt; 75%" ConditionTypeDescription="This
+        condition is true when your ship has more than 75% Shield HP" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="HigherPercentage"
+        ConditionTypeParameterValue="75" ConditionTypeKey="Shield " ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="7" RoomCategoryType="None" /><ConditionType ConditionTypeId="198"
+        ConditionTypeName="Your Ship Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when your ship contains an enemy crew inside it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EnemyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="199" ConditionTypeName="Your Ship Has No
+        Enemy Crew" ConditionTypeDescription="This condition is true when your ship
+        contains no enemy crews inside it" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="200" ConditionTypeName="Your Ship Has Friendly Crew" ConditionTypeDescription="This
+        condition is true when your ship contains a friendly crew inside it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="YourShip" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="FriendlyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="201" ConditionTypeName="Your Ship Has No
+        Friendly Crew" ConditionTypeDescription="This condition is true when your
+        ship contains no friendly crews inside it" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="202" ConditionTypeName="Enemy Ship Has Enemy Crew" ConditionTypeDescription="This
+        condition is true when the enemy ship contains an enemy crew inside it" ConditionTypeAvailability="3"
+        ConditionTypeCategory="EnemyShip" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="EnemyCount" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="203" ConditionTypeName="Enemy Ship Has No
+        Enemy Crew" ConditionTypeDescription="This condition is true when the enemy
+        ship contains no enemy crews inside it" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="EnemyCount"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="EnemyCount" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="204" ConditionTypeName="Enemy Ship Has Friendly Crew" ConditionTypeDescription="This
+        condition is true when the enemy ship contains a friendly crew inside it"
+        ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="205"
+        ConditionTypeName="Enemy Ship Has No Friendly Crew" ConditionTypeDescription="This
+        condition is true when the enemy ship contains no friendly crews inside it"
+        ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="FriendlyCount" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="FriendlyCount" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="206"
+        ConditionTypeName="Current Room Has No Crafts Deployed" ConditionTypeDescription="This
+        condition returns true if no crafts have been deployed by the current room"
+        ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Carrier" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="207"
+        ConditionTypeName="Current Room Has No Androids Deployed" ConditionTypeDescription="This
+        condition returns true if no androids have been deployed by the current room"
+        ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Android" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="208"
+        ConditionTypeName="Current Room Has Max Crafts Deployed" ConditionTypeDescription="This
+        condition returns true if the maximum number of crafts deployable by the current
+        room has been reached" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="10" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="209" ConditionTypeName="Current Room Has
+        Max Androids Deployed" ConditionTypeDescription="This condition returns true
+        if the maximum number of androids deployable by the current room has been
+        reached" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="10" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="210" ConditionTypeName="Current Room Has
+        Crafts Deployed" ConditionTypeDescription="This condition returns true if
+        one or more crafts have been deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="211" ConditionTypeName="Current Room Has
+        Androids Deployed" ConditionTypeDescription="This condition returns true if
+        one or more androids have been deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="212" ConditionTypeName="Current Room Has
+        &gt; 1 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 1 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="1"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="213" ConditionTypeName="Current Room Has
+        &gt; 1 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if more than 1 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="1"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="214" ConditionTypeName="Current Room Has
+        &gt; 2 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 2 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="215" ConditionTypeName="Current Room Has
+        &gt; 2 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if more than 2 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="216" ConditionTypeName="Current Room Crafts
+        Not Fully Deployed" ConditionTypeDescription="This condition is true when
+        the maximum craft deployment limit is not reached by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Carrier" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="217"
+        ConditionTypeName="Current Room Has Androids Not Fully Deployed" ConditionTypeDescription="This
+        condition is true when the maximum android deployment limit is not reached
+        by the current room" ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="218" ConditionTypeName="Current Room Has
+        &lt;  2 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 2 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="219" ConditionTypeName="Current Room Has
+        &lt; 2 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if less than 2 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="220" ConditionTypeName="Current Room Has
+        &lt;  3 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 3 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="221" ConditionTypeName="Current Room Has
+        &lt; 3 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if less than 3 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="222" ConditionTypeName="Current Room Has
+        &gt; 3 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 3 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="223" ConditionTypeName="Current Room Has
+        &gt; 3 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if more than 3 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="224" ConditionTypeName="Current Room Has
+        &lt;  4 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 4 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="4"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="225" ConditionTypeName="Current Room Has
+        &lt; 4 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if less than 4 Androids are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="4"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="227" ConditionTypeName="Current Room Has
+        &gt; 4 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 4 Crafts are deployed by the current room" ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="4"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="228" ConditionTypeName="Origin Room Has
+        No Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if no crafts have been deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="229" ConditionTypeName="Origin Room Has
+        Max Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if the maximum number of crafts deployable by the subject's starting room
+        has been reached" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="10" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="230" ConditionTypeName="Origin Room Has
+        &gt; 1 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 1 Crafts are deployed on the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="1"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="231" ConditionTypeName="Origin Room Has
+        &gt; 2 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 2 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="232" ConditionTypeName="Origin Room Crafts
+        Not Fully Deployed" ConditionTypeDescription="This condition is true when
+        the maximum craft deployment limit is not reached by the subject's starting
+        room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Carrier" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="233"
+        ConditionTypeName="Origin Room Has Crafts Deployed" ConditionTypeDescription="This
+        condition returns true if one or more crafts have been deployed by the subject's
+        starting room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="DeployCount"
+        ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="234" ConditionTypeName="Origin Room Has
+        &lt;  3 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 3 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="235" ConditionTypeName="Origin Room Has
+        &lt;  2 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 2 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="2"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="236" ConditionTypeName="Origin Room Has
+        &lt;  4 Crafts Deployed" ConditionTypeDescription="This condition returns
+        true if less than 4 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Lower" ConditionTypeParameterValue="4"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="237" ConditionTypeName="Origin Room Has
+        &gt; 3 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 3 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="3"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="238" ConditionTypeName="Origin Room Has
+        &gt; 4 Crafts Deployed" ConditionTypeDescription="This condition returns true
+        if more than 4 Crafts are deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="4"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="8" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="239" ConditionTypeName="Origin Room Has
+        No Androids Deployed" ConditionTypeDescription="This condition returns true
+        if no androids have been deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="240" ConditionTypeName="Origin Room Has
+        Max Androids Deployed" ConditionTypeDescription="This condition returns true
+        if the maximum number of androids deployable by the subject's starting room
+        has been reached" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="10" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="241" ConditionTypeName="Origin Room Has
+        Androids Deployed" ConditionTypeDescription="This condition returns true if
+        one or more androids have been deployed by the subject's starting room" ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="242" ConditionTypeName="Origin Room Has
+        &gt; 1 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if more than 1 Androids are deployed by the subject's starting room"
+        ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="1" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Android" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="2" RoomCategoryType="None" /><ConditionType ConditionTypeId="243"
+        ConditionTypeName="Origin Room Has &gt; 2 Androids Deployed" ConditionTypeDescription="This
+        condition returns true if more than 2 Androids are deployed by the subject's
+        starting room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="2" ConditionTypeKey="DeployCount"
+        ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="244" ConditionTypeName="Origin Room Has
+        Androids Not Fully Deployed" ConditionTypeDescription="This condition is true
+        when the maximum android deployment limit is not reached by the subject's
+        starting room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="DeployCount" ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="245" ConditionTypeName="Origin Room Has
+        &lt; 2 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if less than 2 Androids are deployed by the subject's starting room"
+        ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Lower"
+        ConditionTypeParameterValue="2" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Android" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="3" RoomCategoryType="None" /><ConditionType ConditionTypeId="246"
+        ConditionTypeName="Origin Room Has &gt; 3 Androids Deployed" ConditionTypeDescription="This
+        condition returns true if more than 3 Androids are deployed by the subject's
+        starting room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="3" ConditionTypeKey="DeployCount"
+        ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="247" ConditionTypeName="Origin Room Has
+        &lt; 3 Androids Deployed" ConditionTypeDescription="This condition returns
+        true if less than 3 Androids are deployed by the subject's starting room"
+        ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Lower"
+        ConditionTypeParameterValue="3" ConditionTypeKey="DeployCount" ImageSpriteId="4"
+        RoomType="Android" ConditionTypeParameter="DeployCount" ColorString="" RequiredResearchDesignId="95"
+        OrderIndex="5" RoomCategoryType="None" /><ConditionType ConditionTypeId="248"
+        ConditionTypeName="Origin Room Has &lt; 4 Androids Deployed" ConditionTypeDescription="This
+        condition returns true if less than 4 Androids are deployed by the subject's
+        starting room" ConditionTypeAvailability="2" ConditionTypeCategory="OriginRoom"
+        ConditionTypeComparison="Lower" ConditionTypeParameterValue="4" ConditionTypeKey="DeployCount"
+        ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /></ConditionTypes></ListConditionTypes></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '11270'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 09 Jul 2023 10:44:38 GMT
+      Expires:
+      - Sun, 09 Jul 2023 11:04:38 GMT
+      Last-Modified:
+      - Sun, 09 Jul 2023 10:44:38 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 4cef84d6d9d593ea2c191c9370b4ebba.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - L0PMoQlx3Jcyyc0BWX4Tf3mWrlX8O7TGlNh7nH5pXzbwbV-qbauo_g==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/RoomService/ListConditionTypes2?languageKey=en
+version: 1

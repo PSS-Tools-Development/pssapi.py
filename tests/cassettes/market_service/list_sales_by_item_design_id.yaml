@@ -1,0 +1,130 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/MarketService/ListSalesByItemDesignId?from=0&itemDesignId=778&saleStatus=Listed&to=100
+  response:
+    body:
+      string: "<MarketService><ListSalesByItemDesignId><Sales><Sale SaleId=\"30839323\"
+        SaleStatus=\"Listed\" Quantity=\"100\" CurrencyType=\"Starbux\" CurrencyValue=\"130\"
+        SellerShipId=\"7740716\" StarbuxValue=\"130\" BuyerShipId=\"0\" CharacterId=\"0\"
+        StatusDate=\"2023-07-04T06:29:32\" ItemId=\"212448208\" CharacterDesignId=\"0\"
+        ItemDesignId=\"778\" SellerShipName=\"\u4F11\u6CE2\u5229\u5B89\u53F7\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30839253\" SaleStatus=\"Listed\" Quantity=\"2\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"22\" SellerShipId=\"7926398\" StarbuxValue=\"22\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T06:20:21\" ItemId=\"220502249\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Badbrn\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30839226\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\"
+        CurrencyValue=\"450000\" SellerShipId=\"6554416\" StarbuxValue=\"465\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T06:16:54\" ItemId=\"168919551\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Lucapitan\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839192\" SaleStatus=\"Listed\" Quantity=\"9\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"99\" SellerShipId=\"7882522\" StarbuxValue=\"99\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T06:13:45\" ItemId=\"218561864\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Storyteller27\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839178\" SaleStatus=\"Listed\" Quantity=\"1\"
+        CurrencyType=\"Mineral\" CurrencyValue=\"2500000\" SellerShipId=\"7616774\"
+        StarbuxValue=\"1624\" BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T06:12:53\"
+        ItemId=\"207313624\" CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"MexiKhan\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839175\" SaleStatus=\"Listed\" Quantity=\"1\"
+        CurrencyType=\"Mineral\" CurrencyValue=\"2500000\" SellerShipId=\"7616774\"
+        StarbuxValue=\"1624\" BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T06:12:44\"
+        ItemId=\"207313624\" CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"MexiKhan\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839169\" SaleStatus=\"Listed\" Quantity=\"6\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"66\" SellerShipId=\"7928964\" StarbuxValue=\"66\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T06:12:28\" ItemId=\"220593656\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Sovland\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30839147\" SaleStatus=\"Listed\" Quantity=\"100\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"155\" SellerShipId=\"7881513\" StarbuxValue=\"155\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T06:10:01\" ItemId=\"218782215\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"\u91D1\u94B1\u660F\u8FF7\u75C7\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839047\" SaleStatus=\"Listed\" Quantity=\"2\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"22\" SellerShipId=\"7916883\" StarbuxValue=\"22\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T05:57:21\" ItemId=\"220079663\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Sapperseven\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839022\" SaleStatus=\"Listed\" Quantity=\"100\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"150\" SellerShipId=\"7594391\" StarbuxValue=\"150\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T05:53:26\" ItemId=\"206441354\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"D\u0103nu\u021B\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30839020\" SaleStatus=\"Listed\" Quantity=\"100\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"150\" SellerShipId=\"7594391\" StarbuxValue=\"150\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T05:53:13\" ItemId=\"206441354\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"D\u0103nu\u021B\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30838999\" SaleStatus=\"Listed\" Quantity=\"1\"
+        CurrencyType=\"Gas\" CurrencyValue=\"500000\" SellerShipId=\"7439284\" StarbuxValue=\"502\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T05:50:52\" ItemId=\"200705033\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"f.rowdn\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838985\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\"
+        CurrencyValue=\"500000\" SellerShipId=\"4322321\" StarbuxValue=\"502\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:48:42\" ItemId=\"100995291\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Salaco\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838962\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"8\" SellerShipId=\"7926580\" StarbuxValue=\"8\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:46:46\" ItemId=\"220553285\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Meiv\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838927\" SaleStatus=\"Listed\" Quantity=\"50\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"200\" SellerShipId=\"6692428\" StarbuxValue=\"200\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:43:44\" ItemId=\"173685662\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Zelgadiz.pl\"
+        BuyerShipName=\"\" /><Sale SaleId=\"30838815\" SaleStatus=\"Listed\" Quantity=\"219\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"400\" SellerShipId=\"7740434\" StarbuxValue=\"400\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2023-07-04T05:33:06\" ItemId=\"212437687\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"subwe\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838803\" SaleStatus=\"Listed\" Quantity=\"300\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"450\" SellerShipId=\"7300567\" StarbuxValue=\"450\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:32:32\" ItemId=\"195639062\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Zero3xx9\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838726\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\"
+        CurrencyValue=\"1125000\" SellerShipId=\"7431391\" StarbuxValue=\"907\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:21:57\" ItemId=\"200426295\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"B0ll3\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838622\" SaleStatus=\"Listed\" Quantity=\"24\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"31\" SellerShipId=\"7485468\" StarbuxValue=\"31\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T05:07:46\" ItemId=\"202436779\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Loperman\" BuyerShipName=\"\"
+        /><Sale SaleId=\"30838507\" SaleStatus=\"Listed\" Quantity=\"44\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"264\" SellerShipId=\"7566573\" StarbuxValue=\"264\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2023-07-04T04:54:53\" ItemId=\"205425128\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"toaot\" BuyerShipName=\"\"
+        /></Sales></ListSalesByItemDesignId></MarketService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1906'
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 04 Jul 2023 06:30:06 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 559ee8cd119d47737b610c6ae5010932.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - de3u5b6NCmnTlKLcgWal5hu0F4KOw8xPGo0eCMEGRv43xl-7_6ERLA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/MarketService/ListSalesByItemDesignId?from=0&itemDesignId=778&saleStatus=Listed&to=100
+version: 1

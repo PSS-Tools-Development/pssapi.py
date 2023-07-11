@@ -1,0 +1,158 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/SearchAlliances?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&name=Trek+&skip=0&take=100
+  response:
+    body:
+      string: '<AllianceService><SearchAlliances><Alliances><Alliance AllianceId="21"
+        AllianceName="Trek Wolfpack" MinTrophyRequired="2600" RequiresApproval="true"
+        AllianceDescription="Wolfpack is a proud member of the Trek Federation. Welcome
+        to the den, where we shape young wolves into battle-hardened veterans that
+        roam the skies hunting for prey. This fleet is semi-competitive div B fleet
+        that requires a minimum of 25 stars per tournament - activity is mandatory.
+        Min trophies : 2600. Min hull lvl : 10. Activity on discord mandatory : https://discord.gg/cBcB3ap.
+        AWOOOOOO!!" AllianceCountryCode="" EnableWars="true" Credits="2500" Score="0"
+        ChampionshipScore="50" Trophy="354898" Ranking="0" AllianceSpriteId="19349"
+        ChannelId="120" NumberOfMembers="99" NumberOfApprovedMembers="0" AllianceShipUserId="2624870"
+        ImmunityDate="2023-06-20T04:09:15" DivisionDesignId="0" /><Alliance AllianceId="9130"
+        AllianceName="Trek Prodigy" MinTrophyRequired="2000" RequiresApproval="false"
+        AllianceDescription="First there was white noise. Then the sound of bass.
+        And Trek Prodigy was born. Welcome to the Trek Family and begin your journey
+        here!   A;A;Next Step Trek - WolfpackA;A;Join our Discord for help and chat!   discord.gg/cBcB3ap   "
+        AllianceCountryCode="" EnableWars="true" Credits="267" Score="0" ChampionshipScore="5"
+        Trophy="184295" Ranking="0" AllianceSpriteId="2316" ChannelId="13455" NumberOfMembers="80"
+        NumberOfApprovedMembers="0" AllianceShipUserId="2674758" ImmunityDate="2023-06-20T08:39:05"
+        DivisionDesignId="0" /><Alliance AllianceId="9343" AllianceName="Trek Federation"
+        MinTrophyRequired="4300" RequiresApproval="true" AllianceDescription="Trek
+        Server: bit.ly/trekfederation (discord.gg/cBcB3ap ) - JOIN DISCORD FOR INFO
+        AND HELP - We welcome beginners and veterans alike, just check the other fleets
+        of our community to find the one that suits you: Trek Pastafarians, Trek Wolfpack,
+        Trek Academy, Trek Prodigy, Trek Trainer,  Trek Lower Decks &amp; Trek Frist
+        Contact.  " AllianceCountryCode="" EnableWars="true" Credits="2055" Score="0"
+        ChampionshipScore="200" Trophy="432383" Ranking="0" AllianceSpriteId="2317"
+        ChannelId="13668" NumberOfMembers="87" NumberOfApprovedMembers="0" AllianceShipUserId="2641722"
+        ImmunityDate="2023-06-20T00:58:44" DivisionDesignId="0" /><Alliance AllianceId="12008"
+        AllianceName="Trek Pastafarians" MinTrophyRequired="3200" RequiresApproval="true"
+        AllianceDescription="Pasta is the first sister fleet of Trek Federation. Short
+        on trophies? You are welcome in Trek Wolfpack. Ships below 50 stars during
+        tournaments susceptible to kick. Join our Discord for fun and mutual help:
+        discord.gg/cBcB3ap - RAMEN !" AllianceCountryCode="" EnableWars="true" Credits="4000"
+        Score="0" ChampionshipScore="95" Trophy="415534" Ranking="0" AllianceSpriteId="19381"
+        ChannelId="16338" NumberOfMembers="98" NumberOfApprovedMembers="0" AllianceShipUserId="3060044"
+        ImmunityDate="2023-06-20T07:27:34" DivisionDesignId="0" /><Alliance AllianceId="12758"
+        AllianceName="Trek Academy" MinTrophyRequired="2000" RequiresApproval="false"
+        AllianceDescription="Entry level competitive fleet of Trek Federation - JOIN
+        TREK DISCORD chat server at discord.gg/cBcB3ap for advice and info. Crew donations,
+        joining discord and activity required. Move up to our sister fleet Trek Wolfpack
+        once you reach 2600 trophies!" AllianceCountryCode="" EnableWars="true" Credits="5981"
+        Score="0" ChampionshipScore="15" Trophy="274593" Ranking="0" AllianceSpriteId="2320"
+        ChannelId="17091" NumberOfMembers="100" NumberOfApprovedMembers="0" AllianceShipUserId="3226287"
+        ImmunityDate="2023-06-20T08:33:27" DivisionDesignId="0" /><Alliance AllianceId="12789"
+        AllianceName="Trek Trainer" MinTrophyRequired="901" RequiresApproval="false"
+        AllianceDescription="Training fleet for Trek Federation - JOIN THE TREK DISCORD
+        at discord.gg/cBcB3ap for advice and info. Crew donations and activity required.
+        Join Trek Lower Decks/Trek First Contact if full, and Trek Academy, or Trek
+        Prodigy once you reach 2000 trophies!" AllianceCountryCode="" EnableWars="true"
+        Credits="5192" Score="0" ChampionshipScore="7" Trophy="164526" Ranking="0"
+        AllianceSpriteId="2318" ChannelId="17122" NumberOfMembers="87" NumberOfApprovedMembers="0"
+        AllianceShipUserId="3296275" ImmunityDate="2023-06-19T19:27:59" DivisionDesignId="0"
+        /><Alliance AllianceId="15686" AllianceName="Trek First Contact" MinTrophyRequired="1000"
+        RequiresApproval="false" AllianceDescription="Training fleet for Trek Federation
+        - JOIN THE TREK DISCORD at discord.gg/cBcB3ap for advice and info with veterans
+        who can help you. Activity required. Join Trek Academy, or Trek Prodigy once
+        you reach 2000 trophies." AllianceCountryCode="" EnableWars="true" Credits="718"
+        Score="0" ChampionshipScore="1" Trophy="168083" Ranking="0" AllianceSpriteId="2319"
+        ChannelId="20021" NumberOfMembers="97" NumberOfApprovedMembers="0" AllianceShipUserId="3755847"
+        ImmunityDate="2023-06-20T04:19:20" DivisionDesignId="0" /><Alliance AllianceId="17383"
+        AllianceName="Trek Lounge" MinTrophyRequired="0" RequiresApproval="false"
+        AllianceDescription="A safe harbor for retired Trek ships. Active players
+        should join one of Trek''s fleets to progress in the game (Trek Federation,
+        Pastafarians, Wolfpack, Academy, Trainer and Lower Decks, depending on your
+        trophies). Follow us at bit.ly/trekfederation (https://discord.gg/cBcB3ap)"
+        AllianceCountryCode="" EnableWars="true" Credits="12" Score="0" ChampionshipScore="0"
+        Trophy="57548" Ranking="0" AllianceSpriteId="2319" ChannelId="21719" NumberOfMembers="88"
+        NumberOfApprovedMembers="0" AllianceShipUserId="0" ImmunityDate="2000-01-01T00:00:00"
+        DivisionDesignId="0" /><Alliance AllianceId="21757" AllianceName="Trek Lower
+        Decks" MinTrophyRequired="800" RequiresApproval="false" AllianceDescription="Training
+        fleet for Trek Federation - JOIN THE TREK DISCORD at discord.gg/cBcB3ap for
+        advices and info with veterans who can help you.. Crew donations and activity
+        required. Join Trek First Contact if full, Trek Academy, or Trek Prodigy once
+        you reach 2000 trophies, or Trek Wolfpack above 2400!" AllianceCountryCode=""
+        EnableWars="true" Credits="3273" Score="0" ChampionshipScore="7" Trophy="142834"
+        Ranking="0" AllianceSpriteId="2318" ChannelId="26093" NumberOfMembers="77"
+        NumberOfApprovedMembers="0" AllianceShipUserId="4582988" ImmunityDate="2023-06-19T20:03:14"
+        DivisionDesignId="0" /><Alliance AllianceId="37341" AllianceName="Trek Wars"
+        MinTrophyRequired="0" RequiresApproval="false" AllianceDescription="Hello
+        everyone Im TheMaskedTree a small time Youtuber/ Twitch streamer looking for
+        ways to play with his fans and get his name out there!" AllianceCountryCode=""
+        EnableWars="true" Credits="107" Score="0" ChampionshipScore="0" Trophy="961"
+        Ranking="0" AllianceSpriteId="2277" ChannelId="41690" NumberOfMembers="8"
+        NumberOfApprovedMembers="0" AllianceShipUserId="0" ImmunityDate="2000-01-01T00:00:00"
+        DivisionDesignId="0" /><Alliance AllianceId="38976" AllianceName="Trek Weirdos"
+        MinTrophyRequired="500" RequiresApproval="true" AllianceDescription="Weird
+        isn''t it? Well what did you expect? Trek Weirdos is a part of the Trek Federation
+        family, only weirder. Accepting internal transfers from Trek only, join us
+        at bit.ly/trekfederation and find out more about our other (slightly) less
+        weird fleets xD" AllianceCountryCode="" EnableWars="true" Credits="970" Score="0"
+        ChampionshipScore="6" Trophy="101203" Ranking="0" AllianceSpriteId="2319"
+        ChannelId="43325" NumberOfMembers="95" NumberOfApprovedMembers="0" AllianceShipUserId="8628787"
+        ImmunityDate="2023-06-19T19:56:24" DivisionDesignId="0" /><Alliance AllianceId="43344"
+        AllianceName="Trek Journey" MinTrophyRequired="0" RequiresApproval="false"
+        AllianceDescription="Welcome to the Trek Family of Fleets! Start your journey
+        here and move up to our trainer fleets based on your trophies. Join our discord
+        to get tips and help from experienced players. discord: bit.ly/trekfederation"
+        AllianceCountryCode="" EnableWars="true" Credits="0" Score="0" ChampionshipScore="0"
+        Trophy="0" Ranking="0" AllianceSpriteId="2315" ChannelId="47687" NumberOfMembers="1"
+        NumberOfApprovedMembers="0" AllianceShipUserId="0" ImmunityDate="2000-01-01T00:00:00"
+        DivisionDesignId="0" /><Alliance AllianceId="44527" AllianceName="Trek Enterprise"
+        MinTrophyRequired="0" RequiresApproval="false" AllianceDescription="Welcome,
+        I hope you enjoy  your adventures " AllianceCountryCode="" EnableWars="true"
+        Credits="60" Score="0" ChampionshipScore="1" Trophy="145677" Ranking="0" AllianceSpriteId="19362"
+        ChannelId="48871" NumberOfMembers="97" NumberOfApprovedMembers="0" AllianceShipUserId="10259186"
+        ImmunityDate="2023-06-19T21:51:32" DivisionDesignId="0" /></Alliances></SearchAlliances></AllianceService>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2949'
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 19 Jun 2023 22:26:17 GMT
+      Expires:
+      - Mon, 19 Jun 2023 22:27:17 GMT
+      Last-Modified:
+      - Mon, 19 Jun 2023 22:26:17 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 9d638fe6fe3e82d4d1292fa9e998dfbe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - d96dRpsloqp91bYUK7CfSCKO0awMQe4c15nin1xlMp-8c0DhhwzngA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/AllianceService/SearchAlliances?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&name=Trek+&skip=0&take=100
+version: 1

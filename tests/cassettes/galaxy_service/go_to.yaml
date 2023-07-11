@@ -1,0 +1,543 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: POST
+    uri: https://api.pixelstarships.com/GalaxyService/GoTo?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&checksum=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&clientDateTime=2023-06-22T09:49:35&starSystemId=53
+  response:
+    body:
+      string: <GalaxyService>
+        <GoTo>
+        <Ship ShipId="6546989" ShipDesignId="14" Hp="13" ShipStatus="Offline" StandardCharacterDraws="43" UniqueCharacterDraws="2" BrightnessValue="0" SaturationValue="0" HueValue="0" StickerString="1207@579.5533-84.09286-5" ShipLevel="5" PowerScore="626" StarSystemId="53" FromStarSystemId="18" NextStarSystemId="53" OriginStarSystemId="18" OriginNextStarSystemId="53" Tags="" SkinOpacityValue="0.375" StarSystemArrivalDate="2023-06-22T09:52:35" UpdateDate="2023-06-22T09:47:50" StatusStartDate="2023-06-22T09:47:52" UpgradeStartDate="2021-09-23T16:05:47" UserId="8729280" OriginalRaceId="3" SkinItemDesignId="0" UpgradeShipDesignId="0" ImmunityDate="2023-06-22T09:49:27" ShipName="Dolores 2.0" Shield="0" SalvageArgument="0">
+        <Items>
+        <Item ItemId="168283600" ShipId="6546989" ItemDesignId="3" Quantity="1150"   IsNew="false" />
+        <Item ItemId="168283601" ShipId="6546989" ItemDesignId="2" Quantity="41928"   IsNew="false" />
+        <Item ItemId="168283602" ShipId="6546989" ItemDesignId="18" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283603" ShipId="6546989" ItemDesignId="5" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283604" ShipId="6546989" ItemDesignId="6" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283605" ShipId="6546989" ItemDesignId="33" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283606" ShipId="6546989" ItemDesignId="38" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283607" ShipId="6546989" ItemDesignId="42" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283608" ShipId="6546989" ItemDesignId="11" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283609" ShipId="6546989" ItemDesignId="47" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283610" ShipId="6546989" ItemDesignId="48" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283611" ShipId="6546989" ItemDesignId="65" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283612" ShipId="6546989" ItemDesignId="140" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283613" ShipId="6546989" ItemDesignId="186" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283614" ShipId="6546989" ItemDesignId="204" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283615" ShipId="6546989" ItemDesignId="209" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283616" ShipId="6546989" ItemDesignId="214" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283617" ShipId="6546989" ItemDesignId="243" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283618" ShipId="6546989" ItemDesignId="287" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283619" ShipId="6546989" ItemDesignId="293" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283620" ShipId="6546989" ItemDesignId="294" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283621" ShipId="6546989" ItemDesignId="295" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283622" ShipId="6546989" ItemDesignId="407" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283623" ShipId="6546989" ItemDesignId="413" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283624" ShipId="6546989" ItemDesignId="745" Quantity="20"   IsNew="false" />
+        <Item ItemId="168283625" ShipId="6546989" ItemDesignId="813" Quantity="0"   IsNew="false" />
+        <Item ItemId="168283626" ShipId="6546989" ItemDesignId="823" Quantity="0"   IsNew="false" />
+        <Item ItemId="168328710" ShipId="6546989" ItemDesignId="82" Quantity="6"   IsNew="false" />
+        <Item ItemId="168329171" ShipId="6546989" ItemDesignId="102" Quantity="7"   IsNew="false" />
+        <Item ItemId="168329172" ShipId="6546989" ItemDesignId="84" Quantity="4"   IsNew="false" />
+        <Item ItemId="168335435" ShipId="6546989" ItemDesignId="806" Quantity="0"   IsNew="false" />
+        <Item ItemId="168341067" ShipId="6546989" ItemDesignId="778" Quantity="14"   IsNew="false" />
+        <Item ItemId="168349614" ShipId="6546989" ItemDesignId="749" Quantity="0"   IsNew="false" />
+        <Item ItemId="168349615" ShipId="6546989" ItemDesignId="752" Quantity="0"   IsNew="false" />
+        <Item ItemId="168375350" ShipId="6546989" ItemDesignId="90" Quantity="1"   IsNew="false" />
+        <Item ItemId="168375352" ShipId="6546989" ItemDesignId="85" Quantity="3"   IsNew="false" />
+        <Item ItemId="168382661" ShipId="6546989" ItemDesignId="330" Quantity="0"   IsNew="false" />
+        <Item ItemId="168383708" ShipId="6546989" ItemDesignId="353" Quantity="0"   IsNew="false" />
+        <Item ItemId="168432321" ShipId="6546989" ItemDesignId="81" Quantity="7"   IsNew="true" />
+        <Item ItemId="168466396" ShipId="6546989" ItemDesignId="167" Quantity="2"   IsNew="false" />
+        <Item ItemId="168516988" ShipId="6546989" ItemDesignId="173" Quantity="0"   IsNew="false" />
+        <Item ItemId="168517310" ShipId="6546989" ItemDesignId="400" Quantity="0"   IsNew="false" />
+        <Item ItemId="168518571" ShipId="6546989" ItemDesignId="306" Quantity="1"   IsNew="false" />
+        <Item ItemId="168519022" ShipId="6546989" ItemDesignId="291" Quantity="2"   IsNew="false" />
+        <Item ItemId="168519023" ShipId="6546989" ItemDesignId="156" Quantity="0"   IsNew="false" />
+        <Item ItemId="168519113" ShipId="6546989" ItemDesignId="139" Quantity="1"   IsNew="false" />
+        <Item ItemId="168519192" ShipId="6546989" ItemDesignId="179" Quantity="3"   IsNew="false" />
+        <Item ItemId="168553930" ShipId="6546989" ItemDesignId="394" Quantity="0"   IsNew="false" />
+        <Item ItemId="168553931" ShipId="6546989" ItemDesignId="401" Quantity="0"   IsNew="false" />
+        <Item ItemId="168554029" ShipId="6546989" ItemDesignId="444" Quantity="1"   IsNew="false" />
+        <Item ItemId="168554042" ShipId="6546989" ItemDesignId="446" Quantity="1"   IsNew="false" />
+        <Item ItemId="168554043" ShipId="6546989" ItemDesignId="443" Quantity="1"   IsNew="false" />
+        <Item ItemId="168554114" ShipId="6546989" ItemDesignId="797" Quantity="1"   IsNew="false" />
+        <Item ItemId="168554349" ShipId="6546989" ItemDesignId="119" Quantity="2"   IsNew="false" />
+        <Item ItemId="168556501" ShipId="6546989" ItemDesignId="154" Quantity="3"   IsNew="false" />
+        <Item ItemId="168557466" ShipId="6546989" ItemDesignId="463" Quantity="0"   IsNew="false" />
+        <Item ItemId="168576449" ShipId="6546989" ItemDesignId="222" Quantity="0"   IsNew="false" />
+        <Item ItemId="168576521" ShipId="6546989" ItemDesignId="105" Quantity="0"   IsNew="false" />
+        <Item ItemId="168576526" ShipId="6546989" ItemDesignId="180" Quantity="1"   IsNew="false" />
+        <Item ItemId="168581206" ShipId="6546989" ItemDesignId="751" Quantity="0"   IsNew="false" />
+        <Item ItemId="168583118" ShipId="6546989" ItemDesignId="402" Quantity="0"   IsNew="false" />
+        <Item ItemId="168583492" ShipId="6546989" ItemDesignId="737" Quantity="1"   IsNew="false" />
+        <Item ItemId="168583576" ShipId="6546989" ItemDesignId="518" Quantity="0"   IsNew="false" />
+        <Item ItemId="168583616" ShipId="6546989" ItemDesignId="949" Quantity="1"   IsNew="false" />
+        <Item ItemId="168594635" ShipId="6546989" ItemDesignId="951" Quantity="2"   IsNew="false" />
+        <Item ItemId="168594677" ShipId="6546989" ItemDesignId="1229" Quantity="1"   IsNew="false" />
+        <Item ItemId="168594747" ShipId="6546989" ItemDesignId="547" Quantity="1"   IsNew="false" />
+        <Item ItemId="168630937" ShipId="6546989" ItemDesignId="753" Quantity="0"   IsNew="false" />
+        <Item ItemId="168630952" ShipId="6546989" ItemDesignId="297" Quantity="0"   IsNew="false" />
+        <Item ItemId="168694569" ShipId="6546989" ItemDesignId="766" Quantity="0"   IsNew="false" />
+        <Item ItemId="168781826" ShipId="6546989" ItemDesignId="563" Quantity="0"   IsNew="false" />
+        <Item ItemId="171095533" ShipId="6546989" ItemDesignId="83" Quantity="1"   IsNew="false" />
+        <Item ItemId="171453346" ShipId="6546989" ItemDesignId="220" Quantity="0"   IsNew="false" />
+        <Item ItemId="171559239" ShipId="6546989" ItemDesignId="1241" Quantity="9"   IsNew="false" />
+        <Item ItemId="171624974" ShipId="6546989" ItemDesignId="999" Quantity="0"   IsNew="false" />
+        <Item ItemId="171624975" ShipId="6546989" ItemDesignId="992" Quantity="0"   IsNew="false" />
+        <Item ItemId="171624978" ShipId="6546989" ItemDesignId="824" Quantity="1"   IsNew="false" />
+        <Item ItemId="171657529" ShipId="6546989" ItemDesignId="822" Quantity="0"   IsNew="false" />
+        <Item ItemId="171883585" ShipId="6546989" ItemDesignId="986" Quantity="37"   IsNew="false" />
+        <Item ItemId="171951315" ShipId="6546989" ItemDesignId="781" Quantity="2"   IsNew="false" />
+        <Item ItemId="171960210" ShipId="6546989" ItemDesignId="223" Quantity="0"   IsNew="false" />
+        <Item ItemId="172021534" ShipId="6546989" ItemDesignId="995" Quantity="1"   IsNew="false" />
+        <Item ItemId="172301150" ShipId="6546989" ItemDesignId="103" Quantity="6"   IsNew="false" />
+        <Item ItemId="172356040" ShipId="6546989" ItemDesignId="221" Quantity="0"   IsNew="false" />
+        <Item ItemId="172369367" ShipId="6546989" ItemDesignId="233" Quantity="0"   IsNew="false" />
+        <Item ItemId="172465358" ShipId="6546989" ItemDesignId="219" Quantity="0"   IsNew="false" />
+        <Item ItemId="172574919" ShipId="6546989" ItemDesignId="448" Quantity="1"   IsNew="false" />
+        <Item ItemId="172798468" ShipId="6546989" ItemDesignId="98" Quantity="1"   IsNew="false" />
+        <Item ItemId="172913979" ShipId="6546989" ItemDesignId="101" Quantity="0"   IsNew="false" />
+        <Item ItemId="173153266" ShipId="6546989" ItemDesignId="739" Quantity="1"   IsNew="false" />
+        <Item ItemId="173281494" ShipId="6546989" ItemDesignId="1022" Quantity="30"   IsNew="false" />
+        <Item ItemId="173282508" ShipId="6546989" ItemDesignId="1240" Quantity="4"   IsNew="false" />
+        <Item ItemId="173287795" ShipId="6546989" ItemDesignId="248" Quantity="0"   IsNew="false" />
+        <Item ItemId="173615656" ShipId="6546989" ItemDesignId="991" Quantity="1"   IsNew="false" />
+        <Item ItemId="173615660" ShipId="6546989" ItemDesignId="990" Quantity="2"   IsNew="false" />
+        <Item ItemId="173615664" ShipId="6546989" ItemDesignId="989" Quantity="3"   IsNew="false" />
+        <Item ItemId="173615666" ShipId="6546989" ItemDesignId="988" Quantity="1"   IsNew="false" />
+        <Item ItemId="173617337" ShipId="6546989" ItemDesignId="831" Quantity="1"   IsNew="false" />
+        <Item ItemId="173753724" ShipId="6546989" ItemDesignId="560" Quantity="0"   IsNew="false" />
+        <Item ItemId="173923706" ShipId="6546989" ItemDesignId="548" Quantity="1"   IsNew="false" />
+        <Item ItemId="173923707" ShipId="6546989" ItemDesignId="549" Quantity="1"   IsNew="false" />
+        <Item ItemId="173923708" ShipId="6546989" ItemDesignId="550" Quantity="1"   IsNew="false" />
+        <Item ItemId="174592702" ShipId="6546989" ItemDesignId="1242" Quantity="5"   IsNew="false" />
+        <Item ItemId="174597329" ShipId="6546989" ItemDesignId="462" Quantity="1"   IsNew="false" />
+        <Item ItemId="174733003" ShipId="6546989" ItemDesignId="569" Quantity="3"   IsNew="false" />
+        <Item ItemId="175794037" ShipId="6546989" ItemDesignId="1029" Quantity="50"   IsNew="false" />
+        <Item ItemId="175794126" ShipId="6546989" ItemDesignId="104" Quantity="0"   IsNew="false" />
+        <Item ItemId="175794175" ShipId="6546989" ItemDesignId="1033" Quantity="1"   IsNew="false" />
+        <Item ItemId="175794177" ShipId="6546989" ItemDesignId="1034" Quantity="1"   IsNew="false" />
+        <Item ItemId="175794353" ShipId="6546989" ItemDesignId="814" Quantity="0"   IsNew="false" />
+        <Item ItemId="175794386" ShipId="6546989" ItemDesignId="816" Quantity="1"   IsNew="false" />
+        <Item ItemId="175879836" ShipId="6546989" ItemDesignId="688" Quantity="1"   IsNew="false" />
+        <Item ItemId="175879837" ShipId="6546989" ItemDesignId="241" Quantity="0"   IsNew="false" />
+        <Item ItemId="175879838" ShipId="6546989" ItemDesignId="242" Quantity="0"   IsNew="false" />
+        <Item ItemId="175919132" ShipId="6546989" ItemDesignId="570" Quantity="0"   IsNew="false" />
+        <Item ItemId="179661631" ShipId="6546989" ItemDesignId="230" Quantity="1"   IsNew="false" />
+        <Item ItemId="179752290" ShipId="6546989" ItemDesignId="728" Quantity="13"   IsNew="false" />
+        <Item ItemId="179894058" ShipId="6546989" ItemDesignId="359" Quantity="2"   IsNew="false" />
+        <Item ItemId="181271234" ShipId="6546989" ItemDesignId="131" Quantity="0"   IsNew="false" />
+        <Item ItemId="181987295" ShipId="6546989" ItemDesignId="994" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001489" ShipId="6546989" ItemDesignId="149" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001556" ShipId="6546989" ItemDesignId="272" Quantity="2"   IsNew="false" />
+        <Item ItemId="182001558" ShipId="6546989" ItemDesignId="134" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001559" ShipId="6546989" ItemDesignId="158" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001561" ShipId="6546989" ItemDesignId="80" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001563" ShipId="6546989" ItemDesignId="381" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001564" ShipId="6546989" ItemDesignId="271" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001565" ShipId="6546989" ItemDesignId="153" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001568" ShipId="6546989" ItemDesignId="284" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001569" ShipId="6546989" ItemDesignId="431" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001571" ShipId="6546989" ItemDesignId="524" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001572" ShipId="6546989" ItemDesignId="78" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001573" ShipId="6546989" ItemDesignId="1166" Quantity="0"   IsNew="false" />
+        <Item ItemId="182001575" ShipId="6546989" ItemDesignId="428" Quantity="1"   IsNew="false" />
+        <Item ItemId="182002467" ShipId="6546989" ItemDesignId="130" Quantity="1"   IsNew="false" />
+        <Item ItemId="182538472" ShipId="6546989" ItemDesignId="1150" Quantity="1"   IsNew="false" />
+        <Item ItemId="182538690" ShipId="6546989" ItemDesignId="1137" Quantity="7"   IsNew="false" />
+        <Item ItemId="182538691" ShipId="6546989" ItemDesignId="148" Quantity="1"   IsNew="false" />
+        <Item ItemId="189880941" ShipId="6546989" ItemDesignId="1207" Quantity="1"   IsNew="false" />
+        <Item ItemId="189881212" ShipId="6546989" ItemDesignId="232" Quantity="3"   IsNew="false" />
+        <Item ItemId="189881219" ShipId="6546989" ItemDesignId="86" Quantity="4"   IsNew="false" />
+        <Item ItemId="189888585" ShipId="6546989" ItemDesignId="79" Quantity="2"   IsNew="false" />
+        <Item ItemId="189892006" ShipId="6546989" ItemDesignId="738" Quantity="1"   IsNew="false" />
+        <Item ItemId="189892007" ShipId="6546989" ItemDesignId="157" Quantity="8"   IsNew="false" />
+        <Item ItemId="189892008" ShipId="6546989" ItemDesignId="254" Quantity="1"   IsNew="false" />
+        <Item ItemId="192944237" ShipId="6546989" ItemDesignId="1257" Quantity="1"   IsNew="false" />
+        <Item ItemId="196204590" ShipId="6546989" ItemDesignId="1511" Quantity="1"   IsNew="false" />
+        <Item ItemId="198238993" ShipId="6546989" ItemDesignId="975" Quantity="1"   IsNew="false" />
+        <Item ItemId="204149266" ShipId="6546989" ItemDesignId="1461" Quantity="0"   IsNew="false" />
+        <Item ItemId="204149342" ShipId="6546989" ItemDesignId="1031" Quantity="5"   IsNew="false" />
+        <Item ItemId="205524351" ShipId="6546989" ItemDesignId="87" Quantity="1"   IsNew="false" />
+        <Item ItemId="211052762" ShipId="6546989" ItemDesignId="1656" Quantity="0"   IsNew="false" />
+        <Item ItemId="211052763" ShipId="6546989" ItemDesignId="1660" Quantity="0"   IsNew="false" />
+        <Item ItemId="211052764" ShipId="6546989" ItemDesignId="1664" Quantity="0"   IsNew="false" />
+        <Item ItemId="211052765" ShipId="6546989" ItemDesignId="1668" Quantity="0"   IsNew="false" />
+        <Item ItemId="214316548" ShipId="6546989" ItemDesignId="1246" Quantity="1"   IsNew="false" />
+        <Item ItemId="214316549" ShipId="6546989" ItemDesignId="1296" Quantity="1"   IsNew="false" />
+        <Item ItemId="219382147" ShipId="6546989" ItemDesignId="1689" Quantity="0"   IsNew="false" />
+        </Items>
+        <Characters>
+        <Character CharacterId="49960613" ShipId="6546989" CharacterDesignId="253" CharacterName="Dolores 2.0" Xp="40704" Level="20" OwnerShipId="6546989" HpImprovement="1" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="68" StaminaImprovement="7" Fatigue="6" ItemIds="172021534,174597329,175794177,175794175,175794386" Flags="1" TrainingData="" IsNew="false" TrainingEndDate="2022-03-05T01:13:10" TrainingDesignId="0" RoomId="137101318" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="172021534" ShipId="6546989" ItemDesignId="995" Quantity="1"   IsNew="false" />
+        <Item ItemId="174597329" ShipId="6546989" ItemDesignId="462" Quantity="1"   IsNew="false" />
+        <Item ItemId="175794177" ShipId="6546989" ItemDesignId="1034" Quantity="1"   IsNew="false" />
+        <Item ItemId="175794175" ShipId="6546989" ItemDesignId="1033" Quantity="1"   IsNew="false" />
+        <Item ItemId="175794386" ShipId="6546989" ItemDesignId="816" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66057828" CharacterId="49960613" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66057829" CharacterId="49960613" CharacterActionIndex="1" ConditionTypeId="3" ActionTypeId="12" />
+        <CharacterAction CharacterActionId="66057830" CharacterId="49960613" CharacterActionIndex="2" ConditionTypeId="22" ActionTypeId="12" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="49983151" ShipId="6546989" CharacterDesignId="423" CharacterName="Savyserver" Xp="34871" Level="19" OwnerShipId="6546989" HpImprovement="2" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="1" ItemIds="173923706,168554029" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="2021-09-23T21:47:09" TrainingDesignId="0" RoomId="137031560" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="173923706" ShipId="6546989" ItemDesignId="548" Quantity="1"   IsNew="false" />
+        <Item ItemId="168554029" ShipId="6546989" ItemDesignId="444" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66053818" CharacterId="49983151" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66053819" CharacterId="49983151" CharacterActionIndex="1" ConditionTypeId="138" ActionTypeId="44" />
+        <CharacterAction CharacterActionId="66053820" CharacterId="49983151" CharacterActionIndex="2" ConditionTypeId="96" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053821" CharacterId="49983151" CharacterActionIndex="3" ConditionTypeId="77" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053822" CharacterId="49983151" CharacterActionIndex="4" ConditionTypeId="1" ActionTypeId="60" />
+        <CharacterAction CharacterActionId="66053823" CharacterId="49983151" CharacterActionIndex="5" ConditionTypeId="1" ActionTypeId="13" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50003643" ShipId="6546989" CharacterDesignId="403" CharacterName="Jack" Xp="4365" Level="7" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="189892007,168594747" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="" TrainingDesignId="0" RoomId="137068991" DeploymentDate="2021-09-27T17:32:01" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="189892007" ShipId="6546989" ItemDesignId="157" Quantity="8"   IsNew="false" />
+        <Item ItemId="168594747" ShipId="6546989" ItemDesignId="547" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66054801" CharacterId="50003643" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66054802" CharacterId="50003643" CharacterActionIndex="1" ConditionTypeId="1" ActionTypeId="60" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50003652" ShipId="6546989" CharacterDesignId="315" CharacterName="Gray Virtuoso" Xp="24251" Level="16" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="168554043,172574919" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="" TrainingDesignId="0" RoomId="137068991" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="168554043" ShipId="6546989" ItemDesignId="443" Quantity="1"   IsNew="false" />
+        <Item ItemId="172574919" ShipId="6546989" ItemDesignId="448" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050773" CharacterId="50003652" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66050807" CharacterId="50003652" CharacterActionIndex="1" ConditionTypeId="53" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050774" CharacterId="50003652" CharacterActionIndex="2" ConditionTypeId="3" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050775" CharacterId="50003652" CharacterActionIndex="3" ConditionTypeId="1" ActionTypeId="26" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50003655" ShipId="6546989" CharacterDesignId="258" CharacterName="First Mate" Xp="33576" Level="18" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="168583616,168594635" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="" TrainingDesignId="0" RoomId="137061962" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="168583616" ShipId="6546989" ItemDesignId="949" Quantity="1"   IsNew="false" />
+        <Item ItemId="168594635" ShipId="6546989" ItemDesignId="951" Quantity="2"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66053812" CharacterId="50003655" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66053813" CharacterId="50003655" CharacterActionIndex="1" ConditionTypeId="138" ActionTypeId="44" />
+        <CharacterAction CharacterActionId="66053814" CharacterId="50003655" CharacterActionIndex="2" ConditionTypeId="96" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053815" CharacterId="50003655" CharacterActionIndex="3" ConditionTypeId="77" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053816" CharacterId="50003655" CharacterActionIndex="4" ConditionTypeId="1" ActionTypeId="60" />
+        <CharacterAction CharacterActionId="66053817" CharacterId="50003655" CharacterActionIndex="5" ConditionTypeId="1" ActionTypeId="13" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50003657" ShipId="6546989" CharacterDesignId="85" CharacterName="Omar" Xp="6870" Level="9" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="189892007,168554349" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="" TrainingDesignId="0" RoomId="137031560" DeploymentDate="2021-09-27T17:32:02" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="189892007" ShipId="6546989" ItemDesignId="157" Quantity="8"   IsNew="false" />
+        <Item ItemId="168554349" ShipId="6546989" ItemDesignId="119" Quantity="2"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050811" CharacterId="50003657" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66050812" CharacterId="50003657" CharacterActionIndex="1" ConditionTypeId="53" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050813" CharacterId="50003657" CharacterActionIndex="2" ConditionTypeId="3" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050814" CharacterId="50003657" CharacterActionIndex="3" ConditionTypeId="1" ActionTypeId="26" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50070772" ShipId="6546989" CharacterDesignId="101" CharacterName="Simon" Xp="33676" Level="18" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="168554114,173923707" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="2021-11-30T10:42:37" TrainingDesignId="0" RoomId="137068991" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="168554114" ShipId="6546989" ItemDesignId="797" Quantity="1"   IsNew="false" />
+        <Item ItemId="173923707" ShipId="6546989" ItemDesignId="549" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66053824" CharacterId="50070772" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66053825" CharacterId="50070772" CharacterActionIndex="1" ConditionTypeId="138" ActionTypeId="44" />
+        <CharacterAction CharacterActionId="66053826" CharacterId="50070772" CharacterActionIndex="2" ConditionTypeId="96" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053827" CharacterId="50070772" CharacterActionIndex="3" ConditionTypeId="77" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66053828" CharacterId="50070772" CharacterActionIndex="4" ConditionTypeId="1" ActionTypeId="60" />
+        <CharacterAction CharacterActionId="66053829" CharacterId="50070772" CharacterActionIndex="5" ConditionTypeId="1" ActionTypeId="13" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50070800" ShipId="6546989" CharacterDesignId="31" CharacterName="Dennis" Xp="29706" Level="17" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="0" Fatigue="0" ItemIds="168554349,173923708" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="" TrainingDesignId="0" RoomId="137031560" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="168554349" ShipId="6546989" ItemDesignId="119" Quantity="2"   IsNew="false" />
+        <Item ItemId="173923708" ShipId="6546989" ItemDesignId="550" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050830" CharacterId="50070800" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66050831" CharacterId="50070800" CharacterActionIndex="1" ConditionTypeId="1" ActionTypeId="60" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="50234223" ShipId="6546989" CharacterDesignId="272" CharacterName="Mistycball" Xp="24451" Level="16" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="2" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="1" StaminaImprovement="0" Fatigue="0" ItemIds="168594677,173153266" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="2022-01-19T10:01:09" TrainingDesignId="0" RoomId="137061962" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="168594677" ShipId="6546989" ItemDesignId="1229" Quantity="1"   IsNew="false" />
+        <Item ItemId="173153266" ShipId="6546989" ItemDesignId="739" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050836" CharacterId="50234223" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66054670" CharacterId="50234223" CharacterActionIndex="1" ConditionTypeId="77" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66050837" CharacterId="50234223" CharacterActionIndex="2" ConditionTypeId="1" ActionTypeId="60" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="51117951" ShipId="6546989" CharacterDesignId="120" CharacterName="Zombie" Xp="18414" Level="14" OwnerShipId="6546989" HpImprovement="0" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="26" StaminaImprovement="0" Fatigue="6" ItemIds="182002467,182001575" Flags="0" TrainingData="" IsNew="false" TrainingEndDate="2022-03-31T13:57:08" TrainingDesignId="0" RoomId="137061962" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items>
+        <Item ItemId="182002467" ShipId="6546989" ItemDesignId="130" Quantity="1"   IsNew="false" />
+        <Item ItemId="182001575" ShipId="6546989" ItemDesignId="428" Quantity="1"   IsNew="false" />
+        </Items>
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050819" CharacterId="51117951" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="66050820" CharacterId="51117951" CharacterActionIndex="1" ConditionTypeId="53" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050821" CharacterId="51117951" CharacterActionIndex="2" ConditionTypeId="3" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050822" CharacterId="51117951" CharacterActionIndex="3" ConditionTypeId="1" ActionTypeId="26" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        <Character CharacterId="51584759" ShipId="6546989" CharacterDesignId="190" CharacterName="Dolores 2.0" Xp="21454" Level="15" OwnerShipId="6546989" HpImprovement="42" PilotImprovement="0" RepairImprovement="0" WeaponImprovement="0" ScienceImprovement="0" EngineImprovement="0" AttackImprovement="0" AbilityImprovement="0" StaminaImprovement="6" Fatigue="6" ItemIds="" Flags="1" TrainingData="" IsNew="false" TrainingEndDate="2022-03-31T13:57:13" TrainingDesignId="0" RoomId="137101318" DeploymentDate="" AvailableDate="1900-01-01T00:00:00" Stamina="0">
+        <IsPrestiging>
+        false</IsPrestiging>
+        <Items />
+        <CharacterActions>
+        <CharacterAction CharacterActionId="66050850" CharacterId="51584759" CharacterActionIndex="0" ConditionTypeId="52" ActionTypeId="34" />
+        <CharacterAction CharacterActionId="72957235" CharacterId="51584759" CharacterActionIndex="1" ConditionTypeId="138" ActionTypeId="59" />
+        <CharacterAction CharacterActionId="72957234" CharacterId="51584759" CharacterActionIndex="2" ConditionTypeId="93" ActionTypeId="29" />
+        <CharacterAction CharacterActionId="66050851" CharacterId="51584759" CharacterActionIndex="3" ConditionTypeId="53" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050852" CharacterId="51584759" CharacterActionIndex="4" ConditionTypeId="3" ActionTypeId="13" />
+        <CharacterAction CharacterActionId="66050853" CharacterId="51584759" CharacterActionIndex="5" ConditionTypeId="1" ActionTypeId="26" />
+        <CharacterAction CharacterActionId="73066129" CharacterId="51584759" CharacterActionIndex="6" ConditionTypeId="1" ActionTypeId="19" />
+        </CharacterActions>
+        <FrameToAttackOrRepair>
+        0</FrameToAttackOrRepair>
+        </Character>
+        </Characters>
+        <Rooms>
+        <Room RoomId="146769701" RoomDesignId="223" ShipId="6546989" RoomStatus="Normal" Row="8" Column="21" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="142002504" RoomDesignId="490" ShipId="6546989" RoomStatus="Normal" Row="6" Column="18" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="142001703" RoomDesignId="217" ShipId="6546989" RoomStatus="Normal" Row="1" Column="7" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="140533036" RoomDesignId="262" ShipId="6546989" RoomStatus="Normal" Row="8" Column="14" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="140346276" RoomDesignId="243" ShipId="6546989" RoomStatus="Normal" Row="8" Column="11" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137489257" RoomDesignId="494" ShipId="6546989" RoomStatus="Normal" Row="4" Column="16" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="168519192" SalvageString="" ManufactureString="" TargetManufactureString="745x20" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:29:05" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="70642668" RoomId="137489257" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="3" />
+        <RoomAction RoomActionId="70642669" RoomId="137489257" RoomActionIndex="1" ConditionTypeId="1" ActionTypeId="27" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137392878" RoomDesignId="406" ShipId="6546989" RoomStatus="Normal" Row="8" Column="19" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137224258" RoomDesignId="299" ShipId="6546989" RoomStatus="Normal" Row="6" Column="11" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137224257" RoomDesignId="299" ShipId="6546989" RoomStatus="Normal" Row="3" Column="9" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137224255" RoomDesignId="299" ShipId="6546989" RoomStatus="Normal" Row="4" Column="9" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137224254" RoomDesignId="299" ShipId="6546989" RoomStatus="Normal" Row="7" Column="9" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137224253" RoomDesignId="299" ShipId="6546989" RoomStatus="Normal" Row="3" Column="25" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137186425" RoomDesignId="483" ShipId="6546989" RoomStatus="Normal" Row="1" Column="13" Manufactured="0" RandomSeed="1" CapacityUsed="60" ItemIds="168519192" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:47:27" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="78822158" RoomId="137186425" RoomActionIndex="0" ConditionTypeId="21" ActionTypeId="55" />
+        <RoomAction RoomActionId="70479713" RoomId="137186425" RoomActionIndex="1" ConditionTypeId="1" ActionTypeId="3" />
+        <RoomAction RoomActionId="78822174" RoomId="137186425" RoomActionIndex="2" ConditionTypeId="18" ActionTypeId="5" />
+        <RoomAction RoomActionId="78822165" RoomId="137186425" RoomActionIndex="3" ConditionTypeId="38" ActionTypeId="29" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137173251" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="6" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137173249" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="2" Column="21" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137173246" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="2" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137173244" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="3" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137173243" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="4" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137173241" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="5" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137104630" RoomDesignId="557" ShipId="6546989" RoomStatus="Normal" Row="4" Column="18" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="174733003" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137101318" RoomDesignId="18" ShipId="6546989" RoomStatus="Normal" Row="5" Column="22" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="168519192" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="70379792" RoomId="137101318" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="1" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137100040" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="17" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137100039" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="14" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137100038" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="13" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137100037" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="16" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137100035" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="17" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137075109" RoomDesignId="285" ShipId="6546989" RoomStatus="Normal" Row="8" Column="16" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137070459" RoomDesignId="151" ShipId="6546989" RoomStatus="Normal" Row="10" Column="18" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137068991" RoomDesignId="126" ShipId="6546989" RoomStatus="Normal" Row="2" Column="22" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="168466396" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:48:56" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="70365630" RoomId="137068991" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="3" />
+        <RoomAction RoomActionId="70365631" RoomId="137068991" RoomActionIndex="1" ConditionTypeId="22" ActionTypeId="48" />
+        <RoomAction RoomActionId="78824160" RoomId="137068991" RoomActionIndex="2" ConditionTypeId="22" ActionTypeId="6" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137066934" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="4" Column="24" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066932" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="14" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066930" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="4" Column="23" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066929" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="16" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066927" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="15" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066926" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="13" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066925" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="18" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066924" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="20" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066922" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="4" Column="22" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066920" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="1" Column="12" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066919" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="10" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066916" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="11" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066915" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="6" Column="15" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066914" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="19" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137066912" RoomDesignId="134" ShipId="6546989" RoomStatus="Normal" Row="3" Column="10" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137065322" RoomDesignId="20" ShipId="6546989" RoomStatus="Normal" Row="10" Column="21" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137062254" RoomDesignId="557" ShipId="6546989" RoomStatus="Normal" Row="1" Column="9" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="168556501" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137061962" RoomDesignId="185" ShipId="6546989" RoomStatus="Normal" Row="4" Column="13" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="168576526" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="70377167" RoomId="137061962" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="1" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137061958" RoomDesignId="94" ShipId="6546989" RoomStatus="Normal" Row="5" Column="6" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:48:56" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137061882" RoomDesignId="77" ShipId="6546989" RoomStatus="Normal" Row="8" Column="23" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137061692" RoomDesignId="93" ShipId="6546989" RoomStatus="Normal" Row="5" Column="8" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:48:56" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137061687" RoomDesignId="160" ShipId="6546989" RoomStatus="Normal" Row="4" Column="10" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="174733003" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="78824166" RoomId="137061687" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="3" />
+        <RoomAction RoomActionId="78824167" RoomId="137061687" RoomActionIndex="1" ConditionTypeId="22" ActionTypeId="48" />
+        <RoomAction RoomActionId="78824168" RoomId="137061687" RoomActionIndex="2" ConditionTypeId="22" ActionTypeId="6" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137031560" RoomDesignId="126" ShipId="6546989" RoomStatus="Normal" Row="1" Column="15" Manufactured="0" RandomSeed="1" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="2023-06-22T09:48:56" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0">
+        <RoomActions>
+        <RoomAction RoomActionId="78824163" RoomId="137031560" RoomActionIndex="0" ConditionTypeId="1" ActionTypeId="3" />
+        <RoomAction RoomActionId="78824164" RoomId="137031560" RoomActionIndex="1" ConditionTypeId="22" ActionTypeId="48" />
+        <RoomAction RoomActionId="78824165" RoomId="137031560" RoomActionIndex="2" ConditionTypeId="22" ActionTypeId="6" />
+        </RoomActions>
+        </Room>
+        <Room RoomId="137031546" RoomDesignId="557" ShipId="6546989" RoomStatus="Normal" Row="1" Column="18" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="168556501" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137031545" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="6" Column="21" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137031544" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="4" Column="21" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137031543" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="3" Column="21" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137031542" RoomDesignId="253" ShipId="6546989" RoomStatus="Normal" Row="5" Column="21" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        <Room RoomId="137031541" RoomDesignId="20" ShipId="6546989" RoomStatus="Normal" Row="10" Column="24" Manufactured="0" RandomSeed="2" CapacityUsed="0" ItemIds="" SalvageString="" ManufactureString="" TargetManufactureString="" PowerGenerated="0" ManufactureStartDate="" ConstructionStartDate="" UpgradeRoomDesignId="0" CurrentSkinKey="0" PreviousSkinKey="0" />
+        </Rooms>
+        <Researches>
+        <Research ResearchId="20961116" ShipId="6546989" ResearchDesignId="10" ResearchState="Completed" ResearchStartDate="2021-09-23T09:20:21" />
+        <Research ResearchId="20961204" ShipId="6546989" ResearchDesignId="80" ResearchState="Completed" ResearchStartDate="2021-09-23T07:06:01" />
+        <Research ResearchId="20961571" ShipId="6546989" ResearchDesignId="38" ResearchState="Completed" ResearchStartDate="2021-09-23T11:35:57" />
+        <Research ResearchId="20962422" ShipId="6546989" ResearchDesignId="39" ResearchState="Completed" ResearchStartDate="2021-09-23T14:23:23" />
+        <Research ResearchId="20963674" ShipId="6546989" ResearchDesignId="94" ResearchState="Completed" ResearchStartDate="2021-09-23T18:50:08" />
+        <Research ResearchId="20967225" ShipId="6546989" ResearchDesignId="97" ResearchState="Completed" ResearchStartDate="2021-09-24T10:26:15" />
+        <Research ResearchId="20973293" ShipId="6546989" ResearchDesignId="126" ResearchState="Completed" ResearchStartDate="2021-09-25T09:58:22" />
+        <Research ResearchId="20974164" ShipId="6546989" ResearchDesignId="6" ResearchState="Completed" ResearchStartDate="2021-09-25T13:02:56" />
+        <Research ResearchId="20979177" ShipId="6546989" ResearchDesignId="134" ResearchState="Completed" ResearchStartDate="2021-09-26T09:14:55" />
+        <Research ResearchId="20979179" ShipId="6546989" ResearchDesignId="127" ResearchState="Completed" ResearchStartDate="2021-09-26T09:15:04" />
+        <Research ResearchId="20981679" ShipId="6546989" ResearchDesignId="2" ResearchState="Completed" ResearchStartDate="2021-09-26T17:36:50" />
+        <Research ResearchId="20982899" ShipId="6546989" ResearchDesignId="108" ResearchState="Completed" ResearchStartDate="2021-09-26T22:31:24" />
+        <Research ResearchId="20982900" ShipId="6546989" ResearchDesignId="107" ResearchState="Completed" ResearchStartDate="2021-09-26T22:36:31" />
+        <Research ResearchId="20987476" ShipId="6546989" ResearchDesignId="74" ResearchState="Completed" ResearchStartDate="2021-09-27T17:09:51" />
+        <Research ResearchId="20990596" ShipId="6546989" ResearchDesignId="1" ResearchState="Completed" ResearchStartDate="2021-09-28T06:44:12" />
+        <Research ResearchId="20996903" ShipId="6546989" ResearchDesignId="140" ResearchState="Completed" ResearchStartDate="2021-09-29T08:54:58" />
+        <Research ResearchId="20998611" ShipId="6546989" ResearchDesignId="40" ResearchState="Completed" ResearchStartDate="2021-09-29T15:29:14" />
+        <Research ResearchId="21008123" ShipId="6546989" ResearchDesignId="81" ResearchState="Completed" ResearchStartDate="2021-10-01T06:27:08" />
+        <Research ResearchId="21015335" ShipId="6546989" ResearchDesignId="9" ResearchState="Completed" ResearchStartDate="2021-10-02T15:40:33" />
+        <Research ResearchId="21018436" ShipId="6546989" ResearchDesignId="75" ResearchState="Completed" ResearchStartDate="2021-10-03T05:56:35" />
+        <Research ResearchId="21025731" ShipId="6546989" ResearchDesignId="33" ResearchState="Completed" ResearchStartDate="2021-10-04T12:58:47" />
+        <Research ResearchId="21030905" ShipId="6546989" ResearchDesignId="4" ResearchState="Completed" ResearchStartDate="2021-10-05T12:04:49" />
+        <Research ResearchId="21035244" ShipId="6546989" ResearchDesignId="5" ResearchState="Completed" ResearchStartDate="2021-10-06T07:43:47" />
+        <Research ResearchId="21035561" ShipId="6546989" ResearchDesignId="23" ResearchState="Completed" ResearchStartDate="2021-10-06T09:16:04" />
+        <Research ResearchId="21109129" ShipId="6546989" ResearchDesignId="7" ResearchState="Completed" ResearchStartDate="2021-10-18T11:10:03" />
+        <Research ResearchId="21256841" ShipId="6546989" ResearchDesignId="28" ResearchState="Completed" ResearchStartDate="2021-11-09T16:16:49" />
+        <Research ResearchId="21269062" ShipId="6546989" ResearchDesignId="24" ResearchState="Completed" ResearchStartDate="2021-11-11T16:16:54" />
+        <Research ResearchId="21293255" ShipId="6546989" ResearchDesignId="29" ResearchState="Completed" ResearchStartDate="2021-11-15T15:07:35" />
+        <Research ResearchId="21438993" ShipId="6546989" ResearchDesignId="101" ResearchState="Completed" ResearchStartDate="2021-12-08T11:09:26" />
+        </Researches>
+        <Lifts />
+        <UserStarSystems>
+        <UserStarSystem UserStarSystemId="3073809" UserId="8729280" StarSystemId="3" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3073834" UserId="8729280" StarSystemId="4" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3073517" UserId="8729280" StarSystemId="5" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3075688" UserId="8729280" StarSystemId="6" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3075705" UserId="8729280" StarSystemId="7" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3072353" UserId="8729280" StarSystemId="9" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3072340" UserId="8729280" StarSystemId="10" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3068385" UserId="8729280" StarSystemId="11" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3073837" UserId="8729280" StarSystemId="17" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3324457" UserId="8729280" StarSystemId="18" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3324246" UserId="8729280" StarSystemId="19" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3323924" UserId="8729280" StarSystemId="20" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3072842" UserId="8729280" StarSystemId="35" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3073617" UserId="8729280" StarSystemId="53" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3324457" UserId="8729280" StarSystemId="18" ExplorationPercentage="100" />
+        <UserStarSystem UserStarSystemId="3073617" UserId="8729280" StarSystemId="53" ExplorationPercentage="100" />
+        </UserStarSystems>
+        </Ship>
+        </GoTo>
+        </GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '153'
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 22 Jun 2023 09:47:13 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f67cb1e6517f8abcedeb3b0734a257bc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ubQaGNd84fjFjDhL4HAsTML9_Cf2LoX6GalPEcaUFCTz5k7xHFk4Yg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/GalaxyService/GoTo?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&checksum=02d52e31c067520b4afdb9389b5ecb5f&clientDateTime=2023-06-22T09:25:01&starSystemId=53
+version: 1
