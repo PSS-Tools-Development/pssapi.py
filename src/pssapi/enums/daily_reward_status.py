@@ -7,6 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 
 
 class DailyRewardStatus(_StrEnumBase):
+    NONE = "None"
     BOX = "Box"
     CARGO_1 = "Cargo1"
     CARGO_2 = "Cargo2"

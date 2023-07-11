@@ -9,3 +9,4 @@ fixing, if Savy uses enum values that are python keywords.
 class GenderType(_StrEnumBase):
     FEMALE = "Female"
     MALE = "Male"
+    UNKNOWN = "Unknown"

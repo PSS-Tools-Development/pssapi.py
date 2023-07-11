@@ -13,3 +13,4 @@ class RaceType(_StrEnumBase):
     BLACK = "Black"
     ROBOT = "Robot"
     WHITE = "White"
+    UNKNOWN = "Unknown"
