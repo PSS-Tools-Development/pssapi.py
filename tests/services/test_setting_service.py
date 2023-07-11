@@ -7,7 +7,7 @@ import pssapi
 @pytest.mark.usefixtures("client")
 @pytest.mark.vcr()
 async def test_get_latest_version(client: pssapi.PssApiClient):
-    setting = await client.setting_service.get_settings(pssapi.enums.DeviceType.ANDROID)
+    setting = await client.setting_service.get_latest_version(pssapi.enums.DeviceType.ANDROID)
     assert isinstance(setting, pssapi.entities.Setting)
 
 
