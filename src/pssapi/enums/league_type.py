@@ -1,11 +1,6 @@
-from enum import IntEnum as _IntEnum
-
-"""
-This file has been be generated from decompilation and might require manual
-fixing, if Savy uses enum values that are python keywords.
-"""
+from .str_enum_base import StrEnumBase as _StrEnumBase
 
 
-class LeagueType(_IntEnum):
-    STANDARD = 0
-    LEGENDARY = 1
+class LeagueType(_StrEnumBase):
+    STANDARD = "Standard"
+    LEGENDARY = "Legendary"
