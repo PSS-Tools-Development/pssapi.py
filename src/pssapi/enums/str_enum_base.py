@@ -19,9 +19,9 @@ class StrEnumBase(_StrEnum):
             except:
                 pass
 
-            value_lower = value.lower()
+            value_sanitized = value.lower().replace(" ", "")
             for member in cls:
-                if member.lower() == value_lower:
+                if member.lower() == value_sanitized:
                     return member
             raise ValueError(f"'{value}' is not a valid {cls.__qualname__}")
         return cls("None")
