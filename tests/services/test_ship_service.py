@@ -9,8 +9,8 @@ USER_ID: int = 4510693  # The worst.
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr()
-async def test_get_ship_by_user_id(access_token: str, client: pssapi.PssApiClient, client_date_time: str):
-    ship = await client.ship_service.get_ship_by_user_id(access_token, client_date_time, USER_ID)
+async def test_get_ship_by_user_id(access_token: str, client: pssapi.PssApiClient, client_date_time_as_str: str):
+    ship = await client.ship_service.get_ship_by_user_id(access_token, client_date_time_as_str, USER_ID)
     assert isinstance(ship, pssapi.entities.Ship)
 
 

@@ -8,9 +8,9 @@ STAR_SYSTEM_ID: int = 53  # Golgotha
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr()
-async def test_go_to(access_token: str, client: pssapi.PssApiClient, client_date_time: str):
+async def test_go_to(access_token: str, client: pssapi.PssApiClient, client_date_time_as_str: str):
     checksum = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    ship = await client.galaxy_service.go_to(access_token, checksum, client_date_time, STAR_SYSTEM_ID)
+    ship = await client.galaxy_service.go_to(access_token, checksum, client_date_time_as_str, STAR_SYSTEM_ID)
     assert isinstance(ship, pssapi.entities.Ship)
 
 
@@ -45,8 +45,8 @@ async def test_list_star_system_links(client: pssapi.PssApiClient):
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr()
-async def test_list_star_system_markers(access_token: str, client: pssapi.PssApiClient, client_date_time: str):
-    star_system_markers = await client.galaxy_service.list_star_system_markers(access_token, client_date_time)
+async def test_list_star_system_markers(access_token: str, client: pssapi.PssApiClient, client_date_time_as_str: str):
+    star_system_markers = await client.galaxy_service.list_star_system_markers(access_token, client_date_time_as_str)
     assert isinstance(star_system_markers, list)
     assert len(star_system_markers) > 0
     assert isinstance(star_system_markers[0], pssapi.entities.StarSystemMarker)
