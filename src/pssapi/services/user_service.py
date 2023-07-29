@@ -65,8 +65,8 @@ class UserService(_service_base.ServiceBase):
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.device_login_15(
             production_server,
-            access_token or '00000000-0000-0000-0000-00000000',
-            advertising_key or '00000000-0000-0000-0000-00000000',
+            access_token or "00000000-0000-0000-0000-00000000",
+            advertising_key or "00000000-0000-0000-0000-00000000",
             checksum,
             client_build,
             _utils.datetime.convert_to_pss_timestamp(client_date_time),
@@ -121,8 +121,8 @@ class UserService(_service_base.ServiceBase):
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.steam_login_6(
             production_server,
-            access_token or '00000000-0000-0000-0000-00000000',
-            advertising_key or '00000000-0000-0000-0000-00000000',
+            access_token or "00000000-0000-0000-0000-00000000",
+            advertising_key or "00000000-0000-0000-0000-00000000",
             checksum,
             client_build,
             _utils.datetime.convert_to_pss_timestamp(client_date_time),
