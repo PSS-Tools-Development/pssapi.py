@@ -12,6 +12,7 @@ import aiohttp as _aiohttp
 import pssapi.constants as _constants
 import pssapi.entities as _entities
 import pssapi.enums as _enums
+import pssapi.utils as _utils
 
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
     "deviceType": str(_enums.DeviceType.ANDROID),
@@ -33,7 +34,7 @@ async def get_entities_from_path(
 
     root = _ElementTree.fromstring(raw_xml)
     if "errorMessage" in root.attrib:
-        raise Exception(root.attrib["errorMessage"])
+        raise _utils.exceptions.PssApiError(root.attrib["errorMessage"])
     if xml_parent_tag_name and root.tag != xml_parent_tag_name:
         parent_node = root.find(f".//{xml_parent_tag_name}")
     else:
@@ -120,9 +121,10 @@ def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
 
 def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
-        if isinstance(value, dict):
-            __update_nested_dict_values(value, params)
-        elif value == "datetime" and isinstance(params[key], _datetime):
-            d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
-        else:
-            d[key] = params[key]
+        if params.get(key):
+            if isinstance(value, dict):
+                __update_nested_dict_values(value, params)
+            elif value == "datetime" and isinstance(params[key], _datetime):
+                d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
+            else:
+                d[key] = params[key]
