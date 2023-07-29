@@ -100,13 +100,13 @@ class UserService(_service_base.ServiceBase):
 
     async def steam_login(
         self,
-        access_token: str,
         checksum: str,
         client_date_time: _datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
-        advertising_key: str = '""',
+        access_token: str = None,
+        advertising_key: str = None,
         client_build: int = None,
         client_version: str = None,
         device_name: str = None,
@@ -121,8 +121,8 @@ class UserService(_service_base.ServiceBase):
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.steam_login_6(
             production_server,
-            access_token,
-            advertising_key or '""',
+            access_token or '00000000-0000-0000-0000-00000000',
+            advertising_key or '00000000-0000-0000-0000-00000000',
             checksum,
             client_build,
             _utils.datetime.convert_to_pss_timestamp(client_date_time),
@@ -130,13 +130,13 @@ class UserService(_service_base.ServiceBase):
             device_key,
             device_name,
             str(device_type),
-            is_jail_broken,
+            _utils.convert.to_pss_bool(is_jail_broken or False),
             str(language_key),
-            locale,
+            str(locale),
             os_build,
             os_version,
             refresh_token,
-            signal,
+            _utils.convert.to_pss_bool(signal or False),
             ticket,
         )
         return result
