@@ -11,6 +11,11 @@ def access_token() -> str:
 
 
 @pytest.fixture(scope="session")
+def checksum_key() -> str:
+    return os.environ.get("PSS_DEVICE_LOGIN_CHECKSUM_KEY")
+
+
+@pytest.fixture(scope="session")
 def client() -> pssapi.PssApiClient:
     client = pssapi.PssApiClient(device_type=pssapi.enums.DeviceType.ANDROID, language_key=pssapi.enums.LanguageKey.ENGLISH, production_server="api.pixelstarships.com")
     return client
@@ -18,7 +23,32 @@ def client() -> pssapi.PssApiClient:
 
 @pytest.fixture(scope="session")
 def client_date_time() -> str:
-    return pssapi.utils.datetime.convert_to_pss_timestamp(pssapi.utils.get_utc_now())
+    return pssapi.utils.get_utc_now()
+
+
+@pytest.fixture(scope="session")
+def client_date_time_as_str() -> str:
+    return pssapi.utils.datetime.convert_to_pss_timestamp(client_date_time())
+
+
+@pytest.fixture(scope="session")
+def device_key() -> str:
+    return "e6a3815568cd"
+
+
+@pytest.fixture(scope="session")
+def device_name() -> str:
+    return "Samsung"
+
+
+@pytest.fixture(scope="session")
+def device_type() -> pssapi.enums.DeviceType:
+    return pssapi.enums.DeviceType.ANDROID
+
+
+@pytest.fixture(scope="session")
+def language_key() -> pssapi.enums.LanguageKey:
+    return pssapi.enums.LanguageKey.ENGLISH
 
 
 @pytest.fixture(scope="module")
