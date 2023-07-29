@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: POST
-    uri: https://api.pixelstarships.com/UserService/DeclineFriendRequest?accessToken=9fa02787-04fc-4cf4-9b82-29e7bff4cfaf&friendUserId=8729280
+    uri: https://api.pixelstarships.com/UserService/DeclineFriendRequest?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&friendUserId=8729280
   response:
     body:
       string: <UserService><DeclineFriendRequest><Friend Id="2546662" FriendUserId="2176805" FriendType="Approval" UnreadMessages="0" LastLoginDate="0001-01-01T00:00:00" DateUpdated="2023-06-22T10:42:08" LastInteractionDate="2023-06-22T10:42:08" Name="Kamilo Horizon" Level="0" FriendTrophy="4235" FriendIconSpriteId="0" /></DeclineFriendRequest></UserService>
@@ -45,5 +45,5 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/UserService/DeclineFriendRequest?accessToken=9fa02787-04fc-4cf4-9b82-29e7bff4cfaf&friendUserId=8729280
+    url: https://api.pixelstarships.com/UserService/DeclineFriendRequest?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&friendUserId=8729280
 version: 1
