@@ -10,9 +10,9 @@ MISSION_DESIGN_ID: int = 244  # Explore Valhalla
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr()
-async def test_create_mission(client: pssapi.PssApiClient, access_token: str, client_date_time: datetime):
+async def test_create_mission(client: pssapi.PssApiClient, access_token: str, client_date_time_as_str: datetime):
     checksum = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    mission = await client.mission_service.create_mission(access_token, checksum, client_date_time, 0, MISSION_DESIGN_ID)
+    mission = await client.mission_service.create_mission(access_token, checksum, client_date_time_as_str, 0, MISSION_DESIGN_ID)
     assert isinstance(mission, tuple)
     assert len(mission) == 4
     assert isinstance(mission[0], pssapi.entities.Battle)
@@ -36,9 +36,9 @@ async def test_list_all_mission_designs(client: pssapi.PssApiClient):
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr()
-async def test_select_event(client: pssapi.PssApiClient, access_token: str, client_date_time: datetime):
+async def test_select_event(client: pssapi.PssApiClient, access_token: str, client_date_time_as_str: datetime):
     checksum = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    event = await client.mission_service.select_event(access_token, 0, checksum, client_date_time, 0, 0)
+    event = await client.mission_service.select_event(access_token, 0, checksum, client_date_time_as_str, 0, 0)
     assert isinstance(event, tuple)
     assert len(event) == 2
     assert isinstance(event[0], pssapi.entities.Battle)

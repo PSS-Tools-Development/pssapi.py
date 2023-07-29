@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: POST
-    uri: https://api.pixelstarships.com/UserService/RemoveFriend?accessToken=9fa02787-04fc-4cf4-9b82-29e7bff4cfaf&friendUserId=8729280
+    uri: https://api.pixelstarships.com/UserService/RemoveFriend?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&friendUserId=8729280
   response:
     body:
       string: <UserService><RemoveFriend></RemoveFriend></UserService>
@@ -45,5 +45,5 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/UserService/RemoveFriend?accessToken=9fa02787-04fc-4cf4-9b82-29e7bff4cfaf&friendUserId=8729280
+    url: https://api.pixelstarships.com/UserService/RemoveFriend?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&friendUserId=8729280
 version: 1
