@@ -65,20 +65,20 @@ class UserService(_service_base.ServiceBase):
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.device_login_15(
             production_server,
-            access_token or "00000000-0000-0000-0000-00000000",
-            advertising_key or "00000000-0000-0000-0000-00000000",
+            access_token or "00000000-0000-0000-0000-000000000000",
+            advertising_key or "00000000-0000-0000-0000-000000000000",
             checksum,
-            client_build,
+            client_build or "",
             _utils.datetime.convert_to_pss_timestamp(client_date_time),
             client_version,
             device_key,
-            device_name,
+            device_name or "",
             str(device_type),
             _utils.convert.to_pss_bool(is_jail_broken or False),
-            str(language_key),
-            str(locale),
-            os_build,
-            os_version,
+            str(language_key) if language_key else None,
+            locale or "",
+            os_build or "",
+            os_version or "",
             refresh_token,
             _utils.convert.to_pss_bool(signal or False),
         )
@@ -141,7 +141,7 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str) -> _entities.UserEmailPasswordAuthorize:
+    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, language_key: str, password: str) -> _entities.UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.user_email_password_authorize_2(production_server, access_token, checksum, client_date_time, device_key, email, password)
+        result = await _UserServiceRaw.user_email_password_authorize_4(production_server, access_token, checksum, client_date_time, device_key, email, is_web, language_key, password)
         return result
