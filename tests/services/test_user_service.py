@@ -34,10 +34,10 @@ async def test_decline_friend_request(client: pssapi.PssApiClient, access_token:
 
 
 @pytest.mark.asyncio
-@pytest.mark.usefixtures("checksum_key", "client", "client_date_time", "device_key", "device_name", "device_type", "language_key")
+@pytest.mark.usefixtures("checksum_key", "client", "client_date_time", "device_key", "device_type", "language_key")
 @pytest.mark.vcr()
 async def test_device_login(
-    checksum_key: str, client: pssapi.PssApiClient, client_date_time: datetime.datetime, device_key: str, device_name: str, device_type: pssapi.enums.DeviceType, language_key: pssapi.enums.LanguageKey
+    checksum_key: str, client: pssapi.PssApiClient, client_date_time: datetime.datetime, device_key: str, device_type: pssapi.enums.DeviceType, language_key: pssapi.enums.LanguageKey
 ):
     checksum = client.user_service.utils.create_device_login_checksum(device_key, device_type, client_date_time, checksum_key)
     user_login = await client.user_service.device_login(checksum, client_date_time, device_key, device_type, language_key)
