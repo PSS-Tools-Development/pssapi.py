@@ -45,6 +45,7 @@ class UserRaw:
         self._crew_donated: int = _parse.pss_int(user_info.get("CrewDonated"))
         self._crew_received: int = _parse.pss_int(user_info.get("CrewReceived"))
         self._daily_challenge_win_streak: int = _parse.pss_int(user_info.get("DailyChallengeWinStreak"))
+        self._daily_heartbeat_seconds: int = _parse.pss_int(user_info.get("DailyHeartbeatSeconds"))
         self._daily_missions_attempted: str = _parse.pss_str(user_info.get("DailyMissionsAttempted"))
         self._daily_pvp_attacks: int = _parse.pss_int(user_info.get("DailyPVPAttacks"))
         self._daily_pv_p_defence: int = _parse.pss_int(user_info.get("DailyPvPDefence"))
@@ -108,6 +109,7 @@ class UserRaw:
         self._tournament_bonus_score: int = _parse.pss_int(user_info.get("TournamentBonusScore"))
         self._tournament_reset_date: _datetime = _parse.pss_datetime(user_info.get("TournamentResetDate"))
         self._tournament_reward_points: int = _parse.pss_int(user_info.get("TournamentRewardPoints"))
+        self._trail_user_id: str = _parse.pss_str(user_info.get("TrailUserId"))
         self._trophy: int = _parse.pss_int(user_info.get("Trophy"))
         self._trophy_gained: int = _parse.pss_int(user_info.get("TrophyGained"))
         self._tutorial_status: int = _parse.pss_int(user_info.get("TutorialStatus"))
@@ -232,6 +234,10 @@ class UserRaw:
     @property
     def daily_challenge_win_streak(self) -> int:
         return self._daily_challenge_win_streak
+
+    @property
+    def daily_heartbeat_seconds(self) -> int:
+        return self._daily_heartbeat_seconds
 
     @property
     def daily_missions_attempted(self) -> str:
@@ -486,6 +492,10 @@ class UserRaw:
         return self._tournament_reward_points
 
     @property
+    def trail_user_id(self) -> str:
+        return self._trail_user_id
+
+    @property
     def trophy(self) -> int:
         return self._trophy
 
@@ -563,6 +573,7 @@ class UserRaw:
             self.crew_donated,
             self.crew_received,
             self.daily_challenge_win_streak,
+            self.daily_heartbeat_seconds,
             self.daily_missions_attempted,
             self.daily_pvp_attacks,
             self.daily_pv_p_defence,
@@ -626,6 +637,7 @@ class UserRaw:
             self.tournament_bonus_score,
             self.tournament_reset_date,
             self.tournament_reward_points,
+            self.trail_user_id,
             self.trophy,
             self.trophy_gained,
             self.tutorial_status,
@@ -671,6 +683,7 @@ class UserRaw:
                 "CrewDonated": self.crew_donated,
                 "CrewReceived": self.crew_received,
                 "DailyChallengeWinStreak": self.daily_challenge_win_streak,
+                "DailyHeartbeatSeconds": self.daily_heartbeat_seconds,
                 "DailyMissionsAttempted": self.daily_missions_attempted,
                 "DailyPVPAttacks": self.daily_pvp_attacks,
                 "DailyPvPDefence": self.daily_pv_p_defence,
@@ -734,6 +747,7 @@ class UserRaw:
                 "TournamentBonusScore": self.tournament_bonus_score,
                 "TournamentResetDate": self.tournament_reset_date,
                 "TournamentRewardPoints": self.tournament_reward_points,
+                "TrailUserId": self.trail_user_id,
                 "Trophy": self.trophy,
                 "TrophyGained": self.trophy_gained,
                 "TutorialStatus": self.tutorial_status,

@@ -17,9 +17,11 @@ class ItemDesignRaw:
         self._active_animation_id: int = _parse.pss_int(item_design_info.get("ActiveAnimationId"))
         self._animation_id: int = _parse.pss_int(item_design_info.get("AnimationId"))
         self._border_sprite_id: int = _parse.pss_int(item_design_info.get("BorderSpriteId"))
+        self._build_price: int = _parse.pss_int(item_design_info.get("BuildPrice"))
         self._build_time: int = _parse.pss_int(item_design_info.get("BuildTime"))
         self._character_design_id: int = _parse.pss_int(item_design_info.get("CharacterDesignId"))
         self._character_part_id: int = _parse.pss_int(item_design_info.get("CharacterPartId"))
+        self._circulation: int = _parse.pss_int(item_design_info.get("Circulation"))
         self._content: str = _parse.pss_str(item_design_info.get("Content"))
         self._craft_design_id: int = _parse.pss_int(item_design_info.get("CraftDesignId"))
         self._drop_chance: int = _parse.pss_int(item_design_info.get("DropChance"))
@@ -68,6 +70,7 @@ class ItemDesignRaw:
         self._sound_file_id: int = _parse.pss_int(item_design_info.get("SoundFileId"))
         self._tags: str = _parse.pss_str(item_design_info.get("Tags"))
         self._training_design_id: int = _parse.pss_int(item_design_info.get("TrainingDesignId"))
+        self._transaction_volume: int = _parse.pss_int(item_design_info.get("TransactionVolume"))
 
     @property
     def active_animation_id(self) -> int:
@@ -82,6 +85,10 @@ class ItemDesignRaw:
         return self._border_sprite_id
 
     @property
+    def build_price(self) -> int:
+        return self._build_price
+
+    @property
     def build_time(self) -> int:
         return self._build_time
 
@@ -92,6 +99,10 @@ class ItemDesignRaw:
     @property
     def character_part_id(self) -> int:
         return self._character_part_id
+
+    @property
+    def circulation(self) -> int:
+        return self._circulation
 
     @property
     def content(self) -> str:
@@ -285,14 +296,20 @@ class ItemDesignRaw:
     def training_design_id(self) -> int:
         return self._training_design_id
 
+    @property
+    def transaction_volume(self) -> int:
+        return self._transaction_volume
+
     def _key(self):
         return (
             self.active_animation_id,
             self.animation_id,
             self.border_sprite_id,
+            self.build_price,
             self.build_time,
             self.character_design_id,
             self.character_part_id,
+            self.circulation,
             self.content,
             self.craft_design_id,
             self.drop_chance,
@@ -341,6 +358,7 @@ class ItemDesignRaw:
             self.sound_file_id,
             self.tags,
             self.training_design_id,
+            self.transaction_volume,
         )
 
     def __dict__(self):
@@ -349,9 +367,11 @@ class ItemDesignRaw:
                 "ActiveAnimationId": self.active_animation_id,
                 "AnimationId": self.animation_id,
                 "BorderSpriteId": self.border_sprite_id,
+                "BuildPrice": self.build_price,
                 "BuildTime": self.build_time,
                 "CharacterDesignId": self.character_design_id,
                 "CharacterPartId": self.character_part_id,
+                "Circulation": self.circulation,
                 "Content": self.content,
                 "CraftDesignId": self.craft_design_id,
                 "DropChance": self.drop_chance,
@@ -400,6 +420,7 @@ class ItemDesignRaw:
                 "SoundFileId": self.sound_file_id,
                 "Tags": self.tags,
                 "TrainingDesignId": self.training_design_id,
+                "TransactionVolume": self.transaction_volume,
             }
 
         return self._dict

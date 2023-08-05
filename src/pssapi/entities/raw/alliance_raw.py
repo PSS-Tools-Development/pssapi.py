@@ -27,6 +27,7 @@ class AllianceRaw:
         self._division_design_id: int = _parse.pss_int(alliance_info.get("DivisionDesignId"))
         self._enable_wars: bool = _parse.pss_bool(alliance_info.get("EnableWars"))
         self._immunity_date: _datetime = _parse.pss_datetime(alliance_info.get("ImmunityDate"))
+        self._min_score_contribution: int = _parse.pss_int(alliance_info.get("MinScoreContribution"))
         self._min_trophy_required: int = _parse.pss_int(alliance_info.get("MinTrophyRequired"))
         self._number_of_approved_members: int = _parse.pss_int(alliance_info.get("NumberOfApprovedMembers"))
         self._number_of_members: int = _parse.pss_int(alliance_info.get("NumberOfMembers"))
@@ -84,6 +85,10 @@ class AllianceRaw:
         return self._immunity_date
 
     @property
+    def min_score_contribution(self) -> int:
+        return self._min_score_contribution
+
+    @property
     def min_trophy_required(self) -> int:
         return self._min_trophy_required
 
@@ -125,6 +130,7 @@ class AllianceRaw:
             self.division_design_id,
             self.enable_wars,
             self.immunity_date,
+            self.min_score_contribution,
             self.min_trophy_required,
             self.number_of_approved_members,
             self.number_of_members,
@@ -149,6 +155,7 @@ class AllianceRaw:
                 "DivisionDesignId": self.division_design_id,
                 "EnableWars": self.enable_wars,
                 "ImmunityDate": self.immunity_date,
+                "MinScoreContribution": self.min_score_contribution,
                 "MinTrophyRequired": self.min_trophy_required,
                 "NumberOfApprovedMembers": self.number_of_approved_members,
                 "NumberOfMembers": self.number_of_members,

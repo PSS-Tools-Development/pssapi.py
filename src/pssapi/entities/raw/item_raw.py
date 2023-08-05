@@ -14,6 +14,8 @@ class ItemRaw:
 
     def __init__(self, item_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._action_frame: int = _parse.pss_int(item_info.get("ActionFrame"))
+        self._battle_hp: int = _parse.pss_int(item_info.get("BattleHp"))
         self._bonus_enhancement_type: str = _parse.pss_str(item_info.get("BonusEnhancementType"))
         self._bonus_enhancement_value: str = _parse.pss_str(item_info.get("BonusEnhancementValue"))
         self._is_new: bool = _parse.pss_bool(item_info.get("IsNew"))
@@ -21,6 +23,15 @@ class ItemRaw:
         self._item_id: int = _parse.pss_int(item_info.get("ItemId"))
         self._quantity: int = _parse.pss_int(item_info.get("Quantity"))
         self._ship_id: int = _parse.pss_int(item_info.get("ShipId"))
+        self._skin_key: int = _parse.pss_int(item_info.get("SkinKey"))
+
+    @property
+    def action_frame(self) -> int:
+        return self._action_frame
+
+    @property
+    def battle_hp(self) -> int:
+        return self._battle_hp
 
     @property
     def bonus_enhancement_type(self) -> str:
@@ -50,8 +61,14 @@ class ItemRaw:
     def ship_id(self) -> int:
         return self._ship_id
 
+    @property
+    def skin_key(self) -> int:
+        return self._skin_key
+
     def _key(self):
         return (
+            self.action_frame,
+            self.battle_hp,
             self.bonus_enhancement_type,
             self.bonus_enhancement_value,
             self.is_new,
@@ -59,11 +76,14 @@ class ItemRaw:
             self.item_id,
             self.quantity,
             self.ship_id,
+            self.skin_key,
         )
 
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "ActionFrame": self.action_frame,
+                "BattleHp": self.battle_hp,
                 "BonusEnhancementType": self.bonus_enhancement_type,
                 "BonusEnhancementValue": self.bonus_enhancement_value,
                 "IsNew": self.is_new,
@@ -71,6 +91,7 @@ class ItemRaw:
                 "ItemId": self.item_id,
                 "Quantity": self.quantity,
                 "ShipId": self.ship_id,
+                "SkinKey": self.skin_key,
             }
 
         return self._dict

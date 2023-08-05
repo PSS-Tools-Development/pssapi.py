@@ -15,7 +15,7 @@ class PlanetRaw:
         self._dict: _Dict[str, _Any] = {}
 
     def _key(self):
-        return ()
+        return tuple()
 
     def __dict__(self):
         if not self._dict:
