@@ -1,5 +1,6 @@
 """
-    This file has been generated automatically
+    This file has been generated automatically.
+    Any changes to this file will be lost eventually.
 """
 
 
