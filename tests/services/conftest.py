@@ -7,7 +7,6 @@ import pytest_asyncio
 import pssapi
 
 
-
 @pytest.fixture(scope="session")
 def access_token() -> str:
     return os.environ.get("PSS_ACCESS_TOKEN")
