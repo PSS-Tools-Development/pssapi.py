@@ -1,17 +1,17 @@
 interactions:
 - request:
-    body: '{"AccessToken": "00000000-0000-0000-0000-000000000000", "AdvertisingKey":
-      "00000000-0000-0000-0000-000000000000", "Checksum": "72364e6784a4b4e0b6713249d8c6f7b9",
+    body: '{"AccessToken": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "AdvertisingKey":
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "Checksum": "72364e6784a4b4e0b6713249d8c6f7b9",
       "ClientDateTime": "2023-08-05T17:55:58", "DeviceKey": "e6a3815568cd", "DeviceType":
       "DeviceTypeAndroid", "IsJailBroken": "false", "LanguageKey": "en", "Signal":
       "false", "UserDeviceInfo": {"ClientBuild": "", "DeviceName": "", "Locale": "",
       "OSBuild": "", "OsVersion": ""}}'
     headers: {}
     method: POST
-    uri: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=00000000-0000-0000-0000-000000000000&AdvertisingKey=00000000-0000-0000-0000-000000000000&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
+    uri: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
   response:
     body:
-      string: <UserService><UserLogin accessToken="38233bb9-79b1-4bcc-af93-65bcaa32f9a1"
+      string: <UserService><UserLogin accessToken="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
         PreviousLastLoginDate ="2023-08-05T12:31:08" UserId="10514214"><User Id="10514214"
         LastAlertDate="2023-07-29T12:52:16.867" UserType="Unverified" GenderType="Unknown"
         RaceType="Unknown" Credits="100" ProfileImageUrl="" Trophy="1000" GameCenterName=""
@@ -77,12 +77,12 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=00000000-0000-0000-0000-000000000000&AdvertisingKey=00000000-0000-0000-0000-000000000000&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
+    url: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
 - request:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=38233bb9-79b1-4bcc-af93-65bcaa32f9a1&clientDateTime=2023-08-05T17:55:58
+    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
   response:
     body:
       string: <GalaxyService><ListStarSystemMarkers><StarSystemMarkers><StarSystemMarker
@@ -138,5 +138,5 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=38233bb9-79b1-4bcc-af93-65bcaa32f9a1&clientDateTime=2023-08-05T17:55:58
+    url: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
 version: 1
