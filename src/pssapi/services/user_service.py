@@ -141,7 +141,9 @@ class UserService(_service_base.ServiceBase):
         )
         return result
 
-    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, language_key: str, password: str) -> _entities.UserEmailPasswordAuthorize:
+    async def user_email_password_authorize(
+        self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, language_key: str, password: str
+    ) -> _entities.UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.user_email_password_authorize_4(production_server, access_token, checksum, client_date_time, device_key, email, is_web, language_key, password)
         return result
