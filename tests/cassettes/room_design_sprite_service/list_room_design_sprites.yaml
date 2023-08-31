@@ -3,10 +3,10 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites
+    uri: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites2?languageKey=en
   response:
     body:
-      string: "<RoomDesignSpriteService><ListRoomDesignSprites version=\"739\"><RoomDesignSprites><RoomDesignSprite
+      string: "<RoomDesignSpriteService><ListRoomDesignSprites version=\"746\"><RoomDesignSprites><RoomDesignSprite
         RoomDesignSpriteId=\"2\" RoomDesignId=\"1\" SpriteId=\"44\" RoomSpriteType=\"Interior\"
         RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
         RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\"
@@ -3083,10 +3083,10 @@ interactions:
         SpriteId=\"3478\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
         SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
         RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"1927\"
-        RoomDesignId=\"17\" SpriteId=\"3479\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\"
+        RoomDesignId=\"17\" SpriteId=\"3478\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\"
         RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
         Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
-        RoomDesignSpriteId=\"1928\" RoomDesignId=\"85\" SpriteId=\"3480\" RoomSpriteType=\"Exterior\"
+        RoomDesignSpriteId=\"1928\" RoomDesignId=\"85\" SpriteId=\"3478\" RoomSpriteType=\"Exterior\"
         RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
         RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\"
         SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"1929\" RoomDesignId=\"120\"
@@ -6607,43 +6607,42 @@ interactions:
         SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\"
         AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3030\"
         RoomDesignId=\"440\" SpriteId=\"9474\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\"
-        RoomEffectParameter=\"0\" SkinName=\"Zaki Dragon Gym\" SkinDescription=\"Limited
-        edition fitness facility from Zaki Dragon industries. June 18 Tournament.\"
-        RequirementString=\"item:779 &gt;= 1\" Flags=\"1\" Metadata=\"\" RaceId=\"0\"
-        AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3031\"
-        RoomDesignId=\"441\" SpriteId=\"9459\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\"
         RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
-        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
-        RoomDesignSpriteId=\"3032\" RoomDesignId=\"442\" SpriteId=\"9578\" RoomSpriteType=\"Interior\"
+        Flags=\"1\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
+        RoomDesignSpriteId=\"3031\" RoomDesignId=\"441\" SpriteId=\"9459\" RoomSpriteType=\"Interior\"
         RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
         RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\"
-        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3033\" RoomDesignId=\"442\"
-        SpriteId=\"9578\" RoomSpriteType=\"Interior Destroyed\" RoomEffectType=\"None\"
-        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
-        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
-        RoomDesignSpriteId=\"3034\" RoomDesignId=\"443\" SpriteId=\"9662\" RoomSpriteType=\"Interior\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3032\" RoomDesignId=\"442\"
+        SpriteId=\"9578\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3033\"
+        RoomDesignId=\"442\" SpriteId=\"9578\" RoomSpriteType=\"Interior Destroyed\"
         RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
         RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\"
-        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3035\" RoomDesignId=\"443\"
-        SpriteId=\"9858\" RoomSpriteType=\"Interior Destroyed\" RoomEffectType=\"None\"
-        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
-        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
-        RoomDesignSpriteId=\"3036\" RoomDesignId=\"443\" SpriteId=\"9662\" RoomSpriteType=\"Interior
-        Activate\" RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\"
-        SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\"
-        AnimationId=\"1288\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3037\"
-        RoomDesignId=\"444\" SpriteId=\"9579\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\"
-        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
-        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
-        RoomDesignSpriteId=\"3038\" RoomDesignId=\"444\" SpriteId=\"9860\" RoomSpriteType=\"Interior
-        Destroyed\" RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\"
-        SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\"
-        AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3039\"
-        RoomDesignId=\"444\" SpriteId=\"9579\" RoomSpriteType=\"Interior Activate\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3034\" RoomDesignId=\"443\"
+        SpriteId=\"9662\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3035\"
+        RoomDesignId=\"443\" SpriteId=\"9858\" RoomSpriteType=\"Interior Destroyed\"
         RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
-        RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1283\"
-        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3040\" RoomDesignId=\"445\"
-        SpriteId=\"9533\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3036\" RoomDesignId=\"443\"
+        SpriteId=\"9662\" RoomSpriteType=\"Interior Activate\" RoomEffectType=\"None\"
+        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
+        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1288\" SkinKey=\"0\"
+        /><RoomDesignSprite RoomDesignSpriteId=\"3037\" RoomDesignId=\"444\" SpriteId=\"9579\"
+        RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3038\"
+        RoomDesignId=\"444\" SpriteId=\"9860\" RoomSpriteType=\"Interior Destroyed\"
+        RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
+        RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3039\" RoomDesignId=\"444\"
+        SpriteId=\"9579\" RoomSpriteType=\"Interior Activate\" RoomEffectType=\"None\"
+        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
+        Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1283\" SkinKey=\"0\"
+        /><RoomDesignSprite RoomDesignSpriteId=\"3040\" RoomDesignId=\"445\" SpriteId=\"9533\"
+        RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
         SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
         RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"3041\"
         RoomDesignId=\"445\" SpriteId=\"9859\" RoomSpriteType=\"Interior Destroyed\"
@@ -8164,7 +8163,7 @@ interactions:
         hoping for eternal rest is going to be sorely disappointed. Increases maximum
         crew count by 1.\" RequirementString=\"item:817 &gt;= 1\" Flags=\"0\" Metadata=\"\"
         RaceId=\"0\" AnimationId=\"0\" SkinKey=\"11\" /><RoomDesignSprite RoomDesignSpriteId=\"3476\"
-        RoomDesignId=\"509\" SpriteId=\"13182\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\"
+        RoomDesignId=\"509\" SpriteId=\"20034\" RoomSpriteType=\"Interior\" RoomEffectType=\"None\"
         RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
         Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
         RoomDesignSpriteId=\"3477\" RoomDesignId=\"509\" SpriteId=\"2373\" RoomSpriteType=\"Exterior\"
@@ -12165,7 +12164,42 @@ interactions:
         SpriteId=\"19632\" RoomSpriteType=\"Interior Activate\" RoomEffectType=\"None\"
         RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
         Flags=\"0\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1768\" SkinKey=\"0\"
-        /></RoomDesignSprites></ListRoomDesignSprites></RoomDesignSpriteService>"
+        /><RoomDesignSprite RoomDesignSpriteId=\"4818\" RoomDesignId=\"547\" SpriteId=\"19967\"
+        RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"Barrel Cellar Gas Storage\" SkinDescription=\"Only the finest vintage
+        for your engines. Requires Max Level Gas Storage Room.\" RequirementString=\"item:1736
+        &gt;= 1\" Flags=\"1\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1778\" SkinKey=\"159\"
+        /><RoomDesignSprite RoomDesignSpriteId=\"4819\" RoomDesignId=\"557\" SpriteId=\"19981\"
+        RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"Summitran Reactor Core\" SkinDescription=\"Harness the power of
+        of glorious victory! Requires Max Level Small Reactor Room.\" RequirementString=\"item:1743
+        &gt;= 1\" Flags=\"1\" Metadata=\"\" RaceId=\"0\" AnimationId=\"1779\" SkinKey=\"160\"
+        /><RoomDesignSprite RoomDesignSpriteId=\"4820\" RoomDesignId=\"557\" SpriteId=\"19988\"
+        RoomSpriteType=\"Interior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"Gerbaltech Kinetic Reactor\" SkinDescription=\"Renovate your Small
+        Reactor into a Self Driven Hamster design. Requires Max level Small Reactor
+        Room.\" RequirementString=\"item:1744 &gt;= 1\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"0\" AnimationId=\"1780\" SkinKey=\"161\" /><RoomDesignSprite RoomDesignSpriteId=\"4835\"
+        RoomDesignId=\"86\" SpriteId=\"3479\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\"
+        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
+        Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
+        RoomDesignSpriteId=\"4836\" RoomDesignId=\"87\" SpriteId=\"3479\" RoomSpriteType=\"Exterior\"
+        RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
+        RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"4837\" RoomDesignId=\"144\"
+        SpriteId=\"3479\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"4838\"
+        RoomDesignId=\"145\" SpriteId=\"3480\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\"
+        RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\" RequirementString=\"\"
+        Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /><RoomDesignSprite
+        RoomDesignSpriteId=\"4839\" RoomDesignId=\"146\" SpriteId=\"3480\" RoomSpriteType=\"Exterior\"
+        RoomEffectType=\"None\" RoomEffectParameter=\"0\" SkinName=\"\" SkinDescription=\"\"
+        RequirementString=\"\" Flags=\"0\" Metadata=\"\" RaceId=\"4\" AnimationId=\"0\"
+        SkinKey=\"0\" /><RoomDesignSprite RoomDesignSpriteId=\"4840\" RoomDesignId=\"147\"
+        SpriteId=\"3480\" RoomSpriteType=\"Exterior\" RoomEffectType=\"None\" RoomEffectParameter=\"0\"
+        SkinName=\"\" SkinDescription=\"\" RequirementString=\"\" Flags=\"0\" Metadata=\"\"
+        RaceId=\"4\" AnimationId=\"0\" SkinKey=\"0\" /></RoomDesignSprites></ListRoomDesignSprites></RoomDesignSpriteService>"
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -12173,8 +12207,6 @@ interactions:
       - '*'
       Access-Control-Allow-Origin:
       - '*'
-      Age:
-      - '265'
       Cache-Control:
       - public, no-cache="Set-Cookie", max-age=1200
       Connection:
@@ -12184,11 +12216,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Sun, 09 Jul 2023 10:20:00 GMT
+      - Sun, 27 Aug 2023 15:16:36 GMT
       Expires:
-      - Sun, 09 Jul 2023 10:40:00 GMT
+      - Sun, 27 Aug 2023 15:36:36 GMT
       Last-Modified:
-      - Sun, 09 Jul 2023 10:20:00 GMT
+      - Sun, 27 Aug 2023 15:16:36 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -12196,19 +12228,19 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 64d18a7c557f9140c04169b7191025f8.cloudfront.net (CloudFront)
+      - 1.1 4842376441adfff51e41110458fe337a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - HaAbFgqLgg7EnZEeBAXiDRo3pcSR3O69ifLQimGMgs7bGFH7AyvcrQ==
+      - okRvFZ5ADpD5zkj0a-X0zU02yiGcgqwzM8GJRjWJWUI1v0he7ud8qA==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
       - 4.0.30319
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       X-Powered-By:
       - ASP.NET
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites
+    url: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites2?languageKey=en
 version: 1
