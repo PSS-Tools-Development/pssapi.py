@@ -76,6 +76,7 @@ from .movement_type import MovementType
 from .objective_type import ObjectiveType
 from .orbit_anchor_alignment import OrbitAnchorAlignment
 from .outcome_type import OutcomeType
+from .platform_type import PlatformType
 from .production_server import ProductionServer
 from .progression_type import ProgressionType
 from .promotion_design_flag import PromotionDesignFlag
@@ -101,6 +102,7 @@ from .ship_status import ShipStatus
 from .ship_type import ShipType
 from .situation_design_flag import SituationDesignFlag
 from .situation_type import SituationType
+from .skin_type import SkinType
 from .special_ability_type import SpecialAbilityType
 from .special_rule_type import SpecialRuleType
 from .status import Status
@@ -192,6 +194,7 @@ __all__ = [
     "ObjectiveType",
     "OrbitAnchorAlignment",
     "OutcomeType",
+    "PlatformType",
     "ProductionServer",
     "ProgressionType",
     "PromotionDesignFlag",
@@ -218,6 +221,7 @@ __all__ = [
     "ShipType",
     "SituationDesignFlag",
     "SituationType",
+    "SkinType",
     "SpecialAbilityType",
     "SpecialRuleType",
     "Status",
