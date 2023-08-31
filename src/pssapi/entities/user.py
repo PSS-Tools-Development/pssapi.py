@@ -21,6 +21,7 @@ class User(_UserRaw, _EntityWithIdBase):
         self._status_enum: _enums.UserStatus = _parse.pss_int_enum(self.status, _enums.UserStatus)
         # self._tip_status_enum: _enums. = _parse.pss_int_enum(self.tip_status, _enums.)   # enum doesn't exist up to PSS v0.994.1
         # self._tutorial_status_enum: _enums. = _parse.pss_int_enum(self.tutorial_status, _enums.)   # enum doesn't exist up to PSS v0.994.1
+        self._user_source_ads_platform_type_enum: _enums.PlatformType = _parse.pss_str_enum(self.user_source_ads_platform_type, _enums.PlatformType)
         self._user_type_enum: _enums.UserType = _parse.pss_str_enum(self.user_type, _enums.UserType)
 
     @property
@@ -78,6 +79,10 @@ class User(_UserRaw, _EntityWithIdBase):
     # @property   # enum doesn't exist up to PSS v0.994.1
     # def tutorial_status_enum(self) -> "_enums.":
     #    return self._tutorial_status_enum
+
+    @property
+    def user_source_ads_platform_type_enum(self) -> "_enums.PlatformType":
+        return self._user_source_ads_platform_type_enum
 
     @property
     def user_type_enum(self) -> "_enums.UserType":

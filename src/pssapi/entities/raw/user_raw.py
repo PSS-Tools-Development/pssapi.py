@@ -18,6 +18,7 @@ class UserRaw:
     def __init__(self, user_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._activated_promotions: str = _parse.pss_str(user_info.get("ActivatedPromotions"))
+        self._ads_platform_user_id: str = _parse.pss_str(user_info.get("AdsPlatformUserId"))
         self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")[0]) if user_info.get("Alliance", []) else None
         self._alliance_id: int = _parse.pss_int(user_info.get("AllianceId"))
         self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.get("AllianceJoinDate"))
@@ -120,12 +121,17 @@ class UserRaw:
         self._update_date: _datetime = _parse.pss_datetime(user_info.get("UpdateDate"))
         self._used_reward_points: int = _parse.pss_int(user_info.get("UsedRewardPoints"))
         self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")[0]) if user_info.get("UserSeason", []) else None
+        self._user_source_ads_platform_type: str = _parse.pss_str(user_info.get("UserSourceAdsPlatformType"))
         self._user_type: str = _parse.pss_str(user_info.get("UserType"))
         self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.get("VipExpiryDate"))
 
     @property
     def activated_promotions(self) -> str:
         return self._activated_promotions
+
+    @property
+    def ads_platform_user_id(self) -> str:
+        return self._ads_platform_user_id
 
     @property
     def alliance(self) -> "_entities.Alliance":
@@ -536,6 +542,10 @@ class UserRaw:
         return self._user_season
 
     @property
+    def user_source_ads_platform_type(self) -> str:
+        return self._user_source_ads_platform_type
+
+    @property
     def user_type(self) -> str:
         return self._user_type
 
@@ -546,6 +556,7 @@ class UserRaw:
     def _key(self):
         return (
             self.activated_promotions,
+            self.ads_platform_user_id,
             self.alliance._key() if self.alliance else None,
             self.alliance_id,
             self.alliance_join_date,
@@ -648,6 +659,7 @@ class UserRaw:
             self.update_date,
             self.used_reward_points,
             self.user_season._key() if self.user_season else None,
+            self.user_source_ads_platform_type,
             self.user_type,
             self.vip_expiry_date,
         )
@@ -656,6 +668,7 @@ class UserRaw:
         if not self._dict:
             self._dict = {
                 "ActivatedPromotions": self.activated_promotions,
+                "AdsPlatformUserId": self.ads_platform_user_id,
                 "Alliance": dict(self.alliance) if self.alliance else None,
                 "AllianceId": self.alliance_id,
                 "AllianceJoinDate": self.alliance_join_date,
@@ -758,6 +771,7 @@ class UserRaw:
                 "UpdateDate": self.update_date,
                 "UsedRewardPoints": self.used_reward_points,
                 "UserSeason": dict(self.user_season) if self.user_season else None,
+                "UserSourceAdsPlatformType": self.user_source_ads_platform_type,
                 "UserType": self.user_type,
                 "VipExpiryDate": self.vip_expiry_date,
             }
