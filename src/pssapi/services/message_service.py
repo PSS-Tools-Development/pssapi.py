@@ -3,7 +3,6 @@ from typing import List as _List
 import pssapi.services.service_base as _service_base
 
 from ..entities import Message as _Message
-from ..entities import Sale as _Sale
 from .raw import MessageServiceRaw as _MessageServiceRaw
 
 
