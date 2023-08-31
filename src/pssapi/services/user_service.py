@@ -3,6 +3,7 @@ import random as _random
 import string as _string
 from datetime import datetime as _datetime
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
@@ -87,6 +88,11 @@ class UserService(_service_base.ServiceBase):
     async def list_friends(self, user_id: int, access_token: str) -> _entities.ListFriends:
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
+        return result
+
+    async def list_skins(self, design_version: int = None) -> _Tuple[_entities.SkinSet, _entities.Skin]:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.list_skins(production_server, design_version, self.language_key)
         return result
 
     async def remove_friend(self, access_token: str, friend_user_id: int) -> None:

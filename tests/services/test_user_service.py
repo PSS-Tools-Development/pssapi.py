@@ -54,6 +54,21 @@ async def test_list_friends(client: pssapi.PssApiClient, access_token: str):
 
 
 @pytest.mark.asyncio
+@pytest.mark.usefixtures("client")
+@pytest.mark.vcr()
+async def test_list_skins(client: pssapi.PssApiClient):
+    skins = await client.user_service.list_skins()
+    assert isinstance(skins, tuple)
+    assert len(skins) == 2
+    assert isinstance(skins[0], list)
+    assert isinstance(skins[1], list)
+    assert len(skins[0]) > 0
+    assert len(skins[1]) > 0
+    assert isinstance(skins[0][0], pssapi.entities.SkinSet)
+    assert isinstance(skins[1][0], pssapi.entities.Skin)
+
+
+@pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
 @pytest.mark.vcr()
 async def test_remove_friend(client: pssapi.PssApiClient, access_token: str):

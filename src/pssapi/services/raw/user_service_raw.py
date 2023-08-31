@@ -5,10 +5,13 @@
 
 from datetime import datetime as _datetime
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import Friend as _Friend
 from ...entities import ListFriends as _ListFriends
+from ...entities import Skin as _Skin
+from ...entities import SkinSet as _SkinSet
 from ...entities import User as _User
 from ...entities import UserEmailPasswordAuthorize as _UserEmailPasswordAuthorize
 from ...entities import UserLogin as _UserLogin
@@ -21,6 +24,7 @@ DECLINE_FRIEND_REQUEST_BASE_PATH: str = "UserService/DeclineFriendRequest"
 DEVICE_LOGIN_12_BASE_PATH: str = "UserService/DeviceLogin12"
 DEVICE_LOGIN_15_BASE_PATH: str = "UserService/DeviceLogin15"
 LIST_FRIENDS_BASE_PATH: str = "UserService/ListFriends"
+LIST_SKINS_BASE_PATH: str = "UserService/ListSkins"
 REMOVE_FRIEND_BASE_PATH: str = "UserService/RemoveFriend"
 SEARCH_USERS_BASE_PATH: str = "UserService/SearchUsers"
 STEAM_LOGIN_3_BASE_PATH: str = "UserService/SteamLogin3"
@@ -147,6 +151,12 @@ __DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","Advert
 async def list_friends(production_server: str, user_id: int, access_token: str, **params) -> _ListFriends:
     params = {"UserId": user_id, "accessToken": access_token, **params}
     result = await _core.get_entities_from_path(((_ListFriends, "ListFriends", False),), "UserService", production_server, LIST_FRIENDS_BASE_PATH, "GET", **params)
+    return result
+
+
+async def list_skins(production_server: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
+    params = {"designVersion": design_version, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", **params)
     return result
 
 
