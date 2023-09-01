@@ -34,7 +34,7 @@ class CharacterDesignRaw:
         self._final_attack: float = _parse.pss_float(character_design_info.get("FinalAttack"))
         self._final_engine: float = _parse.pss_float(character_design_info.get("FinalEngine"))
         self._final_hp: int = _parse.pss_int(character_design_info.get("FinalHp"))
-        self._final_pilot: int = _parse.pss_int(character_design_info.get("FinalPilot"))
+        self._final_pilot: float = _parse.pss_float(character_design_info.get("FinalPilot"))
         self._final_repair: float = _parse.pss_float(character_design_info.get("FinalRepair"))
         self._final_research: int = _parse.pss_int(character_design_info.get("FinalResearch"))
         self._final_science: float = _parse.pss_float(character_design_info.get("FinalScience"))
@@ -131,7 +131,7 @@ class CharacterDesignRaw:
         return self._final_hp
 
     @property
-    def final_pilot(self) -> int:
+    def final_pilot(self) -> float:
         return self._final_pilot
 
     @property

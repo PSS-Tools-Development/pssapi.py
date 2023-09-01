@@ -12,6 +12,7 @@ import aiohttp as _aiohttp
 import pssapi.constants as _constants
 import pssapi.entities as _entities
 import pssapi.enums as _enums
+import pssapi.utils as _utils
 
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
     "deviceType": str(_enums.DeviceType.ANDROID),
@@ -21,7 +22,7 @@ __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
 
 def create_request_content(structure: str, params: _Dict[str, _Any], content_type: str) -> str:
     if content_type == "json":
-        return __create_json_request_content(structure, params)
+        return create_json_request_content(structure, params)
     elif content_type == "xml":
         pass
 
@@ -32,7 +33,12 @@ async def get_entities_from_path(
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
 
     root = _ElementTree.fromstring(raw_xml)
-    if root.tag != xml_parent_tag_name:
+    if not root or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
+        raise _utils.exceptions.PssApiError(f"A server error occured: {raw_xml}")
+    if "errorMessage" in root.attrib:
+        raise _utils.exceptions.PssApiError(root.attrib["errorMessage"])
+
+    if xml_parent_tag_name and root.tag != xml_parent_tag_name:
         parent_node = root.find(f".//{xml_parent_tag_name}")
     else:
         parent_node = root
@@ -52,7 +58,7 @@ async def get_entities_from_path(
             result.append(entity)
     if len(result) > 1:
         return tuple(result)
-    else:
+    elif len(result) == 1:
         return result[0]
 
 
@@ -66,7 +72,7 @@ async def get_production_server(device_type: str, language_key: str) -> str:
     return result
 
 
-def __create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
+def create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
     d = _json.loads(structure)
     __update_nested_dict_values(d, params)
     return _json.dumps(d)
@@ -96,7 +102,8 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
             async with session.get(url, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
         elif method == "POST":
-            async with session.post(url, data=content.encode("utf-8")) as response:
+            data = content.encode("utf-8") if content else None
+            async with session.post(url, data=data, params=filtered_params) as response:
                 data = await response.text(encoding="utf-8")
     return data
 
@@ -104,27 +111,25 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
 def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
-        if len(list(child)) > 1:
-            result[child.tag] = __get_raw_entities_xml(child)
-        else:
-            result[child.tag] = __get_raw_entity_xml(child)
+        result.setdefault(child.tag, []).append(__get_raw_entity_xml(child))
     return result
 
 
 def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
     result = []
-
     for child in node:
         result.append(__get_raw_entity_xml(child))
-
     return result
 
 
 def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
-        if isinstance(value, dict):
+        value_is_dict = isinstance(value, dict)
+        param_value = params.get(key)
+        if param_value:
+            if value == "datetime" and isinstance(param_value, _datetime):
+                d[key] = param_value.strftime(_constants.DATETIME_FORMAT_ISO)
+            else:
+                d[key] = param_value
+        elif value_is_dict:
             __update_nested_dict_values(value, params)
-        elif value == "datetime":
-            d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
-        else:
-            d[key] = params[key]

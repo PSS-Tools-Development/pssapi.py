@@ -12,7 +12,7 @@ class LadderService(_service_base.ServiceBase):
         result = await _LadderServiceRaw.list_users_by_championship_score_ranking(production_server, access_token, from_, to)
         return result
 
-    async def list_users_by_ranking(self, access_token: str, from_: int, to: int, to_100: str) -> _List[_User]:
+    async def list_users_by_ranking(self, access_token: str, from_: int, to: int) -> _List[_User]:
         production_server = await self.get_production_server()
-        result = await _LadderServiceRaw.list_users_by_ranking(production_server, access_token, from_, to, to_100)
+        result = await _LadderServiceRaw.list_users_by_ranking(production_server, access_token, from_, to)
         return result

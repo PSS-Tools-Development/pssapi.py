@@ -1,0 +1,13 @@
+from enum import IntFlag as _IntFlag
+
+
+class MarkerFlag(_IntFlag):
+    NONE = 0
+    GLOBAL = 1
+    USER = 2
+    DISPLAY_ON_MISSION = 4
+    DISPLAY_ON_SYSTEM_INFO = 8
+    CREATE_MARKER_IF_EXISTS = 16
+    CREATE_MARKER_IF_EXISTS_KEEP_EXISTING = 32
+    USE_TRAVEL_MULTIPLIER = 64
+    DELETE_SHIP_ID_AFTER_DEFEAT = 128

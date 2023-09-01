@@ -18,7 +18,8 @@ class UserRaw:
     def __init__(self, user_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._activated_promotions: str = _parse.pss_str(user_info.get("ActivatedPromotions"))
-        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")) if user_info.get("Alliance") else None
+        self._ads_platform_user_id: str = _parse.pss_str(user_info.get("AdsPlatformUserId"))
+        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")[0]) if user_info.get("Alliance", []) else None
         self._alliance_id: int = _parse.pss_int(user_info.get("AllianceId"))
         self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.get("AllianceJoinDate"))
         self._alliance_membership: str = _parse.pss_str(user_info.get("AllianceMembership"))
@@ -45,6 +46,7 @@ class UserRaw:
         self._crew_donated: int = _parse.pss_int(user_info.get("CrewDonated"))
         self._crew_received: int = _parse.pss_int(user_info.get("CrewReceived"))
         self._daily_challenge_win_streak: int = _parse.pss_int(user_info.get("DailyChallengeWinStreak"))
+        self._daily_heartbeat_seconds: int = _parse.pss_int(user_info.get("DailyHeartbeatSeconds"))
         self._daily_missions_attempted: str = _parse.pss_str(user_info.get("DailyMissionsAttempted"))
         self._daily_pvp_attacks: int = _parse.pss_int(user_info.get("DailyPVPAttacks"))
         self._daily_pv_p_defence: int = _parse.pss_int(user_info.get("DailyPvPDefence"))
@@ -108,6 +110,7 @@ class UserRaw:
         self._tournament_bonus_score: int = _parse.pss_int(user_info.get("TournamentBonusScore"))
         self._tournament_reset_date: _datetime = _parse.pss_datetime(user_info.get("TournamentResetDate"))
         self._tournament_reward_points: int = _parse.pss_int(user_info.get("TournamentRewardPoints"))
+        self._trail_user_id: str = _parse.pss_str(user_info.get("TrailUserId"))
         self._trophy: int = _parse.pss_int(user_info.get("Trophy"))
         self._trophy_gained: int = _parse.pss_int(user_info.get("TrophyGained"))
         self._tutorial_status: int = _parse.pss_int(user_info.get("TutorialStatus"))
@@ -117,13 +120,18 @@ class UserRaw:
         self._unread_message_count: str = _parse.pss_str(user_info.get("UnreadMessageCount"))
         self._update_date: _datetime = _parse.pss_datetime(user_info.get("UpdateDate"))
         self._used_reward_points: int = _parse.pss_int(user_info.get("UsedRewardPoints"))
-        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")) if user_info.get("UserSeason") else None
+        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")[0]) if user_info.get("UserSeason", []) else None
+        self._user_source_ads_platform_type: str = _parse.pss_str(user_info.get("UserSourceAdsPlatformType"))
         self._user_type: str = _parse.pss_str(user_info.get("UserType"))
         self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.get("VipExpiryDate"))
 
     @property
     def activated_promotions(self) -> str:
         return self._activated_promotions
+
+    @property
+    def ads_platform_user_id(self) -> str:
+        return self._ads_platform_user_id
 
     @property
     def alliance(self) -> "_entities.Alliance":
@@ -232,6 +240,10 @@ class UserRaw:
     @property
     def daily_challenge_win_streak(self) -> int:
         return self._daily_challenge_win_streak
+
+    @property
+    def daily_heartbeat_seconds(self) -> int:
+        return self._daily_heartbeat_seconds
 
     @property
     def daily_missions_attempted(self) -> str:
@@ -486,6 +498,10 @@ class UserRaw:
         return self._tournament_reward_points
 
     @property
+    def trail_user_id(self) -> str:
+        return self._trail_user_id
+
+    @property
     def trophy(self) -> int:
         return self._trophy
 
@@ -526,6 +542,10 @@ class UserRaw:
         return self._user_season
 
     @property
+    def user_source_ads_platform_type(self) -> str:
+        return self._user_source_ads_platform_type
+
+    @property
     def user_type(self) -> str:
         return self._user_type
 
@@ -536,6 +556,7 @@ class UserRaw:
     def _key(self):
         return (
             self.activated_promotions,
+            self.ads_platform_user_id,
             self.alliance._key() if self.alliance else None,
             self.alliance_id,
             self.alliance_join_date,
@@ -563,6 +584,7 @@ class UserRaw:
             self.crew_donated,
             self.crew_received,
             self.daily_challenge_win_streak,
+            self.daily_heartbeat_seconds,
             self.daily_missions_attempted,
             self.daily_pvp_attacks,
             self.daily_pv_p_defence,
@@ -626,6 +648,7 @@ class UserRaw:
             self.tournament_bonus_score,
             self.tournament_reset_date,
             self.tournament_reward_points,
+            self.trail_user_id,
             self.trophy,
             self.trophy_gained,
             self.tutorial_status,
@@ -636,6 +659,7 @@ class UserRaw:
             self.update_date,
             self.used_reward_points,
             self.user_season._key() if self.user_season else None,
+            self.user_source_ads_platform_type,
             self.user_type,
             self.vip_expiry_date,
         )
@@ -644,6 +668,7 @@ class UserRaw:
         if not self._dict:
             self._dict = {
                 "ActivatedPromotions": self.activated_promotions,
+                "AdsPlatformUserId": self.ads_platform_user_id,
                 "Alliance": dict(self.alliance) if self.alliance else None,
                 "AllianceId": self.alliance_id,
                 "AllianceJoinDate": self.alliance_join_date,
@@ -671,6 +696,7 @@ class UserRaw:
                 "CrewDonated": self.crew_donated,
                 "CrewReceived": self.crew_received,
                 "DailyChallengeWinStreak": self.daily_challenge_win_streak,
+                "DailyHeartbeatSeconds": self.daily_heartbeat_seconds,
                 "DailyMissionsAttempted": self.daily_missions_attempted,
                 "DailyPVPAttacks": self.daily_pvp_attacks,
                 "DailyPvPDefence": self.daily_pv_p_defence,
@@ -734,6 +760,7 @@ class UserRaw:
                 "TournamentBonusScore": self.tournament_bonus_score,
                 "TournamentResetDate": self.tournament_reset_date,
                 "TournamentRewardPoints": self.tournament_reward_points,
+                "TrailUserId": self.trail_user_id,
                 "Trophy": self.trophy,
                 "TrophyGained": self.trophy_gained,
                 "TutorialStatus": self.tutorial_status,
@@ -744,6 +771,7 @@ class UserRaw:
                 "UpdateDate": self.update_date,
                 "UsedRewardPoints": self.used_reward_points,
                 "UserSeason": dict(self.user_season) if self.user_season else None,
+                "UserSourceAdsPlatformType": self.user_source_ads_platform_type,
                 "UserType": self.user_type,
                 "VipExpiryDate": self.vip_expiry_date,
             }

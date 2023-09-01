@@ -1,20 +1,20 @@
 """
-    This file has been generated automatically
+    This file has been generated automatically.
+    Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
 
 from ... import core as _core
 from ...entities import Message as _Message
-from ...entities import Sale as _Sale
 
 # ---------- Constants ----------
 
 LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH: str = "MessageService/ListActiveMarketplaceMessages5"
 LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH: str = "MessageService/ListMessagesForChannelKey"
 LIST_PRIVATE_MESSAGES_BASE_PATH: str = "MessageService/ListPrivateMessages"
-LIST_SALES_BY_ITEM_DESIGN_ID_BASE_PATH: str = "MessageService/ListSalesByItemDesignId"
 SEND_MESSAGE_3_BASE_PATH: str = "MessageService/SendMessage3"
+SEND_PRIVATE_MESSAGE_3_BASE_PATH: str = "MessageService/SendPrivateMessage3"
 
 
 # ---------- Endpoints ----------
@@ -50,12 +50,6 @@ async def list_private_messages(production_server: str, access_token: str, **par
     return result
 
 
-async def list_sales_by_item_design_id(production_server: str, from_: int, item_design_id: int, sale_status: str, to: int, **params) -> _List[_Sale]:
-    params = {"from": from_, "itemDesignId": item_design_id, "saleStatus": sale_status, "to": to, **params}
-    result = await _core.get_entities_from_path(((_Sale, "Sales", True),), "Sales", production_server, LIST_SALES_BY_ITEM_DESIGN_ID_BASE_PATH, "GET", **params)
-    return result
-
-
 async def send_message_3(production_server: str, access_token: str, channel_key: str, message: str, **params) -> _Message:
     params = {"AccessToken": access_token, "ChannelKey": channel_key, "Message": message, **params}
     content = _core.create_request_content(__SEND_MESSAGE_3_REQUEST_CONTENT_STRUCTURE, params, "json")
@@ -64,3 +58,13 @@ async def send_message_3(production_server: str, access_token: str, channel_key:
 
 
 __SEND_MESSAGE_3_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","ChannelKey":"str","Message":"str"}'
+
+
+async def send_private_message_3(production_server: str, access_token: str, message: str, to_user_id: int, **params) -> _Message:
+    params = {"AccessToken": access_token, "Message": message, "ToUserId": to_user_id, **params}
+    content = _core.create_request_content(__SEND_PRIVATE_MESSAGE_3_REQUEST_CONTENT_STRUCTURE, params, "json")
+    result = await _core.get_entities_from_path(((_Message, "Message", False),), "SendMessage", production_server, SEND_PRIVATE_MESSAGE_3_BASE_PATH, "POST", request_content=content, **params)
+    return result
+
+
+__SEND_PRIVATE_MESSAGE_3_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","Message":"str","ToUserId":"int"}'

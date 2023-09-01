@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pssapi"
 description = "Wrapper for the Pixel Starships API"
-version = "0.1.2"
+version = "0.2.0"
 license = "MIT"
 authors = [
     "The worst. <theworstpss@gmail.com>",
@@ -42,6 +42,10 @@ black = "^23.1.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.1"
+pytest-asyncio = "^0.21.0"
+pytest-vcr = "^1.0.2"
+vcrpy = "^4.3.1"
+pytest-cov = "^4.1.0"
 
 [tool.setuptools_scm]
 

@@ -14,6 +14,7 @@ class RoomDesignRaw:
 
     def __init__(self, room_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._activation_delay: int = _parse.pss_int(room_design_info.get("ActivationDelay"))
         self._capacity: int = _parse.pss_int(room_design_info.get("Capacity"))
         self._category_type: str = _parse.pss_str(room_design_info.get("CategoryType"))
         self._columns: int = _parse.pss_int(room_design_info.get("Columns"))
@@ -39,6 +40,7 @@ class RoomDesignRaw:
         self._max_power_generated: int = _parse.pss_int(room_design_info.get("MaxPowerGenerated"))
         self._max_system_power: int = _parse.pss_int(room_design_info.get("MaxSystemPower"))
         self._metadata: str = _parse.pss_str(room_design_info.get("Metadata"))
+        self._min_range: int = _parse.pss_int(room_design_info.get("MinRange"))
         self._min_ship_level: int = _parse.pss_int(room_design_info.get("MinShipLevel"))
         self._missile_design_id: int = _parse.pss_int(room_design_info.get("MissileDesignId"))
         self._price_string: str = _parse.pss_str(room_design_info.get("PriceString"))
@@ -60,6 +62,10 @@ class RoomDesignRaw:
         self._supported_grid_types: int = _parse.pss_int(room_design_info.get("SupportedGridTypes"))
         self._target_type: str = _parse.pss_str(room_design_info.get("TargetType"))
         self._upgrade_from_room_design_id: int = _parse.pss_int(room_design_info.get("UpgradeFromRoomDesignId"))
+
+    @property
+    def activation_delay(self) -> int:
+        return self._activation_delay
 
     @property
     def capacity(self) -> int:
@@ -162,6 +168,10 @@ class RoomDesignRaw:
         return self._metadata
 
     @property
+    def min_range(self) -> int:
+        return self._min_range
+
+    @property
     def min_ship_level(self) -> int:
         return self._min_ship_level
 
@@ -247,6 +257,7 @@ class RoomDesignRaw:
 
     def _key(self):
         return (
+            self.activation_delay,
             self.capacity,
             self.category_type,
             self.columns,
@@ -272,6 +283,7 @@ class RoomDesignRaw:
             self.max_power_generated,
             self.max_system_power,
             self.metadata,
+            self.min_range,
             self.min_ship_level,
             self.missile_design_id,
             self.price_string,
@@ -298,6 +310,7 @@ class RoomDesignRaw:
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "ActivationDelay": self.activation_delay,
                 "Capacity": self.capacity,
                 "CategoryType": self.category_type,
                 "Columns": self.columns,
@@ -323,6 +336,7 @@ class RoomDesignRaw:
                 "MaxPowerGenerated": self.max_power_generated,
                 "MaxSystemPower": self.max_system_power,
                 "Metadata": self.metadata,
+                "MinRange": self.min_range,
                 "MinShipLevel": self.min_ship_level,
                 "MissileDesignId": self.missile_design_id,
                 "PriceString": self.price_string,

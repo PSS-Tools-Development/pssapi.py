@@ -18,7 +18,7 @@ class UserLoginRaw:
     def __init__(self, user_login_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._previous_last_login_date: _datetime = _parse.pss_datetime(user_login_info.get("PreviousLastLoginDate"))
-        self._user: _entities.User = _entities.User(user_login_info.get("User")) if user_login_info.get("User") else None
+        self._user: _entities.User = _entities.User(user_login_info.get("User")[0]) if user_login_info.get("User", []) else None
         self._user_id: int = _parse.pss_int(user_login_info.get("UserId"))
         self._access_token: str = _parse.pss_str(user_login_info.get("accessToken"))
 

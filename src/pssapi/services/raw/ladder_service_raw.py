@@ -1,5 +1,6 @@
 """
-    This file has been generated automatically
+    This file has been generated automatically.
+    Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
@@ -22,7 +23,7 @@ async def list_users_by_championship_score_ranking(production_server: str, acces
     return result
 
 
-async def list_users_by_ranking(production_server: str, access_token: str, from_: int, to: int, to_100: str, **params) -> _List[_User]:
-    params = {"accessToken": access_token, "from": from_, "to": to, "to100": to_100, **params}
+async def list_users_by_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> _List[_User]:
+    params = {"accessToken": access_token, "from": from_, "to": to, **params}
     result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, LIST_USERS_BY_RANKING_BASE_PATH, "GET", **params)
     return result

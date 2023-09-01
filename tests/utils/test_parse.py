@@ -12,13 +12,29 @@ def test_pss_bool():
     assert _parse.pss_bool("true")
     assert not _parse.pss_bool("false")
     assert _parse.pss_bool(None, 1) == 1
+    assert _parse.pss_bool(False) is False
+    assert _parse.pss_bool(True) is True
 
     with _pytest.raises(Exception):
         _parse.pss_bool(2)  # value is not str
     with _pytest.raises(Exception):
         _parse.pss_bool("kek")  # value has wrong format
-    with _pytest.raises(Exception):
-        _parse.pss_bool(True)  # value is not str
+
+
+def test_pss_color():
+    assert _parse.pss_color(None) is None
+    assert _parse.pss_color("") is None
+    assert _parse.pss_color("  ") is None
+
+    color_1 = _parse.pss_color("64,128,255")
+    assert color_1.red == 64
+    assert color_1.green == 128
+    assert color_1.blue == 255
+
+    color_2 = _parse.pss_color("#4080FF")
+    assert color_2.red == 64
+    assert color_2.green == 128
+    assert color_2.blue == 255
 
 
 def test_pss_datetime():
@@ -35,15 +51,17 @@ def test_pss_datetime():
 
 
 def test_pss_int_enum():
-    assert _parse.pss_int_enum(None, _enums.VisibilityFlags) is None
-    assert _parse.pss_int_enum("", _enums.VisibilityFlags) is None
-    assert _parse.pss_int_enum("3", _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
-    assert _parse.pss_int_enum(3, _enums.VisibilityFlags) == _enums.VisibilityFlags.ALWAYS_SHOW
+    assert _parse.pss_int_enum(None, _enums.CrewRarity) is None
+    assert _parse.pss_int_enum("", _enums.CrewRarity) is None
+    assert _parse.pss_int_enum("3", _enums.CrewRarity) == _enums.CrewRarity.EPIC
+    assert _parse.pss_int_enum(3, _enums.CrewRarity) == _enums.CrewRarity.EPIC
+    assert _parse.pss_int_enum("0", _enums.CrewRarity) == _enums.CrewRarity.COMMON
+    assert _parse.pss_int_enum(0, _enums.CrewRarity) == _enums.CrewRarity.COMMON
 
     with _pytest.raises(ValueError):  # The enum doesn't have such a value
-        _parse.pss_int_enum("10", _enums.VisibilityFlags)
+        _parse.pss_int_enum("10", _enums.CrewRarity)
     with _pytest.raises(ValueError):  # The enum doesn't have such a value
-        _parse.pss_int_enum("f", _enums.VisibilityFlags)
+        _parse.pss_int_enum("f", _enums.CrewRarity)
 
 
 def test_pss_int_flag():
@@ -52,6 +70,14 @@ def test_pss_int_flag():
     assert _parse.pss_int_flag("1", _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP
     assert _parse.pss_int_flag(3, _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP | _enums.SituationDesignFlag.AFFECT_DEFENDING_SHIP
     assert _parse.pss_int_flag("3", _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP | _enums.SituationDesignFlag.AFFECT_DEFENDING_SHIP
+
+    # If '0' shall be parsed for an IntFlag enum without a matching value, return None
+    assert _parse.pss_int_flag("0", _enums.SaleItemMask) is None
+    assert _parse.pss_int_flag(0, _enums.SaleItemMask) is None
+
+    # If '0' shall be parsed for an IntFlag enum with a matching value, return None, too
+    assert _parse.pss_int_flag("0", _enums.SituationDesignFlag) is None
+    assert _parse.pss_int_flag(0, _enums.SituationDesignFlag) is None
 
     with _pytest.raises(ValueError):  # The value is out of bounds
         _parse.pss_int_flag(64, _enums.SituationDesignFlag)
@@ -96,6 +122,13 @@ def test_pss_int():
     assert _parse.pss_int(None) is None
     assert _parse.pss_int(None, 1) == 1
     assert _parse.pss_int(None, "A") == "A"
+    assert _parse.pss_int("") is None
+    assert _parse.pss_int("", 1) == 1
+    assert _parse.pss_int("", "A") == "A"
+
+    result = _parse.pss_int("0")
+    assert isinstance(result, int)
+    assert result == 0
 
     result = _parse.pss_int("1")
     assert isinstance(result, int)
@@ -105,7 +138,9 @@ def test_pss_int():
     assert isinstance(result, int)
     assert result == 50000
 
-    assert _parse.pss_float(8) == 8
+    assert _parse.pss_int(0) == 0
+    assert _parse.pss_int(0, 1) == 0
+    assert _parse.pss_int(8) == 8
 
     with _pytest.raises(Exception):
         _parse.pss_int("1.2")  # value is wrong format (float)

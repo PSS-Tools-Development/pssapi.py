@@ -9,5 +9,5 @@ from .raw import RoomDesignSpriteServiceRaw as _RoomDesignSpriteServiceRaw
 class RoomDesignSpriteService(_service_base.CacheableServiceBase):
     async def list_room_design_sprites(self, design_version: int = None) -> _List[_RoomDesignSprite]:
         production_server = await self.get_production_server()
-        result = await _RoomDesignSpriteServiceRaw.list_room_design_sprites(production_server, design_version)
+        result = await _RoomDesignSpriteServiceRaw.list_room_design_sprites_2(production_server, design_version, self.language_key)
         return result
