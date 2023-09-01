@@ -114,5 +114,4 @@ The library has been updated to Pixel Starships v0.997.4.12193 (IOS), v0.997.4.9
 ## Bugfixes
 - Fixed `_key` method of `PlanetRaw` to return an empty `tuple`
 ## Test changes
-- Added more fixtures for testing
-- Updated cassettes for changed endpoints
+- Added tests
