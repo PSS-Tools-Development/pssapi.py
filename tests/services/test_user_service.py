@@ -46,6 +46,30 @@ async def test_device_login(
 
 
 @pytest.mark.asyncio
+@pytest.mark.usefixtures("checksum_key", "client", "client_date_time", "device_key", "device_type", "language_key")
+@pytest.mark.vcr()
+async def test_device_login_12(
+    checksum_key: str, client: pssapi.PssApiClient, client_date_time: datetime.datetime, device_key: str, device_type: pssapi.enums.DeviceType, language_key: pssapi.enums.LanguageKey
+):
+    checksum = client.user_service.utils.create_device_login_checksum(device_key, device_type, client_date_time, checksum_key)
+    user_login = await client.user_service.device_login_12(checksum, client_date_time, device_key, device_type, language_key)
+    assert isinstance(user_login, pssapi.entities.UserLogin)
+    assert user_login.access_token
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("checksum_key", "client", "client_date_time", "device_key", "device_type", "language_key")
+@pytest.mark.vcr()
+async def test_device_login_15(
+    checksum_key: str, client: pssapi.PssApiClient, client_date_time: datetime.datetime, device_key: str, device_type: pssapi.enums.DeviceType, language_key: pssapi.enums.LanguageKey
+):
+    checksum = client.user_service.utils.create_device_login_checksum(device_key, device_type, client_date_time, checksum_key)
+    user_login = await client.user_service.device_login_15(checksum, client_date_time, device_key, device_type, language_key)
+    assert isinstance(user_login, pssapi.entities.UserLogin)
+    assert user_login.access_token
+
+
+@pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
 @pytest.mark.vcr()
 async def test_list_friends(client: pssapi.PssApiClient, access_token: str):

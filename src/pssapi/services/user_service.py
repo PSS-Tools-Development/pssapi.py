@@ -50,6 +50,87 @@ class UserService(_service_base.ServiceBase):
         client_date_time: _datetime,
         device_key: str,
         device_type: _enums.DeviceType,
+        access_token: str = None,
+        advertising_key: str = None,
+        client_build: int = None,
+        client_version: str = None,
+        device_name: str = None,
+        is_jail_broken: bool = None,
+        locale: str = None,
+        os_build: int = None,
+        os_version: str = None,
+        refresh_token: str = None,
+        signal: bool = None,
+    ) -> _entities.UserLogin:
+        """
+        This is a shortcut to `UserService.device_login_15`.
+        """
+        return await self.device_login_15(
+            checksum,
+            client_date_time,
+            device_key,
+            device_type,
+            self.language_key,
+            access_token,
+            advertising_key,
+            client_build,
+            client_version,
+            device_name,
+            is_jail_broken,
+            locale,
+            os_build,
+            os_version,
+            refresh_token,
+            signal
+        )
+
+    async def device_login_12(
+        self,
+        checksum: str,
+        client_date_time: _datetime,
+        device_key: str,
+        device_type: _enums.DeviceType,
+        language_key: _enums.LanguageKey,
+        access_token: str = None,
+        advertising_key: str = None,
+        client_build: int = None,
+        client_version: str = None,
+        device_name: str = None,
+        is_jail_broken: bool = None,
+        locale: str = None,
+        os_build: int = None,
+        os_version: str = None,
+        refresh_token: str = None,
+        signal: bool = None,
+    ) -> _entities.UserLogin:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.device_login_12(
+            production_server,
+            access_token or "00000000-0000-0000-0000-000000000000",
+            advertising_key or "00000000-0000-0000-0000-000000000000",
+            checksum,
+            client_build or "",
+            _utils.datetime.convert_to_pss_timestamp(client_date_time),
+            client_version,
+            device_key,
+            device_name or "",
+            str(device_type),
+            _utils.convert.to_pss_bool(is_jail_broken or False),
+            str(language_key) if language_key else None,
+            locale or "",
+            os_build or "",
+            os_version or "",
+            refresh_token,
+            _utils.convert.to_pss_bool(signal or False),
+        )
+        return result
+
+    async def device_login_15(
+        self,
+        checksum: str,
+        client_date_time: _datetime,
+        device_key: str,
+        device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
         access_token: str = None,
         advertising_key: str = None,
