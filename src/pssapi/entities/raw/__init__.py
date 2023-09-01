@@ -49,6 +49,8 @@ from .setting_raw import SettingRaw
 from .ship_design_raw import ShipDesignRaw
 from .ship_raw import ShipRaw
 from .situation_design_raw import SituationDesignRaw
+from .skin_raw import SkinRaw
+from .skin_set_raw import SkinSetRaw
 from .sprite_raw import SpriteRaw
 from .star_system_link_raw import StarSystemLinkRaw
 from .star_system_marker_generator_raw import StarSystemMarkerGeneratorRaw
@@ -115,6 +117,8 @@ __all__ = [
     "ShipRaw",
     "ShipDesignRaw",
     "SituationDesignRaw",
+    "SkinRaw",
+    "SkinSetRaw",
     "SpriteRaw",
     "StarSystemRaw",
     "StarSystemLinkRaw",

@@ -1,69 +1,44 @@
 interactions:
 - request:
-    body: null
+    body: '{"AccessToken": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "AdvertisingKey":
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "Checksum": "72364e6784a4b4e0b6713249d8c6f7b9",
+      "ClientDateTime": "2023-08-05T17:55:58", "DeviceKey": "e6a3815568cd", "DeviceType":
+      "DeviceTypeAndroid", "IsJailBroken": "false", "LanguageKey": "en", "Signal":
+      "false", "UserDeviceInfo": {"ClientBuild": "", "DeviceName": "", "Locale": "",
+      "OSBuild": "", "OsVersion": ""}}'
     headers: {}
-    method: GET
-    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-06-22T08:38:42
+    method: POST
+    uri: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
   response:
     body:
-      string: <GalaxyService><ListStarSystemMarkers><StarSystemMarkers><StarSystemMarker
-        StarSystemMarkerId="7805174" StarSystemId="39" FromStarSystemId="39" NextStarSystemId="39"
-        OriginStarSystemId="39" OriginNextStarSystemId="39" MarkerFlags="6" MarkerType="MissionObjective"
-        CostString="" RewardString="" IsCollected="false" IsRepeatable="false" Title=""
-        TravelTimeMultiplier="0" PurchaseFlags="0" Metadata="" ShipIds="" MovementType="None"
-        TravelCoolDownTime="0" CompletionOriginalValue="0" CompletionValueType="None"
-        CompletionRemainingValue="0" RequirementString="" CostType="None" Description=""
-        StarSystemArrivalDate="2021-11-24T10:17:09" ExpiryDate="2055-07-22T00:00:00"
-        UserId="8729280" MissionDesignId="194" CompletionDate="2055-07-22T00:00:00"
-        SpriteId="12838" MissionEventId="0" MarkerDesignId="0" ShipId="0" TravelStartDate="2022-08-22T07:04:33"
-        LastUpdateDate="2022-08-22T07:06:13" StarSystemMarkerGeneratorId="0" /><StarSystemMarker
-        StarSystemMarkerId="30742602" StarSystemId="27" FromStarSystemId="10" NextStarSystemId="25"
-        OriginStarSystemId="10" OriginNextStarSystemId="25" MarkerFlags="74" MarkerType="NPCShip"
-        CostString="" RewardString="item:778x12|item:741x2" IsCollected="false" IsRepeatable="false"
-        Title="Close Encounters" TravelTimeMultiplier="300" PurchaseFlags="0" Metadata=""
-        ShipIds="212,213,214" MovementType="TwoWay" TravelCoolDownTime="0" CompletionOriginalValue="1"
-        CompletionValueType="Wins" CompletionRemainingValue="1" RequirementString=""
-        CostType="None" Description="A Gray scouting party is gathering intel on system
-        defences. Best ensure that information doesn't get back to their fleets."
-        StarSystemArrivalDate="2023-05-22T09:21:25" ExpiryDate="2023-05-22T15:18:38"
-        UserId="8729280" MissionDesignId="0" CompletionDate="2000-01-01T00:00:00"
-        SpriteId="18314" MissionEventId="0" MarkerDesignId="17" ShipId="212" TravelStartDate="2023-05-22T09:09:25"
-        LastUpdateDate="2023-05-22T09:18:49" StarSystemMarkerGeneratorId="17" /><StarSystemMarker
-        StarSystemMarkerId="15267489" StarSystemId="19" FromStarSystemId="19" NextStarSystemId="19"
-        OriginStarSystemId="19" OriginNextStarSystemId="19" MarkerFlags="42" MarkerType="Mining"
-        CostString="item:781x1" RewardString="item:781x1|item:103x1" IsCollected="false"
-        IsRepeatable="true" Title="Mining Drone" TravelTimeMultiplier="1" PurchaseFlags="0"
-        Metadata="" ShipIds="" MovementType="None" TravelCoolDownTime="0" CompletionOriginalValue="1"
-        CompletionValueType="Wins" CompletionRemainingValue="1" RequirementString=""
-        CostType="None" Description="" StarSystemArrivalDate="2022-10-04T09:16:26"
-        ExpiryDate="2055-07-22T00:00:00" UserId="8729280" MissionDesignId="301" CompletionDate="2022-10-04T21:16:26"
-        SpriteId="12840" MissionEventId="1661" MarkerDesignId="0" ShipId="0" TravelStartDate="2022-10-04T09:16:26"
-        LastUpdateDate="2022-10-04T09:16:26" StarSystemMarkerGeneratorId="0" /><StarSystemMarker
-        StarSystemMarkerId="32873098" StarSystemId="45" FromStarSystemId="19" NextStarSystemId="12"
-        OriginStarSystemId="19" OriginNextStarSystemId="12" MarkerFlags="74" MarkerType="NPCShip"
-        CostString="" RewardString="item:778x12|item:741x2" IsCollected="false" IsRepeatable="false"
-        Title="Close Encounters" TravelTimeMultiplier="300" PurchaseFlags="0" Metadata=""
-        ShipIds="212,213,214" MovementType="TwoWay" TravelCoolDownTime="0" CompletionOriginalValue="1"
-        CompletionValueType="Wins" CompletionRemainingValue="1" RequirementString=""
-        CostType="None" Description="A Gray scouting party is gathering intel on system
-        defences. Best ensure that information doesn't get back to their fleets."
-        StarSystemArrivalDate="2023-06-22T08:49:00" ExpiryDate="2023-06-22T09:28:53"
-        UserId="8729280" MissionDesignId="0" CompletionDate="2000-01-01T00:00:00"
-        SpriteId="18314" MissionEventId="0" MarkerDesignId="17" ShipId="214" TravelStartDate="2023-06-22T08:28:45"
-        LastUpdateDate="2023-06-22T08:38:48" StarSystemMarkerGeneratorId="17" /><StarSystemMarker
-        StarSystemMarkerId="32848700" StarSystemId="18" FromStarSystemId="34" NextStarSystemId="41"
-        OriginStarSystemId="34" OriginNextStarSystemId="41" MarkerFlags="73" MarkerType="MerchantShip"
-        CostString="item:778x93|item:778x66|item:742x42|item:742x30|item:743x18|item:778x666"
-        RewardString="item:738|item:1242|item:107|item:389|item:1294|item:808" IsCollected="false"
-        IsRepeatable="false" Title="Visiri Emissary" TravelTimeMultiplier="300" PurchaseFlags="0"
-        Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18217&quot;, &quot;TitleImageSpriteId&quot;:&quot;18219&quot;}"
-        ShipIds="" MovementType="Wander" TravelCoolDownTime="0" CompletionOriginalValue="0"
-        CompletionValueType="None" CompletionRemainingValue="0" RequirementString=""
-        CostType="None" Description="A representative from the Visiri Expansionary
-        Trade Guild. Be quick! Stock is updated regularly across its voyage." StarSystemArrivalDate="2023-06-22T08:48:45"
-        ExpiryDate="2023-06-22T11:59:55" UserId="0" MissionDesignId="0" CompletionDate="2000-01-01T00:00:00"
-        SpriteId="18218" MissionEventId="0" MarkerDesignId="10" ShipId="0" TravelStartDate="2023-06-22T08:26:15"
-        LastUpdateDate="2023-06-22T08:26:16" StarSystemMarkerGeneratorId="10" /></StarSystemMarkers></ListStarSystemMarkers></GalaxyService>
+      string: <UserService><UserLogin accessToken="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        PreviousLastLoginDate ="2023-08-05T12:31:08" UserId="10514214"><User Id="10514214"
+        LastAlertDate="2023-07-29T12:52:16.867" UserType="Unverified" GenderType="Unknown"
+        RaceType="Unknown" Credits="100" ProfileImageUrl="" Trophy="1000" GameCenterName=""
+        CompletedMissionDesigns="" LanguageKey="en" TutorialStatus="0" IconSpriteId="653"
+        TipStatus="0" AllianceMembership="None" CrewDonated="0" CrewReceived="0" FreeStarbuxReceivedToday="0"
+        DailyRewardStatus="0" HeroBonusChance="0" GameCenterFriendCount="0" CompletedMissionEventIds=""
+        UnlockedShipDesignIds="" UnlockedCharacterDesignIds="" Status="0" LastCatalogPurchaseDate="1900-01-01T00:00:00"
+        VipExpiryDate="1900-01-01T00:00:00" ChallengeWins="0" ChallengeLosses="0"
+        LoadingPercentage="0" AllianceSupplyDonation="0" TotalSupplyDonation="0" DailyMissionsAttempted=""
+        PurchaseRewardPoints="0" UsedRewardPoints="0" GooglePlayName="" TournamentRewardPoints="0"
+        AllianceScore="0" ChampionshipScore="0" DailyChallengeWinStreak="0" DrawsUsedToday="0"
+        ActivatedPromotions="" PVPAttackWins="0" PVPAttackLosses="0" PVPAttackDraws="0"
+        PVPDefenceDraws="0" PVPDefenceWins="0" PVPDefenceLosses="0" HighestTrophy="1000"
+        ChatAppearance="0" AuthenticationType="Basic" DailyPVPAttacks="0" ExploredStarSystemIds=""
+        TournamentBonusScore="0" SituationOccurrencesToday="0" Flags="0" EmailVerificationStatus="None"
+        BoostAmount="0" PassPoints="0" TaskRerollCount="0" LeagueType="Standard" DailyPvPDefence="0"
+        TrophyGained="0" UnlockedSkinKeys="" RewardsCollectable="false" IsUnderAge="false"
+        MatchingStatus="Active" ShipDesignId="0" AllianceSpriteId="0" Ranking="0"  TournamentResetDate="2023-07-29T12:52:16"
+        AllianceJoinDate="1900-01-01T00:00:00" LastPurchaseDate="" LastHeartBeatDate="2023-08-05T17:57:56"
+        LastRewardActionDate="2023-07-29T12:52:16" CooldownExpiry="2023-07-29T12:52:16"
+        CreationDate="2023-07-29T12:52:16" LastLoginDate="2023-08-05T17:57:56" LastVipClaimDate="2023-07-29T12:52:16"
+        AllianceId="0" ChallengeDesignId="0" LastChallengeDesignId="0" CaptainCharacterDesignId="0"
+        AllianceQualifyDivisionDesignId="0" BlockAuthAttemptsUntilDate="2000-01-01T00:00:00"
+        BoostEndDate="2000-01-01T00:00:00" LastBoostDate="2000-01-01T00:00:00" UpdateDate="2023-08-05T12:31:08"
+        OwnerUserId="0"><UserSeason UserSeasonId="2691863" SeasonDesignId="13" UserId="10514214"
+        Points="0" UnlockedRewardDesignIds="" PurchaseVIPDate="2000-01-01T00:00:00"
+        PurchaseVIPStatus="None" /></User></UserLogin></UserService>
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -78,19 +53,19 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '1626'
+      - '1270'
       Content-Type:
       - application/xml
       Date:
-      - Thu, 22 Jun 2023 08:38:48 GMT
+      - Sat, 05 Aug 2023 17:57:57 GMT
       Server:
       - Microsoft-IIS/10.0
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 bc66fd12bea603144bf0b6c1578cb3e0.cloudfront.net (CloudFront)
+      - 1.1 5f2bb43f258333f4156847ce1f482ee6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - lmm9a7JWTnG6xbki5Z8mpvxmYjwJY_dy8J4r-UDtoupgMOhF8oc94Q==
+      - 2moy1UxRoQYqJz00iPuvm-ZEtqjZdZnI5BerC3B4mVlu3KTY5lOGkw==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -102,5 +77,66 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-06-22T08:38:42
+    url: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
+  response:
+    body:
+      string: <GalaxyService><ListStarSystemMarkers><StarSystemMarkers><StarSystemMarker
+        StarSystemMarkerId="36114733" StarSystemId="34" FromStarSystemId="39" NextStarSystemId="27"
+        OriginStarSystemId="39" OriginNextStarSystemId="27" MarkerFlags="73" MarkerType="MerchantShip"
+        CostString="item:778x103|item:741x12|item:778x100|item:778x250|item:778x333|item:744x4"
+        RewardString="item:461|item:153|item:1241|item:462|item:1247|item:1253" IsCollected="false"
+        IsRepeatable="false" Title="Gray Bazaar" TravelTimeMultiplier="300" PurchaseFlags="0"
+        Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18215&quot;, &quot;TitleImageSpriteId&quot;:&quot;18216&quot;}"
+        ShipIds="" MovementType="Wander" TravelCoolDownTime="0" CompletionOriginalValue="0"
+        CompletionValueType="None" CompletionRemainingValue="0" RequirementString=""
+        CostType="None" Description="A strange craft rarely seen in this sector, boasting
+        rarely seen deals at rarely seen prices. Be quick! Stock is updated regularly
+        across its voyage." StarSystemArrivalDate="2023-08-05T17:59:45" ExpiryDate="2023-08-05T23:59:55"
+        UserId="0" MissionDesignId="0" CompletionDate="2000-01-01T00:00:00" SpriteId="18214"
+        MissionEventId="0" MarkerDesignId="11" ShipId="0" TravelStartDate="2023-08-05T17:37:15"
+        LastUpdateDate="2023-08-05T17:37:16" StarSystemMarkerGeneratorId="11" /></StarSystemMarkers></ListStarSystemMarkers></GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '827'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sat, 05 Aug 2023 17:57:57 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f457b4e0db5ab2b66536f068ee4589c0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - vJvlnonmN5sqZOXgpMj3uJkyHKLX_l0matIwQgbsrrBCLqCpeBoJqw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
 version: 1

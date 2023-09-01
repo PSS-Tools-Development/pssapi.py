@@ -50,6 +50,7 @@ class SettingRaw:
         self._daily_reward_type: str = _parse.pss_str(setting_info.get("DailyRewardType"))
         self._division_design_version: int = _parse.pss_int(setting_info.get("DivisionDesignVersion"))
         self._draw_design_version: int = _parse.pss_int(setting_info.get("DrawDesignVersion"))
+        self._engine_efficiency_loss: float = _parse.pss_float(setting_info.get("EngineEfficiencyLoss"))
         self._feature_mask: int = _parse.pss_int(setting_info.get("FeatureMask"))
         self._file_version: int = _parse.pss_int(setting_info.get("FileVersion"))
         self._flags: int = _parse.pss_int(setting_info.get("Flags"))
@@ -82,9 +83,13 @@ class SettingRaw:
         self._loading_title_sprite_id: int = _parse.pss_int(setting_info.get("LoadingTitleSpriteId"))
         self._loot_modifiers: str = _parse.pss_str(setting_info.get("LootModifiers"))
         self._maintenance_message: str = _parse.pss_str(setting_info.get("MaintenanceMessage"))
+        self._maintenance_title: str = _parse.pss_str(setting_info.get("MaintenanceTitle"))
         self._marker_generator_design_version: int = _parse.pss_int(setting_info.get("MarkerGeneratorDesignVersion"))
         self._max_boost_duration: int = _parse.pss_int(setting_info.get("MaxBoostDuration"))
         self._max_daily_draws: int = _parse.pss_int(setting_info.get("MaxDailyDraws"))
+        self._max_redemption_count: int = _parse.pss_int(setting_info.get("MaxRedemptionCount"))
+        self._max_redemption_count_per_month: int = _parse.pss_int(setting_info.get("MaxRedemptionCountPerMonth"))
+        self._merchant_ship_exterior_sprite_id: int = _parse.pss_int(setting_info.get("MerchantShipExteriorSpriteId"))
         self._merchant_ship_sprite_id: int = _parse.pss_int(setting_info.get("MerchantShipSpriteId"))
         self._minimum_client_version: str = _parse.pss_str(setting_info.get("MinimumClientVersion"))
         self._minimum_version: str = _parse.pss_str(setting_info.get("MinimumVersion"))
@@ -127,6 +132,7 @@ class SettingRaw:
         self._ship_design_version: int = _parse.pss_int(setting_info.get("ShipDesignVersion"))
         self._situation_design_version: int = _parse.pss_int(setting_info.get("SituationDesignVersion"))
         self._situation_tags: str = _parse.pss_str(setting_info.get("SituationTags"))
+        self._skin_version: int = _parse.pss_int(setting_info.get("SkinVersion"))
         self._sprite_version: int = _parse.pss_int(setting_info.get("SpriteVersion"))
         self._star_system_link_version: int = _parse.pss_int(setting_info.get("StarSystemLinkVersion"))
         self._star_system_version: int = _parse.pss_int(setting_info.get("StarSystemVersion"))
@@ -284,6 +290,10 @@ class SettingRaw:
         return self._draw_design_version
 
     @property
+    def engine_efficiency_loss(self) -> float:
+        return self._engine_efficiency_loss
+
+    @property
     def feature_mask(self) -> int:
         return self._feature_mask
 
@@ -412,6 +422,10 @@ class SettingRaw:
         return self._maintenance_message
 
     @property
+    def maintenance_title(self) -> str:
+        return self._maintenance_title
+
+    @property
     def marker_generator_design_version(self) -> int:
         return self._marker_generator_design_version
 
@@ -422,6 +436,18 @@ class SettingRaw:
     @property
     def max_daily_draws(self) -> int:
         return self._max_daily_draws
+
+    @property
+    def max_redemption_count(self) -> int:
+        return self._max_redemption_count
+
+    @property
+    def max_redemption_count_per_month(self) -> int:
+        return self._max_redemption_count_per_month
+
+    @property
+    def merchant_ship_exterior_sprite_id(self) -> int:
+        return self._merchant_ship_exterior_sprite_id
 
     @property
     def merchant_ship_sprite_id(self) -> int:
@@ -592,6 +618,10 @@ class SettingRaw:
         return self._situation_tags
 
     @property
+    def skin_version(self) -> int:
+        return self._skin_version
+
+    @property
     def sprite_version(self) -> int:
         return self._sprite_version
 
@@ -688,6 +718,7 @@ class SettingRaw:
             self.daily_reward_type,
             self.division_design_version,
             self.draw_design_version,
+            self.engine_efficiency_loss,
             self.feature_mask,
             self.file_version,
             self.flags,
@@ -720,9 +751,13 @@ class SettingRaw:
             self.loading_title_sprite_id,
             self.loot_modifiers,
             self.maintenance_message,
+            self.maintenance_title,
             self.marker_generator_design_version,
             self.max_boost_duration,
             self.max_daily_draws,
+            self.max_redemption_count,
+            self.max_redemption_count_per_month,
+            self.merchant_ship_exterior_sprite_id,
             self.merchant_ship_sprite_id,
             self.minimum_client_version,
             self.minimum_version,
@@ -765,6 +800,7 @@ class SettingRaw:
             self.ship_design_version,
             self.situation_design_version,
             self.situation_tags,
+            self.skin_version,
             self.sprite_version,
             self.star_system_link_version,
             self.star_system_version,
@@ -820,6 +856,7 @@ class SettingRaw:
                 "DailyRewardType": self.daily_reward_type,
                 "DivisionDesignVersion": self.division_design_version,
                 "DrawDesignVersion": self.draw_design_version,
+                "EngineEfficiencyLoss": self.engine_efficiency_loss,
                 "FeatureMask": self.feature_mask,
                 "FileVersion": self.file_version,
                 "Flags": self.flags,
@@ -852,9 +889,13 @@ class SettingRaw:
                 "LoadingTitleSpriteId": self.loading_title_sprite_id,
                 "LootModifiers": self.loot_modifiers,
                 "MaintenanceMessage": self.maintenance_message,
+                "MaintenanceTitle": self.maintenance_title,
                 "MarkerGeneratorDesignVersion": self.marker_generator_design_version,
                 "MaxBoostDuration": self.max_boost_duration,
                 "MaxDailyDraws": self.max_daily_draws,
+                "MaxRedemptionCount": self.max_redemption_count,
+                "MaxRedemptionCountPerMonth": self.max_redemption_count_per_month,
+                "MerchantShipExteriorSpriteId": self.merchant_ship_exterior_sprite_id,
                 "MerchantShipSpriteId": self.merchant_ship_sprite_id,
                 "MinimumClientVersion": self.minimum_client_version,
                 "MinimumVersion": self.minimum_version,
@@ -897,6 +938,7 @@ class SettingRaw:
                 "ShipDesignVersion": self.ship_design_version,
                 "SituationDesignVersion": self.situation_design_version,
                 "SituationTags": self.situation_tags,
+                "SkinVersion": self.skin_version,
                 "SpriteVersion": self.sprite_version,
                 "StarSystemLinkVersion": self.star_system_link_version,
                 "StarSystemVersion": self.star_system_version,

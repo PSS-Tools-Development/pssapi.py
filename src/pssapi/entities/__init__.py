@@ -50,6 +50,8 @@ from .setting import Setting
 from .ship import Ship
 from .ship_design import ShipDesign
 from .situation_design import SituationDesign
+from .skin import Skin
+from .skin_set import SkinSet
 from .sprite import Sprite
 from .star_system import StarSystem
 from .star_system_link import StarSystemLink
@@ -118,6 +120,8 @@ __all__ = [
     "Ship",
     "ShipDesign",
     "SituationDesign",
+    "Skin",
+    "SkinSet",
     "Sprite",
     "StarSystem",
     "StarSystemLink",

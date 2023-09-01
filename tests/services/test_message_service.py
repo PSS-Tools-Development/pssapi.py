@@ -3,6 +3,7 @@ import pytest
 import pssapi
 
 ITEM_DESIGN_ID: int = 778  # Void Particle
+USER_ID: int = 4510693  # The worst.
 
 
 @pytest.mark.asyncio
@@ -33,6 +34,14 @@ async def test_list_private_messages(client: pssapi.PssApiClient, access_token: 
     assert isinstance(messages, list)
     assert len(messages) > 0
     assert isinstance(messages[0], pssapi.entities.Message)
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("access_token", "client")
+@pytest.mark.vcr()
+async def test_send_private_message(client: pssapi.PssApiClient, access_token: str):
+    message = await client.message_service.send_private_message(access_token, "This is an automated message. Please do not reply.", USER_ID)
+    assert isinstance(message, pssapi.entities.Message)
 
 
 @pytest.mark.asyncio

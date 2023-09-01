@@ -1,6 +1,8 @@
+import datetime
 import os
 
 import pytest
+import pytest_asyncio
 
 import pssapi
 
@@ -16,13 +18,12 @@ def checksum_key() -> str:
 
 
 @pytest.fixture(scope="session")
-def client() -> pssapi.PssApiClient:
-    client = pssapi.PssApiClient(device_type=pssapi.enums.DeviceType.ANDROID, language_key=pssapi.enums.LanguageKey.ENGLISH, production_server="api.pixelstarships.com")
-    return client
+def client(device_type: pssapi.enums.DeviceType.ANDROID, language_key: str) -> pssapi.PssApiClient:
+    return pssapi.PssApiClient(device_type=device_type, language_key=language_key, production_server="api.pixelstarships.com")
 
 
 @pytest.fixture(scope="session")
-def client_date_time() -> str:
+def client_date_time() -> datetime.datetime:
     return pssapi.utils.get_utc_now()
 
 
@@ -46,6 +47,14 @@ def device_type() -> pssapi.enums.DeviceType:
     return pssapi.enums.DeviceType.ANDROID
 
 
+@pytest_asyncio.fixture()
+async def generated_access_token(client: pssapi.PssApiClient, device_key: str, device_type: pssapi.enums.DeviceType, client_date_time: datetime.datetime, checksum_key: str, language_key: str) -> str:
+    checksum = client.user_service.utils.create_device_login_checksum(device_key, device_type, client_date_time, checksum_key)
+    user_login = await client.user_service.device_login(checksum, client_date_time, device_key, device_type, language_key)
+    result = user_login.access_token
+    return result
+
+
 @pytest.fixture(scope="session")
 def language_key() -> pssapi.enums.LanguageKey:
     return pssapi.enums.LanguageKey.ENGLISH
@@ -60,12 +69,12 @@ def vcr_config():
 
 
 @pytest.fixture(scope="function")
-def vcr_cassette_name(request):
+def vcr_cassette_name(request: pytest.FixtureRequest):
     cassette_name = request.node.name.removeprefix("test_")
     return cassette_name
 
 
 @pytest.fixture(scope="module")
-def vcr_cassette_dir(request):
+def vcr_cassette_dir(request: pytest.FixtureRequest):
     folder_name = request.module.__name__.split(".")[-1].removeprefix("test_")
     return f"tests/cassettes/{folder_name}"

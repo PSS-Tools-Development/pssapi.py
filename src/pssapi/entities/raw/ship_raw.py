@@ -19,12 +19,15 @@ class ShipRaw:
     def __init__(self, ship_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._brightness_value: float = _parse.pss_float(ship_info.get("BrightnessValue"))
+        self._center_x: int = _parse.pss_int(ship_info.get("CenterX"))
+        self._center_y: int = _parse.pss_int(ship_info.get("CenterY"))
         self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.get("Characters")] if ship_info.get("Characters") else []
         self._from_star_system_id: int = _parse.pss_int(ship_info.get("FromStarSystemId"))
         self._hp: float = _parse.pss_float(ship_info.get("Hp"))
         self._hue_value: float = _parse.pss_float(ship_info.get("HueValue"))
         self._immunity_date: _datetime = _parse.pss_datetime(ship_info.get("ImmunityDate"))
         self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.get("Items")] if ship_info.get("Items") else []
+        self._next_android_character_id: int = _parse.pss_int(ship_info.get("NextAndroidCharacterId"))
         self._next_star_system_id: int = _parse.pss_int(ship_info.get("NextStarSystemId"))
         self._origin_next_star_system_id: int = _parse.pss_int(ship_info.get("OriginNextStarSystemId"))
         self._origin_star_system_id: int = _parse.pss_int(ship_info.get("OriginStarSystemId"))
@@ -47,6 +50,8 @@ class ShipRaw:
         self._status_start_date: _datetime = _parse.pss_datetime(ship_info.get("StatusStartDate"))
         self._sticker_string: str = _parse.pss_str(ship_info.get("StickerString"))
         self._tags: str = _parse.pss_str(ship_info.get("Tags"))
+        self._top_left_x: int = _parse.pss_int(ship_info.get("TopLeftX"))
+        self._top_left_y: int = _parse.pss_int(ship_info.get("TopLeftY"))
         self._unique_character_draws: int = _parse.pss_int(ship_info.get("UniqueCharacterDraws"))
         self._update_date: _datetime = _parse.pss_datetime(ship_info.get("UpdateDate"))
         self._upgrade_ship_design_id: int = _parse.pss_int(ship_info.get("UpgradeShipDesignId"))
@@ -57,6 +62,14 @@ class ShipRaw:
     @property
     def brightness_value(self) -> float:
         return self._brightness_value
+
+    @property
+    def center_x(self) -> int:
+        return self._center_x
+
+    @property
+    def center_y(self) -> int:
+        return self._center_y
 
     @property
     def characters(self) -> _List["_entities.Character"]:
@@ -81,6 +94,10 @@ class ShipRaw:
     @property
     def items(self) -> _List["_entities.Item"]:
         return self._items
+
+    @property
+    def next_android_character_id(self) -> int:
+        return self._next_android_character_id
 
     @property
     def next_star_system_id(self) -> int:
@@ -171,6 +188,14 @@ class ShipRaw:
         return self._tags
 
     @property
+    def top_left_x(self) -> int:
+        return self._top_left_x
+
+    @property
+    def top_left_y(self) -> int:
+        return self._top_left_y
+
+    @property
     def unique_character_draws(self) -> int:
         return self._unique_character_draws
 
@@ -197,12 +222,15 @@ class ShipRaw:
     def _key(self):
         return (
             self.brightness_value,
+            self.center_x,
+            self.center_y,
             tuple(child._key() for child in self.characters),
             self.from_star_system_id,
             self.hp,
             self.hue_value,
             self.immunity_date,
             tuple(child._key() for child in self.items),
+            self.next_android_character_id,
             self.next_star_system_id,
             self.origin_next_star_system_id,
             self.origin_star_system_id,
@@ -225,6 +253,8 @@ class ShipRaw:
             self.status_start_date,
             self.sticker_string,
             self.tags,
+            self.top_left_x,
+            self.top_left_y,
             self.unique_character_draws,
             self.update_date,
             self.upgrade_ship_design_id,
@@ -237,12 +267,15 @@ class ShipRaw:
         if not self._dict:
             self._dict = {
                 "BrightnessValue": self.brightness_value,
+                "CenterX": self.center_x,
+                "CenterY": self.center_y,
                 "Characters": [dict(child) for child in self.characters],
                 "FromStarSystemId": self.from_star_system_id,
                 "Hp": self.hp,
                 "HueValue": self.hue_value,
                 "ImmunityDate": self.immunity_date,
                 "Items": [dict(child) for child in self.items],
+                "NextAndroidCharacterId": self.next_android_character_id,
                 "NextStarSystemId": self.next_star_system_id,
                 "OriginNextStarSystemId": self.origin_next_star_system_id,
                 "OriginStarSystemId": self.origin_star_system_id,
@@ -265,6 +298,8 @@ class ShipRaw:
                 "StatusStartDate": self.status_start_date,
                 "StickerString": self.sticker_string,
                 "Tags": self.tags,
+                "TopLeftX": self.top_left_x,
+                "TopLeftY": self.top_left_y,
                 "UniqueCharacterDraws": self.unique_character_draws,
                 "UpdateDate": self.update_date,
                 "UpgradeShipDesignId": self.upgrade_ship_design_id,

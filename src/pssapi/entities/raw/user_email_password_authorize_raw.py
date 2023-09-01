@@ -20,6 +20,7 @@ class UserEmailPasswordAuthorizeRaw:
         self._user: _entities.User = _entities.User(user_email_password_authorize_info.get("User")[0]) if user_email_password_authorize_info.get("User", []) else None
         self._user_id: str = _parse.pss_str(user_email_password_authorize_info.get("UserId"))
         self._error_message: str = _parse.pss_str(user_email_password_authorize_info.get("errorMessage"))
+        self._refresh_token: str = _parse.pss_str(user_email_password_authorize_info.get("refreshToken"))
 
     @property
     def require_reload(self) -> str:
@@ -37,12 +38,17 @@ class UserEmailPasswordAuthorizeRaw:
     def error_message(self) -> str:
         return self._error_message
 
+    @property
+    def refresh_token(self) -> str:
+        return self._refresh_token
+
     def _key(self):
         return (
             self.require_reload,
             self.user._key() if self.user else None,
             self.user_id,
             self.error_message,
+            self.refresh_token,
         )
 
     def __dict__(self):
@@ -52,6 +58,7 @@ class UserEmailPasswordAuthorizeRaw:
                 "User": dict(self.user) if self.user else None,
                 "UserId": self.user_id,
                 "errorMessage": self.error_message,
+                "refreshToken": self.refresh_token,
             }
 
         return self._dict
