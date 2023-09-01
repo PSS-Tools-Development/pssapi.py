@@ -22,7 +22,7 @@ __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
 
 def create_request_content(structure: str, params: _Dict[str, _Any], content_type: str) -> str:
     if content_type == "json":
-        return __create_json_request_content(structure, params)
+        return create_json_request_content(structure, params)
     elif content_type == "xml":
         pass
 
@@ -72,7 +72,7 @@ async def get_production_server(device_type: str, language_key: str) -> str:
     return result
 
 
-def __create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
+def create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
     d = _json.loads(structure)
     __update_nested_dict_values(d, params)
     return _json.dumps(d)
@@ -124,10 +124,12 @@ def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
 
 def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
     for key, value in d.items():
-        if params.get(key):
-            if isinstance(value, dict):
-                __update_nested_dict_values(value, params)
-            elif value == "datetime" and isinstance(params[key], _datetime):
-                d[key] = params[key].strftime(_constants.DATETIME_FORMAT_ISO)
+        value_is_dict = isinstance(value, dict)
+        param_value = params.get(key)
+        if param_value:
+            if value == "datetime" and isinstance(param_value, _datetime):
+                d[key] = param_value.strftime(_constants.DATETIME_FORMAT_ISO)
             else:
-                d[key] = params[key]
+                d[key] = param_value
+        elif value_is_dict:
+            __update_nested_dict_values(value, params)
