@@ -1,9 +1,118 @@
 # Version 0.2.0
 ## Updated library
-The library has been updated to Pixel Starships version 0.xxx.x.xxxx (IOS) and version 0.xxx.x.xxxx (Steam, content testing version) 
+The library has been updated to Pixel Starships v0.997.4.12193 (IOS), v0.997.4.9873 (Steam) and v0.997.5.9898-beta (Steam, content testing version).
 ### Changes to Services
+- Changed `MessageService`
+  - Added endpoint `send_private_message`
+- Changed `RoomDesignSpriteService`
+  - Updated endpoint `list_room_design_sprites` to use `RoomDesignSpriteServiceRaw.list_room_design_sprites_2`
+- Changed `UserService`
+  - Added endpoint `list_skins`
+  - Updated endpoint `user_email_password_authorize` to use `UserServiceRaw.user_email_password_authorize_4`
+  - Endpoint `device_login_15` now provides default values
 ### Changes to Raw Services
+- Changed `MessageServiceRaw`
+  - Added endpoint `send_private_message_3`
+- Changed `RoomDesignSpriteServiceRaw`
+  - Added endpoint `list_room_design_sprites_2`
+- Changed `UserServiceRaw`
+  - Added endpoint `list_skins`
+  - Added endpoint `user_email_password_authorize_4`
 ### Changes to Entities
+- Added entities:
+  - `Skin`
+  - `SkinSet`
+- Changed `UserRaw`
+  - Added property `user_source_ads_platform_type_enum` (`enums.PlatformType`)
 ### Changes to Raw Entities
+- Added entities:
+  - `SkinRaw`
+  - `SkinSetRaw`
+- Changed `AllianceRaw`
+  - Added property `min_score_contribution` (`int`)
+- Changed `CharacterDesignRaw`
+  - Changed type of property `final_pilot` from `int` to `float`
+- Changed `CharacterRaw`
+  - Added properties:
+    - `battle_character_hp` (`int`)
+    - `bloodlust_frame` (`int`)
+    - `designated_room_id` (`int`)
+    - `invulnerability_frame` (`int`)
+    - `origin_room_id` (`int`)
+    - `skill_points` (`int`)
+    - `target_room_id` (`int`)
+    - `x_coordinate` (`int`)
+    - `x_coordinate_ship_relative` (`int`)
+    - `y_coordinate` (`int`)
+    - `y_coordinate_ship_relative` (`int`)
+- Changed `CraftDesignRaw`
+  - Added property `attack_distance` (`int`)
+- Changed `ItemDesignRaw`
+  - Added properties:
+    - `build_price` (`int`)
+    - `circulation` (`int`)
+    - `transaction_volume` (`int`)
+- Changed `ItemRaw`
+  - Added properties:
+    - `action_frame` (`int`)
+    - `battle_hp` (`int`)
+    - `skin_key` (`int`)
+- Changed `RoomDesignRaw`
+  - Added properties:
+    - `activation_delay` (`int`)
+    - `min_range` (`int`)
+- Changed `RoomRaw`
+  - Added properties:
+    - `assigned_power` (`int`)
+    - `center_x` (`int`)
+    - `center_y` (`int`)
+    - `current_capacity` (`int`)
+    - `disable_count` (`int`)
+    - `is_power_ai_active` (`bool`)
+    - `is_set_item_ai_active` (`bool`)
+    - `is_target_ai_active` (`bool`)
+    - `item_skin_key` (`int`)
+    - `local_center_x` (`int`)
+    - `local_center_y` (`int`)
+    - `progress` (`int`)
+    - `protect_room_frame` (`int`)
+    - `run_room_action` (`bool`)
+    - `skin_key` (`int`)
+    - `system_power` (`int`)
+    - `target_craft_id` (`int`)
+    - `target_room_id` (`int`)
+    - `top_left_x` (`int`)
+    - `top_left_y` (`int`)
+    - `total_damage` (`int`)
+- Changed `SettingsRaw`
+  - Added properties:
+    - `engine_efficiency_loss` (`float`)
+    - `maintenance_title` (`str`)
+    - `max_redemption_count` (`int`)
+    - `max_redemption_count_per_month` (`int`)
+    - `merchant_ship_exterior_sprite_id` (`int`)
+    - `skin_version` (`int`)
+- Changed `ShipRaw`
+  - Added properties:
+    - `center_x` (`int`)
+    - `center_y` (`int`)
+    - `next_android_character_id` (`int`)
+    - `top_left_x` (`int`)
+    - `top_left_y` (`int`)
+- Changed `UserEmailPasswordAuthorizeRaw`
+  - Added property `refresh_token` (`str`)
+- Changed `UserRaw`
+  - Added properties:
+    - `ads_platform_user_id` (`str`)
+    - `daily_heartbeat_seconds` (`int`)
+    - `trail_user_id` (`str`)
+    - `user_source_ads_platform_type` (`str`)
 ### Changes to Enums
-## Other changes
+- Added enums
+  - `PlatformType` (`StrEnum`)
+  - `SkinType` (`StrEnum`)
+## Bugfixes
+- Fixed `_key` method of `PlanetRaw` to return an empty `tuple`
+## Test changes
+- Added more fixtures for testing
+- Updated cassettes for changed endpoints
