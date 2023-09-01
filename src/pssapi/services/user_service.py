@@ -81,7 +81,7 @@ class UserService(_service_base.ServiceBase):
             os_build,
             os_version,
             refresh_token,
-            signal
+            signal,
         )
 
     async def device_login_12(
