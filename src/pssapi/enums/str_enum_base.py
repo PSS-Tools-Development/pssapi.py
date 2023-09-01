@@ -9,14 +9,14 @@ class StrEnumBase(_StrEnum):
                 float_value = float(value)
                 if not float_value:
                     return cls("None")
-            except:
+            except ValueError:
                 pass
 
             try:
                 int_value = int(value)
                 if not int_value:
                     return cls("None")
-            except:
+            except ValueError:
                 pass
 
             value_sanitized = value.lower().replace(" ", "")
