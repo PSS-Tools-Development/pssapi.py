@@ -84,6 +84,33 @@ class UserService(_service_base.ServiceBase):
             signal,
         )
 
+    async def device_login_11(
+        self,
+        checksum: str,
+        client_date_time: _datetime,
+        device_key: str,
+        device_type: _enums.DeviceType,
+        language_key: _enums.LanguageKey,
+        advertising_key: str = None,
+        is_jail_broken: bool = None,
+        refresh_token: str = None,
+        signal: bool = None,
+    ) -> _entities.UserLogin:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.device_login_11(
+            production_server,
+            advertising_key or '""',
+            checksum,
+            _utils.datetime.convert_to_pss_timestamp(client_date_time),
+            device_key,
+            str(device_type),
+            _utils.convert.to_pss_bool(is_jail_broken or False),
+            str(language_key) if language_key else None,
+            refresh_token,
+            _utils.convert.to_pss_bool(signal or False),
+        )
+        return result
+
     async def device_login_12(
         self,
         checksum: str,
