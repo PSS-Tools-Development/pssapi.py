@@ -2,28 +2,20 @@ from typing import Tuple as _Tuple
 from xml.etree.ElementTree import ParseError as _XmlParseError
 
 
-
 class PssApiError(Exception):
     def __init__(self, message: str):
         self.message = message
 
-
     def __str__(self) -> str:
-        msg = [
-            type(self).__name__,
-            self.message
-        ]
-        return '\n'.join(msg)
-
+        msg = [type(self).__name__, self.message]
+        return "\n".join(msg)
 
     def __repr__(self) -> str:
         return self.__str__()
 
 
-
 class ServerMaintenanceError(PssApiError):
     pass
-
 
 
 class PssXmlError(PssApiError, _XmlParseError):
