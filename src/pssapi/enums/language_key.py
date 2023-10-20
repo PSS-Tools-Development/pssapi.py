@@ -9,6 +9,7 @@ fixing, if Savy uses enum values that are python keywords.
 class LanguageKey(_StrEnumBase):
     AFRIKAAN = "af"
     ARABIC = "ar"
+    BRAZIL = "br"
     CZECH = "cs"
     CHINA = "cn"
     CHINESE_SIMPLIFIED = "zh-Hans"
