@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pssapi"
 description = "Wrapper for the Pixel Starships API"
-version = "0.2.2"
+version = "0.2.3"
 license = "MIT"
 authors = [
     "The worst. <theworstpss@gmail.com>",
