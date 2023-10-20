@@ -42,6 +42,7 @@ class ItemSubType(_StrEnumBase):
     REVIVE = "Revive"
     ROOM_SKIN = "RoomSkin"
     SCRATCHY = "Scratchy"
+    SHIP_SKIN = "ShipSkin"
     SITUATION = "Situation"
     SKIN = "Skin"
     SPEED_UP_CONSTRUCTION = "SpeedUpConstruction"
