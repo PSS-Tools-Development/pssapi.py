@@ -61,10 +61,15 @@ async def get_entities_from_path(
             continue
 
         if is_list:
-            entities = [entity_type(__get_raw_entity_xml(entity)) for entity in entity_parent_node]
+            entities = []
+            for entity_node in entity_parent_node:
+                entity = entity_type(__get_raw_entity_xml(entity_node))
+                entity.node = entity_node
+                entities.append(entity)
             result.append(entities)
         else:
             entity = entity_type(__get_raw_entity_xml(entity_parent_node))
+            entity.node = entity_parent_node
             result.append(entity)
     if len(result) > 1:
         return tuple(result)
