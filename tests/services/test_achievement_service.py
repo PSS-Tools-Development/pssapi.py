@@ -1,3 +1,5 @@
+import xml.etree.ElementTree
+
 import pytest
 
 import pssapi
@@ -11,3 +13,4 @@ async def test_list_achievement_designs(client: pssapi.PssApiClient):
     assert isinstance(achievement_designs, list)
     assert len(achievement_designs) > 0
     assert isinstance(achievement_designs[0], pssapi.entities.AchievementDesign)
+    assert isinstance(achievement_designs[0].node, xml.etree.ElementTree.Element)
