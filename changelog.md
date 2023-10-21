@@ -1,3 +1,20 @@
+# Version 0.2.3
+## Added
+- New ItemSubType "SkipBattlePassTiers"
+- New LanguageKey "br"
+
+## Fixed
+- Fix CharacterPart list in CharacterDesign
+
+# Version 0.2.2
+## Added
+- New ItemSubType "ShipSkin"
+
+# Version 0.2.1
+## Added
+- PssApiError subclasses for later use
+- UserService.device_login_11()
+
 # Version 0.2.0
 ## Updated library
 The library has been updated to Pixel Starships v0.997.4.12193 (IOS), v0.997.4.9873 (Steam) and v0.997.5.9898-beta (Steam, content testing version).

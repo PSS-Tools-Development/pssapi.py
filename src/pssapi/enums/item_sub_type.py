@@ -44,6 +44,7 @@ class ItemSubType(_StrEnumBase):
     SCRATCHY = "Scratchy"
     SHIP_SKIN = "ShipSkin"
     SITUATION = "Situation"
+    SKIP_BATTLE_PASS_TIERS = "SkipBattlePassTiers"
     SKIN = "Skin"
     SPEED_UP_CONSTRUCTION = "SpeedUpConstruction"
     SPEED_UP_RESEARCH = "SpeedUpResearch"
