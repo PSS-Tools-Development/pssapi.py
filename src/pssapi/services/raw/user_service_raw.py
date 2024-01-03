@@ -21,7 +21,6 @@ from ...entities import UserLogin as _UserLogin
 ACCEPT_FRIEND_REQUEST_BASE_PATH: str = "UserService/AcceptFriendRequest"
 ADD_FRIEND_2_BASE_PATH: str = "UserService/AddFriend2"
 DECLINE_FRIEND_REQUEST_BASE_PATH: str = "UserService/DeclineFriendRequest"
-DEVICE_LOGIN_11_BASE_PATH: str = "UserService/DeviceLogin11"
 DEVICE_LOGIN_12_BASE_PATH: str = "UserService/DeviceLogin12"
 DEVICE_LOGIN_15_BASE_PATH: str = "UserService/DeviceLogin15"
 LIST_FRIENDS_BASE_PATH: str = "UserService/ListFriends"
@@ -52,35 +51,6 @@ async def add_friend_2(production_server: str, access_token: str, friend_user_id
 async def decline_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
     result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "DeclineFriendRequest", production_server, DECLINE_FRIEND_REQUEST_BASE_PATH, "POST", **params)
-    return result
-
-
-async def device_login_11(
-    production_server: str,
-    advertising_key: str,
-    checksum: str,
-    client_date_time: _datetime,
-    device_key: str,
-    device_type: str,
-    is_jail_broken: bool,
-    language_key: str,
-    refresh_token: str,
-    signal: bool,
-    **params,
-) -> _UserLogin:
-    params = {
-        "AdvertisingKey": advertising_key,
-        "Checksum": checksum,
-        "ClientDateTime": client_date_time,
-        "DeviceKey": device_key,
-        "DeviceType": device_type,
-        "IsJailBroken": is_jail_broken,
-        "LanguageKey": language_key,
-        "RefreshToken": refresh_token,
-        "Signal": signal,
-        **params,
-    }
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", **params)
     return result
 
 

@@ -99,6 +99,7 @@ class UserRaw:
         self._race_type: str = _parse.pss_str(user_info.get("RaceType"))
         self._ranking: int = _parse.pss_int(user_info.get("Ranking"))
         self._rewards_collectable: bool = _parse.pss_bool(user_info.get("RewardsCollectable"))
+        self._rewards_collectable_amount: int = _parse.pss_int(user_info.get("RewardsCollectableAmount"))
         self._ship_design_id: int = _parse.pss_int(user_info.get("ShipDesignId"))
         self._situation_occurrences: str = _parse.pss_str(user_info.get("SituationOccurrences"))
         self._situation_occurrences_today: int = _parse.pss_int(user_info.get("SituationOccurrencesToday"))
@@ -454,6 +455,10 @@ class UserRaw:
         return self._rewards_collectable
 
     @property
+    def rewards_collectable_amount(self) -> int:
+        return self._rewards_collectable_amount
+
+    @property
     def ship_design_id(self) -> int:
         return self._ship_design_id
 
@@ -637,6 +642,7 @@ class UserRaw:
             self.race_type,
             self.ranking,
             self.rewards_collectable,
+            self.rewards_collectable_amount,
             self.ship_design_id,
             self.situation_occurrences,
             self.situation_occurrences_today,
@@ -749,6 +755,7 @@ class UserRaw:
                 "RaceType": self.race_type,
                 "Ranking": self.ranking,
                 "RewardsCollectable": self.rewards_collectable,
+                "RewardsCollectableAmount": self.rewards_collectable_amount,
                 "ShipDesignId": self.ship_design_id,
                 "SituationOccurrences": self.situation_occurrences,
                 "SituationOccurrencesToday": self.situation_occurrences_today,

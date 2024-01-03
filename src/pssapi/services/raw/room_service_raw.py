@@ -4,14 +4,17 @@
 """
 
 from typing import List as _List
+from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import ActionType as _ActionType
 from ...entities import ConditionType as _ConditionType
 from ...entities import CraftDesign as _CraftDesign
 from ...entities import MissileDesign as _MissileDesign
+from ...entities import Room as _Room
 from ...entities import RoomDesign as _RoomDesign
 from ...entities import RoomDesignPurchase as _RoomDesignPurchase
+from ...entities import User as _User
 
 # ---------- Constants ----------
 
@@ -23,6 +26,7 @@ LIST_CRAFT_DESIGNS_BASE_PATH: str = "RoomService/ListCraftDesigns"
 LIST_MISSILE_DESIGNS_BASE_PATH: str = "RoomService/ListMissileDesigns"
 LIST_ROOM_DESIGN_PURCHASE_BASE_PATH: str = "RoomService/ListRoomDesignPurchase"
 LIST_ROOM_DESIGNS_2_BASE_PATH: str = "RoomService/ListRoomDesigns2"
+SPEED_UP_ROOM_CONSTRUCTION_USING_BOOST_GAUGE_BASE_PATH: str = "RoomService/SpeedUpRoomConstructionUsingBoostGauge"
 
 
 # ---------- Endpoints ----------
@@ -73,4 +77,12 @@ async def list_room_design_purchase(production_server: str, design_version: int,
 async def list_room_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_RoomDesign]:
     params = {"designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_RoomDesign, "RoomDesigns", True),), "RoomDesigns", production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, "GET", **params)
+    return result
+
+
+async def speed_up_room_construction_using_boost_gauge(production_server: str, access_token: str, client_date_time: str, room_id: int, **params) -> _Tuple[_Room, _User]:
+    params = {"accessToken": access_token, "clientDateTime": client_date_time, "roomId": room_id, **params}
+    result = await _core.get_entities_from_path(
+        ((_Room, "Room", False), (_User, "User", False)), "SpeedUpRoomConstructionUsingBoostGauge", production_server, SPEED_UP_ROOM_CONSTRUCTION_USING_BOOST_GAUGE_BASE_PATH, "POST", **params
+    )
     return result

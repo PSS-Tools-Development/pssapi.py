@@ -12,6 +12,7 @@ from ...entities import Setting as _Setting
 # ---------- Constants ----------
 
 GET_LATEST_VERSION_3_BASE_PATH: str = "SettingService/GetLatestVersion3"
+GET_LATEST_VERSION_4_BASE_PATH: str = "SettingService/GetLatestVersion4"
 LIST_ALL_NEWS_DESIGNS_BASE_PATH: str = "SettingService/ListAllNewsDesigns"
 
 
@@ -21,6 +22,12 @@ LIST_ALL_NEWS_DESIGNS_BASE_PATH: str = "SettingService/ListAllNewsDesigns"
 async def get_latest_version_3(production_server: str, device_type: str, language_key: str, **params) -> _Setting:
     params = {"deviceType": device_type, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_Setting, "Setting", False),), "GetLatestSetting", production_server, GET_LATEST_VERSION_3_BASE_PATH, "GET", **params)
+    return result
+
+
+async def get_latest_version_4(production_server: str, device_type: str, language_key: str, **params) -> _Setting:
+    params = {"deviceType": device_type, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(((_Setting, "Setting", False),), "GetLatestSetting", production_server, GET_LATEST_VERSION_4_BASE_PATH, "GET", **params)
     return result
 
 

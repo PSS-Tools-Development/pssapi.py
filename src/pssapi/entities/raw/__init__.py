@@ -59,6 +59,7 @@ from .star_system_raw import StarSystemRaw
 from .task_design_raw import TaskDesignRaw
 from .training_design_raw import TrainingDesignRaw
 from .user_email_password_authorize_raw import UserEmailPasswordAuthorizeRaw
+from .user_fleet_collection_raw import UserFleetCollectionRaw
 from .user_login_raw import UserLoginRaw
 from .user_marker_raw import UserMarkerRaw
 from .user_raw import UserRaw
@@ -128,6 +129,7 @@ __all__ = [
     TrainingDesignRaw.__name__,
     UserRaw.__name__,
     UserEmailPasswordAuthorizeRaw.__name__,
+    UserFleetCollectionRaw.__name__,
     UserLoginRaw.__name__,
     UserMarkerRaw.__name__,
     UserSeasonRaw.__name__,

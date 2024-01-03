@@ -82,6 +82,7 @@ class SettingRaw:
         self._loading_subtitle_sprite_id: int = _parse.pss_int(setting_info.get("LoadingSubtitleSpriteId"))
         self._loading_title_sprite_id: int = _parse.pss_int(setting_info.get("LoadingTitleSpriteId"))
         self._loot_modifiers: str = _parse.pss_str(setting_info.get("LootModifiers"))
+        self._maintenance_date: _datetime = _parse.pss_datetime(setting_info.get("MaintenanceDate"))
         self._maintenance_message: str = _parse.pss_str(setting_info.get("MaintenanceMessage"))
         self._maintenance_title: str = _parse.pss_str(setting_info.get("MaintenanceTitle"))
         self._marker_generator_design_version: int = _parse.pss_int(setting_info.get("MarkerGeneratorDesignVersion"))
@@ -91,6 +92,8 @@ class SettingRaw:
         self._max_redemption_count_per_month: int = _parse.pss_int(setting_info.get("MaxRedemptionCountPerMonth"))
         self._merchant_ship_exterior_sprite_id: int = _parse.pss_int(setting_info.get("MerchantShipExteriorSpriteId"))
         self._merchant_ship_sprite_id: int = _parse.pss_int(setting_info.get("MerchantShipSpriteId"))
+        self._min_purchase_reward_points_for_starbux_trading: int = _parse.pss_int(setting_info.get("MinPurchaseRewardPointsForStarbuxTrading"))
+        self._min_trophies_for_starbux_trading: int = _parse.pss_int(setting_info.get("MinTrophiesForStarbuxTrading"))
         self._minimum_client_version: str = _parse.pss_str(setting_info.get("MinimumClientVersion"))
         self._minimum_version: str = _parse.pss_str(setting_info.get("MinimumVersion"))
         self._missile_design_version: int = _parse.pss_int(setting_info.get("MissileDesignVersion"))
@@ -418,6 +421,10 @@ class SettingRaw:
         return self._loot_modifiers
 
     @property
+    def maintenance_date(self) -> _datetime:
+        return self._maintenance_date
+
+    @property
     def maintenance_message(self) -> str:
         return self._maintenance_message
 
@@ -452,6 +459,14 @@ class SettingRaw:
     @property
     def merchant_ship_sprite_id(self) -> int:
         return self._merchant_ship_sprite_id
+
+    @property
+    def min_purchase_reward_points_for_starbux_trading(self) -> int:
+        return self._min_purchase_reward_points_for_starbux_trading
+
+    @property
+    def min_trophies_for_starbux_trading(self) -> int:
+        return self._min_trophies_for_starbux_trading
 
     @property
     def minimum_client_version(self) -> str:
@@ -750,6 +765,7 @@ class SettingRaw:
             self.loading_subtitle_sprite_id,
             self.loading_title_sprite_id,
             self.loot_modifiers,
+            self.maintenance_date,
             self.maintenance_message,
             self.maintenance_title,
             self.marker_generator_design_version,
@@ -759,6 +775,8 @@ class SettingRaw:
             self.max_redemption_count_per_month,
             self.merchant_ship_exterior_sprite_id,
             self.merchant_ship_sprite_id,
+            self.min_purchase_reward_points_for_starbux_trading,
+            self.min_trophies_for_starbux_trading,
             self.minimum_client_version,
             self.minimum_version,
             self.missile_design_version,
@@ -888,6 +906,7 @@ class SettingRaw:
                 "LoadingSubtitleSpriteId": self.loading_subtitle_sprite_id,
                 "LoadingTitleSpriteId": self.loading_title_sprite_id,
                 "LootModifiers": self.loot_modifiers,
+                "MaintenanceDate": self.maintenance_date,
                 "MaintenanceMessage": self.maintenance_message,
                 "MaintenanceTitle": self.maintenance_title,
                 "MarkerGeneratorDesignVersion": self.marker_generator_design_version,
@@ -897,6 +916,8 @@ class SettingRaw:
                 "MaxRedemptionCountPerMonth": self.max_redemption_count_per_month,
                 "MerchantShipExteriorSpriteId": self.merchant_ship_exterior_sprite_id,
                 "MerchantShipSpriteId": self.merchant_ship_sprite_id,
+                "MinPurchaseRewardPointsForStarbuxTrading": self.min_purchase_reward_points_for_starbux_trading,
+                "MinTrophiesForStarbuxTrading": self.min_trophies_for_starbux_trading,
                 "MinimumClientVersion": self.minimum_client_version,
                 "MinimumVersion": self.minimum_version,
                 "MissileDesignVersion": self.missile_design_version,

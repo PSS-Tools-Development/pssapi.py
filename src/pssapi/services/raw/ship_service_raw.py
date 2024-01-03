@@ -10,11 +10,13 @@ from ... import core as _core
 from ...entities import Ship as _Ship
 from ...entities import ShipDesign as _ShipDesign
 from ...entities import User as _User
+from ...entities import UserFleetCollection as _UserFleetCollection
 
 # ---------- Constants ----------
 
 GET_SHIP_BY_USER_ID_BASE_PATH: str = "ShipService/GetShipByUserId"
 INSPECT_SHIP_2_BASE_PATH: str = "ShipService/InspectShip2"
+INSPECT_STARBASE_BASE_PATH: str = "ShipService/InspectStarbase"
 LIST_ALL_SHIP_DESIGNS_2_BASE_PATH: str = "ShipService/ListAllShipDesigns2"
 
 
@@ -30,6 +32,14 @@ async def get_ship_by_user_id(production_server: str, access_token: str, client_
 async def inspect_ship_2(production_server: str, access_token: str, user_id: int, **params) -> _Tuple[_Ship, _User]:
     params = {"accessToken": access_token, "userId": user_id, **params}
     result = await _core.get_entities_from_path(((_Ship, "Ship", False), (_User, "User", False)), "InspectShip", production_server, INSPECT_SHIP_2_BASE_PATH, "GET", **params)
+    return result
+
+
+async def inspect_starbase(production_server: str, access_token: str, user_id: int, **params) -> _Tuple[_Ship, _User, _List[_UserFleetCollection]]:
+    params = {"accessToken": access_token, "userId": user_id, **params}
+    result = await _core.get_entities_from_path(
+        ((_Ship, "Ship", False), (_User, "User", False), (_UserFleetCollection, "UserFleetCollections", True)), "InspectStarbase", production_server, INSPECT_STARBASE_BASE_PATH, "GET", **params
+    )
     return result
 
 
