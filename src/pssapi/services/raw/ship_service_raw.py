@@ -10,7 +10,6 @@ from ... import core as _core
 from ...entities import Ship as _Ship
 from ...entities import ShipDesign as _ShipDesign
 from ...entities import User as _User
-from ...entities import UserFleetCollection as _UserFleetCollection
 
 # ---------- Constants ----------
 

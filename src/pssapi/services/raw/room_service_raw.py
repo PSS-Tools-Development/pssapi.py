@@ -4,17 +4,14 @@
 """
 
 from typing import List as _List
-from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import ActionType as _ActionType
 from ...entities import ConditionType as _ConditionType
 from ...entities import CraftDesign as _CraftDesign
 from ...entities import MissileDesign as _MissileDesign
-from ...entities import Room as _Room
 from ...entities import RoomDesign as _RoomDesign
 from ...entities import RoomDesignPurchase as _RoomDesignPurchase
-from ...entities import User as _User
 
 # ---------- Constants ----------
 
