@@ -26,7 +26,6 @@ LIST_CRAFT_DESIGNS_BASE_PATH: str = "RoomService/ListCraftDesigns"
 LIST_MISSILE_DESIGNS_BASE_PATH: str = "RoomService/ListMissileDesigns"
 LIST_ROOM_DESIGN_PURCHASE_BASE_PATH: str = "RoomService/ListRoomDesignPurchase"
 LIST_ROOM_DESIGNS_2_BASE_PATH: str = "RoomService/ListRoomDesigns2"
-SPEED_UP_ROOM_CONSTRUCTION_USING_BOOST_GAUGE_BASE_PATH: str = "RoomService/SpeedUpRoomConstructionUsingBoostGauge"
 
 
 # ---------- Endpoints ----------
@@ -77,12 +76,4 @@ async def list_room_design_purchase(production_server: str, design_version: int,
 async def list_room_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_RoomDesign]:
     params = {"designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_RoomDesign, "RoomDesigns", True),), "RoomDesigns", production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, "GET", **params)
-    return result
-
-
-async def speed_up_room_construction_using_boost_gauge(production_server: str, access_token: str, client_date_time: str, room_id: int, **params) -> _Tuple[_Room, _User]:
-    params = {"accessToken": access_token, "clientDateTime": client_date_time, "roomId": room_id, **params}
-    result = await _core.get_entities_from_path(
-        ((_Room, "Room", False), (_User, "User", False)), "SpeedUpRoomConstructionUsingBoostGauge", production_server, SPEED_UP_ROOM_CONSTRUCTION_USING_BOOST_GAUGE_BASE_PATH, "POST", **params
-    )
     return result
