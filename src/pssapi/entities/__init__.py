@@ -61,7 +61,6 @@ from .task_design import TaskDesign
 from .training_design import TrainingDesign
 from .user import User
 from .user_email_password_authorize import UserEmailPasswordAuthorize
-from .user_fleet_collection import UserFleetCollection
 from .user_login import UserLogin
 from .user_marker import UserMarker
 from .user_season import UserSeason
@@ -132,7 +131,6 @@ __all__ = [
     TrainingDesign.__name__,
     User.__name__,
     UserEmailPasswordAuthorize.__name__,
-    UserFleetCollection.__name__,
     UserLogin.__name__,
     UserMarker.__name__,
     UserSeason.__name__,
