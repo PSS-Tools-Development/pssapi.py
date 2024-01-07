@@ -117,7 +117,7 @@ Message: {error_message}""",
             if not channel_class:
                 return
 
-            callback = getattr(channel_class, "callback")
+            callback = channel_class.callback
             if isawaitable(callback):
                 return await callback(data)
 
