@@ -5,6 +5,7 @@ class PusherConnectionClosed(Exception):
     """
     Raised when a Pusher connection is closed.
     """
+
     def __init__(self, message: str, code: Optional[int] = None, error_message: Optional[str] = "") -> None:
         super().__init__(message)
 
