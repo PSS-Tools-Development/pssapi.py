@@ -1,4 +1,3 @@
-from asyncio import get_event_loop
 from inspect import isawaitable
 from json import dumps, loads
 from platform import system
@@ -45,10 +44,7 @@ class Pusher:
 
     @classmethod
     async def _send_event(cls, event_name: str, data: Any, channel: Optional[str] = None) -> None:
-        event = {
-            "event": event_name,
-            "data": data
-        }
+        event = {"event": event_name, "data": data}
         if channel:
             event["channel"] = channel
 
@@ -96,11 +92,7 @@ Message: {error_message}""",
         if channel.private and not token:
             raise ValueError("Token required if channel is private.")
 
-        data = {
-            "channel": channel.name,
-            "auth": await channel._auth(token, cls._socket_id) if channel.private else "",
-            "channel_data": "{}"
-        }
+        data = {"channel": channel.name, "auth": await channel._auth(token, cls._socket_id) if channel.private else "", "channel_data": "{}"}
         await cls._send_event("pusher:subscribe", data)
 
     @classmethod
