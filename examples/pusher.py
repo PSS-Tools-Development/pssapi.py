@@ -1,7 +1,8 @@
-from asyncio import new_event_loop, set_event_loop
+from asyncio import get_event_loop
 
+from pssapi.pusher import Pusher
+from pssapi.pusher import Channel
 from pssapi.enums import PusherChannelType
-from pssapi.pusher import Channel, Pusher
 
 
 async def pusher_example():
