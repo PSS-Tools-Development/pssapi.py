@@ -3,6 +3,7 @@ from json import dumps, loads
 from platform import system
 from typing import Any, Optional
 
+# TODO: Move to a simpler scheduler
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from websockets.client import connect
@@ -43,7 +44,10 @@ class Pusher:
 
     @classmethod
     async def _send_event(cls, event_name: str, data: Any, channel: Optional[str] = None) -> None:
-        event = {"event": event_name, "data": data}
+        event = {
+            "event": event_name,
+            "data": data
+        }
         if channel:
             event["channel"] = channel
 
@@ -91,17 +95,15 @@ Message: {error_message}""",
         if channel.private and not token:
             raise ValueError("Token required if channel is private.")
 
-        data = {"channel": channel.name, "auth": await channel._auth(token, cls._socket_id) if channel.private else "", "channel_data": "{}"}
+        data = {
+            "channel": channel.name,
+            "auth": await channel._auth(token, cls._socket_id) if channel.private else "",
+            "channel_data": "{}"
+        }
         await cls._send_event("pusher:subscribe", data)
 
     @classmethod
-    def add(cls, channel: Channel) -> None:
-        """
-        Add a new channel to subscribe to
-
-        Args:
-            - `channel` - The channel to subscribe to
-        """
+    async def add(cls, channel: Channel) -> None:
         cls._channels[channel.name] = channel
 
     @classmethod
