@@ -3,6 +3,7 @@ from pssapi.enums.str_enum_base import StrEnumBase
 
 class PusherChannelType(StrEnumBase):
     MARKET = "market"
+    INCOMING_MESSAGES_PRIVATE = "private-user"
     GLOBAL = "public-global"
     ENGLISH = "public-en"
     AFRIKAAN = "public-af"
