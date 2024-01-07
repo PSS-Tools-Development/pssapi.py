@@ -1,0 +1,27 @@
+from pssapi.enums.str_enum_base import StrEnumBase
+
+
+class PusherChannelType(StrEnumBase):
+    MARKET = "market"
+    GLOBAL = "public-global"
+    ENGLISH = "public-en"
+    AFRIKAAN = "public-af"
+    ARABIC = "public-ar"
+    CHINESE_SIMPLIFIED = "public-zh-Hans"
+    CHINESE_TRADITIONAL = "public-zh-Hant"
+    CZECH = "public-cs"
+    DUTCH = "public-nl"
+    FRENCH = "public-fr"
+    GERMAN = "public-de"
+    INDONESIAN = "public-id"
+    ITALIAN = "public-it"
+    JAPANESE = "public-ja"
+    KOREAN = "public-ko"
+    POLISH = "public-pl"
+    PORTUGUESE = "public-pt"
+    RUSSIAN = "public-ru"
+    SPANISH = "public-es"
+    SWEDISH = "public-sv"
+    THAI = "public-th"
+    TURKISH = "public-tr"
+    VIETNAMESE = "public-vi"

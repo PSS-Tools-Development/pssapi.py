@@ -82,6 +82,7 @@ from .progression_type import ProgressionType
 from .promotion_design_flag import PromotionDesignFlag
 from .promotion_type import PromotionType
 from .purchase_vip_status import PurchaseVIPStatus
+from .pusher_channel_type import PusherChannelType
 from .race_type import RaceType
 from .rarity import Rarity
 from .research_design_type import ResearchDesignType
@@ -200,6 +201,7 @@ __all__ = [
     PromotionDesignFlag.__name__,
     PromotionType.__name__,
     PurchaseVIPStatus.__name__,
+    PusherChannelType.__name__,
     RaceType.__name__,
     Rarity.__name__,
     AvailabilityMask.__name__,
