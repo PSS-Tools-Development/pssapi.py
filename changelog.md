@@ -1,3 +1,8 @@
+# Version 3.0.0
+## Added
+- Pusher support
+- New enum "PusherChannelType"
+
 # Version 0.2.3
 ## Added
 - New ItemSubType "SkipBattlePassTiers"
