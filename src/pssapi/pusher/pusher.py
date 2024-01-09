@@ -3,7 +3,6 @@ from json import dumps, loads
 from platform import system
 from typing import Any, Optional
 
-# TODO: Move to a simpler scheduler
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from websockets.client import connect
@@ -96,7 +95,13 @@ Message: {error_message}""",
         await cls._send_event("pusher:subscribe", data)
 
     @classmethod
-    async def add(cls, channel: Channel) -> None:
+    def add(cls, channel: Channel) -> None:
+        """
+        Add a new channel to subscribe to
+
+        Args:
+            - `channel` - The channel to subscribe to
+        """
         cls._channels[channel.name] = channel
 
     @classmethod
