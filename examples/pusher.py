@@ -1,4 +1,4 @@
-from asyncio import get_event_loop
+from asyncio import new_event_loop, set_event_loop
 
 from pssapi.enums import PusherChannelType
 from pssapi.pusher import Channel, Pusher
@@ -18,5 +18,8 @@ async def pusher_example():
     pusher.run("token", "user_id here")
 
 
-loop = get_event_loop()
-loop.run_until_complete(pusher_example())
+if __name__ == "__main__":
+    loop = new_event_loop()
+    set_event_loop(loop)
+
+    loop.run_until_complete(pusher_example())
