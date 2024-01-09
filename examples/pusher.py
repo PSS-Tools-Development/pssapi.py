@@ -12,16 +12,10 @@ async def pusher_example():
     market_channel.on_message(lambda data: print(f"New data: {data}"))
     pusher.add(market_channel)
 
-    # For some reason, it is required to listen to the USER_ID_PRIVATE channel to keep the connection persistent
-    # Needs to have the same user ID as the ID of the user token
-    _ = Channel(f"{PusherChannelType.INCOMING_MESSAGES_PRIVATE}-yourIDhere", private=True)
-    _.on_message(lambda __: None)
-    pusher.add(_)
-
     # Start listening
     # For persistent connections/private channels:
     # Needs a token (token authorized with UserEmailPasswordAuthorize2), and the user ID of that account
-    pusher.run("token")
+    pusher.run("token", "user_id here")
 
 
 loop = get_event_loop()
