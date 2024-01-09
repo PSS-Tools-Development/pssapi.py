@@ -1,4 +1,4 @@
-from asyncio import get_event_loop
+from asyncio import new_event_loop, set_event_loop
 
 from pssapi.enums import PusherChannelType
 from pssapi.pusher import Channel, Pusher
