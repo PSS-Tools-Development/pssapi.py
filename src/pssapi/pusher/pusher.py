@@ -3,7 +3,6 @@ from json import dumps, loads
 from platform import system
 from typing import Any, Optional
 
-# TODO: Move to a simpler scheduler
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from websockets.client import connect
@@ -61,7 +60,7 @@ class Pusher:
         await cls._send_event("pusher:pong", "")
 
     @classmethod
-    async def _reset_connection_timeout(cls, job_id: Any) -> None:
+    def _reset_connection_timeout(cls, job_id: Any) -> None:
         cls._scheduler.reschedule_job(job_id, trigger=IntervalTrigger(seconds=cls.connection_timeout))
 
     @classmethod
@@ -81,7 +80,7 @@ Message: {error_message}""",
 
     # Scheduled tasks
     @classmethod
-    async def _start_timers(cls) -> None:
+    def _start_timers(cls) -> None:
         job_id = cls._scheduler.add_job(cls._connection_closed, IntervalTrigger(seconds=cls.connection_timeout)).id
         cls._scheduler.add_job(cls._send_ping, IntervalTrigger(seconds=cls.ping_interval))
 
@@ -96,7 +95,13 @@ Message: {error_message}""",
         await cls._send_event("pusher:subscribe", data)
 
     @classmethod
-    async def add(cls, channel: Channel) -> None:
+    def add(cls, channel: Channel) -> None:
+        """
+        Add a new channel to subscribe to
+
+        Args:
+            - `channel` - The channel to subscribe to
+        """
         cls._channels[channel.name] = channel
 
     @classmethod
@@ -124,16 +129,38 @@ Message: {error_message}""",
             return callback(data)
 
     @classmethod
-    async def run(cls, token: Optional[str] = "") -> None:
-        job_id = await cls._start_timers()
+    def _keep_persistent_connection(cls, token: str, user_id: int) -> None:
+        if not token and not user_id:
+            return
+
+        if token and not user_id:
+            raise RuntimeError("Token specified but not user_id")
+
+        if user_id and not token:
+            raise RuntimeError("user_id specified but no token")
+
+        channel = Channel(f"private-user-{user_id}", private=True)
+        cls.add(channel)
+
+    @classmethod
+    async def run(cls, token: Optional[str] = "", user_id: Optional[int] = 0) -> None:
+        """
+        Start the Pusher client
+
+        Args:
+            - `token`: Account-binded token (required to auth/keep persistent connection)
+            - `user_id`: User ID of the account (acquired through `SearchUsers`)
+        """
+        job_id = cls._start_timers()
         cls._scheduler.start()
 
         await cls._connect_to_pusher()
+        cls._keep_persistent_connection(token, user_id)
 
         while True:
             message = await cls._connection.recv()
             message = loads(message)
-            await cls._reset_connection_timeout(job_id)
+            cls._reset_connection_timeout(job_id)
 
             event = message["event"]
             data = loads(message["data"]) if isinstance(message["data"], str) else message["data"]

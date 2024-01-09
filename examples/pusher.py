@@ -19,7 +19,8 @@ async def pusher_example():
     pusher.add(_)
 
     # Start listening
-    # Needs a token (token authorized with UserEmailPasswordAuthorize2)
+    # For persistent connections/private channels:
+    # Needs a token (token authorized with UserEmailPasswordAuthorize2), and the user ID of that account
     pusher.run("token")
 
 
