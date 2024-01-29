@@ -1,4 +1,7 @@
 # Version 0.3.0
+## Added
+- Pusher support
+- New enum "PusherChannelType"
 ## Updated Library
 The library has been updated to Pixel Starships v0.998.9.12852 (IOS) and v0.998.10.10557 (Steam).
 ### Changes to Services

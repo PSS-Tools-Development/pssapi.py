@@ -1,9 +1,10 @@
-from . import entities, enums, raw, utils
+from . import entities, enums, exc, raw, utils
 from .client import PssApiClient
 
 __all__ = [
     "entities",
     "enums",
+    "exc",
     "raw",
     "utils",
     "PssApiClient",
