@@ -23,6 +23,7 @@ class SkinRaw:
         self._original_animation_id: int = _parse.pss_int(skin_info.get("OriginalAnimationId"))
         self._original_sprite_id: int = _parse.pss_int(skin_info.get("OriginalSpriteId"))
         self._race_id: int = _parse.pss_int(skin_info.get("RaceId"))
+        self._reference_id: int = _parse.pss_int(skin_info.get("ReferenceId"))
         self._requirement_string: str = _parse.pss_str(skin_info.get("RequirementString"))
         self._root_id: int = _parse.pss_int(skin_info.get("RootId"))
         self._skin_description: str = _parse.pss_str(skin_info.get("SkinDescription"))
@@ -65,6 +66,10 @@ class SkinRaw:
     @property
     def race_id(self) -> int:
         return self._race_id
+
+    @property
+    def reference_id(self) -> int:
+        return self._reference_id
 
     @property
     def requirement_string(self) -> str:
@@ -116,6 +121,7 @@ class SkinRaw:
             self.original_animation_id,
             self.original_sprite_id,
             self.race_id,
+            self.reference_id,
             self.requirement_string,
             self.root_id,
             self.skin_description,
@@ -139,6 +145,7 @@ class SkinRaw:
                 "OriginalAnimationId": self.original_animation_id,
                 "OriginalSpriteId": self.original_sprite_id,
                 "RaceId": self.race_id,
+                "ReferenceId": self.reference_id,
                 "RequirementString": self.requirement_string,
                 "RootId": self.root_id,
                 "SkinDescription": self.skin_description,

@@ -69,15 +69,15 @@ async def device_login_11(
     **params,
 ) -> _UserLogin:
     params = {
-        "AdvertisingKey": advertising_key,
-        "Checksum": checksum,
-        "ClientDateTime": client_date_time,
-        "DeviceKey": device_key,
-        "DeviceType": device_type,
-        "IsJailBroken": is_jail_broken,
-        "LanguageKey": language_key,
-        "RefreshToken": refresh_token,
-        "Signal": signal,
+        "advertisingKey": advertising_key,
+        "checksum": checksum,
+        "clientDateTime": client_date_time,
+        "device_key": device_key,
+        "device_type": device_type,
+        "is_jail_broken": is_jail_broken,
+        "language_key": language_key,
+        "refresh_token": refresh_token,
+        "signal": signal,
         **params,
     }
     result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", **params)

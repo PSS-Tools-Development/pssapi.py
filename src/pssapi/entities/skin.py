@@ -11,7 +11,7 @@ class Skin(_SkinRaw, _EntityWithIdBase):
         super().__init__(skin_info)
         self._skin_type_enum: _enums.RoomStatus = _parse.pss_str_enum(self.skin_type, _enums.SkinType)
         self._skin_metadata: _SkinMetadata = _SkinMetadata(self.metadata)
-        self._sprite_type_enum: _enums.RoomSpriteType = _parse.pss_str_enum(self.sprite_type, _enums.RoomSpriteType)
+        self._sprite_type_enum: _enums.SpriteType = _parse.pss_str_enum(self.sprite_type, _enums.SpriteType)
 
     @property
     def id(self) -> int:
@@ -26,5 +26,5 @@ class Skin(_SkinRaw, _EntityWithIdBase):
         return self._skin_type_enum
 
     @property
-    def sprite_type_enum(self) -> "_enums.RoomSpriteType":
+    def sprite_type_enum(self) -> "_enums.SpriteType":
         return self._sprite_type_enum

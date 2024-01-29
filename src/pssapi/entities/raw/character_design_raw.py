@@ -64,6 +64,7 @@ class CharacterDesignRaw:
         self._speech_pitch: int = _parse.pss_int(character_design_info.get("SpeechPitch"))
         self._speech_rate: int = _parse.pss_int(character_design_info.get("SpeechRate"))
         self._speech_voice: str = _parse.pss_str(character_design_info.get("SpeechVoice"))
+        self._tags: str = _parse.pss_str(character_design_info.get("Tags"))
         self._tap_sound_file_id: int = _parse.pss_int(character_design_info.get("TapSoundFileId"))
         self._training_capacity: int = _parse.pss_int(character_design_info.get("TrainingCapacity"))
         self._walking_speed: int = _parse.pss_int(character_design_info.get("WalkingSpeed"))
@@ -251,6 +252,10 @@ class CharacterDesignRaw:
         return self._speech_voice
 
     @property
+    def tags(self) -> str:
+        return self._tags
+
+    @property
     def tap_sound_file_id(self) -> int:
         return self._tap_sound_file_id
 
@@ -317,6 +322,7 @@ class CharacterDesignRaw:
             self.speech_pitch,
             self.speech_rate,
             self.speech_voice,
+            self.tags,
             self.tap_sound_file_id,
             self.training_capacity,
             self.walking_speed,
@@ -372,6 +378,7 @@ class CharacterDesignRaw:
                 "SpeechPitch": self.speech_pitch,
                 "SpeechRate": self.speech_rate,
                 "SpeechVoice": self.speech_voice,
+                "Tags": self.tags,
                 "TapSoundFileId": self.tap_sound_file_id,
                 "TrainingCapacity": self.training_capacity,
                 "WalkingSpeed": self.walking_speed,

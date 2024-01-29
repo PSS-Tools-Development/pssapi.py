@@ -1,7 +1,44 @@
-# Version 3.0.0
+# Version 0.3.0
 ## Added
 - Pusher support
 - New enum "PusherChannelType"
+## Updated Library
+The library has been updated to Pixel Starships v0.998.9.12852 (IOS) and v0.998.10.10557 (Steam).
+### Changes to Services
+- Changed `TaskService`
+  - Update endpoint `list_all_task_designs_2` with new parameter `client_date_time`
+### Changes to Raw Services
+- Changed `DesignServiceRaw`
+  - Added endpoint `list_all_designs_5`
+- Changed `SettingServiceRaw`
+  - Added endpoint `get_latest_version_4`
+- Changed `TaskServiceRaw`
+  - Update endpoint `list_all_task_designs_2` with new parameter `client_date_time`
+### Changes to Entities
+- Added entities:
+  - `UserFleetCollection`
+- Changed `Skin`
+  - Updated type of property `sprite_type_enum` to `SpriteType`
+### Changes to Raw Entities
+- Added entities:
+  - `UserFleetCollectionRaw`
+- Changed `CharacterDesignRaw`
+  - Added property `tags` (`str`)
+- Changed `RoomDesignRaw`
+  - Added property `tags` (`str`)
+- Changed `RoomDesignRaw`
+  - Added properties:
+    - `maintenance_date` (`datetime`)
+    - `min_purchase_reward_points_for_starbux_trading` (`int`)
+    - `min_trophies_for_starbux_trading` (`int`)
+- Changed `SkinRaw`
+  - Added property `tags` (`str`)
+- Changed `UserRaw`
+  - Added property `rewards_collectable_amount` (`str`)
+### Changes to Enums
+- Added enums
+  - `SpriteType` (`StrEnum`)
+  - `UserSourceAdsPlatformType` (`StrEnum`)
 
 # Version 0.2.3
 ## Added
