@@ -7,7 +7,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from websockets.client import connect
 
-from pssapi import __version__
+import pssapi
 from pssapi.constants import PUSHER_APP_CLUSTER, PUSHER_APP_ID
 from pssapi.exc import PusherConnectionClosed
 from pssapi.pusher.channel import Channel
@@ -17,7 +17,6 @@ from pssapi.pusher.channel import Channel
 class Pusher:
     # Should be of the form `platform-library`
     client: str = f"{system()}-pssapi"
-    version: str = __version__
 
     # Pusher protocol (as of 6/1/23, protocol 7)
     protocol: int = 7
@@ -36,7 +35,7 @@ class Pusher:
     @classmethod
     async def _connect_to_pusher(cls) -> None:
         host = f"ws://ws-{PUSHER_APP_CLUSTER}.pusher.com"
-        url = f"{host}/app/{PUSHER_APP_ID}?client={cls.client}&version={cls.version}&protocol={cls.protocol}"
+        url = f"{host}/app/{PUSHER_APP_ID}?client={cls.client}&version={pssapi.__version__}&protocol={cls.protocol}"
 
         cls._connection = await connect(url)
         await cls._send_ping()
