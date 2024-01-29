@@ -60,6 +60,7 @@ class RoomDesignRaw:
         self._rows: int = _parse.pss_int(room_design_info.get("Rows"))
         self._sort_index: int = _parse.pss_int(room_design_info.get("SortIndex"))
         self._supported_grid_types: int = _parse.pss_int(room_design_info.get("SupportedGridTypes"))
+        self._tags: str = _parse.pss_str(room_design_info.get("Tags"))
         self._target_type: str = _parse.pss_str(room_design_info.get("TargetType"))
         self._upgrade_from_room_design_id: int = _parse.pss_int(room_design_info.get("UpgradeFromRoomDesignId"))
 
@@ -248,6 +249,10 @@ class RoomDesignRaw:
         return self._supported_grid_types
 
     @property
+    def tags(self) -> str:
+        return self._tags
+
+    @property
     def target_type(self) -> str:
         return self._target_type
 
@@ -303,6 +308,7 @@ class RoomDesignRaw:
             self.rows,
             self.sort_index,
             self.supported_grid_types,
+            self.tags,
             self.target_type,
             self.upgrade_from_room_design_id,
         )
@@ -356,6 +362,7 @@ class RoomDesignRaw:
                 "Rows": self.rows,
                 "SortIndex": self.sort_index,
                 "SupportedGridTypes": self.supported_grid_types,
+                "Tags": self.tags,
                 "TargetType": self.target_type,
                 "UpgradeFromRoomDesignId": self.upgrade_from_room_design_id,
             }

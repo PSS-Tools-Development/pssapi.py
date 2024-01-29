@@ -82,6 +82,7 @@ from .progression_type import ProgressionType
 from .promotion_design_flag import PromotionDesignFlag
 from .promotion_type import PromotionType
 from .purchase_vip_status import PurchaseVIPStatus
+from .pusher_channel_type import PusherChannelType
 from .race_type import RaceType
 from .rarity import Rarity
 from .research_design_type import ResearchDesignType
@@ -105,6 +106,7 @@ from .situation_type import SituationType
 from .skin_type import SkinType
 from .special_ability_type import SpecialAbilityType
 from .special_rule_type import SpecialRuleType
+from .sprite_type import SpriteType
 from .status import Status
 from .str_enum_base import StrEnumBase
 from .target_type import TargetType
@@ -113,6 +115,7 @@ from .task_design_flags_type import TaskDesignFlagsType
 from .training_animation_style import TrainingAnimationStyle
 from .trigger_type import TriggerType
 from .user_flags import UserFlags
+from .user_source_ads_platform_type import UserSourceAdsPlatformType
 from .user_status import UserStatus
 from .user_type import UserType
 from .visibility_flags import VisibilityFlags
@@ -200,6 +203,7 @@ __all__ = [
     PromotionDesignFlag.__name__,
     PromotionType.__name__,
     PurchaseVIPStatus.__name__,
+    PusherChannelType.__name__,
     RaceType.__name__,
     Rarity.__name__,
     AvailabilityMask.__name__,
@@ -224,6 +228,7 @@ __all__ = [
     SkinType.__name__,
     SpecialAbilityType.__name__,
     SpecialRuleType.__name__,
+    SpriteType.__name__,
     Status.__name__,
     StrEnumBase.__name__,
     TargetType.__name__,
@@ -232,6 +237,7 @@ __all__ = [
     TrainingAnimationStyle.__name__,
     TriggerType.__name__,
     UserFlags.__name__,
+    UserSourceAdsPlatformType.__name__,
     UserStatus.__name__,
     UserType.__name__,
     VisibilityFlags.__name__,
