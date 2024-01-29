@@ -97,7 +97,6 @@ Message: {error_message}""",
     def add(cls, channel: Channel) -> None:
         """
         Add a new channel to subscribe to
-
         Args:
             - `channel` - The channel to subscribe to
         """
@@ -145,7 +144,6 @@ Message: {error_message}""",
     async def run(cls, token: Optional[str] = "", user_id: Optional[int] = 0) -> None:
         """
         Start the Pusher client
-
         Args:
             - `token`: Account-binded token (required to auth/keep persistent connection)
             - `user_id`: User ID of the account (acquired through `SearchUsers`)

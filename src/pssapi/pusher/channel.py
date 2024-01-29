@@ -10,7 +10,6 @@ class Channel:
     def __init__(self, name: str, private: Optional[bool] = False, endpoint: Optional[str] = PUSHER_AUTH_URL) -> None:
         """
         Create a new `Channel` instance
-
         Args:
             `name` - Name of the channel
             `endpoint` - Authentication endpoint
@@ -24,7 +23,6 @@ class Channel:
     def on_message(self, callback: Optional[Callable]) -> None:
         """
         Set a callback to be called when a message is received
-
         Args:
             `callback` - The function to be called, `lambda _: None` if not specified
         """
