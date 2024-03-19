@@ -1,10 +1,15 @@
 import datetime
 import os
+import re
 
 import pytest
 import pytest_asyncio
+import vcr.request
 
 import pssapi
+
+RX_ACCESS_TOKEN_IN_RESPONSE_BODY: re.Pattern = re.compile(r"accessToken=\".*?\"")
+ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT: str = "accessToken=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""
 
 
 @pytest.fixture(scope="session")
@@ -34,7 +39,7 @@ def client_date_time_as_str() -> str:
 
 @pytest.fixture(scope="session")
 def device_key() -> str:
-    return "e6a3815568cd"
+    return "99d2b3a5-75ff-469f-8dad-c57d558f4e8f"
 
 
 @pytest.fixture(scope="session")
@@ -65,7 +70,20 @@ def vcr_config():
     return {
         "match_on": ["host", "method", "path", "scheme"],
         "record_mode": "once",
+        "filter_query_parameters": ["accessToken"],
+        "filter_post_data_parameters": ["accessToken"],
+        "before_record_request": before_record_request,
+        "before_record_response": before_record_response,
     }
+
+
+def before_record_request(request: vcr.request.Request):
+    return request
+
+
+def before_record_response(response):
+    response['body']['string'] = RX_ACCESS_TOKEN_IN_RESPONSE_BODY.sub(ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT, response['body']['string'])
+    return response
 
 
 @pytest.fixture(scope="function")
