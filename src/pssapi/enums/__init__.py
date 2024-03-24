@@ -21,6 +21,7 @@ from .character_design_flag_type import CharacterDesignFlagType
 from .character_flags import CharacterFlags
 from .character_part_type import CharacterPartType
 from .checksum_type import ChecksumType
+from .collection_design_flag import CollectionDesignFlag
 from .collection_type import CollectionType
 from .completion_value_type import CompletionValueType
 from .condition_type_availability_mask import ConditionTypeAvailabilityMask
@@ -143,6 +144,7 @@ __all__ = [
     CharacterFlags.__name__,
     CharacterPartType.__name__,
     ChecksumType.__name__,
+    CollectionDesignFlag.__name__,
     CollectionType.__name__,
     CompletionValueType.__name__,
     ConditionTypeAvailabilityMask.__name__,
