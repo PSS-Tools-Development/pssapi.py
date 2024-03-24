@@ -52,25 +52,25 @@ async def list_condition_types_2(production_server: str, design_version: int, la
     return result
 
 
-async def list_craft_designs(production_server: str, design_version: int, **params) -> _List[_CraftDesign]:
-    params = {"designVersion": design_version, **params}
+async def list_craft_designs(production_server: str, client_date_time: str, design_version: int, **params) -> _List[_CraftDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, **params}
     result = await _core.get_entities_from_path(((_CraftDesign, "CraftDesigns", True),), "CraftDesigns", production_server, LIST_CRAFT_DESIGNS_BASE_PATH, "GET", **params)
     return result
 
 
-async def list_missile_designs(production_server: str, design_version: int, **params) -> _List[_MissileDesign]:
-    params = {"designVersion": design_version, **params}
+async def list_missile_designs(production_server: str, client_date_time: str, design_version: int, **params) -> _List[_MissileDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, **params}
     result = await _core.get_entities_from_path(((_MissileDesign, "MissileDesigns", True),), "MissileDesigns", production_server, LIST_MISSILE_DESIGNS_BASE_PATH, "GET", **params)
     return result
 
 
-async def list_room_design_purchase(production_server: str, design_version: int, **params) -> _List[_RoomDesignPurchase]:
-    params = {"designVersion": design_version, **params}
+async def list_room_design_purchase(production_server: str, client_date_time: str, design_version: int, **params) -> _List[_RoomDesignPurchase]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, **params}
     result = await _core.get_entities_from_path(((_RoomDesignPurchase, "RoomDesignPurchases", True),), "RoomDesignPurchases", production_server, LIST_ROOM_DESIGN_PURCHASE_BASE_PATH, "GET", **params)
     return result
 
 
-async def list_room_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_RoomDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_room_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_RoomDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_RoomDesign, "RoomDesigns", True),), "RoomDesigns", production_server, LIST_ROOM_DESIGNS_2_BASE_PATH, "GET", **params)
     return result

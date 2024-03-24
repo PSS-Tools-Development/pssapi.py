@@ -33,7 +33,7 @@ async def inspect_ship_2(production_server: str, access_token: str, user_id: int
     return result
 
 
-async def list_all_ship_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_ShipDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_all_ship_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_ShipDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_ShipDesign, "ShipDesigns", True),), "ShipDesigns", production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, "GET", **params)
     return result

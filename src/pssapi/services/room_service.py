@@ -1,7 +1,9 @@
+import datetime as _datetime
 from typing import List as _List
 
 import pssapi.services.service_base as _service_base
 
+from .. import utils as _utils
 from ..entities import ActionType as _ActionType
 from ..entities import ConditionType as _ConditionType
 from ..entities import CraftDesign as _CraftDesign
@@ -35,25 +37,25 @@ class RoomService(_service_base.CacheableServiceBase):
         return result
 
     @_service_base.cache_endpoint("CraftDesignVersion")
-    async def list_craft_designs(self, design_version: int = None) -> _List[_CraftDesign]:
+    async def list_craft_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_CraftDesign]:
         production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.list_craft_designs(production_server, design_version)
+        result = await _RoomServiceRaw.list_craft_designs(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result
 
     @_service_base.cache_endpoint("MissileDesignVersion")
-    async def list_missile_designs(self, design_version: int = None) -> _List[_MissileDesign]:
+    async def list_missile_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_MissileDesign]:
         production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.list_missile_designs(production_server, design_version)
+        result = await _RoomServiceRaw.list_missile_designs(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result
 
     @_service_base.cache_endpoint("RoomDesignPurchaseVersion")
-    async def list_room_design_purchase(self, design_version: int = None) -> _List[_RoomDesignPurchase]:
+    async def list_room_design_purchase(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_RoomDesignPurchase]:
         production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.list_room_design_purchase(production_server, design_version)
+        result = await _RoomServiceRaw.list_room_design_purchase(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result
 
     @_service_base.cache_endpoint("RoomDesignVersion")
-    async def list_room_designs(self, design_version: int = None) -> _List[_RoomDesign]:
+    async def list_room_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_RoomDesign]:
         production_server = await self.get_production_server()
-        result = await _RoomServiceRaw.list_room_designs_2(production_server, design_version, self.language_key)
+        result = await _RoomServiceRaw.list_room_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result

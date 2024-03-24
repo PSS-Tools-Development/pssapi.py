@@ -1,8 +1,10 @@
+import datetime as _datetime
 from typing import List as _List
 from typing import Tuple as _Tuple
 
 import pssapi.services.service_base as _service_base
 
+from .. import utils as _utils
 from ..entities import Battle as _Battle
 from ..entities import MissionDesign as _MissionDesign
 from ..entities import MissionEvent as _MissionEvent
@@ -17,9 +19,9 @@ class MissionService(_service_base.CacheableServiceBase):
         return result
 
     @_service_base.cache_endpoint("MissionDesignVersion")
-    async def list_all_mission_designs(self, design_version: int = None) -> _List[_MissionDesign]:
+    async def list_all_mission_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_MissionDesign]:
         production_server = await self.get_production_server()
-        result = await _MissionServiceRaw.list_all_mission_designs_4(production_server, design_version, self.language_key)
+        result = await _MissionServiceRaw.list_all_mission_designs_4(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
 
     async def select_event(self, access_token: str, battle_id: int, checksum: str, client_date_time: str, client_number: int, mission_event_id: int) -> _Tuple[_Battle, _User]:

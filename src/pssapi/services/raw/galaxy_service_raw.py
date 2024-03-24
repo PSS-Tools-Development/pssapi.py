@@ -35,8 +35,8 @@ async def go_to(production_server: str, access_token: str, checksum: str, client
     return result
 
 
-async def list_marker_generator_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_StarSystemMarkerGenerator]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_marker_generator_designs(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_StarSystemMarkerGenerator]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(
         ((_StarSystemMarkerGenerator, "StarSystemMarkerGenerators", True),), "StarSystemMarkerGenerators", production_server, LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH, "GET", **params
     )
@@ -49,8 +49,8 @@ async def list_planets(production_server: str, design_version: int, **params) ->
     return result
 
 
-async def list_star_system_links(production_server: str, design_version: int, **params) -> _List[_StarSystemLink]:
-    params = {"designVersion": design_version, **params}
+async def list_star_system_links(production_server: str, client_date_time: str, design_version: int, **params) -> _List[_StarSystemLink]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, **params}
     result = await _core.get_entities_from_path(((_StarSystemLink, "StarSystemLinks", True),), "StarSystemLinks", production_server, LIST_STAR_SYSTEM_LINKS_BASE_PATH, "GET", **params)
     return result
 
@@ -74,7 +74,7 @@ async def list_star_system_markers_and_user_markers(production_server: str, acce
     return result
 
 
-async def list_star_systems(production_server: str, design_version: int, language_key: str, **params) -> _List[_StarSystem]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_star_systems(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_StarSystem]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_StarSystem, "StarSystems", True),), "StarSystems", production_server, LIST_STAR_SYSTEMS_BASE_PATH, "GET", **params)
     return result

@@ -23,22 +23,22 @@ PRESTIGE_CHARACTER_TO_BASE_PATH: str = "CharacterService/PrestigeCharacterTo"
 # ---------- Endpoints ----------
 
 
-async def list_all_character_design_actions(production_server: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
-    params = {"designVersion": design_version, **params}
+async def list_all_character_design_actions(production_server: str, client_date_time: str, design_version: int, **params) -> _List[_CharacterDesignAction]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, **params}
     result = await _core.get_entities_from_path(
         ((_CharacterDesignAction, "CharacterDesignActions", True),), "CharacterDesignActions", production_server, LIST_ALL_CHARACTER_DESIGN_ACTIONS_BASE_PATH, "GET", **params
     )
     return result
 
 
-async def list_all_character_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_CharacterDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_all_character_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_CharacterDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_CharacterDesign, "CharacterDesigns", True),), "CharacterDesigns", production_server, LIST_ALL_CHARACTER_DESIGNS_2_BASE_PATH, "GET", **params)
     return result
 
 
-async def list_all_draw_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_DrawDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_all_draw_designs(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_DrawDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_DrawDesign, "DrawDesigns", True),), "DrawDesigns", production_server, LIST_ALL_DRAW_DESIGNS_BASE_PATH, "GET", **params)
     return result
 
