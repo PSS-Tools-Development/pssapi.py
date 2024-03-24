@@ -18,26 +18,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '166'
+      - '113'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:06 GMT
+      - Sun, 24 Mar 2024 17:17:03 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:06 GMT
+      - Sun, 24 Mar 2024 17:18:03 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:06 GMT
+      - Sun, 24 Mar 2024 17:17:03 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 b4415e223ef4b4a1db5d4b79b555fe2e.cloudfront.net (CloudFront)
+      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - LQlS7ej3tgPMKBr1mO2AI4baIOJfqXwp6e1YUhUw4vSu337w3K-7ig==
+      - c5hDNZKnTQ0PEbR3tt4OBKNcEaIw8tIR--2ZvCVBMSsl662ktCeORg==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -49,7 +45,6 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision
 - request:
     body: null
     headers: {}
@@ -69,26 +64,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '166'
+      - '113'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:06 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:06 GMT
+      - Sun, 24 Mar 2024 17:18:03 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:06 GMT
+      - Sun, 24 Mar 2024 17:17:03 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
+      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - ZQQ06zLHnebMoonQdtkDJlHzXa-oiOo0hYH-zLyeA-H-OLRN-t2arw==
+      - JUtEzRxy5ZjpmWYZENn0NMqzaPeCp_3CV9EO0vrTT-rL8jHVp_PEPA==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -100,7 +91,6 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=1
 - request:
     body: null
     headers: {}
@@ -120,26 +110,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '166'
+      - '113'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:07 GMT
+      - Sun, 24 Mar 2024 17:18:04 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 e94bd6405e7651c50e73077af1691486.cloudfront.net (CloudFront)
+      - 1.1 4786bcd6a5ee692459814ef0ab252684.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - VSylXhpx6JK417SRq6S8f9XLeoa39IO3sM8WIdTHN3McKhKvmygN1Q==
+      - LIq-1UAKdoR7-RPUVBOsFCcJLgK_ZSz39NTn_Pi4ZxvI2tf3Y0iYLQ==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -151,7 +137,6 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=2
 - request:
     body: null
     headers: {}
@@ -171,26 +156,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '166'
+      - '113'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:07 GMT
+      - Sun, 24 Mar 2024 17:18:04 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 ba7b83fea0750f0a671a6626ceefabf0.cloudfront.net (CloudFront)
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - CN75Zns01BN5qqjLKVFQP2GdDXUpJl8ED827Ta2j2QtzAlAhTPRhrQ==
+      - IKl3KzE53VnX5SOtC8qyIHbzgTnuIu1D_70c1TpqEQ5I05QVSd8Jhg==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -202,7 +183,6 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=3
 - request:
     body: null
     headers: {}
@@ -222,26 +202,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '166'
+      - '113'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:07 GMT
+      - Sun, 24 Mar 2024 17:18:04 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:07 GMT
+      - Sun, 24 Mar 2024 17:17:04 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 64d18a7c557f9140c04169b7191025f8.cloudfront.net (CloudFront)
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - _Z4kYXz6fQk7D8s2sb9Kk2dEZ8RUDpjTTsPrJlyJ_UyOHJsnRiwSCg==
+      - b6xLRFSktxZfJu8O1-Po1rL86DE-zw5FXVGoh4P0fy7_FC7dPmFFsg==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -253,5 +229,4 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=4
 version: 1

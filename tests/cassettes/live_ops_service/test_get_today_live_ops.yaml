@@ -6,21 +6,22 @@ interactions:
     uri: https://api.pixelstarships.com/LiveOpsService/GetTodayLiveOps2?deviceType=DeviceTypeAndroid&languageKey=en
   response:
     body:
-      string: '<LiveOpsService><GetTodayLiveOps><LiveOps LiveOpsId="1" News="Let your
-        flag wave proudly, hoisted high beneath the rockets'' red glare: Happy Independence
-        Day!" DailyRewardType="Starbux" DailyRewardArgument="3" SaleType="FleetGift"
-        SaleArgument="1197" SaleItemMask="2047" SaleOnceOnly="true" SaleQuantity="1"
-        DailyItemRewards="1187x1" LimitedCatalogType="Room" LimitedCatalogArgument="405"
-        LimitedCatalogQuantity="51" LimitedCatalogExpiryDate="2023-07-05T00:00:00"
-        LimitedCatalogCurrencyType="Starbux" LimitedCatalogCurrencyAmount="1000" LimitedCatalogMaxTotal="1"
-        CargoItems="836x1|836x1|836x1" CargoPrices="starbux:100|starbux:100|starbux:100"
-        TournamentNews="During the last week of the each month, fleets compete for
-        the most stars in the tournament finals. Top fleets are placed into divisions
-        based on performance during the month, and battle other fleets of the same
-        division to earn stars." SaleTitle="Independence Day" LimitedCatalogRestockQuantity="120"
-        SaleRewardString="item:1197x[USD/5]" SaleStartDate="2023-07-04T00:00:00" SupportTaskRanDate="2023-07-04T06:22:09"
-        SaleEndDate="2023-07-05T00:00:00" NewsSpriteId="16375" NewsUpdateDate="2023-07-04T00:00:00"
-        CommonCrewId="23" HeroCrewId="105" /></GetTodayLiveOps></LiveOpsService>'
+      string: '<LiveOpsService><GetTodayLiveOps><LiveOps LiveOpsId="1" News="Come
+        rejoice with us as we celebrate a momentous occasion: Stardate 3000! Keep
+        an eye out for limited edition goodies, dropping after the Easter break."
+        DailyRewardType="Starbux" DailyRewardArgument="8" SaleType="FleetGift" SaleArgument="150"
+        SaleItemMask="2047" SaleOnceOnly="true" SaleQuantity="1" DailyItemRewards="1137x1|148x1"
+        LimitedCatalogType="Item" LimitedCatalogArgument="1413" LimitedCatalogQuantity="42"
+        LimitedCatalogExpiryDate="2024-03-25T00:00:00" LimitedCatalogCurrencyType="Starbux"
+        LimitedCatalogCurrencyAmount="1000" LimitedCatalogMaxTotal="9999" CargoItems="356x1|341x1|300x1|1906x1"
+        CargoPrices="item:1138x3|item:1139x3|item:1140x3|starbux:500" TournamentNews="During
+        the last week of the each month, fleets compete for the most stars in the
+        tournament finals. Top fleets are placed into divisions based on performance
+        during the month, and battle other fleets of the same division to earn stars."
+        SaleTitle="Void Storm" LimitedCatalogRestockQuantity="120" SaleRewardString="item:150x[USD/2]"
+        SaleStartDate="2024-03-24T00:00:00" SupportTaskRanDate="2024-03-24T17:16:27"
+        SaleEndDate="2024-03-25T00:00:00" NewsSpriteId="9219" NewsUpdateDate="2024-03-24T00:00:00"
+        CommonCrewId="71" HeroCrewId="49" /></GetTodayLiveOps></LiveOpsService>'
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -34,24 +35,24 @@ interactions:
       - keep-alive
       Content-Encoding:
       - gzip
-      Content-Length:
-      - '776'
       Content-Type:
       - application/xml
       Date:
-      - Tue, 04 Jul 2023 06:25:29 GMT
+      - Sun, 24 Mar 2024 17:17:25 GMT
       Expires:
-      - Tue, 04 Jul 2023 06:25:29 GMT
+      - Sun, 24 Mar 2024 17:17:25 GMT
       Last-Modified:
-      - Tue, 04 Jul 2023 06:25:29 GMT
+      - Sun, 24 Mar 2024 17:17:25 GMT
       Server:
       - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 b9d6da6afb687529eac0ec6c19319d48.cloudfront.net (CloudFront)
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - PP5WMdtvT5mwFd2vA7bxSCYNLP_uMk_Blg9FzpDL8ievmLgWBq00-A==
+      - DCiSOkliDWKafyoM1toADNNS8ZpwfBBfCAeB70dTRVfIKLVfxCLKHg==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -63,5 +64,4 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/LiveOpsService/GetTodayLiveOps2?deviceType=DeviceTypeAndroid&languageKey=en
 version: 1

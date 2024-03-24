@@ -21,42 +21,35 @@ interactions:
       - '*'
       Access-Control-Allow-Origin:
       - '*'
-      Age:
-      - '680'
       Cache-Control:
       - public, no-cache="Set-Cookie", max-age=1200
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '454'
+      - '690'
       Content-Type:
       - application/xml
       Date:
-      - Sun, 09 Jul 2023 10:30:27 GMT
+      - Sun, 24 Mar 2024 17:17:29 GMT
       Expires:
-      - Sun, 09 Jul 2023 10:50:27 GMT
+      - Sun, 24 Mar 2024 17:37:29 GMT
       Last-Modified:
-      - Sun, 09 Jul 2023 10:30:27 GMT
+      - Sun, 24 Mar 2024 17:17:29 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
+      - 1.1 ba7b83fea0750f0a671a6626ceefabf0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - REaGq4ngIFgmYNaNE3qr4LHpqqn0eMR5F0Y5vbT37kP1B1iT_boGtw==
+      - rZMKm-U1xdvmQMhZho20RUPMEcJzGGY7NNr1rJm1RH5y6YBVZSsCLQ==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
       - 4.0.30319
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       X-Powered-By:
       - ASP.NET
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/RoomService/GetMissileDesign?languageKey=en&missileDesignId=2
 version: 1

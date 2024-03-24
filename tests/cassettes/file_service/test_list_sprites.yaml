@@ -3,190 +3,6 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
-  response:
-    body:
-      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
-        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
-        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
-        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
-        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
-        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
-        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
-        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
-        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
-        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
-        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
-        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
-        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
-        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
-        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
-        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
-        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
-        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
-        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
-        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
-        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
-        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
-        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
-        of the top-ranked captains in the galaxy, and have been entered into an exclusive
-        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
-        trophy range gain no active immunity (except from items) and are allowed only
-        a limited amount of battles a day, so make them count! Additionally, a failed
-        attack attempt in Legendary League will not result in a loss of trophies,
-        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
-        in Legendary League face increased difficulty, but also much greater rewards.
-        Loot rewards will be a set amount based on opponent level, rather than their
-        stockpiles, and will grant more crew xp as well as item drops. In the event
-        of a failed attack, attackers can gain partial rewards based on battle performance.
-        Finally, players that end a day with a net gain of trophies will receive up
-        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
-        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
-        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
-        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
-        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
-        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
-        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
-        SupportTaskRanDate="2024-03-21T07:12:09" TournamentSpriteId="8000" NewUserCount="1739"
-        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
-        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
-        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
-        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
-        /></GetLatestSetting></SettingService>
-    headers:
-      Access-Control-Allow-Headers:
-      - '*'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/xml
-      Date:
-      - Thu, 21 Mar 2024 07:12:55 GMT
-      Server:
-      - Microsoft-IIS/10.0
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      Via:
-      - 1.1 8609604d3fb8e0a5c875f1c74d985668.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 6ggsK8YZvy7TOXsYMAqd0e2WX1BUS9nvt6DJySJ0r07C4iAD0VfbVg==
-      X-Amz-Cf-Pop:
-      - TXL50-P4
-      X-AspNet-Version:
-      - 4.0.30319
-      X-Cache:
-      - Miss from cloudfront
-      X-Powered-By:
-      - ASP.NET
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers: {}
-    method: GET
-    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
-  response:
-    body:
-      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
-        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
-        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
-        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
-        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
-        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
-        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
-        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
-        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
-        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
-        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
-        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
-        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
-        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
-        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
-        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
-        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
-        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
-        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
-        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
-        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
-        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
-        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
-        of the top-ranked captains in the galaxy, and have been entered into an exclusive
-        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
-        trophy range gain no active immunity (except from items) and are allowed only
-        a limited amount of battles a day, so make them count! Additionally, a failed
-        attack attempt in Legendary League will not result in a loss of trophies,
-        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
-        in Legendary League face increased difficulty, but also much greater rewards.
-        Loot rewards will be a set amount based on opponent level, rather than their
-        stockpiles, and will grant more crew xp as well as item drops. In the event
-        of a failed attack, attackers can gain partial rewards based on battle performance.
-        Finally, players that end a day with a net gain of trophies will receive up
-        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
-        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
-        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
-        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
-        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
-        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
-        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
-        SupportTaskRanDate="2024-03-21T07:12:09" TournamentSpriteId="8000" NewUserCount="1740"
-        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
-        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
-        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
-        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
-        /></GetLatestSetting></SettingService>
-    headers:
-      Access-Control-Allow-Headers:
-      - '*'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/xml
-      Date:
-      - Thu, 21 Mar 2024 07:12:56 GMT
-      Server:
-      - Microsoft-IIS/10.0
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      Via:
-      - 1.1 6c62711a616d17e4e2fe0b898df3c02a.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - WT-3OBoImM-dzcE46tbB-jsuJet0v9lmJGzNtL8RSKB3-rLHVaXYCA==
-      X-Amz-Cf-Pop:
-      - TXL50-P4
-      X-AspNet-Version:
-      - 4.0.30319
-      X-Cache:
-      - Miss from cloudfront
-      X-Powered-By:
-      - ASP.NET
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers: {}
-    method: GET
     uri: https://api.pixelstarships.com/FileService/ListSprites2?languageKey=en
   response:
     body:
@@ -29786,11 +29602,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Thu, 21 Mar 2024 07:12:56 GMT
+      - Sun, 24 Mar 2024 17:17:20 GMT
       Expires:
-      - Thu, 21 Mar 2024 07:32:56 GMT
+      - Sun, 24 Mar 2024 17:37:20 GMT
       Last-Modified:
-      - Thu, 21 Mar 2024 07:12:56 GMT
+      - Sun, 24 Mar 2024 17:17:20 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -29798,9 +29614,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 136293f2894c59a2f91cf08997c7140a.cloudfront.net (CloudFront)
+      - 1.1 64d18a7c557f9140c04169b7191025f8.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 5XQIAw1p7C65bPvHqksWGg-zpOhJ1UG2GuTQosYdJwKK2jaGn-yNLg==
+      - X2QZJHwZUfcRjJ1RZNlCmo2ZyKDVRydPe2iZVSKWKpmS-LQohys9PA==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/UserService/ListSkins?clientDateTime=2024-03-22T07%3A13%3A50&languageKey=en
+    uri: https://api.pixelstarships.com/UserService/ListSkins?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
   response:
     body:
       string: "<UserService><ListSkins version=\"47\"><SkinSets><SkinSet SkinSetId=\"1\"
@@ -3561,7 +3561,7 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Fri, 22 Mar 2024 07:14:04 GMT
+      - Sun, 24 Mar 2024 17:17:34 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -3569,9 +3569,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 559ee8cd119d47737b610c6ae5010932.cloudfront.net (CloudFront)
+      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - l2IudPmBnu_kAP5Vt47YhZeYr_ojahwiIVXkrlWQ4LMWkjm0MdlcnA==
+      - T9JsfRUuPpqRDBF2OhEs8Bi4mE4mmy57RCsEIOImlRQXQRrXXCLwFQ==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

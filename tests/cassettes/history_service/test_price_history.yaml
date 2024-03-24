@@ -6,47 +6,49 @@ interactions:
     uri: https://api.pixelstarships.com/HistoryService/PriceHistory?itemDesignId=778
   response:
     body:
-      string: <HistoryService><PriceHistory><Histories><History HistoryId="487603932"
-        HistoryType="ItemPrices" Argument="778" Value="6" Date="2023-06-04T00:00:00"
-        /><History HistoryId="487777375" HistoryType="ItemPrices" Argument="778" Value="6"
-        Date="2023-06-05T00:00:00" /><History HistoryId="487950566" HistoryType="ItemPrices"
-        Argument="778" Value="6" Date="2023-06-06T00:00:00" /><History HistoryId="488123747"
-        HistoryType="ItemPrices" Argument="778" Value="6" Date="2023-06-07T00:00:00"
-        /><History HistoryId="488297150" HistoryType="ItemPrices" Argument="778" Value="6"
-        Date="2023-06-08T00:00:00" /><History HistoryId="488468529" HistoryType="ItemPrices"
-        Argument="778" Value="6" Date="2023-06-09T00:00:00" /><History HistoryId="488637478"
-        HistoryType="ItemPrices" Argument="778" Value="6" Date="2023-06-10T00:00:00"
-        /><History HistoryId="488805665" HistoryType="ItemPrices" Argument="778" Value="6"
-        Date="2023-06-11T00:00:00" /><History HistoryId="488971154" HistoryType="ItemPrices"
-        Argument="778" Value="6" Date="2023-06-12T00:00:00" /><History HistoryId="489135007"
-        HistoryType="ItemPrices" Argument="778" Value="6" Date="2023-06-13T00:00:00"
-        /><History HistoryId="489298158" HistoryType="ItemPrices" Argument="778" Value="6"
-        Date="2023-06-14T00:00:00" /><History HistoryId="489460523" HistoryType="ItemPrices"
-        Argument="778" Value="6" Date="2023-06-15T00:00:00" /><History HistoryId="489621740"
-        HistoryType="ItemPrices" Argument="778" Value="6" Date="2023-06-16T00:00:00"
-        /><History HistoryId="489782427" HistoryType="ItemPrices" Argument="778" Value="6"
-        Date="2023-06-17T00:00:00" /><History HistoryId="489943230" HistoryType="ItemPrices"
-        Argument="778" Value="7" Date="2023-06-18T00:00:00" /><History HistoryId="490104791"
-        HistoryType="ItemPrices" Argument="778" Value="7" Date="2023-06-19T00:00:00"
-        /><History HistoryId="490267168" HistoryType="ItemPrices" Argument="778" Value="7"
-        Date="2023-06-20T00:00:00" /><History HistoryId="490430307" HistoryType="ItemPrices"
-        Argument="778" Value="7" Date="2023-06-21T00:00:00" /><History HistoryId="490595264"
-        HistoryType="ItemPrices" Argument="778" Value="7" Date="2023-06-22T00:00:00"
-        /><History HistoryId="490763127" HistoryType="ItemPrices" Argument="778" Value="7"
-        Date="2023-06-23T00:00:00" /><History HistoryId="490933706" HistoryType="ItemPrices"
-        Argument="778" Value="7" Date="2023-06-24T00:00:00" /><History HistoryId="491106444"
-        HistoryType="ItemPrices" Argument="778" Value="9" Date="2023-06-25T00:00:00"
-        /><History HistoryId="491281167" HistoryType="ItemPrices" Argument="778" Value="9"
-        Date="2023-06-26T00:00:00" /><History HistoryId="491458110" HistoryType="ItemPrices"
-        Argument="778" Value="9" Date="2023-06-27T00:00:00" /><History HistoryId="491636187"
-        HistoryType="ItemPrices" Argument="778" Value="9" Date="2023-06-28T00:00:00"
-        /><History HistoryId="491816552" HistoryType="ItemPrices" Argument="778" Value="9"
-        Date="2023-06-29T00:00:00" /><History HistoryId="491998796" HistoryType="ItemPrices"
-        Argument="778" Value="9" Date="2023-06-30T00:00:00" /><History HistoryId="492182222"
-        HistoryType="ItemPrices" Argument="778" Value="9" Date="2023-07-01T00:00:00"
-        /><History HistoryId="492367828" HistoryType="ItemPrices" Argument="778" Value="10"
-        Date="2023-07-02T00:00:00" /><History HistoryId="492553282" HistoryType="ItemPrices"
-        Argument="778" Value="11" Date="2023-07-03T00:00:00" /></Histories></PriceHistory></HistoryService>
+      string: <HistoryService><PriceHistory><Histories><History HistoryId="530285762"
+        HistoryType="ItemPrices" Argument="778" Value="24" Date="2024-02-23T00:00:00"
+        /><History HistoryId="530403092" HistoryType="ItemPrices" Argument="778" Value="25"
+        Date="2024-02-24T00:00:00" /><History HistoryId="530520236" HistoryType="ItemPrices"
+        Argument="778" Value="27" Date="2024-02-25T00:00:00" /><History HistoryId="530637400"
+        HistoryType="ItemPrices" Argument="778" Value="27" Date="2024-02-26T00:00:00"
+        /><History HistoryId="530754518" HistoryType="ItemPrices" Argument="778" Value="27"
+        Date="2024-02-27T00:00:00" /><History HistoryId="530871898" HistoryType="ItemPrices"
+        Argument="778" Value="28" Date="2024-02-28T00:00:00" /><History HistoryId="530989676"
+        HistoryType="ItemPrices" Argument="778" Value="28" Date="2024-02-29T00:00:00"
+        /><History HistoryId="531108164" HistoryType="ItemPrices" Argument="778" Value="29"
+        Date="2024-03-01T00:00:00" /><History HistoryId="531227553" HistoryType="ItemPrices"
+        Argument="778" Value="29" Date="2024-03-02T00:00:00" /><History HistoryId="531346987"
+        HistoryType="ItemPrices" Argument="778" Value="29" Date="2024-03-03T00:00:00"
+        /><History HistoryId="531466907" HistoryType="ItemPrices" Argument="778" Value="30"
+        Date="2024-03-04T00:00:00" /><History HistoryId="531586788" HistoryType="ItemPrices"
+        Argument="778" Value="31" Date="2024-03-05T00:00:00" /><History HistoryId="531706216"
+        HistoryType="ItemPrices" Argument="778" Value="32" Date="2024-03-06T00:00:00"
+        /><History HistoryId="531824874" HistoryType="ItemPrices" Argument="778" Value="32"
+        Date="2024-03-07T00:00:00" /><History HistoryId="531942863" HistoryType="ItemPrices"
+        Argument="778" Value="33" Date="2024-03-08T00:00:00" /><History HistoryId="532060455"
+        HistoryType="ItemPrices" Argument="778" Value="33" Date="2024-03-09T00:00:00"
+        /><History HistoryId="532178073" HistoryType="ItemPrices" Argument="778" Value="34"
+        Date="2024-03-10T00:00:00" /><History HistoryId="532295895" HistoryType="ItemPrices"
+        Argument="778" Value="34" Date="2024-03-11T00:00:00" /><History HistoryId="532413753"
+        HistoryType="ItemPrices" Argument="778" Value="34" Date="2024-03-12T00:00:00"
+        /><History HistoryId="532531591" HistoryType="ItemPrices" Argument="778" Value="34"
+        Date="2024-03-13T00:00:00" /><History HistoryId="532649281" HistoryType="ItemPrices"
+        Argument="778" Value="36" Date="2024-03-14T00:00:00" /><History HistoryId="532767167"
+        HistoryType="ItemPrices" Argument="778" Value="36" Date="2024-03-15T00:00:00"
+        /><History HistoryId="532884033" HistoryType="ItemPrices" Argument="778" Value="36"
+        Date="2024-03-16T00:00:00" /><History HistoryId="533000134" HistoryType="ItemPrices"
+        Argument="778" Value="36" Date="2024-03-17T00:00:00" /><History HistoryId="533115858"
+        HistoryType="ItemPrices" Argument="778" Value="37" Date="2024-03-18T00:00:00"
+        /><History HistoryId="533231591" HistoryType="ItemPrices" Argument="778" Value="37"
+        Date="2024-03-19T00:00:00" /><History HistoryId="533347478" HistoryType="ItemPrices"
+        Argument="778" Value="37" Date="2024-03-20T00:00:00" /><History HistoryId="533463658"
+        HistoryType="ItemPrices" Argument="778" Value="38" Date="2024-03-21T00:00:00"
+        /><History HistoryId="533580568" HistoryType="ItemPrices" Argument="778" Value="37"
+        Date="2024-03-22T00:00:00" /><History HistoryId="533697136" HistoryType="ItemPrices"
+        Argument="778" Value="37" Date="2024-03-23T00:00:00" /><History HistoryId="533813172"
+        HistoryType="ItemPrices" Argument="778" Value="37" Date="2024-03-24T00:00:00"
+        /></Histories></PriceHistory></HistoryService>
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -60,20 +62,20 @@ interactions:
       - keep-alive
       Content-Encoding:
       - gzip
-      Content-Length:
-      - '685'
       Content-Type:
       - application/xml
       Date:
-      - Tue, 04 Jul 2023 06:16:34 GMT
+      - Sun, 24 Mar 2024 17:17:23 GMT
       Server:
       - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 4842376441adfff51e41110458fe337a.cloudfront.net (CloudFront)
+      - 1.1 e1dafdc346c45e381eadf0a96d4694c6.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Jsmbo94wdhvlm-F8a_RPrL3H05TA3ZtQjCJps43nmlhM8UdkHJWQnA==
+      - 64BYIrpOgbMkzUoxi7HYAXvB5_1MYYtepU4HcPKik23WGCD_dVPLag==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -85,5 +87,4 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/HistoryService/PriceHistory?itemDesignId=778
 version: 1

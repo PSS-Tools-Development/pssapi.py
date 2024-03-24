@@ -6,7 +6,7 @@ interactions:
     uri: https://api.pixelstarships.com/RoomService/ListConditionTypes2?languageKey=en
   response:
     body:
-      string: <RoomService><ListConditionTypes version="491"><ConditionTypes><ConditionType
+      string: <RoomService><ListConditionTypes version="511"><ConditionTypes><ConditionType
         ConditionTypeId="1" ConditionTypeName="None" ConditionTypeDescription="This
         condition will always be true and will execute the action" ConditionTypeAvailability="3"
         ConditionTypeCategory="None" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
@@ -995,7 +995,7 @@ interactions:
         ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherPercentage"
         ConditionTypeParameterValue="25" ConditionTypeKey="Shield" ImageSpriteId="4"
         RoomType="None" ConditionTypeParameter="Shield" ColorString="" RequiredResearchDesignId="95"
-        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="190"
+        OrderIndex="3" RoomCategoryType="None" /><ConditionType ConditionTypeId="190"
         ConditionTypeName="Enemy Ship Shields &gt; 75%" ConditionTypeDescription="This
         condition is true when opponent ship has more than 75% Shield HP" ConditionTypeAvailability="3"
         ConditionTypeCategory="EnemyShip" ConditionTypeComparison="HigherPercentage"
@@ -1350,6 +1350,132 @@ interactions:
         ConditionTypeComparison="Lower" ConditionTypeParameterValue="4" ConditionTypeKey="DeployCount"
         ImageSpriteId="4" RoomType="Android" ConditionTypeParameter="DeployCount"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="249" ConditionTypeName="Enemy Superweapon
+        HP &gt; 25%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="3" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="250" ConditionTypeName="Enemy Superweapon
+        HP &lt; 25%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="2" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="251" ConditionTypeName="Enemy Superweapon
+        HP &gt; 50%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="5" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="252" ConditionTypeName="Enemy Superweapon
+        HP &lt; 50%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="4" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="253" ConditionTypeName="Enemy Superweapon
+        HP &lt; 75%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="6" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="254" ConditionTypeName="Enemy Superweapon
+        HP &gt; 75%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="7" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="255" ConditionTypeName="Enemy Superweapon
+        HP &lt; 100%" ConditionTypeDescription="This condition is true when any enemy
+        superweapon has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="8" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="256" ConditionTypeName="Enemy Superweapon
+        has Full HP" ConditionTypeDescription="This condition is true when any enemy
+        superweapon HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="9" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="258" ConditionTypeName="Your Superweapon
+        HP &gt; 0%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon rooms has HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="1" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="259" ConditionTypeName="Your Superweapon
+        HP &gt; 25%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon has more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="3" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="260" ConditionTypeName="Your Superweapon
+        HP &lt; 25%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="2" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="261" ConditionTypeName="Your Superweapon
+        HP &gt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon has more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="5" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="262" ConditionTypeName="Your Superweapon
+        HP &lt; 75%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="6" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="263" ConditionTypeName="Your Superweapon
+        HP &gt; 75%" ConditionTypeDescription="This condition is true when any friendly
+        superweapon has more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="7" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="264" ConditionTypeName="Your Superweapon
+        has Full HP" ConditionTypeDescription="This condition is true when any friendly
+        superweapon HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="9" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="274" ConditionTypeName="Your Security Room
+        HP &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
+        Security type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Trap" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="275" ConditionTypeName="Your Reactor Room
+        HP &lt; 25%" ConditionTypeDescription="This condition is true when any friendly
+        Reactor type rooms has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Reactor" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="276" ConditionTypeName="Your Reactor Room
+        HP &lt; 75%" ConditionTypeDescription="This condition is true when any friendly
+        Reactor type rooms has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Reactor" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="277" ConditionTypeName="Your Hangar HP &lt;
+        25%" ConditionTypeDescription="This condition is true when any friendly Hangar
+        type rooms has less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="278" ConditionTypeName="Your Hangar HP &lt;
+        75%" ConditionTypeDescription="This condition is true when any friendly Hangar
+        type rooms has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Carrier" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="279" ConditionTypeName="Your Cloak Room
+        has Full HP" ConditionTypeDescription="This condition is true when any friendly
+        Cloak type room's HP is at maximum" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Stealth" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
         /></ConditionTypes></ListConditionTypes></RoomService>
     headers:
       Access-Control-Allow-Headers:
@@ -1364,24 +1490,24 @@ interactions:
       - keep-alive
       Content-Encoding:
       - gzip
-      Content-Length:
-      - '11270'
       Content-Type:
       - application/xml
       Date:
-      - Sun, 09 Jul 2023 10:44:38 GMT
+      - Sun, 24 Mar 2024 17:17:30 GMT
       Expires:
-      - Sun, 09 Jul 2023 11:04:38 GMT
+      - Sun, 24 Mar 2024 17:37:30 GMT
       Last-Modified:
-      - Sun, 09 Jul 2023 10:44:38 GMT
+      - Sun, 24 Mar 2024 17:17:30 GMT
       Server:
       - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 4cef84d6d9d593ea2c191c9370b4ebba.cloudfront.net (CloudFront)
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - L0PMoQlx3Jcyyc0BWX4Tf3mWrlX8O7TGlNh7nH5pXzbwbV-qbauo_g==
+      - k6JS2Nr4ZPGkf13L5LICzOSf_OlGQBt2JSX-sKYdN52u5Cu3rrA5LQ==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -1393,5 +1519,4 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/RoomService/ListConditionTypes2?languageKey=en
 version: 1

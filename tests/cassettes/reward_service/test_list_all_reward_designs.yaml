@@ -3,197 +3,13 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+    uri: https://api.pixelstarships.com/RewardService/ListAllRewardDesigns2?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
   response:
     body:
-      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330046"
-        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
-        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
-        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
-        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
-        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164999"
-        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
-        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
-        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
-        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345836"
-        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
-        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
-        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
-        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
-        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
-        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
-        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
-        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
-        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
-        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
-        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
-        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
-        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
-        of the top-ranked captains in the galaxy, and have been entered into an exclusive
-        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
-        trophy range gain no active immunity (except from items) and are allowed only
-        a limited amount of battles a day, so make them count! Additionally, a failed
-        attack attempt in Legendary League will not result in a loss of trophies,
-        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
-        in Legendary League face increased difficulty, but also much greater rewards.
-        Loot rewards will be a set amount based on opponent level, rather than their
-        stockpiles, and will grant more crew xp as well as item drops. In the event
-        of a failed attack, attackers can gain partial rewards based on battle performance.
-        Finally, players that end a day with a net gain of trophies will receive up
-        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
-        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
-        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
-        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
-        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
-        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
-        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
-        SupportTaskRanDate="2024-03-21T19:27:09" TournamentSpriteId="8000" NewUserCount="1614"
-        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
-        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
-        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
-        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
-        /></GetLatestSetting></SettingService>
-    headers:
-      Access-Control-Allow-Headers:
-      - '*'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/xml
-      Date:
-      - Thu, 21 Mar 2024 19:30:25 GMT
-      Server:
-      - Microsoft-IIS/10.0
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      Via:
-      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 1uPizux_ebCalSuA7Mf2hc58SAn6YjkfMsVTdBPhVdNU6d5k63EITA==
-      X-Amz-Cf-Pop:
-      - TXL50-P4
-      X-AspNet-Version:
-      - 4.0.30319
-      X-Cache:
-      - Miss from cloudfront
-      X-Powered-By:
-      - ASP.NET
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers: {}
-    method: GET
-    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
-  response:
-    body:
-      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330046"
-        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
-        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
-        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
-        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
-        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164999"
-        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
-        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
-        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
-        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345836"
-        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
-        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
-        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
-        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
-        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
-        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
-        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
-        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
-        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
-        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
-        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
-        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
-        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
-        of the top-ranked captains in the galaxy, and have been entered into an exclusive
-        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
-        trophy range gain no active immunity (except from items) and are allowed only
-        a limited amount of battles a day, so make them count! Additionally, a failed
-        attack attempt in Legendary League will not result in a loss of trophies,
-        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
-        in Legendary League face increased difficulty, but also much greater rewards.
-        Loot rewards will be a set amount based on opponent level, rather than their
-        stockpiles, and will grant more crew xp as well as item drops. In the event
-        of a failed attack, attackers can gain partial rewards based on battle performance.
-        Finally, players that end a day with a net gain of trophies will receive up
-        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
-        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
-        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
-        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
-        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
-        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
-        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
-        SupportTaskRanDate="2024-03-21T19:27:09" TournamentSpriteId="8000" NewUserCount="1614"
-        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
-        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
-        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
-        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
-        /></GetLatestSetting></SettingService>
-    headers:
-      Access-Control-Allow-Headers:
-      - '*'
-      Access-Control-Allow-Methods:
-      - '*'
-      Access-Control-Allow-Origin:
-      - '*'
-      Cache-Control:
-      - private
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - application/xml
-      Date:
-      - Thu, 21 Mar 2024 19:30:25 GMT
-      Server:
-      - Microsoft-IIS/10.0
-      Transfer-Encoding:
-      - chunked
-      Vary:
-      - Accept-Encoding
-      Via:
-      - 1.1 136293f2894c59a2f91cf08997c7140a.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - -pFBYFdw3oTgTooFFTN7oMnsIG2yJe27o3WreG4QtLa8OrG2jnCIJw==
-      X-Amz-Cf-Pop:
-      - TXL50-P4
-      X-AspNet-Version:
-      - 4.0.30319
-      X-Cache:
-      - Miss from cloudfront
-      X-Powered-By:
-      - ASP.NET
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers: {}
-    method: GET
-    uri: https://api.pixelstarships.com/RewardService/ListAllRewardDesigns2?clientDateTime=2024-03-21T19%3A30%3A23&languageKey=en
-  response:
-    body:
-      string: "<RewardService><ListAllRewardDesigns version=\"345836\"><RewardDesigns><RewardDesign
+      string: "<RewardService><ListAllRewardDesigns version=\"346131\"><RewardDesigns><RewardDesign
         RewardDesignId=\"1\" RewardName=\"Auxiliary Missile Launcher\" RewardDescription=\"Unique
         Kickstarter Edition Weapon\" RewardType=\"None\" ArgumentString=\"room:405\"
-        PriceString=\"points:95\" AvailableQuantity=\"999467\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:95\" AvailableQuantity=\"999461\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"4\" OrderIndex=\"200\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7774\" SpriteId=\"0\"
@@ -205,24 +21,24 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"3\" RewardName=\"Squiddy\" RewardDescription=\"Everyone's
         favourite pet squid!\" RewardType=\"None\" ArgumentString=\"character:119\"
-        PriceString=\"points:90\" AvailableQuantity=\"19949\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:90\" AvailableQuantity=\"19948\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"301\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"3172\"
         /><RewardDesign RewardDesignId=\"4\" RewardName=\"Cat House\" RewardDescription=\"A
         place for your furry fuzz-balls.\" RewardType=\"None\" ArgumentString=\"room:217\"
-        PriceString=\"points:130\" AvailableQuantity=\"999561\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:130\" AvailableQuantity=\"999554\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"8020\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"5\" RewardName=\"Meowy\" RewardDescription=\"Super
         Cute ^_^\" RewardType=\"None\" ArgumentString=\"character:118\" PriceString=\"points:35\"
-        AvailableQuantity=\"18700\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"18668\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"6\"
         RewardName=\"8Bit Helmet\" RewardDescription=\"\" RewardType=\"None\" ArgumentString=\"item:125x1\"
-        PriceString=\"points:15\" AvailableQuantity=\"99838\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:15\" AvailableQuantity=\"99837\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"301\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"7719\"
@@ -234,13 +50,13 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"8019\" SpriteId=\"7724\"
         /><RewardDesign RewardDesignId=\"8\" RewardName=\"Beautiful Aquarium\" RewardDescription=\"\"
         RewardType=\"None\" ArgumentString=\"room:272\" PriceString=\"points:180\"
-        AvailableQuantity=\"999635\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
+        AvailableQuantity=\"999627\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8020\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"9\"
         RewardName=\"Workshop\" RewardDescription=\"A useful place to put stuff.\"
         RewardType=\"None\" ArgumentString=\"room:262\" PriceString=\"points:60\"
-        AvailableQuantity=\"999328\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"999323\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8020\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"10\"
@@ -251,7 +67,7 @@ interactions:
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8020\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"11\"
         RewardName=\"Prototype E\" RewardDescription=\"Faster Extraction.\" RewardType=\"None\"
-        ArgumentString=\"room:238\" PriceString=\"points:145\" AvailableQuantity=\"999703\"
+        ArgumentString=\"room:238\" PriceString=\"points:145\" AvailableQuantity=\"999699\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"305\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -263,14 +79,14 @@ interactions:
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"13\"
         RewardName=\"Garage\" RewardDescription=\"You know you want a garage.\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"room:406\" PriceString=\"points:75\" AvailableQuantity=\"98834\"
+        ArgumentString=\"room:406\" PriceString=\"points:75\" AvailableQuantity=\"98821\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"300\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8017\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"14\"
         RewardName=\"Franky!\" RewardDescription=\"On the run from prison. If they
         catch him again, he's gonna fry.\" RewardType=\"None\" ArgumentString=\"character:221\"
-        PriceString=\"points:250\" AvailableQuantity=\"19980\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:250\" AvailableQuantity=\"19979\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"101\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"8018\" SpriteId=\"0\"
@@ -282,42 +98,42 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"8017\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"16\" RewardName=\"Coal Reactor\" RewardDescription=\"The
         Latest in fossil fuel advancement.\" RewardType=\"FrequentFlyer\" ArgumentString=\"room:274\"
-        PriceString=\"points:120\" AvailableQuantity=\"9344\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:120\" AvailableQuantity=\"9342\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"4\" OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"8020\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"17\" RewardName=\"Lionheart\" RewardDescription=\"Born
         to be king.\" RewardType=\"FrequentFlyer\" ArgumentString=\"character:220\"
-        PriceString=\"points:95\" AvailableQuantity=\"9936\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:95\" AvailableQuantity=\"9935\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"4\" OrderIndex=\"100\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7774\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"18\" RewardName=\"4 Pack Carbon\" RewardDescription=\"\"
         RewardType=\"FrequentFlyer\" ArgumentString=\"item:102x4\" PriceString=\"points:7\"
-        AvailableQuantity=\"99524\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"99519\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"19\"
         RewardName=\"4 Pack Scrap\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:103x4\" PriceString=\"points:6\" AvailableQuantity=\"98931\"
+        ArgumentString=\"item:103x4\" PriceString=\"points:6\" AvailableQuantity=\"98928\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"20\"
         RewardName=\"4X Gold\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:101x4\" PriceString=\"points:9\" AvailableQuantity=\"99588\"
+        ArgumentString=\"item:101x4\" PriceString=\"points:9\" AvailableQuantity=\"99584\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"21\"
         RewardName=\"3 Pack Titanium\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:104x3\" PriceString=\"points:8\" AvailableQuantity=\"99632\"
+        ArgumentString=\"item:104x3\" PriceString=\"points:8\" AvailableQuantity=\"99630\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"22\"
         RewardName=\"3 Pack Silicon\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:105x3\" PriceString=\"points:9\" AvailableQuantity=\"98827\"
+        ArgumentString=\"item:105x3\" PriceString=\"points:9\" AvailableQuantity=\"98811\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -347,19 +163,19 @@ interactions:
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7777\" SpriteId=\"8033\" /><RewardDesign RewardDesignId=\"27\"
         RewardName=\"Cryopod\" RewardDescription=\"Modelled after Zakian Tech.\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"room:412\" PriceString=\"points:100\" AvailableQuantity=\"99210\"
+        ArgumentString=\"room:412\" PriceString=\"points:100\" AvailableQuantity=\"99202\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"300\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8017\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"28\"
         RewardName=\"DM Crystal\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:106x1\" PriceString=\"points:90\" AvailableQuantity=\"99969\"
+        ArgumentString=\"item:106x1\" PriceString=\"points:90\" AvailableQuantity=\"99968\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"29\"
         RewardName=\"K Cannon\" RewardDescription=\"Modelled after Kias Tech.\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"room:418\" PriceString=\"points:100\" AvailableQuantity=\"99293\"
+        ArgumentString=\"room:418\" PriceString=\"points:100\" AvailableQuantity=\"99286\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"1\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -372,7 +188,7 @@ interactions:
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"31\"
         RewardName=\"Toilets\" RewardDescription=\"The latest in space plumbing.\"
         RewardType=\"FrequentFlyer\" ArgumentString=\"room:421\" PriceString=\"points:100\"
-        AvailableQuantity=\"99821\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
+        AvailableQuantity=\"99817\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8029\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"32\"
@@ -408,19 +224,19 @@ interactions:
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"37\"
         RewardName=\"Drakian Clone\" RewardDescription=\"Clone of a Drakian Super
         Soldier.\" RewardType=\"FrequentFlyer\" ArgumentString=\"character:236\" PriceString=\"points:100\"
-        AvailableQuantity=\"999967\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"999966\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"38\"
         RewardName=\"Chihuahua\" RewardDescription=\"Makes funny noises.\" RewardType=\"None\"
-        ArgumentString=\"character:262\" PriceString=\"points:90\" AvailableQuantity=\"19958\"
+        ArgumentString=\"character:262\" PriceString=\"points:90\" AvailableQuantity=\"19957\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"301\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"39\"
         RewardName=\"Gas Trap\" RewardDescription=\"The mad scientist's pet project.\"
         RewardType=\"FrequentFlyer\" ArgumentString=\"room:438\" PriceString=\"points:80\"
-        AvailableQuantity=\"99781\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"99779\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"40\"
@@ -432,24 +248,24 @@ interactions:
         BackgroundSpriteId=\"7777\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"41\"
         RewardName=\"Galaxy Gym\" RewardDescription=\"Because you're too good for
         a normal gym.\" RewardType=\"FrequentFlyer\" ArgumentString=\"room:441\" PriceString=\"points:120\"
-        AvailableQuantity=\"99779\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\"
+        AvailableQuantity=\"99775\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\"
         OrderIndex=\"1\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8017\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"42\"
         RewardName=\"Mini Cannon\" RewardDescription=\"The latest in space plumbing.\"
         RewardType=\"FrequentFlyer\" ArgumentString=\"item:465x1\" PriceString=\"points:100\"
-        AvailableQuantity=\"99790\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"4\"
+        AvailableQuantity=\"99788\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"4\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8020\" SpriteId=\"9934\" /><RewardDesign RewardDesignId=\"43\"
         RewardName=\"Chopsticlaw\" RewardDescription=\"Made from titanium chopsticks.\"
         RewardType=\"FrequentFlyer\" ArgumentString=\"item:464x1\" PriceString=\"points:90\"
-        AvailableQuantity=\"99942\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"4\"
+        AvailableQuantity=\"99940\" MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"4\"
         OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"8020\" SpriteId=\"9907\" /><RewardDesign RewardDesignId=\"44\"
         RewardName=\"Maximum Security\" RewardDescription=\"Zaki Dragon Alt\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"room:470\" PriceString=\"points:150\" AvailableQuantity=\"99920\"
+        ArgumentString=\"room:470\" PriceString=\"points:150\" AvailableQuantity=\"99918\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"301\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -461,70 +277,70 @@ interactions:
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"46\"
         RewardName=\"Energy Barrier\" RewardDescription=\"Makes funny noises.\" RewardType=\"None\"
-        ArgumentString=\"item:502x1\" PriceString=\"points:90\" AvailableQuantity=\"17382\"
+        ArgumentString=\"item:502x1\" PriceString=\"points:90\" AvailableQuantity=\"17359\"
         MaxPerUser=\"5\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"301\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"47\"
         RewardName=\"Unknown Mat\" RewardDescription=\"\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:107x1\" PriceString=\"points:130\" AvailableQuantity=\"99949\"
+        ArgumentString=\"item:107x1\" PriceString=\"points:130\" AvailableQuantity=\"99948\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"48\"
         RewardName=\"Infected Drakian Clone\" RewardDescription=\"Clone of a Infected
         Drakian Super Soldier.\" RewardType=\"FrequentFlyer\" ArgumentString=\"character:302\"
-        PriceString=\"points:110\" AvailableQuantity=\"999966\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:110\" AvailableQuantity=\"999965\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"300\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7775\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"49\" RewardName=\"Robo Santa\" RewardDescription=\"Robo
         Santa\" RewardType=\"FrequentFlyer\" ArgumentString=\"character:132\" PriceString=\"points:40\"
-        AvailableQuantity=\"99699\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
+        AvailableQuantity=\"99695\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"4\"
         OrderIndex=\"0\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"11412\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"50\"
         RewardName=\"Reindeer Costume\" RewardDescription=\"Reindeer Costume\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:551x1\" PriceString=\"points:7\" AvailableQuantity=\"99848\"
+        ArgumentString=\"item:551x1\" PriceString=\"points:7\" AvailableQuantity=\"99846\"
         MaxPerUser=\"10\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"0\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"11410\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"51\"
         RewardName=\"Reindeer Costume\" RewardDescription=\"Reindeer Costume\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:552x1\" PriceString=\"points:7\" AvailableQuantity=\"99796\"
+        ArgumentString=\"item:552x1\" PriceString=\"points:7\" AvailableQuantity=\"99794\"
         MaxPerUser=\"10\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"0\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"11410\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"52\"
         RewardName=\"Reindeer Costume\" RewardDescription=\"Reindeer Costume\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"item:553x1\" PriceString=\"points:7\" AvailableQuantity=\"99842\"
+        ArgumentString=\"item:553x1\" PriceString=\"points:7\" AvailableQuantity=\"99838\"
         MaxPerUser=\"2\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"0\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"11410\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"53\"
         RewardName=\"Division A 2024 Grand Prize\" RewardDescription=\"Division A
         2024 Grand Prize\" RewardType=\"Tournament\" ArgumentString=\"item:1829x1\"
-        PriceString=\"points:70\" AvailableQuantity=\"99581\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:70\" AvailableQuantity=\"99575\" MaxPerUser=\"100\" AvailableEveryXDays=\"1\"
         Grids=\"4\" OrderIndex=\"-100\" Flags=\"4096\" RequirementString=\"allianceQualifyDivisionDesignId
         == 1\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11483\" SpriteId=\"20850\"
         /><RewardDesign RewardDesignId=\"54\" RewardName=\"Division A 2024 Medium
         Prize\" RewardDescription=\"Division A 2024 Medium Prize\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1830x1\" PriceString=\"points:35\" AvailableQuantity=\"99893\"
+        ArgumentString=\"item:1830x1\" PriceString=\"points:35\" AvailableQuantity=\"99889\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-99\"
         Flags=\"2048\" RequirementString=\"allianceQualifyDivisionDesignId == 1\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11485\" SpriteId=\"20852\"
         /><RewardDesign RewardDesignId=\"55\" RewardName=\"Division A 2024 Small Prize\"
         RewardDescription=\"Division A 2024 Small Prize\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1831x1\" PriceString=\"points:15\" AvailableQuantity=\"99920\"
+        ArgumentString=\"item:1831x1\" PriceString=\"points:15\" AvailableQuantity=\"99915\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-98\"
         Flags=\"1024\" RequirementString=\"allianceQualifyDivisionDesignId == 1\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11485\" SpriteId=\"20844\"
         /><RewardDesign RewardDesignId=\"56\" RewardName=\"Division B 2024 Grand Prize\"
         RewardDescription=\"Division B 2024 Grand Prize\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1832x1\" PriceString=\"points:35\" AvailableQuantity=\"99953\"
+        ArgumentString=\"item:1832x1\" PriceString=\"points:35\" AvailableQuantity=\"99952\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"4\" OrderIndex=\"-100\"
         Flags=\"4096\" RequirementString=\"allianceQualifyDivisionDesignId == 2\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
@@ -538,28 +354,28 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11486\" SpriteId=\"20847\"
         /><RewardDesign RewardDesignId=\"58\" RewardName=\"Division B 2024 Small Prize\"
         RewardDescription=\"Division B 2024 Small Prize\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1834x1\" PriceString=\"points:5\" AvailableQuantity=\"99959\"
+        ArgumentString=\"item:1834x1\" PriceString=\"points:5\" AvailableQuantity=\"99958\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-98\"
         Flags=\"1024\" RequirementString=\"allianceQualifyDivisionDesignId == 2\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11486\" SpriteId=\"20843\"
         /><RewardDesign RewardDesignId=\"59\" RewardName=\"Division C 2024 Medium
         Prize Box\" RewardDescription=\"Division C 2024 Medium Prize Box\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1835x1\" PriceString=\"points:15\" AvailableQuantity=\"99861\"
+        ArgumentString=\"item:1835x1\" PriceString=\"points:15\" AvailableQuantity=\"99859\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-100\"
         Flags=\"2048\" RequirementString=\"allianceQualifyDivisionDesignId == 3\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11756\" SpriteId=\"20846\"
         /><RewardDesign RewardDesignId=\"60\" RewardName=\"Division C 2024 Small Prize
         Box\" RewardDescription=\"Division C 2024 Small Prize Box\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1836x1\" PriceString=\"points:5\" AvailableQuantity=\"99841\"
+        ArgumentString=\"item:1836x1\" PriceString=\"points:5\" AvailableQuantity=\"99838\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-100\"
         Flags=\"1024\" RequirementString=\"allianceQualifyDivisionDesignId == 3\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"11756\" SpriteId=\"20842\"
         /><RewardDesign RewardDesignId=\"61\" RewardName=\"Division D 2024 Prize Box\"
         RewardDescription=\"Division D 2024 Prize Box\" RewardType=\"Tournament\"
-        ArgumentString=\"item:1837x1\" PriceString=\"points:5\" AvailableQuantity=\"99680\"
+        ArgumentString=\"item:1837x1\" PriceString=\"points:5\" AvailableQuantity=\"99676\"
         MaxPerUser=\"100\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"-100\"
         Flags=\"2048\" RequirementString=\"allianceQualifyDivisionDesignId == 4\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2024-02-01T00:00:00\"
@@ -573,7 +389,7 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"12722\"
         /><RewardDesign RewardDesignId=\"63\" RewardName=\"Serious Workshop\" RewardDescription=\"Serious
         storage workshop for serious people who seriously want to win.\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"room:498\" PriceString=\"points:100\" AvailableQuantity=\"99643\"
+        ArgumentString=\"room:498\" PriceString=\"points:100\" AvailableQuantity=\"99637\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"2\" OrderIndex=\"1\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -599,20 +415,20 @@ interactions:
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7775\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"67\" RewardName=\"Drogon\" RewardDescription=\"Not
         to be mistaken for a certain dragon from a famous tv series.\" RewardType=\"FrequentFlyer\"
-        ArgumentString=\"character:304\" PriceString=\"points:150\" AvailableQuantity=\"999970\"
+        ArgumentString=\"character:304\" PriceString=\"points:150\" AvailableQuantity=\"999969\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"1\" Flags=\"0\"
         RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"68\"
         RewardName=\"Xeon\" RewardDescription=\"The winner of the 2019 Wasteland Badass
         Competition.\" RewardType=\"FrequentFlyer\" ArgumentString=\"character:340\"
-        PriceString=\"points:150\" AvailableQuantity=\"999829\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:150\" AvailableQuantity=\"999828\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"1\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7775\" SpriteId=\"0\"
         /><RewardDesign RewardDesignId=\"69\" RewardName=\"Sprinkler\" RewardDescription=\"Whalalalala\"
         RewardType=\"None\" ArgumentString=\"item:819x1\" PriceString=\"points:90\"
-        AvailableQuantity=\"19699\" MaxPerUser=\"5\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19693\" MaxPerUser=\"5\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"70\"
@@ -626,7 +442,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"71\" RewardName=\"Danger Beacon Renovation
         Kit\" RewardDescription=\"Make your ship an object of fear. Requires a small
         beacon.\" RewardType=\"None\" ArgumentString=\"item:931x1\" PriceString=\"points:100\"
-        AvailableQuantity=\"19951\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19950\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"skin:16 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"13901\"
@@ -641,7 +457,7 @@ interactions:
         RewardName=\"Genetic Lab Renovation Kit\" RewardDescription=\"It turns out
         you can do a lot more science if you ignore that little voice inside that
         tells you if things are right or wrong.\" RewardType=\"None\" ArgumentString=\"item:941x1\"
-        PriceString=\"points:100\" AvailableQuantity=\"19975\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:100\" AvailableQuantity=\"19974\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"\" Metadata=\"skin:25
         == 0\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"13995\"
@@ -654,21 +470,21 @@ interactions:
         BackgroundSpriteId=\"7778\" SpriteId=\"14596\" /><RewardDesign RewardDesignId=\"75\"
         RewardName=\"Recycled Air Disease Inhibitor\" RewardDescription=\"Advanced
         respiratory mask. Almost smoke-proof!\" RewardType=\"None\" ArgumentString=\"item:962x1\"
-        PriceString=\"points:160\" AvailableQuantity=\"19827\" MaxPerUser=\"9999\"
+        PriceString=\"points:160\" AvailableQuantity=\"19826\" MaxPerUser=\"9999\"
         AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"14851\"
         /><RewardDesign RewardDesignId=\"76\" RewardName=\"Radiant Scale Armor Skin
         Kit\" RewardDescription=\"Ancient plans for interlocking scale armor. Requires
         Max Level Armor Tile.\" RewardType=\"None\" ArgumentString=\"item:969x1\"
-        PriceString=\"points:100\" AvailableQuantity=\"19954\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:100\" AvailableQuantity=\"19953\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:44 ==
         0\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"15063\"
         /><RewardDesign RewardDesignId=\"77\" RewardName=\"Automated Mineral Vendor
         Renovation Kit\" RewardDescription=\"Redesign your Mineral Storage Room into
         a fancy vending machine that spills Minerals.\" RewardType=\"None\" ArgumentString=\"item:997x1\"
-        PriceString=\"points:80\" AvailableQuantity=\"19957\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:80\" AvailableQuantity=\"19955\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:51 ==
         0\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"14734\"
@@ -682,7 +498,7 @@ interactions:
         BackgroundSpriteId=\"7775\" SpriteId=\"0\" /><RewardDesign RewardDesignId=\"80\"
         RewardName=\"Galaxy Gate Renovation Kit\" RewardDescription=\"Renovates your
         Teleport Room into a beautiful Galaxy Gate, Team GG-1 ready!\" RewardType=\"None\"
-        ArgumentString=\"item:1011x1\" PriceString=\"points:140\" AvailableQuantity=\"19928\"
+        ArgumentString=\"item:1011x1\" PriceString=\"points:140\" AvailableQuantity=\"19927\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"302\"
         Flags=\"0\" RequirementString=\"skin:52 == 0\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -725,13 +541,13 @@ interactions:
         /><RewardDesign RewardDesignId=\"95\" RewardName=\"Hawking Power Core Kit\"
         RewardDescription=\"Retrofit your Level 7 Small Reactor. Limited power source
         for basic ship.\" RewardType=\"None\" ArgumentString=\"item:1209x1\" PriceString=\"points:160\"
-        AvailableQuantity=\"19950\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19948\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:69 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"16477\"
         /><RewardDesign RewardDesignId=\"100\" RewardName=\"Inferno Ward\" RewardDescription=\"Forged
         within the blistering inferno of an ancient stellar collision.\" RewardType=\"None\"
-        ArgumentString=\"item:1218x1\" PriceString=\"points:160\" AvailableQuantity=\"19746\"
+        ArgumentString=\"item:1218x1\" PriceString=\"points:160\" AvailableQuantity=\"19740\"
         MaxPerUser=\"9999\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -1085,7 +901,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"166\" RewardName=\"Repurposed Orbital Defender
         Kit\" RewardDescription=\"Retrofit your Ion Cannon with a ROD-231 Loadout.
         Requires Max Level Ion Cannon.\" RewardType=\"None\" ArgumentString=\"item:1255x1\"
-        PriceString=\"points:120\" AvailableQuantity=\"19966\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:120\" AvailableQuantity=\"19964\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:80 ==
         0\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"16812\"
@@ -1106,7 +922,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"169\" RewardName=\"Quantum Mine\" RewardDescription=\"A
         prototype explosive mine utilizing experimental quantum mechanics technology.\"
         RewardType=\"None\" ArgumentString=\"item:1299x1\" PriceString=\"points:60\"
-        AvailableQuantity=\"18988\" MaxPerUser=\"5\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"18986\" MaxPerUser=\"5\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"302\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7778\" SpriteId=\"17049\" /><RewardDesign RewardDesignId=\"170\"
@@ -1818,7 +1634,7 @@ interactions:
         BackgroundSpriteId=\"17613\" SpriteId=\"17593\" /><RewardDesign RewardDesignId=\"271\"
         RewardName=\"Holo Dojo Kit\" RewardDescription=\"Retrofit a Galaxy Gym as
         a Holographic Dojo. Requires Max Level Galaxy Gym.\" RewardType=\"None\" ArgumentString=\"item:1420x1\"
-        PriceString=\"points:80\" AvailableQuantity=\"19988\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:80\" AvailableQuantity=\"19986\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:110 ==
         0\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7777\" SpriteId=\"17661\"
@@ -2184,7 +2000,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"323\" RewardName=\"Gerbaltech Shield Battery
         Kit\" RewardDescription=\"Retrofit your Shield Battery for a Self Driven Hamster
         Design. Requires Max Level Shield Battery Room. Squeak!\" RewardType=\"None\"
-        ArgumentString=\"item:1450x1\" PriceString=\"points:80\" AvailableQuantity=\"19939\"
+        ArgumentString=\"item:1450x1\" PriceString=\"points:80\" AvailableQuantity=\"19938\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"302\"
         Flags=\"0\" RequirementString=\"skin:117 == 0\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -2551,7 +2367,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"375\" RewardName=\"Serpentine Sticker\" RewardDescription=\"Snakes
         on a Spaceship! Coil this threatening decal around your Hull. Why does it
         always have to be snakes?\" RewardType=\"None\" ArgumentString=\"item:1463x1\"
-        PriceString=\"points:40\" AvailableQuantity=\"19831\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:40\" AvailableQuantity=\"19830\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"302\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7775\" SpriteId=\"17918\"
@@ -2919,7 +2735,7 @@ interactions:
         BackgroundSpriteId=\"18136\" SpriteId=\"18172\" /><RewardDesign RewardDesignId=\"428\"
         RewardName=\"Hammy\" RewardDescription=\"None can match the cuteness, or the
         unimaginable destructive power, of tiny Hammy - Ender of Worlds!\" RewardType=\"None\"
-        ArgumentString=\"item:1486x1\" PriceString=\"points:160\" AvailableQuantity=\"19795\"
+        ArgumentString=\"item:1486x1\" PriceString=\"points:160\" AvailableQuantity=\"19792\"
         MaxPerUser=\"9999\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"301\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -2927,7 +2743,7 @@ interactions:
         RewardName=\"Summit's Edge\" RewardDescription=\"A void-hardened Star Edge
         sword from one of the Galaxy's fiercest warrior cultures. The best defense
         is a good offense!\" RewardType=\"None\" ArgumentString=\"item:1496x1\" PriceString=\"points:180\"
-        AvailableQuantity=\"19361\" MaxPerUser=\"9999\" AvailableEveryXDays=\"1\"
+        AvailableQuantity=\"19353\" MaxPerUser=\"9999\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"18246\"
@@ -3284,7 +3100,7 @@ interactions:
         BackgroundSpriteId=\"18308\" SpriteId=\"18310\" /><RewardDesign RewardDesignId=\"480\"
         RewardName=\"Asteroid Relocation Wrap\" RewardDescription=\"Battle-scarred
         Ship Wrap from a 'successful' Asteroid Relocation Test Program.\" RewardType=\"None\"
-        ArgumentString=\"item:1515x1\" PriceString=\"points:80\" AvailableQuantity=\"19929\"
+        ArgumentString=\"item:1515x1\" PriceString=\"points:80\" AvailableQuantity=\"19928\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"302\"
         Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\"
         AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -4001,7 +3817,7 @@ interactions:
         Kit\" RewardDescription=\"Retrofit your Mineral Miner into a Digital Currency
         Mining Facility. Still processes Minerals. Requires Max Level Mineral Miner
         Room.\" RewardType=\"None\" ArgumentString=\"item:1545x1\" PriceString=\"points:100\"
-        AvailableQuantity=\"19991\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19990\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"skin:138 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"18706\"
@@ -4733,7 +4549,7 @@ interactions:
         diffuses a neon design transferred directly onto the exterior Hull. Admirals
         cannot overstate the value of powerless illumination in the deep unknown.\"
         RewardType=\"None\" ArgumentString=\"item:1688x1\" PriceString=\"points:40\"
-        AvailableQuantity=\"19853\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19852\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"302\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7775\" SpriteId=\"19502\" /><RewardDesign RewardDesignId=\"690\"
@@ -5085,14 +4901,14 @@ interactions:
         /><RewardDesign RewardDesignId=\"790\" RewardName=\"Rejuvenation Chamber Room
         Kit\" RewardDescription=\"Retrofit a Bedroom as a Rejuvenation Chamber. Requires
         Max Level Bedroom.\" RewardType=\"None\" ArgumentString=\"item:1700x1\" PriceString=\"points:100\"
-        AvailableQuantity=\"19931\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19930\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"302\" Flags=\"0\" RequirementString=\"skin:157 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7775\" SpriteId=\"19602\"
         /><RewardDesign RewardDesignId=\"791\" RewardName=\"Hydrone 2.0\" RewardDescription=\"A
         black Market drone fitted with dispersion technology. Stolen by HYDRA spies
         while intercepting Summitran data streams.\" RewardType=\"None\" ArgumentString=\"item:1718x1\"
-        PriceString=\"points:180\" AvailableQuantity=\"17735\" MaxPerUser=\"9999\"
+        PriceString=\"points:180\" AvailableQuantity=\"17718\" MaxPerUser=\"9999\"
         AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\"
         Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"19814\"
@@ -5795,14 +5611,14 @@ interactions:
         /><RewardDesign RewardDesignId=\"894\" RewardName=\"Gerbaltech Kinetic Reactor
         Kit\" RewardDescription=\"Renovate your Small Reactor into a Self Driven Hamster
         design. Requires Max level Small Reactor Room.\" RewardType=\"None\" ArgumentString=\"item:1744x1\"
-        PriceString=\"points:80\" AvailableQuantity=\"19862\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
+        PriceString=\"points:80\" AvailableQuantity=\"19859\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"301\" Flags=\"0\" RequirementString=\"skin:161 ==
         0\" Metadata=\"\" SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"19995\"
         /><RewardDesign RewardDesignId=\"895\" RewardName=\"Redshift Repeater\" RewardDescription=\"Designed
         for stealth and intimidation, nightmarish neurotoxins coat the points of cruelly
         barbed projectiles.\" RewardType=\"None\" ArgumentString=\"item:1749x1\" PriceString=\"points:200\"
-        AvailableQuantity=\"19331\" MaxPerUser=\"9999\" AvailableEveryXDays=\"1\"
+        AvailableQuantity=\"19323\" MaxPerUser=\"9999\" AvailableEveryXDays=\"1\"
         Grids=\"1\" OrderIndex=\"303\" Flags=\"0\" RequirementString=\"\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"20082\"
@@ -6160,7 +5976,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"946\" RewardName=\"Lion Cannon Kit\" RewardDescription=\"Renovate
         your Ion Cannon to provide sight beyond sight. Requires Max level Ion Cannon
         Room.\" RewardType=\"None\" ArgumentString=\"item:1764x1\" PriceString=\"points:160\"
-        AvailableQuantity=\"19893\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19892\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"skin:6 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"20196\"
@@ -6522,14 +6338,14 @@ interactions:
         stored within molecular clouds surrounding a newborn star. We can now exploit
         this phenomena for a frigid shielding solution. Requires Max Level Shield\"
         RewardType=\"None\" ArgumentString=\"item:1783x1\" PriceString=\"points:120\"
-        AvailableQuantity=\"19848\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19847\" MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"301\" Flags=\"0\" RequirementString=\"skin:23 == 0\" Metadata=\"\"
         SeasonDesignId=\"0\" BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\"
         AvailableTo=\"2050-01-01T00:00:00\" BackgroundSpriteId=\"7778\" SpriteId=\"20454\"
         /><RewardDesign RewardDesignId=\"999\" RewardName=\"Cute and Curious Sticker\"
         RewardDescription=\"What happens when the shiniest object passes the fluffiest
         force?\" RewardType=\"None\" ArgumentString=\"item:1801x1\" PriceString=\"points:40\"
-        AvailableQuantity=\"19842\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\" Grids=\"1\"
+        AvailableQuantity=\"19840\" MaxPerUser=\"3\" AvailableEveryXDays=\"1\" Grids=\"1\"
         OrderIndex=\"302\" Flags=\"0\" RequirementString=\"\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
         BackgroundSpriteId=\"7775\" SpriteId=\"20823\" /><RewardDesign RewardDesignId=\"1000\"
@@ -7236,7 +7052,7 @@ interactions:
         /><RewardDesign RewardDesignId=\"1101\" RewardName=\"Gerbaltech Hangar Kit\"
         RewardDescription=\"Retrofit your Hangar Room using the cutest Hamster Carrier
         tech in the galaxy. Squeak! Requires Max level Hangar Room.\" RewardType=\"None\"
-        ArgumentString=\"item:1908x1\" PriceString=\"points:80\" AvailableQuantity=\"19955\"
+        ArgumentString=\"item:1908x1\" PriceString=\"points:80\" AvailableQuantity=\"19952\"
         MaxPerUser=\"1\" AvailableEveryXDays=\"1\" Grids=\"1\" OrderIndex=\"301\"
         Flags=\"0\" RequirementString=\"skin:40 == 0\" Metadata=\"\" SeasonDesignId=\"0\"
         BattlePassTierIndex=\"0\" AvailableFrom=\"2000-01-01T00:00:00\" AvailableTo=\"2050-01-01T00:00:00\"
@@ -7257,11 +7073,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Thu, 21 Mar 2024 19:30:26 GMT
+      - Sun, 24 Mar 2024 17:17:28 GMT
       Expires:
-      - Thu, 21 Mar 2024 19:50:25 GMT
+      - Sun, 24 Mar 2024 17:37:28 GMT
       Last-Modified:
-      - Thu, 21 Mar 2024 19:30:25 GMT
+      - Sun, 24 Mar 2024 17:17:28 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -7269,9 +7085,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 0c6da51d9831b33488b399cfc38cafda.cloudfront.net (CloudFront)
+      - 1.1 bc899ba900b38f8013d849341ebb71c8.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - QJnnXsCZvbGfXX8Vr5h8wqgMZ2ZB83jHD_-8ZKd4EQBGqHHweTGQ2w==
+      - niBLKoSdwX39xk7J4ZgbCuX2z553MCJ7kojTy2dyQIOEDS-eQUFJuA==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

@@ -3,20 +3,20 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/AllianceService/GetAlliance?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&allianceId=21
+    uri: https://api.pixelstarships.com/AllianceService/GetAlliance?allianceId=21
   response:
     body:
       string: '<AllianceService><GetAlliance><Alliance AllianceId="21" AllianceName="Trek
-        Wolfpack" MinTrophyRequired="2600" RequiresApproval="true" AllianceDescription="Wolfpack
-        is a proud member of the Trek Federation. Welcome to the den, where we shape
-        young wolves into battle-hardened veterans that roam the skies hunting for
-        prey. This fleet is semi-competitive div B fleet that requires a minimum of
-        25 stars per tournament - activity is mandatory. Min trophies : 2600. Min
-        hull lvl : 10. Activity on discord mandatory : https://discord.gg/cBcB3ap.
-        AWOOOOOO!!" AllianceCountryCode="" EnableWars="true" Credits="2500" Score="0"
-        ChampionshipScore="50" Trophy="354880" Ranking="12" AllianceSpriteId="19349"
-        ChannelId="120" NumberOfMembers="98" NumberOfApprovedMembers="0" AllianceShipUserId="2624870"
-        ImmunityDate="2023-06-20T04:09:15" DivisionDesignId="0" /></GetAlliance></AllianceService>'
+        Wolfpack" MinTrophyRequired="3200" RequiresApproval="true" AllianceDescription="Welcome
+        to Wolfpack! We are a proud member of the Trek Federation. Come into the den,
+        where we shape young wolves into battle-hardened veterans that roam the skies
+        hunting for prey. This fleet is a competitive fleet in div. B, that requires
+        a minimum of 50 stars per tournament - activity is mandatory. Minimum hull
+        level: 9. Activity on Discord is mandatory:A;https://discord.gg/cBcB3ap.A;AWOOOOOOO!"
+        AllianceCountryCode="" EnableWars="true" Credits="2481" Score="0" ChampionshipScore="25"
+        MinScoreContribution="40" Trophy="334137" Ranking="14" AllianceSpriteId="19349"
+        ChannelId="120" NumberOfMembers="79" NumberOfApprovedMembers="0" AllianceShipUserId="2624870"
+        ImmunityDate="2024-03-24T22:31:39" DivisionDesignId="0" /></GetAlliance></AllianceService>'
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -28,26 +28,22 @@ interactions:
       - public, no-cache="Set-Cookie", max-age=60
       Connection:
       - keep-alive
-      Content-Encoding:
-      - gzip
       Content-Length:
-      - '682'
+      - '910'
       Content-Type:
       - application/xml
       Date:
-      - Mon, 19 Jun 2023 21:23:05 GMT
+      - Sun, 24 Mar 2024 17:17:00 GMT
       Expires:
-      - Mon, 19 Jun 2023 21:24:05 GMT
+      - Sun, 24 Mar 2024 17:18:00 GMT
       Last-Modified:
-      - Mon, 19 Jun 2023 21:23:05 GMT
+      - Sun, 24 Mar 2024 17:17:00 GMT
       Server:
       - Microsoft-IIS/10.0
-      Vary:
-      - Accept-Encoding
       Via:
-      - 1.1 f1c3d16033a0215071d66d8a8c247af4.cloudfront.net (CloudFront)
+      - 1.1 29a3bbd8332d2baa21b0652a77f11198.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - VhsaHaJZq8-xzS0jWhIzV9RuyLck8pd5cHRNpgOXKwxIs1-Cu21aXA==
+      - s8ZcOddVUv6nlgu1jD2qjNEGFwR6FZGBRD-bY0OAZy-sPDNm7cyUzA==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
@@ -59,5 +55,4 @@ interactions:
     status:
       code: 200
       message: OK
-    url: https://api.pixelstarships.com/AllianceService/GetAlliance?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&allianceId=21
 version: 1

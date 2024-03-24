@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites2?clientDateTime=2024-03-22T06%3A54%3A49&languageKey=en
+    uri: https://api.pixelstarships.com/RoomDesignSpriteService/ListRoomDesignSprites2?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
   response:
     body:
       string: <RoomDesignSpriteService><ListRoomDesignSprites version="775"><RoomDesignSprites><RoomDesignSprite
@@ -10437,11 +10437,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Fri, 22 Mar 2024 06:54:52 GMT
+      - Sun, 24 Mar 2024 17:17:28 GMT
       Expires:
-      - Fri, 22 Mar 2024 07:14:52 GMT
+      - Sun, 24 Mar 2024 17:37:28 GMT
       Last-Modified:
-      - Fri, 22 Mar 2024 06:54:52 GMT
+      - Sun, 24 Mar 2024 17:17:28 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -10449,9 +10449,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 bc899ba900b38f8013d849341ebb71c8.cloudfront.net (CloudFront)
+      - 1.1 3036edceee55768c8dc6fc7bbe13d08e.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - dZAFg5hoZQR14UyMhaCPnwxnEQZkzNDO299sIklb2r7Ddp1pWe0yPw==
+      - mCkMVsnwfzwD-RBeb7ukCp9t00DhvaEu-vIJbV7bAMB5o2MiMHwpUw==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:
