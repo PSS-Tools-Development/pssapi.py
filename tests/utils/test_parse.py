@@ -79,11 +79,12 @@ def test_pss_int_flag():
     assert _parse.pss_int_flag("0", _enums.SituationDesignFlag) is None
     assert _parse.pss_int_flag(0, _enums.SituationDesignFlag) is None
 
-    with _pytest.raises(ValueError):  # The value is out of bounds
-        _parse.pss_int_flag(64, _enums.SituationDesignFlag)
-    with _pytest.raises(ValueError):  # The value is out of bounds
-        _parse.pss_int_flag("64", _enums.SituationDesignFlag)
-    with _pytest.raises(ValueError):  # The enum doesn't have such a value
+    # If value exceeds the max value of the enum, ignore it
+    assert _parse.pss_int_flag(1024, _enums.SituationDesignFlag) is None
+    assert _parse.pss_int_flag(1025, _enums.SituationDesignFlag) == _enums.SituationDesignFlag.AFFECT_ATTACKING_SHIP
+
+    # If the value is not an int, throw an error
+    with _pytest.raises(ValueError):
         _parse.pss_int_flag("bruh", _enums.SituationDesignFlag)
 
 
