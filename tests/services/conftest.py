@@ -9,7 +9,7 @@ import vcr.request
 import pssapi
 
 RX_ACCESS_TOKEN_IN_RESPONSE_BODY: re.Pattern = re.compile(r"accessToken=\".*?\"")
-ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT: str = "accessToken=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""
+ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT: str = 'accessToken="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"'
 
 
 @pytest.fixture(scope="session")
@@ -69,9 +69,10 @@ def language_key() -> pssapi.enums.LanguageKey:
 def vcr_config():
     return {
         "match_on": ["host", "method", "path", "scheme"],
-        "record_mode": "once",
-        "filter_query_parameters": ["accessToken"],
-        "filter_post_data_parameters": ["accessToken"],
+        "record_mode": "rewrite",
+        "filter_query_parameters": ["accessToken", "checksum"],
+        "filter_post_data_parameters": ["accessToken", "checksum"],
+        "record_on_exception": False,
         "before_record_request": before_record_request,
         "before_record_response": before_record_response,
     }
@@ -82,14 +83,10 @@ def before_record_request(request: vcr.request.Request):
 
 
 def before_record_response(response):
-    response['body']['string'] = RX_ACCESS_TOKEN_IN_RESPONSE_BODY.sub(ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT, response['body']['string'])
+    response_body = response["body"]["string"].decode("utf-8")
+    if "accessToken" in response_body:
+        response["body"]["string"] = (RX_ACCESS_TOKEN_IN_RESPONSE_BODY.sub(ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT, response_body)).encode("utf-8")
     return response
-
-
-@pytest.fixture(scope="function")
-def vcr_cassette_name(request: pytest.FixtureRequest):
-    cassette_name = request.node.name.removeprefix("test_")
-    return cassette_name
 
 
 @pytest.fixture(scope="module")
