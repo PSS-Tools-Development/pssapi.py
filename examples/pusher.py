@@ -7,6 +7,7 @@ MARKET_DATA: Dict[int, pssapi.entities.Message] = {}
 TOKEN: str = ""
 USER_ID: str = ""
 
+
 async def pusher_example():
     pusher = pssapi.pusher.Pusher
 
