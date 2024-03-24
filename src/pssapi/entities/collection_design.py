@@ -23,3 +23,7 @@ class CollectionDesign(_CollectionDesignRaw, _EntityWithIdBase):
     @property
     def enhancement_type_enum(self) -> "_enums.EnhancementType":
         return self._enhancement_type_enum
+    
+    @property
+    def flags_enum(self) -> "_enums.CollectionDesignFlag":
+        return self._flags_enum
