@@ -31,7 +31,7 @@ async def get_latest_version_4(production_server: str, device_type: str, languag
     return result
 
 
-async def list_all_news_designs(production_server: str, design_version: int, language_key: str, **params) -> _List[_NewsDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_all_news_designs(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_NewsDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_NewsDesign, "NewsDesigns", True),), "NewsDesigns", production_server, LIST_ALL_NEWS_DESIGNS_BASE_PATH, "GET", **params)
     return result

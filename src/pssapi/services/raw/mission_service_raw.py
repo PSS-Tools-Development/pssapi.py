@@ -38,8 +38,8 @@ async def create_mission_2(
     return result
 
 
-async def list_all_mission_designs_4(production_server: str, design_version: int, language_key: str, **params) -> _List[_MissionDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_all_mission_designs_4(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_MissionDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_MissionDesign, "MissionDesigns", True),), "MissionDesigns", production_server, LIST_ALL_MISSION_DESIGNS_4_BASE_PATH, "GET", **params)
     return result
 

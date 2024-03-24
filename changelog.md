@@ -1,3 +1,150 @@
+# Version 0.4.0
+## Changes
+- Implemented Issue [#55](https://github.com/PSS-Tools-Development/pssapi.py/issues/55)
+- Implemented Issue [#54](https://github.com/PSS-Tools-Development/pssapi.py/issues/54)
+## Fixes
+- Fixed Issue [#53](https://github.com/PSS-Tools-Development/pssapi.py/issues/53)
+## Updated Library
+The library has been updated to Pixel Starships v0.998.16.10969 (Steam, testing branch).
+### Changes to utilities
+- `parse.pss_int_enum` will now return `None` on non-existent values, instead of raising an exception.
+- `parse.pss_int_flag` will now ignore values that are too great, instead of raising an exception.
+- `parse.pss_str_enum` will now return `None` on non-existent values, instead of raising an exception.
+- `datetime.convert_to_pss_timestamp` now returns `None`, if the passed value is `None`, instead of raising an exception.
+### Changes to Services
+- Changed `AnimationService`
+  - Updated method `list_animations` with new parameter `client_date_time`
+- Changed `BackgroundService`
+  - Updated method `list_backgrounds` with new parameter `client_date_time`
+- Changed `ChallengeService`
+  - Updated method `list_all_challenge_designs` with new parameter `client_date_time`
+- Changed `CharacterService`
+  - Updated method `to_character` with new parameter `client_date_time`
+  - Updated method `list_all_character_design_actions` with new parameter `client_date_time`
+  - Updated method `list_all_character_designs` with new parameter `client_date_time`
+  - Updated method `list_all_draw_designs` with new parameter `client_date_time`
+- Changed `CollectionService`
+  - Updated method `list_all_collection_designs` with new parameter `client_date_time`
+- Changed `DivisionService`
+  - Updated method `list_all_division_designs` with new parameter `client_date_time`
+- Changed `GalaxyService`
+  - Updated method `list_marker_generator_designs` with new parameter `client_date_time`
+  - Updated method `list_star_system_links` with new parameter `client_date_time`
+  - Updated method `list_star_systems` with new parameter `client_date_time`
+- Changed `ItemService`
+  - Updated method `to_item` with new parameter `client_date_time`
+  - Updated method `list_item_design_actions` with new parameter `client_date_time`
+  - Updated method `list_item_designs` with new parameter `client_date_time`
+- Changed `LeagueService`
+  - Updated method `list_leagues` with new parameter `client_date_time`
+- Changed `MissionService`
+  - Updated method `list_all_mission_designs` with new parameter `client_date_time`
+- Changed `PromotionService`
+  - Updated method `list_all_promotion_designs` with new parameter `client_date_time`
+- Changed `ResearchService`
+  - Updated method `list_all_research_designs` with new parameter `client_date_time`
+- Changed `RewardService`
+  - Updated method `list_all_reward_designs` with new parameter `client_date_time`
+- Changed `RoomDesignSpriteService`
+  - Updated method `list_room_design_sprites` with new parameter `client_date_time`
+- Changed `RoomService`
+  - Updated method `list_craft_designs` with new parameter `client_date_time`
+  - Updated method `list_missile_designs` with new parameter `client_date_time`
+  - Updated method `list_room_design_purchase` with new parameter `client_date_time`
+  - Updated method `list_room_designs` with new parameter `client_date_time`
+- Changed `SeasonService`
+  - Updated method `list_all_season_designs` with new parameter `client_date_time`
+- Changed `SettingService`
+  - Updated method `list_all_news_designs` with new parameter `client_date_time`
+- Changed `ShipService`
+  - Updated method `to_ship` with new parameter `client_date_time`
+  - Updated type of parameter `client_date_time` for method `get_ship_by_user_id` to `datetime.datetime`
+  - Updated method `list_all_ship_designs` with new parameter `client_date_time`
+- Changed `SituationService`
+  - Updated method `list_situation_designs` with new parameter `client_date_time`
+- Changed `TrainingService`
+  - Updated method `list_all_training_designs` with new parameter `client_date_time`
+- Changed `UserService`
+  - Updated endpoint `list_skins` with new parameter `client_date_time`
+### Changes to Raw Services
+- Changed `animation_service_raw`
+  - Update endpoint `list_animations` with new parameter `client_date_time`
+- Changed `background_service_raw`
+  - Update endpoint `list_backgrounds` with new parameter `client_date_time`
+- Changed `challenge_service_raw`
+  - Update endpoint `list_all_challenge_designs_2` with new parameter `client_date_time`
+- Changed `character_service_raw`
+  - Update endpoint `list_all_character_design_actions` with new parameter `client_date_time`
+  - Update endpoint `list_all_character_designs_2` with new parameter `client_date_time`
+  - Update endpoint `list_all_draw_designs` with new parameter `client_date_time`
+- Changed `collection_service_raw`
+  - Update endpoint `list_all_collection_designs` with new parameter `client_date_time`
+- Changed `division_service_raw`
+  - Update endpoint `list_all_division_designs_2` with new parameter `client_date_time`
+- Changed `galaxy_service_raw`
+  - Update endpoint `list_marker_generator_designs` with new parameter `client_date_time`
+  - Update endpoint `list_star_system_links` with new parameter `client_date_time`
+  - Update endpoint `list_star_systems` with new parameter `client_date_time`
+- Changed `item_service_raw`
+  - Update endpoint `list_item_design_actions` with new parameter `client_date_time`
+  - Update endpoint `list_item_designs_2` with new parameter `client_date_time`
+- Changed `league_service_raw`
+  - Update endpoint `list_leagues_2` with new parameter `client_date_time`
+- Changed `mission_service_raw`
+  - Update endpoint `list_all_mission_designs_4` with new parameter `client_date_time`
+- Changed `promotion_service_raw`
+  - Update endpoint `list_all_promotion_designs_2` with new parameter `client_date_time`
+- Changed `research_service_raw`
+  - Update endpoint `list_all_research_designs_2` with new parameter `client_date_time`
+- Changed `reward_service_raw`
+  - Update endpoint `list_all_reward_designs_2` with new parameter `client_date_time`
+- Changed `room_design_sprite_service_raw`
+  - Update endpoint `list_room_design_sprites_2` with new parameter `client_date_time`
+- Changed `room_service_raw`
+  - Update endpoint `list_craft_designs` with new parameter `client_date_time`
+  - Update endpoint `list_missile_designs` with new parameter `client_date_time`
+  - Update endpoint `list_room_design_purchase` with new parameter `client_date_time`
+  - Update endpoint `list_room_designs_2` with new parameter `client_date_time`
+- Changed `season_service_raw`
+  - Update endpoint `list_all_season_designs` with new parameter `client_date_time`
+- Changed `setting_service_raw`
+  - Update endpoint `list_all_news_designs` with new parameter `client_date_time`
+- Changed `ship_service_raw`
+  - Update endpoint `list_all_ship_designs_2` with new parameter `client_date_time`
+- Changed `situation_service_raw`
+  - Update endpoint `list_situation_designs` with new parameter `client_date_time`
+- Changed `training_service_raw`
+  - Update endpoint `list_all_training_designs_2` with new parameter `client_date_time`
+- Changed `user_service_raw`
+  - Update endpoint `list_skins` with new parameter `client_date_time`
+### Changes to Entities
+- Changed `Alliance`
+  - Removed property `alliance_country_code_enum`
+- Changed `CollectionDesign`
+  - Added property `flags_enum`
+- Changed `User`
+  - Removed property `language_key_enum`
+### Changes to Raw Entities
+- Changed `CollectionDesignRaw`
+  - Added property `ability_icon_sprite_id` (`int`)
+  - Added property `ability_name` (`str`)
+  - Added property `argument` (`int`)
+  - Added property `base_chance` (`int`)
+  - Added property `max_use` (`int`)
+  - Added property `step_chance` (`int`)
+  - Added property `trigger_type` (`str`)
+- Changed `CraftDesignRaw`
+  - Added property `attack_range` (`int`)
+### Changes to Enums
+- Added enum `CollectionDesignFlag`
+- Changed enum `RoomFlags`
+  - Added value 64 (`HIDE_ON_UGC`)
+## Changes to testing
+- All tests for methods not requiring an access token now re-record cassettes each time.
+- Updated deviceKey used for login methods
+- Remove sensitive data from recorded requests and responses
+- Update `vcrpy` version to `6.0.1`
+
 # Version 0.3.0
 ## Added
 - Pusher support
@@ -15,13 +162,9 @@ The library has been updated to Pixel Starships v0.998.9.12852 (IOS) and v0.998.
 - Changed `TaskServiceRaw`
   - Update endpoint `list_all_task_designs_2` with new parameter `client_date_time`
 ### Changes to Entities
-- Added entities:
-  - `UserFleetCollection`
 - Changed `Skin`
   - Updated type of property `sprite_type_enum` to `SpriteType`
 ### Changes to Raw Entities
-- Added entities:
-  - `UserFleetCollectionRaw`
 - Changed `CharacterDesignRaw`
   - Added property `tags` (`str`)
 - Changed `RoomDesignRaw`

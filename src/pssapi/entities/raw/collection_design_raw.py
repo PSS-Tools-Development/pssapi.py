@@ -14,6 +14,10 @@ class CollectionDesignRaw:
 
     def __init__(self, collection_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._ability_icon_sprite_id: int = _parse.pss_int(collection_design_info.get("AbilityIconSpriteId"))
+        self._ability_name: str = _parse.pss_str(collection_design_info.get("AbilityName"))
+        self._argument: int = _parse.pss_int(collection_design_info.get("Argument"))
+        self._base_chance: int = _parse.pss_int(collection_design_info.get("BaseChance"))
         self._base_enhancement_value: int = _parse.pss_int(collection_design_info.get("BaseEnhancementValue"))
         self._collection_description: str = _parse.pss_str(collection_design_info.get("CollectionDescription"))
         self._collection_design_id: int = _parse.pss_int(collection_design_info.get("CollectionDesignId"))
@@ -25,9 +29,28 @@ class CollectionDesignRaw:
         self._halo_animation_id: int = _parse.pss_int(collection_design_info.get("HaloAnimationId"))
         self._icon_sprite_id: int = _parse.pss_int(collection_design_info.get("IconSpriteId"))
         self._max_combo: int = _parse.pss_int(collection_design_info.get("MaxCombo"))
+        self._max_use: int = _parse.pss_int(collection_design_info.get("MaxUse"))
         self._min_combo: int = _parse.pss_int(collection_design_info.get("MinCombo"))
         self._sprite_id: int = _parse.pss_int(collection_design_info.get("SpriteId"))
+        self._step_chance: int = _parse.pss_int(collection_design_info.get("StepChance"))
         self._step_enhancement_value: int = _parse.pss_int(collection_design_info.get("StepEnhancementValue"))
+        self._trigger_type: str = _parse.pss_str(collection_design_info.get("TriggerType"))
+
+    @property
+    def ability_icon_sprite_id(self) -> int:
+        return self._ability_icon_sprite_id
+
+    @property
+    def ability_name(self) -> str:
+        return self._ability_name
+
+    @property
+    def argument(self) -> int:
+        return self._argument
+
+    @property
+    def base_chance(self) -> int:
+        return self._base_chance
 
     @property
     def base_enhancement_value(self) -> int:
@@ -74,6 +97,10 @@ class CollectionDesignRaw:
         return self._max_combo
 
     @property
+    def max_use(self) -> int:
+        return self._max_use
+
+    @property
     def min_combo(self) -> int:
         return self._min_combo
 
@@ -82,11 +109,23 @@ class CollectionDesignRaw:
         return self._sprite_id
 
     @property
+    def step_chance(self) -> int:
+        return self._step_chance
+
+    @property
     def step_enhancement_value(self) -> int:
         return self._step_enhancement_value
 
+    @property
+    def trigger_type(self) -> str:
+        return self._trigger_type
+
     def _key(self):
         return (
+            self.ability_icon_sprite_id,
+            self.ability_name,
+            self.argument,
+            self.base_chance,
             self.base_enhancement_value,
             self.collection_description,
             self.collection_design_id,
@@ -98,14 +137,21 @@ class CollectionDesignRaw:
             self.halo_animation_id,
             self.icon_sprite_id,
             self.max_combo,
+            self.max_use,
             self.min_combo,
             self.sprite_id,
+            self.step_chance,
             self.step_enhancement_value,
+            self.trigger_type,
         )
 
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "AbilityIconSpriteId": self.ability_icon_sprite_id,
+                "AbilityName": self.ability_name,
+                "Argument": self.argument,
+                "BaseChance": self.base_chance,
                 "BaseEnhancementValue": self.base_enhancement_value,
                 "CollectionDescription": self.collection_description,
                 "CollectionDesignId": self.collection_design_id,
@@ -117,9 +163,12 @@ class CollectionDesignRaw:
                 "HaloAnimationId": self.halo_animation_id,
                 "IconSpriteId": self.icon_sprite_id,
                 "MaxCombo": self.max_combo,
+                "MaxUse": self.max_use,
                 "MinCombo": self.min_combo,
                 "SpriteId": self.sprite_id,
+                "StepChance": self.step_chance,
                 "StepEnhancementValue": self.step_enhancement_value,
+                "TriggerType": self.trigger_type,
             }
 
         return self._dict

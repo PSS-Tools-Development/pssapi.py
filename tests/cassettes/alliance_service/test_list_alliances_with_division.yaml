@@ -1,0 +1,232 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision
+  response:
+    body:
+      string: <AllianceService><ListAlliancesWithDivision><Alliances></Alliances></ListAlliancesWithDivision></AllianceService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:03 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:03 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:03 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - c5hDNZKnTQ0PEbR3tt4OBKNcEaIw8tIR--2ZvCVBMSsl662ktCeORg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=1
+  response:
+    body:
+      string: <AllianceService><ListAlliancesWithDivision><Alliances></Alliances></ListAlliancesWithDivision></AllianceService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:03 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:03 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JUtEzRxy5ZjpmWYZENn0NMqzaPeCp_3CV9EO0vrTT-rL8jHVp_PEPA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=2
+  response:
+    body:
+      string: <AllianceService><ListAlliancesWithDivision><Alliances></Alliances></ListAlliancesWithDivision></AllianceService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:04 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 4786bcd6a5ee692459814ef0ab252684.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - LIq-1UAKdoR7-RPUVBOsFCcJLgK_ZSz39NTn_Pi4ZxvI2tf3Y0iYLQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=3
+  response:
+    body:
+      string: <AllianceService><ListAlliancesWithDivision><Alliances></Alliances></ListAlliancesWithDivision></AllianceService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:04 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IKl3KzE53VnX5SOtC8qyIHbzgTnuIu1D_70c1TpqEQ5I05QVSd8Jhg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesWithDivision?divisionDesignId=4
+  response:
+    body:
+      string: <AllianceService><ListAlliancesWithDivision><Alliances></Alliances></ListAlliancesWithDivision></AllianceService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:04 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - b6xLRFSktxZfJu8O1-Po1rL86DE-zw5FXVGoh4P0fy7_FC7dPmFFsg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

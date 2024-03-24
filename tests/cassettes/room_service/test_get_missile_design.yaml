@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/GetMissileDesign?languageKey=en&missileDesignId=2
+  response:
+    body:
+      string: <RoomService><GetMissileDesign><MissileDesign MissileDesignId="2" MissileDesignName="Rocket"
+        SystemDamage="1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1557" SpriteId="1557"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /></GetMissileDesign></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '690'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:29 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:37:29 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:29 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 ba7b83fea0750f0a671a6626ceefabf0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rZMKm-U1xdvmQMhZho20RUPMEcJzGGY7NNr1rJm1RH5y6YBVZSsCLQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

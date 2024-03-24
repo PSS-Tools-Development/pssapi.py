@@ -1,0 +1,308 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListCharactersGivenInAlliance?allianceId=21&skip=0&take=100
+  response:
+    body:
+      string: "<AllianceService><ListCharactersGivenInAlliance><Characters><Character
+        CharacterId=\"17954777\" ShipId=\"434241\" CharacterDesignId=\"77\" CharacterName=\"Roach\"
+        Xp=\"209340\" Level=\"40\" OwnerShipId=\"434241\" HpImprovement=\"20\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"40\" AbilityImprovement=\"0\" StaminaImprovement=\"19\"
+        Fatigue=\"0\" ItemIds=\"144051725,23769914\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2021-06-20T00:11:55\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Alien catcher\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:58:58\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"144051725\" ShipId=\"434241\" ItemDesignId=\"641\" Quantity=\"1\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"23769914\" ShipId=\"434241\" ItemDesignId=\"134\"
+        Quantity=\"3\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"30502882\" ShipId=\"3049051\" CharacterDesignId=\"194\" CharacterName=\"Red
+        Ninja\" Xp=\"196941\" Level=\"39\" OwnerShipId=\"3049051\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Deloiz\" RoomId=\"0\" DeploymentDate=\"2024-03-24T17:06:02\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"41625416\"
+        ShipId=\"434241\" CharacterDesignId=\"53\" CharacterName=\"Evil General\"
+        Xp=\"104166\" Level=\"30\" OwnerShipId=\"434241\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Alien catcher\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:59:04\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"43949389\"
+        ShipId=\"434241\" CharacterDesignId=\"273\" CharacterName=\"Ardent Templar\"
+        Xp=\"209340\" Level=\"40\" OwnerShipId=\"434241\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"56\" AbilityImprovement=\"1\" StaminaImprovement=\"3\"
+        Fatigue=\"0\" ItemIds=\"232544188,154321317\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2024-03-22T04:48:47\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Alien catcher\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:58:46\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"232544188\" ShipId=\"434241\" ItemDesignId=\"1276\" Quantity=\"1\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"154321317\" ShipId=\"434241\" ItemDesignId=\"694\"
+        Quantity=\"1\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"66432583\" ShipId=\"1926011\" CharacterDesignId=\"475\" CharacterName=\"Flora\"
+        Xp=\"209340\" Level=\"40\" OwnerShipId=\"1926011\" HpImprovement=\"4\" PilotImprovement=\"0\"
+        RepairImprovement=\"1\" WeaponImprovement=\"0\" ScienceImprovement=\"6\" EngineImprovement=\"0\"
+        AttackImprovement=\"10\" AbilityImprovement=\"32\" StaminaImprovement=\"4\"
+        Fatigue=\"24\" ItemIds=\"219211335,226284205\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2023-10-18T11:16:07\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Balyarni\" RoomId=\"0\" DeploymentDate=\"2024-03-24T12:44:15\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"219211335\" ShipId=\"1926011\" ItemDesignId=\"576\" Quantity=\"3\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"226284205\" ShipId=\"1926011\" ItemDesignId=\"163\"
+        Quantity=\"1\" BonusEnhancementType=\"Science\" BonusEnhancementValue=\"5.3\"
+        IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"69206761\" ShipId=\"8171116\" CharacterDesignId=\"108\" CharacterName=\"Foxy
+        Girl\" Xp=\"209340\" Level=\"40\" OwnerShipId=\"8171116\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"42\" ScienceImprovement=\"0\"
+        EngineImprovement=\"2\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"6\" ItemIds=\"233563284,229642856\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2024-01-21T19:35:48\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Greish\" RoomId=\"0\" DeploymentDate=\"2024-03-24T12:22:54\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"233563284\" ShipId=\"8171116\" ItemDesignId=\"470\" Quantity=\"1\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"229642856\" ShipId=\"8171116\" ItemDesignId=\"966\"
+        Quantity=\"6\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"69689840\" ShipId=\"1926011\" CharacterDesignId=\"120\" CharacterName=\"Zombie\"
+        Xp=\"209340\" Level=\"40\" OwnerShipId=\"1926011\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"11\" AbilityImprovement=\"7\" StaminaImprovement=\"2\"
+        Fatigue=\"24\" ItemIds=\"222728181,126506097\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2024-01-19T01:07:42\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Balyarni\" RoomId=\"0\" DeploymentDate=\"2024-03-24T12:44:09\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"222728181\" ShipId=\"1926011\" ItemDesignId=\"1304\" Quantity=\"1\"
+        BonusEnhancementType=\"Hp\" BonusEnhancementValue=\"2\" IsNew=\"false\" SkinKey=\"0\"
+        /><Item ItemId=\"126506097\" ShipId=\"1926011\" ItemDesignId=\"396\" Quantity=\"4\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"69717876\" ShipId=\"8171116\" CharacterDesignId=\"365\" CharacterName=\"Big
+        Boom Cat\" Xp=\"209340\" Level=\"40\" OwnerShipId=\"8171116\" HpImprovement=\"9\"
+        PilotImprovement=\"44\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"4\"
+        Fatigue=\"24\" ItemIds=\"235947867,233775769\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2024-03-16T23:56:29\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Greish\" RoomId=\"0\" DeploymentDate=\"2024-03-24T12:22:29\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"235947867\" ShipId=\"8171116\" ItemDesignId=\"691\" Quantity=\"1\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"233775769\" ShipId=\"8171116\" ItemDesignId=\"692\"
+        Quantity=\"2\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70139232\" ShipId=\"4659024\" CharacterDesignId=\"213\" CharacterName=\"Leon
+        Mars\" Xp=\"209340\" Level=\"40\" OwnerShipId=\"4659024\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"194309030,172015761\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"A5TATINE\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T16:47:42\" AvailableDate=\"2024-01-11T13:52:13\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"194309030\"
+        ShipId=\"4659024\" ItemDesignId=\"462\" Quantity=\"4\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"172015761\"
+        ShipId=\"4659024\" ItemDesignId=\"995\" Quantity=\"6\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70287051\" ShipId=\"4659024\" CharacterDesignId=\"145\" CharacterName=\"Bogan\"
+        Xp=\"209340\" Level=\"40\" OwnerShipId=\"4659024\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"215130824,169009725\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"A5TATINE\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T16:47:46\" AvailableDate=\"2024-01-19T03:47:09\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"215130824\"
+        ShipId=\"4659024\" ItemDesignId=\"799\" Quantity=\"1\" BonusEnhancementType=\"Ability\"
+        BonusEnhancementValue=\"11.5\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"169009725\"
+        ShipId=\"4659024\" ItemDesignId=\"152\" Quantity=\"2\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70438725\" ShipId=\"7827591\" CharacterDesignId=\"487\" CharacterName=\"Beti
+        Yeti\" Xp=\"49637\" Level=\"22\" OwnerShipId=\"7827591\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"225837760,220156025\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Cait
+        Audrey\" RoomId=\"0\" DeploymentDate=\"2024-03-24T02:56:49\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"225837760\"
+        ShipId=\"7827591\" ItemDesignId=\"1724\" Quantity=\"1\" BonusEnhancementType=\"Science\"
+        BonusEnhancementValue=\"7\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"220156025\"
+        ShipId=\"7827591\" ItemDesignId=\"429\" Quantity=\"3\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70588069\" ShipId=\"7639741\" CharacterDesignId=\"272\" CharacterName=\"Mistycball\"
+        Xp=\"4955\" Level=\"7\" OwnerShipId=\"7639741\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"240232281,239437451\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Tree\u2122\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T02:09:57\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"240232281\"
+        ShipId=\"7639741\" ItemDesignId=\"1521\" Quantity=\"1\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"239437451\"
+        ShipId=\"7639741\" ItemDesignId=\"1465\" Quantity=\"1\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70590714\" ShipId=\"7830770\" CharacterDesignId=\"188\" CharacterName=\"Brenda
+        linuxer\" Xp=\"162704\" Level=\"36\" OwnerShipId=\"7830770\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"223513386,227222412\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Hellinir\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T16:56:13\" AvailableDate=\"2024-02-09T01:53:32\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"223513386\"
+        ShipId=\"7830770\" ItemDesignId=\"798\" Quantity=\"2\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"227222412\"
+        ShipId=\"7830770\" ItemDesignId=\"508\" Quantity=\"1\" BonusEnhancementType=\"FireResistance\"
+        BonusEnhancementValue=\"19.2\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70590831\" ShipId=\"7830770\" CharacterDesignId=\"145\" CharacterName=\"Bogan\"
+        Xp=\"162174\" Level=\"36\" OwnerShipId=\"7830770\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"218455966,223513386\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Hellinir\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T16:56:15\" AvailableDate=\"2024-02-09T02:01:20\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"218455966\"
+        ShipId=\"7830770\" ItemDesignId=\"275\" Quantity=\"3\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"223513386\"
+        ShipId=\"7830770\" ItemDesignId=\"798\" Quantity=\"2\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70605419\" ShipId=\"7639741\" CharacterDesignId=\"187\" CharacterName=\"Ethan\"
+        Xp=\"9528\" Level=\"10\" OwnerShipId=\"7639741\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"239913218,239963362\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Tree\u2122\"
+        RoomId=\"0\" DeploymentDate=\"2024-03-24T02:10:22\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"239913218\"
+        ShipId=\"7639741\" ItemDesignId=\"790\" Quantity=\"1\" BonusEnhancementType=\"Ability\"
+        BonusEnhancementValue=\"11.8\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"239963362\"
+        ShipId=\"7639741\" ItemDesignId=\"933\" Quantity=\"1\" BonusEnhancementType=\"Engine\"
+        BonusEnhancementValue=\"2.7\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"70867174\" ShipId=\"8247673\" CharacterDesignId=\"187\" CharacterName=\"Ethan\"
+        Xp=\"22833\" Level=\"15\" OwnerShipId=\"8247673\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"1\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"PimpMaster5000\" RoomId=\"0\" DeploymentDate=\"2024-03-24T00:24:27\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"71005209\"
+        ShipId=\"6715586\" CharacterDesignId=\"14\" CharacterName=\"Medusa\" Xp=\"96132\"
+        Level=\"28\" OwnerShipId=\"6715586\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"1\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"TNRY\" RoomId=\"0\" DeploymentDate=\"2024-03-24T00:48:46\"
+        AvailableDate=\"2024-03-05T12:18:35\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"71044015\"
+        ShipId=\"434241\" CharacterDesignId=\"13\" CharacterName=\"Visiri Capt'n\"
+        Xp=\"120219\" Level=\"31\" OwnerShipId=\"434241\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Alien catcher\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:58:52\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"71048732\"
+        ShipId=\"7830770\" CharacterDesignId=\"13\" CharacterName=\"Capitaine Visiri\"
+        Xp=\"2412\" Level=\"6\" OwnerShipId=\"7830770\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Hellinir\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:56:09\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"71066562\"
+        ShipId=\"7809695\" CharacterDesignId=\"323\" CharacterName=\"Harmony Dragon\"
+        Xp=\"95931\" Level=\"29\" OwnerShipId=\"7809695\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"11\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"25\" ItemIds=\"229566212,241822890\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"2024-03-06T06:28:34\" TrainingDesignId=\"0\"
+        OwnerUsername=\"Sputni\u0107\" RoomId=\"0\" DeploymentDate=\"2024-03-24T04:15:08\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"229566212\" ShipId=\"7809695\" ItemDesignId=\"1231\" Quantity=\"1\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"241822890\" ShipId=\"7809695\" ItemDesignId=\"1405\"
+        Quantity=\"1\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"71069192\" ShipId=\"8171116\" CharacterDesignId=\"189\" CharacterName=\"Huge
+        Hellaloya\" Xp=\"209340\" Level=\"40\" OwnerShipId=\"8171116\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"44\"
+        StaminaImprovement=\"0\" Fatigue=\"6\" ItemIds=\"235313342,243242810\" Flags=\"1\"
+        TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"2024-03-23T14:56:19\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Greish\" RoomId=\"0\" DeploymentDate=\"2024-03-24T12:18:54\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item
+        ItemId=\"235313342\" ShipId=\"8171116\" ItemDesignId=\"1465\" Quantity=\"2\"
+        BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /><Item ItemId=\"243242810\" ShipId=\"8171116\" ItemDesignId=\"115\"
+        Quantity=\"1\" BonusEnhancementType=\"None\" BonusEnhancementValue=\"0\" IsNew=\"false\"
+        SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"71130582\" ShipId=\"7830770\" CharacterDesignId=\"157\" CharacterName=\"Maman\"
+        Xp=\"1707\" Level=\"5\" OwnerShipId=\"7830770\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" TrainingEndDate=\"\"
+        TrainingDesignId=\"0\" OwnerUsername=\"Hellinir\" RoomId=\"0\" DeploymentDate=\"2024-03-24T16:56:05\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"71147043\"
+        ShipId=\"7827591\" CharacterDesignId=\"225\" CharacterName=\"Miss McAlienface\"
+        Xp=\"16861\" Level=\"13\" OwnerShipId=\"7827591\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"222203928,225731644\" Flags=\"1\" TrainingData=\"\"
+        IsNew=\"false\" TrainingEndDate=\"\" TrainingDesignId=\"0\" OwnerUsername=\"Cait
+        Audrey\" RoomId=\"0\" DeploymentDate=\"2024-03-24T02:56:42\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items><Item ItemId=\"222203928\"
+        ShipId=\"7827591\" ItemDesignId=\"430\" Quantity=\"6\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"225731644\"
+        ShipId=\"7827591\" ItemDesignId=\"517\" Quantity=\"4\" BonusEnhancementType=\"None\"
+        BonusEnhancementValue=\"0\" IsNew=\"false\" SkinKey=\"0\" /></Items><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character></Characters></ListCharactersGivenInAlliance></AllianceService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", no-store, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - t9Qfexf_fIYvehGuwfVYU80SwVvaLyV8s5VFAC-deliLC5TNZuxmBg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,147 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/CollectionService/ListAllCollectionDesigns?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
+  response:
+    body:
+      string: <CollectionService><ListAllCollectionDesigns version="397"><CollectionDesigns><CollectionDesign
+        CollectionDesignId="1" CollectionName="SavySoda" MinCombo="4" MaxCombo="10"
+        EnhancementType="EmpSkill" BaseEnhancementValue="4" Flags="0" CollectionType="Character"
+        CollectionDescription="Savy Soda Engineering. Not actually a soda company."
+        SpriteId="8118" ColorString="255,76,203" StepEnhancementValue="2" IconSpriteId="8183"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="2"
+        CollectionName="Sango" MinCombo="2" MaxCombo="6" EnhancementType="SharpShooterSkill"
+        BaseEnhancementValue="2" Flags="0" CollectionType="Character" CollectionDescription="From
+        the legendary Sango Days. Not a fruit." SpriteId="8122" ColorString="255,10,30"
+        StepEnhancementValue="1" IconSpriteId="8187" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="3" CollectionName="Cats"
+        MinCombo="2" MaxCombo="8" EnhancementType="ResurrectSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="You can never
+        have too many. Just be careful as they are constantly plotting to murder you
+        in your sleep." SpriteId="8171" ColorString="236,201,52" StepEnhancementValue="5"
+        IconSpriteId="8189" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="4" CollectionName="Office Worker" MinCombo="3" MaxCombo="10"
+        EnhancementType="BloodThirstSkill" BaseEnhancementValue="3" Flags="0" CollectionType="Character"
+        CollectionDescription="Developed blood thirst ability from working in office."
+        SpriteId="9033" ColorString="44,73,144" StepEnhancementValue="1" IconSpriteId="8190"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="5"
+        CollectionName="Critters" MinCombo="3" MaxCombo="10" EnhancementType="BloodThirstSkill"
+        BaseEnhancementValue="1" Flags="0" CollectionType="Character" CollectionDescription="Animals
+        which are not cats. May not be as cute." SpriteId="8120" ColorString="230,100,100"
+        StepEnhancementValue="1" IconSpriteId="8185" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="6" CollectionName="Space
+        Pirate" MinCombo="2" MaxCombo="5" EnhancementType="SharpShooterSkill" BaseEnhancementValue="2"
+        Flags="0" CollectionType="Character" CollectionDescription="Life as a Space
+        Pirate is never dull. Until you encounter a Space Ninja." SpriteId="9034"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="9039" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="7" CollectionName="Federation"
+        MinCombo="2" MaxCombo="5" EnhancementType="MedicalSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="Enforcers of peace
+        and order in the galaxy. Likes to boss others around. Not actually part of
+        the FBI." SpriteId="9035" ColorString="100,100,100" StepEnhancementValue="10"
+        IconSpriteId="9037" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="8" CollectionName="Qtarian" MinCombo="2" MaxCombo="5"
+        EnhancementType="SharpShooterSkill" BaseEnhancementValue="1" Flags="0" CollectionType="Character"
+        CollectionDescription="The Junk Junkies of the galaxy. Are addicted to collecting
+        and hoarding space debris. Not to be confused with Dwarves." SpriteId="9036"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="9038" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="9" CollectionName="Constellation"
+        MinCombo="2" MaxCombo="5" EnhancementType="MedicalSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="Legendary Star
+        Travelers of the galaxy. They enjoy predicting the fortunes of like-minded
+        individuals." SpriteId="9032" ColorString="50,50,50" StepEnhancementValue="10"
+        IconSpriteId="9040" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="10" CollectionName="Tech" MinCombo="4" MaxCombo="10" EnhancementType="EmpSkill"
+        BaseEnhancementValue="4" Flags="0" CollectionType="Character" CollectionDescription="Persons
+        of electronic disposition." SpriteId="8121" ColorString="50,50,50" StepEnhancementValue="2"
+        IconSpriteId="8977" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="11" CollectionName="Fantasy" MinCombo="2" MaxCombo="5"
+        EnhancementType="SharpShooterSkill" BaseEnhancementValue="1" Flags="0" CollectionType="Character"
+        CollectionDescription="A mythical band of mystical and magical minions." SpriteId="8123"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="8188" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="12" CollectionName="Vampire"
+        MinCombo="2" MaxCombo="5" EnhancementType="BloodThirstSkill" BaseEnhancementValue="4"
+        Flags="0" CollectionType="Character" CollectionDescription="A horrible experiment
+        gone wrong resulting in a new humanoid species that thrives on blood consumption."
+        SpriteId="8120" ColorString="230,100,100" StepEnhancementValue="2" IconSpriteId="8185"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="13"
+        CollectionName="Gray" MinCombo="2" MaxCombo="5" EnhancementType="FreezeAttackSkill"
+        BaseEnhancementValue="4" Flags="0" CollectionType="Character" CollectionDescription="Cute,
+        Big heads, Psionic powers, and deep research into the latest weapons." SpriteId="11294"
+        ColorString="160,175,113" StepEnhancementValue="2" IconSpriteId="11295" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="14" CollectionName="Visiri"
+        MinCombo="3" MaxCombo="7" EnhancementType="InstantKillSkill" BaseEnhancementValue="1"
+        Flags="0" CollectionType="Character" CollectionDescription="Genetically engineered
+        slug-like warrior race. Knows no purpose beyond endless conflict." SpriteId="11399"
+        ColorString="255,0,0" StepEnhancementValue="1" IconSpriteId="11400" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="15" CollectionName="Ardent"
+        MinCombo="3" MaxCombo="8" EnhancementType="EmpSkill" BaseEnhancementValue="5"
+        Flags="0" CollectionType="Character" CollectionDescription="Noble souls, empowered
+        by righteous purpose." SpriteId="11296" ColorString="225, 225, 225" StepEnhancementValue="1"
+        IconSpriteId="11297" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="16" CollectionName="OncePerYear" MinCombo="2" MaxCombo="2"
+        EnhancementType="MedicalSkill" BaseEnhancementValue="30" Flags="0" CollectionType="Character"
+        CollectionDescription="Meet once per year" SpriteId="12793" ColorString="230,185,186"
+        StepEnhancementValue="30" IconSpriteId="12794" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /></CollectionDesigns></ListAllCollectionDesigns></CollectionService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:08 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:37:08 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:08 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 e94bd6405e7651c50e73077af1691486.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 6gQQ8zdTENE6yTl6XJ0oqizIsHAsp-NRzKX5me1XGFbTsiE4APl6jw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

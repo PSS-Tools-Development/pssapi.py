@@ -184,8 +184,8 @@ async def list_friends(production_server: str, user_id: int, access_token: str, 
     return result
 
 
-async def list_skins(production_server: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
+async def list_skins(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", **params)
     return result
 

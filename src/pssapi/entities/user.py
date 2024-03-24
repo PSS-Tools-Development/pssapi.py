@@ -14,7 +14,6 @@ class User(_UserRaw, _EntityWithIdBase):
         self._email_verification_status_enum: _enums.EmailVerificationStatus = _parse.pss_str_enum(self.email_verification_status, _enums.EmailVerificationStatus)
         self._flags_enum: _enums.UserFlags = _parse.pss_int_enum(self.flags, _enums.UserFlags)
         self._gender_type_enum: _enums.GenderType = _parse.pss_str_enum(self.gender_type, _enums.GenderType)
-        self._language_key_enum: _enums.LanguageKey = _parse.pss_str_enum(self.language_key, _enums.LanguageKey)
         self._league_type_enum: _enums.LeagueType = _parse.pss_str_enum(self.league_type, _enums.LeagueType)
         self._matching_status_enum: _enums.MatchingStatus = _parse.pss_str_enum(self.matching_status, _enums.MatchingStatus)
         self._race_type_enum: _enums.RaceType = _parse.pss_str_enum(self.race_type, _enums.RaceType)
@@ -51,10 +50,6 @@ class User(_UserRaw, _EntityWithIdBase):
     @property
     def gender_type_enum(self) -> "_enums.GenderType":
         return self._gender_type_enum
-
-    @property
-    def language_key_enum(self) -> "_enums.LanguageKey":
-        return self._language_key_enum
 
     @property
     def league_type_enum(self) -> "_enums.LeagueType":

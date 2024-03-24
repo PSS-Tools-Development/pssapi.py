@@ -1,3 +1,5 @@
+import datetime
+
 import pytest
 
 import pssapi
@@ -43,40 +45,40 @@ async def test_list_condition_types(client: pssapi.PssApiClient):
 
 
 @pytest.mark.asyncio
-@pytest.mark.usefixtures("client")
+@pytest.mark.usefixtures("client", "client_date_time")
 @pytest.mark.vcr()
-async def test_list_craft_designs(client: pssapi.PssApiClient):
-    craft_designs = await client.room_service.list_craft_designs()
+async def test_list_craft_designs(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
+    craft_designs = await client.room_service.list_craft_designs(client_date_time)
     assert isinstance(craft_designs, list)
     assert len(craft_designs) > 0
     assert isinstance(craft_designs[0], pssapi.entities.CraftDesign)
 
 
 @pytest.mark.asyncio
-@pytest.mark.usefixtures("client")
+@pytest.mark.usefixtures("client", "client_date_time")
 @pytest.mark.vcr()
-async def test_list_missile_designs(client: pssapi.PssApiClient):
-    missile_designs = await client.room_service.list_missile_designs()
+async def test_list_missile_designs(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
+    missile_designs = await client.room_service.list_missile_designs(client_date_time)
     assert isinstance(missile_designs, list)
     assert len(missile_designs) > 0
     assert isinstance(missile_designs[0], pssapi.entities.MissileDesign)
 
 
 @pytest.mark.asyncio
-@pytest.mark.usefixtures("client")
+@pytest.mark.usefixtures("client", "client_date_time")
 @pytest.mark.vcr()
-async def test_list_room_design_purchase(client: pssapi.PssApiClient):
-    room_design_purchases = await client.room_service.list_room_design_purchase()
+async def test_list_room_design_purchase(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
+    room_design_purchases = await client.room_service.list_room_design_purchase(client_date_time)
     assert isinstance(room_design_purchases, list)
     assert len(room_design_purchases) > 0
     assert isinstance(room_design_purchases[0], pssapi.entities.RoomDesignPurchase)
 
 
 @pytest.mark.asyncio
-@pytest.mark.usefixtures("client")
+@pytest.mark.usefixtures("client", "client_date_time")
 @pytest.mark.vcr()
-async def test_list_room_designs(client: pssapi.PssApiClient):
-    room_designs = await client.room_service.list_room_designs()
+async def test_list_room_designs(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
+    room_designs = await client.room_service.list_room_designs(client_date_time)
     assert isinstance(room_designs, list)
     assert len(room_designs) > 0
     assert isinstance(room_designs[0], pssapi.entities.RoomDesign)

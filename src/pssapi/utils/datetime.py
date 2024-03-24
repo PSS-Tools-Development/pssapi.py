@@ -11,5 +11,7 @@ def get_utc_now() -> _datetime:
 
 
 def convert_to_pss_timestamp(dt: _datetime) -> str:
+    if dt is None:
+        return None
     result = dt.strftime(PSS_DATETIME_FORMAT_ISO)
     return result

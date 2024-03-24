@@ -1,0 +1,129 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/MarketService/ListSalesByItemDesignId?from=0&itemDesignId=778&saleStatus=Listed&to=100
+  response:
+    body:
+      string: "<MarketService><ListSalesByItemDesignId><Sales><Sale SaleId=\"34413201\"
+        SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\" CurrencyValue=\"200000\"
+        SellerShipId=\"7365924\" StarbuxValue=\"257\" BuyerShipId=\"0\" CharacterId=\"0\"
+        StatusDate=\"2024-03-24T17:16:49\" ItemId=\"198031821\" CharacterDesignId=\"0\"
+        ItemDesignId=\"778\" SellerShipName=\"jok3r30\" BuyerShipName=\"\" /><Sale
+        SaleId=\"34413198\" SaleStatus=\"Listed\" Quantity=\"10\" CurrencyType=\"Gas\"
+        CurrencyValue=\"1110000\" SellerShipId=\"7701349\" StarbuxValue=\"898\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:16:40\" ItemId=\"210702468\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"\u94DC\u94F8\u719F\u82E5\u87F9\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34413195\" SaleStatus=\"Listed\" Quantity=\"1\"
+        CurrencyType=\"Gas\" CurrencyValue=\"300000\" SellerShipId=\"7365924\" StarbuxValue=\"346\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T17:16:31\" ItemId=\"198031821\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"jok3r30\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413187\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\"
+        CurrencyValue=\"300000\" SellerShipId=\"7773950\" StarbuxValue=\"346\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:14:43\" ItemId=\"213935876\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Xion02\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413185\" SaleStatus=\"Listed\" Quantity=\"10\" CurrencyType=\"Gas\"
+        CurrencyValue=\"3000000\" SellerShipId=\"7773950\" StarbuxValue=\"1855\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:14:31\" ItemId=\"213935876\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Xion02\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413175\" SaleStatus=\"Listed\" Quantity=\"30\" CurrencyType=\"Gas\"
+        CurrencyValue=\"3000000\" SellerShipId=\"7773950\" StarbuxValue=\"1855\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:12:38\" ItemId=\"213935876\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Xion02\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413173\" SaleStatus=\"Listed\" Quantity=\"1\" CurrencyType=\"Gas\"
+        CurrencyValue=\"3000000\" SellerShipId=\"3304454\" StarbuxValue=\"1855\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:12:17\" ItemId=\"101984674\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"GoodToy\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413126\" SaleStatus=\"Listed\" Quantity=\"4\" CurrencyType=\"Gas\"
+        CurrencyValue=\"1000000\" SellerShipId=\"7949067\" StarbuxValue=\"832\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:07:41\" ItemId=\"221565221\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"\u041E\u0440\u0445\u0430\u041D58\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34413115\" SaleStatus=\"Listed\" Quantity=\"181\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"160\" SellerShipId=\"6506467\" StarbuxValue=\"160\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T17:06:47\" ItemId=\"235693911\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Jinzura\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413096\" SaleStatus=\"Listed\" Quantity=\"3\" CurrencyType=\"Gas\"
+        CurrencyValue=\"600000\" SellerShipId=\"6779939\" StarbuxValue=\"573\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T17:05:31\" ItemId=\"177645315\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Claudiov\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413045\" SaleStatus=\"Listed\" Quantity=\"5\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"25\" SellerShipId=\"8435469\" StarbuxValue=\"25\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T16:58:16\" ItemId=\"242016297\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"ZMex52\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34413041\" SaleStatus=\"Listed\" Quantity=\"50\" CurrencyType=\"Starbux\"
+        CurrencyValue=\"50\" SellerShipId=\"8340441\" StarbuxValue=\"50\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T16:57:41\" ItemId=\"237528805\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Siegfriendk\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34413039\" SaleStatus=\"Listed\" Quantity=\"50\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"50\" SellerShipId=\"8340441\" StarbuxValue=\"50\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:57:33\" ItemId=\"237528805\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Siegfriendk\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34413021\" SaleStatus=\"Listed\" Quantity=\"20\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"20\" SellerShipId=\"8338993\" StarbuxValue=\"20\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:56:04\" ItemId=\"237369898\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Draven-Darkstar\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34412989\" SaleStatus=\"Listed\" Quantity=\"10\"
+        CurrencyType=\"Gas\" CurrencyValue=\"1250000\" SellerShipId=\"7885426\" StarbuxValue=\"979\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:52:20\" ItemId=\"218692136\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Angry Thumb\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34412968\" SaleStatus=\"Listed\" Quantity=\"124\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"4960\" SellerShipId=\"8451157\" StarbuxValue=\"4960\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:49:50\" ItemId=\"242779572\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"bambooboi\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34412960\" SaleStatus=\"Listed\" Quantity=\"83\"
+        CurrencyType=\"Starbux\" CurrencyValue=\"80\" SellerShipId=\"7101268\" StarbuxValue=\"80\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:49:18\" ItemId=\"188384788\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Firepaw4561\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34412897\" SaleStatus=\"Listed\" Quantity=\"35\"
+        CurrencyType=\"Gas\" CurrencyValue=\"3000000\" SellerShipId=\"8309477\" StarbuxValue=\"1855\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:42:15\" ItemId=\"236157144\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"\u661F\u8FB0002\"
+        BuyerShipName=\"\" /><Sale SaleId=\"34412861\" SaleStatus=\"Listed\" Quantity=\"30\"
+        CurrencyType=\"Gas\" CurrencyValue=\"3000000\" SellerShipId=\"8078128\" StarbuxValue=\"1855\"
+        BuyerShipId=\"0\" CharacterId=\"0\" StatusDate=\"2024-03-24T16:38:10\" ItemId=\"226170235\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"Aqua-AI\" BuyerShipName=\"\"
+        /><Sale SaleId=\"34412840\" SaleStatus=\"Listed\" Quantity=\"22\" CurrencyType=\"Gas\"
+        CurrencyValue=\"1999999\" SellerShipId=\"8090927\" StarbuxValue=\"1380\" BuyerShipId=\"0\"
+        CharacterId=\"0\" StatusDate=\"2024-03-24T16:34:58\" ItemId=\"226569993\"
+        CharacterDesignId=\"0\" ItemDesignId=\"778\" SellerShipName=\"A55s33k3r\"
+        BuyerShipName=\"\" /></Sales></ListSalesByItemDesignId></MarketService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f1c3d16033a0215071d66d8a8c247af4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 7fqQnDpAEodm7WSxYCmeorq9GXPUUrnztDbxjNmJ76oajNZDOFAzjw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1
