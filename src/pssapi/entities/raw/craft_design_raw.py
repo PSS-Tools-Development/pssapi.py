@@ -15,6 +15,7 @@ class CraftDesignRaw:
     def __init__(self, craft_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._attack_distance: int = _parse.pss_int(craft_design_info.get("AttackDistance"))
+        self._attack_range: int = _parse.pss_int(craft_design_info.get("AttackRange"))
         self._craft_attack_type: str = _parse.pss_str(craft_design_info.get("CraftAttackType"))
         self._craft_design_id: int = _parse.pss_int(craft_design_info.get("CraftDesignId"))
         self._craft_name: str = _parse.pss_str(craft_design_info.get("CraftName"))
@@ -30,6 +31,10 @@ class CraftDesignRaw:
     @property
     def attack_distance(self) -> int:
         return self._attack_distance
+
+    @property
+    def attack_range(self) -> int:
+        return self._attack_range
 
     @property
     def craft_attack_type(self) -> str:
@@ -78,6 +83,7 @@ class CraftDesignRaw:
     def _key(self):
         return (
             self.attack_distance,
+            self.attack_range,
             self.craft_attack_type,
             self.craft_design_id,
             self.craft_name,
@@ -95,6 +101,7 @@ class CraftDesignRaw:
         if not self._dict:
             self._dict = {
                 "AttackDistance": self.attack_distance,
+                "AttackRange": self.attack_range,
                 "CraftAttackType": self.craft_attack_type,
                 "CraftDesignId": self.craft_design_id,
                 "CraftName": self.craft_name,
