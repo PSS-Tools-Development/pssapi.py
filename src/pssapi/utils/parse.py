@@ -41,7 +41,10 @@ def pss_int_enum(value: str, enum: _Type[_IntEnum]) -> _Optional[_IntEnum]:
     value = pss_int(value)
     if value is None:
         return None
-    return enum(value)
+    try:
+        return enum(value)
+    except ValueError:
+        return None
 
 
 def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
@@ -56,9 +59,10 @@ def pss_int_flag(value: str, enum: _Type[_IntFlag]) -> _Optional[_IntFlag]:
 
 
 def pss_str_enum(value: str, enum: _Type[_StrEnumBase]) -> _Optional[_StrEnumBase]:
-    if not value:
+    try:
+        return enum(value)
+    except ValueError:
         return None
-    return enum(value)
 
 
 def pss_float(value: str, default: float = None) -> _Optional[float]:
