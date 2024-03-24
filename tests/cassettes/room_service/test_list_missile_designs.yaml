@@ -1,0 +1,1282 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334193"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079271"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1411"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:32 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b4415e223ef4b4a1db5d4b79b555fe2e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 89pPXVoGk-ijYQEPXASPch1j7ch9NWnZfCJlz0irfSqRMvxPXI05iA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334193"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079271"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1414"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:32 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 0c6da51d9831b33488b399cfc38cafda.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MDN4pxIhDQPJB1HEanJ8GyOtbvpD8EOuYLPhRyTLEUemYElmlskIFA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/ListMissileDesigns?clientDateTime=2024-03-22T06%3A57%3A29
+  response:
+    body:
+      string: <RoomService><ListMissileDesigns version="569"><MissileDesigns><MissileDesign
+        MissileDesignId="1" MissileDesignName="Mining Beam" SystemDamage="1" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0"
+        MissileType="Laser" LogoSpriteId="454" SpriteId="454" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.5" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="2"
+        MissileDesignName="Rocket" SystemDamage="1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="1557" SpriteId="1557" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="0"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="3" MissileDesignName="Scarlet"
+        SystemDamage="0" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="300" BreachChance="0" MissileType="Rocket" LogoSpriteId="1581"
+        SpriteId="1581" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="4" MissileDesignName="Mimic" SystemDamage="0.5" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="1569" SpriteId="1569" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="3" VolleyDelay="10"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign MissileDesignId="5"
+        MissileDesignName="Jungler" SystemDamage="0" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="2" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="1587" SpriteId="1587" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="110"
+        HitSoundFileId="5847" /><MissileDesign MissileDesignId="6" MissileDesignName="Penetrator"
+        SystemDamage="0" HullDamage="0.5" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1575" SpriteId="1575"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="1318" HitSoundFileId="4185" /><MissileDesign
+        MissileDesignId="7" MissileDesignName="EMP Missile" SystemDamage="0" HullDamage="0"
+        StunLength="0" EMPLength="300" CharacterDamage="0" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="1563" SpriteId="1563" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign MissileDesignId="8"
+        MissileDesignName="Plasma Bolt" SystemDamage="1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="2" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1274" SpriteId="1274" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="20" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.5"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1323" LaunchAnimationId="0" LaunchSoundFileId="4187" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="9" MissileDesignName="Ion
+        Beam" SystemDamage="0.6" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="3562" SpriteId="3562"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="5" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="120" LaunchAnimationId="118"
+        LaunchSoundFileId="5845" HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="10" MissileDesignName="Ion Beam 2" SystemDamage="0.6" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0"
+        MissileType="Laser" LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="6" VolleyDelay="10"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="120" LaunchAnimationId="118" LaunchSoundFileId="5845"
+        HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign MissileDesignId="11"
+        MissileDesignName="Ion Beam 3" SystemDamage="0.6" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="7" VolleyDelay="10" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.3"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="120" LaunchAnimationId="118" LaunchSoundFileId="5845" HitAnimationId="119"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="12" MissileDesignName="Ion
+        Beam 4" SystemDamage="0.6" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="3562" SpriteId="3562"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="8" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="120" LaunchAnimationId="118"
+        LaunchSoundFileId="5845" HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="13" MissileDesignName="Ion Beam 5" SystemDamage="0.6" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0"
+        MissileType="Laser" LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="8" VolleyDelay="10"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="120" LaunchAnimationId="118" LaunchSoundFileId="5845"
+        HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign MissileDesignId="14"
+        MissileDesignName="Ion Beam 6" SystemDamage="0.6" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="8" VolleyDelay="10" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.3"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="120" LaunchAnimationId="118" LaunchSoundFileId="5845" HitAnimationId="119"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="15" MissileDesignName="Rocket
+        Level 2" SystemDamage="1.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1.1"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1558" SpriteId="1558"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="16" MissileDesignName="Rocket Level 3" SystemDamage="1.2"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1.2" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1559" SpriteId="1559"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="17" MissileDesignName="Rocket Level 4" SystemDamage="1.4"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1.4" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1560" SpriteId="1560"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="18" MissileDesignName="Particle Bolt" SystemDamage="1" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0"
+        MissileType="Laser" LogoSpriteId="1275" SpriteId="1275" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="24" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.5" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="19"
+        MissileDesignName="Rocket Level 5" SystemDamage="1.6" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1.6" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="1561" SpriteId="1561" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0.1" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="0"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="20" MissileDesignName="Rocket
+        Level 6" SystemDamage="1.8" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1.8"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1562" SpriteId="1562"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0.1" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="21" MissileDesignName="Scarlet Level 2" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="330"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1582" SpriteId="1582"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="22" MissileDesignName="Scarlet Level 3" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="360"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1583" SpriteId="1583"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="23" MissileDesignName="Scarlet Level 4" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="390"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1584" SpriteId="1584"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="24" MissileDesignName="Scarlet Level 5" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="420"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1585" SpriteId="1585"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="25" MissileDesignName="Scarlet Level 6" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="450"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1586" SpriteId="1586"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="26" MissileDesignName="Mimic Level 2" SystemDamage="0.55"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1570" SpriteId="1570"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="27" MissileDesignName="Mimic Level 3" SystemDamage="0.6"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1571" SpriteId="1571"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="28" MissileDesignName="Mimic Level 4" SystemDamage="0.65"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1572" SpriteId="1572"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="29" MissileDesignName="Mimic Level 5" SystemDamage="0.7"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1573" SpriteId="1573"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="30" MissileDesignName="Mimic Level 6" SystemDamage="0.75"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1574" SpriteId="1574"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="31" MissileDesignName="Jungler Level 2" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="2.5" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1588" SpriteId="1588"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="110" HitSoundFileId="5847" /><MissileDesign
+        MissileDesignId="32" MissileDesignName="Jungler Level 3" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="3" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1589" SpriteId="1589"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="110" HitSoundFileId="5847" /><MissileDesign
+        MissileDesignId="33" MissileDesignName="Jungler Level 4" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="4" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1590" SpriteId="1590"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="110" HitSoundFileId="5847" /><MissileDesign
+        MissileDesignId="34" MissileDesignName="Jungler Level 5" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="5" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1591" SpriteId="1591"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="110" HitSoundFileId="5847" /><MissileDesign
+        MissileDesignId="35" MissileDesignName="Jungler Level 6" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="6.5" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1592" SpriteId="1592"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="110" HitSoundFileId="5847" /><MissileDesign
+        MissileDesignId="36" MissileDesignName="Penetrator Lv2" SystemDamage="0" HullDamage="0.6"
+        StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="1576" SpriteId="1576" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="1318" HitSoundFileId="4185" /><MissileDesign MissileDesignId="37"
+        MissileDesignName="Penetrator Lv3" SystemDamage="0" HullDamage="0.7" StunLength="0"
+        EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="1577" SpriteId="1577" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="1318"
+        HitSoundFileId="4185" /><MissileDesign MissileDesignId="38" MissileDesignName="Penetrator
+        Lv4" SystemDamage="0" HullDamage="0.8" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1578" SpriteId="1578"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="1318" HitSoundFileId="4185" /><MissileDesign
+        MissileDesignId="39" MissileDesignName="Penetrator Lv5" SystemDamage="0" HullDamage="1"
+        StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="1579" SpriteId="1579" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="1318" HitSoundFileId="4185" /><MissileDesign MissileDesignId="40"
+        MissileDesignName="Penetrator Lv6" SystemDamage="0.1" HullDamage="1.1" StunLength="0"
+        EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="1580" SpriteId="1580" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="1318"
+        HitSoundFileId="4185" /><MissileDesign MissileDesignId="41" MissileDesignName="EMP
+        Missile Lv2" SystemDamage="0" HullDamage="0" StunLength="0" EMPLength="320"
+        CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1564"
+        SpriteId="1564" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="42" MissileDesignName="EMP Missile Lv3" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="340" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1565" SpriteId="1565"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="43" MissileDesignName="EMP Missile Lv4" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="360" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1566" SpriteId="1566"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="44" MissileDesignName="EMP Missile Lv5" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="380" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1567" SpriteId="1567"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="45" MissileDesignName="EMP Missile Lv6" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="400" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1568" SpriteId="1568"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="46" MissileDesignName="Bolter Bullet" SystemDamage="0.5"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.5" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.5" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1296" LaunchAnimationId="96" LaunchSoundFileId="5780"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="47"
+        MissileDesignName="Interceptor Lazer" SystemDamage="0.2" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.2" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="2385" SpriteId="2385" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="48" MissileDesignName="Defender
+        Lazer" SystemDamage="0.3" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.3"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.15" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="49" MissileDesignName="AntiCraft Lazer" SystemDamage="1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="50"
+        MissileDesignName="Firehawk Missile" SystemDamage="0" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0" FireLength="120" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="2386" SpriteId="2386" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="0"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="51" MissileDesignName="EMP
+        Charge" SystemDamage="0.3" HullDamage="0.2" StunLength="0" EMPLength="320"
+        CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="4177"
+        SpriteId="4177" FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0"
+        Speed="0" Volley="3" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.7" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="137"
+        LaunchAnimationId="136" LaunchSoundFileId="5748" HitAnimationId="141" HitSoundFileId="5748"
+        /><MissileDesign MissileDesignId="52" MissileDesignName="Corsair EMP" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="120" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2717" SpriteId="2717"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="12"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="102"
+        LaunchSoundFileId="5758" HitAnimationId="101" HitSoundFileId="5748" /><MissileDesign
+        MissileDesignId="53" MissileDesignName="Cruise Missile" SystemDamage="3" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0"
+        MissileType="LongDistanceMissile" LogoSpriteId="4896" SpriteId="4896" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="400" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="3" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="102" LaunchSoundFileId="5758"
+        HitAnimationId="8" HitSoundFileId="3243" /><MissileDesign MissileDesignId="54"
+        MissileDesignName="Bullets" SystemDamage="0.3" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.3" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="3" VolleyDelay="8" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.3"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1296" LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="55" MissileDesignName="Gattling
+        Laser" SystemDamage="0.8" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="3" VolleyDelay="13" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.4" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="56" MissileDesignName="Anti Craft Missiles" SystemDamage="0.6"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2386" SpriteId="2386"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="96"
+        LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="57" MissileDesignName="Wildling" SystemDamage="0.5" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="7735" SpriteId="7735" FlightType="Homing"
+        ExplosionType="Random" ExplosionRadius="0" Speed="20" Volley="15" VolleyDelay="5"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign MissileDesignId="58"
+        MissileDesignName="Scatter" SystemDamage="0.5" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="8170" SpriteId="8170" FlightType="Homing" ExplosionType="RandomUnique"
+        ExplosionRadius="0" Speed="20" Volley="15" VolleyDelay="5" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="0"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="59" MissileDesignName="ICBM"
+        SystemDamage="10" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="8169" SpriteId="8169"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="12"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="60" MissileDesignName="Superlaser" SystemDamage="0" HullDamage="0.5"
+        StunLength="0" EMPLength="0" CharacterDamage="3.5" FireLength="0" BreachChance="0"
+        MissileType="Laser" LogoSpriteId="454" SpriteId="454" FlightType="Immediate"
+        ExplosionType="RandomUnique" ExplosionRadius="500" Speed="60" Volley="20"
+        VolleyDelay="4" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="3.5" ShieldDamage="0.1" Metadata="{&quot;ExtendLaserBeamDistance&quot;:true}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1470"
+        LaunchAnimationId="1469" LaunchSoundFileId="5757" HitAnimationId="1468" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="61" MissileDesignName="Kias Bolt" SystemDamage="0.3"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.3" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="8272" SpriteId="8272" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="24" Volley="3" VolleyDelay="10"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.15" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="1247" LaunchSoundFileId="3649"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="62"
+        MissileDesignName="Blaster Beam" SystemDamage="1.5" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1.5" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="454" SpriteId="454" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.75"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1294" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="63" MissileDesignName="Railgun
+        Slug" SystemDamage="1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="9714" SpriteId="9714"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="200"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="2" ShieldDamage="1.5" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1297" LaunchAnimationId="1293"
+        LaunchSoundFileId="5780" HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign
+        MissileDesignId="64" MissileDesignName="Photon Charge" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="12" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="9814" SpriteId="9814" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="100" Volley="3" VolleyDelay="8"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.7" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="1295" LaunchSoundFileId="3649"
+        HitAnimationId="1317" HitSoundFileId="4179" /><MissileDesign MissileDesignId="65"
+        MissileDesignName="Stinger Round" SystemDamage="0.1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="66" MissileDesignName="Javelin"
+        SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.5"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="9801" SpriteId="9801"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="1" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign
+        MissileDesignId="67" MissileDesignName="Javelin Lv2" SystemDamage="0.2" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="9802" SpriteId="9802" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="1.1"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign MissileDesignId="68"
+        MissileDesignName="Javelin Lv3" SystemDamage="0.3" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="9803" SpriteId="9803" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="1.3" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="1322"
+        HitSoundFileId="4177" /><MissileDesign MissileDesignId="69" MissileDesignName="Javelin
+        Lv4" SystemDamage="0.4" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.5"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="9804" SpriteId="9804"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="1.5" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign
+        MissileDesignId="70" MissileDesignName="Javelin Lv5" SystemDamage="0.5" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="9805" SpriteId="9805" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="1.7"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign MissileDesignId="71"
+        MissileDesignName="Javelin Lv6" SystemDamage="0.6" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.6" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="9806" SpriteId="9806" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="2" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="1322"
+        HitSoundFileId="4177" /><MissileDesign MissileDesignId="72" MissileDesignName="Minigun
+        Round" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="30"
+        Volley="50" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1397"
+        LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="73" MissileDesignName="Minigun Round Lv2"
+        SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="30"
+        Volley="55" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1397"
+        LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="74" MissileDesignName="Minigun Round Lv3"
+        SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="30"
+        Volley="60" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1397"
+        LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="75" MissileDesignName="Photon Beam" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="40" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="2" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1398" LaunchAnimationId="1400" LaunchSoundFileId="5845"
+        HitAnimationId="1399" HitSoundFileId="4183" /><MissileDesign MissileDesignId="76"
+        MissileDesignName="Minigun Round Lv4" SystemDamage="0.1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="30" Volley="75" VolleyDelay="16" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1397" LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="77" MissileDesignName="Minigun
+        Round Lv5" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0"
+        CharacterDamage="0.1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="30" Volley="80" VolleyDelay="15" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1397" LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="78" MissileDesignName="Minigun
+        Round Lv6" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0"
+        CharacterDamage="0.1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="30" Volley="100" VolleyDelay="12" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1397" LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="79" MissileDesignName="Minigun
+        Round Lv7" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0"
+        CharacterDamage="0.1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="30" Volley="120" VolleyDelay="10" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1397" LaunchAnimationId="96" LaunchSoundFileId="5780" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="80" MissileDesignName="EMP
+        Charge (Pink)" SystemDamage="0.3" HullDamage="0.2" StunLength="0" EMPLength="320"
+        CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="12687"
+        SpriteId="12687" FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0"
+        Speed="0" Volley="3" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.7" Metadata="{&quot;LaunchTintColor&quot;:&quot;255,192,203&quot;,&quot;FlightTintColor&quot;:&quot;255,192,203&quot;,&quot;HitTintColor&quot;:&quot;255,192,203&quot;}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1416"
+        LaunchAnimationId="1415" LaunchSoundFileId="5748" HitAnimationId="1417" HitSoundFileId="5748"
+        /><MissileDesign MissileDesignId="81" MissileDesignName="Soda Mining Beam"
+        SystemDamage="1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.5" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1427" LaunchAnimationId="1426"
+        LaunchSoundFileId="5757" HitAnimationId="1428" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="82" MissileDesignName="Sterilizer Laser" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="2" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="9806" SpriteId="9806" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="12" Volley="3" VolleyDelay="20"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.2" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1583" LaunchAnimationId="1457" LaunchSoundFileId="5757"
+        HitAnimationId="1458" HitSoundFileId="4177" /><MissileDesign MissileDesignId="83"
+        MissileDesignName="Big Flying Rocket" SystemDamage="0" HullDamage="20" StunLength="0"
+        EMPLength="0" CharacterDamage="200" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="14022" SpriteId="14022" FlightType="Linear" ExplosionType="Radius"
+        ExplosionRadius="400" Speed="10" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="150" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="8"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="84" MissileDesignName="Reisen
+        Kamikaze Attack" SystemDamage="2" HullDamage="0" StunLength="0" EMPLength="0"
+        CharacterDamage="2" FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="14021"
+        SpriteId="454" FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0"
+        Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="2" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="0" HitAnimationId="1747" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="85" MissileDesignName="Minigun Round Lv8" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="30" Volley="140" VolleyDelay="8"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.1" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1397" LaunchAnimationId="96" LaunchSoundFileId="5780"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="87"
+        MissileDesignName="Corsair EMP II" SystemDamage="0.1" HullDamage="0" StunLength="0"
+        EMPLength="130" CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="2717" SpriteId="2717" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="12" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="102" LaunchSoundFileId="5758" HitAnimationId="101"
+        HitSoundFileId="5748" /><MissileDesign MissileDesignId="88" MissileDesignName="Corsair
+        EMP III" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="140"
+        CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="2717"
+        SpriteId="2717" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="12" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="102"
+        LaunchSoundFileId="5758" HitAnimationId="101" HitSoundFileId="5748" /><MissileDesign
+        MissileDesignId="89" MissileDesignName="Corsair EMP IV" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="150" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2717" SpriteId="2717"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="12"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="102"
+        LaunchSoundFileId="5758" HitAnimationId="101" HitSoundFileId="5748" /><MissileDesign
+        MissileDesignId="90" MissileDesignName="Defender Lazer II" SystemDamage="0.4"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.4" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.2" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="91"
+        MissileDesignName="Defender Lazer III" SystemDamage="0.5" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.5" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="454" SpriteId="454" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.25"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="92" MissileDesignName="Firehawk
+        Missile II" SystemDamage="0" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="140" BreachChance="0" MissileType="Rocket" LogoSpriteId="2386"
+        SpriteId="2386" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="93" MissileDesignName="Firehawk Missile III" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1" FireLength="160"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2386" SpriteId="2386"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="36"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="94" MissileDesignName="Firehawk Missile IV" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1" FireLength="180"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2386" SpriteId="2386"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="36"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="95" MissileDesignName="Firehawk Missile V" SystemDamage="0.2"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.2" FireLength="200"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="2386" SpriteId="2386"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="36"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="96" MissileDesignName="Rocket Level 7" SystemDamage="2" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="2" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="15091" SpriteId="15091" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0.1"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign MissileDesignId="97"
+        MissileDesignName="Jungler Level 7" SystemDamage="0" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="7.5" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="15096" SpriteId="15096" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="110"
+        HitSoundFileId="5847" /><MissileDesign MissileDesignId="98" MissileDesignName="Penetrator
+        Lv7" SystemDamage="0.2" HullDamage="1.3" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="15094"
+        SpriteId="15094" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="1318" HitSoundFileId="4185" /><MissileDesign
+        MissileDesignId="99" MissileDesignName="Scarlet Level 7" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1" FireLength="480"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="15095" SpriteId="15095"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1244" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4181" /><MissileDesign
+        MissileDesignId="100" MissileDesignName="EMP Missile Lv7" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="420" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="15092" SpriteId="15092"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="101" MissileDesignName="Javelin Lv7" SystemDamage="0.8" HullDamage="0"
+        StunLength="0" EMPLength="0" CharacterDamage="0.8" FireLength="0" BreachChance="0"
+        MissileType="Rocket" LogoSpriteId="15097" SpriteId="15097" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="15" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="2.2"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769"
+        HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign MissileDesignId="102"
+        MissileDesignName="Stinger Round Lv2" SystemDamage="0.1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.2" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0.1" ShieldDamage="0.2"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="103" MissileDesignName="Stinger
+        Round Lv3" SystemDamage="0.1" HullDamage="0.1" StunLength="0" EMPLength="0"
+        CharacterDamage="0.2" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0.1" ShieldDamage="0.2"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="104" MissileDesignName="Stinger
+        Round Lv4" SystemDamage="0.2" HullDamage="0.1" StunLength="0" EMPLength="0"
+        CharacterDamage="0.2" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="1632" SpriteId="1632" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="36" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0.1" ShieldDamage="0.2"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="105" MissileDesignName="Launch
+        Pad Fighter Laser" SystemDamage="0.5" HullDamage="0" StunLength="0" EMPLength="0"
+        CharacterDamage="0.5" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="454" SpriteId="454" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.25"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="106" MissileDesignName="Avenger
+        Missile" SystemDamage="6" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="16039"
+        SpriteId="16039" FlightType="Linear" ExplosionType="Single" ExplosionRadius="0"
+        Speed="15" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="96"
+        LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="107" MissileDesignName="Seeker Missile" SystemDamage="3"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="16040" SpriteId="16040"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="96"
+        LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="108" MissileDesignName="Railgun Slug Lv2" SystemDamage="1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="9714" SpriteId="9714" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="200" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="2.2"
+        ShieldDamage="1.6" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1297" LaunchAnimationId="1293" LaunchSoundFileId="5780"
+        HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign MissileDesignId="109"
+        MissileDesignName="Railgun Slug Lv3" SystemDamage="1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="9714" SpriteId="9714" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="200" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="2.4" ShieldDamage="1.7"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1297" LaunchAnimationId="1293" LaunchSoundFileId="5780" HitAnimationId="1322"
+        HitSoundFileId="4177" /><MissileDesign MissileDesignId="110" MissileDesignName="Railgun
+        Slug Lv4" SystemDamage="1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="9714" SpriteId="9714"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="200"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="2.6" ShieldDamage="1.8" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1297" LaunchAnimationId="1293"
+        LaunchSoundFileId="5780" HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign
+        MissileDesignId="111" MissileDesignName="Railgun Slug Lv5" SystemDamage="1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="9714" SpriteId="9714" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="200" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="2.8"
+        ShieldDamage="1.9" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1297" LaunchAnimationId="1293" LaunchSoundFileId="5780"
+        HitAnimationId="1322" HitSoundFileId="4177" /><MissileDesign MissileDesignId="112"
+        MissileDesignName="Railgun Slug Lv6" SystemDamage="1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="9714" SpriteId="9714" FlightType="Linear" ExplosionType="Single"
+        ExplosionRadius="0" Speed="200" Volley="1" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="3" ShieldDamage="2"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1297" LaunchAnimationId="1293" LaunchSoundFileId="5780" HitAnimationId="1322"
+        HitSoundFileId="4177" /><MissileDesign MissileDesignId="114" MissileDesignName="EMP
+        Charge (Gold)" SystemDamage="0.3" HullDamage="0.2" StunLength="0" EMPLength="320"
+        CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="18398"
+        SpriteId="18398" FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0"
+        Speed="0" Volley="3" VolleyDelay="20" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.7" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1704"
+        LaunchAnimationId="1702" LaunchSoundFileId="5748" HitAnimationId="1703" HitSoundFileId="5748"
+        /><MissileDesign MissileDesignId="115" MissileDesignName="Bombshell Strike"
+        SystemDamage="1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="2.5"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="14021"
+        SpriteId="454" FlightType="Immediate" ExplosionType="Radius" ExplosionRadius="200"
+        Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="3.5" ShieldDamage="0" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="0" HitAnimationId="1747" HitSoundFileId="5756"
+        /><MissileDesign MissileDesignId="116" MissileDesignName="Bombshell Strike
+        Lv2" SystemDamage="1.5" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="3"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="14021"
+        SpriteId="454" FlightType="Immediate" ExplosionType="Radius" ExplosionRadius="200"
+        Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="4" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="0" HitAnimationId="1747" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="117" MissileDesignName="Bombshell Strike Lv3" SystemDamage="2"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="3.5" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="14021" SpriteId="454"
+        FlightType="Immediate" ExplosionType="Radius" ExplosionRadius="200" Speed="0"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="4.5" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="0" HitAnimationId="1747" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="118" MissileDesignName="Bulwark Bolt" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.1" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="1632" SpriteId="1632" FlightType="Linear"
+        ExplosionType="Single" ExplosionRadius="0" Speed="36" Volley="10" VolleyDelay="4"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.1" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="5757"
+        HitAnimationId="0" HitSoundFileId="4183" /><MissileDesign MissileDesignId="119"
+        MissileDesignName="Shieldbuster Beam" SystemDamage="0.1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate" ExplosionType="Single"
+        ExplosionRadius="0" Speed="0" Volley="3" VolleyDelay="10" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.2"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="1398" LaunchAnimationId="1400" LaunchSoundFileId="5845" HitAnimationId="1399"
+        HitSoundFileId="4183" /><MissileDesign MissileDesignId="120" MissileDesignName="Shieldbuster
+        Beam Lv2" SystemDamage="0.1" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="3562" SpriteId="3562"
+        FlightType="Immediate" ExplosionType="Single" ExplosionRadius="0" Speed="0"
+        Volley="3" VolleyDelay="10" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1398" LaunchAnimationId="1400"
+        LaunchSoundFileId="5845" HitAnimationId="1399" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="121" MissileDesignName="Shieldbuster Beam Lv3" SystemDamage="0.1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="3562" SpriteId="3562" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="3" VolleyDelay="10"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.4" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="1398" LaunchAnimationId="1400" LaunchSoundFileId="5845"
+        HitAnimationId="1399" HitSoundFileId="4183" /><MissileDesign MissileDesignId="122"
+        MissileDesignName="Prism Beam" SystemDamage="0.3" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="0.3" FireLength="0" BreachChance="0" MissileType="Laser"
+        LogoSpriteId="454" SpriteId="454" FlightType="Immediate" ExplosionType="RandomUnique"
+        ExplosionRadius="250" Speed="0" Volley="3" VolleyDelay="0" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1"
+        Metadata="{&quot;LaunchTintColor&quot;:&quot;0,255,255&quot;,&quot;FlightTintColor&quot;:&quot;0,255,255&quot;,&quot;HitTintColor&quot;:&quot;0,255,255&quot;}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="123" MissileDesignName="Prism Beam Lv2"
+        SystemDamage="0.3" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.3"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454"
+        FlightType="Immediate" ExplosionType="RandomUnique" ExplosionRadius="250"
+        Speed="0" Volley="4" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1" Metadata="{&quot;LaunchTintColor&quot;:&quot;0,255,255&quot;,&quot;FlightTintColor&quot;:&quot;0,255,255&quot;,&quot;HitTintColor&quot;:&quot;0,255,255&quot;}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="124" MissileDesignName="Prism Beam Lv3"
+        SystemDamage="0.4" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.4"
+        FireLength="0" BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454"
+        FlightType="Immediate" ExplosionType="RandomUnique" ExplosionRadius="250"
+        Speed="0" Volley="5" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0.1" Metadata="{&quot;LaunchTintColor&quot;:&quot;0,255,255&quot;,&quot;FlightTintColor&quot;:&quot;0,255,255&quot;,&quot;HitTintColor&quot;:&quot;0,255,255&quot;}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="125" MissileDesignName="Bombshell Strike
+        Lv4" SystemDamage="2.5" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="4"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="14021"
+        SpriteId="454" FlightType="Immediate" ExplosionType="Radius" ExplosionRadius="200"
+        Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="5" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0"
+        LaunchSoundFileId="0" HitAnimationId="1747" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="126" MissileDesignName="Prism Beam Lv4" SystemDamage="0.4"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0.4" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="454" SpriteId="454" FlightType="Immediate"
+        ExplosionType="RandomUnique" ExplosionRadius="250" Speed="0" Volley="6" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0.1" Metadata="{&quot;LaunchTintColor&quot;:&quot;0,255,255&quot;,&quot;FlightTintColor&quot;:&quot;0,255,255&quot;,&quot;HitTintColor&quot;:&quot;0,255,255&quot;}"
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="5757" HitAnimationId="0" HitSoundFileId="4183"
+        /><MissileDesign MissileDesignId="127" MissileDesignName="Hwacha Missile"
+        SystemDamage="0" HullDamage="0.5" StunLength="0" EMPLength="0" CharacterDamage="3.5"
+        FireLength="400" BreachChance="0" MissileType="Rocket" LogoSpriteId="19779"
+        SpriteId="19779" FlightType="Homing" ExplosionType="Random" ExplosionRadius="400"
+        Speed="18" Volley="25" VolleyDelay="1" HullPercentageDamage="0" FlightArgumentX="400"
+        FlightArgumentY="400" DirectSystemDamage="3.5" ShieldDamage="0" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="1747" HitSoundFileId="5756"
+        /><MissileDesign MissileDesignId="128" MissileDesignName="Big Flying Bombshell
+        Attack" SystemDamage="0" HullDamage="12" StunLength="0" EMPLength="0" CharacterDamage="80"
+        FireLength="200" BreachChance="0" MissileType="Rocket" LogoSpriteId="19577"
+        SpriteId="454" FlightType="Immediate" ExplosionType="Radius" ExplosionRadius="400"
+        Speed="0" Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="135" ShieldDamage="0" Metadata=""
+        MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0"
+        LaunchAnimationId="0" LaunchSoundFileId="0" HitAnimationId="1763" HitSoundFileId="5756"
+        /><MissileDesign MissileDesignId="129" MissileDesignName="Null Attack" SystemDamage="0"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="9808" SpriteId="454" FlightType="Immediate"
+        ExplosionType="Single" ExplosionRadius="0" Speed="0" Volley="1" VolleyDelay="0"
+        HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0"
+        ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0"
+        MaskAnimationId="0" AnimationId="0" LaunchAnimationId="0" LaunchSoundFileId="0"
+        HitAnimationId="0" HitSoundFileId="0" /><MissileDesign MissileDesignId="130"
+        MissileDesignName="Artillery Rocket" SystemDamage="1" HullDamage="0" StunLength="0"
+        EMPLength="0" CharacterDamage="1" FireLength="0" BreachChance="0" MissileType="Rocket"
+        LogoSpriteId="19780" SpriteId="19780" FlightType="Linear" ExplosionType="Random"
+        ExplosionRadius="200" Speed="15" Volley="8" VolleyDelay="4" HullPercentageDamage="0"
+        FlightArgumentX="0" FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0"
+        Metadata="" MaskLaunchAnimationId="0" MaskHitAnimationId="0" MaskAnimationId="0"
+        AnimationId="0" LaunchAnimationId="95" LaunchSoundFileId="5769" HitAnimationId="0"
+        HitSoundFileId="5756" /><MissileDesign MissileDesignId="131" MissileDesignName="Guardian
+        Missile" SystemDamage="2" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="0"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="19648"
+        SpriteId="19648" FlightType="Linear" ExplosionType="RandomUnique" ExplosionRadius="0"
+        Speed="30" Volley="8" VolleyDelay="5" HullPercentageDamage="0" FlightArgumentX="0"
+        FlightArgumentY="0" DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="96"
+        LaunchSoundFileId="5780" HitAnimationId="0" HitSoundFileId="4179" /><MissileDesign
+        MissileDesignId="137" MissileDesignName="Overcharged Ion Beam" SystemDamage="0.6"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="19999" SpriteId="19999"
+        FlightType="Immediate" ExplosionType="All" ExplosionRadius="200" Speed="0"
+        Volley="5" VolleyDelay="15" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1782" LaunchAnimationId="118"
+        LaunchSoundFileId="5845" HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="138" MissileDesignName="Unstable Ion Beam" SystemDamage="1"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="1.5" FireLength="0"
+        BreachChance="0" MissileType="Laser" LogoSpriteId="20000" SpriteId="20000"
+        FlightType="Immediate" ExplosionType="Random" ExplosionRadius="200" Speed="0"
+        Volley="7" VolleyDelay="11" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0.3" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="1783" LaunchAnimationId="118"
+        LaunchSoundFileId="5845" HitAnimationId="119" HitSoundFileId="4183" /><MissileDesign
+        MissileDesignId="139" MissileDesignName="Catapult Cruise Missile" SystemDamage="2"
+        HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="2" FireLength="0"
+        BreachChance="0" MissileType="Rocket" LogoSpriteId="1557" SpriteId="1557"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="147" MissileDesignName="Catapult Cruise Missile Level 2"
+        SystemDamage="2.5" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="2.5"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1557" SpriteId="1557"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /><MissileDesign
+        MissileDesignId="148" MissileDesignName="Catapult Cruise Missile Level 3"
+        SystemDamage="3" HullDamage="0" StunLength="0" EMPLength="0" CharacterDamage="3"
+        FireLength="0" BreachChance="0" MissileType="Rocket" LogoSpriteId="1557" SpriteId="1557"
+        FlightType="Linear" ExplosionType="Single" ExplosionRadius="0" Speed="15"
+        Volley="1" VolleyDelay="0" HullPercentageDamage="0" FlightArgumentX="0" FlightArgumentY="0"
+        DirectSystemDamage="0" ShieldDamage="0" Metadata="" MaskLaunchAnimationId="0"
+        MaskHitAnimationId="0" MaskAnimationId="0" AnimationId="0" LaunchAnimationId="95"
+        LaunchSoundFileId="5769" HitAnimationId="0" HitSoundFileId="5756" /></MissileDesigns></ListMissileDesigns></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:32 GMT
+      Expires:
+      - Fri, 22 Mar 2024 07:17:32 GMT
+      Last-Modified:
+      - Fri, 22 Mar 2024 06:57:32 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - S-fJnOpVcv26MgTTE1IjPpVoGyAFd2HVG68IlTmDYtIKOCo5710AKA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

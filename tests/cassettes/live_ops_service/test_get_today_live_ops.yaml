@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/LiveOpsService/GetTodayLiveOps2?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: '<LiveOpsService><GetTodayLiveOps><LiveOps LiveOpsId="1" News="Let your
+        flag wave proudly, hoisted high beneath the rockets'' red glare: Happy Independence
+        Day!" DailyRewardType="Starbux" DailyRewardArgument="3" SaleType="FleetGift"
+        SaleArgument="1197" SaleItemMask="2047" SaleOnceOnly="true" SaleQuantity="1"
+        DailyItemRewards="1187x1" LimitedCatalogType="Room" LimitedCatalogArgument="405"
+        LimitedCatalogQuantity="51" LimitedCatalogExpiryDate="2023-07-05T00:00:00"
+        LimitedCatalogCurrencyType="Starbux" LimitedCatalogCurrencyAmount="1000" LimitedCatalogMaxTotal="1"
+        CargoItems="836x1|836x1|836x1" CargoPrices="starbux:100|starbux:100|starbux:100"
+        TournamentNews="During the last week of the each month, fleets compete for
+        the most stars in the tournament finals. Top fleets are placed into divisions
+        based on performance during the month, and battle other fleets of the same
+        division to earn stars." SaleTitle="Independence Day" LimitedCatalogRestockQuantity="120"
+        SaleRewardString="item:1197x[USD/5]" SaleStartDate="2023-07-04T00:00:00" SupportTaskRanDate="2023-07-04T06:22:09"
+        SaleEndDate="2023-07-05T00:00:00" NewsSpriteId="16375" NewsUpdateDate="2023-07-04T00:00:00"
+        CommonCrewId="23" HeroCrewId="105" /></GetTodayLiveOps></LiveOpsService>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", no-store, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '776'
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 04 Jul 2023 06:25:29 GMT
+      Expires:
+      - Tue, 04 Jul 2023 06:25:29 GMT
+      Last-Modified:
+      - Tue, 04 Jul 2023 06:25:29 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b9d6da6afb687529eac0ec6c19319d48.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PP5WMdtvT5mwFd2vA7bxSCYNLP_uMk_Blg9FzpDL8ievmLgWBq00-A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/LiveOpsService/GetTodayLiveOps2?deviceType=DeviceTypeAndroid&languageKey=en
+version: 1

@@ -1,0 +1,1427 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330046"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164999"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345836"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T19:27:09" TournamentSpriteId="8000" NewUserCount="1617"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 19:29:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 1b9454b38723d47cf9a28d1fb8f9546c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - wJavmeAwHaRllwkaEykcVqgcGAyqpn3zlCmIhLgYOsU1y0iH9NapSw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330046"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164999"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345836"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T19:27:09" TournamentSpriteId="8000" NewUserCount="1607"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 19:29:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 5f2bb43f258333f4156847ce1f482ee6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - z3Q1fL_0w9NC5ux0d12jjJx3JjWcuz3RnDJJzV_9bXh2LoWIc5r72g==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/ResearchService/ListAllResearchDesigns2?clientDateTime=2024-03-21T19%3A29%3A17&languageKey=en
+  response:
+    body:
+      string: "<ResearchService><ListAllResearchDesigns version=\"546\"><ResearchDesigns><ResearchDesign
+        ResearchDesignId=\"1\" ResearchName=\"Incendiary Technology\" ResearchDescription=\"Pyro
+        experts can design a new range of incendiary weapons using the latest space
+        pyro technology.\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"12500\"
+        RequiredLabLevel=\"3\" ResearchTime=\"43200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"2\" ResearchName=\"Rocket Lv2\" ResearchDescription=\"Improvements
+        to the standard rocket warhead results in higher damage.\" LogoSpriteId=\"1595\"
+        ImageSpriteId=\"1595\" GasCost=\"2500\" RequiredLabLevel=\"1\" ResearchTime=\"10800\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"3\" ResearchName=\"Research
+        Mimic missile\" ResearchDescription=\"Improves the mimic missile array to
+        deal additional damage.\" LogoSpriteId=\"1597\" ImageSpriteId=\"1597\" GasCost=\"100\"
+        RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"3\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"4\" ResearchName=\"Jungler Missiles Lv1\"
+        ResearchDescription=\"Recent chemical warfare discoveries have allowed us
+        to fit neurotoxin gas to our warheads.\" LogoSpriteId=\"1600\" ImageSpriteId=\"1600\"
+        GasCost=\"1500\" RequiredLabLevel=\"1\" ResearchTime=\"3600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"5\" ResearchName=\"Penetrator Missiles\"
+        ResearchDescription=\"Special hull-buster missile technology that is designed
+        to inflict direct damage to the core stability of the enemy ship hull.\" LogoSpriteId=\"1598\"
+        ImageSpriteId=\"1598\" GasCost=\"1500\" RequiredLabLevel=\"1\" ResearchTime=\"3600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"6\" ResearchName=\"EMP
+        Technology\" ResearchDescription=\"Our scientists can research a way to deliver
+        EMP payload in our projectile missiles.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\"
+        GasCost=\"5000\" RequiredLabLevel=\"2\" ResearchTime=\"43200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"7\" ResearchName=\"Rocket Lv3\" ResearchDescription=\"Improvements
+        to the standard rocket warhead results in higher damage.\" LogoSpriteId=\"1595\"
+        ImageSpriteId=\"1595\" GasCost=\"17500\" RequiredLabLevel=\"3\" ResearchTime=\"64800\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"2\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"8\" ResearchName=\"Rocket
+        Lv4\" ResearchDescription=\"Improvements to the standard rocket warhead results
+        in higher damage.\" LogoSpriteId=\"1595\" ImageSpriteId=\"1595\" GasCost=\"60000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"7\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"9\" ResearchName=\"X-Ray\" ResearchDescription=\"You
+        will be able to scan and view the inside of opponent's ships\" LogoSpriteId=\"1617\"
+        ImageSpriteId=\"1617\" GasCost=\"6000\" RequiredLabLevel=\"2\" ResearchTime=\"28800\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"9\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"10\" ResearchName=\"Beer\"
+        ResearchDescription=\"Allow access to recruit better crew.\" LogoSpriteId=\"1618\"
+        ImageSpriteId=\"1618\" GasCost=\"2500\" RequiredLabLevel=\"1\" ResearchTime=\"1200\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"10\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"11\" ResearchName=\"Rocket
+        Lv5\" ResearchDescription=\"Improvements to the standard rocket warhead results
+        in higher damage.\" LogoSpriteId=\"1595\" ImageSpriteId=\"1595\" GasCost=\"175000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"8\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"12\" ResearchName=\"Rocket Lv6\" ResearchDescription=\"Improvements
+        to the standard rocket warhead results in higher damage.\" LogoSpriteId=\"1595\"
+        ImageSpriteId=\"1595\" GasCost=\"500000\" RequiredLabLevel=\"7\" ResearchTime=\"648000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"11\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"13\" ResearchName=\"Incendiary
+        Technology Lv2\" ResearchDescription=\"Pyro experts can improve the flammability
+        of our pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"50000\"
+        RequiredLabLevel=\"4\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"1\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"14\" ResearchName=\"Incendiary Technology
+        Lv3\" ResearchDescription=\"Pyro experts can improve the flammability of our
+        pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"150000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"13\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"15\" ResearchName=\"Incendiary Technology
+        Lv4\" ResearchDescription=\"Pyro experts can improve the flammability of our
+        pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"300000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"14\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"16\" ResearchName=\"Incendiary Technology
+        Lv5\" ResearchDescription=\"Pyro experts can improve the flammability of our
+        pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"500000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"432000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"15\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"17\" ResearchName=\"Incendiary Technology
+        Lv6\" ResearchDescription=\"Pyro experts can improve the flammability of our
+        pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"1400000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"16\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"18\" ResearchName=\"Mimic Missiles Lv2\"
+        ResearchDescription=\"Improves the mimic missile array to deal additional
+        damage.\" LogoSpriteId=\"1597\" ImageSpriteId=\"1597\" GasCost=\"5000\" RequiredLabLevel=\"1\"
+        ResearchTime=\"10800\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"3\" AvailabilityMask=\"2\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"19\" ResearchName=\"Mimic Missiles Lv3\" ResearchDescription=\"Improves
+        the mimic missile array to deal additional damage.\" LogoSpriteId=\"1597\"
+        ImageSpriteId=\"1597\" GasCost=\"10000\" RequiredLabLevel=\"2\" ResearchTime=\"21600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"3\"
+        AvailabilityMask=\"2\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"18\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"20\" ResearchName=\"Mimic
+        Missiles Lv4\" ResearchDescription=\"Improves the mimic missile array to deal
+        additional damage.\" LogoSpriteId=\"1597\" ImageSpriteId=\"1597\" GasCost=\"17500\"
+        RequiredLabLevel=\"3\" ResearchTime=\"64800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"3\" AvailabilityMask=\"2\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"19\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"21\" ResearchName=\"Mimic Missiles Lv5\"
+        ResearchDescription=\"Improves the mimic missile array to deal additional
+        damage.\" LogoSpriteId=\"1597\" ImageSpriteId=\"1597\" GasCost=\"35000\" RequiredLabLevel=\"4\"
+        ResearchTime=\"129600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"3\" AvailabilityMask=\"2\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"20\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"22\" ResearchName=\"Mimic Missiles Lv6\" ResearchDescription=\"Improves
+        the mimic missile array to deal additional damage.\" LogoSpriteId=\"1597\"
+        ImageSpriteId=\"1597\" GasCost=\"60000\" RequiredLabLevel=\"5\" ResearchTime=\"194400\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"3\"
+        AvailabilityMask=\"2\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"21\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"23\" ResearchName=\"Jungler
+        Missiles Lv2\" ResearchDescription=\"Biolab engineers can increase the toxicity
+        of neurotoxins in our warheads.\" LogoSpriteId=\"1600\" ImageSpriteId=\"1600\"
+        GasCost=\"6000\" RequiredLabLevel=\"1\" ResearchTime=\"10800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"4\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"24\" ResearchName=\"Jungler Missiles
+        Lv3\" ResearchDescription=\"Biolab engineers can increase the toxicity of
+        neurotoxins in our warheads.\" LogoSpriteId=\"1600\" ImageSpriteId=\"1600\"
+        GasCost=\"30000\" RequiredLabLevel=\"3\" ResearchTime=\"64800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"23\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"25\" ResearchName=\"Jungler Missiles
+        Lv4\" ResearchDescription=\"Biolab engineers can increase the toxicity of
+        neurotoxins in our warheads.\" LogoSpriteId=\"1600\" ImageSpriteId=\"1600\"
+        GasCost=\"90000\" RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"24\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"26\" ResearchName=\"Jungler Missiles
+        Lv5\" ResearchDescription=\"Biolab engineers can increase the toxicity of
+        neurotoxins in our warheads.\" LogoSpriteId=\"1600\" ImageSpriteId=\"1600\"
+        GasCost=\"275000\" RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"25\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"27\" ResearchName=\"Jungler Lv6\" ResearchDescription=\"Biolab
+        engineers can increase the toxicity of neurotoxins in our warheads.\" LogoSpriteId=\"1600\"
+        ImageSpriteId=\"1600\" GasCost=\"750000\" RequiredLabLevel=\"7\" ResearchTime=\"648000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"26\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"28\" ResearchName=\"Penetrator
+        Missiles Lv2\" ResearchDescription=\"Upgrading the penetrator warhead to cause
+        extra hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"6000\"
+        RequiredLabLevel=\"3\" ResearchTime=\"43200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"5\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"29\" ResearchName=\"Penetrator Missiles
+        Lv3\" ResearchDescription=\"Upgrading the penetrator warhead to cause extra
+        hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"30000\"
+        RequiredLabLevel=\"3\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"28\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"30\" ResearchName=\"Penetrator Missiles
+        Lv4\" ResearchDescription=\"Upgrading the penetrator warhead to cause extra
+        hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"90000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"29\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"31\" ResearchName=\"Penetrator Missiles
+        Lv5\" ResearchDescription=\"Upgrading the penetrator warhead to cause extra
+        hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"300000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"30\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"32\" ResearchName=\"Penetrator Missiles
+        Lv6\" ResearchDescription=\"Upgrading the penetrator warhead to cause extra
+        hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"1000000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"31\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"33\" ResearchName=\"EMP Technology Lv2\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"17500\"
+        RequiredLabLevel=\"3\" ResearchTime=\"64800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"6\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"34\" ResearchName=\"EMP Technology Lv3\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"50000\"
+        RequiredLabLevel=\"4\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"33\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"35\" ResearchName=\"EMP Technology Lv4\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"150000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"34\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"36\" ResearchName=\"EMP Technology Lv5\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"300000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"35\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"37\" ResearchName=\"EMP Technology Lv6\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"750000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"432000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"36\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"38\" ResearchName=\"Advanced Training
+        Lv1\" ResearchDescription=\"Reduce character level up cost by 5 percent\"
+        LogoSpriteId=\"2260\" ImageSpriteId=\"2260\" GasCost=\"1500\" RequiredLabLevel=\"1\"
+        ResearchTime=\"7200\" ResearchDesignType=\"CrewLevelUpCost\" Argument=\"5\"
+        StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"39\" ResearchName=\"Advanced Training Lv2\" ResearchDescription=\"Reduce
+        character level up cost by 10 percent\" LogoSpriteId=\"2260\" ImageSpriteId=\"2260\"
+        GasCost=\"5000\" RequiredLabLevel=\"1\" ResearchTime=\"10800\" ResearchDesignType=\"CrewLevelUpCost\"
+        Argument=\"10\" StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"38\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"40\" ResearchName=\"Advanced Training
+        Lv3\" ResearchDescription=\"Reduce character level up cost by 15 percent\"
+        LogoSpriteId=\"2260\" ImageSpriteId=\"2260\" GasCost=\"25000\" RequiredLabLevel=\"3\"
+        ResearchTime=\"129600\" ResearchDesignType=\"CrewLevelUpCost\" Argument=\"15\"
+        StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"39\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"41\" ResearchName=\"Advanced Training Lv4\" ResearchDescription=\"Reduce
+        character level up cost by 20 percent\" LogoSpriteId=\"2260\" ImageSpriteId=\"2260\"
+        GasCost=\"75000\" RequiredLabLevel=\"5\" ResearchTime=\"194400\" ResearchDesignType=\"CrewLevelUpCost\"
+        Argument=\"20\" StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"40\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"42\" ResearchName=\"Advanced Training
+        Lv5\" ResearchDescription=\"Reduce character level up cost by 25 percent\"
+        LogoSpriteId=\"2260\" ImageSpriteId=\"2260\" GasCost=\"250000\" RequiredLabLevel=\"6\"
+        ResearchTime=\"324000\" ResearchDesignType=\"CrewLevelUpCost\" Argument=\"25\"
+        StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"41\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"43\" ResearchName=\"Advanced Training Lv6\" ResearchDescription=\"Reduce
+        character level up cost by 30 percent\" LogoSpriteId=\"2260\" ImageSpriteId=\"2260\"
+        GasCost=\"750000\" RequiredLabLevel=\"7\" ResearchTime=\"648000\" ResearchDesignType=\"CrewLevelUpCost\"
+        Argument=\"30\" StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"42\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"44\" ResearchName=\"Advanced Engineering\"
+        ResearchDescription=\"Allows up to 3 systems to be constructed simultaneously.\"
+        LogoSpriteId=\"97\" ImageSpriteId=\"97\" GasCost=\"0\" RequiredLabLevel=\"1\"
+        ResearchTime=\"5\" ResearchDesignType=\"ConcurrentConstruction\" Argument=\"3\"
+        StarbuxCost=\"150\" RootResearchDesignId=\"44\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"45\" ResearchName=\"Advanced Engineering Lv2\" ResearchDescription=\"Allows
+        up to 4 systems to be constructed simultaneously.\" LogoSpriteId=\"97\" ImageSpriteId=\"97\"
+        GasCost=\"0\" RequiredLabLevel=\"1\" ResearchTime=\"10\" ResearchDesignType=\"ConcurrentConstruction\"
+        Argument=\"4\" StarbuxCost=\"450\" RootResearchDesignId=\"44\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"44\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"46\" ResearchName=\"Advanced Engineering
+        Lv3\" ResearchDescription=\"Allows up to 5 systems to be constructed simultaneously.\"
+        LogoSpriteId=\"97\" ImageSpriteId=\"97\" GasCost=\"0\" RequiredLabLevel=\"1\"
+        ResearchTime=\"15\" ResearchDesignType=\"ConcurrentConstruction\" Argument=\"5\"
+        StarbuxCost=\"1000\" RootResearchDesignId=\"44\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"45\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"47\" ResearchName=\"Nanotech Paint\" ResearchDescription=\"Optional
+        Technology. Allows your ship to be repainted from the Shipyard.\" LogoSpriteId=\"2438\"
+        ImageSpriteId=\"2438\" GasCost=\"0\" RequiredLabLevel=\"2\" ResearchTime=\"5\"
+        ResearchDesignType=\"Paint\" Argument=\"1\" StarbuxCost=\"300\" RootResearchDesignId=\"47\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"48\" ResearchName=\"Advanced
+        Training Lv7\" ResearchDescription=\"Reduce character level up cost by 35
+        percent\" LogoSpriteId=\"2260\" ImageSpriteId=\"2260\" GasCost=\"1500000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"1209600\" ResearchDesignType=\"CrewLevelUpCost\"
+        Argument=\"35\" StarbuxCost=\"0\" RootResearchDesignId=\"38\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"43\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"49\" ResearchName=\"Interceptor Lv2 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"50000\" RequiredLabLevel=\"5\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"50\" ResearchName=\"Interceptor Lv3 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"100000\" RequiredLabLevel=\"6\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"49\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"51\" ResearchName=\"Defender Lv2\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"100000\" RequiredLabLevel=\"5\"
+        ResearchTime=\"259200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"52\" ResearchName=\"Defender Lv3 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"150000\" RequiredLabLevel=\"6\"
+        ResearchTime=\"291600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"51\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"53\" ResearchName=\"Defender Lv4 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"200000\" RequiredLabLevel=\"6\"
+        ResearchTime=\"388800\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"52\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"54\" ResearchName=\"Defender Lv5 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"250000\" RequiredLabLevel=\"7\"
+        ResearchTime=\"583200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"53\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"55\" ResearchName=\"Defender Lv6 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"1000000\" RequiredLabLevel=\"8\"
+        ResearchTime=\"691200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"54\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"56\" ResearchName=\"Defender Lv7 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"1500000\" RequiredLabLevel=\"9\"
+        ResearchTime=\"842400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"55\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"57\" ResearchName=\"Defender Lv8 Craft\" ResearchDescription=\"Advanced
+        Defender schematics can be developed to increase Defender combat effectiveness.\"
+        LogoSpriteId=\"2621\" ImageSpriteId=\"2621\" GasCost=\"2000000\" RequiredLabLevel=\"10\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"51\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"56\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"58\" ResearchName=\"Interceptor Lv4 Craft\" ResearchDescription=\"Our
+        engineers can upgrade our basic interceptors for increased firing rate and
+        maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\" GasCost=\"150000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"259200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"50\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"59\" ResearchName=\"Interceptor Lv5 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"200000\" RequiredLabLevel=\"7\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"58\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"60\" ResearchName=\"Interceptor Lv6 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"750000\" RequiredLabLevel=\"8\" ResearchTime=\"518400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"59\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"61\" ResearchName=\"Interceptor Lv7 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"1000000\" RequiredLabLevel=\"9\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"60\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"62\" ResearchName=\"Interceptor Lv8 Craft\"
+        ResearchDescription=\"Our engineers can upgrade our basic interceptors for
+        increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"1500000\" RequiredLabLevel=\"10\" ResearchTime=\"712800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"61\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"63\" ResearchName=\"Impossible Technology\"
+        ResearchDescription=\"Impossible Research\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"63\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"64\" ResearchName=\"Advanced Starships
+        Technology\" ResearchDescription=\"Leading starship architects are developing
+        new starship hull designs.\" LogoSpriteId=\"2972\" ImageSpriteId=\"2972\"
+        GasCost=\"1500000\" RequiredLabLevel=\"9\" ResearchTime=\"453600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"64\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"65\" ResearchName=\"Prestige\" ResearchDescription=\"Biomedical
+        staff have uncovered advanced DNA strain for ship crew. Requires two level
+        40 crew to activate in bedroom.\" LogoSpriteId=\"3060\" ImageSpriteId=\"3060\"
+        GasCost=\"2000000\" RequiredLabLevel=\"9\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"65\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"66\" ResearchName=\"Firehawk Craft\"
+        ResearchDescription=\"A new type of assault craft can be developed utilising
+        latest developments in incendiary technology.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\"
+        GasCost=\"125000\" RequiredLabLevel=\"6\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"66\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"67\" ResearchName=\"Firehawk Lv2 Craft\"
+        ResearchDescription=\"Improve the combat effectiveness of the Firehawk.\"
+        LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"200000\" RequiredLabLevel=\"6\"
+        ResearchTime=\"291600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"66\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"66\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"68\" ResearchName=\"Firehawk Lv3 Craft\" ResearchDescription=\"Improve
+        the combat effectiveness of the Firehawk.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\"
+        GasCost=\"250000\" RequiredLabLevel=\"7\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"66\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"67\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"69\" ResearchName=\"Firehawk Lv4 Craft\"
+        ResearchDescription=\"Improve the combat effectiveness of the Firehawk.\"
+        LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"300000\" RequiredLabLevel=\"7\"
+        ResearchTime=\"583200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"66\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"68\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"70\" ResearchName=\"Firehawk Lv5 Craft\" ResearchDescription=\"Improve
+        the combat effectiveness of the Firehawk.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\"
+        GasCost=\"500000\" RequiredLabLevel=\"8\" ResearchTime=\"691200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"66\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"69\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"71\" ResearchName=\"Firehawk Lv6 Craft\"
+        ResearchDescription=\"Improve the combat effectiveness of the Firehawk.\"
+        LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"1000000\" RequiredLabLevel=\"9\"
+        ResearchTime=\"777600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"66\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"70\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"72\" ResearchName=\"Firehawk Lv7 Craft\" ResearchDescription=\"Improve
+        the combat effectiveness of the Firehawk.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\"
+        GasCost=\"1500000\" RequiredLabLevel=\"10\" ResearchTime=\"842400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"66\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"71\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"73\" ResearchName=\"Firehawk Lv8 Craft\"
+        ResearchDescription=\"Improve the combat effectiveness of the Firehawk.\"
+        LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"2000000\" RequiredLabLevel=\"10\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"66\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"72\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"74\" ResearchName=\"Fitness 101\" ResearchDescription=\"As
+        seen on TV. Magically improves effectiveness of all DIY training.\" LogoSpriteId=\"3194\"
+        ImageSpriteId=\"3194\" GasCost=\"7500\" RequiredLabLevel=\"2\" ResearchTime=\"43200\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"74\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"75\" ResearchName=\"Fitness
+        102\" ResearchDescription=\"Improves professional gym program efficiency.\"
+        LogoSpriteId=\"3195\" ImageSpriteId=\"3195\" GasCost=\"20000\" RequiredLabLevel=\"3\"
+        ResearchTime=\"64800\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"74\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"74\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"76\" ResearchName=\"Fitness 103\" ResearchDescription=\"Improves
+        military grade training efficiency.\" LogoSpriteId=\"3195\" ImageSpriteId=\"3195\"
+        GasCost=\"40000\" RequiredLabLevel=\"4\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"74\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"75\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"77\" ResearchName=\"Fitness 201\" ResearchDescription=\"As
+        seen on TV. Magically improves effectiveness of all DIY training.\" LogoSpriteId=\"3195\"
+        ImageSpriteId=\"3195\" GasCost=\"600000\" RequiredLabLevel=\"7\" ResearchTime=\"432000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"74\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"76\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"78\" ResearchName=\"Fitness
+        202\" ResearchDescription=\"Further improves effectiveness of professional
+        training programs.\" LogoSpriteId=\"3195\" ImageSpriteId=\"3195\" GasCost=\"1500000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"74\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"77\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"79\" ResearchName=\"Fitness 203\" ResearchDescription=\"Further
+        improves effectiveness of military training programs.\" LogoSpriteId=\"3195\"
+        ImageSpriteId=\"3195\" GasCost=\"2000000\" RequiredLabLevel=\"9\" ResearchTime=\"864000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"74\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"78\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"80\" ResearchName=\"Intergalactic
+        Commerce\" ResearchDescription=\"Gain access to gBay marketplace. Allows one
+        listing. Subject to 20% gBay success fee.\" LogoSpriteId=\"3743\" ImageSpriteId=\"3743\"
+        GasCost=\"1500\" RequiredLabLevel=\"1\" ResearchTime=\"10800\" ResearchDesignType=\"TradeCapacity\"
+        Argument=\"1\" StarbuxCost=\"0\" RootResearchDesignId=\"80\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"81\" ResearchName=\"Intergalactic Commerce
+        Lv2\" ResearchDescription=\"For real merchants. Allows two simultaneous listings
+        on gBay. Subject to 20% gBay success fee.\" LogoSpriteId=\"3743\" ImageSpriteId=\"3743\"
+        GasCost=\"30000\" RequiredLabLevel=\"3\" ResearchTime=\"64800\" ResearchDesignType=\"TradeCapacity\"
+        Argument=\"2\" StarbuxCost=\"0\" RootResearchDesignId=\"80\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"80\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"82\" ResearchName=\"Intergalactic Commerce
+        Lv3\" ResearchDescription=\"For diamond entrepreneurs. Allows three simultaneous
+        listings on gBay. Subject to 20% gBay success fee.\" LogoSpriteId=\"3743\"
+        ImageSpriteId=\"3743\" GasCost=\"65000\" RequiredLabLevel=\"5\" ResearchTime=\"259200\"
+        ResearchDesignType=\"TradeCapacity\" Argument=\"3\" StarbuxCost=\"0\" RootResearchDesignId=\"80\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"81\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"83\" ResearchName=\"Ion
+        Charge Lv2\" ResearchDescription=\"Physicists can strengthen our Ion Core
+        Capsules to hold additional charge.\" LogoSpriteId=\"3633\" ImageSpriteId=\"3633\"
+        GasCost=\"800000\" RequiredLabLevel=\"10\" ResearchTime=\"453600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"83\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"84\" ResearchName=\"Ion Charge Lv3\"
+        ResearchDescription=\"Physicists can strengthen our Ion Core Capsules to hold
+        additional charge.\" LogoSpriteId=\"3633\" ImageSpriteId=\"3633\" GasCost=\"1000000\"
+        RequiredLabLevel=\"10\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"83\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"83\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"85\" ResearchName=\"Ion Charge Lv4\"
+        ResearchDescription=\"Physicists can strengthen our Ion Core Capsules to hold
+        additional charge.\" LogoSpriteId=\"3633\" ImageSpriteId=\"3633\" GasCost=\"1500000\"
+        RequiredLabLevel=\"10\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"83\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"84\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"86\" ResearchName=\"Corsair Craft\" ResearchDescription=\"Our
+        engineers have worked hard to develop a corvette class vessel capable of launching
+        EMP attacks.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\" GasCost=\"125000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"87\" ResearchName=\"Corsair Lv2 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"200000\" RequiredLabLevel=\"7\" ResearchTime=\"291600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"86\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"88\" ResearchName=\"Corsair Lv3 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"250000\" RequiredLabLevel=\"8\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"87\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"89\" ResearchName=\"Corsair Lv4 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"300000\" RequiredLabLevel=\"8\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"88\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"90\" ResearchName=\"Corsair Lv5 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"500000\" RequiredLabLevel=\"9\" ResearchTime=\"712800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"89\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"91\" ResearchName=\"Corsair Lv6 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"1000000\" RequiredLabLevel=\"9\" ResearchTime=\"777600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"90\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"92\" ResearchName=\"Corsair Lv7 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"1500000\" RequiredLabLevel=\"10\" ResearchTime=\"842400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"91\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"93\" ResearchName=\"Corsair Lv8 Craft\"
+        ResearchDescription=\"Our engineers can improve the combat capability of our
+        standard Corsairs with a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\"
+        GasCost=\"2000000\" RequiredLabLevel=\"10\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"92\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"94\" ResearchName=\"Python\" ResearchDescription=\"Additional
+        AI Scripting Options.\" LogoSpriteId=\"4350\" ImageSpriteId=\"4350\" GasCost=\"7500\"
+        RequiredLabLevel=\"2\" ResearchTime=\"21600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"94\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"95\" ResearchName=\"Python 2.0\" ResearchDescription=\"Additional
+        AI Scripting Options.\" LogoSpriteId=\"4350\" ImageSpriteId=\"4350\" GasCost=\"200000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"94\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"94\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"96\" ResearchName=\"Python 3.x\" ResearchDescription=\"Advanced
+        Conditional AI Scripting Options.\" LogoSpriteId=\"4350\" ImageSpriteId=\"4350\"
+        GasCost=\"1300000\" RequiredLabLevel=\"8\" ResearchTime=\"453600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"94\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"95\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"97\" ResearchName=\"Modularization\"
+        ResearchDescription=\"Architects can unlock the ability to customize rooms
+        using various module components.\" LogoSpriteId=\"4351\" ImageSpriteId=\"4351\"
+        GasCost=\"6500\" RequiredLabLevel=\"2\" ResearchTime=\"43200\" ResearchDesignType=\"ModuleCapacity\"
+        Argument=\"1\" StarbuxCost=\"0\" RootResearchDesignId=\"97\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"98\" ResearchName=\"Modularization Lv2\"
+        ResearchDescription=\"Architects can unlock the ability to customize rooms
+        with additional components.\" LogoSpriteId=\"4351\" ImageSpriteId=\"4351\"
+        GasCost=\"40000\" RequiredLabLevel=\"4\" ResearchTime=\"129600\" ResearchDesignType=\"ModuleCapacity\"
+        Argument=\"2\" StarbuxCost=\"0\" RootResearchDesignId=\"97\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"97\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"99\" ResearchName=\"Modularization Lv3\"
+        ResearchDescription=\"Architects can unlock the ability to customize rooms
+        with additional components.\" LogoSpriteId=\"4351\" ImageSpriteId=\"4351\"
+        GasCost=\"250000\" RequiredLabLevel=\"6\" ResearchTime=\"324000\" ResearchDesignType=\"ModuleCapacity\"
+        Argument=\"5\" StarbuxCost=\"0\" RootResearchDesignId=\"97\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"98\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"100\" ResearchName=\"Test Research\"
+        ResearchDescription=\"Test Research\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"100\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"101\" ResearchName=\"Education 101\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"20000\"
+        RequiredLabLevel=\"3\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"102\" ResearchName=\"Education 102\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"40000\"
+        RequiredLabLevel=\"4\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"101\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"103\" ResearchName=\"Education 103\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"50000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"102\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"104\" ResearchName=\"Education 201\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"350000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"103\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"105\" ResearchName=\"Education 202\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"1000000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"712800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"104\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"106\" ResearchName=\"Education 203\"
+        ResearchDescription=\"Improve academic facilities and materials to increase
+        training yield.\" LogoSpriteId=\"4995\" ImageSpriteId=\"4995\" GasCost=\"1500000\"
+        RequiredLabLevel=\"9\" ResearchTime=\"842400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"101\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"105\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"107\" ResearchName=\"UFO\" ResearchDescription=\"UFO
+        Research. Unlocks alien ship and weapons technology.\" LogoSpriteId=\"19331\"
+        ImageSpriteId=\"19331\" GasCost=\"5000\" RequiredLabLevel=\"1\" ResearchTime=\"28800\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"107\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"108\" ResearchName=\"Sticker\"
+        ResearchDescription=\"Allows a sticker to be added to your ship in the ship
+        designer.\" LogoSpriteId=\"5042\" ImageSpriteId=\"5042\" GasCost=\"1500\"
+        RequiredLabLevel=\"1\" ResearchTime=\"300\" ResearchDesignType=\"StickerCapacity\"
+        Argument=\"1\" StarbuxCost=\"0\" RootResearchDesignId=\"108\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"109\" ResearchName=\"Stickers\" ResearchDescription=\"Allows
+        multiple stickers to be added to your ship in the ship designer.\" LogoSpriteId=\"5042\"
+        ImageSpriteId=\"5042\" GasCost=\"0\" RequiredLabLevel=\"3\" ResearchTime=\"600\"
+        ResearchDesignType=\"StickerCapacity\" Argument=\"2\" StarbuxCost=\"150\"
+        RootResearchDesignId=\"108\" AvailabilityMask=\"3\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"108\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"110\" ResearchName=\"More Stickers\" ResearchDescription=\"Allows
+        a load of stickers to be added to your ship in the ship designer.\" LogoSpriteId=\"5042\"
+        ImageSpriteId=\"5042\" GasCost=\"0\" RequiredLabLevel=\"5\" ResearchTime=\"900\"
+        ResearchDesignType=\"StickerCapacity\" Argument=\"3\" StarbuxCost=\"450\"
+        RootResearchDesignId=\"108\" AvailabilityMask=\"3\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"109\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"111\" ResearchName=\"Service Droid II\" ResearchDescription=\"Improvements
+        to the standard service droid to be more durable and repair quicker.\" LogoSpriteId=\"5314\"
+        ImageSpriteId=\"5314\" GasCost=\"150000\" RequiredLabLevel=\"5\" ResearchTime=\"129600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"111\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"112\" ResearchName=\"Service
+        Droid III\" ResearchDescription=\"Improvements to the standard service droid
+        to be more durable and repair quicker.\" LogoSpriteId=\"5314\" ImageSpriteId=\"5314\"
+        GasCost=\"500000\" RequiredLabLevel=\"7\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"111\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"111\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"113\" ResearchName=\"Service Droid IV\"
+        ResearchDescription=\"Improvements to the standard service droid to be more
+        durable and repair quicker.\" LogoSpriteId=\"5314\" ImageSpriteId=\"5314\"
+        GasCost=\"1300000\" RequiredLabLevel=\"8\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"111\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"112\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"114\" ResearchName=\"Service Droid V\"
+        ResearchDescription=\"Improvements to the standard service droid to be more
+        durable and repair quicker.\" LogoSpriteId=\"5314\" ImageSpriteId=\"5314\"
+        GasCost=\"2000000\" RequiredLabLevel=\"9\" ResearchTime=\"518400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"111\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"113\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"115\" ResearchName=\"Defence Droid I\"
+        ResearchDescription=\"Engineers can develop a heavily armoured defensive droid
+        to protect our ship.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"150000\"
+        RequiredLabLevel=\"5\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"116\" ResearchName=\"Defence Droid II\"
+        ResearchDescription=\"Engineers can upgrade the armour and weapons systems
+        on the defence droid.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"500000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"194400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"115\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"117\" ResearchName=\"Defence Droid III\"
+        ResearchDescription=\"Engineers can upgrade the armour and weapons systems
+        on the defence droid.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"1300000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"116\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"118\" ResearchName=\"Defence Droid IV\"
+        ResearchDescription=\"Engineers can upgrade the armour and weapons systems
+        on the defence droid.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"2000000\"
+        RequiredLabLevel=\"9\" ResearchTime=\"518400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"117\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"119\" ResearchName=\"Defence Droid V\"
+        ResearchDescription=\"Engineers can upgrade the armour and weapons systems
+        on the defence droid.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"2500000\"
+        RequiredLabLevel=\"10\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"118\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"120\" ResearchName=\"Boarder Droid I\"
+        ResearchDescription=\"Engineers can develop a quick assault bot to board enemy
+        ships.\" LogoSpriteId=\"5315\" ImageSpriteId=\"5315\" GasCost=\"500000\" RequiredLabLevel=\"7\"
+        ResearchTime=\"194400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"120\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"121\" ResearchName=\"Boarder Droid II\" ResearchDescription=\"Improved
+        Boarder Droids can cause additional damage and take extra hits.\" LogoSpriteId=\"5315\"
+        ImageSpriteId=\"5315\" GasCost=\"650000\" RequiredLabLevel=\"7\" ResearchTime=\"259200\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"120\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"120\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"122\" ResearchName=\"Boarder
+        Droid III\" ResearchDescription=\"Improved Boarder Droids can cause additional
+        damage and take extra hits.\" LogoSpriteId=\"5315\" ImageSpriteId=\"5315\"
+        GasCost=\"1300000\" RequiredLabLevel=\"8\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"120\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"121\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"123\" ResearchName=\"Boarder Droid IV\"
+        ResearchDescription=\"Improved Boarder Droids can cause additional damage
+        and take extra hits.\" LogoSpriteId=\"5315\" ImageSpriteId=\"5315\" GasCost=\"2000000\"
+        RequiredLabLevel=\"9\" ResearchTime=\"518400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"120\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"122\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"124\" ResearchName=\"Boarder Droid V\"
+        ResearchDescription=\"Improved Boarder Droids can cause additional damage
+        and take extra hits.\" LogoSpriteId=\"5315\" ImageSpriteId=\"5315\" GasCost=\"2500000\"
+        RequiredLabLevel=\"10\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"120\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"123\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"126\" ResearchName=\"Ammo Recycling\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 30%
+        of craft and ammo from used shells during defence. 15% via rebuild and 15%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"1000\"
+        RequiredLabLevel=\"1\" ResearchTime=\"1800\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"15\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"127\" ResearchName=\"Ammo Recycling II\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 50%
+        of craft and ammo from used shells during defence. 25% via rebuild and 25%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"10000\"
+        RequiredLabLevel=\"2\" ResearchTime=\"14400\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"25\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"126\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"128\" ResearchName=\"Ammo Recycling III\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 60%
+        of craft and ammo from used shells during defence. 30% via rebuild and 30%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"30000\"
+        RequiredLabLevel=\"4\" ResearchTime=\"28800\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"30\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"127\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"129\" ResearchName=\"Ammo Recycling IV\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 80%
+        of craft and ammo from used shells during defence. 40% via rebuild and 40%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"225000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"64800\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"40\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"128\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"130\" ResearchName=\"Ammo Recycling V\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 90%
+        of craft and ammo from used shells during defence. 45% via rebuild and 45%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"1000000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"194400\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"45\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"129\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"133\" ResearchName=\"Ammo Recycling VI\"
+        ResearchDescription=\"Your crew can train to automatically recycle up to 100%
+        of craft and ammo from used shells during defence. 50% via rebuild and 50%
+        in ammo vault.\" LogoSpriteId=\"5707\" ImageSpriteId=\"5707\" GasCost=\"2000000\"
+        RequiredLabLevel=\"10\" ResearchTime=\"226800\" ResearchDesignType=\"AmmoSalvageCapacity\"
+        Argument=\"50\" StarbuxCost=\"0\" RootResearchDesignId=\"126\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"130\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"134\" ResearchName=\"Collector Bot 3K\"
+        ResearchDescription=\"Are you tired of manually collecting resources? Introducing
+        Collector Bot 3K! Automatically puts stuff in a nice box for you in the Bridge.\"
+        LogoSpriteId=\"7066\" ImageSpriteId=\"7066\" GasCost=\"0\" RequiredLabLevel=\"2\"
+        ResearchTime=\"5\" ResearchDesignType=\"CollectAll\" Argument=\"1\" StarbuxCost=\"75\"
+        RootResearchDesignId=\"134\" AvailabilityMask=\"3\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"135\" ResearchName=\"Mini Droid\" ResearchDescription=\"Engineers
+        can develop a low cost, all purpose, miniature droid to service the Starbase.\"
+        LogoSpriteId=\"7342\" ImageSpriteId=\"7342\" GasCost=\"5000\" RequiredLabLevel=\"2\"
+        ResearchTime=\"14400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"135\" AvailabilityMask=\"2\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"136\" ResearchName=\"Mini Droid II\" ResearchDescription=\"Engineers
+        can improve the low cost, all purpose, miniature droid with improved parts.\"
+        LogoSpriteId=\"7342\" ImageSpriteId=\"7342\" GasCost=\"12500\" RequiredLabLevel=\"3\"
+        ResearchTime=\"43200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"135\" AvailabilityMask=\"2\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"135\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"137\" ResearchName=\"Mini Droid III\" ResearchDescription=\"Engineers
+        can improve the low cost, all purpose, miniature droid with improved parts.\"
+        LogoSpriteId=\"7342\" ImageSpriteId=\"7342\" GasCost=\"32500\" RequiredLabLevel=\"4\"
+        ResearchTime=\"64800\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"135\" AvailabilityMask=\"2\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"136\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"138\" ResearchName=\"Starship Hull Expansion\" ResearchDescription=\"Allows
+        basic Starship Hulls to be expanded for extra resource space but with a reduced
+        HP and at significant cost.\" LogoSpriteId=\"9022\" ImageSpriteId=\"9022\"
+        GasCost=\"500000\" RequiredLabLevel=\"9\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"138\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"139\" ResearchName=\"Starbase Hull Expansion\"
+        ResearchDescription=\"Allows Starbase Hulls to be expanded for extra resource
+        space but with a reduced HP and at significant cost.\" LogoSpriteId=\"9022\"
+        ImageSpriteId=\"9022\" GasCost=\"7500\" RequiredLabLevel=\"1\" ResearchTime=\"21600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"139\"
+        AvailabilityMask=\"2\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"140\" ResearchName=\"Supply
+        Chain Automation\" ResearchDescription=\"Unlocks option to rearm most ship
+        weapons and modules quickly.\" LogoSpriteId=\"9728\" ImageSpriteId=\"9728\"
+        GasCost=\"0\" RequiredLabLevel=\"3\" ResearchTime=\"10\" ResearchDesignType=\"CollectAll\"
+        Argument=\"2\" StarbuxCost=\"50\" RootResearchDesignId=\"134\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"134\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"141\" ResearchName=\"Javelin Missiles\"
+        ResearchDescription=\"Cutting-edge armor-piercing technology has allowed for
+        the creation of specialized missiles that can ignore the target's armor to
+        deal maximum damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"30000\"
+        RequiredLabLevel=\"4\" ResearchTime=\"64800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"142\" ResearchName=\"Javelin Missiles
+        Lv2\" ResearchDescription=\"Upgrading the javelin missile will increase AP
+        damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"50000\" RequiredLabLevel=\"4\"
+        ResearchTime=\"129600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"141\" AvailabilityMask=\"3\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"141\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"143\" ResearchName=\"Javelin Missiles Lv3\" ResearchDescription=\"Upgrading
+        the javelin missile will increase AP damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\"
+        GasCost=\"75000\" RequiredLabLevel=\"5\" ResearchTime=\"259200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"142\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"144\" ResearchName=\"Javelin Missiles
+        Lv4\" ResearchDescription=\"Upgrading the javelin missile will increase AP
+        damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"175000\"
+        RequiredLabLevel=\"6\" ResearchTime=\"291600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"143\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"145\" ResearchName=\"Javelin Missiles
+        Lv5\" ResearchDescription=\"Upgrading the javelin missile will increase AP
+        damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"450000\"
+        RequiredLabLevel=\"7\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"144\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"146\" ResearchName=\"Javelin Missiles
+        Lv6\" ResearchDescription=\"Upgrading the javelin missile will increase AP
+        damage.\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"1000000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"145\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"147\" ResearchName=\"Stinger Lv2 Craft\"
+        ResearchDescription=\"Advances in starship technology allows for better designs
+        for the scout class fighter, improving firing rate and speed.\" LogoSpriteId=\"9872\"
+        ImageSpriteId=\"9872\" GasCost=\"25000\" RequiredLabLevel=\"5\" ResearchTime=\"64800\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"148\" ResearchName=\"Stinger
+        Lv3 Craft\" ResearchDescription=\"Advances in starship technology allows for
+        better designs for the scout class fighter, improving firing rate and speed.\"
+        LogoSpriteId=\"9872\" ImageSpriteId=\"9872\" GasCost=\"50000\" RequiredLabLevel=\"6\"
+        ResearchTime=\"97200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"147\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"147\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"149\" ResearchName=\"Stinger Lv4 Craft\" ResearchDescription=\"Advances
+        in starship technology allows for better designs for the scout class fighter,
+        improving firing rate and speed.\" LogoSpriteId=\"9872\" ImageSpriteId=\"9872\"
+        GasCost=\"75000\" RequiredLabLevel=\"6\" ResearchTime=\"129600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"148\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"150\" ResearchName=\"Stinger Lv5 Craft\"
+        ResearchDescription=\"Advances in starship technology allows for better designs
+        for the scout class fighter, improving firing rate and speed.\" LogoSpriteId=\"9872\"
+        ImageSpriteId=\"9872\" GasCost=\"150000\" RequiredLabLevel=\"7\" ResearchTime=\"194400\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"149\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"151\" ResearchName=\"Stinger
+        Lv6 Craft\" ResearchDescription=\"Advances in starship technology allows for
+        better designs for the scout class fighter, improving firing rate and speed.\"
+        LogoSpriteId=\"9872\" ImageSpriteId=\"9872\" GasCost=\"500000\" RequiredLabLevel=\"8\"
+        ResearchTime=\"259200\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"147\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"150\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"152\" ResearchName=\"Stinger Lv7 Craft\" ResearchDescription=\"Advances
+        in starship technology allows for better designs for the scout class fighter,
+        improving firing rate and speed.\" LogoSpriteId=\"9872\" ImageSpriteId=\"9872\"
+        GasCost=\"700000\" RequiredLabLevel=\"9\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"151\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"153\" ResearchName=\"Stinger Lv8 Craft\"
+        ResearchDescription=\"Advances in starship technology allows for better designs
+        for the scout class fighter, improving firing rate and speed.\" LogoSpriteId=\"9872\"
+        ImageSpriteId=\"9872\" GasCost=\"1000000\" RequiredLabLevel=\"10\" ResearchTime=\"453600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"152\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"154\" ResearchName=\"Day
+        Trader\" ResearchDescription=\"Gain access to pricing change, historical chart,
+        and open interest information when trading on gBay Market.\" LogoSpriteId=\"11755\"
+        ImageSpriteId=\"11755\" GasCost=\"0\" RequiredLabLevel=\"3\" ResearchTime=\"10\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"150\" RootResearchDesignId=\"80\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"80\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"156\" ResearchName=\"Atomic
+        Disassembly\" ResearchDescription=\"A breakthrough in atomic scale technology
+        now allows for the dismantling of equipment and tools into a new malleable
+        resource.\" LogoSpriteId=\"12719\" ImageSpriteId=\"12719\" GasCost=\"0\" RequiredLabLevel=\"7\"
+        ResearchTime=\"10\" ResearchDesignType=\"ItemRecycling\" Argument=\"0\" StarbuxCost=\"150\"
+        RootResearchDesignId=\"156\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"157\" ResearchName=\"VIP Research\" ResearchDescription=\"VIP
+        Research\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\" GasCost=\"100\" RequiredLabLevel=\"99\"
+        ResearchTime=\"30\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"157\" AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"158\" ResearchName=\"Armada For Original Backers\" ResearchDescription=\"Research
+        to unlock Golden Armada ship\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"158\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"159\" ResearchName=\"Armada For Galaxy
+        Backers\" ResearchDescription=\"Research to unlock Galaxy Armada ship\" LogoSpriteId=\"1581\"
+        ImageSpriteId=\"1581\" GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"159\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"160\" ResearchName=\"KS
+        Backer\" ResearchDescription=\"Research to unlock Backer Kickstarter Tier
+        (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\" GasCost=\"100\" RequiredLabLevel=\"99\"
+        ResearchTime=\"30\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"160\" AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"161\" ResearchName=\"KS Officer\" ResearchDescription=\"Research
+        to unlock Officer Kickstarter Tier (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"161\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"162\" ResearchName=\"KS Captain\" ResearchDescription=\"Research
+        to unlock Captain Kickstarter Tier (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"162\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"163\" ResearchName=\"KS Major\" ResearchDescription=\"Research
+        to unlock Major Kickstarter Tier (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"163\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"164\" ResearchName=\"KS Commander\" ResearchDescription=\"Research
+        to unlock Commander Kickstarter Tier (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"164\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"165\" ResearchName=\"KS Admiral\" ResearchDescription=\"Research
+        to unlock Admiral Kickstarter Tier (Gmap)\" LogoSpriteId=\"1581\" ImageSpriteId=\"1581\"
+        GasCost=\"100\" RequiredLabLevel=\"99\" ResearchTime=\"30\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"165\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"166\" ResearchName=\"KS Fleet Admiral\"
+        ResearchDescription=\"Research to unlock Fleet Admiral Kickstarter Tier (Gmap)\"
+        LogoSpriteId=\"1581\" ImageSpriteId=\"1581\" GasCost=\"100\" RequiredLabLevel=\"99\"
+        ResearchTime=\"30\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"166\" AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"167\" ResearchName=\"Gas Extraction Technology\" ResearchDescription=\"Cutting
+        edge tech now allows your mining lasers to collect gas instead of minerals!\"
+        LogoSpriteId=\"1246\" ImageSpriteId=\"1246\" GasCost=\"100000\" RequiredLabLevel=\"5\"
+        ResearchTime=\"86400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"167\" AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysShow\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"168\" ResearchName=\"Boost Gauge\" ResearchDescription=\"Breakthroughs
+        in space-time technology have now allowed for short bursts of time-acceleration
+        for specific tasks. Can only currently be used to speed up construction, training,
+        and research times.\" LogoSpriteId=\"14394\" ImageSpriteId=\"14394\" GasCost=\"0\"
+        RequiredLabLevel=\"99\" ResearchTime=\"20\" ResearchDesignType=\"BoostGauge\"
+        Argument=\"3600\" StarbuxCost=\"10\" RootResearchDesignId=\"168\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"173\" ResearchName=\"Boost Gauge 2.0\"
+        ResearchDescription=\"Breakthroughs in space-time technology have now allowed
+        for short bursts of time-acceleration for specific tasks. Can only currently
+        be used to speed up construction, training, and research times.\" LogoSpriteId=\"14394\"
+        ImageSpriteId=\"14394\" GasCost=\"0\" RequiredLabLevel=\"99\" ResearchTime=\"20\"
+        ResearchDesignType=\"BoostGauge\" Argument=\"10800\" StarbuxCost=\"100\" RootResearchDesignId=\"168\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"168\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"174\" ResearchName=\"Interceptor
+        Lv9 Craft\" ResearchDescription=\"Our engineers can upgrade our basic interceptors
+        for increased firing rate and maneuverability.\" LogoSpriteId=\"2622\" ImageSpriteId=\"2622\"
+        GasCost=\"2000000\" RequiredLabLevel=\"11\" ResearchTime=\"712800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"49\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"62\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"175\" ResearchName=\"Stinger Lv9 Craft\"
+        ResearchDescription=\"Advances in starship technology allows for better designs
+        for the scout class fighter, improving firing rate and speed.\" LogoSpriteId=\"9872\"
+        ImageSpriteId=\"9872\" GasCost=\"1500000\" RequiredLabLevel=\"11\" ResearchTime=\"453600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"147\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"153\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"176\" ResearchName=\"Defender
+        Lv9 Craft\" ResearchDescription=\"Advanced Defender schematics can be developed
+        to increase Defender combat effectiveness.\" LogoSpriteId=\"2621\" ImageSpriteId=\"2621\"
+        GasCost=\"3000000\" RequiredLabLevel=\"11\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"51\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"57\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"177\" ResearchName=\"Firehawk Lv9 Craft\"
+        ResearchDescription=\"Improve the combat effectiveness of the Firehawk.\"
+        LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"3000000\" RequiredLabLevel=\"11\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"66\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"73\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"178\" ResearchName=\"Corsair Lv9 Craft\" ResearchDescription=\"Our
+        engineers can improve the combat capability of our standard Corsairs with
+        a range of upgrades.\" LogoSpriteId=\"4349\" ImageSpriteId=\"4349\" GasCost=\"3000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"86\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"93\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"179\" ResearchName=\"Rocket Lv7\" ResearchDescription=\"Improvements
+        to the standard rocket warhead results in higher damage.\" LogoSpriteId=\"1595\"
+        ImageSpriteId=\"1595\" GasCost=\"1000000\" RequiredLabLevel=\"11\" ResearchTime=\"648000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"2\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"12\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"180\" ResearchName=\"Incendiary
+        Technology Lv7\" ResearchDescription=\"Pyro experts can improve the flammability
+        of our pyro weapons range\" LogoSpriteId=\"1599\" ImageSpriteId=\"1599\" GasCost=\"2000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"1\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"17\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"181\" ResearchName=\"Jungler Lv7\" ResearchDescription=\"Biolab
+        engineers can increase the toxicity of neurotoxins in our warheads.\" LogoSpriteId=\"1600\"
+        ImageSpriteId=\"1600\" GasCost=\"1500000\" RequiredLabLevel=\"11\" ResearchTime=\"648000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"4\"
+        AvailabilityMask=\"3\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"27\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"182\" ResearchName=\"Penetrator
+        Missiles Lv7\" ResearchDescription=\"Upgrading the penetrator warhead to cause
+        extra hull damage.\" LogoSpriteId=\"1598\" ImageSpriteId=\"1598\" GasCost=\"2000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"5\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"32\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"183\" ResearchName=\"EMP Technology Lv7\"
+        ResearchDescription=\"Our scientists can improve the effectiveness of EMP
+        based weapons.\" LogoSpriteId=\"1596\" ImageSpriteId=\"1596\" GasCost=\"2000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"432000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"6\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"37\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"184\" ResearchName=\"Javelin Missiles
+        Lv7\" ResearchDescription=\"Upgrading the javelin missile will increase AP
+        damage.\t\" LogoSpriteId=\"9800\" ImageSpriteId=\"9800\" GasCost=\"2000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"648000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"141\" AvailabilityMask=\"3\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"146\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"185\" ResearchName=\"Service Droid VI\"
+        ResearchDescription=\"Improvements to the standard service droid to be more
+        durable and repair quicker.\" LogoSpriteId=\"5314\" ImageSpriteId=\"5314\"
+        GasCost=\"2500000\" RequiredLabLevel=\"11\" ResearchTime=\"518400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"111\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"114\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"186\" ResearchName=\"Defence Droid VI\"
+        ResearchDescription=\"Engineers can upgrade the armour and weapons systems
+        on the defence droid.\" LogoSpriteId=\"5316\" ImageSpriteId=\"5316\" GasCost=\"3000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"115\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"119\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"187\" ResearchName=\"Boarder Droid VI\"
+        ResearchDescription=\"Improved Boarder Droids can cause additional damage
+        and take extra hits.\" LogoSpriteId=\"5315\" ImageSpriteId=\"5315\" GasCost=\"3000000\"
+        RequiredLabLevel=\"11\" ResearchTime=\"583200\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"120\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"124\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"188\" ResearchName=\"Boost Gauge 3.0\"
+        ResearchDescription=\"Breakthroughs in space-time technology have now allowed
+        for short bursts of time-acceleration for specific tasks. Can only currently
+        be used to speed up construction, training, and research times.\" LogoSpriteId=\"14394\"
+        ImageSpriteId=\"14394\" GasCost=\"0\" RequiredLabLevel=\"99\" ResearchTime=\"20\"
+        ResearchDesignType=\"BoostGauge\" Argument=\"21600\" StarbuxCost=\"300\" RootResearchDesignId=\"168\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\" RequiredResearchDesignId=\"173\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"189\" ResearchName=\"Boost
+        Gauge 4.0\" ResearchDescription=\"Breakthroughs in space-time technology have
+        now allowed for short bursts of time-acceleration for specific tasks. Can
+        only currently be used to speed up construction, training, and research times.\"
+        LogoSpriteId=\"14394\" ImageSpriteId=\"14394\" GasCost=\"0\" RequiredLabLevel=\"99\"
+        ResearchTime=\"20\" ResearchDesignType=\"BoostGauge\" Argument=\"43200\" StarbuxCost=\"600\"
+        RootResearchDesignId=\"168\" AvailabilityMask=\"1\" VisibilityFlags=\"AlwaysHide\"
+        RequiredResearchDesignId=\"188\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"190\" ResearchName=\"Vacuum Packing I\" ResearchDescription=\"Improves
+        storage capacity of all inventory storage rooms by an additional 10%.\" LogoSpriteId=\"48\"
+        ImageSpriteId=\"48\" GasCost=\"0\" RequiredLabLevel=\"9\" ResearchTime=\"194400\"
+        ResearchDesignType=\"StorageModifier\" Argument=\"10\" StarbuxCost=\"250\"
+        RootResearchDesignId=\"190\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"191\" ResearchName=\"Vacuum Packing II\" ResearchDescription=\"Improves
+        storage capacity of all inventory storage rooms by an additional 15%.\" LogoSpriteId=\"48\"
+        ImageSpriteId=\"48\" GasCost=\"0\" RequiredLabLevel=\"10\" ResearchTime=\"453600\"
+        ResearchDesignType=\"StorageModifier\" Argument=\"25\" StarbuxCost=\"1500\"
+        RootResearchDesignId=\"190\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"190\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"192\" ResearchName=\"Vacuum Packing III\" ResearchDescription=\"Improves
+        storage capacity of all inventory storage rooms by an additional 25%.\" LogoSpriteId=\"48\"
+        ImageSpriteId=\"48\" GasCost=\"0\" RequiredLabLevel=\"11\" ResearchTime=\"648000\"
+        ResearchDesignType=\"StorageModifier\" Argument=\"50\" StarbuxCost=\"3500\"
+        RootResearchDesignId=\"190\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"191\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"193\" ResearchName=\"Bombshell Lv2 Craft\" ResearchDescription=\"Improves
+        the Bombshell's speed and firepower.\" LogoSpriteId=\"19170\" ImageSpriteId=\"19170\"
+        GasCost=\"700000\" RequiredLabLevel=\"9\" ResearchTime=\"324000\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"193\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"194\" ResearchName=\"Bombshell Lv3 Craft\"
+        ResearchDescription=\"Improves the Bombshell's speed and firepower.\" LogoSpriteId=\"19170\"
+        ImageSpriteId=\"19170\" GasCost=\"1000000\" RequiredLabLevel=\"10\" ResearchTime=\"453600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"193\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"193\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"195\" ResearchName=\"Bombshell
+        Lv4 Craft\" ResearchDescription=\"Improves the Bombshell's speed and firepower.\"
+        LogoSpriteId=\"19170\" ImageSpriteId=\"19170\" GasCost=\"1500000\" RequiredLabLevel=\"11\"
+        ResearchTime=\"453600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"193\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"194\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"196\" ResearchName=\"Bulwark Lv2 Craft\" ResearchDescription=\"Improves
+        the Bulwark's survivability.\" LogoSpriteId=\"19169\" ImageSpriteId=\"19169\"
+        GasCost=\"1500000\" RequiredLabLevel=\"9\" ResearchTime=\"842400\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"196\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"197\" ResearchName=\"Bulwark Lv3 Craft\"
+        ResearchDescription=\"Improves the Bulwark's survivability.\" LogoSpriteId=\"19169\"
+        ImageSpriteId=\"19169\" GasCost=\"2000000\" RequiredLabLevel=\"11\" ResearchTime=\"1209600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"196\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"196\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"198\" ResearchName=\"Bulwark
+        Lv4 Craft\" ResearchDescription=\"Improves the Bulwark's survivability.\"
+        LogoSpriteId=\"19169\" ImageSpriteId=\"19169\" GasCost=\"3000000\" RequiredLabLevel=\"11\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"196\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"197\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"199\" ResearchName=\"Shieldbuster Craft\" ResearchDescription=\"Advancements
+        in anti-shielding photon weaponry have allowed our engineers to equip them
+        on fighter crafts.\" LogoSpriteId=\"19171\" ImageSpriteId=\"19171\" GasCost=\"1000000\"
+        RequiredLabLevel=\"9\" ResearchTime=\"777600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"199\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"200\" ResearchName=\"Shieldbuster Lv2
+        Craft\" ResearchDescription=\"Improves the Shieldbuster's overall strength.\"
+        LogoSpriteId=\"19171\" ImageSpriteId=\"19171\" GasCost=\"1500000\" RequiredLabLevel=\"9\"
+        ResearchTime=\"842400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"199\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"199\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"201\" ResearchName=\"Shieldbuster Lv3 Craft\" ResearchDescription=\"Improves
+        the Shieldbuster's overall strength.\" LogoSpriteId=\"19171\" ImageSpriteId=\"19171\"
+        GasCost=\"2000000\" RequiredLabLevel=\"10\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"199\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"200\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"202\" ResearchName=\"Shieldbuster Lv4
+        Craft\" ResearchDescription=\"Improves the Shieldbuster's overall strength.\"
+        LogoSpriteId=\"19171\" ImageSpriteId=\"19171\" GasCost=\"3000000\" RequiredLabLevel=\"11\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"199\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"201\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"203\" ResearchName=\"Prism Craft\" ResearchDescription=\"Cutting
+        edge laser weaponry now allows for a specialized fighter to strike multiple
+        targets at once for every attack.\" LogoSpriteId=\"19172\" ImageSpriteId=\"19172\"
+        GasCost=\"1000000\" RequiredLabLevel=\"9\" ResearchTime=\"777600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"203\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"204\" ResearchName=\"Prism Lv2 Craft\"
+        ResearchDescription=\"Improves the Prism's effectiveness and targeting.\"
+        LogoSpriteId=\"19172\" ImageSpriteId=\"19172\" GasCost=\"1500000\" RequiredLabLevel=\"9\"
+        ResearchTime=\"842400\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"203\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"203\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"205\" ResearchName=\"Prism Lv3 Craft\" ResearchDescription=\"Improves
+        the Prism's effectiveness and targeting.\" LogoSpriteId=\"19172\" ImageSpriteId=\"19172\"
+        GasCost=\"2000000\" RequiredLabLevel=\"10\" ResearchTime=\"1209600\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"203\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"204\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"206\" ResearchName=\"Prism Lv4 Craft\"
+        ResearchDescription=\"Improves the Prism's effectiveness and targeting.\"
+        LogoSpriteId=\"19172\" ImageSpriteId=\"19172\" GasCost=\"3000000\" RequiredLabLevel=\"11\"
+        ResearchTime=\"1209600\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"203\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"205\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"207\" ResearchName=\"Unstable Ion Core\" ResearchDescription=\"Mad
+        Scientists have developed an unstable version of the Ion Core that will cause
+        it to disperse its charge randomly over a wide area.\" LogoSpriteId=\"20000\"
+        ImageSpriteId=\"20000\" GasCost=\"2000000\" RequiredLabLevel=\"10\" ResearchTime=\"648000\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"207\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\"
+        RequiredItemDesignId=\"0\" /><ResearchDesign ResearchDesignId=\"208\" ResearchName=\"Overcharged
+        Ion Core\" ResearchDescription=\"Experimental weapon makers accidentally discovered
+        this variant of the Ion Core, allowing to deal damage over a larger area.\"
+        LogoSpriteId=\"19999\" ImageSpriteId=\"19999\" GasCost=\"2000000\" RequiredLabLevel=\"10\"
+        ResearchTime=\"648000\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"208\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"209\" ResearchName=\"Catapult Craft\" ResearchDescription=\"Engineers
+        have adapted the long range cruise missiles typically used on a starbase into
+        a more compact and lightweight form capable of being carried into battle by
+        small crafts.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"250000\"
+        RequiredLabLevel=\"8\" ResearchTime=\"388800\" ResearchDesignType=\"Normal\"
+        Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"209\" AvailabilityMask=\"1\"
+        VisibilityFlags=\"None\" RequiredResearchDesignId=\"0\" RequiredItemDesignId=\"0\"
+        /><ResearchDesign ResearchDesignId=\"210\" ResearchName=\"Catapult Lv2 Craft\"
+        ResearchDescription=\"Improved damage and survivability of the Catapult siege
+        craft.\" LogoSpriteId=\"2507\" ImageSpriteId=\"2507\" GasCost=\"750000\" RequiredLabLevel=\"9\"
+        ResearchTime=\"712800\" ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\"
+        RootResearchDesignId=\"209\" AvailabilityMask=\"1\" VisibilityFlags=\"None\"
+        RequiredResearchDesignId=\"209\" RequiredItemDesignId=\"0\" /><ResearchDesign
+        ResearchDesignId=\"211\" ResearchName=\"Catapult Lv3 Craft\" ResearchDescription=\"Improved
+        damage and survivability of the Catapult siege craft.\" LogoSpriteId=\"2507\"
+        ImageSpriteId=\"2507\" GasCost=\"2000000\" RequiredLabLevel=\"10\" ResearchTime=\"1209600\"
+        ResearchDesignType=\"Normal\" Argument=\"0\" StarbuxCost=\"0\" RootResearchDesignId=\"209\"
+        AvailabilityMask=\"1\" VisibilityFlags=\"None\" RequiredResearchDesignId=\"210\"
+        RequiredItemDesignId=\"0\" /></ResearchDesigns></ListAllResearchDesigns></ResearchService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 19:29:19 GMT
+      Expires:
+      - Thu, 21 Mar 2024 19:49:19 GMT
+      Last-Modified:
+      - Thu, 21 Mar 2024 19:29:19 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - oSVA314XAwaHikBiNACqvU-ivMGJZmF5PlZAXPl4By4ZgOdk61_ckQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

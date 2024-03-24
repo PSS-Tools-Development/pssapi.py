@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: '{"AccessToken": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "AdvertisingKey":
+      "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "Checksum": "72364e6784a4b4e0b6713249d8c6f7b9",
+      "ClientDateTime": "2023-08-05T17:55:58", "DeviceKey": "e6a3815568cd", "DeviceType":
+      "DeviceTypeAndroid", "IsJailBroken": "false", "LanguageKey": "en", "Signal":
+      "false", "UserDeviceInfo": {"ClientBuild": "", "DeviceName": "", "Locale": "",
+      "OSBuild": "", "OsVersion": ""}}'
+    headers: {}
+    method: POST
+    uri: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
+  response:
+    body:
+      string: <UserService><UserLogin accessToken="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        PreviousLastLoginDate ="2023-08-05T12:31:08" UserId="10514214"><User Id="10514214"
+        LastAlertDate="2023-07-29T12:52:16.867" UserType="Unverified" GenderType="Unknown"
+        RaceType="Unknown" Credits="100" ProfileImageUrl="" Trophy="1000" GameCenterName=""
+        CompletedMissionDesigns="" LanguageKey="en" TutorialStatus="0" IconSpriteId="653"
+        TipStatus="0" AllianceMembership="None" CrewDonated="0" CrewReceived="0" FreeStarbuxReceivedToday="0"
+        DailyRewardStatus="0" HeroBonusChance="0" GameCenterFriendCount="0" CompletedMissionEventIds=""
+        UnlockedShipDesignIds="" UnlockedCharacterDesignIds="" Status="0" LastCatalogPurchaseDate="1900-01-01T00:00:00"
+        VipExpiryDate="1900-01-01T00:00:00" ChallengeWins="0" ChallengeLosses="0"
+        LoadingPercentage="0" AllianceSupplyDonation="0" TotalSupplyDonation="0" DailyMissionsAttempted=""
+        PurchaseRewardPoints="0" UsedRewardPoints="0" GooglePlayName="" TournamentRewardPoints="0"
+        AllianceScore="0" ChampionshipScore="0" DailyChallengeWinStreak="0" DrawsUsedToday="0"
+        ActivatedPromotions="" PVPAttackWins="0" PVPAttackLosses="0" PVPAttackDraws="0"
+        PVPDefenceDraws="0" PVPDefenceWins="0" PVPDefenceLosses="0" HighestTrophy="1000"
+        ChatAppearance="0" AuthenticationType="Basic" DailyPVPAttacks="0" ExploredStarSystemIds=""
+        TournamentBonusScore="0" SituationOccurrencesToday="0" Flags="0" EmailVerificationStatus="None"
+        BoostAmount="0" PassPoints="0" TaskRerollCount="0" LeagueType="Standard" DailyPvPDefence="0"
+        TrophyGained="0" UnlockedSkinKeys="" RewardsCollectable="false" IsUnderAge="false"
+        MatchingStatus="Active" ShipDesignId="0" AllianceSpriteId="0" Ranking="0"  TournamentResetDate="2023-07-29T12:52:16"
+        AllianceJoinDate="1900-01-01T00:00:00" LastPurchaseDate="" LastHeartBeatDate="2023-08-05T17:57:56"
+        LastRewardActionDate="2023-07-29T12:52:16" CooldownExpiry="2023-07-29T12:52:16"
+        CreationDate="2023-07-29T12:52:16" LastLoginDate="2023-08-05T17:57:56" LastVipClaimDate="2023-07-29T12:52:16"
+        AllianceId="0" ChallengeDesignId="0" LastChallengeDesignId="0" CaptainCharacterDesignId="0"
+        AllianceQualifyDivisionDesignId="0" BlockAuthAttemptsUntilDate="2000-01-01T00:00:00"
+        BoostEndDate="2000-01-01T00:00:00" LastBoostDate="2000-01-01T00:00:00" UpdateDate="2023-08-05T12:31:08"
+        OwnerUserId="0"><UserSeason UserSeasonId="2691863" SeasonDesignId="13" UserId="10514214"
+        Points="0" UnlockedRewardDesignIds="" PurchaseVIPDate="2000-01-01T00:00:00"
+        PurchaseVIPStatus="None" /></User></UserLogin></UserService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1270'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sat, 05 Aug 2023 17:57:57 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 5f2bb43f258333f4156847ce1f482ee6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 2moy1UxRoQYqJz00iPuvm-ZEtqjZdZnI5BerC3B4mVlu3KTY5lOGkw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/UserService/DeviceLogin15?AccessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&AdvertisingKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&Checksum=72364e6784a4b4e0b6713249d8c6f7b9&ClientBuild=&ClientDateTime=2023-08-05T17:55:58&DeviceKey=e6a3815568cd&DeviceName=&DeviceType=DeviceTypeAndroid&IsJailBroken=false&LanguageKey=en&Locale=&OSBuild=&OsVersion=&Signal=false
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
+  response:
+    body:
+      string: <GalaxyService><ListStarSystemMarkers><StarSystemMarkers><StarSystemMarker
+        StarSystemMarkerId="36114733" StarSystemId="34" FromStarSystemId="39" NextStarSystemId="27"
+        OriginStarSystemId="39" OriginNextStarSystemId="27" MarkerFlags="73" MarkerType="MerchantShip"
+        CostString="item:778x103|item:741x12|item:778x100|item:778x250|item:778x333|item:744x4"
+        RewardString="item:461|item:153|item:1241|item:462|item:1247|item:1253" IsCollected="false"
+        IsRepeatable="false" Title="Gray Bazaar" TravelTimeMultiplier="300" PurchaseFlags="0"
+        Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18215&quot;, &quot;TitleImageSpriteId&quot;:&quot;18216&quot;}"
+        ShipIds="" MovementType="Wander" TravelCoolDownTime="0" CompletionOriginalValue="0"
+        CompletionValueType="None" CompletionRemainingValue="0" RequirementString=""
+        CostType="None" Description="A strange craft rarely seen in this sector, boasting
+        rarely seen deals at rarely seen prices. Be quick! Stock is updated regularly
+        across its voyage." StarSystemArrivalDate="2023-08-05T17:59:45" ExpiryDate="2023-08-05T23:59:55"
+        UserId="0" MissionDesignId="0" CompletionDate="2000-01-01T00:00:00" SpriteId="18214"
+        MissionEventId="0" MarkerDesignId="11" ShipId="0" TravelStartDate="2023-08-05T17:37:15"
+        LastUpdateDate="2023-08-05T17:37:16" StarSystemMarkerGeneratorId="11" /></StarSystemMarkers></ListStarSystemMarkers></GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '827'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sat, 05 Aug 2023 17:57:57 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f457b4e0db5ab2b66536f068ee4589c0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - vJvlnonmN5sqZOXgpMj3uJkyHKLX_l0matIwQgbsrrBCLqCpeBoJqw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+    url: https://api.pixelstarships.com/GalaxyService/ListStarSystemMarkers?accessToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&clientDateTime=2023-08-05T17:55:58
+version: 1

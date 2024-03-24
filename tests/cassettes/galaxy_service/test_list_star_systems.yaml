@@ -1,0 +1,493 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T07:17:09" TournamentSpriteId="8000" NewUserCount="1740"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:19:27 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 bc66fd12bea603144bf0b6c1578cb3e0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - SYzBhDlLrRyWa9ycA9g2VRxLa5fYtFUnGVJXNYYh4yJL46Tubzju_A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T07:17:09" TournamentSpriteId="8000" NewUserCount="1742"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:19:27 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 f1c3d16033a0215071d66d8a8c247af4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - oTOu8BGOxt8E9Fvdf-WjSG6FSGlZ0iOpvOeTkQ6JJPYGkJjKewk8SA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystems?clientDateTime=2024-03-21T07%3A19%3A25&languageKey=en
+  response:
+    body:
+      string: "<GalaxyService><ListStarSystems version=\"358\"><StarSystems><StarSystem
+        StarSystemId=\"1\" StarSystemTitle=\"Nullspace void\" StarSystemDescription=\"[sounds
+        of soda being poured into a tub of gravel]\" IconSpriteId=\"12024\" X=\"-100\"
+        Y=\"100\" Z=\"0\" RequirementString=\"shipLevel &gt; 5\" ExplorationDuration=\"3600\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"2\" StarSystemTitle=\"Arcturus\"
+        StarSystemDescription=\"Founded at the height of the first Human Expansion
+        era, the settlement at Arcturus was amongst the first to declare independence
+        from the Federation.\" IconSpriteId=\"12035\" X=\"-19\" Y=\"-93\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 6 || originalRaceId == 1\" ExplorationDuration=\"60\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"3\" StarSystemTitle=\"Spica\"
+        StarSystemDescription=\"A rich and well travelled system, Spica has nonetheless
+        proven an unpopular place to settle, due in no small part to its proximity
+        to Qtarian space.\" IconSpriteId=\"12036\" X=\"-7\" Y=\"-79\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 3\" ExplorationDuration=\"60\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"4\" StarSystemTitle=\"Sirius\" StarSystemDescription=\"Once
+        a lively trade hub with a direct route to Sol, this system's hypergate was
+        sabotaged by rebel forces during the Pylon wars.\" IconSpriteId=\"12037\"
+        X=\"8\" Y=\"-96\" Z=\"0\" RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"60\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"5\" StarSystemTitle=\"Wolf
+        359\" StarSystemDescription=\"An unremarkable system located conveniently
+        close to Earth, Wolf 359 serves as neutral ground for diplomatic meetings
+        of the three major factions.\" IconSpriteId=\"12103\" X=\"1\" Y=\"-54\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 4\" ExplorationDuration=\"120\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"6\" StarSystemTitle=\"Discipline\" StarSystemDescription=\"Once
+        a simple mining station, the importance of Discipline as a gateway into Federation
+        space has led to the development of a strong Naval presence.\" IconSpriteId=\"12038\"
+        X=\"41\" Y=\"-32\" Z=\"0\" RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"60\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"7\" StarSystemTitle=\"Alpha
+        Centauri\" StarSystemDescription=\"One of the first extrasolar locations settled
+        by humanity, this system sits on the edge of the brilliant golden nebula known
+        as The Torch of Shax-Reshev.\" IconSpriteId=\"12053\" X=\"52\" Y=\"-19\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"60\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"8\" StarSystemTitle=\"Sol\" StarSystemDescription=\"The
+        birthplace of humanity, as well as the headquarters of the Federation.\" IconSpriteId=\"12124\"
+        X=\"61\" Y=\"-33\" Z=\"0\" RequirementString=\"shipLevel &gt;= 6 || originalRaceId
+        == 2\" ExplorationDuration=\"60\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"9\" StarSystemTitle=\"Canopus\" StarSystemDescription=\"Although
+        the presence of ancient Qtarian ruins draws occasional interest from archaeological
+        concerns, strong radiation from the nearby star has made it too dangerous
+        and expensive to allow any long-term settlement.\" IconSpriteId=\"12055\"
+        X=\"-48\" Y=\"-26\" Z=\"0\" RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"60\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"10\" StarSystemTitle=\"Tau
+        Ceti\" StarSystemDescription=\"In spite of the dangerous conditions of this
+        highly volcanic system, the Qtarian empire maintains a strong presence here,
+        harvesting rare minerals from the half-molten planetoids.\" IconSpriteId=\"12132\"
+        X=\"-71\" Y=\"-32\" Z=\"0\" RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"60\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"11\" StarSystemTitle=\"Homeworld\"
+        StarSystemDescription=\"The ancient home of the Qtarian race, this world's
+        original name has been lost to the ravages of time.\" IconSpriteId=\"12137\"
+        X=\"-72\" Y=\"-13\" Z=\"0\" RequirementString=\"shipLevel &gt;= 6 || originalRaceId
+        == 3\" ExplorationDuration=\"60\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"12\" StarSystemTitle=\"Gamma Draconis\" StarSystemDescription=\"The
+        home of the long-dead Draconian race. A dull and lifeless desert of a system.\"
+        IconSpriteId=\"12190\" X=\"-3\" Y=\"-36\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 5\" ExplorationDuration=\"300\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"13\" StarSystemTitle=\"LHS 292\" StarSystemDescription=\"This
+        system is dominated by crystalline structures of unknown, possibly unknowable
+        composition, which suppress all communications in and out of the area.\" IconSpriteId=\"12196\"
+        X=\"-22\" Y=\"4\" Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"600\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"14\" StarSystemTitle=\"Proxima
+        Centauri\" StarSystemDescription=\"This dull red dwarf system has little to
+        recommend it, except as a burial ground for the Children of the Torch.\" IconSpriteId=\"12200\"
+        X=\"38\" Y=\"-17\" Z=\"0\" RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"15\" StarSystemTitle=\"Rigel\"
+        StarSystemDescription=\"In spite of Rigel's proximity to the Qtarian homeworld,
+        the inhospitable nature of it's ternary star system has discouraged even the
+        incautious Qtarians from thorough exploration.\" IconSpriteId=\"12205\" X=\"-38\"
+        Y=\"-57\" Z=\"0\" RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"360\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"16\" StarSystemTitle=\"Fortitude\"
+        StarSystemDescription=\"Once an unmanned listening post to watch for extraterrestrial
+        intelligence, Fortitude station now functions as a high-security prison for
+        enemies of the Federation.\" IconSpriteId=\"12038\" X=\"53\" Y=\"-61\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"480\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"17\" StarSystemTitle=\"Luyten 726-8\" StarSystemDescription=\"A
+        binary star system, Lyuten 726-8's orbital period of almost 27 years has consistently
+        been highlighted, to poor effect, by its tourism industry.\" IconSpriteId=\"12123\"
+        X=\"12\" Y=\"-44\" Z=\"0\" RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"180\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"18\" StarSystemTitle=\"Ross
+        154\" StarSystemDescription=\"This star system is one of over a thousand catalogued
+        by ancient American astronomer Frank Elmore Ross in the years leading up to
+        the space age.\" IconSpriteId=\"12119\" X=\"-12\" Y=\"-59\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 5\" ExplorationDuration=\"240\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"19\" StarSystemTitle=\"Ross 248\" StarSystemDescription=\"With
+        only 0.2% of the luminosity of Earth's sun, Ross 248 is one of the few solar
+        bodies that can be safely observed with the naked eye.\" IconSpriteId=\"12136\"
+        X=\"0\" Y=\"-44\" Z=\"0\" RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"240\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"20\" StarSystemTitle=\"Ross
+        128\" StarSystemDescription=\"This dim red star radiates mainly in the infrared
+        band, requiring colonists to undergo experimental eye surgery to let them
+        see in the star's light.\" IconSpriteId=\"12134\" X=\"22\" Y=\"-48\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"240\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"21\" StarSystemTitle=\"Epsilon Eridani\" StarSystemDescription=\"This
+        bright youthful star is orbited by several vast asteroid belts, and sees constant
+        low-key conflicts between the countless mining concerns based here.\" IconSpriteId=\"12193\"
+        X=\"-41\" Y=\"-69\" Z=\"0\" RequirementString=\"shipLevel &gt;= 7\" ExplorationDuration=\"540\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"22\" StarSystemTitle=\"Formalhaut\"
+        StarSystemDescription=\"Home of the notorious warlord, Admiral 'pops' Rookwood,
+        this system was used by rebel supply trains to circumvent Federation blockades
+        during the pylon wars.\" IconSpriteId=\"12207\" X=\"28\" Y=\"-73\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"360\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"23\" StarSystemTitle=\"Lacaille 9352\" StarSystemDescription=\"The
+        presence of several aeon-old artificial structures in orbit around the systems
+        gas giants has ignited debate amongst scholars for generations. Unfortunately,
+        a century of study has yielded nothing of the artifacts' origins.\" IconSpriteId=\"12194\"
+        X=\"-67\" Y=\"-85\" Z=\"0\" RequirementString=\"shipLevel &gt;= 10\" ExplorationDuration=\"540\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"24\" StarSystemTitle=\"Gliese
+        1\" StarSystemDescription=\"Prolonged exposure to gamma radiation from the
+        young star has left the otherwise thriving colony of Gliese 1 with high rates
+        of infertility, requiring sustained immigration to maintain the population.\"
+        IconSpriteId=\"12122\" X=\"-34\" Y=\"0\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 7\" ExplorationDuration=\"540\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"25\" StarSystemTitle=\"Freyja\" StarSystemDescription=\"Isolated
+        by the Pylon wars, Freyja was left to fend for itself against the Qtarian
+        Empire. Now xenophobic and bitter, the colony has cut off all contact to the
+        rest of humanity.\" IconSpriteId=\"12110\" X=\"-59\" Y=\"-56\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 6\" ExplorationDuration=\"360\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"26\" StarSystemTitle=\"Groombridge 1618\" StarSystemDescription=\"This
+        farflung system would likely be an idyllic paradise, if not for the near-constant
+        depredations of Grays, Visiri, and malevolent AIs.\" IconSpriteId=\"12107\"
+        X=\"39\" Y=\"-82\" Z=\"0\" RequirementString=\"shipLevel &gt;= 9\" ExplorationDuration=\"600\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"27\" StarSystemTitle=\"Lucifer
+        Lux\" StarSystemDescription=\"The point of first contact between Humans and
+        Qtarians during the first Human Expansion Era, this system has been a source
+        of repeated conflict between the two races in subsequent millennia.\" IconSpriteId=\"12113\"
+        X=\"-24\" Y=\"-64\" Z=\"0\" RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"300\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"28\" StarSystemTitle=\"Betelgeuse\"
+        StarSystemDescription=\"This elderly red supergiant is expected to go supernova
+        in the next million or so years. Until then, its solar winds are an important
+        source of hyperspace fuel ingredients.\" IconSpriteId=\"12053\" X=\"-58\"
+        Y=\"-12\" Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"29\" StarSystemTitle=\"Vega\"
+        StarSystemDescription=\"Repeat failed attempts by the Pirate kingdoms to colonize
+        the planets orbiting this blazing white giant have led to rumours that the
+        system is cursed.\" IconSpriteId=\"12036\" X=\"-44\" Y=\"-86\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 7\" ExplorationDuration=\"480\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"30\" StarSystemTitle=\"Aldebaran\" StarSystemDescription=\"Whilst
+        the thermonuclear winds pouring from this dying red giant make colonization
+        all but impossible, many mining outfits brave the violent conditions to harvest
+        the rare minerals found in abundance here.\" IconSpriteId=\"12121\" X=\"29\"
+        Y=\"-29\" Z=\"0\" RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"360\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"31\" StarSystemTitle=\"Antares\"
+        StarSystemDescription=\"The main red giant of this binary star system is expected
+        to go supernova any day now. The spacer colonies nearby refute the evidence
+        however, and refuse to evacuate.\" IconSpriteId=\"12132\" X=\"-37\" Y=\"-22\"
+        Z=\"0\" RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"300\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"32\" StarSystemTitle=\"Alpha
+        Draconis\" StarSystemDescription=\"Conspiracy theorists say that lizardmen
+        from this system secretly lurk in human society, plotting their downfall.
+        A ridiculous claim, of course; As any schoolchild can tell you, lizardmen
+        are from Gamma Draconis.\" IconSpriteId=\"12133\" X=\"25\" Y=\"-92\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"420\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"33\" StarSystemTitle=\"Algol\" StarSystemDescription=\"Known
+        colloquially as the Demon Star, this ternary star system has done nothing
+        to earn the moniker. Home to several Qtarian factory worlds.\" IconSpriteId=\"12140\"
+        X=\"-56\" Y=\"-72\" Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"34\" StarSystemTitle=\"Deneb\"
+        StarSystemDescription=\"An uninhabited system, Host to several gas giants,
+        and notable primarily for its importance in Visiri migratory patterns.\" IconSpriteId=\"12035\"
+        X=\"10\" Y=\"-81\" Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"35\" StarSystemTitle=\"Regulus\"
+        StarSystemDescription=\"One of a rare few quadruple star systems capable of
+        supporting life, Regulus was an important stepping stone in the early expansion
+        of the new Qtarian empire.\" IconSpriteId=\"12115\" X=\"-14\" Y=\"-46\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 3\" ExplorationDuration=\"180\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"36\" StarSystemTitle=\"Capella\" StarSystemDescription=\"Whilst
+        the planets of this system show evidence of Qtarian habitation in the distant
+        past, extreme heat from the quadruple stars has made recolonization impractical
+        with current technologies.\" IconSpriteId=\"12114\" X=\"-64\" Y=\"-3\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"480\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"37\" StarSystemTitle=\"Demeter\" StarSystemDescription=\"Named
+        for an ancient human deity of agriculture, this system (by pure coincidence)
+        is well suited for growing crops, and supplies much of the Qtarian empire
+        with the food produced here.\" IconSpriteId=\"12199\" X=\"-28\" Y=\"-49\"
+        Z=\"0\" RequirementString=\"shipLevel &gt;= 6\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"38\" StarSystemTitle=\"Lalande
+        21185\" StarSystemDescription=\"Home to one of the oldest human colonies,
+        the vast factory cities of this system serve to arm the entirety of the Federation
+        Navy. \" IconSpriteId=\"12104\" X=\"48\" Y=\"-50\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 10\" ExplorationDuration=\"540\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"39\" StarSystemTitle=\"Epsilon Aurigae\" StarSystemDescription=\"An
+        artificial cloud of unknown provenance enshrouds the bright twin stars of
+        this system, causing regular solar eclipses.\" IconSpriteId=\"12105\" X=\"-28\"
+        Y=\"-76\" Z=\"0\" RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"300\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"40\" StarSystemTitle=\"Pylon\"
+        StarSystemDescription=\"Primary battleground of the eponymous Pylon wars,
+        this war-shattered system serves as the dividing line between the two modern
+        human nations.\" IconSpriteId=\"12138\" X=\"51\" Y=\"-74\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 8\" ExplorationDuration=\"420\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"41\" StarSystemTitle=\"Eurynome\" StarSystemDescription=\"The
+        rich ocean moons of this system's primary gas giant provide clean water and
+        food to the wider galaxy, and have made its inhabitants fabulously wealthy.\"
+        IconSpriteId=\"12106\" X=\"11\" Y=\"-69\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 7\" ExplorationDuration=\"360\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"42\" StarSystemTitle=\"Valhalla\" StarSystemDescription=\"Home
+        to the Federation's most remote listening station, this system is a frequent
+        point of contention in Federation-Qtarian diplomacy.\" IconSpriteId=\"12103\"
+        X=\"-42\" Y=\"-14\" Z=\"0\" RequirementString=\"shipLevel &gt;= 7\" ExplorationDuration=\"420\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"43\" StarSystemTitle=\"Whitestar\"
+        StarSystemDescription=\"The harsh desert planets of this forbidding system
+        are used as a testing ground for new Federation weaponry, much to the chagrin
+        of those already settled there.\" IconSpriteId=\"12037\" X=\"64\" Y=\"-51\"
+        Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"480\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"44\" StarSystemTitle=\"Pilgrimage\"
+        StarSystemDescription=\"The settlers of this system live in low-tech religious
+        communes, making or growing what they need. This self-reliance makes them
+        an object of both ridicule and envy to the rest of human society.\" IconSpriteId=\"12127\"
+        X=\"20\" Y=\"-64\" Z=\"0\" RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"300\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"45\" StarSystemTitle=\"Tartarus\"
+        StarSystemDescription=\"A gloomy realm of grey nebulae and blizzard-wracked
+        tundra worlds, this system produces some of the hardiest warriors in the galaxy.\"
+        IconSpriteId=\"12102\" X=\"-69\" Y=\"-65\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 9\" ExplorationDuration=\"540\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"46\" StarSystemTitle=\"Durendal\" StarSystemDescription=\"Artificial
+        satellites of unknown make orbit the planets of this system, broadcasting
+        strange messages in a long-dead tongue.\" IconSpriteId=\"12208\" X=\"-27\"
+        Y=\"-12\" Z=\"0\" RequirementString=\"shipLevel &gt;= 8\" ExplorationDuration=\"600\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"47\" StarSystemTitle=\"Polaris\"
+        StarSystemDescription=\"A wasteland of ruined warships and radioactive rubble.
+        Nothing lives here, nor would it if it could.\" IconSpriteId=\"12120\" X=\"48\"
+        Y=\"-86\" Z=\"0\" RequirementString=\"shipLevel &gt;= 10\" ExplorationDuration=\"600\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"48\" StarSystemTitle=\"Pegasus\"
+        StarSystemDescription=\"Gigantic amoeba-like lifeforms drift silently between
+        the gas giants orbiting this tiny white star. Kind of disconcerting, if you're
+        being honest.\" IconSpriteId=\"12205\" X=\"-100\" Y=\"100\" Z=\"0\" RequirementString=\"\"
+        ExplorationDuration=\"300\" RequirementDescription=\"\" /><StarSystem StarSystemId=\"49\"
+        StarSystemTitle=\"Osiris 2\" StarSystemDescription=\"Proximity to the galactic
+        core has produced rare and novel compounds on this system's terrestrial bodies.\"
+        IconSpriteId=\"12141\" X=\"-5\" Y=\"-24\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 6\" ExplorationDuration=\"420\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"50\" StarSystemTitle=\"Discovery\" StarSystemDescription=\"Long
+        abandoned by both the Federation and the pirate kingdoms, this tiny outpost
+        is forced to deal with smugglers, slavers, and other dregs of society, in
+        order to stay afloat.\" IconSpriteId=\"12024\" X=\"32\" Y=\"-54\" Z=\"0\"
+        RequirementString=\"shipLevel &gt;= 5\" ExplorationDuration=\"300\" RequirementDescription=\"\"
+        /><StarSystem StarSystemId=\"51\" StarSystemTitle=\"Ship Graveyard\" StarSystemDescription=\"Irregular
+        Electromagnetic pulses from this pulsar have crippled many an unwary deep
+        space explorer, their lifeless ships drifting in the periphery of its orbit.\"
+        IconSpriteId=\"12024\" X=\"-100\" Y=\"100\" Z=\"0\" RequirementString=\"\"
+        ExplorationDuration=\"350\" RequirementDescription=\"\" /><StarSystem StarSystemId=\"52\"
+        StarSystemTitle=\"Visiri Spawning Worlds\" StarSystemDescription=\"The heat
+        of this young white star has attracted countless billions of the Visiri's
+        insectile broodships. Best not to draw attention to yourself.\" IconSpriteId=\"12024\"
+        X=\"-100\" Y=\"100\" Z=\"0\" RequirementString=\"\" ExplorationDuration=\"400\"
+        RequirementDescription=\"\" /><StarSystem StarSystemId=\"53\" StarSystemTitle=\"Golgotha\"
+        StarSystemDescription=\"By pure chance, one of this system's moons looks vaguely
+        like a human skull. A popular tourist destination, especially amongst the
+        Pirate kingdoms.\" IconSpriteId=\"12117\" X=\"-4\" Y=\"-69\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 3\" ExplorationDuration=\"180\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"54\" StarSystemTitle=\"Tycho\" StarSystemDescription=\"Although
+        no life exists on the searing surface of this system's tectonically active
+        world, the volcanic ashes fetch a high price on farming colonies galaxy-wide.\"
+        IconSpriteId=\"12053\" X=\"-40\" Y=\"-40\" Z=\"0\" RequirementString=\"shipLevel
+        &gt;= 7\" ExplorationDuration=\"420\" RequirementDescription=\"\" /><StarSystem
+        StarSystemId=\"55\" StarSystemTitle=\"McSystem\u2122\" StarSystemDescription=\"A
+        sad but inevitable result of unchecked capitalist power-brokering, this system
+        is governed entirely by competing mega-corporations. A lawless, barely habitable
+        locale.\" IconSpriteId=\"12528\" X=\"-100\" Y=\"100\" Z=\"0\" RequirementString=\"\"
+        ExplorationDuration=\"300\" RequirementDescription=\"\" /></StarSystems></ListStarSystems></GalaxyService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:19:27 GMT
+      Expires:
+      - Thu, 21 Mar 2024 07:39:27 GMT
+      Last-Modified:
+      - Thu, 21 Mar 2024 07:19:27 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 8viqxgM3VT3uCdDnEhyrSzMgD0unYWnM4nFPOrBfdb0NWSgTmVPCMQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

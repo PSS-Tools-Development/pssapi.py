@@ -1,0 +1,331 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T07:02:09" TournamentSpriteId="8000" NewUserCount="1749"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:05:09 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 bc66fd12bea603144bf0b6c1578cb3e0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - eFtELiYkLkD312Z__qJv9FcHrujQBMHwSJnc3oSVnL-dg66kYkf2Ig==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2330010"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="164998"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="801" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345800"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1411"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1075178"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-21T07:02:09" TournamentSpriteId="8000" NewUserCount="1749"
+        NewsUpdateDate="2024-03-21T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:05:09 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b4415e223ef4b4a1db5d4b79b555fe2e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JpS0gxjPmmxFzk3z8kj0yc9WfDKPoRVCsgpLtw4Tos2JhHMjUxAs1g==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/CollectionService/ListAllCollectionDesigns?clientDateTime=2024-03-21T07%3A05%3A07&languageKey=en
+  response:
+    body:
+      string: <CollectionService><ListAllCollectionDesigns version="397"><CollectionDesigns><CollectionDesign
+        CollectionDesignId="1" CollectionName="SavySoda" MinCombo="4" MaxCombo="10"
+        EnhancementType="EmpSkill" BaseEnhancementValue="4" Flags="0" CollectionType="Character"
+        CollectionDescription="Savy Soda Engineering. Not actually a soda company."
+        SpriteId="8118" ColorString="255,76,203" StepEnhancementValue="2" IconSpriteId="8183"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="2"
+        CollectionName="Sango" MinCombo="2" MaxCombo="6" EnhancementType="SharpShooterSkill"
+        BaseEnhancementValue="2" Flags="0" CollectionType="Character" CollectionDescription="From
+        the legendary Sango Days. Not a fruit." SpriteId="8122" ColorString="255,10,30"
+        StepEnhancementValue="1" IconSpriteId="8187" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="3" CollectionName="Cats"
+        MinCombo="2" MaxCombo="8" EnhancementType="ResurrectSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="You can never
+        have too many. Just be careful as they are constantly plotting to murder you
+        in your sleep." SpriteId="8171" ColorString="236,201,52" StepEnhancementValue="5"
+        IconSpriteId="8189" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="4" CollectionName="Office Worker" MinCombo="3" MaxCombo="10"
+        EnhancementType="BloodThirstSkill" BaseEnhancementValue="3" Flags="0" CollectionType="Character"
+        CollectionDescription="Developed blood thirst ability from working in office."
+        SpriteId="9033" ColorString="44,73,144" StepEnhancementValue="1" IconSpriteId="8190"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="5"
+        CollectionName="Critters" MinCombo="3" MaxCombo="10" EnhancementType="BloodThirstSkill"
+        BaseEnhancementValue="1" Flags="0" CollectionType="Character" CollectionDescription="Animals
+        which are not cats. May not be as cute." SpriteId="8120" ColorString="230,100,100"
+        StepEnhancementValue="1" IconSpriteId="8185" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="6" CollectionName="Space
+        Pirate" MinCombo="2" MaxCombo="5" EnhancementType="SharpShooterSkill" BaseEnhancementValue="2"
+        Flags="0" CollectionType="Character" CollectionDescription="Life as a Space
+        Pirate is never dull. Until you encounter a Space Ninja." SpriteId="9034"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="9039" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="7" CollectionName="Federation"
+        MinCombo="2" MaxCombo="5" EnhancementType="MedicalSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="Enforcers of peace
+        and order in the galaxy. Likes to boss others around. Not actually part of
+        the FBI." SpriteId="9035" ColorString="100,100,100" StepEnhancementValue="10"
+        IconSpriteId="9037" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="8" CollectionName="Qtarian" MinCombo="2" MaxCombo="5"
+        EnhancementType="SharpShooterSkill" BaseEnhancementValue="1" Flags="0" CollectionType="Character"
+        CollectionDescription="The Junk Junkies of the galaxy. Are addicted to collecting
+        and hoarding space debris. Not to be confused with Dwarves." SpriteId="9036"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="9038" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="9" CollectionName="Constellation"
+        MinCombo="2" MaxCombo="5" EnhancementType="MedicalSkill" BaseEnhancementValue="10"
+        Flags="0" CollectionType="Character" CollectionDescription="Legendary Star
+        Travelers of the galaxy. They enjoy predicting the fortunes of like-minded
+        individuals." SpriteId="9032" ColorString="50,50,50" StepEnhancementValue="10"
+        IconSpriteId="9040" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="10" CollectionName="Tech" MinCombo="4" MaxCombo="10" EnhancementType="EmpSkill"
+        BaseEnhancementValue="4" Flags="0" CollectionType="Character" CollectionDescription="Persons
+        of electronic disposition." SpriteId="8121" ColorString="50,50,50" StepEnhancementValue="2"
+        IconSpriteId="8977" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="11" CollectionName="Fantasy" MinCombo="2" MaxCombo="5"
+        EnhancementType="SharpShooterSkill" BaseEnhancementValue="1" Flags="0" CollectionType="Character"
+        CollectionDescription="A mythical band of mystical and magical minions." SpriteId="8123"
+        ColorString="50,50,50" StepEnhancementValue="1" IconSpriteId="8188" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="12" CollectionName="Vampire"
+        MinCombo="2" MaxCombo="5" EnhancementType="BloodThirstSkill" BaseEnhancementValue="4"
+        Flags="0" CollectionType="Character" CollectionDescription="A horrible experiment
+        gone wrong resulting in a new humanoid species that thrives on blood consumption."
+        SpriteId="8120" ColorString="230,100,100" StepEnhancementValue="2" IconSpriteId="8185"
+        TriggerType="None" Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName=""
+        AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="13"
+        CollectionName="Gray" MinCombo="2" MaxCombo="5" EnhancementType="FreezeAttackSkill"
+        BaseEnhancementValue="4" Flags="0" CollectionType="Character" CollectionDescription="Cute,
+        Big heads, Psionic powers, and deep research into the latest weapons." SpriteId="11294"
+        ColorString="160,175,113" StepEnhancementValue="2" IconSpriteId="11295" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="14" CollectionName="Visiri"
+        MinCombo="3" MaxCombo="7" EnhancementType="InstantKillSkill" BaseEnhancementValue="1"
+        Flags="0" CollectionType="Character" CollectionDescription="Genetically engineered
+        slug-like warrior race. Knows no purpose beyond endless conflict." SpriteId="11399"
+        ColorString="255,0,0" StepEnhancementValue="1" IconSpriteId="11400" TriggerType="None"
+        Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="15" CollectionName="Ardent"
+        MinCombo="3" MaxCombo="8" EnhancementType="EmpSkill" BaseEnhancementValue="5"
+        Flags="0" CollectionType="Character" CollectionDescription="Noble souls, empowered
+        by righteous purpose." SpriteId="11296" ColorString="225, 225, 225" StepEnhancementValue="1"
+        IconSpriteId="11297" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
+        CollectionDesignId="16" CollectionName="OncePerYear" MinCombo="2" MaxCombo="2"
+        EnhancementType="MedicalSkill" BaseEnhancementValue="30" Flags="0" CollectionType="Character"
+        CollectionDescription="Meet once per year" SpriteId="12793" ColorString="230,185,186"
+        StepEnhancementValue="30" IconSpriteId="12794" TriggerType="None" Argument="0"
+        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
+        HaloAnimationId="1263" /></CollectionDesigns></ListAllCollectionDesigns></CollectionService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 21 Mar 2024 07:05:09 GMT
+      Expires:
+      - Thu, 21 Mar 2024 07:25:09 GMT
+      Last-Modified:
+      - Thu, 21 Mar 2024 07:05:09 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 29da4b53f2ce7517cad842851fd7a428.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ngGRBe2SwqERGYCjwILwEEnHbGLe6bPQRuIrHAYYX570FWF-QyS2Fg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

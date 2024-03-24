@@ -1,0 +1,465 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334194"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079272"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1414"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 cb643617ee4bca09492409ac12401bfc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 3W8PbRRI9lpKmLZ2uCgn86xSgt5f4AQf2DVyS5hVe3UCM70pcvAN9g==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334194"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079272"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1414"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 64d18a7c557f9140c04169b7191025f8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - oBIROgY1iZEx0W0ewwqYOvzgX_VM9sN3haEAA93xbGHduv1tVqkevg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/ListRoomDesignPurchase?clientDateTime=2024-03-22T06%3A57%3A31
+  response:
+    body:
+      string: <RoomService><ListRoomDesignPurchase version="728"><RoomDesignPurchases><RoomDesignPurchase
+        RoomDesignPurchaseId="1" RoomDesignId="2" Level="1" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="3" RoomDesignId="2"
+        Level="3" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="4" RoomDesignId="3" Level="1" Quantity="6" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="5" RoomDesignId="3"
+        Level="2" Quantity="4" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="6" RoomDesignId="3" Level="4" Quantity="4" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="7" RoomDesignId="4"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="8" RoomDesignId="4" Level="5" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="9" RoomDesignId="5"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="10" RoomDesignId="5" Level="3" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="11" RoomDesignId="6"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="12" RoomDesignId="6" Level="4" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="15" RoomDesignId="8"
+        Level="2" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="16" RoomDesignId="9" Level="3" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="17" RoomDesignId="1"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="18" RoomDesignId="18" Level="5" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="19" RoomDesignId="26"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="20" RoomDesignId="42" Level="1" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="21" RoomDesignId="2"
+        Level="7" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="22" RoomDesignId="60" Level="1" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="23" RoomDesignId="62"
+        Level="1" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="25" RoomDesignId="26" Level="3" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="26" RoomDesignId="42"
+        Level="4" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="29" RoomDesignId="26" Level="6" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="30" RoomDesignId="42"
+        Level="6" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="31" RoomDesignId="9" Level="5" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="32" RoomDesignId="79"
+        Level="3" Quantity="1" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="33" RoomDesignId="82" Level="4" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="34" RoomDesignId="103"
+        Level="1" Quantity="5" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="35" RoomDesignId="103" Level="3" Quantity="10" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="36" RoomDesignId="103"
+        Level="5" Quantity="5" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="37" RoomDesignId="103" Level="7" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="38" RoomDesignId="60"
+        Level="9" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="39" RoomDesignId="26" Level="9" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="40" RoomDesignId="62"
+        Level="9" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="41" RoomDesignId="42" Level="9" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="42" RoomDesignId="60"
+        Level="11" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="43" RoomDesignId="62" Level="11" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="44" RoomDesignId="109"
+        Level="7" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="45" RoomDesignId="103" Level="9" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="46" RoomDesignId="3"
+        Level="6" Quantity="4" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="47" RoomDesignId="3" Level="8" Quantity="4" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="48" RoomDesignId="120"
+        Level="1" Quantity="1" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="49" RoomDesignId="124" Level="8" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="50" RoomDesignId="132"
+        Level="4" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="51" RoomDesignId="5" Level="5" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="52" RoomDesignId="109"
+        Level="10" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="53" RoomDesignId="103" Level="10" Quantity="10" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="54" RoomDesignId="120"
+        Level="6" Quantity="1" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="55" RoomDesignId="156" Level="5" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="56" RoomDesignId="150"
+        Level="6" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="57" RoomDesignId="156" Level="8" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="58" RoomDesignId="204"
+        Level="8" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="59" RoomDesignId="219" Level="2" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="60" RoomDesignId="221"
+        Level="9" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="61" RoomDesignId="222" Level="11" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="62" RoomDesignId="3"
+        Level="10" Quantity="5" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="63" RoomDesignId="103" Level="11" Quantity="10" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="64" RoomDesignId="7"
+        Level="6" Quantity="1" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="65" RoomDesignId="247" Level="4" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="66" RoomDesignId="259"
+        Level="10" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="67" RoomDesignId="247" Level="7" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="68" RoomDesignId="247"
+        Level="10" Quantity="5" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="69" RoomDesignId="263" Level="3" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="70" RoomDesignId="269"
+        Level="5" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="71" RoomDesignId="290" Level="1" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="72" RoomDesignId="315"
+        Level="1" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="73" RoomDesignId="299" Level="3" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="74" RoomDesignId="298"
+        Level="7" Quantity="1" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="75" RoomDesignId="263" Level="8" Quantity="1" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="76" RoomDesignId="3"
+        Level="11" Quantity="10" AvailabilityMask="3" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="77" RoomDesignId="318" Level="1" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="78" RoomDesignId="319"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="79" RoomDesignId="320" Level="1" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="80" RoomDesignId="321"
+        Level="1" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="81" RoomDesignId="322" Level="2" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="82" RoomDesignId="247"
+        Level="1" Quantity="10" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="83" RoomDesignId="323" Level="1" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="84" RoomDesignId="323"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="85" RoomDesignId="325" Level="1" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="86" RoomDesignId="324"
+        Level="3" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="88" RoomDesignId="103" Level="1" Quantity="5" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="90" RoomDesignId="32"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="91" RoomDesignId="155" Level="2" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="92" RoomDesignId="5"
+        Level="1" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="93" RoomDesignId="318" Level="3" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="94" RoomDesignId="322"
+        Level="4" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="95" RoomDesignId="103" Level="2" Quantity="5" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="96" RoomDesignId="385"
+        Level="4" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="97" RoomDesignId="386" Level="4" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="98" RoomDesignId="398"
+        Level="6" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="99" RoomDesignId="408" Level="3" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="100" RoomDesignId="408"
+        Level="6" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="101" RoomDesignId="403" Level="7" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="102" RoomDesignId="299"
+        Level="1" Quantity="5" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="103" RoomDesignId="103" Level="3" Quantity="10" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="104" RoomDesignId="3"
+        Level="5" Quantity="5" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="105" RoomDesignId="247" Level="3" Quantity="10" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="106" RoomDesignId="5"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="107" RoomDesignId="320" Level="5" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="108" RoomDesignId="416"
+        Level="10" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="109" RoomDesignId="5" Level="4" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="110" RoomDesignId="422"
+        Level="9" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="111" RoomDesignId="103" Level="8" Quantity="5" AvailabilityMask="3"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="112" RoomDesignId="442"
+        Level="8" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="113" RoomDesignId="462" Level="9" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="114" RoomDesignId="475"
+        Level="5" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="115" RoomDesignId="517" Level="12" Quantity="1" AvailabilityMask="1"
+        RequirementString="originalRaceId == 2" /><RoomDesignPurchase RoomDesignPurchaseId="116"
+        RoomDesignId="518" Level="12" Quantity="1" AvailabilityMask="1" RequirementString="originalRaceId
+        == 1" /><RoomDesignPurchase RoomDesignPurchaseId="117" RoomDesignId="519"
+        Level="12" Quantity="1" AvailabilityMask="1" RequirementString="originalRaceId
+        == 3" /><RoomDesignPurchase RoomDesignPurchaseId="118" RoomDesignId="3" Level="12"
+        Quantity="10" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="119" RoomDesignId="103" Level="12" Quantity="10" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="120" RoomDesignId="247"
+        Level="11" Quantity="5" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="121" RoomDesignId="263" Level="12" Quantity="2" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="122" RoomDesignId="562"
+        Level="10" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="125" RoomDesignId="602" Level="10" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="126" RoomDesignId="247"
+        Level="12" Quantity="10" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="127" RoomDesignId="221" Level="11" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="128" RoomDesignId="204"
+        Level="12" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="129" RoomDesignId="562" Level="11" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="130" RoomDesignId="562"
+        Level="12" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="131" RoomDesignId="688" Level="10" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="132" RoomDesignId="156"
+        Level="12" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="133" RoomDesignId="692" Level="8" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="134" RoomDesignId="692"
+        Level="10" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="135" RoomDesignId="693" Level="7" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="136" RoomDesignId="700"
+        Level="8" Quantity="1" AvailabilityMask="1" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="143" RoomDesignId="509" Level="5" Quantity="1" AvailabilityMask="1"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="144" RoomDesignId="156"
+        Level="1" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="145" RoomDesignId="156" Level="3" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="147" RoomDesignId="462"
+        Level="3" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="150" RoomDesignId="325" Level="8" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="151" RoomDesignId="475"
+        Level="3" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="152" RoomDesignId="442" Level="5" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="153" RoomDesignId="475"
+        Level="6" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="154" RoomDesignId="442" Level="8" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="155" RoomDesignId="221"
+        Level="3" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="156" RoomDesignId="221" Level="7" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="157" RoomDesignId="204"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="158" RoomDesignId="204" Level="5" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="159" RoomDesignId="263"
+        Level="1" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="160" RoomDesignId="263" Level="6" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="161" RoomDesignId="109"
+        Level="2" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="162" RoomDesignId="109" Level="7" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="163" RoomDesignId="259"
+        Level="4" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="164" RoomDesignId="259" Level="8" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="165" RoomDesignId="222"
+        Level="4" Quantity="1" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="166" RoomDesignId="222" Level="8" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="167" RoomDesignId="103"
+        Level="4" Quantity="5" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="168" RoomDesignId="103" Level="6" Quantity="5" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="169" RoomDesignId="3"
+        Level="3" Quantity="4" AvailabilityMask="2" RequirementString="" /><RoomDesignPurchase
+        RoomDesignPurchaseId="171" RoomDesignId="704" Level="8" Quantity="1" AvailabilityMask="2"
+        RequirementString="" /><RoomDesignPurchase RoomDesignPurchaseId="172" RoomDesignId="737"
+        Level="6" Quantity="1" AvailabilityMask="2" RequirementString="" /></RoomDesignPurchases></ListRoomDesignPurchase></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:34 GMT
+      Expires:
+      - Fri, 22 Mar 2024 07:17:34 GMT
+      Last-Modified:
+      - Fri, 22 Mar 2024 06:57:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 bc66fd12bea603144bf0b6c1578cb3e0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - EZbIZv2RknBodng8UdoDveUfIojH5q0fW_o-wonFwCSuSfinO32iAg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

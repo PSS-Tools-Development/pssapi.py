@@ -1,0 +1,443 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334193"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079271"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1411"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:30 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - LKbe67pnQNf269_LdI6vBrv3SqC3X_-ubt-BAbi4LKfA4e6g2-IlNA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334193"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079271"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1409"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:30 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 64d18a7c557f9140c04169b7191025f8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PWTkYo8PgoDuR9KvWCPYNsfPQfheH_iCCGkXWo5iu_kuEGvz4_yAgg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/RoomService/ListCraftDesigns?clientDateTime=2024-03-22T06%3A57%3A27
+  response:
+    body:
+      string: <RoomService><ListCraftDesigns version="493"><CraftDesigns><CraftDesign
+        CraftDesignId="1" CraftName="Interceptor" FlightSpeed="7" Reload="60" SpriteId="2337"
+        MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="2" CraftName="Defender" FlightSpeed="4" Reload="240" SpriteId="2157"
+        MissileDesignId="48" Volley="1" VolleyDelay="0" Hp="8" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="3" CraftName="Interceptor Lv2" FlightSpeed="7" Reload="55"
+        SpriteId="2402" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="4" CraftName="Interceptor Lv3" FlightSpeed="8" Reload="55"
+        SpriteId="2403" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="5" CraftName="Defender Lv2" FlightSpeed="4" Reload="220" SpriteId="2399"
+        MissileDesignId="48" Volley="1" VolleyDelay="0" Hp="8" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="6" CraftName="Defender Lv3" FlightSpeed="4" Reload="200" SpriteId="2400"
+        MissileDesignId="48" Volley="1" VolleyDelay="0" Hp="9" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="7" CraftName="Interceptor Lv4" FlightSpeed="8" Reload="50"
+        SpriteId="2612" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="8" CraftName="Interceptor Lv5" FlightSpeed="8" Reload="45"
+        SpriteId="2613" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="9" CraftName="Interceptor Lv6" FlightSpeed="9" Reload="45"
+        SpriteId="2614" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="10" CraftName="Interceptor Lv7" FlightSpeed="9" Reload="40"
+        SpriteId="2615" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="11" CraftName="Interceptor Lv8" FlightSpeed="10" Reload="35"
+        SpriteId="2616" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="12" CraftName="Defender Lv4" FlightSpeed="5" Reload="200" SpriteId="2605"
+        MissileDesignId="90" Volley="1" VolleyDelay="0" Hp="9" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="13" CraftName="Defender Lv5" FlightSpeed="5" Reload="175" SpriteId="2606"
+        MissileDesignId="90" Volley="1" VolleyDelay="0" Hp="10" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="14" CraftName="Defender Lv6" FlightSpeed="5" Reload="150" SpriteId="2607"
+        MissileDesignId="90" Volley="1" VolleyDelay="0" Hp="10" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="15" CraftName="Defender Lv7" FlightSpeed="6" Reload="150" SpriteId="2608"
+        MissileDesignId="91" Volley="1" VolleyDelay="0" Hp="11" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="16" CraftName="Defender Lv8" FlightSpeed="6" Reload="135" SpriteId="2609"
+        MissileDesignId="91" Volley="1" VolleyDelay="0" Hp="11" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="17" CraftName="Firehawk" FlightSpeed="6" Reload="200" SpriteId="3125"
+        MissileDesignId="50" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="18" CraftName="Firehawk Lv2" FlightSpeed="6" Reload="190" SpriteId="3126"
+        MissileDesignId="50" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="19" CraftName="Firehawk Lv3" FlightSpeed="6" Reload="180" SpriteId="3127"
+        MissileDesignId="92" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="20" CraftName="Firehawk Lv4" FlightSpeed="7" Reload="180" SpriteId="3128"
+        MissileDesignId="92" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="21" CraftName="Firehawk Lv5" FlightSpeed="7" Reload="170" SpriteId="3129"
+        MissileDesignId="93" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="22" CraftName="Firehawk Lv6" FlightSpeed="7" Reload="160" SpriteId="3130"
+        MissileDesignId="93" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="23" CraftName="Firehawk Lv7" FlightSpeed="8" Reload="160" SpriteId="3131"
+        MissileDesignId="94" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="24" CraftName="Firehawk Lv8" FlightSpeed="8" Reload="150" SpriteId="3132"
+        MissileDesignId="94" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="25" CraftName="Corsair" FlightSpeed="6" Reload="300" SpriteId="4324"
+        MissileDesignId="52" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="26" CraftName="Corsair Lv2" FlightSpeed="6" Reload="280" SpriteId="4325"
+        MissileDesignId="52" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="27" CraftName="Corsair Lv3" FlightSpeed="6" Reload="270" SpriteId="4326"
+        MissileDesignId="52" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="28" CraftName="Corsair Lv4" FlightSpeed="7" Reload="260" SpriteId="4327"
+        MissileDesignId="87" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="29" CraftName="Corsair Lv5" FlightSpeed="7" Reload="240" SpriteId="4328"
+        MissileDesignId="87" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="30" CraftName="Corsair Lv6" FlightSpeed="7" Reload="220" SpriteId="4329"
+        MissileDesignId="87" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="31" CraftName="Corsair Lv7" FlightSpeed="8" Reload="200" SpriteId="4330"
+        MissileDesignId="88" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="32" CraftName="Corsair Lv8" FlightSpeed="8" Reload="180" SpriteId="4331"
+        MissileDesignId="88" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="33" CraftName="Stinger" FlightSpeed="8" Reload="90" SpriteId="9808"
+        MissileDesignId="65" Volley="1" VolleyDelay="0" Hp="1" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="34" CraftName="Stinger Lv2" FlightSpeed="8" Reload="85" SpriteId="9809"
+        MissileDesignId="65" Volley="1" VolleyDelay="0" Hp="1" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="35" CraftName="Stinger Lv3" FlightSpeed="9" Reload="85" SpriteId="9810"
+        MissileDesignId="65" Volley="1" VolleyDelay="0" Hp="1" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="36" CraftName="Stinger Lv4" FlightSpeed="9" Reload="85" SpriteId="9811"
+        MissileDesignId="102" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="37" CraftName="Stinger Lv5" FlightSpeed="10" Reload="80" SpriteId="9812"
+        MissileDesignId="102" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="38" CraftName="Stinger Lv6" FlightSpeed="10" Reload="75" SpriteId="9813"
+        MissileDesignId="102" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="39" CraftName="Stinger Lv7" FlightSpeed="11" Reload="70" SpriteId="10410"
+        MissileDesignId="102" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="40" CraftName="Stinger Lv8" FlightSpeed="11" Reload="65" SpriteId="10411"
+        MissileDesignId="103" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="41" CraftName="Launch Pad Fighter" FlightSpeed="9" Reload="120"
+        SpriteId="20035" MissileDesignId="105" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="43" CraftName="Corsair Lv9" FlightSpeed="8" Reload="160" SpriteId="15104"
+        MissileDesignId="89" Volley="1" VolleyDelay="0" Hp="8" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="44" CraftName="Defender Lv9" FlightSpeed="6" Reload="120" SpriteId="15100"
+        MissileDesignId="91" Volley="1" VolleyDelay="0" Hp="12" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="45" CraftName="Firehawk Lv9" FlightSpeed="8" Reload="140" SpriteId="15103"
+        MissileDesignId="95" Volley="1" VolleyDelay="0" Hp="8" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="46" CraftName="Interceptor Lv9" FlightSpeed="10" Reload="30"
+        SpriteId="15101" MissileDesignId="47" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="47" CraftName="Stinger Lv9" FlightSpeed="12" Reload="60" SpriteId="15106"
+        MissileDesignId="104" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="50" AttackRange="0" /><CraftDesign
+        CraftDesignId="49" CraftName="Gray Saucer" FlightSpeed="9" Reload="160" SpriteId="17850"
+        MissileDesignId="105" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="50" CraftName="Reisen Kamikaze Drone" FlightSpeed="12" Reload="1000"
+        SpriteId="14021" MissileDesignId="84" Volley="25" VolleyDelay="1" Hp="1" CraftAttackType="Kamikaze"
+        CraftTargetType="Random" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="51" CraftName="Bombshell" FlightSpeed="12" Reload="1000" SpriteId="19025"
+        MissileDesignId="115" Volley="1" VolleyDelay="0" Hp="1" CraftAttackType="Kamikaze"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="52" CraftName="Bombshell Lv2" FlightSpeed="12" Reload="1000"
+        SpriteId="19159" MissileDesignId="116" Volley="1" VolleyDelay="0" Hp="1" CraftAttackType="Kamikaze"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="53" CraftName="Bombshell Lv3" FlightSpeed="12" Reload="1000"
+        SpriteId="19160" MissileDesignId="117" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Kamikaze"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="54" CraftName="Bulwark" FlightSpeed="5" Reload="240" SpriteId="19024"
+        MissileDesignId="118" Volley="1" VolleyDelay="0" Hp="14" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="55" CraftName="Bulwark Lv2" FlightSpeed="5" Reload="240" SpriteId="19156"
+        MissileDesignId="118" Volley="1" VolleyDelay="0" Hp="16" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="56" CraftName="Bulwark Lv3" FlightSpeed="6" Reload="240" SpriteId="19157"
+        MissileDesignId="118" Volley="1" VolleyDelay="0" Hp="18" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="57" CraftName="Shieldbuster" FlightSpeed="6" Reload="90" SpriteId="19026"
+        MissileDesignId="119" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="58" CraftName="Shieldbuster Lv2" FlightSpeed="7" Reload="80"
+        SpriteId="19162" MissileDesignId="120" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="59" CraftName="Shieldbuster Lv3" FlightSpeed="7" Reload="70"
+        SpriteId="19163" MissileDesignId="121" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="60" CraftName="Prism" FlightSpeed="6" Reload="240" SpriteId="19165"
+        MissileDesignId="122" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="61" CraftName="Prism Lv2" FlightSpeed="7" Reload="230" SpriteId="19166"
+        MissileDesignId="123" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="62" CraftName="Prism Lv3" FlightSpeed="7" Reload="210" SpriteId="19167"
+        MissileDesignId="124" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="63" CraftName="Bombshell Lv4" FlightSpeed="12" Reload="1000"
+        SpriteId="19161" MissileDesignId="125" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Kamikaze"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="64" CraftName="Bulwark Lv4" FlightSpeed="7" Reload="240" SpriteId="19158"
+        MissileDesignId="118" Volley="1" VolleyDelay="0" Hp="20" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="65" CraftName="Shieldbuster Lv4" FlightSpeed="8" Reload="60"
+        SpriteId="19164" MissileDesignId="121" Volley="1" VolleyDelay="0" Hp="7" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="66" CraftName="Prism Lv4" FlightSpeed="8" Reload="200" SpriteId="19168"
+        MissileDesignId="126" Volley="1" VolleyDelay="0" Hp="5" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="100" AttackRange="0" /><CraftDesign
+        CraftDesignId="67" CraftName="Big Flying Bombshell" FlightSpeed="10" Reload="1000"
+        SpriteId="19577" MissileDesignId="128" Volley="1" VolleyDelay="0" Hp="6" CraftAttackType="Kamikaze"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="68" CraftName="Decoy Drone" FlightSpeed="8" Reload="1000" SpriteId="19610"
+        MissileDesignId="129" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="None"
+        CraftTargetType="Single" AttackDistance="0" AttackRange="0" /><CraftDesign
+        CraftDesignId="69" CraftName="Catapult" FlightSpeed="8" Reload="400" SpriteId="2404"
+        MissileDesignId="139" Volley="1" VolleyDelay="0" Hp="2" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="1750" AttackRange="0" /><CraftDesign
+        CraftDesignId="72" CraftName="Catapult Lv2" FlightSpeed="8" Reload="400" SpriteId="2404"
+        MissileDesignId="147" Volley="1" VolleyDelay="0" Hp="3" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="1750" AttackRange="0" /><CraftDesign
+        CraftDesignId="73" CraftName="Catapult Lv3" FlightSpeed="8" Reload="400" SpriteId="2404"
+        MissileDesignId="148" Volley="1" VolleyDelay="0" Hp="4" CraftAttackType="Default"
+        CraftTargetType="Single" AttackDistance="1750" AttackRange="0" /></CraftDesigns></ListCraftDesigns></RoomService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:57:31 GMT
+      Expires:
+      - Fri, 22 Mar 2024 07:17:31 GMT
+      Last-Modified:
+      - Fri, 22 Mar 2024 06:57:31 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 ba7b83fea0750f0a671a6626ceefabf0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - yNMtbnYbkYOtH6jvislb-7mHCMq7GGNz5xX8aPkb9bUnCQXU3RipQw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

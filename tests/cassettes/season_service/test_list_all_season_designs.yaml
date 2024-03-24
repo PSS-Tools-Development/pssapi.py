@@ -1,0 +1,524 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334205"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079283"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1414"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:58:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - xc1WQmQZ3pi2fqU1Q976q-5XU6JP_-Lt6QRT4I_4oh8mkpEJLKXo4A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2334205"
+        MinimumClientVersion="0.998.7" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2658" SpriteVersion="6127" CharacterDesignVersion="1112" CharacterPartVersion="908"
+        AnimationVersion="869" RoomDesignVersion="925" MissileDesignVersion="569"
+        ResearchDesignVersion="546" RoomDesignSpriteVersion="775" AchievementDesignVersion="582"
+        ConditionTypeVersion="511" CraftDesignVersion="493" ItemDesignVersion="165000"
+        ActionTypeVersion="462" RoomDesignPurchaseVersion="728" ShipDesignVersion="671"
+        LeagueVersion="462" BackgroundVersion="500" MissionDesignVersion="802" TrainingDesignVersion="443"
+        FeatureMask="3" ChallengeDesignVersion="614" ProductionServer="api.pixelstarships.com"
+        Flags="8888563449" CharacterDesignActionVersion="398" RewardDesignVersion="345888"
+        TournamentFinalDuration="7" DivisionDesignVersion="542" CollectionDesignVersion="397"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="365" AbilityDesignVersion="349"
+        VipDesignVersion="349" StarSystemVersion="358" StarSystemLinkVersion="354"
+        PlanetVersion="333" MaxDailyDraws="12" CurrentAndroidVersion="0.998.7" PromotionDesignVersion="1412"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="537" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="488" ProBonoLimit="10" TaskDesignVersion="1079283"
+        NewsDesignVersion="371" MinimumVersion="0.998.7" RecommendedVersion="0.998.15"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="95"
+        ClientTranslationVersion="88" SeasonDesignVersion="106" AssetVersion="81"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="50"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="47" MinTrophiesForStarbuxTrading="2000"
+        MinPurchaseRewardPointsForStarbuxTrading="1" ABTestingStartDate="2019-03-04T00:00:00"
+        SupportTaskRanDate="2024-03-22T06:57:10" TournamentSpriteId="8000" NewUserCount="1411"
+        NewsUpdateDate="2024-03-22T00:01:27" ReplayAvailableDate="2021-09-09T21:00:49"
+        BackgroundId="35" BattleBackgroundId="0" LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="20906"
+        LeftLoadingSpriteId="18625" RightLoadingSpriteId="18629" LoadingShipSpriteId="17263"
+        MerchantShipSpriteId="19441" MerchantShipExteriorSpriteId="19440" MaintenanceDate="2000-01-01T00:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:58:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 b9d6da6afb687529eac0ec6c19319d48.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BT8FXUTaefLdiyYRWN8RQF7VP4T8pfG4mDlKzQHYYCC21Pesiy15OQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SeasonService/ListAllSeasonDesigns?clientDateTime=2024-03-22T06%3A58%3A31&languageKey=en
+  response:
+    body:
+      string: "<SeasonService><ListAllSeasonDesigns version=\"106\"><SeasonDesigns><SeasonDesign
+        SeasonDesignId=\"1\" SeasonName=\"The Crystal Plague\" SeasonDescription=\"A
+        strange sickness is spreading amongst the stars, an alien presence that threatens
+        all we hold dear. Join the fight to defend your home, and win exclusive Season
+        Rewards!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"\" SubTitle=\"Season
+        I\" PrologueDescription=\"\" RewardString=\"\" FromDate=\"2021-10-07T00:00:00\"
+        EndDate=\"2021-12-02T00:00:00\" IconSpriteId=\"16653\" BackgroundSpriteId=\"16730\"
+        SeasonSpriteId=\"16731\" TitleSpriteId=\"16733\" CloseButtonSpriteId=\"16734\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"0\"
+        BannerBackgroundSpriteId=\"0\" SubtitleSpriteId=\"0\" /><SeasonDesign SeasonDesignId=\"2\"
+        SeasonName=\"Radioactive Winter\" SeasonDescription=\"A nuclear blizzard has
+        turned wasteland into wonderland, blanketing the world in glowing green snow.
+        Embrace the fissile festivities, and earn exclusive Season Rewards!\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;17067&quot;,&quot;MediumFloatingSpriteId&quot;:&quot;17031&quot;}\"
+        SubTitle=\"Season 2\" PrologueDescription=\"Prancing Plutonium, there's a
+        nuclear winter on the way! Radioactive snow is blanketing the world in festive
+        fallout, and the Geiger counter is shaking like a sleigh bell! \r\n\r\nTaking
+        advantage of this sudden phenomenon, new tasks are now available for every
+        available Star Captain. To honor your bravery, HQ has prepared a number of
+        enticing rewards.\r\n\r\nDuring the Season, both Daily and Weekly Tasks will
+        reward Season Points. Accumulating Points will progress through the Season,
+        unlocking new tiers of Items, Crew and Equipment. \r\n\r\nComplete the entire
+        Season for the highest Tiers, and be the envy of every Captain in the Galaxy!\r\n\r\nSo
+        what are you waiting for? Get out there and start spreading the gift of glowing
+        green goo to earn Season Prizes for a limited time!\" RewardString=\"item:1290\"
+        FromDate=\"2021-12-03T00:00:00\" EndDate=\"2022-02-03T23:59:59\" IconSpriteId=\"16653\"
+        BackgroundSpriteId=\"17069\" SeasonSpriteId=\"17070\" TitleSpriteId=\"17071\"
+        CloseButtonSpriteId=\"17072\" ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\"
+        BannerSpriteId=\"17074\" BannerBackgroundSpriteId=\"17073\" SubtitleSpriteId=\"0\"
+        /><SeasonDesign SeasonDesignId=\"3\" SeasonName=\"Robot Rampage\" SeasonDescription=\"Evil
+        Robots from the Void have united for a single goal: The destruction of all
+        galactic life! Turn back the mechanical menace, and earn exclusive Season
+        Rewards!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;17576&quot;,
+        &quot;SmallFloatingSpriteId&quot;:&quot;17616&quot;, &quot;MediumFloatingSpriteId&quot;:&quot;17615&quot;,
+        &quot;LargeFloatingSpriteId&quot;:&quot;17614&quot;}\" SubTitle=\"Season 3\"
+        PrologueDescription=\"From the freezing darkness between the stars they have
+        come, an endless army of merciless machines, hellbent on the destruction of
+        all organic life in the galaxy. The evil robots have returned! \r\n\r\nTo
+        combat the sudden overwhelming invasion, Governments are calling on every
+        available Star Captain. To sweeten the deal, HQ has prepared a number of enticing
+        rewards for the most capable mercenaries.\r\n\r\nDuring the Season, both Daily
+        and Weekly Tasks will reward Season Points. Accumulating Points will progress
+        through the Season, unlocking new tiers of Items, Crew and Equipment. \r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1408\" FromDate=\"2022-02-04T00:00:00\"
+        EndDate=\"2022-04-07T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"17611\"
+        SeasonSpriteId=\"17612\" TitleSpriteId=\"16843\" CloseButtonSpriteId=\"16844\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"17618\"
+        BannerBackgroundSpriteId=\"17617\" SubtitleSpriteId=\"17259\" /><SeasonDesign
+        SeasonDesignId=\"4\" SeasonName=\"Alien Oceans\" SeasonDescription=\"Rumors
+        of a sunken pirate hoard have ignited interest in the vast oceans of Osiris
+        V. Stake your claim, and see what treasures you can dredge up from the briny
+        deep!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;17665&quot;,
+        &quot;CoreBackgroundSpriteId&quot;:&quot;17664&quot;}\" SubTitle=\"Season
+        4\" PrologueDescription=\"Congratulations, the galaxy has once again clawed
+        its way back from the edge of apocalypse! In the strange calm that follows
+        the storm, why not put your feet up for a bit, and take a relaxing beachside
+        vacation?\r\n\r\nRumors of a sunken pirate hoard have ignited interest in
+        the vast oceans of Osiris V. Stake your claim, and see what treasures you
+        can dredge up from the briny deep.\r\n\r\nDuring the Season, both Daily and
+        Weekly Tasks will reward Season Points. Accumulating Points will progress
+        through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1437\" FromDate=\"2022-04-08T00:00:00\"
+        EndDate=\"2022-06-03T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"17778\"
+        SeasonSpriteId=\"17779\" TitleSpriteId=\"13069\" CloseButtonSpriteId=\"13071\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"17776\"
+        BannerBackgroundSpriteId=\"17777\" SubtitleSpriteId=\"17259\" /><SeasonDesign
+        SeasonDesignId=\"5\" SeasonName=\"Frontier Wars\" SeasonDescription=\"A fragile
+        period of ceasefire comes to an end when hyperspace fluctuations reveal a
+        long-forgotten ruin world near the galactic centre, rich with resources and
+        technology.\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;17844&quot;}\"
+        SubTitle=\"Season 5\" PrologueDescription=\"A fragile period of ceasefire
+        comes to an end when hyperspace fluctuations reveal a long-forgotten ruin
+        world near the galactic centre, rich with resources and technology. In the
+        race to explore and conquer this new frontier, it's the quick and the dead!\r\n\r\nAs
+        order dissolves and supply chains collapse, the factions find themselves cut
+        off from outside help. With vast riches to be won, there's never been a better
+        time to be an explorer.\r\n\r\nDuring the Season, both Daily and Weekly Tasks
+        will reward Season Points. Accumulating Points will progress through the Season,
+        unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete the entire
+        Season for the highest Tiers, and be the envy of every Captain in the Galaxy!\t\t\t\t\t\t\t\t\t\t\t\"
+        RewardString=\"item:1455\" FromDate=\"2022-06-04T00:00:00\" EndDate=\"2022-07-30T23:59:59\"
+        IconSpriteId=\"16653\" BackgroundSpriteId=\"17926\" SeasonSpriteId=\"17927\"
+        TitleSpriteId=\"15685\" CloseButtonSpriteId=\"15686\" ButtonSpriteId=\"16741\"
+        TextFrameSpriteId=\"16732\" BannerSpriteId=\"17928\" BannerBackgroundSpriteId=\"17929\"
+        SubtitleSpriteId=\"17845\" /><SeasonDesign SeasonDesignId=\"6\" SeasonName=\"Feline
+        Fury\" SeasonDescription=\"After long years of nomadic wandering, the Meowy
+        people have finally found a new world to call home.\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18130&quot;}\"
+        SubTitle=\"Season 6\" PrologueDescription=\"After long years of nomadic wandering,
+        the Meowy people have finally found a new world to call home. Unfortunately,
+        the discovery has reached the pointed ears of Daft Kittus, the scourge of
+        cat-kind!\r\n\r\nWith the charmingly helpless Meowy people once more under
+        threat, the time has come to act. Aid these adorable aliens, and earn treasure
+        and glory!\r\n\r\nDuring the Season, both Daily and Weekly Tasks will reward
+        Season Points. Accumulating Points will progress through the Season, unlocking
+        new tiers of Items, Crew and Equipment.\r\n\r\nComplete the entire Season
+        for the highest Tiers, and be the envy of every Captain in the Galaxy!\t\t\t\t\t\"
+        RewardString=\"item:1480\" FromDate=\"2022-07-31T00:00:00\" EndDate=\"2022-09-17T23:59:59\"
+        IconSpriteId=\"16653\" BackgroundSpriteId=\"18142\" SeasonSpriteId=\"18143\"
+        TitleSpriteId=\"12728\" CloseButtonSpriteId=\"12729\" ButtonSpriteId=\"16741\"
+        TextFrameSpriteId=\"16732\" BannerSpriteId=\"18138\" BannerBackgroundSpriteId=\"18137\"
+        SubtitleSpriteId=\"18131\" /><SeasonDesign SeasonDesignId=\"7\" SeasonName=\"Cosmic
+        Carnival\" SeasonDescription=\"Roll up, roll up! The Circus has come to town!
+        Exotic delights from all corners of the galaxy await you, sights strange and
+        exciting enough to satisfy a lifetime of curiosity\" SeasonType=\"None\" RequirementString=\"\"
+        Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18251&quot;}\" SubTitle=\"Season
+        7\" PrologueDescription=\"Roll up, roll up! The Circus has come to town! Exotic
+        delights from all corners of the galaxy await you, sights strange and exciting
+        enough to satisfy a lifetime of curiosity. And for those with a taste for
+        danger, the colosseum waits with open arms...\r\n\r\nSatisfy your appetite
+        for destruction as the crowds applaud your every victory (and your every loss.)
+        Stay in the fight, and earn your place as champion of the arena!\r\n\r\nDuring
+        the Season, both Daily and Weekly Tasks will reward Season Points. Accumulating
+        Points will progress through the Season, unlocking new tiers of Items, Crew
+        and Equipment.\r\n\r\nComplete the entire Season for the highest Tiers, and
+        be the envy of every Captain in the Galaxy!\" RewardString=\"item:1499\" FromDate=\"2022-09-18T00:00:00\"
+        EndDate=\"2022-11-06T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"18142\"
+        SeasonSpriteId=\"18309\" TitleSpriteId=\"12728\" CloseButtonSpriteId=\"12729\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"18313\"
+        BannerBackgroundSpriteId=\"18312\" SubtitleSpriteId=\"18252\" /><SeasonDesign
+        SeasonDesignId=\"8\" SeasonName=\"Galaxy Cup\" SeasonDescription=\"It\u2019s
+        the game that grinds the galaxy to a halt: The heartstopping final match of
+        the Interstellar Football League!\" SeasonType=\"None\" RequirementString=\"\"
+        Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18378&quot;}\" SubTitle=\"Season
+        8\" PrologueDescription=\"It\u2019s the game that grinds the galaxy to a halt:
+        The heartstopping final match of the Interstellar Football League! A line
+        is drawn down the middle of society, as fans gather to cheer their team on
+        to victory!\r\n\r\nWith the glory of the golden cup at stake, it's time to
+        put your allegiance to the test. Put the detractors in their place, and prove
+        yourself worthy to wear the team colours!\r\n\r\nDuring the Season, both Daily
+        and Weekly Tasks will reward Season Points. Accumulating Points will progress
+        through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1522\" FromDate=\"2022-11-07T00:00:00\"
+        EndDate=\"2022-12-26T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"18445\"
+        SeasonSpriteId=\"18446\" TitleSpriteId=\"17933\" CloseButtonSpriteId=\"17935\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"18447\"
+        BannerBackgroundSpriteId=\"18448\" SubtitleSpriteId=\"18379\" /><SeasonDesign
+        SeasonDesignId=\"9\" SeasonName=\"Deep Freeze\" SeasonDescription=\"A storm
+        of cryonically charged comets has intersected the galaxy, putting the civilized
+        worlds on ice.  As the mercury drops, heroes will rise. Embrace the chill
+        - it may prove a powerful ally.\" SeasonType=\"None\" RequirementString=\"\"
+        Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18497&quot;}\" SubTitle=\"Season
+        9\" PrologueDescription=\"A storm of cryonically charged comets has intersected
+        the galaxy, putting the civilized worlds on ice. \r\n\r\nAs the mercury drops,
+        heroes will rise. Embrace the chill, and it may prove a powerful ally.\r\n\r\nDuring
+        the Season, both Daily and Weekly Tasks will reward Season Points. Accumulating
+        Points will progress through the Season, unlocking new tiers of Items, Crew
+        and Equipment.\r\n\r\nComplete the entire Season for the highest Tiers, and
+        be the envy of every Captain in the Galaxy!\" RewardString=\"item:1536\" FromDate=\"2022-12-27T00:00:00\"
+        EndDate=\"2023-02-14T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"17778\"
+        SeasonSpriteId=\"18495\" TitleSpriteId=\"13069\" CloseButtonSpriteId=\"13071\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"18494\"
+        BannerBackgroundSpriteId=\"18493\" SubtitleSpriteId=\"18496\" /><SeasonDesign
+        SeasonDesignId=\"10\" SeasonName=\"Subatomica\" SeasonDescription=\"It's mad
+        science gone mad! An experimental shrink ray has backfired spectacularly,
+        shooting size-scrambled specimens across the stars.\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;19293&quot;,&quot;SmallFloatingSpriteId&quot;:&quot;19276&quot;,&quot;MediumFloatingSpriteId&quot;:&quot;19276&quot;,&quot;LargeFloatingSpriteId&quot;:&quot;19276&quot;}\"
+        SubTitle=\"Season 10\" PrologueDescription=\"It's mad science gone mad! An
+        experimental shrink ray has backfired spectacularly, shooting size-scrambled
+        specimens across the stars.\r\n\r\nWhen size has no meaning, determination
+        is all that matters.\r\n\r\nDuring the Season, both Daily and Weekly Tasks
+        will reward Season Points. Accumulating Points will progress through the Season,
+        unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete the entire
+        Season for the highest Tiers, and be the envy of every Captain in the Galaxy!\"
+        RewardString=\"item:1643\" FromDate=\"2023-02-15T00:00:00\" EndDate=\"2023-04-04T23:59:59\"
+        IconSpriteId=\"16653\" BackgroundSpriteId=\"17778\" SeasonSpriteId=\"19327\"
+        TitleSpriteId=\"13069\" CloseButtonSpriteId=\"13071\" ButtonSpriteId=\"16741\"
+        TextFrameSpriteId=\"16732\" BannerSpriteId=\"19329\" BannerBackgroundSpriteId=\"19330\"
+        SubtitleSpriteId=\"19294\" /><SeasonDesign SeasonDesignId=\"11\" SeasonName=\"Sirius
+        Grand Slam\" SeasonDescription=\"It's love on the battlefield - The Sirius
+        Grand Slam is here! Watch the finest athletes to prove themselves worthy through
+        sweat, tears, and shattered rackets.\" SeasonType=\"None\" RequirementString=\"\"
+        Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;19412&quot;}\" SubTitle=\"Season
+        11\" PrologueDescription=\"It's love on the battlefield - The Sirius Grand
+        Slam is here! Watch the finest athletes to prove themselves worthy through
+        sweat, tears, and shattered rackets.\r\n\r\nThis is a once in a lifetime opportunity;
+        don't drop the ball!\r\n\r\nDuring the Season, both Daily and Weekly Tasks
+        will reward Season Points. Accumulating Points will progress through the Season,
+        unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete the entire
+        Season for the highest Tiers, and be the envy of every Captain in the Galaxy!\"
+        RewardString=\"item:1680\" FromDate=\"2023-04-05T00:00:00\" EndDate=\"2023-05-24T23:59:59\"
+        IconSpriteId=\"16653\" BackgroundSpriteId=\"18445\" SeasonSpriteId=\"19492\"
+        TitleSpriteId=\"17933\" CloseButtonSpriteId=\"17935\" ButtonSpriteId=\"16741\"
+        TextFrameSpriteId=\"16732\" BannerSpriteId=\"19493\" BannerBackgroundSpriteId=\"19494\"
+        SubtitleSpriteId=\"19413\" /><SeasonDesign SeasonDesignId=\"12\" SeasonName=\"Supernova\"
+        SeasonDescription=\"A massive supernova has ripped through the Cygnus constellation,
+        bringing light to the darkest corners of the galaxy.\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;19514&quot;}\"
+        SubTitle=\"Season 12\" PrologueDescription=\"A massive supernova has ripped
+        through the Cygnus constellation, bringing light to the darkest corners of
+        the galaxy. Is this the start of an invincible summer, or will you find that
+        some things are best left hidden?\r\n\r\nDuring the Season, both Daily and
+        Weekly Tasks will reward Season Points. Accumulating Points will progress
+        through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1695\" FromDate=\"2023-05-25T00:00:00\"
+        EndDate=\"2023-07-13T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"19514\"
+        SeasonSpriteId=\"19558\" TitleSpriteId=\"17933\" CloseButtonSpriteId=\"17935\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"19559\"
+        BannerBackgroundSpriteId=\"19560\" SubtitleSpriteId=\"19513\" /><SeasonDesign
+        SeasonDesignId=\"13\" SeasonName=\"Mid-Summer\" SeasonDescription=\"As the
+        scorching supernova summer winds on, it's high time for a vacation. Stay cool,
+        kick back, and enjoy the bright, clear mid-summer days!\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;19812&quot;}\"
+        SubTitle=\"Season 13\" PrologueDescription=\"As the scorching supernova summer
+        winds on, it's high time for a vacation. Stay cool, kick back, and enjoy the
+        bright, clear mid-summer days!\r\n\r\nDuring the Season, both Daily and Weekly
+        Tasks will reward Season Points. Accumulating Points will progress through
+        the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1722\" FromDate=\"2023-07-14T00:00:00\"
+        EndDate=\"2023-09-01T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"18142\"
+        SeasonSpriteId=\"19946\" TitleSpriteId=\"16843\" CloseButtonSpriteId=\"16844\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"19948\"
+        BannerBackgroundSpriteId=\"19947\" SubtitleSpriteId=\"19811\" /><SeasonDesign
+        SeasonDesignId=\"14\" SeasonName=\"Oktoberfest!\" SeasonDescription=\"Celebrate
+        a welcome return to cooler seasons with a visit to the grand festival of Oktoberfest!
+        Food, drink, and fun abound - as well as the chance to show your mettle in
+        the arena. Prost!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;20033&quot;}\"
+        SubTitle=\"Season 14\" PrologueDescription=\"Celebrate a welcome return to
+        cooler seasons with a visit to the grand festival of Oktoberfest! Food, drink,
+        and fun abound - as well as the chance to show your mettle in the arena. Prost!\r\n\r\nDuring
+        the Season, both Daily and Weekly Tasks will reward Season Points. Accumulating
+        Points will progress through the Season, unlocking new tiers of Items, Crew
+        and Equipment.\r\n\r\nComplete the entire Season for the highest Tiers, and
+        be the envy of every Captain in the Galaxy!\" RewardString=\"item:1733\" FromDate=\"2023-09-02T00:00:00\"
+        EndDate=\"2023-10-21T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"20056\"
+        SeasonSpriteId=\"20057\" TitleSpriteId=\"16843\" CloseButtonSpriteId=\"16844\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"20059\"
+        BannerBackgroundSpriteId=\"20058\" SubtitleSpriteId=\"19951\" /><SeasonDesign
+        SeasonDesignId=\"15\" SeasonName=\"Darkstar!\" SeasonDescription=\"Calamity!
+        A dying supergiant star has collapsed into a black hole, blotting out the
+        stars for parsecs in all directions. Don't be afraid of the dark, this is
+        your time to shine!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;19680&quot;}\"
+        SubTitle=\"Season 15\" PrologueDescription=\"Calamity! A dying supergiant
+        star has collapsed into a black hole, blotting out the stars for parsecs in
+        all directions. Don't be afraid of the dark, because this is your time to
+        shine!\r\n\r\nDuring the Season, both Daily and Weekly Tasks will reward Season
+        Points. Accumulating Points will progress through the Season, unlocking new
+        tiers of Items, Crew and Equipment.\r\n\r\nComplete the entire Season for
+        the highest Tiers, and be the envy of every Captain in the Galaxy!\" RewardString=\"item:1767\"
+        FromDate=\"2023-10-22T00:00:00\" EndDate=\"2023-12-10T23:59:59\" IconSpriteId=\"16653\"
+        BackgroundSpriteId=\"20211\" SeasonSpriteId=\"20210\" TitleSpriteId=\"20212\"
+        CloseButtonSpriteId=\"20213\" ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\"
+        BannerSpriteId=\"20214\" BannerBackgroundSpriteId=\"20215\" SubtitleSpriteId=\"19679\"
+        /><SeasonDesign SeasonDesignId=\"16\" SeasonName=\"Winter Wars\" SeasonDescription=\"Gravitational
+        disturbances from a newly formed black hole have attracted a hail of icy exoplanets,
+        creating a blizzard of galactic proportions!  As the mercury drops, heroes
+        will rise.\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18497&quot;}\"
+        SubTitle=\"Season 16\" PrologueDescription=\"Gravitational disturbances from
+        a newly formed black hole have attracted a hail of icy exoplanets, creating
+        a blizzard of galactic proportions!\r\n\r\nAs the mercury drops, heroes will
+        rise. Just be careful, this is no mere snowball fight.\r\n\r\nDuring the Season,
+        both Daily and Weekly Tasks will reward Season Points. Accumulating Points
+        will progress through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1773\" FromDate=\"2023-12-11T00:00:00\"
+        EndDate=\"2024-01-29T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"17778\"
+        SeasonSpriteId=\"20254\" TitleSpriteId=\"13069\" CloseButtonSpriteId=\"13071\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"20255\"
+        BannerBackgroundSpriteId=\"18493\" SubtitleSpriteId=\"20232\" /><SeasonDesign
+        SeasonDesignId=\"17\" SeasonName=\"Dragon Dynasty\" SeasonDescription=\"The
+        ancient Draconian empire has arisen after millennia of slumber, thirsting
+        for conquest!\" SeasonType=\"None\" RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;15692&quot;,&quot;MediumFloatingSpriteId&quot;:&quot;15651&quot;}\"
+        SubTitle=\"Season 17\" PrologueDescription=\"The stars align, heralding the
+        age of the dragon! The ancient Draconian empire has arisen after millennia
+        of slumber, thirsting for conquest!\r\n\r\nDuring the Season, both Daily and
+        Weekly Tasks will reward Season Points. Accumulating Points will progress
+        through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1892\" FromDate=\"2024-01-30T00:00:00\"
+        EndDate=\"2024-03-19T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"15682\"
+        SeasonSpriteId=\"20909\" TitleSpriteId=\"15685\" CloseButtonSpriteId=\"16844\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"20910\"
+        BannerBackgroundSpriteId=\"20911\" SubtitleSpriteId=\"20906\" /><SeasonDesign
+        SeasonDesignId=\"18\" SeasonName=\"The Great Hunt\" SeasonDescription=\"Pack
+        an umbrella, because it's raining ...eggs? Things are getting weird in the
+        pixel galaxy, as The Great Hunt chases their quarry across the stars!\" SeasonType=\"None\"
+        RequirementString=\"\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;21051&quot;,&quot;MediumFloatingSpriteId&quot;:&quot;4424&quot;}\"
+        SubTitle=\"Season 18\" PrologueDescription=\"Pack an umbrella, because it's
+        raining ...eggs? Things are getting weird in the pixel galaxy, as The Great
+        Hunt chases their quarry across the stars!\r\n\r\nDuring the Season, both
+        Daily and Weekly Tasks will reward Season Points. Accumulating Points will
+        progress through the Season, unlocking new tiers of Items, Crew and Equipment.\r\n\r\nComplete
+        the entire Season for the highest Tiers, and be the envy of every Captain
+        in the Galaxy!\" RewardString=\"item:1916\" FromDate=\"2024-03-20T00:00:00\"
+        EndDate=\"2024-05-08T23:59:59\" IconSpriteId=\"16653\" BackgroundSpriteId=\"21074\"
+        SeasonSpriteId=\"21075\" TitleSpriteId=\"12969\" CloseButtonSpriteId=\"12971\"
+        ButtonSpriteId=\"16741\" TextFrameSpriteId=\"16732\" BannerSpriteId=\"21072\"
+        BannerBackgroundSpriteId=\"21073\" SubtitleSpriteId=\"21070\" /></SeasonDesigns></ListAllSeasonDesigns></SeasonService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 22 Mar 2024 06:58:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 d9a3650110a8e2b78edd73b33e0fa948.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 6jqKUrfDdiZtJAwRx8ur_eOVybrVS4EU32ze_MzJoOJNwRjV1B5wag==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1
