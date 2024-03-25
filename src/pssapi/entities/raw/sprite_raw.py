@@ -9,18 +9,21 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class SpriteRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class SpriteRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Sprite"
 
     def __init__(self, sprite_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._height: int = _parse.pss_int(sprite_info.get("Height"))
-        self._image_file_id: int = _parse.pss_int(sprite_info.get("ImageFileId"))
-        self._sprite_id: int = _parse.pss_int(sprite_info.get("SpriteId"))
-        self._sprite_key: str = _parse.pss_str(sprite_info.get("SpriteKey"))
-        self._width: int = _parse.pss_int(sprite_info.get("Width"))
-        self._x: int = _parse.pss_int(sprite_info.get("X"))
-        self._y: int = _parse.pss_int(sprite_info.get("Y"))
+        self._height: int = _parse.pss_int(sprite_info.pop("Height", None))
+        self._image_file_id: int = _parse.pss_int(sprite_info.pop("ImageFileId", None))
+        self._sprite_id: int = _parse.pss_int(sprite_info.pop("SpriteId", None))
+        self._sprite_key: str = _parse.pss_str(sprite_info.pop("SpriteKey", None))
+        self._width: int = _parse.pss_int(sprite_info.pop("Width", None))
+        self._x: int = _parse.pss_int(sprite_info.pop("X", None))
+        self._y: int = _parse.pss_int(sprite_info.pop("Y", None))
+        super().__init__(sprite_info)
 
     @property
     def height(self) -> int:
@@ -72,5 +75,6 @@ class SpriteRaw:
                 "X": self.x,
                 "Y": self.y,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

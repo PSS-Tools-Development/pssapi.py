@@ -9,21 +9,24 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class StarSystemRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class StarSystemRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "StarSystem"
 
     def __init__(self, star_system_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._exploration_duration: int = _parse.pss_int(star_system_info.get("ExplorationDuration"))
-        self._icon_sprite_id: int = _parse.pss_int(star_system_info.get("IconSpriteId"))
-        self._requirement_description: str = _parse.pss_str(star_system_info.get("RequirementDescription"))
-        self._requirement_string: str = _parse.pss_str(star_system_info.get("RequirementString"))
-        self._star_system_description: str = _parse.pss_str(star_system_info.get("StarSystemDescription"))
-        self._star_system_id: int = _parse.pss_int(star_system_info.get("StarSystemId"))
-        self._star_system_title: str = _parse.pss_str(star_system_info.get("StarSystemTitle"))
-        self._x: int = _parse.pss_int(star_system_info.get("X"))
-        self._y: int = _parse.pss_int(star_system_info.get("Y"))
-        self._z: int = _parse.pss_int(star_system_info.get("Z"))
+        self._exploration_duration: int = _parse.pss_int(star_system_info.pop("ExplorationDuration", None))
+        self._icon_sprite_id: int = _parse.pss_int(star_system_info.pop("IconSpriteId", None))
+        self._requirement_description: str = _parse.pss_str(star_system_info.pop("RequirementDescription", None))
+        self._requirement_string: str = _parse.pss_str(star_system_info.pop("RequirementString", None))
+        self._star_system_description: str = _parse.pss_str(star_system_info.pop("StarSystemDescription", None))
+        self._star_system_id: int = _parse.pss_int(star_system_info.pop("StarSystemId", None))
+        self._star_system_title: str = _parse.pss_str(star_system_info.pop("StarSystemTitle", None))
+        self._x: int = _parse.pss_int(star_system_info.pop("X", None))
+        self._y: int = _parse.pss_int(star_system_info.pop("Y", None))
+        self._z: int = _parse.pss_int(star_system_info.pop("Z", None))
+        super().__init__(star_system_info)
 
     @property
     def exploration_duration(self) -> int:
@@ -93,5 +96,6 @@ class StarSystemRaw:
                 "Y": self.y,
                 "Z": self.z,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

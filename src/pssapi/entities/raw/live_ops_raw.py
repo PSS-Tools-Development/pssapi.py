@@ -10,41 +10,44 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class LiveOpsRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class LiveOpsRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "LiveOps"
 
     def __init__(self, live_ops_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._cargo_items: str = _parse.pss_str(live_ops_info.get("CargoItems"))
-        self._cargo_prices: str = _parse.pss_str(live_ops_info.get("CargoPrices"))
-        self._common_crew_id: int = _parse.pss_int(live_ops_info.get("CommonCrewId"))
-        self._daily_item_rewards: str = _parse.pss_str(live_ops_info.get("DailyItemRewards"))
-        self._daily_reward_argument: int = _parse.pss_int(live_ops_info.get("DailyRewardArgument"))
-        self._daily_reward_type: str = _parse.pss_str(live_ops_info.get("DailyRewardType"))
-        self._hero_crew_id: int = _parse.pss_int(live_ops_info.get("HeroCrewId"))
-        self._limited_catalog_argument: int = _parse.pss_int(live_ops_info.get("LimitedCatalogArgument"))
-        self._limited_catalog_currency_amount: int = _parse.pss_int(live_ops_info.get("LimitedCatalogCurrencyAmount"))
-        self._limited_catalog_currency_type: str = _parse.pss_str(live_ops_info.get("LimitedCatalogCurrencyType"))
-        self._limited_catalog_expiry_date: _datetime = _parse.pss_datetime(live_ops_info.get("LimitedCatalogExpiryDate"))
-        self._limited_catalog_max_total: int = _parse.pss_int(live_ops_info.get("LimitedCatalogMaxTotal"))
-        self._limited_catalog_quantity: int = _parse.pss_int(live_ops_info.get("LimitedCatalogQuantity"))
-        self._limited_catalog_restock_quantity: int = _parse.pss_int(live_ops_info.get("LimitedCatalogRestockQuantity"))
-        self._limited_catalog_type: str = _parse.pss_str(live_ops_info.get("LimitedCatalogType"))
-        self._live_ops_id: int = _parse.pss_int(live_ops_info.get("LiveOpsId"))
-        self._news: str = _parse.pss_str(live_ops_info.get("News"))
-        self._news_sprite_id: int = _parse.pss_int(live_ops_info.get("NewsSpriteId"))
-        self._news_update_date: _datetime = _parse.pss_datetime(live_ops_info.get("NewsUpdateDate"))
-        self._sale_argument: int = _parse.pss_int(live_ops_info.get("SaleArgument"))
-        self._sale_end_date: _datetime = _parse.pss_datetime(live_ops_info.get("SaleEndDate"))
-        self._sale_item_mask: int = _parse.pss_int(live_ops_info.get("SaleItemMask"))
-        self._sale_once_only: bool = _parse.pss_bool(live_ops_info.get("SaleOnceOnly"))
-        self._sale_quantity: int = _parse.pss_int(live_ops_info.get("SaleQuantity"))
-        self._sale_reward_string: str = _parse.pss_str(live_ops_info.get("SaleRewardString"))
-        self._sale_start_date: _datetime = _parse.pss_datetime(live_ops_info.get("SaleStartDate"))
-        self._sale_title: str = _parse.pss_str(live_ops_info.get("SaleTitle"))
-        self._sale_type: str = _parse.pss_str(live_ops_info.get("SaleType"))
-        self._support_task_ran_date: _datetime = _parse.pss_datetime(live_ops_info.get("SupportTaskRanDate"))
-        self._tournament_news: str = _parse.pss_str(live_ops_info.get("TournamentNews"))
+        self._cargo_items: str = _parse.pss_str(live_ops_info.pop("CargoItems", None))
+        self._cargo_prices: str = _parse.pss_str(live_ops_info.pop("CargoPrices", None))
+        self._common_crew_id: int = _parse.pss_int(live_ops_info.pop("CommonCrewId", None))
+        self._daily_item_rewards: str = _parse.pss_str(live_ops_info.pop("DailyItemRewards", None))
+        self._daily_reward_argument: int = _parse.pss_int(live_ops_info.pop("DailyRewardArgument", None))
+        self._daily_reward_type: str = _parse.pss_str(live_ops_info.pop("DailyRewardType", None))
+        self._hero_crew_id: int = _parse.pss_int(live_ops_info.pop("HeroCrewId", None))
+        self._limited_catalog_argument: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogArgument", None))
+        self._limited_catalog_currency_amount: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogCurrencyAmount", None))
+        self._limited_catalog_currency_type: str = _parse.pss_str(live_ops_info.pop("LimitedCatalogCurrencyType", None))
+        self._limited_catalog_expiry_date: _datetime = _parse.pss_datetime(live_ops_info.pop("LimitedCatalogExpiryDate", None))
+        self._limited_catalog_max_total: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogMaxTotal", None))
+        self._limited_catalog_quantity: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogQuantity", None))
+        self._limited_catalog_restock_quantity: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogRestockQuantity", None))
+        self._limited_catalog_type: str = _parse.pss_str(live_ops_info.pop("LimitedCatalogType", None))
+        self._live_ops_id: int = _parse.pss_int(live_ops_info.pop("LiveOpsId", None))
+        self._news: str = _parse.pss_str(live_ops_info.pop("News", None))
+        self._news_sprite_id: int = _parse.pss_int(live_ops_info.pop("NewsSpriteId", None))
+        self._news_update_date: _datetime = _parse.pss_datetime(live_ops_info.pop("NewsUpdateDate", None))
+        self._sale_argument: int = _parse.pss_int(live_ops_info.pop("SaleArgument", None))
+        self._sale_end_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SaleEndDate", None))
+        self._sale_item_mask: int = _parse.pss_int(live_ops_info.pop("SaleItemMask", None))
+        self._sale_once_only: bool = _parse.pss_bool(live_ops_info.pop("SaleOnceOnly", None))
+        self._sale_quantity: int = _parse.pss_int(live_ops_info.pop("SaleQuantity", None))
+        self._sale_reward_string: str = _parse.pss_str(live_ops_info.pop("SaleRewardString", None))
+        self._sale_start_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SaleStartDate", None))
+        self._sale_title: str = _parse.pss_str(live_ops_info.pop("SaleTitle", None))
+        self._sale_type: str = _parse.pss_str(live_ops_info.pop("SaleType", None))
+        self._support_task_ran_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SupportTaskRanDate", None))
+        self._tournament_news: str = _parse.pss_str(live_ops_info.pop("TournamentNews", None))
+        super().__init__(live_ops_info)
 
     @property
     def cargo_items(self) -> str:
@@ -234,5 +237,6 @@ class LiveOpsRaw:
                 "SupportTaskRanDate": self.support_task_ran_date,
                 "TournamentNews": self.tournament_news,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -9,16 +9,19 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CharacterActionRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class CharacterActionRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "CharacterAction"
 
     def __init__(self, character_action_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._action_type_id: int = _parse.pss_int(character_action_info.get("ActionTypeId"))
-        self._character_action_id: int = _parse.pss_int(character_action_info.get("CharacterActionId"))
-        self._character_action_index: int = _parse.pss_int(character_action_info.get("CharacterActionIndex"))
-        self._character_id: int = _parse.pss_int(character_action_info.get("CharacterId"))
-        self._condition_type_id: int = _parse.pss_int(character_action_info.get("ConditionTypeId"))
+        self._action_type_id: int = _parse.pss_int(character_action_info.pop("ActionTypeId", None))
+        self._character_action_id: int = _parse.pss_int(character_action_info.pop("CharacterActionId", None))
+        self._character_action_index: int = _parse.pss_int(character_action_info.pop("CharacterActionIndex", None))
+        self._character_id: int = _parse.pss_int(character_action_info.pop("CharacterId", None))
+        self._condition_type_id: int = _parse.pss_int(character_action_info.pop("ConditionTypeId", None))
+        super().__init__(character_action_info)
 
     @property
     def action_type_id(self) -> int:
@@ -58,5 +61,6 @@ class CharacterActionRaw:
                 "CharacterId": self.character_id,
                 "ConditionTypeId": self.condition_type_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -9,21 +9,24 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ItemRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class ItemRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Item"
 
     def __init__(self, item_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._action_frame: int = _parse.pss_int(item_info.get("ActionFrame"))
-        self._battle_hp: int = _parse.pss_int(item_info.get("BattleHp"))
-        self._bonus_enhancement_type: str = _parse.pss_str(item_info.get("BonusEnhancementType"))
-        self._bonus_enhancement_value: str = _parse.pss_str(item_info.get("BonusEnhancementValue"))
-        self._is_new: bool = _parse.pss_bool(item_info.get("IsNew"))
-        self._item_design_id: int = _parse.pss_int(item_info.get("ItemDesignId"))
-        self._item_id: int = _parse.pss_int(item_info.get("ItemId"))
-        self._quantity: int = _parse.pss_int(item_info.get("Quantity"))
-        self._ship_id: int = _parse.pss_int(item_info.get("ShipId"))
-        self._skin_key: int = _parse.pss_int(item_info.get("SkinKey"))
+        self._action_frame: int = _parse.pss_int(item_info.pop("ActionFrame", None))
+        self._battle_hp: int = _parse.pss_int(item_info.pop("BattleHp", None))
+        self._bonus_enhancement_type: str = _parse.pss_str(item_info.pop("BonusEnhancementType", None))
+        self._bonus_enhancement_value: str = _parse.pss_str(item_info.pop("BonusEnhancementValue", None))
+        self._is_new: bool = _parse.pss_bool(item_info.pop("IsNew", None))
+        self._item_design_id: int = _parse.pss_int(item_info.pop("ItemDesignId", None))
+        self._item_id: int = _parse.pss_int(item_info.pop("ItemId", None))
+        self._quantity: int = _parse.pss_int(item_info.pop("Quantity", None))
+        self._ship_id: int = _parse.pss_int(item_info.pop("ShipId", None))
+        self._skin_key: int = _parse.pss_int(item_info.pop("SkinKey", None))
+        super().__init__(item_info)
 
     @property
     def action_frame(self) -> int:
@@ -93,5 +96,6 @@ class ItemRaw:
                 "ShipId": self.ship_id,
                 "SkinKey": self.skin_key,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

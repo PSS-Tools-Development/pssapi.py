@@ -10,31 +10,34 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class AllianceRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class AllianceRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Alliance"
 
     def __init__(self, alliance_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._alliance_country_code: str = _parse.pss_str(alliance_info.get("AllianceCountryCode"))
-        self._alliance_description: str = _parse.pss_str(alliance_info.get("AllianceDescription"))
-        self._alliance_id: int = _parse.pss_int(alliance_info.get("AllianceId"))
-        self._alliance_name: str = _parse.pss_str(alliance_info.get("AllianceName"))
-        self._alliance_ship_user_id: int = _parse.pss_int(alliance_info.get("AllianceShipUserId"))
-        self._alliance_sprite_id: int = _parse.pss_int(alliance_info.get("AllianceSpriteId"))
-        self._championship_score: int = _parse.pss_int(alliance_info.get("ChampionshipScore"))
-        self._channel_id: int = _parse.pss_int(alliance_info.get("ChannelId"))
-        self._credits: str = _parse.pss_str(alliance_info.get("Credits"))
-        self._division_design_id: int = _parse.pss_int(alliance_info.get("DivisionDesignId"))
-        self._enable_wars: bool = _parse.pss_bool(alliance_info.get("EnableWars"))
-        self._immunity_date: _datetime = _parse.pss_datetime(alliance_info.get("ImmunityDate"))
-        self._min_score_contribution: int = _parse.pss_int(alliance_info.get("MinScoreContribution"))
-        self._min_trophy_required: int = _parse.pss_int(alliance_info.get("MinTrophyRequired"))
-        self._number_of_approved_members: int = _parse.pss_int(alliance_info.get("NumberOfApprovedMembers"))
-        self._number_of_members: int = _parse.pss_int(alliance_info.get("NumberOfMembers"))
-        self._ranking: int = _parse.pss_int(alliance_info.get("Ranking"))
-        self._requires_approval: bool = _parse.pss_bool(alliance_info.get("RequiresApproval"))
-        self._score: int = _parse.pss_int(alliance_info.get("Score"))
-        self._trophy: int = _parse.pss_int(alliance_info.get("Trophy"))
+        self._alliance_country_code: str = _parse.pss_str(alliance_info.pop("AllianceCountryCode", None))
+        self._alliance_description: str = _parse.pss_str(alliance_info.pop("AllianceDescription", None))
+        self._alliance_id: int = _parse.pss_int(alliance_info.pop("AllianceId", None))
+        self._alliance_name: str = _parse.pss_str(alliance_info.pop("AllianceName", None))
+        self._alliance_ship_user_id: int = _parse.pss_int(alliance_info.pop("AllianceShipUserId", None))
+        self._alliance_sprite_id: int = _parse.pss_int(alliance_info.pop("AllianceSpriteId", None))
+        self._championship_score: int = _parse.pss_int(alliance_info.pop("ChampionshipScore", None))
+        self._channel_id: int = _parse.pss_int(alliance_info.pop("ChannelId", None))
+        self._credits: str = _parse.pss_str(alliance_info.pop("Credits", None))
+        self._division_design_id: int = _parse.pss_int(alliance_info.pop("DivisionDesignId", None))
+        self._enable_wars: bool = _parse.pss_bool(alliance_info.pop("EnableWars", None))
+        self._immunity_date: _datetime = _parse.pss_datetime(alliance_info.pop("ImmunityDate", None))
+        self._min_score_contribution: int = _parse.pss_int(alliance_info.pop("MinScoreContribution", None))
+        self._min_trophy_required: int = _parse.pss_int(alliance_info.pop("MinTrophyRequired", None))
+        self._number_of_approved_members: int = _parse.pss_int(alliance_info.pop("NumberOfApprovedMembers", None))
+        self._number_of_members: int = _parse.pss_int(alliance_info.pop("NumberOfMembers", None))
+        self._ranking: int = _parse.pss_int(alliance_info.pop("Ranking", None))
+        self._requires_approval: bool = _parse.pss_bool(alliance_info.pop("RequiresApproval", None))
+        self._score: int = _parse.pss_int(alliance_info.pop("Score", None))
+        self._trophy: int = _parse.pss_int(alliance_info.pop("Trophy", None))
+        super().__init__(alliance_info)
 
     @property
     def alliance_country_code(self) -> str:
@@ -164,5 +167,6 @@ class AllianceRaw:
                 "Score": self.score,
                 "Trophy": self.trophy,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

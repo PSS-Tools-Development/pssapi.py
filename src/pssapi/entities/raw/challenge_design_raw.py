@@ -10,37 +10,40 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ChallengeDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class ChallengeDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "ChallengeDesign"
 
     def __init__(self, challenge_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._base_prize: int = _parse.pss_int(challenge_design_info.get("BasePrize"))
-        self._button_animation_id: int = _parse.pss_int(challenge_design_info.get("ButtonAnimationId"))
-        self._challenge_argument: int = _parse.pss_int(challenge_design_info.get("ChallengeArgument"))
-        self._challenge_design_id: int = _parse.pss_int(challenge_design_info.get("ChallengeDesignId"))
-        self._challenge_design_metadata: str = _parse.pss_str(challenge_design_info.get("ChallengeDesignMetadata"))
-        self._challenge_scoring_argument: int = _parse.pss_int(challenge_design_info.get("ChallengeScoringArgument"))
-        self._challenge_scoring_type: str = _parse.pss_str(challenge_design_info.get("ChallengeScoringType"))
-        self._challenge_type: str = _parse.pss_str(challenge_design_info.get("ChallengeType"))
-        self._description: str = _parse.pss_str(challenge_design_info.get("Description"))
-        self._end_date: _datetime = _parse.pss_datetime(challenge_design_info.get("EndDate"))
-        self._entry_fee: int = _parse.pss_int(challenge_design_info.get("EntryFee"))
-        self._flags: int = _parse.pss_int(challenge_design_info.get("Flags"))
-        self._is_first_free: bool = _parse.pss_bool(challenge_design_info.get("IsFirstFree"))
-        self._is_realtime: bool = _parse.pss_bool(challenge_design_info.get("IsRealtime"))
-        self._lives: int = _parse.pss_int(challenge_design_info.get("Lives"))
-        self._max_battle_prize: int = _parse.pss_int(challenge_design_info.get("MaxBattlePrize"))
-        self._min_battle_prize: int = _parse.pss_int(challenge_design_info.get("MinBattlePrize"))
-        self._name: str = _parse.pss_str(challenge_design_info.get("Name"))
-        self._opponent_ship_ids: str = _parse.pss_str(challenge_design_info.get("OpponentShipIds"))
-        self._poster_sprite_id: int = _parse.pss_int(challenge_design_info.get("PosterSpriteId"))
-        self._requirement_string: str = _parse.pss_str(challenge_design_info.get("RequirementString"))
-        self._reward_string: str = _parse.pss_str(challenge_design_info.get("RewardString"))
-        self._root_achievement_design_id: int = _parse.pss_int(challenge_design_info.get("RootAchievementDesignId"))
-        self._special_rule_argument: int = _parse.pss_int(challenge_design_info.get("SpecialRuleArgument"))
-        self._special_rule_type: str = _parse.pss_str(challenge_design_info.get("SpecialRuleType"))
-        self._start_date: _datetime = _parse.pss_datetime(challenge_design_info.get("StartDate"))
+        self._base_prize: int = _parse.pss_int(challenge_design_info.pop("BasePrize", None))
+        self._button_animation_id: int = _parse.pss_int(challenge_design_info.pop("ButtonAnimationId", None))
+        self._challenge_argument: int = _parse.pss_int(challenge_design_info.pop("ChallengeArgument", None))
+        self._challenge_design_id: int = _parse.pss_int(challenge_design_info.pop("ChallengeDesignId", None))
+        self._challenge_design_metadata: str = _parse.pss_str(challenge_design_info.pop("ChallengeDesignMetadata", None))
+        self._challenge_scoring_argument: int = _parse.pss_int(challenge_design_info.pop("ChallengeScoringArgument", None))
+        self._challenge_scoring_type: str = _parse.pss_str(challenge_design_info.pop("ChallengeScoringType", None))
+        self._challenge_type: str = _parse.pss_str(challenge_design_info.pop("ChallengeType", None))
+        self._description: str = _parse.pss_str(challenge_design_info.pop("Description", None))
+        self._end_date: _datetime = _parse.pss_datetime(challenge_design_info.pop("EndDate", None))
+        self._entry_fee: int = _parse.pss_int(challenge_design_info.pop("EntryFee", None))
+        self._flags: int = _parse.pss_int(challenge_design_info.pop("Flags", None))
+        self._is_first_free: bool = _parse.pss_bool(challenge_design_info.pop("IsFirstFree", None))
+        self._is_realtime: bool = _parse.pss_bool(challenge_design_info.pop("IsRealtime", None))
+        self._lives: int = _parse.pss_int(challenge_design_info.pop("Lives", None))
+        self._max_battle_prize: int = _parse.pss_int(challenge_design_info.pop("MaxBattlePrize", None))
+        self._min_battle_prize: int = _parse.pss_int(challenge_design_info.pop("MinBattlePrize", None))
+        self._name: str = _parse.pss_str(challenge_design_info.pop("Name", None))
+        self._opponent_ship_ids: str = _parse.pss_str(challenge_design_info.pop("OpponentShipIds", None))
+        self._poster_sprite_id: int = _parse.pss_int(challenge_design_info.pop("PosterSpriteId", None))
+        self._requirement_string: str = _parse.pss_str(challenge_design_info.pop("RequirementString", None))
+        self._reward_string: str = _parse.pss_str(challenge_design_info.pop("RewardString", None))
+        self._root_achievement_design_id: int = _parse.pss_int(challenge_design_info.pop("RootAchievementDesignId", None))
+        self._special_rule_argument: int = _parse.pss_int(challenge_design_info.pop("SpecialRuleArgument", None))
+        self._special_rule_type: str = _parse.pss_str(challenge_design_info.pop("SpecialRuleType", None))
+        self._start_date: _datetime = _parse.pss_datetime(challenge_design_info.pop("StartDate", None))
+        super().__init__(challenge_design_info)
 
     @property
     def base_prize(self) -> int:
@@ -206,5 +209,6 @@ class ChallengeDesignRaw:
                 "SpecialRuleType": self.special_rule_type,
                 "StartDate": self.start_date,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

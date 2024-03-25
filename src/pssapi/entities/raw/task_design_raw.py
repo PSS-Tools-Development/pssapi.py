@@ -10,27 +10,30 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class TaskDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class TaskDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "TaskDesign"
 
     def __init__(self, task_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._available_from: _datetime = _parse.pss_datetime(task_design_info.get("AvailableFrom"))
-        self._available_to: _datetime = _parse.pss_datetime(task_design_info.get("AvailableTo"))
-        self._description: str = _parse.pss_str(task_design_info.get("Description"))
-        self._flags: int = _parse.pss_int(task_design_info.get("Flags"))
-        self._global_progress: int = _parse.pss_int(task_design_info.get("GlobalProgress"))
-        self._icon_sprite_id: int = _parse.pss_int(task_design_info.get("IconSpriteId"))
-        self._name: str = _parse.pss_str(task_design_info.get("Name"))
-        self._objective_amount: int = _parse.pss_int(task_design_info.get("ObjectiveAmount"))
-        self._objective_argument: str = _parse.pss_str(task_design_info.get("ObjectiveArgument"))
-        self._objective_type: str = _parse.pss_str(task_design_info.get("ObjectiveType"))
-        self._requirement_string: str = _parse.pss_str(task_design_info.get("RequirementString"))
-        self._reward_distribution_string: str = _parse.pss_str(task_design_info.get("RewardDistributionString"))
-        self._reward_string: str = _parse.pss_str(task_design_info.get("RewardString"))
-        self._season_design_id: int = _parse.pss_int(task_design_info.get("SeasonDesignId"))
-        self._task_category: str = _parse.pss_str(task_design_info.get("TaskCategory"))
-        self._task_design_id: int = _parse.pss_int(task_design_info.get("TaskDesignId"))
+        self._available_from: _datetime = _parse.pss_datetime(task_design_info.pop("AvailableFrom", None))
+        self._available_to: _datetime = _parse.pss_datetime(task_design_info.pop("AvailableTo", None))
+        self._description: str = _parse.pss_str(task_design_info.pop("Description", None))
+        self._flags: int = _parse.pss_int(task_design_info.pop("Flags", None))
+        self._global_progress: int = _parse.pss_int(task_design_info.pop("GlobalProgress", None))
+        self._icon_sprite_id: int = _parse.pss_int(task_design_info.pop("IconSpriteId", None))
+        self._name: str = _parse.pss_str(task_design_info.pop("Name", None))
+        self._objective_amount: int = _parse.pss_int(task_design_info.pop("ObjectiveAmount", None))
+        self._objective_argument: str = _parse.pss_str(task_design_info.pop("ObjectiveArgument", None))
+        self._objective_type: str = _parse.pss_str(task_design_info.pop("ObjectiveType", None))
+        self._requirement_string: str = _parse.pss_str(task_design_info.pop("RequirementString", None))
+        self._reward_distribution_string: str = _parse.pss_str(task_design_info.pop("RewardDistributionString", None))
+        self._reward_string: str = _parse.pss_str(task_design_info.pop("RewardString", None))
+        self._season_design_id: int = _parse.pss_int(task_design_info.pop("SeasonDesignId", None))
+        self._task_category: str = _parse.pss_str(task_design_info.pop("TaskCategory", None))
+        self._task_design_id: int = _parse.pss_int(task_design_info.pop("TaskDesignId", None))
+        super().__init__(task_design_info)
 
     @property
     def available_from(self) -> _datetime:
@@ -136,5 +139,6 @@ class TaskDesignRaw:
                 "TaskCategory": self.task_category,
                 "TaskDesignId": self.task_design_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

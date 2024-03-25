@@ -9,16 +9,19 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class AnimationRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class AnimationRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Animation"
 
     def __init__(self, animation_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._animation_effect_type: str = _parse.pss_str(animation_info.get("AnimationEffectType"))
-        self._animation_id: int = _parse.pss_int(animation_info.get("AnimationId"))
-        self._animation_sprites: str = _parse.pss_str(animation_info.get("AnimationSprites"))
-        self._duration: int = _parse.pss_int(animation_info.get("Duration"))
-        self._key: str = _parse.pss_str(animation_info.get("Key"))
+        self._animation_effect_type: str = _parse.pss_str(animation_info.pop("AnimationEffectType", None))
+        self._animation_id: int = _parse.pss_int(animation_info.pop("AnimationId", None))
+        self._animation_sprites: str = _parse.pss_str(animation_info.pop("AnimationSprites", None))
+        self._duration: int = _parse.pss_int(animation_info.pop("Duration", None))
+        self._key: str = _parse.pss_str(animation_info.pop("Key", None))
+        super().__init__(animation_info)
 
     @property
     def animation_effect_type(self) -> str:
@@ -58,5 +61,6 @@ class AnimationRaw:
                 "Duration": self.duration,
                 "Key": self.key,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

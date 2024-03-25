@@ -9,33 +9,36 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class BackgroundRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class BackgroundRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Background"
 
     def __init__(self, background_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_effect_type: str = _parse.pss_str(background_info.get("BackgroundEffectType"))
-        self._background_id: int = _parse.pss_int(background_info.get("BackgroundId"))
-        self._background_sprite_id: int = _parse.pss_int(background_info.get("BackgroundSpriteId"))
-        self._background_type: str = _parse.pss_str(background_info.get("BackgroundType"))
-        self._close_object_sprite_id: str = _parse.pss_str(background_info.get("CloseObjectSpriteId"))
-        self._environment_float_argument: int = _parse.pss_int(background_info.get("EnvironmentFloatArgument"))
-        self._environment_int_argument: int = _parse.pss_int(background_info.get("EnvironmentIntArgument"))
-        self._environment_type: str = _parse.pss_str(background_info.get("EnvironmentType"))
-        self._far_object_sprite_id: str = _parse.pss_str(background_info.get("FarObjectSpriteId"))
-        self._hazard_argument: int = _parse.pss_int(background_info.get("HazardArgument"))
-        self._hazard_category: str = _parse.pss_str(background_info.get("HazardCategory"))
-        self._hazard_chance: int = _parse.pss_int(background_info.get("HazardChance"))
-        self._hazard_effect_sprite_id: int = _parse.pss_int(background_info.get("HazardEffectSpriteId"))
-        self._hazard_icon_sprite_id: int = _parse.pss_int(background_info.get("HazardIconSpriteId"))
-        self._hazard_type: str = _parse.pss_str(background_info.get("HazardType"))
-        self._is_active: bool = _parse.pss_bool(background_info.get("IsActive"))
-        self._max_hazard_interval: int = _parse.pss_int(background_info.get("MaxHazardInterval"))
-        self._medium_object_sprite_id: str = _parse.pss_str(background_info.get("MediumObjectSpriteId"))
-        self._min_hazard_interval: int = _parse.pss_int(background_info.get("MinHazardInterval"))
-        self._music_file_id: int = _parse.pss_int(background_info.get("MusicFileId"))
-        self._orbit_anchor_alignment: str = _parse.pss_str(background_info.get("OrbitAnchorAlignment"))
-        self._orbit_animation_id: int = _parse.pss_int(background_info.get("OrbitAnimationId"))
+        self._background_effect_type: str = _parse.pss_str(background_info.pop("BackgroundEffectType", None))
+        self._background_id: int = _parse.pss_int(background_info.pop("BackgroundId", None))
+        self._background_sprite_id: int = _parse.pss_int(background_info.pop("BackgroundSpriteId", None))
+        self._background_type: str = _parse.pss_str(background_info.pop("BackgroundType", None))
+        self._close_object_sprite_id: str = _parse.pss_str(background_info.pop("CloseObjectSpriteId", None))
+        self._environment_float_argument: int = _parse.pss_int(background_info.pop("EnvironmentFloatArgument", None))
+        self._environment_int_argument: int = _parse.pss_int(background_info.pop("EnvironmentIntArgument", None))
+        self._environment_type: str = _parse.pss_str(background_info.pop("EnvironmentType", None))
+        self._far_object_sprite_id: str = _parse.pss_str(background_info.pop("FarObjectSpriteId", None))
+        self._hazard_argument: int = _parse.pss_int(background_info.pop("HazardArgument", None))
+        self._hazard_category: str = _parse.pss_str(background_info.pop("HazardCategory", None))
+        self._hazard_chance: int = _parse.pss_int(background_info.pop("HazardChance", None))
+        self._hazard_effect_sprite_id: int = _parse.pss_int(background_info.pop("HazardEffectSpriteId", None))
+        self._hazard_icon_sprite_id: int = _parse.pss_int(background_info.pop("HazardIconSpriteId", None))
+        self._hazard_type: str = _parse.pss_str(background_info.pop("HazardType", None))
+        self._is_active: bool = _parse.pss_bool(background_info.pop("IsActive", None))
+        self._max_hazard_interval: int = _parse.pss_int(background_info.pop("MaxHazardInterval", None))
+        self._medium_object_sprite_id: str = _parse.pss_str(background_info.pop("MediumObjectSpriteId", None))
+        self._min_hazard_interval: int = _parse.pss_int(background_info.pop("MinHazardInterval", None))
+        self._music_file_id: int = _parse.pss_int(background_info.pop("MusicFileId", None))
+        self._orbit_anchor_alignment: str = _parse.pss_str(background_info.pop("OrbitAnchorAlignment", None))
+        self._orbit_animation_id: int = _parse.pss_int(background_info.pop("OrbitAnimationId", None))
+        super().__init__(background_info)
 
     @property
     def background_effect_type(self) -> str:
@@ -177,5 +180,6 @@ class BackgroundRaw:
                 "OrbitAnchorAlignment": self.orbit_anchor_alignment,
                 "OrbitAnimationId": self.orbit_animation_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

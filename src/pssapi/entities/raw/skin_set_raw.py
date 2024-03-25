@@ -10,21 +10,24 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class SkinSetRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class SkinSetRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "SkinSet"
 
     def __init__(self, skin_set_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._approval_flags: str = _parse.pss_str(skin_set_info.get("ApprovalFlags"))
-        self._cost_string: str = _parse.pss_str(skin_set_info.get("CostString"))
-        self._date_updated: _datetime = _parse.pss_datetime(skin_set_info.get("DateUpdated"))
-        self._flags: int = _parse.pss_int(skin_set_info.get("Flags"))
-        self._metadata: str = _parse.pss_str(skin_set_info.get("Metadata"))
-        self._requirement_string: str = _parse.pss_str(skin_set_info.get("RequirementString"))
-        self._skin_set_description: str = _parse.pss_str(skin_set_info.get("SkinSetDescription"))
-        self._skin_set_id: int = _parse.pss_int(skin_set_info.get("SkinSetId"))
-        self._skin_set_name: str = _parse.pss_str(skin_set_info.get("SkinSetName"))
-        self._sprite_id: int = _parse.pss_int(skin_set_info.get("SpriteId"))
+        self._approval_flags: str = _parse.pss_str(skin_set_info.pop("ApprovalFlags", None))
+        self._cost_string: str = _parse.pss_str(skin_set_info.pop("CostString", None))
+        self._date_updated: _datetime = _parse.pss_datetime(skin_set_info.pop("DateUpdated", None))
+        self._flags: int = _parse.pss_int(skin_set_info.pop("Flags", None))
+        self._metadata: str = _parse.pss_str(skin_set_info.pop("Metadata", None))
+        self._requirement_string: str = _parse.pss_str(skin_set_info.pop("RequirementString", None))
+        self._skin_set_description: str = _parse.pss_str(skin_set_info.pop("SkinSetDescription", None))
+        self._skin_set_id: int = _parse.pss_int(skin_set_info.pop("SkinSetId", None))
+        self._skin_set_name: str = _parse.pss_str(skin_set_info.pop("SkinSetName", None))
+        self._sprite_id: int = _parse.pss_int(skin_set_info.pop("SpriteId", None))
+        super().__init__(skin_set_info)
 
     @property
     def approval_flags(self) -> str:
@@ -94,5 +97,6 @@ class SkinSetRaw:
                 "SkinSetName": self.skin_set_name,
                 "SpriteId": self.sprite_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

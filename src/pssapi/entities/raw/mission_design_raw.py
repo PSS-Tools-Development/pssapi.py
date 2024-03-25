@@ -10,37 +10,40 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class MissionDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class MissionDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "MissionDesign"
 
     def __init__(self, mission_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._available_every_x_days: int = _parse.pss_int(mission_design_info.get("AvailableEveryXDays"))
-        self._available_from: _datetime = _parse.pss_datetime(mission_design_info.get("AvailableFrom"))
-        self._available_to: _datetime = _parse.pss_datetime(mission_design_info.get("AvailableTo"))
-        self._background_sprite_id: int = _parse.pss_int(mission_design_info.get("BackgroundSpriteId"))
-        self._chance: int = _parse.pss_int(mission_design_info.get("Chance"))
-        self._condition: str = _parse.pss_str(mission_design_info.get("Condition"))
-        self._exploration_percentage: int = _parse.pss_int(mission_design_info.get("ExplorationPercentage"))
-        self._flags: int = _parse.pss_int(mission_design_info.get("Flags"))
-        self._is_single_play: bool = _parse.pss_bool(mission_design_info.get("IsSinglePlay"))
-        self._max_attempts_per_day: int = _parse.pss_int(mission_design_info.get("MaxAttemptsPerDay"))
-        self._max_ship_level: int = _parse.pss_int(mission_design_info.get("MaxShipLevel"))
-        self._metadata: str = _parse.pss_str(mission_design_info.get("Metadata"))
-        self._min_duration_since_last_event: int = _parse.pss_int(mission_design_info.get("MinDurationSinceLastEvent"))
-        self._min_ship_level: int = _parse.pss_int(mission_design_info.get("MinShipLevel"))
-        self._mission_description: str = _parse.pss_str(mission_design_info.get("MissionDescription"))
-        self._mission_design_id: int = _parse.pss_int(mission_design_info.get("MissionDesignId"))
-        self._mission_design_status: str = _parse.pss_str(mission_design_info.get("MissionDesignStatus"))
-        self._mission_design_type: str = _parse.pss_str(mission_design_info.get("MissionDesignType"))
-        self._mission_title: str = _parse.pss_str(mission_design_info.get("MissionTitle"))
-        self._required_mission_design_id: int = _parse.pss_int(mission_design_info.get("RequiredMissionDesignId"))
-        self._requirement_description: str = _parse.pss_str(mission_design_info.get("RequirementDescription"))
-        self._requirement_string: str = _parse.pss_str(mission_design_info.get("RequirementString"))
-        self._star_system_id: int = _parse.pss_int(mission_design_info.get("StarSystemId"))
-        self._story_animation_id: int = _parse.pss_int(mission_design_info.get("StoryAnimationId"))
-        self._story_description: str = _parse.pss_str(mission_design_info.get("StoryDescription"))
-        self._weight: int = _parse.pss_int(mission_design_info.get("Weight"))
+        self._available_every_x_days: int = _parse.pss_int(mission_design_info.pop("AvailableEveryXDays", None))
+        self._available_from: _datetime = _parse.pss_datetime(mission_design_info.pop("AvailableFrom", None))
+        self._available_to: _datetime = _parse.pss_datetime(mission_design_info.pop("AvailableTo", None))
+        self._background_sprite_id: int = _parse.pss_int(mission_design_info.pop("BackgroundSpriteId", None))
+        self._chance: int = _parse.pss_int(mission_design_info.pop("Chance", None))
+        self._condition: str = _parse.pss_str(mission_design_info.pop("Condition", None))
+        self._exploration_percentage: int = _parse.pss_int(mission_design_info.pop("ExplorationPercentage", None))
+        self._flags: int = _parse.pss_int(mission_design_info.pop("Flags", None))
+        self._is_single_play: bool = _parse.pss_bool(mission_design_info.pop("IsSinglePlay", None))
+        self._max_attempts_per_day: int = _parse.pss_int(mission_design_info.pop("MaxAttemptsPerDay", None))
+        self._max_ship_level: int = _parse.pss_int(mission_design_info.pop("MaxShipLevel", None))
+        self._metadata: str = _parse.pss_str(mission_design_info.pop("Metadata", None))
+        self._min_duration_since_last_event: int = _parse.pss_int(mission_design_info.pop("MinDurationSinceLastEvent", None))
+        self._min_ship_level: int = _parse.pss_int(mission_design_info.pop("MinShipLevel", None))
+        self._mission_description: str = _parse.pss_str(mission_design_info.pop("MissionDescription", None))
+        self._mission_design_id: int = _parse.pss_int(mission_design_info.pop("MissionDesignId", None))
+        self._mission_design_status: str = _parse.pss_str(mission_design_info.pop("MissionDesignStatus", None))
+        self._mission_design_type: str = _parse.pss_str(mission_design_info.pop("MissionDesignType", None))
+        self._mission_title: str = _parse.pss_str(mission_design_info.pop("MissionTitle", None))
+        self._required_mission_design_id: int = _parse.pss_int(mission_design_info.pop("RequiredMissionDesignId", None))
+        self._requirement_description: str = _parse.pss_str(mission_design_info.pop("RequirementDescription", None))
+        self._requirement_string: str = _parse.pss_str(mission_design_info.pop("RequirementString", None))
+        self._star_system_id: int = _parse.pss_int(mission_design_info.pop("StarSystemId", None))
+        self._story_animation_id: int = _parse.pss_int(mission_design_info.pop("StoryAnimationId", None))
+        self._story_description: str = _parse.pss_str(mission_design_info.pop("StoryDescription", None))
+        self._weight: int = _parse.pss_int(mission_design_info.pop("Weight", None))
+        super().__init__(mission_design_info)
 
     @property
     def available_every_x_days(self) -> int:
@@ -206,5 +209,6 @@ class MissionDesignRaw:
                 "StoryDescription": self.story_description,
                 "Weight": self.weight,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

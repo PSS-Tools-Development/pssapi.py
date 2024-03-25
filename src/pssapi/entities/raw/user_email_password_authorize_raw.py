@@ -11,16 +11,19 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class UserEmailPasswordAuthorizeRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class UserEmailPasswordAuthorizeRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "UserEmailPasswordAuthorize"
 
     def __init__(self, user_email_password_authorize_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._require_reload: str = _parse.pss_str(user_email_password_authorize_info.get("RequireReload"))
+        self._require_reload: str = _parse.pss_str(user_email_password_authorize_info.pop("RequireReload", None))
         self._user: _entities.User = _entities.User(user_email_password_authorize_info.get("User")[0]) if user_email_password_authorize_info.get("User", []) else None
-        self._user_id: str = _parse.pss_str(user_email_password_authorize_info.get("UserId"))
-        self._error_message: str = _parse.pss_str(user_email_password_authorize_info.get("errorMessage"))
-        self._refresh_token: str = _parse.pss_str(user_email_password_authorize_info.get("refreshToken"))
+        self._user_id: str = _parse.pss_str(user_email_password_authorize_info.pop("UserId", None))
+        self._error_message: str = _parse.pss_str(user_email_password_authorize_info.pop("errorMessage", None))
+        self._refresh_token: str = _parse.pss_str(user_email_password_authorize_info.pop("refreshToken", None))
+        super().__init__(user_email_password_authorize_info)
 
     @property
     def require_reload(self) -> str:
@@ -60,5 +63,6 @@ class UserEmailPasswordAuthorizeRaw:
                 "errorMessage": self.error_message,
                 "refreshToken": self.refresh_token,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

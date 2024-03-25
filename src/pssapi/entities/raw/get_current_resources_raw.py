@@ -9,15 +9,18 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class GetCurrentResourcesRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class GetCurrentResourcesRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "GetCurrentResources"
 
     def __init__(self, get_current_resources_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._credits: int = _parse.pss_int(get_current_resources_info.get("Credits"))
-        self._gas: int = _parse.pss_int(get_current_resources_info.get("Gas"))
-        self._minerals: int = _parse.pss_int(get_current_resources_info.get("Minerals"))
-        self._supply: int = _parse.pss_int(get_current_resources_info.get("Supply"))
+        self._credits: int = _parse.pss_int(get_current_resources_info.pop("Credits", None))
+        self._gas: int = _parse.pss_int(get_current_resources_info.pop("Gas", None))
+        self._minerals: int = _parse.pss_int(get_current_resources_info.pop("Minerals", None))
+        self._supply: int = _parse.pss_int(get_current_resources_info.pop("Supply", None))
+        super().__init__(get_current_resources_info)
 
     @property
     def credits(self) -> int:
@@ -51,5 +54,6 @@ class GetCurrentResourcesRaw:
                 "Minerals": self.minerals,
                 "Supply": self.supply,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

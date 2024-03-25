@@ -10,31 +10,34 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class RewardDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class RewardDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "RewardDesign"
 
     def __init__(self, reward_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._argument_string: str = _parse.pss_str(reward_design_info.get("ArgumentString"))
-        self._available_every_x_days: int = _parse.pss_int(reward_design_info.get("AvailableEveryXDays"))
-        self._available_from: _datetime = _parse.pss_datetime(reward_design_info.get("AvailableFrom"))
-        self._available_quantity: int = _parse.pss_int(reward_design_info.get("AvailableQuantity"))
-        self._available_to: _datetime = _parse.pss_datetime(reward_design_info.get("AvailableTo"))
-        self._background_sprite_id: int = _parse.pss_int(reward_design_info.get("BackgroundSpriteId"))
-        self._battle_pass_tier_index: int = _parse.pss_int(reward_design_info.get("BattlePassTierIndex"))
-        self._flags: int = _parse.pss_int(reward_design_info.get("Flags"))
-        self._grids: int = _parse.pss_int(reward_design_info.get("Grids"))
-        self._max_per_user: int = _parse.pss_int(reward_design_info.get("MaxPerUser"))
-        self._metadata: str = _parse.pss_str(reward_design_info.get("Metadata"))
-        self._order_index: int = _parse.pss_int(reward_design_info.get("OrderIndex"))
-        self._price_string: str = _parse.pss_str(reward_design_info.get("PriceString"))
-        self._requirement_string: str = _parse.pss_str(reward_design_info.get("RequirementString"))
-        self._reward_description: str = _parse.pss_str(reward_design_info.get("RewardDescription"))
-        self._reward_design_id: int = _parse.pss_int(reward_design_info.get("RewardDesignId"))
-        self._reward_name: str = _parse.pss_str(reward_design_info.get("RewardName"))
-        self._reward_type: str = _parse.pss_str(reward_design_info.get("RewardType"))
-        self._season_design_id: int = _parse.pss_int(reward_design_info.get("SeasonDesignId"))
-        self._sprite_id: int = _parse.pss_int(reward_design_info.get("SpriteId"))
+        self._argument_string: str = _parse.pss_str(reward_design_info.pop("ArgumentString", None))
+        self._available_every_x_days: int = _parse.pss_int(reward_design_info.pop("AvailableEveryXDays", None))
+        self._available_from: _datetime = _parse.pss_datetime(reward_design_info.pop("AvailableFrom", None))
+        self._available_quantity: int = _parse.pss_int(reward_design_info.pop("AvailableQuantity", None))
+        self._available_to: _datetime = _parse.pss_datetime(reward_design_info.pop("AvailableTo", None))
+        self._background_sprite_id: int = _parse.pss_int(reward_design_info.pop("BackgroundSpriteId", None))
+        self._battle_pass_tier_index: int = _parse.pss_int(reward_design_info.pop("BattlePassTierIndex", None))
+        self._flags: int = _parse.pss_int(reward_design_info.pop("Flags", None))
+        self._grids: int = _parse.pss_int(reward_design_info.pop("Grids", None))
+        self._max_per_user: int = _parse.pss_int(reward_design_info.pop("MaxPerUser", None))
+        self._metadata: str = _parse.pss_str(reward_design_info.pop("Metadata", None))
+        self._order_index: int = _parse.pss_int(reward_design_info.pop("OrderIndex", None))
+        self._price_string: str = _parse.pss_str(reward_design_info.pop("PriceString", None))
+        self._requirement_string: str = _parse.pss_str(reward_design_info.pop("RequirementString", None))
+        self._reward_description: str = _parse.pss_str(reward_design_info.pop("RewardDescription", None))
+        self._reward_design_id: int = _parse.pss_int(reward_design_info.pop("RewardDesignId", None))
+        self._reward_name: str = _parse.pss_str(reward_design_info.pop("RewardName", None))
+        self._reward_type: str = _parse.pss_str(reward_design_info.pop("RewardType", None))
+        self._season_design_id: int = _parse.pss_int(reward_design_info.pop("SeasonDesignId", None))
+        self._sprite_id: int = _parse.pss_int(reward_design_info.pop("SpriteId", None))
+        super().__init__(reward_design_info)
 
     @property
     def argument_string(self) -> str:
@@ -164,5 +167,6 @@ class RewardDesignRaw:
                 "SeasonDesignId": self.season_design_id,
                 "SpriteId": self.sprite_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

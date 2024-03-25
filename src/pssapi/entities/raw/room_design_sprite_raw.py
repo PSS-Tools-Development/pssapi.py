@@ -9,25 +9,28 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class RoomDesignSpriteRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class RoomDesignSpriteRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "RoomDesignSprite"
 
     def __init__(self, room_design_sprite_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._animation_id: int = _parse.pss_int(room_design_sprite_info.get("AnimationId"))
-        self._flags: int = _parse.pss_int(room_design_sprite_info.get("Flags"))
-        self._metadata: str = _parse.pss_str(room_design_sprite_info.get("Metadata"))
-        self._race_id: int = _parse.pss_int(room_design_sprite_info.get("RaceId"))
-        self._requirement_string: str = _parse.pss_str(room_design_sprite_info.get("RequirementString"))
-        self._room_design_id: int = _parse.pss_int(room_design_sprite_info.get("RoomDesignId"))
-        self._room_design_sprite_id: int = _parse.pss_int(room_design_sprite_info.get("RoomDesignSpriteId"))
-        self._room_effect_parameter: int = _parse.pss_int(room_design_sprite_info.get("RoomEffectParameter"))
-        self._room_effect_type: str = _parse.pss_str(room_design_sprite_info.get("RoomEffectType"))
-        self._room_sprite_type: str = _parse.pss_str(room_design_sprite_info.get("RoomSpriteType"))
-        self._skin_description: str = _parse.pss_str(room_design_sprite_info.get("SkinDescription"))
-        self._skin_key: int = _parse.pss_int(room_design_sprite_info.get("SkinKey"))
-        self._skin_name: str = _parse.pss_str(room_design_sprite_info.get("SkinName"))
-        self._sprite_id: int = _parse.pss_int(room_design_sprite_info.get("SpriteId"))
+        self._animation_id: int = _parse.pss_int(room_design_sprite_info.pop("AnimationId", None))
+        self._flags: int = _parse.pss_int(room_design_sprite_info.pop("Flags", None))
+        self._metadata: str = _parse.pss_str(room_design_sprite_info.pop("Metadata", None))
+        self._race_id: int = _parse.pss_int(room_design_sprite_info.pop("RaceId", None))
+        self._requirement_string: str = _parse.pss_str(room_design_sprite_info.pop("RequirementString", None))
+        self._room_design_id: int = _parse.pss_int(room_design_sprite_info.pop("RoomDesignId", None))
+        self._room_design_sprite_id: int = _parse.pss_int(room_design_sprite_info.pop("RoomDesignSpriteId", None))
+        self._room_effect_parameter: int = _parse.pss_int(room_design_sprite_info.pop("RoomEffectParameter", None))
+        self._room_effect_type: str = _parse.pss_str(room_design_sprite_info.pop("RoomEffectType", None))
+        self._room_sprite_type: str = _parse.pss_str(room_design_sprite_info.pop("RoomSpriteType", None))
+        self._skin_description: str = _parse.pss_str(room_design_sprite_info.pop("SkinDescription", None))
+        self._skin_key: int = _parse.pss_int(room_design_sprite_info.pop("SkinKey", None))
+        self._skin_name: str = _parse.pss_str(room_design_sprite_info.pop("SkinName", None))
+        self._sprite_id: int = _parse.pss_int(room_design_sprite_info.pop("SpriteId", None))
+        super().__init__(room_design_sprite_info)
 
     @property
     def animation_id(self) -> int:
@@ -121,5 +124,6 @@ class RoomDesignSpriteRaw:
                 "SkinName": self.skin_name,
                 "SpriteId": self.sprite_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -9,17 +9,20 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class RoomDesignPurchaseRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class RoomDesignPurchaseRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "RoomDesignPurchase"
 
     def __init__(self, room_design_purchase_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._availability_mask: int = _parse.pss_int(room_design_purchase_info.get("AvailabilityMask"))
-        self._level: int = _parse.pss_int(room_design_purchase_info.get("Level"))
-        self._quantity: int = _parse.pss_int(room_design_purchase_info.get("Quantity"))
-        self._requirement_string: str = _parse.pss_str(room_design_purchase_info.get("RequirementString"))
-        self._room_design_id: int = _parse.pss_int(room_design_purchase_info.get("RoomDesignId"))
-        self._room_design_purchase_id: int = _parse.pss_int(room_design_purchase_info.get("RoomDesignPurchaseId"))
+        self._availability_mask: int = _parse.pss_int(room_design_purchase_info.pop("AvailabilityMask", None))
+        self._level: int = _parse.pss_int(room_design_purchase_info.pop("Level", None))
+        self._quantity: int = _parse.pss_int(room_design_purchase_info.pop("Quantity", None))
+        self._requirement_string: str = _parse.pss_str(room_design_purchase_info.pop("RequirementString", None))
+        self._room_design_id: int = _parse.pss_int(room_design_purchase_info.pop("RoomDesignId", None))
+        self._room_design_purchase_id: int = _parse.pss_int(room_design_purchase_info.pop("RoomDesignPurchaseId", None))
+        super().__init__(room_design_purchase_info)
 
     @property
     def availability_mask(self) -> int:
@@ -65,5 +68,6 @@ class RoomDesignPurchaseRaw:
                 "RoomDesignId": self.room_design_id,
                 "RoomDesignPurchaseId": self.room_design_purchase_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -10,18 +10,21 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class UserMarkerRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class UserMarkerRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "UserMarker"
 
     def __init__(self, user_marker_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._is_collected: bool = _parse.pss_bool(user_marker_info.get("IsCollected"))
-        self._last_update_date: _datetime = _parse.pss_datetime(user_marker_info.get("LastUpdateDate"))
-        self._marker_progress_value: int = _parse.pss_int(user_marker_info.get("MarkerProgressValue"))
-        self._purchase_flags: int = _parse.pss_int(user_marker_info.get("PurchaseFlags"))
-        self._star_system_marker_id: int = _parse.pss_int(user_marker_info.get("StarSystemMarkerId"))
-        self._user_id: int = _parse.pss_int(user_marker_info.get("UserId"))
-        self._user_marker_id: int = _parse.pss_int(user_marker_info.get("UserMarkerId"))
+        self._is_collected: bool = _parse.pss_bool(user_marker_info.pop("IsCollected", None))
+        self._last_update_date: _datetime = _parse.pss_datetime(user_marker_info.pop("LastUpdateDate", None))
+        self._marker_progress_value: int = _parse.pss_int(user_marker_info.pop("MarkerProgressValue", None))
+        self._purchase_flags: int = _parse.pss_int(user_marker_info.pop("PurchaseFlags", None))
+        self._star_system_marker_id: int = _parse.pss_int(user_marker_info.pop("StarSystemMarkerId", None))
+        self._user_id: int = _parse.pss_int(user_marker_info.pop("UserId", None))
+        self._user_marker_id: int = _parse.pss_int(user_marker_info.pop("UserMarkerId", None))
+        super().__init__(user_marker_info)
 
     @property
     def is_collected(self) -> bool:
@@ -73,5 +76,6 @@ class UserMarkerRaw:
                 "UserId": self.user_id,
                 "UserMarkerId": self.user_marker_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -10,26 +10,29 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class SituationDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class SituationDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "SituationDesign"
 
     def __init__(self, situation_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._chance: int = _parse.pss_int(situation_design_info.get("Chance"))
-        self._change_argument_string: str = _parse.pss_str(situation_design_info.get("ChangeArgumentString"))
-        self._change_type: str = _parse.pss_str(situation_design_info.get("ChangeType"))
-        self._daily_occurrence_limit: int = _parse.pss_int(situation_design_info.get("DailyOccurrenceLimit"))
-        self._end_date: _datetime = _parse.pss_datetime(situation_design_info.get("EndDate"))
-        self._flags: int = _parse.pss_int(situation_design_info.get("Flags"))
-        self._from_date: _datetime = _parse.pss_datetime(situation_design_info.get("FromDate"))
-        self._icon_sprite_id: int = _parse.pss_int(situation_design_info.get("IconSpriteId"))
-        self._requirement_string: str = _parse.pss_str(situation_design_info.get("RequirementString"))
-        self._situation_description: str = _parse.pss_str(situation_design_info.get("SituationDescription"))
-        self._situation_design_id: int = _parse.pss_int(situation_design_info.get("SituationDesignId"))
-        self._situation_name: str = _parse.pss_str(situation_design_info.get("SituationName"))
-        self._situation_tags: str = _parse.pss_str(situation_design_info.get("SituationTags"))
-        self._situation_type: str = _parse.pss_str(situation_design_info.get("SituationType"))
-        self._trigger_type: str = _parse.pss_str(situation_design_info.get("TriggerType"))
+        self._chance: int = _parse.pss_int(situation_design_info.pop("Chance", None))
+        self._change_argument_string: str = _parse.pss_str(situation_design_info.pop("ChangeArgumentString", None))
+        self._change_type: str = _parse.pss_str(situation_design_info.pop("ChangeType", None))
+        self._daily_occurrence_limit: int = _parse.pss_int(situation_design_info.pop("DailyOccurrenceLimit", None))
+        self._end_date: _datetime = _parse.pss_datetime(situation_design_info.pop("EndDate", None))
+        self._flags: int = _parse.pss_int(situation_design_info.pop("Flags", None))
+        self._from_date: _datetime = _parse.pss_datetime(situation_design_info.pop("FromDate", None))
+        self._icon_sprite_id: int = _parse.pss_int(situation_design_info.pop("IconSpriteId", None))
+        self._requirement_string: str = _parse.pss_str(situation_design_info.pop("RequirementString", None))
+        self._situation_description: str = _parse.pss_str(situation_design_info.pop("SituationDescription", None))
+        self._situation_design_id: int = _parse.pss_int(situation_design_info.pop("SituationDesignId", None))
+        self._situation_name: str = _parse.pss_str(situation_design_info.pop("SituationName", None))
+        self._situation_tags: str = _parse.pss_str(situation_design_info.pop("SituationTags", None))
+        self._situation_type: str = _parse.pss_str(situation_design_info.pop("SituationType", None))
+        self._trigger_type: str = _parse.pss_str(situation_design_info.pop("TriggerType", None))
+        super().__init__(situation_design_info)
 
     @property
     def chance(self) -> int:
@@ -129,5 +132,6 @@ class SituationDesignRaw:
                 "SituationType": self.situation_type,
                 "TriggerType": self.trigger_type,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

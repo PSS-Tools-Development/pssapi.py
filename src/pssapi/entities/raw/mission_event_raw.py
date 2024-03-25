@@ -9,31 +9,34 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class MissionEventRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class MissionEventRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "MissionEvent"
 
     def __init__(self, mission_event_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_id: int = _parse.pss_int(mission_event_info.get("BackgroundId"))
-        self._background_sprite_id: int = _parse.pss_int(mission_event_info.get("BackgroundSpriteId"))
-        self._cost_string: str = _parse.pss_str(mission_event_info.get("CostString"))
-        self._end_description: str = _parse.pss_str(mission_event_info.get("EndDescription"))
-        self._event_xml_string: str = _parse.pss_str(mission_event_info.get("EventXmlString"))
-        self._flags: int = _parse.pss_int(mission_event_info.get("Flags"))
-        self._function_string: str = _parse.pss_str(mission_event_info.get("FunctionString"))
-        self._is_single_play: bool = _parse.pss_bool(mission_event_info.get("IsSinglePlay"))
-        self._mission_design_id: int = _parse.pss_int(mission_event_info.get("MissionDesignId"))
-        self._mission_event_id: int = _parse.pss_int(mission_event_info.get("MissionEventId"))
-        self._mission_event_type: str = _parse.pss_str(mission_event_info.get("MissionEventType"))
-        self._parent_mission_event_id: int = _parse.pss_int(mission_event_info.get("ParentMissionEventId"))
-        self._percent_weight: int = _parse.pss_int(mission_event_info.get("PercentWeight"))
-        self._requirement_description: str = _parse.pss_str(mission_event_info.get("RequirementDescription"))
-        self._requirement_string: str = _parse.pss_str(mission_event_info.get("RequirementString"))
-        self._reward_string: str = _parse.pss_str(mission_event_info.get("RewardString"))
-        self._ship_id: int = _parse.pss_int(mission_event_info.get("ShipId"))
-        self._start_description: str = _parse.pss_str(mission_event_info.get("StartDescription"))
-        self._time_limit: int = _parse.pss_int(mission_event_info.get("TimeLimit"))
-        self._title: str = _parse.pss_str(mission_event_info.get("Title"))
+        self._background_id: int = _parse.pss_int(mission_event_info.pop("BackgroundId", None))
+        self._background_sprite_id: int = _parse.pss_int(mission_event_info.pop("BackgroundSpriteId", None))
+        self._cost_string: str = _parse.pss_str(mission_event_info.pop("CostString", None))
+        self._end_description: str = _parse.pss_str(mission_event_info.pop("EndDescription", None))
+        self._event_xml_string: str = _parse.pss_str(mission_event_info.pop("EventXmlString", None))
+        self._flags: int = _parse.pss_int(mission_event_info.pop("Flags", None))
+        self._function_string: str = _parse.pss_str(mission_event_info.pop("FunctionString", None))
+        self._is_single_play: bool = _parse.pss_bool(mission_event_info.pop("IsSinglePlay", None))
+        self._mission_design_id: int = _parse.pss_int(mission_event_info.pop("MissionDesignId", None))
+        self._mission_event_id: int = _parse.pss_int(mission_event_info.pop("MissionEventId", None))
+        self._mission_event_type: str = _parse.pss_str(mission_event_info.pop("MissionEventType", None))
+        self._parent_mission_event_id: int = _parse.pss_int(mission_event_info.pop("ParentMissionEventId", None))
+        self._percent_weight: int = _parse.pss_int(mission_event_info.pop("PercentWeight", None))
+        self._requirement_description: str = _parse.pss_str(mission_event_info.pop("RequirementDescription", None))
+        self._requirement_string: str = _parse.pss_str(mission_event_info.pop("RequirementString", None))
+        self._reward_string: str = _parse.pss_str(mission_event_info.pop("RewardString", None))
+        self._ship_id: int = _parse.pss_int(mission_event_info.pop("ShipId", None))
+        self._start_description: str = _parse.pss_str(mission_event_info.pop("StartDescription", None))
+        self._time_limit: int = _parse.pss_int(mission_event_info.pop("TimeLimit", None))
+        self._title: str = _parse.pss_str(mission_event_info.pop("Title", None))
+        super().__init__(mission_event_info)
 
     @property
     def background_id(self) -> int:
@@ -163,5 +166,6 @@ class MissionEventRaw:
                 "TimeLimit": self.time_limit,
                 "Title": self.title,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

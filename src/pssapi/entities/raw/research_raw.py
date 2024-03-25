@@ -10,16 +10,19 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ResearchRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class ResearchRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Research"
 
     def __init__(self, research_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._research_design_id: int = _parse.pss_int(research_info.get("ResearchDesignId"))
-        self._research_id: int = _parse.pss_int(research_info.get("ResearchId"))
-        self._research_start_date: _datetime = _parse.pss_datetime(research_info.get("ResearchStartDate"))
-        self._research_state: str = _parse.pss_str(research_info.get("ResearchState"))
-        self._ship_id: int = _parse.pss_int(research_info.get("ShipId"))
+        self._research_design_id: int = _parse.pss_int(research_info.pop("ResearchDesignId", None))
+        self._research_id: int = _parse.pss_int(research_info.pop("ResearchId", None))
+        self._research_start_date: _datetime = _parse.pss_datetime(research_info.pop("ResearchStartDate", None))
+        self._research_state: str = _parse.pss_str(research_info.pop("ResearchState", None))
+        self._ship_id: int = _parse.pss_int(research_info.pop("ShipId", None))
+        super().__init__(research_info)
 
     @property
     def research_design_id(self) -> int:
@@ -59,5 +62,6 @@ class ResearchRaw:
                 "ResearchState": self.research_state,
                 "ShipId": self.ship_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -9,24 +9,27 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CraftDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class CraftDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "CraftDesign"
 
     def __init__(self, craft_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._attack_distance: int = _parse.pss_int(craft_design_info.get("AttackDistance"))
-        self._attack_range: int = _parse.pss_int(craft_design_info.get("AttackRange"))
-        self._craft_attack_type: str = _parse.pss_str(craft_design_info.get("CraftAttackType"))
-        self._craft_design_id: int = _parse.pss_int(craft_design_info.get("CraftDesignId"))
-        self._craft_name: str = _parse.pss_str(craft_design_info.get("CraftName"))
-        self._craft_target_type: str = _parse.pss_str(craft_design_info.get("CraftTargetType"))
-        self._flight_speed: int = _parse.pss_int(craft_design_info.get("FlightSpeed"))
-        self._hp: int = _parse.pss_int(craft_design_info.get("Hp"))
-        self._missile_design_id: int = _parse.pss_int(craft_design_info.get("MissileDesignId"))
-        self._reload: int = _parse.pss_int(craft_design_info.get("Reload"))
-        self._sprite_id: int = _parse.pss_int(craft_design_info.get("SpriteId"))
-        self._volley: int = _parse.pss_int(craft_design_info.get("Volley"))
-        self._volley_delay: int = _parse.pss_int(craft_design_info.get("VolleyDelay"))
+        self._attack_distance: int = _parse.pss_int(craft_design_info.pop("AttackDistance", None))
+        self._attack_range: int = _parse.pss_int(craft_design_info.pop("AttackRange", None))
+        self._craft_attack_type: str = _parse.pss_str(craft_design_info.pop("CraftAttackType", None))
+        self._craft_design_id: int = _parse.pss_int(craft_design_info.pop("CraftDesignId", None))
+        self._craft_name: str = _parse.pss_str(craft_design_info.pop("CraftName", None))
+        self._craft_target_type: str = _parse.pss_str(craft_design_info.pop("CraftTargetType", None))
+        self._flight_speed: int = _parse.pss_int(craft_design_info.pop("FlightSpeed", None))
+        self._hp: int = _parse.pss_int(craft_design_info.pop("Hp", None))
+        self._missile_design_id: int = _parse.pss_int(craft_design_info.pop("MissileDesignId", None))
+        self._reload: int = _parse.pss_int(craft_design_info.pop("Reload", None))
+        self._sprite_id: int = _parse.pss_int(craft_design_info.pop("SpriteId", None))
+        self._volley: int = _parse.pss_int(craft_design_info.pop("Volley", None))
+        self._volley_delay: int = _parse.pss_int(craft_design_info.pop("VolleyDelay", None))
+        super().__init__(craft_design_info)
 
     @property
     def attack_distance(self) -> int:
@@ -114,5 +117,6 @@ class CraftDesignRaw:
                 "Volley": self.volley,
                 "VolleyDelay": self.volley_delay,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

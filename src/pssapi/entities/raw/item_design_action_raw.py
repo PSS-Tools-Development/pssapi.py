@@ -9,16 +9,19 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class ItemDesignActionRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class ItemDesignActionRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "ItemDesignAction"
 
     def __init__(self, item_design_action_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._action_type_id: int = _parse.pss_int(item_design_action_info.get("ActionTypeId"))
-        self._condition_type_id: int = _parse.pss_int(item_design_action_info.get("ConditionTypeId"))
-        self._item_design_action_id: int = _parse.pss_int(item_design_action_info.get("ItemDesignActionId"))
-        self._item_design_action_index: int = _parse.pss_int(item_design_action_info.get("ItemDesignActionIndex"))
-        self._item_design_id: int = _parse.pss_int(item_design_action_info.get("ItemDesignId"))
+        self._action_type_id: int = _parse.pss_int(item_design_action_info.pop("ActionTypeId", None))
+        self._condition_type_id: int = _parse.pss_int(item_design_action_info.pop("ConditionTypeId", None))
+        self._item_design_action_id: int = _parse.pss_int(item_design_action_info.pop("ItemDesignActionId", None))
+        self._item_design_action_index: int = _parse.pss_int(item_design_action_info.pop("ItemDesignActionIndex", None))
+        self._item_design_id: int = _parse.pss_int(item_design_action_info.pop("ItemDesignId", None))
+        super().__init__(item_design_action_info)
 
     @property
     def action_type_id(self) -> int:
@@ -58,5 +61,6 @@ class ItemDesignActionRaw:
                 "ItemDesignActionIndex": self.item_design_action_index,
                 "ItemDesignId": self.item_design_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

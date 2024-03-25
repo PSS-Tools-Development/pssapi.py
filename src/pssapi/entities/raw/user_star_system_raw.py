@@ -9,15 +9,18 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class UserStarSystemRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class UserStarSystemRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "UserStarSystem"
 
     def __init__(self, user_star_system_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._exploration_percentage: int = _parse.pss_int(user_star_system_info.get("ExplorationPercentage"))
-        self._star_system_id: int = _parse.pss_int(user_star_system_info.get("StarSystemId"))
-        self._user_id: int = _parse.pss_int(user_star_system_info.get("UserId"))
-        self._user_star_system_id: int = _parse.pss_int(user_star_system_info.get("UserStarSystemId"))
+        self._exploration_percentage: int = _parse.pss_int(user_star_system_info.pop("ExplorationPercentage", None))
+        self._star_system_id: int = _parse.pss_int(user_star_system_info.pop("StarSystemId", None))
+        self._user_id: int = _parse.pss_int(user_star_system_info.pop("UserId", None))
+        self._user_star_system_id: int = _parse.pss_int(user_star_system_info.pop("UserStarSystemId", None))
+        super().__init__(user_star_system_info)
 
     @property
     def exploration_percentage(self) -> int:
@@ -51,5 +54,6 @@ class UserStarSystemRaw:
                 "UserId": self.user_id,
                 "UserStarSystemId": self.user_star_system_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

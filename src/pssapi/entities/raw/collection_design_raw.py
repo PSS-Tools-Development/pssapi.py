@@ -9,32 +9,35 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CollectionDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class CollectionDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "CollectionDesign"
 
     def __init__(self, collection_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._ability_icon_sprite_id: int = _parse.pss_int(collection_design_info.get("AbilityIconSpriteId"))
-        self._ability_name: str = _parse.pss_str(collection_design_info.get("AbilityName"))
-        self._argument: int = _parse.pss_int(collection_design_info.get("Argument"))
-        self._base_chance: int = _parse.pss_int(collection_design_info.get("BaseChance"))
-        self._base_enhancement_value: int = _parse.pss_int(collection_design_info.get("BaseEnhancementValue"))
-        self._collection_description: str = _parse.pss_str(collection_design_info.get("CollectionDescription"))
-        self._collection_design_id: int = _parse.pss_int(collection_design_info.get("CollectionDesignId"))
-        self._collection_name: str = _parse.pss_str(collection_design_info.get("CollectionName"))
-        self._collection_type: str = _parse.pss_str(collection_design_info.get("CollectionType"))
-        self._color_string: str = _parse.pss_str(collection_design_info.get("ColorString"))
-        self._enhancement_type: str = _parse.pss_str(collection_design_info.get("EnhancementType"))
-        self._flags: int = _parse.pss_int(collection_design_info.get("Flags"))
-        self._halo_animation_id: int = _parse.pss_int(collection_design_info.get("HaloAnimationId"))
-        self._icon_sprite_id: int = _parse.pss_int(collection_design_info.get("IconSpriteId"))
-        self._max_combo: int = _parse.pss_int(collection_design_info.get("MaxCombo"))
-        self._max_use: int = _parse.pss_int(collection_design_info.get("MaxUse"))
-        self._min_combo: int = _parse.pss_int(collection_design_info.get("MinCombo"))
-        self._sprite_id: int = _parse.pss_int(collection_design_info.get("SpriteId"))
-        self._step_chance: int = _parse.pss_int(collection_design_info.get("StepChance"))
-        self._step_enhancement_value: int = _parse.pss_int(collection_design_info.get("StepEnhancementValue"))
-        self._trigger_type: str = _parse.pss_str(collection_design_info.get("TriggerType"))
+        self._ability_icon_sprite_id: int = _parse.pss_int(collection_design_info.pop("AbilityIconSpriteId", None))
+        self._ability_name: str = _parse.pss_str(collection_design_info.pop("AbilityName", None))
+        self._argument: int = _parse.pss_int(collection_design_info.pop("Argument", None))
+        self._base_chance: int = _parse.pss_int(collection_design_info.pop("BaseChance", None))
+        self._base_enhancement_value: int = _parse.pss_int(collection_design_info.pop("BaseEnhancementValue", None))
+        self._collection_description: str = _parse.pss_str(collection_design_info.pop("CollectionDescription", None))
+        self._collection_design_id: int = _parse.pss_int(collection_design_info.pop("CollectionDesignId", None))
+        self._collection_name: str = _parse.pss_str(collection_design_info.pop("CollectionName", None))
+        self._collection_type: str = _parse.pss_str(collection_design_info.pop("CollectionType", None))
+        self._color_string: str = _parse.pss_str(collection_design_info.pop("ColorString", None))
+        self._enhancement_type: str = _parse.pss_str(collection_design_info.pop("EnhancementType", None))
+        self._flags: int = _parse.pss_int(collection_design_info.pop("Flags", None))
+        self._halo_animation_id: int = _parse.pss_int(collection_design_info.pop("HaloAnimationId", None))
+        self._icon_sprite_id: int = _parse.pss_int(collection_design_info.pop("IconSpriteId", None))
+        self._max_combo: int = _parse.pss_int(collection_design_info.pop("MaxCombo", None))
+        self._max_use: int = _parse.pss_int(collection_design_info.pop("MaxUse", None))
+        self._min_combo: int = _parse.pss_int(collection_design_info.pop("MinCombo", None))
+        self._sprite_id: int = _parse.pss_int(collection_design_info.pop("SpriteId", None))
+        self._step_chance: int = _parse.pss_int(collection_design_info.pop("StepChance", None))
+        self._step_enhancement_value: int = _parse.pss_int(collection_design_info.pop("StepEnhancementValue", None))
+        self._trigger_type: str = _parse.pss_str(collection_design_info.pop("TriggerType", None))
+        super().__init__(collection_design_info)
 
     @property
     def ability_icon_sprite_id(self) -> int:
@@ -170,5 +173,6 @@ class CollectionDesignRaw:
                 "StepEnhancementValue": self.step_enhancement_value,
                 "TriggerType": self.trigger_type,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

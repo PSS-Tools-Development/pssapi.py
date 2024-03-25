@@ -9,20 +9,23 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class CharacterPartRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class CharacterPartRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "CharacterPart"
 
     def __init__(self, character_part_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._action_border_file_id: int = _parse.pss_int(character_part_info.get("ActionBorderFileId"))
-        self._action_file_id: int = _parse.pss_int(character_part_info.get("ActionFileId"))
-        self._action_sprite_id: int = _parse.pss_int(character_part_info.get("ActionSpriteId"))
-        self._character_part_id: int = _parse.pss_int(character_part_info.get("CharacterPartId"))
-        self._character_part_name: str = _parse.pss_str(character_part_info.get("CharacterPartName"))
-        self._character_part_type: str = _parse.pss_str(character_part_info.get("CharacterPartType"))
-        self._standard_border_file_id: int = _parse.pss_int(character_part_info.get("StandardBorderFileId"))
-        self._standard_file_id: int = _parse.pss_int(character_part_info.get("StandardFileId"))
-        self._standard_sprite_id: int = _parse.pss_int(character_part_info.get("StandardSpriteId"))
+        self._action_border_file_id: int = _parse.pss_int(character_part_info.pop("ActionBorderFileId", None))
+        self._action_file_id: int = _parse.pss_int(character_part_info.pop("ActionFileId", None))
+        self._action_sprite_id: int = _parse.pss_int(character_part_info.pop("ActionSpriteId", None))
+        self._character_part_id: int = _parse.pss_int(character_part_info.pop("CharacterPartId", None))
+        self._character_part_name: str = _parse.pss_str(character_part_info.pop("CharacterPartName", None))
+        self._character_part_type: str = _parse.pss_str(character_part_info.pop("CharacterPartType", None))
+        self._standard_border_file_id: int = _parse.pss_int(character_part_info.pop("StandardBorderFileId", None))
+        self._standard_file_id: int = _parse.pss_int(character_part_info.pop("StandardFileId", None))
+        self._standard_sprite_id: int = _parse.pss_int(character_part_info.pop("StandardSpriteId", None))
+        super().__init__(character_part_info)
 
     @property
     def action_border_file_id(self) -> int:
@@ -86,5 +89,6 @@ class CharacterPartRaw:
                 "StandardFileId": self.standard_file_id,
                 "StandardSpriteId": self.standard_sprite_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

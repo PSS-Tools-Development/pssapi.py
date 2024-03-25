@@ -9,23 +9,26 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class DivisionDesignRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class DivisionDesignRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "DivisionDesign"
 
     def __init__(self, division_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_sprite_id: int = _parse.pss_int(division_design_info.get("BackgroundSpriteId"))
-        self._banner_sprite_ids: str = _parse.pss_str(division_design_info.get("BannerSpriteIds"))
-        self._division_design_id: int = _parse.pss_int(division_design_info.get("DivisionDesignId"))
-        self._division_name: str = _parse.pss_str(division_design_info.get("DivisionName"))
-        self._division_type: str = _parse.pss_str(division_design_info.get("DivisionType"))
-        self._finals_immunity_percentage: int = _parse.pss_int(division_design_info.get("FinalsImmunityPercentage"))
-        self._logo_sprite_id: int = _parse.pss_int(division_design_info.get("LogoSpriteId"))
-        self._max_rank: int = _parse.pss_int(division_design_info.get("MaxRank"))
-        self._min_rank: int = _parse.pss_int(division_design_info.get("MinRank"))
-        self._monthly_achievement_design_ids: str = _parse.pss_str(division_design_info.get("MonthlyAchievementDesignIds"))
-        self._reward_strings: str = _parse.pss_str(division_design_info.get("RewardStrings"))
-        self._yearly_achievement_design_ids: str = _parse.pss_str(division_design_info.get("YearlyAchievementDesignIds"))
+        self._background_sprite_id: int = _parse.pss_int(division_design_info.pop("BackgroundSpriteId", None))
+        self._banner_sprite_ids: str = _parse.pss_str(division_design_info.pop("BannerSpriteIds", None))
+        self._division_design_id: int = _parse.pss_int(division_design_info.pop("DivisionDesignId", None))
+        self._division_name: str = _parse.pss_str(division_design_info.pop("DivisionName", None))
+        self._division_type: str = _parse.pss_str(division_design_info.pop("DivisionType", None))
+        self._finals_immunity_percentage: int = _parse.pss_int(division_design_info.pop("FinalsImmunityPercentage", None))
+        self._logo_sprite_id: int = _parse.pss_int(division_design_info.pop("LogoSpriteId", None))
+        self._max_rank: int = _parse.pss_int(division_design_info.pop("MaxRank", None))
+        self._min_rank: int = _parse.pss_int(division_design_info.pop("MinRank", None))
+        self._monthly_achievement_design_ids: str = _parse.pss_str(division_design_info.pop("MonthlyAchievementDesignIds", None))
+        self._reward_strings: str = _parse.pss_str(division_design_info.pop("RewardStrings", None))
+        self._yearly_achievement_design_ids: str = _parse.pss_str(division_design_info.pop("YearlyAchievementDesignIds", None))
+        super().__init__(division_design_info)
 
     @property
     def background_sprite_id(self) -> int:
@@ -107,5 +110,6 @@ class DivisionDesignRaw:
                 "RewardStrings": self.reward_strings,
                 "YearlyAchievementDesignIds": self.yearly_achievement_design_ids,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

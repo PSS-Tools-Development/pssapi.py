@@ -10,48 +10,51 @@ from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
 
 
-class StarSystemMarkerRaw:
+from .entity_base_raw import EntityBaseRaw
+
+class StarSystemMarkerRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "StarSystemMarker"
 
     def __init__(self, star_system_marker_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._completion_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("CompletionDate"))
-        self._completion_original_value: int = _parse.pss_int(star_system_marker_info.get("CompletionOriginalValue"))
-        self._completion_remaining_value: int = _parse.pss_int(star_system_marker_info.get("CompletionRemainingValue"))
-        self._completion_value_type: str = _parse.pss_str(star_system_marker_info.get("CompletionValueType"))
-        self._cost_string: str = _parse.pss_str(star_system_marker_info.get("CostString"))
-        self._cost_type: str = _parse.pss_str(star_system_marker_info.get("CostType"))
-        self._description: str = _parse.pss_str(star_system_marker_info.get("Description"))
-        self._expiry_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("ExpiryDate"))
-        self._from_star_system_id: int = _parse.pss_int(star_system_marker_info.get("FromStarSystemId"))
-        self._is_collected: bool = _parse.pss_bool(star_system_marker_info.get("IsCollected"))
-        self._is_repeatable: bool = _parse.pss_bool(star_system_marker_info.get("IsRepeatable"))
-        self._last_update_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("LastUpdateDate"))
-        self._marker_design_id: int = _parse.pss_int(star_system_marker_info.get("MarkerDesignId"))
-        self._marker_flags: int = _parse.pss_int(star_system_marker_info.get("MarkerFlags"))
-        self._marker_type: str = _parse.pss_str(star_system_marker_info.get("MarkerType"))
-        self._metadata: str = _parse.pss_str(star_system_marker_info.get("Metadata"))
-        self._mission_design_id: int = _parse.pss_int(star_system_marker_info.get("MissionDesignId"))
-        self._mission_event_id: int = _parse.pss_int(star_system_marker_info.get("MissionEventId"))
-        self._movement_type: str = _parse.pss_str(star_system_marker_info.get("MovementType"))
-        self._next_star_system_id: int = _parse.pss_int(star_system_marker_info.get("NextStarSystemId"))
-        self._origin_next_star_system_id: int = _parse.pss_int(star_system_marker_info.get("OriginNextStarSystemId"))
-        self._origin_star_system_id: int = _parse.pss_int(star_system_marker_info.get("OriginStarSystemId"))
-        self._purchase_flags: int = _parse.pss_int(star_system_marker_info.get("PurchaseFlags"))
-        self._requirement_string: str = _parse.pss_str(star_system_marker_info.get("RequirementString"))
-        self._reward_string: str = _parse.pss_str(star_system_marker_info.get("RewardString"))
-        self._ship_id: int = _parse.pss_int(star_system_marker_info.get("ShipId"))
-        self._ship_ids: str = _parse.pss_str(star_system_marker_info.get("ShipIds"))
-        self._sprite_id: int = _parse.pss_int(star_system_marker_info.get("SpriteId"))
-        self._star_system_arrival_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("StarSystemArrivalDate"))
-        self._star_system_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemId"))
-        self._star_system_marker_generator_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemMarkerGeneratorId"))
-        self._star_system_marker_id: int = _parse.pss_int(star_system_marker_info.get("StarSystemMarkerId"))
-        self._title: str = _parse.pss_str(star_system_marker_info.get("Title"))
-        self._travel_cool_down_time: int = _parse.pss_int(star_system_marker_info.get("TravelCoolDownTime"))
-        self._travel_start_date: _datetime = _parse.pss_datetime(star_system_marker_info.get("TravelStartDate"))
-        self._travel_time_multiplier: int = _parse.pss_int(star_system_marker_info.get("TravelTimeMultiplier"))
-        self._user_id: int = _parse.pss_int(star_system_marker_info.get("UserId"))
+        self._completion_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("CompletionDate", None))
+        self._completion_original_value: int = _parse.pss_int(star_system_marker_info.pop("CompletionOriginalValue", None))
+        self._completion_remaining_value: int = _parse.pss_int(star_system_marker_info.pop("CompletionRemainingValue", None))
+        self._completion_value_type: str = _parse.pss_str(star_system_marker_info.pop("CompletionValueType", None))
+        self._cost_string: str = _parse.pss_str(star_system_marker_info.pop("CostString", None))
+        self._cost_type: str = _parse.pss_str(star_system_marker_info.pop("CostType", None))
+        self._description: str = _parse.pss_str(star_system_marker_info.pop("Description", None))
+        self._expiry_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("ExpiryDate", None))
+        self._from_star_system_id: int = _parse.pss_int(star_system_marker_info.pop("FromStarSystemId", None))
+        self._is_collected: bool = _parse.pss_bool(star_system_marker_info.pop("IsCollected", None))
+        self._is_repeatable: bool = _parse.pss_bool(star_system_marker_info.pop("IsRepeatable", None))
+        self._last_update_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("LastUpdateDate", None))
+        self._marker_design_id: int = _parse.pss_int(star_system_marker_info.pop("MarkerDesignId", None))
+        self._marker_flags: int = _parse.pss_int(star_system_marker_info.pop("MarkerFlags", None))
+        self._marker_type: str = _parse.pss_str(star_system_marker_info.pop("MarkerType", None))
+        self._metadata: str = _parse.pss_str(star_system_marker_info.pop("Metadata", None))
+        self._mission_design_id: int = _parse.pss_int(star_system_marker_info.pop("MissionDesignId", None))
+        self._mission_event_id: int = _parse.pss_int(star_system_marker_info.pop("MissionEventId", None))
+        self._movement_type: str = _parse.pss_str(star_system_marker_info.pop("MovementType", None))
+        self._next_star_system_id: int = _parse.pss_int(star_system_marker_info.pop("NextStarSystemId", None))
+        self._origin_next_star_system_id: int = _parse.pss_int(star_system_marker_info.pop("OriginNextStarSystemId", None))
+        self._origin_star_system_id: int = _parse.pss_int(star_system_marker_info.pop("OriginStarSystemId", None))
+        self._purchase_flags: int = _parse.pss_int(star_system_marker_info.pop("PurchaseFlags", None))
+        self._requirement_string: str = _parse.pss_str(star_system_marker_info.pop("RequirementString", None))
+        self._reward_string: str = _parse.pss_str(star_system_marker_info.pop("RewardString", None))
+        self._ship_id: int = _parse.pss_int(star_system_marker_info.pop("ShipId", None))
+        self._ship_ids: str = _parse.pss_str(star_system_marker_info.pop("ShipIds", None))
+        self._sprite_id: int = _parse.pss_int(star_system_marker_info.pop("SpriteId", None))
+        self._star_system_arrival_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("StarSystemArrivalDate", None))
+        self._star_system_id: int = _parse.pss_int(star_system_marker_info.pop("StarSystemId", None))
+        self._star_system_marker_generator_id: int = _parse.pss_int(star_system_marker_info.pop("StarSystemMarkerGeneratorId", None))
+        self._star_system_marker_id: int = _parse.pss_int(star_system_marker_info.pop("StarSystemMarkerId", None))
+        self._title: str = _parse.pss_str(star_system_marker_info.pop("Title", None))
+        self._travel_cool_down_time: int = _parse.pss_int(star_system_marker_info.pop("TravelCoolDownTime", None))
+        self._travel_start_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("TravelStartDate", None))
+        self._travel_time_multiplier: int = _parse.pss_int(star_system_marker_info.pop("TravelTimeMultiplier", None))
+        self._user_id: int = _parse.pss_int(star_system_marker_info.pop("UserId", None))
+        super().__init__(star_system_marker_info)
 
     @property
     def completion_date(self) -> _datetime:
@@ -283,5 +286,6 @@ class StarSystemMarkerRaw:
                 "TravelTimeMultiplier": self.travel_time_multiplier,
                 "UserId": self.user_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict
