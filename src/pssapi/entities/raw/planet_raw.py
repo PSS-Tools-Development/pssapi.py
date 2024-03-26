@@ -6,9 +6,8 @@ from typing import Any as _Any
 from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
-
-
 from .entity_base_raw import EntityBaseRaw
+
 
 class PlanetRaw(EntityBaseRaw):
     XML_NODE_NAME: str = "Planet"

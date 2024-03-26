@@ -1,4 +1,5 @@
 from abc import ABC as _ABC
+
 from ...types import EntityInfo as _EntityInfo
 
 
