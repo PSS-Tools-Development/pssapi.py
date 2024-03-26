@@ -11,54 +11,56 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class RoomRaw:
+class RoomRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Room"
 
     def __init__(self, room_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._assigned_power: int = _parse.pss_int(room_info.get("AssignedPower"))
-        self._capacity_used: int = _parse.pss_int(room_info.get("CapacityUsed"))
-        self._center_x: int = _parse.pss_int(room_info.get("CenterX"))
-        self._center_y: int = _parse.pss_int(room_info.get("CenterY"))
-        self._column: int = _parse.pss_int(room_info.get("Column"))
-        self._construction_start_date: _datetime = _parse.pss_datetime(room_info.get("ConstructionStartDate"))
-        self._current_capacity: int = _parse.pss_int(room_info.get("CurrentCapacity"))
-        self._current_skin_key: int = _parse.pss_int(room_info.get("CurrentSkinKey"))
-        self._disable_count: int = _parse.pss_int(room_info.get("DisableCount"))
-        self._is_power_ai_active: bool = _parse.pss_bool(room_info.get("IsPowerAIActive"))
-        self._is_set_item_ai_active: bool = _parse.pss_bool(room_info.get("IsSetItemAIActive"))
-        self._is_target_ai_active: bool = _parse.pss_bool(room_info.get("IsTargetAIActive"))
-        self._item_ids: str = _parse.pss_str(room_info.get("ItemIds"))
-        self._item_skin_key: int = _parse.pss_int(room_info.get("ItemSkinKey"))
-        self._local_center_x: int = _parse.pss_int(room_info.get("LocalCenterX"))
-        self._local_center_y: int = _parse.pss_int(room_info.get("LocalCenterY"))
-        self._manufacture_start_date: _datetime = _parse.pss_datetime(room_info.get("ManufactureStartDate"))
-        self._manufacture_string: str = _parse.pss_str(room_info.get("ManufactureString"))
-        self._manufactured: int = _parse.pss_int(room_info.get("Manufactured"))
-        self._power_generated: int = _parse.pss_int(room_info.get("PowerGenerated"))
-        self._previous_skin_key: int = _parse.pss_int(room_info.get("PreviousSkinKey"))
-        self._progress: int = _parse.pss_int(room_info.get("Progress"))
-        self._protect_room_frame: int = _parse.pss_int(room_info.get("ProtectRoomFrame"))
-        self._random_seed: int = _parse.pss_int(room_info.get("RandomSeed"))
-        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.get("RoomActions")[0].get("RoomAction")] if room_info.get("RoomActions") else []
-        self._room_design_id: int = _parse.pss_int(room_info.get("RoomDesignId"))
-        self._room_id: int = _parse.pss_int(room_info.get("RoomId"))
-        self._room_status: str = _parse.pss_str(room_info.get("RoomStatus"))
-        self._row: int = _parse.pss_int(room_info.get("Row"))
-        self._run_room_action: bool = _parse.pss_bool(room_info.get("RunRoomAction"))
-        self._salvage_string: str = _parse.pss_str(room_info.get("SalvageString"))
-        self._ship_id: int = _parse.pss_int(room_info.get("ShipId"))
-        self._skin_key: int = _parse.pss_int(room_info.get("SkinKey"))
-        self._system_power: int = _parse.pss_int(room_info.get("SystemPower"))
-        self._target_craft_id: int = _parse.pss_int(room_info.get("TargetCraftId"))
-        self._target_manufacture_string: str = _parse.pss_str(room_info.get("TargetManufactureString"))
-        self._target_room_id: int = _parse.pss_int(room_info.get("TargetRoomId"))
-        self._top_left_x: int = _parse.pss_int(room_info.get("TopLeftX"))
-        self._top_left_y: int = _parse.pss_int(room_info.get("TopLeftY"))
-        self._total_damage: int = _parse.pss_int(room_info.get("TotalDamage"))
-        self._upgrade_room_design_id: int = _parse.pss_int(room_info.get("UpgradeRoomDesignId"))
+        self._assigned_power: int = _parse.pss_int(room_info.pop("AssignedPower", None))
+        self._capacity_used: int = _parse.pss_int(room_info.pop("CapacityUsed", None))
+        self._center_x: int = _parse.pss_int(room_info.pop("CenterX", None))
+        self._center_y: int = _parse.pss_int(room_info.pop("CenterY", None))
+        self._column: int = _parse.pss_int(room_info.pop("Column", None))
+        self._construction_start_date: _datetime = _parse.pss_datetime(room_info.pop("ConstructionStartDate", None))
+        self._current_capacity: int = _parse.pss_int(room_info.pop("CurrentCapacity", None))
+        self._current_skin_key: int = _parse.pss_int(room_info.pop("CurrentSkinKey", None))
+        self._disable_count: int = _parse.pss_int(room_info.pop("DisableCount", None))
+        self._is_power_ai_active: bool = _parse.pss_bool(room_info.pop("IsPowerAIActive", None))
+        self._is_set_item_ai_active: bool = _parse.pss_bool(room_info.pop("IsSetItemAIActive", None))
+        self._is_target_ai_active: bool = _parse.pss_bool(room_info.pop("IsTargetAIActive", None))
+        self._item_ids: str = _parse.pss_str(room_info.pop("ItemIds", None))
+        self._item_skin_key: int = _parse.pss_int(room_info.pop("ItemSkinKey", None))
+        self._local_center_x: int = _parse.pss_int(room_info.pop("LocalCenterX", None))
+        self._local_center_y: int = _parse.pss_int(room_info.pop("LocalCenterY", None))
+        self._manufacture_start_date: _datetime = _parse.pss_datetime(room_info.pop("ManufactureStartDate", None))
+        self._manufacture_string: str = _parse.pss_str(room_info.pop("ManufactureString", None))
+        self._manufactured: int = _parse.pss_int(room_info.pop("Manufactured", None))
+        self._power_generated: int = _parse.pss_int(room_info.pop("PowerGenerated", None))
+        self._previous_skin_key: int = _parse.pss_int(room_info.pop("PreviousSkinKey", None))
+        self._progress: int = _parse.pss_int(room_info.pop("Progress", None))
+        self._protect_room_frame: int = _parse.pss_int(room_info.pop("ProtectRoomFrame", None))
+        self._random_seed: int = _parse.pss_int(room_info.pop("RandomSeed", None))
+        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.pop("RoomActions")[0].get("RoomAction")] if room_info.get("RoomActions") else []
+        self._room_design_id: int = _parse.pss_int(room_info.pop("RoomDesignId", None))
+        self._room_id: int = _parse.pss_int(room_info.pop("RoomId", None))
+        self._room_status: str = _parse.pss_str(room_info.pop("RoomStatus", None))
+        self._row: int = _parse.pss_int(room_info.pop("Row", None))
+        self._run_room_action: bool = _parse.pss_bool(room_info.pop("RunRoomAction", None))
+        self._salvage_string: str = _parse.pss_str(room_info.pop("SalvageString", None))
+        self._ship_id: int = _parse.pss_int(room_info.pop("ShipId", None))
+        self._skin_key: int = _parse.pss_int(room_info.pop("SkinKey", None))
+        self._system_power: int = _parse.pss_int(room_info.pop("SystemPower", None))
+        self._target_craft_id: int = _parse.pss_int(room_info.pop("TargetCraftId", None))
+        self._target_manufacture_string: str = _parse.pss_str(room_info.pop("TargetManufactureString", None))
+        self._target_room_id: int = _parse.pss_int(room_info.pop("TargetRoomId", None))
+        self._top_left_x: int = _parse.pss_int(room_info.pop("TopLeftX", None))
+        self._top_left_y: int = _parse.pss_int(room_info.pop("TopLeftY", None))
+        self._total_damage: int = _parse.pss_int(room_info.pop("TotalDamage", None))
+        self._upgrade_room_design_id: int = _parse.pss_int(room_info.pop("UpgradeRoomDesignId", None))
+        super().__init__(room_info)
 
     @property
     def assigned_power(self) -> int:
@@ -314,5 +316,6 @@ class RoomRaw:
                 "TotalDamage": self.total_damage,
                 "UpgradeRoomDesignId": self.upgrade_room_design_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

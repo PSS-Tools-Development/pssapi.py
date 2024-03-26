@@ -8,32 +8,34 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class SkinRaw:
+class SkinRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Skin"
 
     def __init__(self, skin_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._animation_id: int = _parse.pss_int(skin_info.get("AnimationId"))
-        self._approval_flags: str = _parse.pss_str(skin_info.get("ApprovalFlags"))
-        self._date_updated: _datetime = _parse.pss_datetime(skin_info.get("DateUpdated"))
-        self._flags: int = _parse.pss_int(skin_info.get("Flags"))
-        self._metadata: str = _parse.pss_str(skin_info.get("Metadata"))
-        self._original_animation_id: int = _parse.pss_int(skin_info.get("OriginalAnimationId"))
-        self._original_sprite_id: int = _parse.pss_int(skin_info.get("OriginalSpriteId"))
-        self._race_id: int = _parse.pss_int(skin_info.get("RaceId"))
-        self._reference_id: int = _parse.pss_int(skin_info.get("ReferenceId"))
-        self._requirement_string: str = _parse.pss_str(skin_info.get("RequirementString"))
-        self._root_id: int = _parse.pss_int(skin_info.get("RootId"))
-        self._skin_description: str = _parse.pss_str(skin_info.get("SkinDescription"))
-        self._skin_id: int = _parse.pss_int(skin_info.get("SkinId"))
-        self._skin_name: str = _parse.pss_str(skin_info.get("SkinName"))
-        self._skin_set_id: int = _parse.pss_int(skin_info.get("SkinSetId"))
-        self._skin_type: str = _parse.pss_str(skin_info.get("SkinType"))
-        self._sprite_id: int = _parse.pss_int(skin_info.get("SpriteId"))
-        self._sprite_type: str = _parse.pss_str(skin_info.get("SpriteType"))
-        self._user_id: int = _parse.pss_int(skin_info.get("UserId"))
+        self._animation_id: int = _parse.pss_int(skin_info.pop("AnimationId", None))
+        self._approval_flags: str = _parse.pss_str(skin_info.pop("ApprovalFlags", None))
+        self._date_updated: _datetime = _parse.pss_datetime(skin_info.pop("DateUpdated", None))
+        self._flags: int = _parse.pss_int(skin_info.pop("Flags", None))
+        self._metadata: str = _parse.pss_str(skin_info.pop("Metadata", None))
+        self._original_animation_id: int = _parse.pss_int(skin_info.pop("OriginalAnimationId", None))
+        self._original_sprite_id: int = _parse.pss_int(skin_info.pop("OriginalSpriteId", None))
+        self._race_id: int = _parse.pss_int(skin_info.pop("RaceId", None))
+        self._reference_id: int = _parse.pss_int(skin_info.pop("ReferenceId", None))
+        self._requirement_string: str = _parse.pss_str(skin_info.pop("RequirementString", None))
+        self._root_id: int = _parse.pss_int(skin_info.pop("RootId", None))
+        self._skin_description: str = _parse.pss_str(skin_info.pop("SkinDescription", None))
+        self._skin_id: int = _parse.pss_int(skin_info.pop("SkinId", None))
+        self._skin_name: str = _parse.pss_str(skin_info.pop("SkinName", None))
+        self._skin_set_id: int = _parse.pss_int(skin_info.pop("SkinSetId", None))
+        self._skin_type: str = _parse.pss_str(skin_info.pop("SkinType", None))
+        self._sprite_id: int = _parse.pss_int(skin_info.pop("SpriteId", None))
+        self._sprite_type: str = _parse.pss_str(skin_info.pop("SpriteType", None))
+        self._user_id: int = _parse.pss_int(skin_info.pop("UserId", None))
+        super().__init__(skin_info)
 
     @property
     def animation_id(self) -> int:
@@ -157,5 +159,6 @@ class SkinRaw:
                 "SpriteType": self.sprite_type,
                 "UserId": self.user_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -8,18 +8,20 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class HistoryRaw:
+class HistoryRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "History"
 
     def __init__(self, history_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._argument: int = _parse.pss_int(history_info.get("Argument"))
-        self._date: _datetime = _parse.pss_datetime(history_info.get("Date"))
-        self._history_id: int = _parse.pss_int(history_info.get("HistoryId"))
-        self._history_type: str = _parse.pss_str(history_info.get("HistoryType"))
-        self._value: int = _parse.pss_int(history_info.get("Value"))
+        self._argument: int = _parse.pss_int(history_info.pop("Argument", None))
+        self._date: _datetime = _parse.pss_datetime(history_info.pop("Date", None))
+        self._history_id: int = _parse.pss_int(history_info.pop("HistoryId", None))
+        self._history_type: str = _parse.pss_str(history_info.pop("HistoryType", None))
+        self._value: int = _parse.pss_int(history_info.pop("Value", None))
+        super().__init__(history_info)
 
     @property
     def argument(self) -> int:
@@ -59,5 +61,6 @@ class HistoryRaw:
                 "HistoryType": self.history_type,
                 "Value": self.value,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict
