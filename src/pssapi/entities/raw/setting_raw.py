@@ -136,6 +136,7 @@ class SettingRaw(_EntityBaseRaw):
         self._ship_design_version: int = _parse.pss_int(setting_info.pop("ShipDesignVersion", None))
         self._situation_design_version: int = _parse.pss_int(setting_info.pop("SituationDesignVersion", None))
         self._situation_tags: str = _parse.pss_str(setting_info.pop("SituationTags", None))
+        self._skin_set_version: int = _parse.pss_int(setting_info.pop("SkinSetVersion", None))
         self._skin_version: int = _parse.pss_int(setting_info.pop("SkinVersion", None))
         self._sprite_version: int = _parse.pss_int(setting_info.pop("SpriteVersion", None))
         self._star_system_link_version: int = _parse.pss_int(setting_info.pop("StarSystemLinkVersion", None))
@@ -635,6 +636,10 @@ class SettingRaw(_EntityBaseRaw):
         return self._situation_tags
 
     @property
+    def skin_set_version(self) -> int:
+        return self._skin_set_version
+
+    @property
     def skin_version(self) -> int:
         return self._skin_version
 
@@ -820,6 +825,7 @@ class SettingRaw(_EntityBaseRaw):
             self.ship_design_version,
             self.situation_design_version,
             self.situation_tags,
+            self.skin_set_version,
             self.skin_version,
             self.sprite_version,
             self.star_system_link_version,
@@ -961,6 +967,7 @@ class SettingRaw(_EntityBaseRaw):
                 "ShipDesignVersion": self.ship_design_version,
                 "SituationDesignVersion": self.situation_design_version,
                 "SituationTags": self.situation_tags,
+                "SkinSetVersion": self.skin_set_version,
                 "SkinVersion": self.skin_version,
                 "SpriteVersion": self.sprite_version,
                 "StarSystemLinkVersion": self.star_system_link_version,

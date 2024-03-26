@@ -14,6 +14,7 @@ class PlanetRaw(_EntityBaseRaw):
 
     def __init__(self, planet_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        super().__init__(planet_info)
 
     def _key(self):
         return tuple()
