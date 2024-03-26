@@ -6,10 +6,10 @@ from typing import Any as _Any
 from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class PlanetRaw(EntityBaseRaw):
+class PlanetRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Planet"
 
     def __init__(self, planet_info: _EntityInfo) -> None:

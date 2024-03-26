@@ -10,10 +10,10 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class ListFriendsRaw(EntityBaseRaw):
+class ListFriendsRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "ListFriends"
 
     def __init__(self, list_friends_info: _EntityInfo) -> None:

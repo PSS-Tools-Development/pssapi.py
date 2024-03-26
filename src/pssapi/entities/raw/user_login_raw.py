@@ -10,10 +10,10 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class UserLoginRaw(EntityBaseRaw):
+class UserLoginRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "UserLogin"
 
     def __init__(self, user_login_info: _EntityInfo) -> None:

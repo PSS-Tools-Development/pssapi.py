@@ -7,10 +7,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class ConditionTypeRaw(EntityBaseRaw):
+class ConditionTypeRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "ConditionType"
 
     def __init__(self, condition_type_info: _EntityInfo) -> None:

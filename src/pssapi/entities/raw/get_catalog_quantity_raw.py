@@ -7,10 +7,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class GetCatalogQuantityRaw(EntityBaseRaw):
+class GetCatalogQuantityRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "GetCatalogQuantity"
 
     def __init__(self, get_catalog_quantity_info: _EntityInfo) -> None:

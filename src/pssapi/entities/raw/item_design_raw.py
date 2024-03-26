@@ -7,10 +7,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class ItemDesignRaw(EntityBaseRaw):
+class ItemDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "ItemDesign"
 
     def __init__(self, item_design_info: _EntityInfo) -> None:

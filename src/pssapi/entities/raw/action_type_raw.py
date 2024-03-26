@@ -7,10 +7,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class ActionTypeRaw(EntityBaseRaw):
+class ActionTypeRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "ActionType"
 
     def __init__(self, action_type_info: _EntityInfo) -> None:

@@ -10,10 +10,10 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class CharacterDesignRaw(EntityBaseRaw):
+class CharacterDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "CharacterDesign"
 
     def __init__(self, character_design_info: _EntityInfo) -> None:

@@ -7,10 +7,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class GetCurrentResourcesRaw(EntityBaseRaw):
+class GetCurrentResourcesRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "GetCurrentResources"
 
     def __init__(self, get_current_resources_info: _EntityInfo) -> None:

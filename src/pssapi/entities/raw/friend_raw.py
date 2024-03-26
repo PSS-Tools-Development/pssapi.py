@@ -8,10 +8,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class FriendRaw(EntityBaseRaw):
+class FriendRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Friend"
 
     def __init__(self, friend_info: _EntityInfo) -> None:

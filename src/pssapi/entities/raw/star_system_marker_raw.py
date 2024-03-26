@@ -8,10 +8,10 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw
+from .entity_base_raw import EntityBaseRaw as EntityBaseRaw
 
 
-class StarSystemMarkerRaw(EntityBaseRaw):
+class StarSystemMarkerRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "StarSystemMarker"
 
     def __init__(self, star_system_marker_info: _EntityInfo) -> None:
