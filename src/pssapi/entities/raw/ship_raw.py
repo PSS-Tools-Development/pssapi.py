@@ -22,19 +22,19 @@ class ShipRaw(_EntityBaseRaw):
         self._brightness_value: float = _parse.pss_float(ship_info.pop("BrightnessValue", None))
         self._center_x: int = _parse.pss_int(ship_info.pop("CenterX", None))
         self._center_y: int = _parse.pss_int(ship_info.pop("CenterY", None))
-        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.pop("Characters")[0].get("Character")] if ship_info.get("Characters") else []
+        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.pop("Characters")[0].get("Character", [])] if ship_info.get("Characters") else []
         self._from_star_system_id: int = _parse.pss_int(ship_info.pop("FromStarSystemId", None))
         self._hp: float = _parse.pss_float(ship_info.pop("Hp", None))
         self._hue_value: float = _parse.pss_float(ship_info.pop("HueValue", None))
         self._immunity_date: _datetime = _parse.pss_datetime(ship_info.pop("ImmunityDate", None))
-        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.pop("Items")[0].get("Item")] if ship_info.get("Items") else []
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.pop("Items")[0].get("Item", [])] if ship_info.get("Items") else []
         self._next_android_character_id: int = _parse.pss_int(ship_info.pop("NextAndroidCharacterId", None))
         self._next_star_system_id: int = _parse.pss_int(ship_info.pop("NextStarSystemId", None))
         self._origin_next_star_system_id: int = _parse.pss_int(ship_info.pop("OriginNextStarSystemId", None))
         self._origin_star_system_id: int = _parse.pss_int(ship_info.pop("OriginStarSystemId", None))
         self._original_race_id: int = _parse.pss_int(ship_info.pop("OriginalRaceId", None))
         self._power_score: int = _parse.pss_int(ship_info.pop("PowerScore", None))
-        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.pop("Rooms")[0].get("Room")] if ship_info.get("Rooms") else []
+        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.pop("Rooms")[0].get("Room", [])] if ship_info.get("Rooms") else []
         self._salvage_argument: int = _parse.pss_int(ship_info.pop("SalvageArgument", None))
         self._saturation_value: float = _parse.pss_float(ship_info.pop("SaturationValue", None))
         self._shield: int = _parse.pss_int(ship_info.pop("Shield", None))
@@ -59,7 +59,7 @@ class ShipRaw(_EntityBaseRaw):
         self._upgrade_start_date: _datetime = _parse.pss_datetime(ship_info.pop("UpgradeStartDate", None))
         self._user_id: int = _parse.pss_int(ship_info.pop("UserId", None))
         self._user_star_systems: _List[_entities.UserStarSystem] = (
-            [_entities.UserStarSystem(child_info) for child_info in ship_info.pop("UserStarSystems")[0].get("UserStarSystem")] if ship_info.get("UserStarSystems") else []
+            [_entities.UserStarSystem(child_info) for child_info in ship_info.pop("UserStarSystems")[0].get("UserStarSystem", [])] if ship_info.get("UserStarSystems") else []
         )
         super().__init__(ship_info)
 

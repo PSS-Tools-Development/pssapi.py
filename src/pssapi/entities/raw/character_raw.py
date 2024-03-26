@@ -25,7 +25,7 @@ class CharacterRaw(_EntityBaseRaw):
         self._battle_character_hp: int = _parse.pss_int(character_info.pop("BattleCharacterHp", None))
         self._bloodlust_frame: int = _parse.pss_int(character_info.pop("BloodlustFrame", None))
         self._character_actions: _List[_entities.CharacterAction] = (
-            [_entities.CharacterAction(child_info) for child_info in character_info.pop("CharacterActions")[0].get("CharacterAction")] if character_info.get("CharacterActions") else []
+            [_entities.CharacterAction(child_info) for child_info in character_info.pop("CharacterActions")[0].get("CharacterAction", [])] if character_info.get("CharacterActions") else []
         )
         self._character_design_id: int = _parse.pss_int(character_info.pop("CharacterDesignId", None))
         self._character_id: int = _parse.pss_int(character_info.pop("CharacterId", None))
@@ -39,7 +39,7 @@ class CharacterRaw(_EntityBaseRaw):
         self._invulnerability_frame: int = _parse.pss_int(character_info.pop("InvulnerabilityFrame", None))
         self._is_new: bool = _parse.pss_bool(character_info.pop("IsNew", None))
         self._item_ids: str = _parse.pss_str(character_info.pop("ItemIds", None))
-        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in character_info.pop("Items")[0].get("Item")] if character_info.get("Items") else []
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in character_info.pop("Items")[0].get("Item", [])] if character_info.get("Items") else []
         self._level: int = _parse.pss_int(character_info.pop("Level", None))
         self._origin_room_id: int = _parse.pss_int(character_info.pop("OriginRoomId", None))
         self._owner_ship_id: int = _parse.pss_int(character_info.pop("OwnerShipId", None))

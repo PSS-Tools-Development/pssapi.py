@@ -27,7 +27,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
         self._character_head_part_id: int = _parse.pss_int(character_design_info.pop("CharacterHeadPartId", None))
         self._character_leg_part_id: int = _parse.pss_int(character_design_info.pop("CharacterLegPartId", None))
         self._character_parts: _List[_entities.CharacterPart] = (
-            [_entities.CharacterPart(child_info) for child_info in character_design_info.pop("CharacterParts")[0].get("CharacterPart")] if character_design_info.get("CharacterParts") else []
+            [_entities.CharacterPart(child_info) for child_info in character_design_info.pop("CharacterParts")[0].get("CharacterPart", [])] if character_design_info.get("CharacterParts") else []
         )
         self._collection_design_id: int = _parse.pss_int(character_design_info.pop("CollectionDesignId", None))
         self._engine: float = _parse.pss_float(character_design_info.pop("Engine", None))
