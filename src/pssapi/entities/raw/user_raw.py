@@ -21,7 +21,7 @@ class UserRaw(EntityBaseRaw):
         self._dict: _Dict[str, _Any] = {}
         self._activated_promotions: str = _parse.pss_str(user_info.pop("ActivatedPromotions", None))
         self._ads_platform_user_id: str = _parse.pss_str(user_info.pop("AdsPlatformUserId", None))
-        self._alliance: _entities.Alliance = _entities.Alliance(user_info.get("Alliance")[0]) if user_info.get("Alliance", []) else None
+        self._alliance: _entities.Alliance = _entities.Alliance(user_info.pop("Alliance")[0]) if user_info.get("Alliance", []) else None
         self._alliance_id: int = _parse.pss_int(user_info.pop("AllianceId", None))
         self._alliance_join_date: _datetime = _parse.pss_datetime(user_info.pop("AllianceJoinDate", None))
         self._alliance_membership: str = _parse.pss_str(user_info.pop("AllianceMembership", None))
@@ -123,7 +123,7 @@ class UserRaw(EntityBaseRaw):
         self._unread_message_count: str = _parse.pss_str(user_info.pop("UnreadMessageCount", None))
         self._update_date: _datetime = _parse.pss_datetime(user_info.pop("UpdateDate", None))
         self._used_reward_points: int = _parse.pss_int(user_info.pop("UsedRewardPoints", None))
-        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.get("UserSeason")[0]) if user_info.get("UserSeason", []) else None
+        self._user_season: _entities.UserSeason = _entities.UserSeason(user_info.pop("UserSeason")[0]) if user_info.get("UserSeason", []) else None
         self._user_source_ads_platform_type: str = _parse.pss_str(user_info.pop("UserSourceAdsPlatformType", None))
         self._user_type: str = _parse.pss_str(user_info.pop("UserType", None))
         self._vip_expiry_date: _datetime = _parse.pss_datetime(user_info.pop("VipExpiryDate", None))

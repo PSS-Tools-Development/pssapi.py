@@ -44,7 +44,7 @@ class RoomRaw(EntityBaseRaw):
         self._progress: int = _parse.pss_int(room_info.pop("Progress", None))
         self._protect_room_frame: int = _parse.pss_int(room_info.pop("ProtectRoomFrame", None))
         self._random_seed: int = _parse.pss_int(room_info.pop("RandomSeed", None))
-        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.get("RoomActions")] if room_info.get("RoomActions") else []
+        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.pop("RoomActions")] if room_info.get("RoomActions") else []
         self._room_design_id: int = _parse.pss_int(room_info.pop("RoomDesignId", None))
         self._room_id: int = _parse.pss_int(room_info.pop("RoomId", None))
         self._room_status: str = _parse.pss_str(room_info.pop("RoomStatus", None))
