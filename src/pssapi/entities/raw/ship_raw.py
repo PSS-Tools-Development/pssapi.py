@@ -58,7 +58,9 @@ class ShipRaw(_EntityBaseRaw):
         self._upgrade_ship_design_id: int = _parse.pss_int(ship_info.pop("UpgradeShipDesignId", None))
         self._upgrade_start_date: _datetime = _parse.pss_datetime(ship_info.pop("UpgradeStartDate", None))
         self._user_id: int = _parse.pss_int(ship_info.pop("UserId", None))
-        self._user_star_systems: _List[_entities.UserStarSystem] = [_entities.UserStarSystem(child_info) for child_info in ship_info.pop("UserStarSystems")[0].get("UserStarSystem")] if ship_info.get("UserStarSystems") else []
+        self._user_star_systems: _List[_entities.UserStarSystem] = (
+            [_entities.UserStarSystem(child_info) for child_info in ship_info.pop("UserStarSystems")[0].get("UserStarSystem")] if ship_info.get("UserStarSystems") else []
+        )
         super().__init__(ship_info)
 
     @property
