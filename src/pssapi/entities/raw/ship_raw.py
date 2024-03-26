@@ -21,19 +21,19 @@ class ShipRaw:
         self._brightness_value: float = _parse.pss_float(ship_info.get("BrightnessValue"))
         self._center_x: int = _parse.pss_int(ship_info.get("CenterX"))
         self._center_y: int = _parse.pss_int(ship_info.get("CenterY"))
-        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.get("Characters")] if ship_info.get("Characters") else []
+        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.get("Characters")[0].get("Character")] if ship_info.get("Characters") else []
         self._from_star_system_id: int = _parse.pss_int(ship_info.get("FromStarSystemId"))
         self._hp: float = _parse.pss_float(ship_info.get("Hp"))
         self._hue_value: float = _parse.pss_float(ship_info.get("HueValue"))
         self._immunity_date: _datetime = _parse.pss_datetime(ship_info.get("ImmunityDate"))
-        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.get("Items")] if ship_info.get("Items") else []
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.get("Items")[0].get("Item")] if ship_info.get("Items") else []
         self._next_android_character_id: int = _parse.pss_int(ship_info.get("NextAndroidCharacterId"))
         self._next_star_system_id: int = _parse.pss_int(ship_info.get("NextStarSystemId"))
         self._origin_next_star_system_id: int = _parse.pss_int(ship_info.get("OriginNextStarSystemId"))
         self._origin_star_system_id: int = _parse.pss_int(ship_info.get("OriginStarSystemId"))
         self._original_race_id: int = _parse.pss_int(ship_info.get("OriginalRaceId"))
         self._power_score: int = _parse.pss_int(ship_info.get("PowerScore"))
-        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.get("Rooms")] if ship_info.get("Rooms") else []
+        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.get("Rooms")[0].get("Room")] if ship_info.get("Rooms") else []
         self._salvage_argument: int = _parse.pss_int(ship_info.get("SalvageArgument"))
         self._saturation_value: float = _parse.pss_float(ship_info.get("SaturationValue"))
         self._shield: int = _parse.pss_int(ship_info.get("Shield"))
@@ -57,7 +57,9 @@ class ShipRaw:
         self._upgrade_ship_design_id: int = _parse.pss_int(ship_info.get("UpgradeShipDesignId"))
         self._upgrade_start_date: _datetime = _parse.pss_datetime(ship_info.get("UpgradeStartDate"))
         self._user_id: int = _parse.pss_int(ship_info.get("UserId"))
-        self._user_star_systems: _List[_entities.UserStarSystem] = [_entities.UserStarSystem(child_info) for child_info in ship_info.get("UserStarSystems")] if ship_info.get("UserStarSystems") else []
+        self._user_star_systems: _List[_entities.UserStarSystem] = (
+            [_entities.UserStarSystem(child_info) for child_info in ship_info.get("UserStarSystems")[0].get("UserStarSystem")] if ship_info.get("UserStarSystems") else []
+        )
 
     @property
     def brightness_value(self) -> float:

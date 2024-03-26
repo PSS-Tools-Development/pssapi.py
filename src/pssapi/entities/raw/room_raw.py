@@ -42,7 +42,7 @@ class RoomRaw:
         self._progress: int = _parse.pss_int(room_info.get("Progress"))
         self._protect_room_frame: int = _parse.pss_int(room_info.get("ProtectRoomFrame"))
         self._random_seed: int = _parse.pss_int(room_info.get("RandomSeed"))
-        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.get("RoomActions")] if room_info.get("RoomActions") else []
+        self._room_actions: _List[_entities.RoomAction] = [_entities.RoomAction(child_info) for child_info in room_info.get("RoomActions")[0].get("RoomAction")] if room_info.get("RoomActions") else []
         self._room_design_id: int = _parse.pss_int(room_info.get("RoomDesignId"))
         self._room_id: int = _parse.pss_int(room_info.get("RoomId"))
         self._room_status: str = _parse.pss_str(room_info.get("RoomStatus"))

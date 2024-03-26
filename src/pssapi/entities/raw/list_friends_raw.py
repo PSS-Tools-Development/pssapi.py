@@ -17,7 +17,7 @@ class ListFriendsRaw:
 
     def __init__(self, list_friends_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._friends: _List[_entities.Friend] = [_entities.Friend(child_info) for child_info in list_friends_info.get("Friends")] if list_friends_info.get("Friends") else []
+        self._friends: _List[_entities.Friend] = [_entities.Friend(child_info) for child_info in list_friends_info.get("Friends")[0].get("Friend")] if list_friends_info.get("Friends") else []
         self._user_id: int = _parse.pss_int(list_friends_info.get("UserId"))
 
     @property
