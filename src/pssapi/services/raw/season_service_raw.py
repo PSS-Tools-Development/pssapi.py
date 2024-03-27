@@ -18,5 +18,7 @@ LIST_ALL_SEASON_DESIGNS_BASE_PATH: str = "SeasonService/ListAllSeasonDesigns"
 
 async def list_all_season_designs(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_SeasonDesign]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_SeasonDesign, "SeasonDesigns", True),), "SeasonDesigns", production_server, LIST_ALL_SEASON_DESIGNS_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(
+        ((_SeasonDesign, "SeasonDesigns", True),), "SeasonDesigns", production_server, LIST_ALL_SEASON_DESIGNS_BASE_PATH, "GET", response_gzipped=False, **params
+    )
     return result

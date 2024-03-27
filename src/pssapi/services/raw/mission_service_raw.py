@@ -33,6 +33,7 @@ async def create_mission_2(
         production_server,
         CREATE_MISSION_2_BASE_PATH,
         "POST",
+        response_gzipped=False,
         **params,
     )
     return result
@@ -40,13 +41,15 @@ async def create_mission_2(
 
 async def list_all_mission_designs_4(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_MissionDesign]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_MissionDesign, "MissionDesigns", True),), "MissionDesigns", production_server, LIST_ALL_MISSION_DESIGNS_4_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(
+        ((_MissionDesign, "MissionDesigns", True),), "MissionDesigns", production_server, LIST_ALL_MISSION_DESIGNS_4_BASE_PATH, "GET", response_gzipped=False, **params
+    )
     return result
 
 
 async def select_event_2(production_server: str, access_token: str, battle_id: int, checksum: str, client_date_time: str, mission_event_id: int, **params) -> _Battle:
     params = {"accessToken": access_token, "battleId": battle_id, "checksum": checksum, "clientDateTime": client_date_time, "missionEventId": mission_event_id, **params}
-    result = await _core.get_entities_from_path(((_Battle, "Battle", False),), "SelectEvent", production_server, SELECT_EVENT_2_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(((_Battle, "Battle", False),), "SelectEvent", production_server, SELECT_EVENT_2_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
@@ -54,5 +57,7 @@ async def select_event_3(
     production_server: str, access_token: str, battle_id: int, checksum: str, client_date_time: str, client_number: int, mission_event_id: int, **params
 ) -> _Tuple[_Battle, _User]:
     params = {"accessToken": access_token, "battleId": battle_id, "checksum": checksum, "clientDateTime": client_date_time, "clientNumber": client_number, "missionEventId": mission_event_id, **params}
-    result = await _core.get_entities_from_path(((_Battle, "Battle", False), (_User, "User", False)), "SelectEvent", production_server, SELECT_EVENT_3_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(
+        ((_Battle, "Battle", False), (_User, "User", False)), "SelectEvent", production_server, SELECT_EVENT_3_BASE_PATH, "POST", response_gzipped=False, **params
+    )
     return result

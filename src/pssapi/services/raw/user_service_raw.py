@@ -39,19 +39,19 @@ USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH: str = "UserService/UserEmailPasswordA
 
 async def accept_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AcceptFriendRequest", production_server, ACCEPT_FRIEND_REQUEST_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AcceptFriendRequest", production_server, ACCEPT_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
 async def add_friend_2(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AddFriend", production_server, ADD_FRIEND_2_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AddFriend", production_server, ADD_FRIEND_2_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
 async def decline_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "DeclineFriendRequest", production_server, DECLINE_FRIEND_REQUEST_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "DeclineFriendRequest", production_server, DECLINE_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
@@ -80,7 +80,7 @@ async def device_login_11(
         "signal": signal,
         **params,
     }
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", **params)
+    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
@@ -124,7 +124,9 @@ async def device_login_12(
         **params,
     }
     content = _core.create_request_content(__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_12_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_12_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 
@@ -171,7 +173,9 @@ async def device_login_15(
         **params,
     }
     content = _core.create_request_content(__DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_15_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_15_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 
@@ -180,24 +184,24 @@ __DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","Advert
 
 async def list_friends(production_server: str, user_id: int, access_token: str, **params) -> _ListFriends:
     params = {"UserId": user_id, "accessToken": access_token, **params}
-    result = await _core.get_entities_from_path(((_ListFriends, "ListFriends", False),), "UserService", production_server, LIST_FRIENDS_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_ListFriends, "ListFriends", False),), "UserService", production_server, LIST_FRIENDS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def list_skins(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def remove_friend(production_server: str, access_token: str, friend_user_id: int, **params) -> None:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    await _core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", **params)
+    await _core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", response_gzipped=False, **params)
 
 
 async def search_users(production_server: str, search_string: str, **params) -> _List[_User]:
     params = {"searchString": search_string, **params}
-    result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, SEARCH_USERS_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, SEARCH_USERS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
@@ -243,7 +247,9 @@ async def steam_login_3(
         **params,
     }
     content = _core.create_request_content(__STEAM_LOGIN_3_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_3_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_3_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 
@@ -292,7 +298,9 @@ async def steam_login_6(
         **params,
     }
     content = _core.create_request_content(__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_6_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_6_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 
@@ -304,7 +312,7 @@ async def user_email_password_authorize_2(
 ) -> _UserEmailPasswordAuthorize:
     params = {"accessToken": access_token, "checksum": checksum, "clientDateTime": client_date_time, "deviceKey": device_key, "email": email, "password": password, **params}
     result = await _core.get_entities_from_path(
-        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_2_BASE_PATH, "POST", **params
+        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_2_BASE_PATH, "POST", response_gzipped=False, **params
     )
     return result
 
@@ -324,6 +332,6 @@ async def user_email_password_authorize_4(
         **params,
     }
     result = await _core.get_entities_from_path(
-        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH, "POST", **params
+        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH, "POST", response_gzipped=False, **params
     )
     return result

@@ -1,4 +1,6 @@
+import base64 as _base64
 import json as _json
+import zlib as _zlib
 from datetime import datetime as _datetime
 from typing import Any as _Any
 from typing import Dict as _Dict
@@ -28,9 +30,16 @@ def create_request_content(structure: str, params: _Dict[str, _Any], content_typ
 
 
 async def get_entities_from_path(
-    entity_tags: _Iterable[_Tuple[_Type["_entities.EntityBase"], str, bool]], xml_parent_tag_name: str, production_server: str, path: str, method: str, request_content: str = None, **params
+    entity_tags: _Iterable[_Tuple[_Type["_entities.EntityBase"], str, bool]],
+    xml_parent_tag_name: str,
+    production_server: str,
+    path: str,
+    method: str,
+    request_content: str = None,
+    response_gzipped: bool = False,
+    **params,
 ):
-    raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, **params)
+    raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, response_gzipped=response_gzipped, **params)
 
     root = _ElementTree.fromstring(raw_xml)
     if not root or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
@@ -78,14 +87,14 @@ def create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str
     return _json.dumps(d)
 
 
-async def __get_data_from_path(production_server: str, path: str, method: str, content: str = None, **params) -> str:
+async def __get_data_from_path(production_server: str, path: str, method: str, content: str = None, response_gzipped: bool = False, **params) -> str:
     if path:
         path = path.strip("/")
     url = f"https://{production_server}/{path}"
-    return await __get_data_from_url(url, method, content, **params)
+    return await __get_data_from_url(url, method, content=content, response_gzipped=response_gzipped, **params)
 
 
-async def __get_data_from_url(url: str, method: str, content: str = None, **params) -> str:
+async def __get_data_from_url(url: str, method: str, content: str = None, response_gzipped: bool = False, **params) -> str:
     # filter parameters with a None value and format datetime
     filtered_params = {}
     for key, value in params.items():
@@ -100,12 +109,21 @@ async def __get_data_from_url(url: str, method: str, content: str = None, **para
     async with _aiohttp.ClientSession() as session:
         if method == "GET":
             async with session.get(url, params=filtered_params) as response:
-                data = await response.text(encoding="utf-8")
+                response_data = await response.read()
         elif method == "POST":
-            data = content.encode("utf-8") if content else None
-            async with session.post(url, data=data, params=filtered_params) as response:
-                data = await response.text(encoding="utf-8")
-    return data
+            request_data = content.encode("utf-8") if content else None
+            async with session.post(url, data=request_data, params=filtered_params) as response:
+                response_data = await response.read()
+
+    if response_gzipped:
+        try:
+            base64_decoded_data = _base64.b64decode(response_data)
+            response_data = _zlib.decompress(base64_decoded_data, _zlib.MAX_WBITS | 32)
+        except:
+            pass  # If the data can't be base64-decoded or unzipped, then the endpoint returned an error message in plain xml instead.
+
+    decoded_data = response_data.decode("utf-8")
+    return decoded_data
 
 
 def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
