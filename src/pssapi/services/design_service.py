@@ -30,6 +30,8 @@ from ..entities import RoomDesignSprite as _RoomDesignSprite
 from ..entities import SeasonDesign as _SeasonDesign
 from ..entities import ShipDesign as _ShipDesign
 from ..entities import SituationDesign as _SituationDesign
+from ..entities import Skin as _Skin
+from ..entities import SkinSet as _SkinSet
 from ..entities import Sprite as _Sprite
 from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
@@ -74,6 +76,7 @@ class DesignService(_service_base.ServiceBase):
         list_room_design_sprite_version: int,
         list_room_design_version: int,
         list_season_design_version: int,
+        list_skin_version: int,
         list_sprite_version: int,
         list_star_system_link_version: int,
         list_star_system_version: int,
@@ -105,6 +108,8 @@ class DesignService(_service_base.ServiceBase):
         _List[_SeasonDesign],
         _List[_ShipDesign],
         _List[_SituationDesign],
+        _List[_SkinSet],
+        _List[_Skin],
         _List[_Sprite],
         _List[_StarSystemLink],
         _List[_StarSystemMarkerGenerator],
@@ -112,7 +117,7 @@ class DesignService(_service_base.ServiceBase):
         _List[_TrainingDesign],
     ]:
         production_server = await self.get_production_server()
-        result = await _DesignServiceRaw.list_all_designs_4(
+        result = await _DesignServiceRaw.list_all_designs_5(
             production_server,
             language_key,
             list_achievement_design_version,
@@ -147,6 +152,7 @@ class DesignService(_service_base.ServiceBase):
             list_room_design_sprite_version,
             list_room_design_version,
             list_season_design_version,
+            list_skin_version,
             list_sprite_version,
             list_star_system_link_version,
             list_star_system_version,
