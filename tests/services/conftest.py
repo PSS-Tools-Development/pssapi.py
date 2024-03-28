@@ -69,7 +69,8 @@ def language_key() -> pssapi.enums.LanguageKey:
 def vcr_config():
     return {
         "match_on": ["host", "method", "path", "scheme"],
-        "record_mode": "rewrite",
+        "record_mode": "once",
+        # "record_mode": "rewrite",  # Use this record mode to create new cassettes while testing, when an endpoint has their parameters updated.
         "filter_query_parameters": ["accessToken", "checksum"],
         "filter_post_data_parameters": ["accessToken", "checksum"],
         "record_on_exception": False,

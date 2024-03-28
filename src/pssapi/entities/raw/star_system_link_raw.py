@@ -7,18 +7,20 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class StarSystemLinkRaw:
+class StarSystemLinkRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "StarSystemLink"
 
     def __init__(self, star_system_link_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._from_star_system_id: int = _parse.pss_int(star_system_link_info.get("FromStarSystemId"))
-        self._is_two_way: bool = _parse.pss_bool(star_system_link_info.get("IsTwoWay"))
-        self._star_system_link_id: int = _parse.pss_int(star_system_link_info.get("StarSystemLinkId"))
-        self._to_star_system_id: int = _parse.pss_int(star_system_link_info.get("ToStarSystemId"))
-        self._travel_time: int = _parse.pss_int(star_system_link_info.get("TravelTime"))
+        self._from_star_system_id: int = _parse.pss_int(star_system_link_info.pop("FromStarSystemId", None))
+        self._is_two_way: bool = _parse.pss_bool(star_system_link_info.pop("IsTwoWay", None))
+        self._star_system_link_id: int = _parse.pss_int(star_system_link_info.pop("StarSystemLinkId", None))
+        self._to_star_system_id: int = _parse.pss_int(star_system_link_info.pop("ToStarSystemId", None))
+        self._travel_time: int = _parse.pss_int(star_system_link_info.pop("TravelTime", None))
+        super().__init__(star_system_link_info)
 
     @property
     def from_star_system_id(self) -> int:
@@ -58,5 +60,6 @@ class StarSystemLinkRaw:
                 "ToStarSystemId": self.to_star_system_id,
                 "TravelTime": self.travel_time,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

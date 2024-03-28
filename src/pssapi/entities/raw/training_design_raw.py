@@ -7,37 +7,39 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class TrainingDesignRaw:
+class TrainingDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "TrainingDesign"
 
     def __init__(self, training_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._ability_chance: int = _parse.pss_int(training_design_info.get("AbilityChance"))
-        self._attack_chance: int = _parse.pss_int(training_design_info.get("AttackChance"))
-        self._duration: int = _parse.pss_int(training_design_info.get("Duration"))
-        self._engine_chance: int = _parse.pss_int(training_design_info.get("EngineChance"))
-        self._fatigue: int = _parse.pss_int(training_design_info.get("Fatigue"))
-        self._gas_cost: int = _parse.pss_int(training_design_info.get("GasCost"))
-        self._hp_chance: int = _parse.pss_int(training_design_info.get("HpChance"))
-        self._mineral_cost: int = _parse.pss_int(training_design_info.get("MineralCost"))
-        self._minimum_guarantee: int = _parse.pss_int(training_design_info.get("MinimumGuarantee"))
-        self._pilot_chance: int = _parse.pss_int(training_design_info.get("PilotChance"))
-        self._rank: int = _parse.pss_int(training_design_info.get("Rank"))
-        self._repair_chance: int = _parse.pss_int(training_design_info.get("RepairChance"))
-        self._required_research_design_id: int = _parse.pss_int(training_design_info.get("RequiredResearchDesignId"))
-        self._required_room_level: int = _parse.pss_int(training_design_info.get("RequiredRoomLevel"))
-        self._required_training_design_id: int = _parse.pss_int(training_design_info.get("RequiredTrainingDesignId"))
-        self._science_chance: int = _parse.pss_int(training_design_info.get("ScienceChance"))
-        self._stamina_chance: int = _parse.pss_int(training_design_info.get("StaminaChance"))
-        self._training_animation_style: str = _parse.pss_str(training_design_info.get("TrainingAnimationStyle"))
-        self._training_description: str = _parse.pss_str(training_design_info.get("TrainingDescription"))
-        self._training_design_id: int = _parse.pss_int(training_design_info.get("TrainingDesignId"))
-        self._training_name: str = _parse.pss_str(training_design_info.get("TrainingName"))
-        self._training_sprite_id: int = _parse.pss_int(training_design_info.get("TrainingSpriteId"))
-        self._weapon_chance: int = _parse.pss_int(training_design_info.get("WeaponChance"))
-        self._xp_chance: int = _parse.pss_int(training_design_info.get("XpChance"))
+        self._ability_chance: int = _parse.pss_int(training_design_info.pop("AbilityChance", None))
+        self._attack_chance: int = _parse.pss_int(training_design_info.pop("AttackChance", None))
+        self._duration: int = _parse.pss_int(training_design_info.pop("Duration", None))
+        self._engine_chance: int = _parse.pss_int(training_design_info.pop("EngineChance", None))
+        self._fatigue: int = _parse.pss_int(training_design_info.pop("Fatigue", None))
+        self._gas_cost: int = _parse.pss_int(training_design_info.pop("GasCost", None))
+        self._hp_chance: int = _parse.pss_int(training_design_info.pop("HpChance", None))
+        self._mineral_cost: int = _parse.pss_int(training_design_info.pop("MineralCost", None))
+        self._minimum_guarantee: int = _parse.pss_int(training_design_info.pop("MinimumGuarantee", None))
+        self._pilot_chance: int = _parse.pss_int(training_design_info.pop("PilotChance", None))
+        self._rank: int = _parse.pss_int(training_design_info.pop("Rank", None))
+        self._repair_chance: int = _parse.pss_int(training_design_info.pop("RepairChance", None))
+        self._required_research_design_id: int = _parse.pss_int(training_design_info.pop("RequiredResearchDesignId", None))
+        self._required_room_level: int = _parse.pss_int(training_design_info.pop("RequiredRoomLevel", None))
+        self._required_training_design_id: int = _parse.pss_int(training_design_info.pop("RequiredTrainingDesignId", None))
+        self._science_chance: int = _parse.pss_int(training_design_info.pop("ScienceChance", None))
+        self._stamina_chance: int = _parse.pss_int(training_design_info.pop("StaminaChance", None))
+        self._training_animation_style: str = _parse.pss_str(training_design_info.pop("TrainingAnimationStyle", None))
+        self._training_description: str = _parse.pss_str(training_design_info.pop("TrainingDescription", None))
+        self._training_design_id: int = _parse.pss_int(training_design_info.pop("TrainingDesignId", None))
+        self._training_name: str = _parse.pss_str(training_design_info.pop("TrainingName", None))
+        self._training_sprite_id: int = _parse.pss_int(training_design_info.pop("TrainingSpriteId", None))
+        self._weapon_chance: int = _parse.pss_int(training_design_info.pop("WeaponChance", None))
+        self._xp_chance: int = _parse.pss_int(training_design_info.pop("XpChance", None))
+        super().__init__(training_design_info)
 
     @property
     def ability_chance(self) -> int:
@@ -191,5 +193,6 @@ class TrainingDesignRaw:
                 "WeaponChance": self.weapon_chance,
                 "XpChance": self.xp_chance,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

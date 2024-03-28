@@ -12,7 +12,7 @@ from .raw import SettingServiceRaw as _SettingServiceRaw
 class SettingService(_service_base.CacheableServiceBase):
     async def get_latest_version(self, device_type: str) -> _Setting:
         production_server = await self.get_production_server()
-        result = await _SettingServiceRaw.get_latest_version_3(production_server, device_type, self.language_key)
+        result = await _SettingServiceRaw.get_latest_version_4(production_server, device_type, self.language_key)
         return result
 
     @_service_base.cache_endpoint("NewsDesignVersion")

@@ -7,32 +7,34 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class DrawDesignRaw:
+class DrawDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "DrawDesign"
 
     def __init__(self, draw_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_sprite_id: int = _parse.pss_int(draw_design_info.get("BackgroundSpriteId"))
-        self._bonus_increase: int = _parse.pss_int(draw_design_info.get("BonusIncrease"))
-        self._collection_design_id: int = _parse.pss_int(draw_design_info.get("CollectionDesignId"))
-        self._cost: str = _parse.pss_str(draw_design_info.get("Cost"))
-        self._cost_percentage_increase: int = _parse.pss_int(draw_design_info.get("CostPercentageIncrease"))
-        self._draw_description: str = _parse.pss_str(draw_design_info.get("DrawDescription"))
-        self._draw_design_id: int = _parse.pss_int(draw_design_info.get("DrawDesignId"))
-        self._draw_name: str = _parse.pss_str(draw_design_info.get("DrawName"))
-        self._draw_sprite_id: int = _parse.pss_int(draw_design_info.get("DrawSpriteId"))
-        self._draw_type: str = _parse.pss_str(draw_design_info.get("DrawType"))
-        self._max_cost_percentage_increase: int = _parse.pss_int(draw_design_info.get("MaxCostPercentageIncrease"))
-        self._max_crew_rarity: int = _parse.pss_int(draw_design_info.get("MaxCrewRarity"))
-        self._max_crews_drawn: int = _parse.pss_int(draw_design_info.get("MaxCrewsDrawn"))
-        self._max_items: int = _parse.pss_int(draw_design_info.get("MaxItems"))
-        self._min_crew_rarity: int = _parse.pss_int(draw_design_info.get("MinCrewRarity"))
-        self._min_crews_drawn: int = _parse.pss_int(draw_design_info.get("MinCrewsDrawn"))
-        self._min_items: int = _parse.pss_int(draw_design_info.get("MinItems"))
-        self._order_index: int = _parse.pss_int(draw_design_info.get("OrderIndex"))
-        self._required_research_design_id: int = _parse.pss_int(draw_design_info.get("RequiredResearchDesignId"))
+        self._background_sprite_id: int = _parse.pss_int(draw_design_info.pop("BackgroundSpriteId", None))
+        self._bonus_increase: int = _parse.pss_int(draw_design_info.pop("BonusIncrease", None))
+        self._collection_design_id: int = _parse.pss_int(draw_design_info.pop("CollectionDesignId", None))
+        self._cost: str = _parse.pss_str(draw_design_info.pop("Cost", None))
+        self._cost_percentage_increase: int = _parse.pss_int(draw_design_info.pop("CostPercentageIncrease", None))
+        self._draw_description: str = _parse.pss_str(draw_design_info.pop("DrawDescription", None))
+        self._draw_design_id: int = _parse.pss_int(draw_design_info.pop("DrawDesignId", None))
+        self._draw_name: str = _parse.pss_str(draw_design_info.pop("DrawName", None))
+        self._draw_sprite_id: int = _parse.pss_int(draw_design_info.pop("DrawSpriteId", None))
+        self._draw_type: str = _parse.pss_str(draw_design_info.pop("DrawType", None))
+        self._max_cost_percentage_increase: int = _parse.pss_int(draw_design_info.pop("MaxCostPercentageIncrease", None))
+        self._max_crew_rarity: int = _parse.pss_int(draw_design_info.pop("MaxCrewRarity", None))
+        self._max_crews_drawn: int = _parse.pss_int(draw_design_info.pop("MaxCrewsDrawn", None))
+        self._max_items: int = _parse.pss_int(draw_design_info.pop("MaxItems", None))
+        self._min_crew_rarity: int = _parse.pss_int(draw_design_info.pop("MinCrewRarity", None))
+        self._min_crews_drawn: int = _parse.pss_int(draw_design_info.pop("MinCrewsDrawn", None))
+        self._min_items: int = _parse.pss_int(draw_design_info.pop("MinItems", None))
+        self._order_index: int = _parse.pss_int(draw_design_info.pop("OrderIndex", None))
+        self._required_research_design_id: int = _parse.pss_int(draw_design_info.pop("RequiredResearchDesignId", None))
+        super().__init__(draw_design_info)
 
     @property
     def background_sprite_id(self) -> int:
@@ -156,5 +158,6 @@ class DrawDesignRaw:
                 "OrderIndex": self.order_index,
                 "RequiredResearchDesignId": self.required_research_design_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

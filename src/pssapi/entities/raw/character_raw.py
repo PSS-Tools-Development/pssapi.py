@@ -11,56 +11,58 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class CharacterRaw:
+class CharacterRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Character"
 
     def __init__(self, character_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._ability_improvement: int = _parse.pss_int(character_info.get("AbilityImprovement"))
-        self._attack_improvement: int = _parse.pss_int(character_info.get("AttackImprovement"))
-        self._available_date: _datetime = _parse.pss_datetime(character_info.get("AvailableDate"))
-        self._battle_character_hp: int = _parse.pss_int(character_info.get("BattleCharacterHp"))
-        self._bloodlust_frame: int = _parse.pss_int(character_info.get("BloodlustFrame"))
+        self._ability_improvement: int = _parse.pss_int(character_info.pop("AbilityImprovement", None))
+        self._attack_improvement: int = _parse.pss_int(character_info.pop("AttackImprovement", None))
+        self._available_date: _datetime = _parse.pss_datetime(character_info.pop("AvailableDate", None))
+        self._battle_character_hp: int = _parse.pss_int(character_info.pop("BattleCharacterHp", None))
+        self._bloodlust_frame: int = _parse.pss_int(character_info.pop("BloodlustFrame", None))
         self._character_actions: _List[_entities.CharacterAction] = (
-            [_entities.CharacterAction(child_info) for child_info in character_info.get("CharacterActions")] if character_info.get("CharacterActions") else []
+            [_entities.CharacterAction(child_info) for child_info in character_info.pop("CharacterActions")[0].get("CharacterAction", [])] if character_info.get("CharacterActions") else []
         )
-        self._character_design_id: int = _parse.pss_int(character_info.get("CharacterDesignId"))
-        self._character_id: int = _parse.pss_int(character_info.get("CharacterId"))
-        self._character_name: str = _parse.pss_str(character_info.get("CharacterName"))
-        self._deployment_date: _datetime = _parse.pss_datetime(character_info.get("DeploymentDate"))
-        self._designated_room_id: int = _parse.pss_int(character_info.get("DesignatedRoomId"))
-        self._engine_improvement: int = _parse.pss_int(character_info.get("EngineImprovement"))
-        self._fatigue: int = _parse.pss_int(character_info.get("Fatigue"))
-        self._flags: int = _parse.pss_int(character_info.get("Flags"))
-        self._hp_improvement: int = _parse.pss_int(character_info.get("HpImprovement"))
-        self._invulnerability_frame: int = _parse.pss_int(character_info.get("InvulnerabilityFrame"))
-        self._is_new: bool = _parse.pss_bool(character_info.get("IsNew"))
-        self._item_ids: str = _parse.pss_str(character_info.get("ItemIds"))
-        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in character_info.get("Items")] if character_info.get("Items") else []
-        self._level: int = _parse.pss_int(character_info.get("Level"))
-        self._origin_room_id: int = _parse.pss_int(character_info.get("OriginRoomId"))
-        self._owner_ship_id: int = _parse.pss_int(character_info.get("OwnerShipId"))
-        self._owner_username: str = _parse.pss_str(character_info.get("OwnerUsername"))
-        self._pilot_improvement: int = _parse.pss_int(character_info.get("PilotImprovement"))
-        self._repair_improvement: int = _parse.pss_int(character_info.get("RepairImprovement"))
-        self._room_id: int = _parse.pss_int(character_info.get("RoomId"))
-        self._science_improvement: int = _parse.pss_int(character_info.get("ScienceImprovement"))
-        self._ship_id: int = _parse.pss_int(character_info.get("ShipId"))
-        self._skill_points: int = _parse.pss_int(character_info.get("SkillPoints"))
-        self._stamina: int = _parse.pss_int(character_info.get("Stamina"))
-        self._stamina_improvement: int = _parse.pss_int(character_info.get("StaminaImprovement"))
-        self._target_room_id: int = _parse.pss_int(character_info.get("TargetRoomId"))
-        self._training_data: str = _parse.pss_str(character_info.get("TrainingData"))
-        self._training_design_id: int = _parse.pss_int(character_info.get("TrainingDesignId"))
-        self._training_end_date: _datetime = _parse.pss_datetime(character_info.get("TrainingEndDate"))
-        self._weapon_improvement: int = _parse.pss_int(character_info.get("WeaponImprovement"))
-        self._x_coordinate: int = _parse.pss_int(character_info.get("XCoordinate"))
-        self._x_coordinate_ship_relative: int = _parse.pss_int(character_info.get("XCoordinateShipRelative"))
-        self._xp: int = _parse.pss_int(character_info.get("Xp"))
-        self._y_coordinate: int = _parse.pss_int(character_info.get("YCoordinate"))
-        self._y_coordinate_ship_relative: int = _parse.pss_int(character_info.get("YCoordinateShipRelative"))
+        self._character_design_id: int = _parse.pss_int(character_info.pop("CharacterDesignId", None))
+        self._character_id: int = _parse.pss_int(character_info.pop("CharacterId", None))
+        self._character_name: str = _parse.pss_str(character_info.pop("CharacterName", None))
+        self._deployment_date: _datetime = _parse.pss_datetime(character_info.pop("DeploymentDate", None))
+        self._designated_room_id: int = _parse.pss_int(character_info.pop("DesignatedRoomId", None))
+        self._engine_improvement: int = _parse.pss_int(character_info.pop("EngineImprovement", None))
+        self._fatigue: int = _parse.pss_int(character_info.pop("Fatigue", None))
+        self._flags: int = _parse.pss_int(character_info.pop("Flags", None))
+        self._hp_improvement: int = _parse.pss_int(character_info.pop("HpImprovement", None))
+        self._invulnerability_frame: int = _parse.pss_int(character_info.pop("InvulnerabilityFrame", None))
+        self._is_new: bool = _parse.pss_bool(character_info.pop("IsNew", None))
+        self._item_ids: str = _parse.pss_str(character_info.pop("ItemIds", None))
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in character_info.pop("Items")[0].get("Item", [])] if character_info.get("Items") else []
+        self._level: int = _parse.pss_int(character_info.pop("Level", None))
+        self._origin_room_id: int = _parse.pss_int(character_info.pop("OriginRoomId", None))
+        self._owner_ship_id: int = _parse.pss_int(character_info.pop("OwnerShipId", None))
+        self._owner_username: str = _parse.pss_str(character_info.pop("OwnerUsername", None))
+        self._pilot_improvement: int = _parse.pss_int(character_info.pop("PilotImprovement", None))
+        self._repair_improvement: int = _parse.pss_int(character_info.pop("RepairImprovement", None))
+        self._room_id: int = _parse.pss_int(character_info.pop("RoomId", None))
+        self._science_improvement: int = _parse.pss_int(character_info.pop("ScienceImprovement", None))
+        self._ship_id: int = _parse.pss_int(character_info.pop("ShipId", None))
+        self._skill_points: int = _parse.pss_int(character_info.pop("SkillPoints", None))
+        self._stamina: int = _parse.pss_int(character_info.pop("Stamina", None))
+        self._stamina_improvement: int = _parse.pss_int(character_info.pop("StaminaImprovement", None))
+        self._target_room_id: int = _parse.pss_int(character_info.pop("TargetRoomId", None))
+        self._training_data: str = _parse.pss_str(character_info.pop("TrainingData", None))
+        self._training_design_id: int = _parse.pss_int(character_info.pop("TrainingDesignId", None))
+        self._training_end_date: _datetime = _parse.pss_datetime(character_info.pop("TrainingEndDate", None))
+        self._weapon_improvement: int = _parse.pss_int(character_info.pop("WeaponImprovement", None))
+        self._x_coordinate: int = _parse.pss_int(character_info.pop("XCoordinate", None))
+        self._x_coordinate_ship_relative: int = _parse.pss_int(character_info.pop("XCoordinateShipRelative", None))
+        self._xp: int = _parse.pss_int(character_info.pop("Xp", None))
+        self._y_coordinate: int = _parse.pss_int(character_info.pop("YCoordinate", None))
+        self._y_coordinate_ship_relative: int = _parse.pss_int(character_info.pop("YCoordinateShipRelative", None))
+        super().__init__(character_info)
 
     @property
     def ability_improvement(self) -> int:
@@ -316,5 +318,6 @@ class CharacterRaw:
                 "YCoordinate": self.y_coordinate,
                 "YCoordinateShipRelative": self.y_coordinate_ship_relative,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict
