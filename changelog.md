@@ -1,3 +1,16 @@
+# Version 0.4.1
+## Changes
+### Added
+- `EntityRaw` classes now store any properties parsed from the XML nodes that aren't currently tracked in fields and properties in this library. This allows consumers to access properties that SavySoda added, without having to wait for the library to get updated.
+### Changed
+- `EntityRaw` classes now inherit from `EntityBaseRaw` class.
+### Fixed
+- Error messages returned in XML root node by the PSS API now get recognized properly.
+## Updated Library
+Updated to Pixel Starships v0.998.16.11048 (Steam, testing branch).
+The newly added endpoints `/DesignService/ListAllDynamicDesigns` & `/DesignService/ListAllStaticDesigns` will be added with a future version of the library.
+## Testing
+Changed the `record_mode` for `vcrpy` cassettes back to `once`. Set it to `rewrite` temporarily to have the cassettes updated for changes in existing API endpoints.
 # Version 0.4.0
 ## Changes
 - Implemented Issue [#55](https://github.com/PSS-Tools-Development/pssapi.py/issues/55)

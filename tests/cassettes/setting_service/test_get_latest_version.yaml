@@ -3,7 +3,7 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion4?deviceType=DeviceTypeAndroid&languageKey=en
   response:
     body:
       string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385284"

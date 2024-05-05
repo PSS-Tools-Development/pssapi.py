@@ -35,6 +35,8 @@ async def test_list_all_designs(client: pssapi.PssApiClient):
         pssapi.entities.SeasonDesign,
         pssapi.entities.ShipDesign,
         pssapi.entities.SituationDesign,
+        pssapi.entities.SkinSet,
+        pssapi.entities.Skin,
         pssapi.entities.Sprite,
         pssapi.entities.StarSystemLink,
         pssapi.entities.StarSystemMarkerGenerator,
@@ -43,6 +45,7 @@ async def test_list_all_designs(client: pssapi.PssApiClient):
     ]
     designs = await client.design_service.list_all_designs(
         pssapi.enums.LanguageKey.ENGLISH,
+        1,
         1,
         1,
         1,

@@ -42,7 +42,7 @@ async def get_entities_from_path(
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, response_gzipped=response_gzipped, **params)
 
     root = _ElementTree.fromstring(raw_xml)
-    if not root or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
+    if root is None or root.tag is None or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
         raise _utils.exceptions.PssApiError(f"A server error occured: {raw_xml}")
     if "errorMessage" in root.attrib:
         raise _utils.exceptions.PssApiError(root.attrib["errorMessage"])
