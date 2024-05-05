@@ -119,7 +119,7 @@ async def __get_data_from_url(url: str, method: str, content: str = None, respon
         try:
             base64_decoded_data = _base64.b64decode(response_data)
             response_data = _zlib.decompress(base64_decoded_data, _zlib.MAX_WBITS | 32)
-        except:
+        except Exception:
             pass  # If the data can't be base64-decoded or unzipped, then the endpoint returned an error message in plain xml instead.
 
     decoded_data = response_data.decode("utf-8")
