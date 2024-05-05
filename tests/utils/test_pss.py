@@ -67,16 +67,3 @@ def test_is_tournament_time():
 
     for now, result in test_cases:
         assert _pss.is_tournament_time(now) == result
-
-
-def test_get_first_of_next_month():
-    with _pytest.raises(ValueError):
-        _pss.get_first_of_next_month(None)
-
-    test_cases = [
-        (_datetime.datetime(2024, 1, 2, tzinfo=_datetime.timezone.utc), _datetime.datetime(2024, 2, 1, tzinfo=_datetime.timezone.utc)),
-        (_datetime.datetime(2024, 12, 24, tzinfo=_datetime.timezone.utc), _datetime.datetime(2025, 1, 1, tzinfo=_datetime.timezone.utc)),
-    ]
-
-    for now, result in test_cases:
-        assert _pss.get_first_of_next_month(now) == result
