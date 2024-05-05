@@ -69,7 +69,7 @@ def language_key() -> pssapi.enums.LanguageKey:
 def vcr_config():
     return {
         "match_on": ["host", "method", "path", "scheme"],
-        #"record_mode": "once",
+        # "record_mode": "once",
         "record_mode": "rewrite",
         "filter_query_parameters": ["accessToken", "checksum"],
         "filter_post_data_parameters": ["accessToken", "checksum"],
