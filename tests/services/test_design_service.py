@@ -91,7 +91,6 @@ async def test_list_all_designs(client: pssapi.PssApiClient):
 @pytest.mark.usefixtures("client", "device_type")
 @pytest.mark.vcr()
 async def test_list_all_dynamic_designs(client: pssapi.PssApiClient, device_type: pssapi.enums.DeviceType):
-    # This endpoint is currently only available on apistaging
     types = [pssapi.entities.ItemDesign, pssapi.entities.PromotionDesign, pssapi.entities.TaskDesign]
     get_latest_version = await client.setting_service.get_latest_version(device_type)
     designs = await client.design_service.list_all_dynamic_designs(get_latest_version.promotion_design_version, get_latest_version.task_design_version, get_latest_version.item_design_version)
@@ -108,7 +107,6 @@ async def test_list_all_dynamic_designs(client: pssapi.PssApiClient, device_type
 @pytest.mark.usefixtures("client", "device_type")
 @pytest.mark.vcr()
 async def test_list_all_static_designs_get_all_designs(client: pssapi.PssApiClient, device_type: pssapi.enums.DeviceType):
-    # This endpoint is currently only available on apistaging
     types = [
         pssapi.entities.AchievementDesign,
         pssapi.entities.Animation,
