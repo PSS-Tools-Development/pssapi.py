@@ -18,6 +18,7 @@ from . import market_service_raw as MarketServiceRaw
 from . import message_service_raw as MessageServiceRaw
 from . import mission_service_raw as MissionServiceRaw
 from . import promotion_service_raw as PromotionServiceRaw
+from . import public_service_raw as PublicServiceRaw
 from . import research_service_raw as ResearchServiceRaw
 from . import reward_service_raw as RewardServiceRaw
 from . import room_design_sprite_service_raw as RoomDesignSpriteServiceRaw
@@ -51,6 +52,7 @@ __all__ = [
     MessageServiceRaw.__name__,
     MissionServiceRaw.__name__,
     PromotionServiceRaw.__name__,
+    PublicServiceRaw.__name__,
     ResearchServiceRaw.__name__,
     RewardServiceRaw.__name__,
     RoomDesignSpriteServiceRaw.__name__,

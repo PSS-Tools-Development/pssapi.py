@@ -25,7 +25,9 @@ class SeasonDesignRaw(_EntityBaseRaw):
         self._from_date: _datetime = _parse.pss_datetime(season_design_info.pop("FromDate", None))
         self._icon_sprite_id: int = _parse.pss_int(season_design_info.pop("IconSpriteId", None))
         self._metadata: str = _parse.pss_str(season_design_info.pop("Metadata", None))
+        self._premium_reward_string: str = _parse.pss_str(season_design_info.pop("PremiumRewardString", None))
         self._prologue_description: str = _parse.pss_str(season_design_info.pop("PrologueDescription", None))
+        self._repeat_reward_string: str = _parse.pss_str(season_design_info.pop("RepeatRewardString", None))
         self._requirement_string: str = _parse.pss_str(season_design_info.pop("RequirementString", None))
         self._reward_string: str = _parse.pss_str(season_design_info.pop("RewardString", None))
         self._season_description: str = _parse.pss_str(season_design_info.pop("SeasonDescription", None))
@@ -76,8 +78,16 @@ class SeasonDesignRaw(_EntityBaseRaw):
         return self._metadata
 
     @property
+    def premium_reward_string(self) -> str:
+        return self._premium_reward_string
+
+    @property
     def prologue_description(self) -> str:
         return self._prologue_description
+
+    @property
+    def repeat_reward_string(self) -> str:
+        return self._repeat_reward_string
 
     @property
     def requirement_string(self) -> str:
@@ -134,7 +144,9 @@ class SeasonDesignRaw(_EntityBaseRaw):
             self.from_date,
             self.icon_sprite_id,
             self.metadata,
+            self.premium_reward_string,
             self.prologue_description,
+            self.repeat_reward_string,
             self.requirement_string,
             self.reward_string,
             self.season_description,
@@ -160,7 +172,9 @@ class SeasonDesignRaw(_EntityBaseRaw):
                 "FromDate": self.from_date,
                 "IconSpriteId": self.icon_sprite_id,
                 "Metadata": self.metadata,
+                "PremiumRewardString": self.premium_reward_string,
                 "PrologueDescription": self.prologue_description,
+                "RepeatRewardString": self.repeat_reward_string,
                 "RequirementString": self.requirement_string,
                 "RewardString": self.reward_string,
                 "SeasonDescription": self.season_description,

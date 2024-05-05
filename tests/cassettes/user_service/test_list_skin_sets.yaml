@@ -1,0 +1,679 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/UserService/ListSkinSets2?clientDateTime=2024-05-05T11%3A36%3A43&languageKey=en
+  response:
+    body:
+      string: "<UserService><ListSkinSets version=\"7\"><SkinSets><SkinSet SkinSetId=\"1\"
+        SkinSetName=\"Hydra Dragon Hangar Skin Set\" SkinSetDescription=\"Awarded
+        to the Tournament Champions for 2022! Requires Max level Drone Hangar Room.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:18:41\" SpriteId=\"20023\" /><SkinSet SkinSetId=\"2\"
+        SkinSetName=\"Love Quarters Skin\" SkinSetDescription=\"Renovate your captains
+        quarter's into a seductive trap.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:19:18\"
+        SpriteId=\"12034\" /><SkinSet SkinSetId=\"3\" SkinSetName=\"HYDRA\u9F8D Council
+        Skin\" SkinSetDescription=\"Renovate your fleet council for HYDRA\u9F8D theme.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:19:31\" SpriteId=\"12393\" /><SkinSet SkinSetId=\"4\"
+        SkinSetName=\"Remodeled EMP Cannon Skin\" SkinSetDescription=\"Does the blue
+        glow of your EMP Cannon give you ghostly shivers at night? Worry not! You
+        can now experience the shock of EMP blasts in all its pinky glory!\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:19:33\"
+        SpriteId=\"12711\" /><SkinSet SkinSetId=\"5\" SkinSetName=\"Pool Skin\" SkinSetDescription=\"For
+        people too cool for Gyms.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:19:34\"
+        SpriteId=\"12732\" /><SkinSet SkinSetId=\"6\" SkinSetName=\"Lion Cannon\"
+        SkinSetDescription=\"Renovate your Ion Cannon to provide sight beyond sight.
+        Requires Max level Ion Cannon Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:19:57\"
+        SpriteId=\"20196\" /><SkinSet SkinSetId=\"7\" SkinSetName=\"Velvet Sanctuary
+        Skin\" SkinSetDescription=\"A secret spot for star-crossed lovers. Tragically,
+        it's not really big enough for two.\" RequirementString=\"item:783 &gt;= 1\"
+        Flags=\"0\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:19:58\"
+        SpriteId=\"12830\" /><SkinSet SkinSetId=\"8\" SkinSetName=\"Mineral Mining
+        Laser - Soda Edition Skin\" SkinSetDescription=\"Renovate Mining Laser into
+        a nice purple style.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:20:00\" SpriteId=\"12945\"
+        /><SkinSet SkinSetId=\"9\" SkinSetName=\"Gray Launch Pad Skin\" SkinSetDescription=\"Retrofit
+        your Launch Pad to construct and deploy Gray Saucers.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:20:01\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"10\" SkinSetName=\"Turkey Launch Pad
+        Skin\" SkinSetDescription=\"Retrofit your Launch Pad to construct and deploy
+        TK Fighters.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:20:03\" SpriteId=\"13724\"
+        /><SkinSet SkinSetId=\"11\" SkinSetName=\"Graveyard Skin\" SkinSetDescription=\"Anybody
+        hoping for eternal rest is going to be sorely disappointed.\" RequirementString=\"item:817
+        &gt;= 1\" Flags=\"0\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"13116\" /><SkinSet SkinSetId=\"12\"
+        SkinSetName=\"Wheel Gym Skin\" SkinSetDescription=\"Renovate your gym to include
+        a full-size hamster wheel!\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"13512\" /><SkinSet SkinSetId=\"13\" SkinSetName=\"Hydra Venomizer
+        Skin\" SkinSetDescription=\"A top secret weapon platform renovation, developed
+        by HYDRA\u9F8D chemists to directly attack enemy crews. They have been asked
+        nicely not to use it by most major governments. Requires a level 7 Small Weapons
+        Platform room variant.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"13725\" /><SkinSet SkinSetId=\"14\" SkinSetName=\"Sterilizer Skin\"
+        SkinSetDescription=\"Renovate a level 7 Small Weapons Platform for a venomous
+        look.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"13724\" /><SkinSet SkinSetId=\"15\"
+        SkinSetName=\"Beacon of Radiance Skin\" SkinSetDescription=\"Make your ship
+        a rallying flag for the righteous. Requires a small beacon.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"13902\" /><SkinSet SkinSetId=\"16\" SkinSetName=\"Danger Beacon
+        Skin\" SkinSetDescription=\"Make your ship an object of fear. Requires a small
+        beacon.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"13901\"
+        /><SkinSet SkinSetId=\"17\" SkinSetName=\"Healing Pod Skin\" SkinSetDescription=\"Replaces
+        your medbay with 'revitalisation' chamber. The efficient choice for keeping
+        your crew fighting through the toughest of battles. Requires Level 7 Medbay.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"13995\" /><SkinSet SkinSetId=\"18\"
+        SkinSetName=\"Hydra Pod Skin\" SkinSetDescription=\"Installs experimental
+        'revitalisation' chamber into the medbay, to keep your crew fighting beyond
+        the brink of death.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"13994\"
+        /><SkinSet SkinSetId=\"19\" SkinSetName=\"Summitran Ion Cannon\" SkinSetDescription=\"Transform
+        your Ion Cannon into a custom Summit Fleet design. Requires Max Level Ion
+        Cannon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20195\"
+        /><SkinSet SkinSetId=\"20\" SkinSetName=\"Wonderland Galaxy Gym\" SkinSetDescription=\"Nothing
+        builds fitness like a good snowball fight. Requires Max Level Galaxy Gym.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20247\" /><SkinSet SkinSetId=\"21\"
+        SkinSetName=\"Igloo Brick Armor\" SkinSetDescription=\"A good use for all
+        the snow you've been shovelling lately. Reduces system damage of adjacent
+        rooms.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20245\"
+        /><SkinSet SkinSetId=\"22\" SkinSetName=\"Summitran Prism Generator\" SkinSetDescription=\"Projects
+        interwoven, latticed panels in an extremely complex configuration. This method
+        of shield generation is a secret known only to Summitran geo-tech scientists.
+        Requires Max Level Shield Generator.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"20453\" /><SkinSet SkinSetId=\"23\" SkinSetName=\"Hoarfrost Shield
+        Generator\" SkinSetDescription=\"Amorphous Ice was once only found in deep
+        space, stored within molecular clouds surrounding a newborn star. We can now
+        exploit this phenomena for a frigid shielding solution. Requires Max Level
+        Shield Generator.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20454\"
+        /><SkinSet SkinSetId=\"24\" SkinSetName=\"HYDRA\u9F8D Laboratory Skin\" SkinSetDescription=\"A
+        notable disdain for human rights gives Hydra a keen edge in the development
+        of military technology.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"14250\" /><SkinSet SkinSetId=\"25\" SkinSetName=\"Genetic Laboratory
+        Skin\" SkinSetDescription=\"It turns out you can do a lot more science if
+        you ignore that little voice inside that tells you if things are right or
+        wrong. Requires Max Level Laboratory Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"14251\" /><SkinSet SkinSetId=\"26\" SkinSetName=\"Dragon Hoard
+        Warehouse Skin\" SkinSetDescription=\"All the treasures of an empire, yours
+        for the sitting! Requires max level Warehouse Room.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"20905\" /><SkinSet SkinSetId=\"27\" SkinSetName=\"Prayer Room Gym
+        Skin\" SkinSetDescription=\"Gyroscopic actuators ensure this sacred space
+        is always pointing towards Terrestrial Mecca. Requires max level Gym Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20983\" /><SkinSet SkinSetId=\"28\"
+        SkinSetName=\"Warp Drive Skin\" SkinSetDescription=\"Latest Warp Drive Engine
+        Technology.\" RequirementString=\"research:160 &gt;= 1\" Flags=\"1\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"29\" SkinSetName=\"Galaxy Bolter Skin\"
+        SkinSetDescription=\"A light projectile weapon developed to outfit long-range
+        combat vessels travelling the Galaxy.\" RequirementString=\"research:161 &gt;=
+        1\" Flags=\"1\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"30\"
+        SkinSetName=\"Cosmic Bridge Skin\" SkinSetDescription=\"An awe inspiring holographic
+        galaxy fills the bridge, immersing the crew in their surroundings.\" RequirementString=\"research:162
+        &gt;= 1\" Flags=\"1\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"31\"
+        SkinSetName=\"Galaxy Ion Cannon Skin\" SkinSetDescription=\"Warp-variant ionic
+        charge cannon. Causes devastating damage to its target.\" RequirementString=\"research:164
+        &gt;= 1\" Flags=\"1\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"32\"
+        SkinSetName=\"Warp EMP Cannon Skin\" SkinSetDescription=\"This fearsome weapon
+        uses Warp technology to disable enemy systems.\" RequirementString=\"research:160
+        &gt;= 1\" Flags=\"1\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"33\"
+        SkinSetName=\"Galaxy Blaster Skin\" SkinSetDescription=\"High-powered tactical
+        laser designed for combat situations.\" RequirementString=\"research:161 &gt;=
+        1\" Flags=\"1\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"34\"
+        SkinSetName=\"HYDRA\u9F8D Engine Skin\" SkinSetDescription=\"A notable disdain
+        for human rights gives Hydra a keen edge in the development of military technology.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"14250\" /><SkinSet SkinSetId=\"35\"
+        SkinSetName=\"Gerbaltech Fusion Reactor\" SkinSetDescription=\"This squeaky
+        clean method for generating power is a wheely good way of lowering carbon
+        emissions. Requires Max Level Fusion Reactor Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"36\" SkinSetName=\"Colored Power Capacitor
+        Skin\" SkinSetDescription=\"Renovate Power Capacitor to have a nice red color.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"14734\" /><SkinSet SkinSetId=\"37\"
+        SkinSetName=\"Spin Gym Skin\" SkinSetDescription=\"Renovate your gym to a
+        spin gym!\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"15020\"
+        /><SkinSet SkinSetId=\"38\" SkinSetName=\"Hydrascale Armor Skin\" SkinSetDescription=\"Renovate
+        your armor for a HYDRA Scale theme.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15061\" /><SkinSet SkinSetId=\"39\" SkinSetName=\"Summitran Hangar\"
+        SkinSetDescription=\"A state of the art carrier design that can only be manned
+        by pilots trained at the Pinnacle Pistol Academy - the best of the best! Requires
+        Max Level Hangar Room.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"21041\" /><SkinSet SkinSetId=\"40\" SkinSetName=\"Gerbaltech Hangar\"
+        SkinSetDescription=\"Retrofit your Hangar Room using the cutest Hamster Carrier
+        tech in the galaxy. Squeak! Requires Max level Hangar Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"21043\" /><SkinSet SkinSetId=\"41\" SkinSetName=\"Guided Interceptor
+        Missile Portal\" SkinSetDescription=\"A wise Volcan once said: &quot;Take
+        that, nerds!&quot;. Requires Max Level Guardian Defense System Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"21206\" /><SkinSet SkinSetId=\"42\" SkinSetName=\"Spore Defense
+        System\" SkinSetDescription=\"Alien fungal pods excrete sticky caustic spores
+        to disintigrate enemy Crafts. Requires Max level Guardian Defense System Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"21207\" /><SkinSet SkinSetId=\"43\"
+        SkinSetName=\"Summitran Dyson Sphere\" SkinSetDescription=\"An extremely advanced
+        - but volatile - approach to spiking power generation. The power of the sun,
+        in the palm of your hand. Requires Max Level Fusion Reactor Room.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"44\" SkinSetName=\"Radiant Scale Armor
+        Skin\" SkinSetDescription=\"Renovate your armor for a Radiant Scale theme.
+        Requires Max Level Armor Tile.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15061\" /><SkinSet SkinSetId=\"45\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"46\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"47\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"48\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"49\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"50\"
+        SkinSetName=\"Hydra Mineral Vault Skin\" SkinSetDescription=\"Want to feel
+        like a draconic beast? Create your own treasure vault!\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"14734\" /><SkinSet SkinSetId=\"51\" SkinSetName=\"Automated Mineral
+        Vendor Skin\" SkinSetDescription=\"Renovates your Mineral Storage Room into
+        a fancy vending machine that spills minerals. Requires Max Level Mineral Storage
+        Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"14734\" /><SkinSet SkinSetId=\"52\"
+        SkinSetName=\"Galaxy Gate Skin\" SkinSetDescription=\"Renovates your Teleport
+        Room into a beautiful Galaxy Gate, Team GG-1 ready! Requires Max Level Teleport
+        Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"15343\" /><SkinSet SkinSetId=\"53\"
+        SkinSetName=\"Hydragate Skin\" SkinSetDescription=\"An ancient stone Relic,
+        hooked up with a Galaxy Gate warp drive. Fascinating!\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15352\" /><SkinSet SkinSetId=\"54\" SkinSetName=\"Coal Factory
+        Skin\" SkinSetDescription=\"Hate nuclear power? Think it's too dangerous?
+        Switch to coal power now! Requires Max Level Fusion Reactor Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15489\" /><SkinSet SkinSetId=\"55\" SkinSetName=\"2020 Gilded Crown
+        Beacon Skin\" SkinSetDescription=\"2020 December Tournament Commemorative
+        Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"15539\"
+        /><SkinSet SkinSetId=\"56\" SkinSetName=\"2020 Gilded Beacon Skin\" SkinSetDescription=\"2020
+        December Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15581\" /><SkinSet SkinSetId=\"57\" SkinSetName=\"2020 Silver Crown
+        Beacon Skin\" SkinSetDescription=\"2020 December Tournament Commemorative
+        Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"15580\"
+        /><SkinSet SkinSetId=\"58\" SkinSetName=\"2020 Silver Beacon Skin\" SkinSetDescription=\"2020
+        December Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15538\" /><SkinSet SkinSetId=\"59\" SkinSetName=\"Firework Missile
+        Launcher Skin\" SkinSetDescription=\"KABOOM! Fireworks! Manufacture and launch
+        projectile missiles. Effective vs Shields. Requires Max Level Missile Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"15499\" /><SkinSet SkinSetId=\"60\"
+        SkinSetName=\"Hydradar Skin\" SkinSetDescription=\"Renovates your common pleb
+        Radars into the ideal spyware for evil masterminds.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15974\" /><SkinSet SkinSetId=\"61\" SkinSetName=\"Subspace Radar
+        Skin\" SkinSetDescription=\"Renovates your Radar room into a rad-der version.
+        Requires Max Level Radar Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"15975\" /><SkinSet SkinSetId=\"62\" SkinSetName=\"Chromatic Hologram
+        Projector Skin\" SkinSetDescription=\"Adapt your Cloak Generator to fold the
+        full spectrum of light to veil your ship behind a hologram.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16159\" /><SkinSet SkinSetId=\"63\" SkinSetName=\"Hologram Projector
+        Skin\" SkinSetDescription=\"Adapt your Cloak Generator to project a full scale
+        hologram to veil your ship. Requires Max Level Cloak Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16158\" /><SkinSet SkinSetId=\"64\" SkinSetName=\"Egg Machine Skin\"
+        SkinSetDescription=\"Renovate your Max Level Bio-Recycler into a Lucky EGG
+        Machine! Converts dead corpses into gas or blends living crew into useful
+        items.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"16208\"
+        /><SkinSet SkinSetId=\"65\" SkinSetName=\"Hydra Brood Clutch Skin\" SkinSetDescription=\"Retrofit
+        your Level 14 Gas Storage into a primordial alien hatchery. Functions as a
+        normal Gas Storage Room.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16315\" /><SkinSet SkinSetId=\"66\" SkinSetName=\"Experimental
+        Gas Storage Skin\" SkinSetDescription=\"Renovate your Gas Storage into a 'secure'
+        depot for alien gases. Requires Max Level Gas Storage.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16316\" /><SkinSet SkinSetId=\"67\" SkinSetName=\"Nitrogen Helio-Cannon
+        Skin\" SkinSetDescription=\"Retrofit your Plasma Discharger Room for a Steampunk
+        look. Shoots powerful plasma bolts. Requires Max Level Plasma Discharger Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"16477\" /><SkinSet SkinSetId=\"68\"
+        SkinSetName=\"Hydragen Helio-Cannon Skin\" SkinSetDescription=\"Retrofit your
+        Level 10 Plasma Discharger for a rare, Draconic design. Shoots powerful plasma
+        bolts. Requires gas for use.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16478\" /><SkinSet SkinSetId=\"69\" SkinSetName=\"Hawking Power
+        Core Skin\" SkinSetDescription=\"Retrofit your Small Reactor Room for a theoretical
+        look. Limited power source for basic ship. Requires Max Level Small Reactor
+        Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"16568\" /><SkinSet SkinSetId=\"70\"
+        SkinSetName=\"Dragonheart Reactor Core Skin\" SkinSetDescription=\"Retrofit
+        your Level 7 Small Reactor. Limited power source for basic ship.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16569\" /><SkinSet SkinSetId=\"71\" SkinSetName=\"Solar Panel Armor
+        Skin\" SkinSetDescription=\"Renovate your Armor Tiles into Monocrystaline
+        Solar Panels for an energy efficient look. Requires Max Level Armor Tile.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"16657\" /><SkinSet SkinSetId=\"72\"
+        SkinSetName=\"Egg Painting Academy\" SkinSetDescription=\"Teaches a steady
+        hand and an eye for colour. Requires max level Academy Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"73\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"74\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"75\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"76\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"77\" SkinSetName=\"Infected Shield Generator
+        Skin\" SkinSetDescription=\"Renovate your Shield Room and Generated Shield
+        for an Infected Crystal design. Requires Max Level Shield Generator.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16762\" /><SkinSet SkinSetId=\"78\" SkinSetName=\"Infected Hangar
+        Skin\" SkinSetDescription=\"Renovate your Hangar Room for an Infected Crystal
+        design. Requires Max Level Hangar Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16763\" /><SkinSet SkinSetId=\"79\" SkinSetName=\"Infected Engine
+        Skin\" SkinSetDescription=\"Renovate your Engine Room and generated Engine
+        Trail for an Infected Crystal design. Requires Max Level Engine Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16761\" /><SkinSet SkinSetId=\"80\" SkinSetName=\"Repurposed Orbital
+        Defender Skin\" SkinSetDescription=\"Retrofit your Ion Cannon with a ROD-231
+        Loadout. Requires Max Level Ion Cannon.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16812\" /><SkinSet SkinSetId=\"81\" SkinSetName=\"TALON Twin Defender
+        Skin\" SkinSetDescription=\"Retrofit your Ion Cannon with a prototype TTD-219
+        Loadout. Requires Max Level Ion Cannon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16813\" /><SkinSet SkinSetId=\"82\" SkinSetName=\"Coolant Plant
+        Skin\" SkinSetDescription=\"Retrofit your Fusion Reactor Room for a Liquid
+        Distribution Plant. Requires Max Level Fusion Reactor.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16885\" /><SkinSet SkinSetId=\"83\" SkinSetName=\"Autonomic Ventilator
+        Skin\" SkinSetDescription=\"Retrofit your Fusion Reactor Room for a Central
+        Nervous Ventilator System. Requires Max Level Fusion Reactor.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16886\" /><SkinSet SkinSetId=\"84\" SkinSetName=\"Dynamic Android
+        Studio Skin\" SkinSetDescription=\"Retrofit your Android Studio for a Bot-Dynamics
+        Factory look. Requires Max Level Android Studio.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16973\" /><SkinSet SkinSetId=\"85\" SkinSetName=\"Parasite Studio
+        Skin\" SkinSetDescription=\"Retrofit your Android Studio for a Parasite Production
+        Gland. Requires Max Level Android Studio.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"16974\" /><SkinSet SkinSetId=\"86\" SkinSetName=\"Sludge Pipes
+        Skin\" SkinSetDescription=\"Renovate your Service Vents with contaminated
+        sewerage pipes.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17010\"
+        /><SkinSet SkinSetId=\"87\" SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"88\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"89\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"90\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"91\"
+        SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"92\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"93\"
+        SkinSetName=\"Nuclear Fission Engine Skin\" SkinSetDescription=\"Renovate
+        your Engine Room and generated Engine Trail for a radioactive design. Requires
+        Max Level Engine Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17021\" /><SkinSet SkinSetId=\"94\" SkinSetName=\"2021 Gilded Crown
+        Beacon Skin\" SkinSetDescription=\"2021 December Tournament Commemorative
+        Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17258\"
+        /><SkinSet SkinSetId=\"95\" SkinSetName=\"2021 Gilded Beacon Skin\" SkinSetDescription=\"2021
+        December Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17255\" /><SkinSet SkinSetId=\"96\" SkinSetName=\"2021 Silver Crown
+        Beacon Skin\" SkinSetDescription=\"2021 December Tournament Commemorative
+        Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17257\"
+        /><SkinSet SkinSetId=\"97\" SkinSetName=\"2021 Silver Beacon Skin\" SkinSetDescription=\"2021
+        December Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17254\" /><SkinSet SkinSetId=\"98\" SkinSetName=\"2021 Bronze Crown
+        Beacon Skin\" SkinSetDescription=\"2021 December Tournament Commemorative
+        Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17256\"
+        /><SkinSet SkinSetId=\"99\" SkinSetName=\"2021 Bronze Beacon Skin\" SkinSetDescription=\"2021
+        December Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17253\" /><SkinSet SkinSetId=\"100\" SkinSetName=\"Quarantine Room
+        Skin\" SkinSetDescription=\"Retrofit a Bedroom as a Quarantine Zone. Requires
+        Max Level Bedroom.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17564\"
+        /><SkinSet SkinSetId=\"101\" SkinSetName=\"Eggsamination Room Skin\" SkinSetDescription=\"Retrofit
+        a Bedroom as an Egg Quarantine Zone. Requires Max Level Bedroom.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17565\" /><SkinSet SkinSetId=\"102\" SkinSetName=\"Trash Compactor
+        Skin\" SkinSetDescription=\"Renovate your Security Gate and effect for a space
+        conscious design. Requires Max Security Gate.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17608\" /><SkinSet SkinSetId=\"103\" SkinSetName=\"2023 Gilded
+        Crown Beacon Skin\" SkinSetDescription=\"2023 Tournament Commemorative Beacon.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20422\" /><SkinSet SkinSetId=\"104\"
+        SkinSetName=\"2023 Gilded Beacon Skin\" SkinSetDescription=\"2023 Tournament
+        Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20419\"
+        /><SkinSet SkinSetId=\"105\" SkinSetName=\"2023 Silver Crown Beacon Kit\"
+        SkinSetDescription=\"2023 Tournament Commemorative Beacon.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"20421\" /><SkinSet SkinSetId=\"106\" SkinSetName=\"2023 Silver
+        Beacon Skin\" SkinSetDescription=\"2023 Tournament Commemorative Beacon.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20418\" /><SkinSet SkinSetId=\"107\"
+        SkinSetName=\"2023 Bronze Crown Beacon Kit\" SkinSetDescription=\"2023 Tournament
+        Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"20420\"
+        /><SkinSet SkinSetId=\"108\" SkinSetName=\"2023 Bronze Beacon Skin\" SkinSetDescription=\"2023
+        Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"20417\" /><SkinSet SkinSetId=\"109\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"110\"
+        SkinSetName=\"Holo Dojo Skin\" SkinSetDescription=\"Retrofit a Galaxy Gym
+        as a Holographic Dojo. Requires Max Level Galaxy Gym.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17661\" /><SkinSet SkinSetId=\"111\" SkinSetName=\"War Room Skin\"
+        SkinSetDescription=\"Retrofit a Galaxy Gym as a Holographic 'War Room'. Requires
+        Max Level Galaxy Gym.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17662\"
+        /><SkinSet SkinSetId=\"112\" SkinSetName=\"\" SkinSetDescription=\"\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"0\" /><SkinSet SkinSetId=\"113\" SkinSetName=\"Galactic Council
+        Skin\" SkinSetDescription=\"Retrofit your Fleet Council for a Galactic Council
+        Design! Requires Max Level Fleet Council Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17749\" /><SkinSet SkinSetId=\"114\" SkinSetName=\"Hydra Diplomacy
+        Office Skin\" SkinSetDescription=\"Retrofit your Fleet Council to handle Hydra's
+        tributes! Requires Max Level Fleet Council Room.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17748\" /><SkinSet SkinSetId=\"115\" SkinSetName=\"Water Fuel Cell
+        Reactor Skin\" SkinSetDescription=\"With the clean power of hydrogen, traversing
+        the Galaxy has never been more responsible!\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17696\" /><SkinSet SkinSetId=\"116\" SkinSetName=\"Lernaean Shield
+        Generator Skin\" SkinSetDescription=\"Retrofit your Shield Generator for the
+        Lernaean Design, 1st Prize for the top Fleet of 2021! Requires Max Level Shield
+        Generator Room.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"17748\"
+        /><SkinSet SkinSetId=\"117\" SkinSetName=\"Gerbaltech Shield Battery Skin\"
+        SkinSetDescription=\"Retrofit your Shield Battery for a Self Driven Hamster
+        Design. Requires Max Level Shield Battery Room. Squeak!\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17840\" /><SkinSet SkinSetId=\"118\" SkinSetName=\"Lernaean Shield
+        Battery Skin\" SkinSetDescription=\"Retrofit your Shield Battery for the Lernaean
+        Design. Requires Max Level Shield Battery Room.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17841\" /><SkinSet SkinSetId=\"119\" SkinSetName=\"Heat Sink Armor
+        Skin\" SkinSetDescription=\"Reroutes excess thermal energy to keep your ship's
+        systems running in the heat of battle. Requires Max Level Armor.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17908\" /><SkinSet SkinSetId=\"120\" SkinSetName=\"Exhaust Beacon
+        Skin\" SkinSetDescription=\"Efficiently disperses excess heat from the ship,
+        and looks pretty cool while doing so.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17909\" /><SkinSet SkinSetId=\"121\" SkinSetName=\"Trash Cannon
+        Skin\" SkinSetDescription=\"Cunningly loaded with whatever you could find
+        in the cutlery drawer. Requires Max Level Bolter Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"17872\" /><SkinSet SkinSetId=\"122\" SkinSetName=\"Steampunk Engine
+        Skin\" SkinSetDescription=\"Renovate your Engine Room and generated Engine
+        Trail for a Steampunk design. Requires Max Level Engine Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18051\" /><SkinSet SkinSetId=\"123\" SkinSetName=\"Steam Security
+        Gate Skin\" SkinSetDescription=\"Renovate your Security Gate and effect for
+        a retro Steampunk design. Requires Max Security Gate.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18048\" /><SkinSet SkinSetId=\"124\" SkinSetName=\"Steampunk Small
+        Reactor Skin\" SkinSetDescription=\"Renovate your Reactor for a retro Steampunk
+        design. Requires Max Level Small Reactor Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18052\" /><SkinSet SkinSetId=\"125\" SkinSetName=\"Steampunk Mining
+        Laser Skin\" SkinSetDescription=\"Renovate your Mining Laser for a retro Steampunk
+        design. Requires Max Level Mining Laser Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18053\" /><SkinSet SkinSetId=\"126\" SkinSetName=\"Steampunk Gas
+        Laser Skin\" SkinSetDescription=\"Renovate your Gas Laser for a retro Steampunk
+        design. Requires Max Level Gas Laser Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18050\" /><SkinSet SkinSetId=\"127\" SkinSetName=\"Steampunk Missile
+        Launcher Skin\" SkinSetDescription=\"Renovate your Missile Launcher for a
+        retro Steampunk design. Requires Max Level Missile Launcher Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18049\" /><SkinSet SkinSetId=\"128\" SkinSetName=\"Minimal Mining
+        Laser Skin\" SkinSetDescription=\"Retrofit a Mineral Mining Laser to house
+        a tiny Loud Locust pistol. Requires Max Level Mineral Mining Laser Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18114\" /><SkinSet SkinSetId=\"129\"
+        SkinSetName=\"Hydra Strip Miner Skin\" SkinSetDescription=\"Retrofit your
+        Mineral Mining Laser into a Hydra Strip Miner. Requires Max Level Mineral
+        Mining Laser Room.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18115\"
+        /><SkinSet SkinSetId=\"130\" SkinSetName=\"Caterwauler Skin\" SkinSetDescription=\"Retrofit
+        your Plasma Cannon with a furious feline facade! Requires Max Level Plasma
+        Discharger Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18150\"
+        /><SkinSet SkinSetId=\"131\" SkinSetName=\"Cotton Candy Machine Skin\" SkinSetDescription=\"Retrofit
+        your Bio Recycling facility to spin sweet fairy floss! Requires Max Level
+        Bio Recycling Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18285\"
+        /><SkinSet SkinSetId=\"132\" SkinSetName=\"TEMP Cannon Skin\" SkinSetDescription=\"Retrofit
+        your EMP Cannon for a steampunk design. Requires Max Level EMP Cannon Room.\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18420\" /><SkinSet SkinSetId=\"133\"
+        SkinSetName=\"Summit Shock Cannon Skin\" SkinSetDescription=\"Retrofit your
+        EMP Cannon into a Summit Shock Cannon. Requires Max Level EMP Cannon Room.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18397\" /><SkinSet SkinSetId=\"134\"
+        SkinSetName=\"Sports Bar Command Center Skin\" SkinSetDescription=\"Renovate
+        your Command Center into a Galactic Sports Hub! Requires Max level Command
+        Center.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18376\"
+        /><SkinSet SkinSetId=\"135\" SkinSetName=\"Snowman Studio Skin\" SkinSetDescription=\"Renovate
+        your Android Studio into a festive Snowman Studio! Requires Max level Android
+        Studio.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18550\"
+        /><SkinSet SkinSetId=\"136\" SkinSetName=\"Eye of Aldara Skin\" SkinSetDescription=\"Sight
+        Beyond Sight! Retrofit your Beacon into the Eye of Aldara. Requires Max Level
+        Beacon.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18578\"
+        /><SkinSet SkinSetId=\"137\" SkinSetName=\"Draconic Eye Skin\" SkinSetDescription=\"If
+        you gaze too long into an abyss, the abyss gazes also into you. Retrofit your
+        Beacon into a Draconic Eye. Requires Max Level Beacon.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"18617\" /><SkinSet SkinSetId=\"138\" SkinSetName=\"8-Bit Coin Mining
+        Facility Skin\" SkinSetDescription=\"Retrofit your Mineral Miner into a Digital
+        Currency Mining Facility. Still processes Minerals. Requires Max Level Mineral
+        Miner Room.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18706\"
+        /><SkinSet SkinSetId=\"139\" SkinSetName=\"Summit Coin Mining Facility Skin\"
+        SkinSetDescription=\"Retrofit your Mineral Miner into a Summit Coin Mining
+        Facility. To the Moon! Still processes Minerals. Requires Max Level Mineral
+        Miner Room.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"18705\"
+        /><SkinSet SkinSetId=\"140\" SkinSetName=\"2022 Gilded Crown Beacon Skin\"
+        SkinSetDescription=\"2022 Tournament Commemorative Beacon.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19022\" /><SkinSet SkinSetId=\"141\" SkinSetName=\"2022 Gilded
+        Beacon Skin\" SkinSetDescription=\"2022 Tournament Commemorative Beacon.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19019\" /><SkinSet SkinSetId=\"142\"
+        SkinSetName=\"2022 Silver Crown Beacon Skin\" SkinSetDescription=\"2022 Tournament
+        Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19021\"
+        /><SkinSet SkinSetId=\"143\" SkinSetName=\"2022 Silver Beacon Skin\" SkinSetDescription=\"2022
+        Tournament Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19018\" /><SkinSet SkinSetId=\"144\" SkinSetName=\"2022 Bronze
+        Crown Beacon Skin\" SkinSetDescription=\"2022 Tournament Commemorative Beacon.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19020\" /><SkinSet SkinSetId=\"145\"
+        SkinSetName=\"2022 Bronze Beacon Skin\" SkinSetDescription=\"2022 Tournament
+        Commemorative Beacon.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19017\"
+        /><SkinSet SkinSetId=\"146\" SkinSetName=\"Gerbaltech Anti Craft Laser Skin\"
+        SkinSetDescription=\"Retrofit your Anti Craft Laser Room into a Self Driven
+        Hamster Design. Requires Max Level Anti Craft Laser Room. Squeak!\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19272\" /><SkinSet SkinSetId=\"147\" SkinSetName=\"Summitran Anti
+        Craft Laser Skin\" SkinSetDescription=\"Rare plans for the mythical Summitran
+        Anti Craft Laser. Requires Max Level Anti Craft Laser Room.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19271\" /><SkinSet SkinSetId=\"148\" SkinSetName=\"Gas Condenser
+        Skin\" SkinSetDescription=\"Renovate your Gas Collector into a space conscious
+        Condenser! Requires Max level Gas Collector.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19326\" /><SkinSet SkinSetId=\"149\" SkinSetName=\"\" SkinSetDescription=\"\"
+        RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"0\" /><SkinSet SkinSetId=\"150\"
+        SkinSetName=\"Summitran Armor Skin\" SkinSetDescription=\"Advanced geometric
+        plating that dampens and absorbs damage. Requires Max Level Armor Tile.\"
+        RequirementString=\"\" Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19397\" /><SkinSet SkinSetId=\"151\"
+        SkinSetName=\"Diamondium Armor Skin\" SkinSetDescription=\"Wait a minute -
+        this is Diamondilium! Cheap, brittle Diamondilium! Requires Max Level Armor
+        Tile.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\"
+        DateUpdated=\"2023-08-02T06:25:32\" SpriteId=\"19398\" /><SkinSet SkinSetId=\"152\"
+        SkinSetName=\"Tennis Court Drone Hangar Skin\" SkinSetDescription=\"The ease
+        with which ball retrieval drones can be weaponized should really cause more
+        concern than it does. Requires Max Level Drone Hangar.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19416\" /><SkinSet SkinSetId=\"153\" SkinSetName=\"Eggnition Engine
+        Skin\" SkinSetDescription=\"Scramble! Renovate your Engine Room and generated
+        Engine Trail for a unique effect. Requires Max Level Engine Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19461\" /><SkinSet SkinSetId=\"154\" SkinSetName=\"Summitran Lift
+        Skin\" SkinSetDescription=\"For those brave few with the means to go Above
+        and Beyond. Requires Max Level Lift Tile.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19491\" /><SkinSet SkinSetId=\"155\" SkinSetName=\"Glass Elevator
+        Skin\" SkinSetDescription=\"A Lift? Now that it has taken us up into the sky,
+        it has become a Space Elevator! Requires Max Level Lift Tile.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19486\" /><SkinSet SkinSetId=\"156\" SkinSetName=\"Nova Core Reactor
+        Skin\" SkinSetDescription=\"Recreate the Big Bang, right in your very own
+        home. Requires Max Level Fusion Reactor.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19556\" /><SkinSet SkinSetId=\"157\" SkinSetName=\"Rejuvenation
+        Chamber Skin\" SkinSetDescription=\"Retrofit a Bedroom as a Rejuvenation Chamber.
+        Requires Max Level Bedroom.\" RequirementString=\"\" Flags=\"2\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19602\" /><SkinSet SkinSetId=\"158\" SkinSetName=\"HYDRA Minion
+        Chamber Skin\" SkinSetDescription=\"Retrofit a Bedroom as a HYDRA Minion Chamber.
+        Requires Max Level Bedroom. Was accidentally leaked to the Summitrans in a
+        recent blunder by the HYDRA navy.\" RequirementString=\"\" Flags=\"3\" Metadata=\"\"
+        CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19625\" /><SkinSet SkinSetId=\"159\" SkinSetName=\"Barrel Cellar
+        Gas Storage Skin\" SkinSetDescription=\"Only the finest vintage for your engines.
+        Requires Max Level Gas Storage Room.\" RequirementString=\"\" Flags=\"2\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19975\" /><SkinSet SkinSetId=\"160\" SkinSetName=\"Summitran Reactor
+        Core Skin\" SkinSetDescription=\"Harness the power of of glorious victory!
+        Requires Max Level Small Reactor Room.\" RequirementString=\"\" Flags=\"3\"
+        Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:25:32\"
+        SpriteId=\"19996\" /><SkinSet SkinSetId=\"161\" SkinSetName=\"Gerbaltech Kinetic
+        Reactor Skin\" SkinSetDescription=\"Renovate your Small Reactor into a Self
+        Driven Hamster design. Requires Max level Small Reactor Room.\" RequirementString=\"\"
+        Flags=\"2\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:26:06\"
+        SpriteId=\"19995\" /><SkinSet SkinSetId=\"163\" SkinSetName=\"Searchlight
+        Radar Skin\" SkinSetDescription=\"Put your opponents under the lamp with this
+        repurposed Prison World Searchlight. Requires Max Level Radar Room.\" RequirementString=\"\"
+        Flags=\"3\" Metadata=\"\" CostString=\"\" ApprovalFlags=\"Published\" DateUpdated=\"2023-08-02T06:26:06\"
+        SpriteId=\"20093\" /><SkinSet SkinSetId=\"176\" SkinSetName=\"Zixian Gas Refinery\"
+        SkinSetDescription=\"It's like being in a dream, and the air is filled with
+        mystery. - Designed by Zixia\" RequirementString=\"\" Flags=\"0\" Metadata=\"{&quot;IsUGC&quot;:&quot;True&quot;,
+        &quot;CreatorUserId&quot;: &quot;9669790&quot;}\" CostString=\"starbux:1200\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2024-02-27T15:11:13\" SpriteId=\"20507\"
+        /><SkinSet SkinSetId=\"182\" SkinSetName=\"Wolfy Factory\" SkinSetDescription=\"Made
+        in honour of the Trek Wolfpack fleet. - Designed by Sir Javaer\" RequirementString=\"\"
+        Flags=\"0\" Metadata=\"{&quot;IsUGC&quot;:&quot;True&quot;, &quot;CreatorUserId&quot;:&quot;9429297&quot;}\"
+        CostString=\"starbux:1200\" ApprovalFlags=\"Published\" DateUpdated=\"2024-03-28T04:44:01\"
+        SpriteId=\"20507\" /><SkinSet SkinSetId=\"183\" SkinSetName=\"Viking Protection
+        Runes\" SkinSetDescription=\"Ancient space Viking technology. It even seems
+        like magic. - Designed by KRURK\" RequirementString=\"\" Flags=\"0\" Metadata=\"{&quot;IsUGC&quot;:&quot;True&quot;,
+        &quot;CreatorUserId&quot;:&quot;10223107&quot;}\" CostString=\"starbux:1200\"
+        ApprovalFlags=\"Published\" DateUpdated=\"2024-03-28T05:06:16\" SpriteId=\"20507\"
+        /></SkinSets></ListSkinSets></UserService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:36:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - pC5L8A0hMPQbeU0HnkaoYkt53klxi_f6UceNpQhS2oIdKgutIfeb1Q==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

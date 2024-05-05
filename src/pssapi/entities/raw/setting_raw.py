@@ -88,6 +88,7 @@ class SettingRaw(_EntityBaseRaw):
         self._maintenance_title: str = _parse.pss_str(setting_info.pop("MaintenanceTitle", None))
         self._marker_generator_design_version: int = _parse.pss_int(setting_info.pop("MarkerGeneratorDesignVersion", None))
         self._max_boost_duration: int = _parse.pss_int(setting_info.pop("MaxBoostDuration", None))
+        self._max_crews: int = _parse.pss_int(setting_info.pop("MaxCrews", None))
         self._max_daily_draws: int = _parse.pss_int(setting_info.pop("MaxDailyDraws", None))
         self._max_redemption_count: int = _parse.pss_int(setting_info.pop("MaxRedemptionCount", None))
         self._max_redemption_count_per_month: int = _parse.pss_int(setting_info.pop("MaxRedemptionCountPerMonth", None))
@@ -444,6 +445,10 @@ class SettingRaw(_EntityBaseRaw):
         return self._max_boost_duration
 
     @property
+    def max_crews(self) -> int:
+        return self._max_crews
+
+    @property
     def max_daily_draws(self) -> int:
         return self._max_daily_draws
 
@@ -777,6 +782,7 @@ class SettingRaw(_EntityBaseRaw):
             self.maintenance_title,
             self.marker_generator_design_version,
             self.max_boost_duration,
+            self.max_crews,
             self.max_daily_draws,
             self.max_redemption_count,
             self.max_redemption_count_per_month,
@@ -919,6 +925,7 @@ class SettingRaw(_EntityBaseRaw):
                 "MaintenanceTitle": self.maintenance_title,
                 "MarkerGeneratorDesignVersion": self.marker_generator_design_version,
                 "MaxBoostDuration": self.max_boost_duration,
+                "MaxCrews": self.max_crews,
                 "MaxDailyDraws": self.max_daily_draws,
                 "MaxRedemptionCount": self.max_redemption_count,
                 "MaxRedemptionCountPerMonth": self.max_redemption_count_per_month,

@@ -92,16 +92,21 @@ async def test_list_friends(client: pssapi.PssApiClient, access_token: str):
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("client", "client_date_time")
 @pytest.mark.vcr()
+async def test_list_skin_sets(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
+    skin_sets = await client.user_service.list_skin_sets(client_date_time)
+    assert isinstance(skin_sets, list)
+    assert len(skin_sets) > 0
+    assert isinstance(skin_sets[0], pssapi.entities.SkinSet)
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("client", "client_date_time")
+@pytest.mark.vcr()
 async def test_list_skins(client: pssapi.PssApiClient, client_date_time: datetime.datetime):
     skins = await client.user_service.list_skins(client_date_time)
-    assert isinstance(skins, tuple)
-    assert len(skins) == 2
-    assert isinstance(skins[0], list)
-    assert isinstance(skins[1], list)
-    assert len(skins[0]) > 0
-    assert len(skins[1]) > 0
-    assert isinstance(skins[0][0], pssapi.entities.SkinSet)
-    assert isinstance(skins[1][0], pssapi.entities.Skin)
+    assert isinstance(skins, list)
+    assert len(skins) > 0
+    assert isinstance(skins[0], pssapi.entities.Skin)
 
 
 @pytest.mark.asyncio

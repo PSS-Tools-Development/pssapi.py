@@ -3,10 +3,196 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/CollectionService/ListAllCollectionDesigns?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
   response:
     body:
-      string: <CollectionService><ListAllCollectionDesigns version="397"><CollectionDesigns><CollectionDesign
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385284"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351280"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T11:17:09"
+        TournamentSpriteId="8000" NewUserCount="1890" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:20:48 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - HKSWR2O88_ezrq3UrJLU5C2l-IkXVuNFKzfwfn8BqDf8oRxT0ZQ1sw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385284"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351280"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T11:17:09"
+        TournamentSpriteId="8000" NewUserCount="1894" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:20:48 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 3036edceee55768c8dc6fc7bbe13d08e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - O_0GJ42VP-ObZekrjQrtGut_4Q-puBPDUHEpLTUF3y9J-KB4Hg5yqg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/CollectionService/ListAllCollectionDesigns?clientDateTime=2024-05-05T11%3A20%3A48&languageKey=en
+  response:
+    body:
+      string: <CollectionService><ListAllCollectionDesigns version="405"><CollectionDesigns><CollectionDesign
         CollectionDesignId="1" CollectionName="SavySoda" MinCombo="4" MaxCombo="10"
         EnhancementType="EmpSkill" BaseEnhancementValue="4" Flags="0" CollectionType="Character"
         CollectionDescription="Savy Soda Engineering. Not actually a soda company."
@@ -91,17 +277,17 @@ interactions:
         ColorString="255,0,0" StepEnhancementValue="1" IconSpriteId="11400" TriggerType="None"
         Argument="0" BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
         HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="15" CollectionName="Ardent"
-        MinCombo="3" MaxCombo="8" EnhancementType="EmpSkill" BaseEnhancementValue="5"
+        MinCombo="2" MaxCombo="8" EnhancementType="EmpSkill" BaseEnhancementValue="20"
         Flags="0" CollectionType="Character" CollectionDescription="Noble souls, empowered
-        by righteous purpose." SpriteId="11296" ColorString="225, 225, 225" StepEnhancementValue="1"
-        IconSpriteId="11297" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
-        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /><CollectionDesign
-        CollectionDesignId="16" CollectionName="OncePerYear" MinCombo="2" MaxCombo="2"
-        EnhancementType="MedicalSkill" BaseEnhancementValue="30" Flags="0" CollectionType="Character"
-        CollectionDescription="Meet once per year" SpriteId="12793" ColorString="230,185,186"
-        StepEnhancementValue="30" IconSpriteId="12794" TriggerType="None" Argument="0"
-        BaseChance="0" StepChance="0" MaxUse="1" AbilityName="" AbilityIconSpriteId="4"
-        HaloAnimationId="1263" /></CollectionDesigns></ListAllCollectionDesigns></CollectionService>
+        by righteous purpose." SpriteId="11296" ColorString="225, 225, 225" StepEnhancementValue="10"
+        IconSpriteId="11297" TriggerType="Constant" Argument="0" BaseChance="100"
+        StepChance="0" MaxUse="999999" AbilityName="EMP Discharge" AbilityIconSpriteId="8874"
+        HaloAnimationId="1263" /><CollectionDesign CollectionDesignId="16" CollectionName="OncePerYear"
+        MinCombo="2" MaxCombo="2" EnhancementType="MedicalSkill" BaseEnhancementValue="30"
+        Flags="0" CollectionType="Character" CollectionDescription="Meet once per
+        year" SpriteId="12793" ColorString="230,185,186" StepEnhancementValue="30"
+        IconSpriteId="12794" TriggerType="None" Argument="0" BaseChance="0" StepChance="0"
+        MaxUse="1" AbilityName="" AbilityIconSpriteId="4" HaloAnimationId="1263" /></CollectionDesigns></ListAllCollectionDesigns></CollectionService>
     headers:
       Access-Control-Allow-Headers:
       - '*'
@@ -118,11 +304,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Sun, 24 Mar 2024 17:17:08 GMT
+      - Sun, 05 May 2024 11:20:48 GMT
       Expires:
-      - Sun, 24 Mar 2024 17:37:08 GMT
+      - Sun, 05 May 2024 11:40:49 GMT
       Last-Modified:
-      - Sun, 24 Mar 2024 17:17:08 GMT
+      - Sun, 05 May 2024 11:20:49 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -130,9 +316,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 e94bd6405e7651c50e73077af1691486.cloudfront.net (CloudFront)
+      - 1.1 f1c3d16033a0215071d66d8a8c247af4.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 6gQQ8zdTENE6yTl6XJ0oqizIsHAsp-NRzKX5me1XGFbTsiE4APl6jw==
+      - ccnkmNlFn7ZWvNdOKywWhqnQibeNjB2_VAGbcirYbszBrxwBFRvLgw==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

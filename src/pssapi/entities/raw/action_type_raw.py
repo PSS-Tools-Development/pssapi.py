@@ -23,6 +23,7 @@ class ActionTypeRaw(_EntityBaseRaw):
         self._action_type_parameter_relativity: str = _parse.pss_str(action_type_info.pop("ActionTypeParameterRelativity", None))
         self._action_type_parameter_value: int = _parse.pss_int(action_type_info.pop("ActionTypeParameterValue", None))
         self._color_string: str = _parse.pss_str(action_type_info.pop("ColorString", None))
+        self._condition_parameter_argument: int = _parse.pss_int(action_type_info.pop("ConditionParameterArgument", None))
         self._condition_type_category: str = _parse.pss_str(action_type_info.pop("ConditionTypeCategory", None))
         self._condition_type_parameter: str = _parse.pss_str(action_type_info.pop("ConditionTypeParameter", None))
         self._image_sprite_id: int = _parse.pss_int(action_type_info.pop("ImageSpriteId", None))
@@ -65,6 +66,10 @@ class ActionTypeRaw(_EntityBaseRaw):
         return self._color_string
 
     @property
+    def condition_parameter_argument(self) -> int:
+        return self._condition_parameter_argument
+
+    @property
     def condition_type_category(self) -> str:
         return self._condition_type_category
 
@@ -102,6 +107,7 @@ class ActionTypeRaw(_EntityBaseRaw):
             self.action_type_parameter_relativity,
             self.action_type_parameter_value,
             self.color_string,
+            self.condition_parameter_argument,
             self.condition_type_category,
             self.condition_type_parameter,
             self.image_sprite_id,
@@ -122,6 +128,7 @@ class ActionTypeRaw(_EntityBaseRaw):
                 "ActionTypeParameterRelativity": self.action_type_parameter_relativity,
                 "ActionTypeParameterValue": self.action_type_parameter_value,
                 "ColorString": self.color_string,
+                "ConditionParameterArgument": self.condition_parameter_argument,
                 "ConditionTypeCategory": self.condition_type_category,
                 "ConditionTypeParameter": self.condition_type_parameter,
                 "ImageSpriteId": self.image_sprite_id,

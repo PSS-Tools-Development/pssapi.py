@@ -1,0 +1,225 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/PublicService/GetShipRoomDetails?userId=4510693
+  response:
+    body:
+      string: <GetShipRoomDetails><Ship ShipName="The worst." ShipLevel="12" OriginalRaceId="1"
+        ShipDesignId="220" BrightnessValue="0.1" HueValue="0" SaturationValue="1"
+        SkinItemDesignId="777" SkinOpacityValue="0.25" StickerString="1704@305.0131-709.156-3.398885|1704@322.4934-73.27997-5|1801@797.7574-527.7207-5"><User
+        Id="4510693" Name="The worst." IconSpriteId="8230" AllianceName="Trek Academy"
+        AllianceSpriteId="2320" Trophy="4804" LastAlertDate="2020-06-30T19:52:10"
+        AllianceId="12758" AllianceMembership="FleetAdmiral" /><Rooms><Room CurrentSkinKey="608"
+        RoomDesignId="702" Row="11" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="696" Row="26" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="37" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="23" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="20" Column="39" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="16" Column="37" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="579" Row="26" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="22" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="579" Row="11" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="9" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="10" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="11" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="12" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="13" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="14" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="15" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="16" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="17" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="18" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="19" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="27" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="20" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="544" Row="17" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="518" Row="7" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="21" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="525"
+        RoomDesignId="509" Row="20" Column="37" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="608" Row="8" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="12" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="13" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="14" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="27" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="26" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="433" Row="5" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="524" Row="13" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="28" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="17" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="8" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="11" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="20" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="20" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="7" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="7" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="7" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="547" Row="31" Column="21" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="548" Row="29" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="21" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="130" Row="19" Column="19" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="232" Row="29" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="545" Row="20" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="26" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="25"
+        RoomDesignId="522" Row="17" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="275" Row="8" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="7" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="498" Row="7" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="107"
+        RoomDesignId="223" Row="19" Column="21" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="412" Row="31" Column="25" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="231" Row="29" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="490" Row="31" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="548" Row="7" Column="20" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="217" Row="17" Column="19" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="10" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="14" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="13" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="13" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="547" Row="29" Column="17" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="22" Column="23" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="15" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="16" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="17" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="243" Row="17" Column="21" ConstructionStartDate="" /><Room CurrentSkinKey="236"
+        RoomDesignId="558" Row="17" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="273" Row="30" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="537" Row="20" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="13" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="13" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="406" Row="28" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="410"
+        RoomDesignId="535" Row="26" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="24" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="15" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="247" Row="21" Column="39" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="21" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="18" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="520" Row="23" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="369"
+        RoomDesignId="212" Row="5" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="13" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="25" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="413" Row="14" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="590"
+        RoomDesignId="559" Row="5" Column="21" ConstructionStartDate="" /><Room CurrentSkinKey="580"
+        RoomDesignId="299" Row="28" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="246"
+        RoomDesignId="299" Row="28" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="426"
+        RoomDesignId="299" Row="28" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="361"
+        RoomDesignId="299" Row="28" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="18" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="19" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="391"
+        RoomDesignId="299" Row="22" Column="32" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="20" Column="40" ConstructionStartDate="" /><Room CurrentSkinKey="597"
+        RoomDesignId="525" Row="11" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="21" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="15" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="15" Column="25" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="16" Column="39" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="22" Column="25" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="534" Row="17" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="22" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="23" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="24" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="25" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="37" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="38" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="39" ConstructionStartDate="" /><Room CurrentSkinKey="299"
+        RoomDesignId="557" Row="14" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="154" Row="29" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="519"
+        RoomDesignId="247" Row="16" Column="38" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="530" Row="20" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="26" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="16" Column="36" ConstructionStartDate="" /><Room CurrentSkinKey="299"
+        RoomDesignId="557" Row="20" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="25" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="28" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="25" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="31" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="22" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="369"
+        RoomDesignId="212" Row="5" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="546" Row="17" Column="24" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="547" Row="29" Column="20" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="548" Row="7" Column="17" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="29" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="16" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="34" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="19" Column="35" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="680" Row="22" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="578" Row="23" Column="33" ConstructionStartDate="" /><Room CurrentSkinKey="299"
+        RoomDesignId="557" Row="23" Column="30" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="659" Row="31" Column="27" ConstructionStartDate="" /><Room CurrentSkinKey="466"
+        RoomDesignId="536" Row="15" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="23" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="24" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="25" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="0"
+        RoomDesignId="536" Row="26" Column="26" ConstructionStartDate="" /><Room CurrentSkinKey="369"
+        RoomDesignId="212" Row="5" Column="26" ConstructionStartDate="" /></Rooms></Ship></GetShipRoomDetails>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:34:14 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - WaMFfRKpL_txjJBFJILspGVgVQhdNLlOFhXnhzs740-FtOtOXqlBXA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

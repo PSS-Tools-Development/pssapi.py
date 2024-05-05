@@ -18,5 +18,7 @@ LIST_ALL_CHALLENGE_DESIGNS_2_BASE_PATH: str = "ChallengeService/ListAllChallenge
 
 async def list_all_challenge_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_ChallengeDesign]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_ChallengeDesign, "ChallengeDesigns", True),), "ChallengeDesigns", production_server, LIST_ALL_CHALLENGE_DESIGNS_2_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(
+        ((_ChallengeDesign, "ChallengeDesigns", True),), "ChallengeDesigns", production_server, LIST_ALL_CHALLENGE_DESIGNS_2_BASE_PATH, "GET", response_gzipped=False, **params
+    )
     return result

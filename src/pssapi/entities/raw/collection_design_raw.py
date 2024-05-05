@@ -25,16 +25,19 @@ class CollectionDesignRaw(_EntityBaseRaw):
         self._collection_name: str = _parse.pss_str(collection_design_info.pop("CollectionName", None))
         self._collection_type: str = _parse.pss_str(collection_design_info.pop("CollectionType", None))
         self._color_string: str = _parse.pss_str(collection_design_info.pop("ColorString", None))
+        self._cooldown_time: int = _parse.pss_int(collection_design_info.pop("CooldownTime", None))
         self._enhancement_type: str = _parse.pss_str(collection_design_info.pop("EnhancementType", None))
         self._flags: int = _parse.pss_int(collection_design_info.pop("Flags", None))
         self._halo_animation_id: int = _parse.pss_int(collection_design_info.pop("HaloAnimationId", None))
         self._icon_sprite_id: int = _parse.pss_int(collection_design_info.pop("IconSpriteId", None))
         self._max_combo: int = _parse.pss_int(collection_design_info.pop("MaxCombo", None))
         self._max_use: int = _parse.pss_int(collection_design_info.pop("MaxUse", None))
+        self._metadata: str = _parse.pss_str(collection_design_info.pop("Metadata", None))
         self._min_combo: int = _parse.pss_int(collection_design_info.pop("MinCombo", None))
         self._sprite_id: int = _parse.pss_int(collection_design_info.pop("SpriteId", None))
         self._step_chance: int = _parse.pss_int(collection_design_info.pop("StepChance", None))
-        self._step_enhancement_value: int = _parse.pss_int(collection_design_info.pop("StepEnhancementValue", None))
+        self._step_enhancement_value: float = _parse.pss_float(collection_design_info.pop("StepEnhancementValue", None))
+        self._trigger_animation_id: int = _parse.pss_int(collection_design_info.pop("TriggerAnimationId", None))
         self._trigger_type: str = _parse.pss_str(collection_design_info.pop("TriggerType", None))
         super().__init__(collection_design_info)
 
@@ -79,6 +82,10 @@ class CollectionDesignRaw(_EntityBaseRaw):
         return self._color_string
 
     @property
+    def cooldown_time(self) -> int:
+        return self._cooldown_time
+
+    @property
     def enhancement_type(self) -> str:
         return self._enhancement_type
 
@@ -103,6 +110,10 @@ class CollectionDesignRaw(_EntityBaseRaw):
         return self._max_use
 
     @property
+    def metadata(self) -> str:
+        return self._metadata
+
+    @property
     def min_combo(self) -> int:
         return self._min_combo
 
@@ -115,8 +126,12 @@ class CollectionDesignRaw(_EntityBaseRaw):
         return self._step_chance
 
     @property
-    def step_enhancement_value(self) -> int:
+    def step_enhancement_value(self) -> float:
         return self._step_enhancement_value
+
+    @property
+    def trigger_animation_id(self) -> int:
+        return self._trigger_animation_id
 
     @property
     def trigger_type(self) -> str:
@@ -134,16 +149,19 @@ class CollectionDesignRaw(_EntityBaseRaw):
             self.collection_name,
             self.collection_type,
             self.color_string,
+            self.cooldown_time,
             self.enhancement_type,
             self.flags,
             self.halo_animation_id,
             self.icon_sprite_id,
             self.max_combo,
             self.max_use,
+            self.metadata,
             self.min_combo,
             self.sprite_id,
             self.step_chance,
             self.step_enhancement_value,
+            self.trigger_animation_id,
             self.trigger_type,
         )
 
@@ -160,16 +178,19 @@ class CollectionDesignRaw(_EntityBaseRaw):
                 "CollectionName": self.collection_name,
                 "CollectionType": self.collection_type,
                 "ColorString": self.color_string,
+                "CooldownTime": self.cooldown_time,
                 "EnhancementType": self.enhancement_type,
                 "Flags": self.flags,
                 "HaloAnimationId": self.halo_animation_id,
                 "IconSpriteId": self.icon_sprite_id,
                 "MaxCombo": self.max_combo,
                 "MaxUse": self.max_use,
+                "Metadata": self.metadata,
                 "MinCombo": self.min_combo,
                 "SpriteId": self.sprite_id,
                 "StepChance": self.step_chance,
                 "StepEnhancementValue": self.step_enhancement_value,
+                "TriggerAnimationId": self.trigger_animation_id,
                 "TriggerType": self.trigger_type,
             }
             self._dict.update(super().__dict__())

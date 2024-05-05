@@ -18,5 +18,5 @@ LIST_LEAGUES_2_BASE_PATH: str = "LeagueService/ListLeagues2"
 
 async def list_leagues_2(production_server: str, access_token: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_League]:
     params = {"accessToken": access_token, "clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_League, "Leagues", True),), "Leagues", production_server, LIST_LEAGUES_2_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_League, "Leagues", True),), "Leagues", production_server, LIST_LEAGUES_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result

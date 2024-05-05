@@ -1,3 +1,51 @@
+# Version 0.5.0
+## Changes
+### Added
+- Implemented Issue [#59](https://github.com/PSS-Tools-Development/pssapi.py/issues/59)
+## Updated Library
+The library has been updated to Pixel Starships v0.998.17.11192 (Steam) & v0.999.11374 (Steam, staging branch).
+### Changes to Services
+- Added `PublicService`
+  - Added method `get_ship_details`
+  - Added method `get_ship_room_details`
+- Changed `UserService`
+  - Added method `list_skin_sets`
+  - Updated method `list_skins` to use new endpoint
+### Changes to Raw Services
+- Added `PublicServiceRaw`
+  - Added method `get_ship_details`
+  - Added method `get_ship_room_details`
+- Changed `UserServiceRaw`
+  - Added method `list_skin_sets_2`
+  - Updated method `list_skins_2`
+### Changes to Raw Entities
+- Updated `ActionTypeRaw`
+  - Added property `condition_parameter_argument` (`int`)
+- Updated `CharacterDesignRaw`
+  - Added property `boost_values_string` (`str`)
+- Updated `CharacterRaw`
+  - Added property `bonus_training_capacity` (`int`)
+  - Added property `boost_level` (`int`)
+- Updated `CollectionDesignRaw`
+  - Added property `cooldown_time` (`int`)
+  - Added property `metadata` (`str`)
+  - Added property `step_enhancement_value` (`float`)
+  - Added property `trigger_animation_id` (`int`)
+- Updated `ConditionTypeRaw`
+  - Added property `condition_parameter_argument` (`int`)
+- Updated `CraftDesignRaw`
+  - Added property `craft_pathing_type` (`str`)
+  - Added property `entity_count` (`int`)
+- Updated `RoomDesignRaw`
+  - Added property `room_variant_type` (`int`)
+- Updated `SeasonDesignRaw`
+  - Added property `premium_reward_string` (`str`)
+  - Added property `repeat_reward_string` (`str`)
+- Updated `SettingRaw`
+  - Added property `max_crews` (`int`)
+### Changes to utilities
+- Added sub-module `pss` with functions `is_tournament_time`
+- Added function `get_first_of_next_month` to sub-module `datetime`
 # Version 0.4.1
 ## Changes
 ### Added
