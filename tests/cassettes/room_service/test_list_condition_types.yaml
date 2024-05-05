@@ -3,10 +3,196 @@ interactions:
     body: null
     headers: {}
     method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385284"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351280"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T11:14:43"
+        TournamentSpriteId="8000" NewUserCount="1894" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:16:18 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 e1dafdc346c45e381eadf0a96d4694c6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IXKSAl3LgZHIOCeSdQYEiXeK5PRU16Zju6i6iFudoL5-cFoQBIaOSQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385284"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351280"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T11:14:43"
+        TournamentSpriteId="8000" NewUserCount="1890" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:16:18 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - a0V5TJbTWASBWiD05bFX8iXGF47hGOjkFe8vIuUzNZYyqJHP6BPQSg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
     uri: https://api.pixelstarships.com/RoomService/ListConditionTypes2?languageKey=en
   response:
     body:
-      string: <RoomService><ListConditionTypes version="511"><ConditionTypes><ConditionType
+      string: <RoomService><ListConditionTypes version="529"><ConditionTypes><ConditionType
         ConditionTypeId="1" ConditionTypeName="None" ConditionTypeDescription="This
         condition will always be true and will execute the action" ConditionTypeAvailability="3"
         ConditionTypeCategory="None" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
@@ -14,49 +200,49 @@ interactions:
         ColorString="" RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="2" ConditionTypeName="Enemy Ship HP &lt;
         25%" ConditionTypeDescription="This condition is true when opponent ship has
-        less than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        less than 25% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="3" ConditionTypeName="Enemy Ship HP &lt;
         50%" ConditionTypeDescription="This condition is true when opponent ship has
-        less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        less than 50% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="5" ConditionTypeName="Enemy Ship HP &lt;
-        100%" ConditionTypeDescription="This condition is true when opponent ship
-        has sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        100%" ConditionTypeDescription="This condition is true when opponent ship's
+        current HP is less than Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="8" ConditionTypeName="Enemy Ship HP &gt;
         50%" ConditionTypeDescription="This condition is true when opponent ship has
-        more than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        more than 50% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="10" ConditionTypeName="Your Ship HP &lt;
         25%" ConditionTypeDescription="This condition is true when your ship has less
-        than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 25% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="11" ConditionTypeName="Your Ship HP &lt;
         50%" ConditionTypeDescription="This condition is true when your ship has less
-        than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 50% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="13" ConditionTypeName="Your Ship HP &lt;
-        100%" ConditionTypeDescription="This condition is true when your ship has
-        sustained any damage" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        100%" ConditionTypeDescription="This condition is true when your ship's current
+        HP is less than Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="100"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="0" OrderIndex="8" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="16" ConditionTypeName="Your Ship HP &gt;
         50%" ConditionTypeDescription="This condition is true when your ship has more
-        than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 50% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
@@ -532,13 +718,13 @@ interactions:
         ColorString="" RequiredResearchDesignId="96" OrderIndex="4" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="105" ConditionTypeName="Enemy Ship HP &lt;
         75%" ConditionTypeDescription="This condition is true when opponent ship has
-        less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        less than 75% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="106" ConditionTypeName="Your Ship HP &lt;
         75%" ConditionTypeDescription="This condition is true when your ship has less
-        than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 75% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
@@ -560,26 +746,27 @@ interactions:
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
-        /><ConditionType ConditionTypeId="110" ConditionTypeName="Enemy Ship Has Full
-        HP" ConditionTypeDescription="This condition is true when opponent ship has
-        full HP." ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        /><ConditionType ConditionTypeId="110" ConditionTypeName="Enemy Ship HP Undamaged"
+        ConditionTypeDescription="This condition is true when opponent ship has 100%
+        of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
-        /><ConditionType ConditionTypeId="111" ConditionTypeName="Your Ship Has Full
-        HP" ConditionTypeDescription="This condition is true when your ship's HP is
-        full." ConditionTypeAvailability="3" ConditionTypeCategory="YourShip" ConditionTypeComparison="HigherOrEqualPercentage"
-        ConditionTypeParameterValue="100" ConditionTypeKey="Hp" ImageSpriteId="4"
-        RoomType="None" ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="0"
-        OrderIndex="9" RoomCategoryType="None" /><ConditionType ConditionTypeId="112"
-        ConditionTypeName="Enemy Room HP &lt; 75%" ConditionTypeDescription="This
-        condition is true when any enemy rooms has less than 75% HP" ConditionTypeAvailability="3"
-        ConditionTypeCategory="EnemyRoom" ConditionTypeComparison="LowerPercentage"
-        ConditionTypeParameterValue="75" ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None"
-        ConditionTypeParameter="Hp" ColorString="" RequiredResearchDesignId="95" OrderIndex="6"
-        RoomCategoryType="None" /><ConditionType ConditionTypeId="113" ConditionTypeName="Friendly
-        Room HP &lt; 75%" ConditionTypeDescription="This condition is true when any
-        of your rooms has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        /><ConditionType ConditionTypeId="111" ConditionTypeName="Your Ship HP Undamaged"
+        ConditionTypeDescription="This condition is true when your ship has 100% of
+        Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="112" ConditionTypeName="Enemy Room HP &lt;
+        75%" ConditionTypeDescription="This condition is true when any enemy rooms
+        has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="113" ConditionTypeName="Friendly Room HP
+        &lt; 75%" ConditionTypeDescription="This condition is true when any of your
+        rooms has less than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
         ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
@@ -597,25 +784,25 @@ interactions:
         ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="116" ConditionTypeName="Enemy Ship HP &gt;
         25%" ConditionTypeDescription="This condition is true when opponent ship has
-        more than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        more than 25% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="117" ConditionTypeName="Enemy Ship HP &gt;
         75%" ConditionTypeDescription="This condition is true when opponent ship has
-        more than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
+        more than 75% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="118" ConditionTypeName="Your Ship HP &gt;
         25%" ConditionTypeDescription="This condition is true when your ship has more
-        than 25% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 25% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="119" ConditionTypeName="Your Ship HP &gt;
         75%" ConditionTypeDescription="This condition is true when your ship has more
-        than 75% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
+        than 75% of Starting HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourShip"
         ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
@@ -1440,6 +1627,57 @@ interactions:
         ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="96" OrderIndex="9" RoomCategoryType="Superweapon"
+        /><ConditionType ConditionTypeId="265" ConditionTypeName="Friendly Room Destroyed"
+        ConditionTypeDescription="This condition is true when any of your rooms has
+        no HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
+        ConditionTypeComparison="LowerOrEqualPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="266" ConditionTypeName="Enemy Room Destroyed"
+        ConditionTypeDescription="This condition is true when any enemy room has no
+        HP remaining" ConditionTypeAvailability="3" ConditionTypeCategory="EnemyRoom"
+        ConditionTypeComparison="LowerOrEqualPercentage" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Hp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="267" ConditionTypeName="Is Currently Healing"
+        ConditionTypeDescription="This condition is true when this crew is healing
+        at a medical room." ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="Healing"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Healing" ColorString=""
+        RequiredResearchDesignId="0" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="268" ConditionTypeName="Current Room Max HP == 0" ConditionTypeDescription="This
+        condition returns true if the current room is a non-combat room." ConditionTypeAvailability="3"
+        ConditionTypeCategory="CurrentRoom" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="MaxHp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="MaxHp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="269" ConditionTypeName="Target Room Max
+        HP == 0" ConditionTypeDescription="This condition returns true if the target
+        room is a non-combat room." ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom"
+        ConditionTypeComparison="Equal" ConditionTypeParameterValue="0" ConditionTypeKey="MaxHp"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="MaxHp" ColorString=""
+        RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None" /><ConditionType
+        ConditionTypeId="270" ConditionTypeName="Origin Room Max HP == 0" ConditionTypeDescription="This
+        condition returns true if the current room is a non-combat room." ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Equal" ConditionTypeParameterValue="0"
+        ConditionTypeKey="MaxHp" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="MaxHp"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="271" ConditionTypeName="Current Room Is
+        Invulnerable" ConditionTypeDescription="This condition is true when the current
+        room is Invulnerable." ConditionTypeAvailability="3" ConditionTypeCategory="CurrentRoom"
+        ConditionTypeComparison="Higher" ConditionTypeParameterValue="0" ConditionTypeKey="Invulnerability"
+        ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Invulnerability"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="272" ConditionTypeName="Target Room Is Invulnerable"
+        ConditionTypeDescription="This condition is true when the target room is Invulnerable."
+        ConditionTypeAvailability="3" ConditionTypeCategory="TargetRoom" ConditionTypeComparison="Higher"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Invulnerability" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Invulnerability" ColorString="" RequiredResearchDesignId="96"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="273"
+        ConditionTypeName="OriginRoom Is Invulnerable" ConditionTypeDescription="This
+        condition is true when the current room is Invulnerable." ConditionTypeAvailability="2"
+        ConditionTypeCategory="OriginRoom" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Invulnerability" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Invulnerability"
+        ColorString="" RequiredResearchDesignId="96" OrderIndex="0" RoomCategoryType="None"
         /><ConditionType ConditionTypeId="274" ConditionTypeName="Your Security Room
         HP &lt; 50%" ConditionTypeDescription="This condition is true when any friendly
         Security type rooms has less than 50% HP" ConditionTypeAvailability="3" ConditionTypeCategory="YourRoom"
@@ -1476,6 +1714,64 @@ interactions:
         ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
         ConditionTypeKey="Hp" ImageSpriteId="4" RoomType="Stealth" ConditionTypeParameter="Hp"
         ColorString="" RequiredResearchDesignId="95" OrderIndex="9" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="280" ConditionTypeName="Stamina Is Depleted"
+        ConditionTypeDescription="This condition is true when the subject has no stamina
+        remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current" ConditionTypeComparison="Equal"
+        ConditionTypeParameterValue="0" ConditionTypeKey="Stamina" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Stamina" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="0" RoomCategoryType="None" /><ConditionType ConditionTypeId="281"
+        ConditionTypeName="Stamina Not Depleted" ConditionTypeDescription="This condition
+        is true when the subject has stamina remaining" ConditionTypeAvailability="2"
+        ConditionTypeCategory="Current" ConditionTypeComparison="Higher" ConditionTypeParameterValue="0"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="1" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="282" ConditionTypeName="Stamina &lt; 25%"
+        ConditionTypeDescription="This condition is true when the subject has less
+        than 25% Stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="2" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="283" ConditionTypeName="Stamina &gt; 25%"
+        ConditionTypeDescription="This condition is true when the subject has more
+        than 25% stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="25"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="3" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="284" ConditionTypeName="Stamina &lt; 50%"
+        ConditionTypeDescription="This condition is true when the subject has less
+        than 50% stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="4" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="285" ConditionTypeName="Stamina &gt; 50%"
+        ConditionTypeDescription="This condition is true when the subject has more
+        than 50% stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="50"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="94" OrderIndex="5" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="286" ConditionTypeName="Stamina &lt; 75%"
+        ConditionTypeDescription="This condition is true when the subject has less
+        than 75% stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="LowerPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="6" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="287" ConditionTypeName="Stamina &gt; 75%"
+        ConditionTypeDescription="This condition is true when the subject has more
+        than 75% stamina remaining" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherPercentage" ConditionTypeParameterValue="75"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="95" OrderIndex="7" RoomCategoryType="None"
+        /><ConditionType ConditionTypeId="288" ConditionTypeName="Stamina Not Full"
+        ConditionTypeDescription="This condition is true when the subject has spent
+        stamina" ConditionTypeAvailability="2" ConditionTypeCategory="Current" ConditionTypeComparison="LowerPercentage"
+        ConditionTypeParameterValue="100" ConditionTypeKey="Stamina" ImageSpriteId="4"
+        RoomType="None" ConditionTypeParameter="Stamina" ColorString="" RequiredResearchDesignId="0"
+        OrderIndex="8" RoomCategoryType="None" /><ConditionType ConditionTypeId="289"
+        ConditionTypeName="Stamina Is Full" ConditionTypeDescription="This condition
+        is true when the subject has full stamina" ConditionTypeAvailability="2" ConditionTypeCategory="Current"
+        ConditionTypeComparison="HigherOrEqualPercentage" ConditionTypeParameterValue="100"
+        ConditionTypeKey="Stamina" ImageSpriteId="4" RoomType="None" ConditionTypeParameter="Stamina"
+        ColorString="" RequiredResearchDesignId="0" OrderIndex="9" RoomCategoryType="None"
         /></ConditionTypes></ListConditionTypes></RoomService>
     headers:
       Access-Control-Allow-Headers:
@@ -1493,11 +1789,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Sun, 24 Mar 2024 17:17:30 GMT
+      - Sun, 05 May 2024 11:16:18 GMT
       Expires:
-      - Sun, 24 Mar 2024 17:37:30 GMT
+      - Sun, 05 May 2024 11:36:18 GMT
       Last-Modified:
-      - Sun, 24 Mar 2024 17:17:30 GMT
+      - Sun, 05 May 2024 11:16:18 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -1505,9 +1801,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 d58f8ae27ab00bbbe1dc072976204492.cloudfront.net (CloudFront)
+      - 1.1 1a620bb236f3df5588fc787c47ccfafa.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - k6JS2Nr4ZPGkf13L5LICzOSf_OlGQBt2JSX-sKYdN52u5Cu3rrA5LQ==
+      - S2-eIuX5LrWTDNrKddnxEDgSL0l9acv1J61xlAg-8H8JRSC_A6bi4w==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

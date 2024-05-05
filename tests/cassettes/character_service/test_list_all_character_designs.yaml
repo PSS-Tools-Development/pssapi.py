@@ -3,10 +3,196 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.pixelstarships.com/CharacterService/ListAllCharacterDesigns2?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
   response:
     body:
-      string: "<CharacterService><ListAllCharacterDesigns version=\"1112\"><CharacterDesigns><CharacterDesign
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385283"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351279"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T10:52:09"
+        TournamentSpriteId="8000" NewUserCount="1910" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 10:53:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 29da4b53f2ce7517cad842851fd7a428.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - WYbrwbIA3jWMb6s-UYeC6UxzRkJsUIXjmr7H74hr__pQgvye8gjj2g==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/SettingService/GetLatestVersion3?deviceType=DeviceTypeAndroid&languageKey=en
+  response:
+    body:
+      string: <SettingService><GetLatestSetting><Setting SettingId="1" ServerSettingVersion="2385283"
+        MinimumClientVersion="0.998.17" MaintenanceMessage="" AllianceBadgeSpriteIds="2261,2262,2263,2264,2265,2266,2267,2268,2269,2270,2271,2272,2273,2274,2275,2276,2277,2278,2279,2280,2281,2282,2283,2284,2285,2286,2287,2288,2289,2290,2291,2293,2294,2295,2296,2297,2298,2299,2300,2301,2302,2303,2304,2305,2306,2307,2308,2309,2310,2311,2312,2313,2314,2315,2316,2317,2318,2319,2320,2321,2322,653,654,655,2771,19343,19344,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19355,19356,19357,19358,19359,19360,19361,19362,19363,19364,19365,19366,19367,19368,19369,19370,19371,19372,19373,19374,19375,19376,19377,19378,19379,19380,19381,19382,19383,19384,19385,19386,19387,19388,19389,19390,19391"
+        FileVersion="2675" SpriteVersion="6144" CharacterDesignVersion="1124" CharacterPartVersion="916"
+        AnimationVersion="884" RoomDesignVersion="932" MissileDesignVersion="578"
+        ResearchDesignVersion="553" RoomDesignSpriteVersion="782" AchievementDesignVersion="589"
+        ConditionTypeVersion="529" CraftDesignVersion="500" ItemDesignVersion="165104"
+        ActionTypeVersion="469" RoomDesignPurchaseVersion="735" ShipDesignVersion="678"
+        LeagueVersion="469" BackgroundVersion="507" MissionDesignVersion="813" TrainingDesignVersion="450"
+        FeatureMask="3" ChallengeDesignVersion="622" ProductionServer="api.pixelstarships.com"
+        Flags="8888563321" CharacterDesignActionVersion="405" RewardDesignVersion="351279"
+        TournamentFinalDuration="7" DivisionDesignVersion="553" CollectionDesignVersion="405"
+        RewardPointPercentage="140" IsDebug="false" DrawDesignVersion="372" AbilityDesignVersion="356"
+        VipDesignVersion="356" StarSystemVersion="365" StarSystemLinkVersion="361"
+        PlanetVersion="340" MaxDailyDraws="12" CurrentAndroidVersion="0.998.17" PromotionDesignVersion="1466"
+        RewardVideoTimeReduction="900" ABTestingRollout="0" LootModifiers="0,10,20,50"
+        TournamentBonusScore="6" SituationDesignVersion="549" AFeatureMask="0" BFeatureMask="1"
+        PrestigeTopCharacterDesignId="490" ProBonoLimit="10" TaskDesignVersion="1124818"
+        NewsDesignVersion="385" MinimumVersion="0.998.17" RecommendedVersion="0.998.17"
+        GracePeriod="0" PurgePeriod="14" BoostMultiplier="2" BoostDuration="14400"
+        MaxBoostDuration="43200" ChecksumType="HardcodedChecksum" ItemDesignActionVersion="102"
+        ClientTranslationVersion="95" SeasonDesignVersion="113" AssetVersion="88"
+        TaskRerollCost="15" RushTierCost="10" TaskRerollMaxCount="99999" LegendaryBattleCount="12"
+        LegendaryRulesText="Welcome to Legendary League! You've proven yourself one
+        of the top-ranked captains in the galaxy, and have been entered into an exclusive
+        matchmaking pool for captains in the Legend rank. Captains in the Legend rank
+        trophy range gain no active immunity (except from items) and are allowed only
+        a limited amount of battles a day, so make them count! Additionally, a failed
+        attack attempt in Legendary League will not result in a loss of trophies,
+        although failed defence battles will cause a deduction as normal." LegendaryRewardsText="Captains
+        in Legendary League face increased difficulty, but also much greater rewards.
+        Loot rewards will be a set amount based on opponent level, rather than their
+        stockpiles, and will grant more crew xp as well as item drops. In the event
+        of a failed attack, attackers can gain partial rewards based on battle performance.
+        Finally, players that end a day with a net gain of trophies will receive up
+        to 2 dove points." LegendaryTrophyIn="5000" LegendaryTrophyOut="4900" LegendaryLootPercentage="10"
+        LegendaryDovesAmount="1" LegendaryResultTrophyModifiers="100|30|20|10|15|0|0|15|0|0"
+        LegendaryResultRewardModifiers="150|50" MarkerGeneratorDesignVersion="58"
+        NumberOfVoteOptions="0" VotingDuration="7" SituationTags="hazard" SupportEmail=""
+        BoostGaugeMobile="0" BoostGaugePC="43200" MaintenanceTitle="" EngineEfficiencyLoss="0.2"
+        MaxRedemptionCount="0" MaxRedemptionCountPerMonth="2" SkinVersion="63" SkinSetVersion="7"
+        MinTrophiesForStarbuxTrading="2000" MinPurchaseRewardPointsForStarbuxTrading="1"
+        ABTestingStartDate="2019-03-04T00:00:00" SupportTaskRanDate="2024-05-05T10:52:09"
+        TournamentSpriteId="8000" NewUserCount="1911" NewsUpdateDate="2024-05-05T00:01:27"
+        ReplayAvailableDate="2021-09-09T21:00:49" BackgroundId="7" BattleBackgroundId="0"
+        LoadingTitleSpriteId="17262" LoadingSubtitleSpriteId="21070" LeftLoadingSpriteId="17260"
+        RightLoadingSpriteId="17261" LoadingShipSpriteId="17263" MerchantShipSpriteId="19499"
+        MerchantShipExteriorSpriteId="19498" MaintenanceDate="2024-04-18T06:00:00"
+        /></GetLatestSetting></SettingService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 10:53:05 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 6c62711a616d17e4e2fe0b898df3c02a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 67iee6bJp__xk-iXYNymXd8iliAJjguEe5Ned0cRxqJfdUBvteRikQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/CharacterService/ListAllCharacterDesigns2?clientDateTime=2024-05-05T10%3A53%3A03&languageKey=en
+  response:
+    body:
+      string: "<CharacterService><ListAllCharacterDesigns version=\"1124\"><CharacterDesigns><CharacterDesign
         CharacterDesignId=\"1\" CharacterDesignName=\"Laura\" CharacterHeadPartId=\"1\"
         CharacterBodyPartId=\"2\" GenderType=\"Female\" RaceType=\"Unknown\" Hp=\"2\"
         Pilot=\"0\" Attack=\"1\" FireResistance=\"1\" Repair=\"1\" Weapon=\"1\" Science=\"1\"
@@ -5255,11 +5441,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8553\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"237\"
         CharacterDesignName=\"Fed Laura\" CharacterHeadPartId=\"907\" CharacterBodyPartId=\"878\"
-        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1\" Attack=\"1.1\"
-        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\"
-        FinalPilot=\"20\" FinalAttack=\"3.2\" FinalRepair=\"3\" FinalWeapon=\"14\"
-        FinalScience=\"14\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
+        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1.2\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"16\" FinalEngine=\"18\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"A
         Starship Captain that never backs down from a fight! She takes to the front
         lines, boarding enemy ships and defending her crew in close quarters combat!\"
@@ -5279,11 +5465,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8728\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"238\"
         CharacterDesignName=\"Fed Lisa\" CharacterHeadPartId=\"911\" CharacterBodyPartId=\"890\"
-        GenderType=\"Female\" RaceType=\"White\" Hp=\"2\" Pilot=\"1\" Attack=\"1\"
-        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1.1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\"
-        FinalPilot=\"20\" FinalAttack=\"2.5\" FinalRepair=\"3\" FinalWeapon=\"14\"
-        FinalScience=\"14\" FinalEngine=\"20\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
+        GenderType=\"Female\" RaceType=\"White\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1.2\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"8\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
         Starship Captain moves with grace, and so does her ship. As long as she is
         in the engine room, her ship dances out of reach of many enemy missiles.\"
@@ -5303,11 +5489,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8728\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"239\"
         CharacterDesignName=\"Fed Michelle\" CharacterHeadPartId=\"909\" CharacterBodyPartId=\"884\"
-        GenderType=\"Female\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1\" Attack=\"1\"
-        FireResistance=\"25\" Repair=\"1.1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\"
-        FinalPilot=\"20\" FinalAttack=\"2.5\" FinalRepair=\"3.5\" FinalWeapon=\"14\"
-        FinalScience=\"14\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
+        GenderType=\"Female\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"20\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"Hardy
         Starship Captain and wonder with a wrench. She will keep her ship fighting
         through the toughest of battles.\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
@@ -5327,18 +5513,18 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8728\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"240\"
         CharacterDesignName=\"Fed Bobby\" CharacterHeadPartId=\"906\" CharacterBodyPartId=\"875\"
-        GenderType=\"Male\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"25\"
-        Repair=\"1\" Weapon=\"1.1\" Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\"
-        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\" FinalPilot=\"20\" FinalAttack=\"2.5\"
-        FinalRepair=\"3\" FinalWeapon=\"17.5\" FinalScience=\"14\" FinalEngine=\"16\"
-        FinalResearch=\"4\" CharacterLegPartId=\"882\" Rarity=\"Special\" ProgressionType=\"Linear\"
-        CharacterDesignDescription=\"Passed the gunnery course at the academy with
-        unprecedented scores! This Starship Captain prefers commanding from the weapons
-        deck to standing on the bridge.\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
-        SpecialAbilityType=\"HealSameRoomCharacters\" SpecialAbilityArgument=\"4\"
-        SpecialAbilityFinalArgument=\"8\" ProfileSpriteId=\"9295\" RunSpeed=\"2\"
-        TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\" SpeechPhrases=\"\"
-        SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"240\"
+        GenderType=\"Male\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1.1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"20\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
+        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"Passed
+        the gunnery course at the academy with unprecedented scores! This Starship
+        Captain prefers commanding from the weapons deck to standing on the bridge.\"
+        XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"HealSameRoomCharacters\"
+        SpecialAbilityArgument=\"4\" SpecialAbilityFinalArgument=\"8\" ProfileSpriteId=\"9295\"
+        RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\"
+        SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"240\"
         MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\" ActionSoundFileId=\"5763\"
         CollectionDesignId=\"7\"><CharacterParts><CharacterPart CharacterPartId=\"906\"
         CharacterPartName=\"FedAsianMaleCapHead_1\" CharacterPartType=\"Head\" StandardSpriteId=\"8842\"
@@ -5352,9 +5538,9 @@ interactions:
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"241\"
         CharacterDesignName=\"Fed Peter\" CharacterHeadPartId=\"910\" CharacterBodyPartId=\"887\"
         GenderType=\"Male\" RaceType=\"White\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"25\"
-        Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1\" Research=\"1\" Level=\"1\"
-        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\" FinalPilot=\"20\" FinalAttack=\"2.5\"
-        FinalRepair=\"3\" FinalWeapon=\"14\" FinalScience=\"17.5\" FinalEngine=\"16\"
+        Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1.2\" Research=\"1\" Level=\"1\"
+        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"14\" FinalAttack=\"3\"
+        FinalRepair=\"2.5\" FinalWeapon=\"16\" FinalScience=\"20\" FinalEngine=\"18\"
         FinalResearch=\"4\" CharacterLegPartId=\"882\" Rarity=\"Special\" ProgressionType=\"Linear\"
         CharacterDesignDescription=\"This Starship Captain excels in the field of
         science. He is adept at using his ship's tech systems to gain an advantage
@@ -5374,11 +5560,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8728\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"242\"
         CharacterDesignName=\"Fed Tony\" CharacterHeadPartId=\"908\" CharacterBodyPartId=\"881\"
-        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
-        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"12\"
-        FinalPilot=\"24\" FinalAttack=\"2.5\" FinalRepair=\"3\" FinalWeapon=\"14\"
-        FinalScience=\"14\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
+        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1.1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"882\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
         hot-shot Starship Captain is on of the Federation's best up-and-coming pilots.
         Daring and brave in the pilot's seat!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
@@ -5398,15 +5584,15 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8728\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"243\"
         CharacterDesignName=\"Pirate Loretta\" CharacterHeadPartId=\"930\" CharacterBodyPartId=\"860\"
-        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1\" Attack=\"1\"
-        FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"9\"
-        FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2\" FinalWeapon=\"12\" FinalScience=\"15\"
-        FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"861\" Rarity=\"Special\"
-        ProgressionType=\"Linear\" CharacterDesignDescription=\"You must understand
-        laws in order to break them. Once a scientist, now a pirate, this Starship
-        Captain has studied the laws of the universe to exploit them to her will.\"
-        XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"DamageToSameRoomCharacters\"
+        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1.1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"861\"
+        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"You
+        must understand laws in order to break them. Once a scientist, now a pirate,
+        this Starship Captain has studied the laws of the universe to exploit them
+        to her will.\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"DamageToSameRoomCharacters\"
         SpecialAbilityArgument=\"3\" SpecialAbilityFinalArgument=\"6\" ProfileSpriteId=\"9303\"
         RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\"
         SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"243\"
@@ -5423,10 +5609,10 @@ interactions:
         ActionSpriteId=\"8644\" /></CharacterParts></CharacterDesign><CharacterDesign
         CharacterDesignId=\"244\" CharacterDesignName=\"Pirate Lia\" CharacterHeadPartId=\"933\"
         CharacterBodyPartId=\"872\" GenderType=\"Female\" RaceType=\"White\" Hp=\"2\"
-        Pilot=\"1\" Attack=\"1\" FireResistance=\"20\" Repair=\"1.1\" Weapon=\"1\"
-        Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\"
-        FinalHp=\"9\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"873\"
+        Pilot=\"1\" Attack=\"1\" FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\"
+        Engine=\"1.2\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\"
+        FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"18\" FinalResearch=\"4\" CharacterLegPartId=\"873\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"A
         Starship Captain that understands her ship far better than she ever understood
         the law. She can fix things almost as quickly as she could steal them!\" XpRequirementScale=\"1\"
@@ -5447,11 +5633,11 @@ interactions:
         ActionSpriteId=\"8692\" /></CharacterParts></CharacterDesign><CharacterDesign
         CharacterDesignId=\"245\" CharacterDesignName=\"Pirate Michelle\" CharacterHeadPartId=\"934\"
         CharacterBodyPartId=\"866\" GenderType=\"Female\" RaceType=\"Black\" Hp=\"2\"
-        Pilot=\"1\" Attack=\"1\" FireResistance=\"20\" Repair=\"1\" Weapon=\"1.1\"
-        Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\"
-        FinalHp=\"9\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"15\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"867\"
-        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
+        Pilot=\"1.2\" Attack=\"1\" FireResistance=\"25\" Repair=\"1\" Weapon=\"1.11\"
+        Science=\"1.2\" Engine=\"1\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\"
+        MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"20\" FinalAttack=\"3\" FinalRepair=\"2.5\"
+        FinalWeapon=\"16\" FinalScience=\"18\" FinalEngine=\"14\" FinalResearch=\"4\"
+        CharacterLegPartId=\"867\" Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
         is one Starship Captain with attitude! She's not afraid to let her weapons
         do the talking.\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"DamageToSameRoomCharacters\"
         SpecialAbilityArgument=\"3\" SpecialAbilityFinalArgument=\"6\" ProfileSpriteId=\"9305\"
@@ -5470,11 +5656,11 @@ interactions:
         ActionSpriteId=\"8668\" /></CharacterParts></CharacterDesign><CharacterDesign
         CharacterDesignId=\"246\" CharacterDesignName=\"Pirate Alex\" CharacterHeadPartId=\"913\"
         CharacterBodyPartId=\"857\" GenderType=\"Male\" RaceType=\"Asian\" Hp=\"2\"
-        Pilot=\"1\" Attack=\"1\" FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1\"
-        Engine=\"1.1\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\"
-        FinalHp=\"9\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"17.5\" FinalResearch=\"3\" CharacterLegPartId=\"858\"
-        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
+        Pilot=\"1.1\" Attack=\"1\" FireResistance=\"25\" Repair=\"1\" Weapon=\"1\"
+        Science=\"1.1\" Engine=\"1.2\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\"
+        MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\"
+        FinalWeapon=\"16\" FinalScience=\"16\" FinalEngine=\"18\" FinalResearch=\"3\"
+        CharacterLegPartId=\"858\" Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"This
         Starship Captain's mechanical skill has gotten him out of some tricky situations.
         He always tunes his starship's engine perfectly for dodging trouble!\" XpRequirementScale=\"1\"
         MaxCharacterLevel=\"40\" SpecialAbilityType=\"DamageToSameRoomCharacters\"
@@ -5493,11 +5679,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8632\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"247\"
         CharacterDesignName=\"Pirate Edward\" CharacterHeadPartId=\"932\" CharacterBodyPartId=\"869\"
-        GenderType=\"Male\" RaceType=\"White\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
-        FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"9\"
-        FinalPilot=\"20\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"3\" CharacterLegPartId=\"870\"
+        GenderType=\"Male\" RaceType=\"White\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1.2\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"20\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"14\" FinalEngine=\"18\" FinalResearch=\"3\" CharacterLegPartId=\"870\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"An
         attractive aerial ace! This stylish Pirate Captain can make any ship dance
         through the stars like a winged ballerina!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
@@ -5517,11 +5703,11 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8680\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"248\"
         CharacterDesignName=\"Pirate Tony\" CharacterHeadPartId=\"931\" CharacterBodyPartId=\"863\"
-        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1\" Attack=\"1.1\"
-        FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
-        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"9\"
-        FinalPilot=\"16\" FinalAttack=\"3.7\" FinalRepair=\"2.5\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"864\"
+        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1.1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1.1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"20\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"16\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"864\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"As
         a seasoned Swashbuckler, this Starship Captain is not afraid to go toe-to-toe
         with any foe!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"DamageToSameRoomCharacters\"
@@ -5540,20 +5726,20 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8656\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"249\"
         CharacterDesignName=\"Qtarian Bobby\" CharacterHeadPartId=\"895\" CharacterBodyPartId=\"842\"
-        GenderType=\"Male\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"20\"
-        Repair=\"1.1\" Weapon=\"1\" Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\"
-        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"2.5\"
-        FinalRepair=\"2.5\" FinalWeapon=\"12\" FinalScience=\"12\" FinalEngine=\"14\"
-        FinalResearch=\"4\" CharacterLegPartId=\"843\" Rarity=\"Special\" ProgressionType=\"Linear\"
-        CharacterDesignDescription=\"An expert engineer. This Starship Captain has
-        been turning scrap to starships since he was first able to hold a spanner.\"
-        XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"AddReload\"
-        SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\" ProfileSpriteId=\"9334\"
-        RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\"
-        SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"249\"
-        MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\" ActionSoundFileId=\"5763\"
-        CollectionDesignId=\"8\"><CharacterParts><CharacterPart CharacterPartId=\"895\"
-        CharacterPartName=\"QtarianAsianMaleCapHead_1\" CharacterPartType=\"Head\"
+        GenderType=\"Male\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1.2\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"14\" FinalEngine=\"20\" FinalResearch=\"4\" CharacterLegPartId=\"843\"
+        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"An
+        expert engineer. This Starship Captain has been turning scrap to starships
+        since he was first able to hold a spanner.\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
+        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\"
+        ProfileSpriteId=\"9334\" RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\"
+        SpeechVoice=\"\" SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\"
+        RootCharacterDesignId=\"249\" MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\"
+        ActionSoundFileId=\"5763\" CollectionDesignId=\"8\"><CharacterParts><CharacterPart
+        CharacterPartId=\"895\" CharacterPartName=\"QtarianAsianMaleCapHead_1\" CharacterPartType=\"Head\"
         StandardSpriteId=\"8798\" StandardFileId=\"0\" ActionFileId=\"0\" StandardBorderFileId=\"0\"
         ActionBorderFileId=\"0\" ActionSpriteId=\"8799\" /><CharacterPart CharacterPartId=\"842\"
         CharacterPartName=\"QtarianAsianMaleCapBody\" CharacterPartType=\"Body\" StandardSpriteId=\"8561\"
@@ -5563,15 +5749,15 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8566\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"250\"
         CharacterDesignName=\"Qtarian Laura\" CharacterHeadPartId=\"896\" CharacterBodyPartId=\"845\"
-        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
-        FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1\"
+        GenderType=\"Female\" RaceType=\"Asian\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1\"
         Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
-        FinalPilot=\"20\" FinalAttack=\"2.5\" FinalRepair=\"2\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"846\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"16\" FinalResearch=\"4\" CharacterLegPartId=\"846\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"A
         Starship Captain capable of flying even the most rickety scrap heap... As
         long as there's an engine attached!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
-        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\"
+        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\"
         ProfileSpriteId=\"9335\" RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\"
         SpeechVoice=\"\" SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\"
         RootCharacterDesignId=\"250\" MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5751\"
@@ -5587,15 +5773,15 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8578\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"251\"
         CharacterDesignName=\"Qtarian Tony\" CharacterHeadPartId=\"897\" CharacterBodyPartId=\"848\"
-        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"20\"
-        Repair=\"1\" Weapon=\"1\" Science=\"1\" Engine=\"1.1\" Research=\"1\" Level=\"1\"
-        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"2.5\"
-        FinalRepair=\"2\" FinalWeapon=\"12\" FinalScience=\"12\" FinalEngine=\"17.5\"
+        GenderType=\"Male\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"25\"
+        Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1.2\" Research=\"1\" Level=\"1\"
+        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"14\" FinalAttack=\"3\"
+        FinalRepair=\"2.5\" FinalWeapon=\"16\" FinalScience=\"18\" FinalEngine=\"20\"
         FinalResearch=\"4\" CharacterLegPartId=\"849\" Rarity=\"Special\" ProgressionType=\"Linear\"
         CharacterDesignDescription=\"Some say that this Starship Captain can make
         an engine from nothing but a single piece of scrap and two bottles of gas.
         His Starship can dodge like no other!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
-        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\"
+        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\"
         ProfileSpriteId=\"9336\" RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\"
         SpeechVoice=\"\" SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\"
         RootCharacterDesignId=\"251\" MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\"
@@ -5610,16 +5796,16 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8590\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"252\"
         CharacterDesignName=\"Qtarian Michelle\" CharacterHeadPartId=\"898\" CharacterBodyPartId=\"851\"
-        GenderType=\"Female\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1\" Attack=\"1\"
-        FireResistance=\"20\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1\"
+        GenderType=\"Female\" RaceType=\"Black\" Hp=\"2\" Pilot=\"1.1\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.2\" Engine=\"1.1\"
         Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
-        FinalPilot=\"16\" FinalAttack=\"2.5\" FinalRepair=\"2\" FinalWeapon=\"12\"
-        FinalScience=\"15\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"852\"
+        FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"18\" FinalEngine=\"18\" FinalResearch=\"4\" CharacterLegPartId=\"852\"
         Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"The
         Science of Scrap is no mystery to this Starship Captain. She can have a ruined
         starship's electronic systems up and running before you can say That shouldn't
         even be possible!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"AddReload\"
-        SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\" ProfileSpriteId=\"9338\"
+        SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\" ProfileSpriteId=\"9338\"
         RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\"
         SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"252\"
         MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5751\" ActionSoundFileId=\"5753\"
@@ -5635,15 +5821,15 @@ interactions:
         ActionSpriteId=\"8602\" /></CharacterParts></CharacterDesign><CharacterDesign
         CharacterDesignId=\"253\" CharacterDesignName=\"Qtarian Lisa\" CharacterHeadPartId=\"900\"
         CharacterBodyPartId=\"854\" GenderType=\"Female\" RaceType=\"White\" Hp=\"2\"
-        Pilot=\"1\" Attack=\"1.1\" FireResistance=\"20\" Repair=\"1\" Weapon=\"1\"
-        Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\"
-        FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"3.2\" FinalRepair=\"2\" FinalWeapon=\"12\"
-        FinalScience=\"12\" FinalEngine=\"14\" FinalResearch=\"4\" CharacterLegPartId=\"855\"
-        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"Expert
+        Pilot=\"1.1\" Attack=\"1\" FireResistance=\"25\" Repair=\"1\" Weapon=\"1\"
+        Science=\"1.1\" Engine=\"1.2\" Research=\"1\" Level=\"1\" WalkingSpeed=\"1\"
+        MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"3\" FinalRepair=\"2.5\"
+        FinalWeapon=\"16\" FinalScience=\"16\" FinalEngine=\"20\" FinalResearch=\"4\"
+        CharacterLegPartId=\"855\" Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"Expert
         salvager and natural-born fighter. This is one Starship Captain who can hold
         her own in a fight! To her, any old scrap, from a chain to a toaster, makes
         the perfect improvised weapon!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
-        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\"
+        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\"
         ProfileSpriteId=\"9337\" RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\"
         SpeechVoice=\"\" SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\"
         RootCharacterDesignId=\"253\" MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5751\"
@@ -5659,20 +5845,21 @@ interactions:
         StandardBorderFileId=\"0\" ActionBorderFileId=\"0\" ActionSpriteId=\"8614\"
         /></CharacterParts></CharacterDesign><CharacterDesign CharacterDesignId=\"254\"
         CharacterDesignName=\"Qtarian Edward\" CharacterHeadPartId=\"899\" CharacterBodyPartId=\"893\"
-        GenderType=\"Male\" RaceType=\"White\" Hp=\"2\" Pilot=\"1\" Attack=\"1\" FireResistance=\"20\"
-        Repair=\"1\" Weapon=\"1.1\" Science=\"1\" Engine=\"1\" Research=\"1\" Level=\"1\"
-        WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\" FinalPilot=\"16\" FinalAttack=\"2.5\"
-        FinalRepair=\"2\" FinalWeapon=\"15\" FinalScience=\"12\" FinalEngine=\"14\"
-        FinalResearch=\"4\" CharacterLegPartId=\"894\" Rarity=\"Special\" ProgressionType=\"Linear\"
-        CharacterDesignDescription=\"A starship captain that can craft projectile
-        weapons from just about anything. His mechanic's touch is enough to make the
-        rustiest gun barrel rapid-fire!\" XpRequirementScale=\"1\" MaxCharacterLevel=\"40\"
-        SpecialAbilityType=\"AddReload\" SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"35\"
-        ProfileSpriteId=\"9339\" RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\"
-        SpeechVoice=\"\" SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\"
-        RootCharacterDesignId=\"254\" MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\"
-        ActionSoundFileId=\"5763\" CollectionDesignId=\"8\"><CharacterParts><CharacterPart
-        CharacterPartId=\"899\" CharacterPartName=\"QtarianWhiteMaleCapHead_1\" CharacterPartType=\"Head\"
+        GenderType=\"Male\" RaceType=\"White\" Hp=\"2\" Pilot=\"1.2\" Attack=\"1\"
+        FireResistance=\"25\" Repair=\"1\" Weapon=\"1\" Science=\"1.1\" Engine=\"1.1\"
+        Research=\"1\" Level=\"1\" WalkingSpeed=\"1\" MinShipLevel=\"1\" FinalHp=\"10\"
+        FinalPilot=\"18\" FinalAttack=\"3\" FinalRepair=\"2.5\" FinalWeapon=\"16\"
+        FinalScience=\"16\" FinalEngine=\"18\" FinalResearch=\"4\" CharacterLegPartId=\"894\"
+        Rarity=\"Special\" ProgressionType=\"Linear\" CharacterDesignDescription=\"A
+        starship captain that can craft projectile weapons from just about anything.
+        His mechanic's touch is enough to make the rustiest gun barrel rapid-fire!\"
+        XpRequirementScale=\"1\" MaxCharacterLevel=\"40\" SpecialAbilityType=\"AddReload\"
+        SpecialAbilityArgument=\"25\" SpecialAbilityFinalArgument=\"40\" ProfileSpriteId=\"9339\"
+        RunSpeed=\"2\" TrainingCapacity=\"200\" EquipmentMask=\"62\" SpeechVoice=\"\"
+        SpeechPhrases=\"\" SpeechRate=\"1\" SpeechPitch=\"1\" Flags=\"9\" RootCharacterDesignId=\"254\"
+        MaxCount=\"0\" Tags=\"\" TapSoundFileId=\"5764\" ActionSoundFileId=\"5763\"
+        CollectionDesignId=\"8\"><CharacterParts><CharacterPart CharacterPartId=\"899\"
+        CharacterPartName=\"QtarianWhiteMaleCapHead_1\" CharacterPartType=\"Head\"
         StandardSpriteId=\"8814\" StandardFileId=\"0\" ActionFileId=\"0\" StandardBorderFileId=\"0\"
         ActionBorderFileId=\"0\" ActionSpriteId=\"8815\" /><CharacterPart CharacterPartId=\"893\"
         CharacterPartName=\"QtaWhiteMaleCapBody\" CharacterPartType=\"Body\" StandardSpriteId=\"8771\"
@@ -10519,11 +10706,11 @@ interactions:
       Content-Type:
       - application/xml
       Date:
-      - Sun, 24 Mar 2024 17:17:07 GMT
+      - Sun, 05 May 2024 10:53:05 GMT
       Expires:
-      - Sun, 24 Mar 2024 17:37:07 GMT
+      - Sun, 05 May 2024 11:13:05 GMT
       Last-Modified:
-      - Sun, 24 Mar 2024 17:17:07 GMT
+      - Sun, 05 May 2024 10:53:05 GMT
       Server:
       - Microsoft-IIS/10.0
       Transfer-Encoding:
@@ -10531,9 +10718,9 @@ interactions:
       Vary:
       - Accept-Encoding
       Via:
-      - 1.1 6c62711a616d17e4e2fe0b898df3c02a.cloudfront.net (CloudFront)
+      - 1.1 9da69b2a3e09ed415586f37a6b06b2da.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - cIBmnEG_352mRZd-AzkCBhpoNu9al9XZZWZQK4xhhjJ2-WB2-_MV9g==
+      - C9xyfWzCrfGhkedXwJCoIEk1dFtlIdQGTzVimsZlAeU0Siv-gsk5Ag==
       X-Amz-Cf-Pop:
       - TXL50-P4
       X-AspNet-Version:

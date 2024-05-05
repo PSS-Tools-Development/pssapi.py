@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/PublicService/GetShipDetails?userId=4510693
+  response:
+    body:
+      string: <GetShipDetails><Ship ShipName="The worst." ShipLevel="12" OriginalRaceId="1"
+        ShipDesignId="220" BrightnessValue="0.1" HueValue="0" SaturationValue="1"
+        SkinItemDesignId="777" SkinOpacityValue="0.25" StickerString="1704@305.0131-709.156-3.398885|1704@322.4934-73.27997-5|1801@797.7574-527.7207-5"><User
+        Id="4510693" Name="The worst." IconSpriteId="8230" AllianceName="Trek Academy"
+        AllianceSpriteId="2320" Trophy="4804" LastAlertDate="2020-06-30T19:52:10"
+        AllianceId="12758" AllianceMembership="FleetAdmiral" /></Ship></GetShipDetails>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '534'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 05 May 2024 11:34:12 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 1a620bb236f3df5588fc787c47ccfafa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 0LhExiNcdkHVVcm70PSSkD0VWLMiLPk28PqG3z9pziS-yv-YfFk8lA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

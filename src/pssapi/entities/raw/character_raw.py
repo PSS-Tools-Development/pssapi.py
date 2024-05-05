@@ -24,6 +24,8 @@ class CharacterRaw(_EntityBaseRaw):
         self._available_date: _datetime = _parse.pss_datetime(character_info.pop("AvailableDate", None))
         self._battle_character_hp: int = _parse.pss_int(character_info.pop("BattleCharacterHp", None))
         self._bloodlust_frame: int = _parse.pss_int(character_info.pop("BloodlustFrame", None))
+        self._bonus_training_capacity: int = _parse.pss_int(character_info.pop("BonusTrainingCapacity", None))
+        self._boost_level: int = _parse.pss_int(character_info.pop("BoostLevel", None))
         self._character_actions: _List[_entities.CharacterAction] = (
             [_entities.CharacterAction(child_info) for child_info in character_info.pop("CharacterActions")[0].get("CharacterAction", [])] if character_info.get("CharacterActions") else []
         )
@@ -83,6 +85,14 @@ class CharacterRaw(_EntityBaseRaw):
     @property
     def bloodlust_frame(self) -> int:
         return self._bloodlust_frame
+
+    @property
+    def bonus_training_capacity(self) -> int:
+        return self._bonus_training_capacity
+
+    @property
+    def boost_level(self) -> int:
+        return self._boost_level
 
     @property
     def character_actions(self) -> _List["_entities.CharacterAction"]:
@@ -235,6 +245,8 @@ class CharacterRaw(_EntityBaseRaw):
             self.available_date,
             self.battle_character_hp,
             self.bloodlust_frame,
+            self.bonus_training_capacity,
+            self.boost_level,
             tuple(child._key() for child in self.character_actions),
             self.character_design_id,
             self.character_id,
@@ -281,6 +293,8 @@ class CharacterRaw(_EntityBaseRaw):
                 "AvailableDate": self.available_date,
                 "BattleCharacterHp": self.battle_character_hp,
                 "BloodlustFrame": self.bloodlust_frame,
+                "BonusTrainingCapacity": self.bonus_training_capacity,
+                "BoostLevel": self.boost_level,
                 "CharacterActions": [dict(child) for child in self.character_actions],
                 "CharacterDesignId": self.character_design_id,
                 "CharacterId": self.character_id,

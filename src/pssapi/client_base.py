@@ -122,6 +122,10 @@ class PssApiClientBase:
         return self.__promotion_service
 
     @property
+    def public_service(self) -> "_services.PublicService":
+        return self.__public_service
+
+    @property
     def research_service(self) -> "_services.ResearchService":
         return self.__research_service
 
@@ -208,6 +212,7 @@ class PssApiClientBase:
         self.__message_service: _services.MessageService = _services.MessageService(self)
         self.__mission_service: _services.MissionService = _services.MissionService(self)
         self.__promotion_service: _services.PromotionService = _services.PromotionService(self)
+        self.__public_service: _services.PublicService = _services.PublicService(self)
         self.__research_service: _services.ResearchService = _services.ResearchService(self)
         self.__reward_service: _services.RewardService = _services.RewardService(self)
         self.__room_design_sprite_service: _services.RoomDesignSpriteService = _services.RoomDesignSpriteService(self)

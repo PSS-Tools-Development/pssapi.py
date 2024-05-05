@@ -20,7 +20,9 @@ class CraftDesignRaw(_EntityBaseRaw):
         self._craft_attack_type: str = _parse.pss_str(craft_design_info.pop("CraftAttackType", None))
         self._craft_design_id: int = _parse.pss_int(craft_design_info.pop("CraftDesignId", None))
         self._craft_name: str = _parse.pss_str(craft_design_info.pop("CraftName", None))
+        self._craft_pathing_type: str = _parse.pss_str(craft_design_info.pop("CraftPathingType", None))
         self._craft_target_type: str = _parse.pss_str(craft_design_info.pop("CraftTargetType", None))
+        self._entity_count: int = _parse.pss_int(craft_design_info.pop("EntityCount", None))
         self._flight_speed: int = _parse.pss_int(craft_design_info.pop("FlightSpeed", None))
         self._hp: int = _parse.pss_int(craft_design_info.pop("Hp", None))
         self._missile_design_id: int = _parse.pss_int(craft_design_info.pop("MissileDesignId", None))
@@ -51,8 +53,16 @@ class CraftDesignRaw(_EntityBaseRaw):
         return self._craft_name
 
     @property
+    def craft_pathing_type(self) -> str:
+        return self._craft_pathing_type
+
+    @property
     def craft_target_type(self) -> str:
         return self._craft_target_type
+
+    @property
+    def entity_count(self) -> int:
+        return self._entity_count
 
     @property
     def flight_speed(self) -> int:
@@ -89,7 +99,9 @@ class CraftDesignRaw(_EntityBaseRaw):
             self.craft_attack_type,
             self.craft_design_id,
             self.craft_name,
+            self.craft_pathing_type,
             self.craft_target_type,
+            self.entity_count,
             self.flight_speed,
             self.hp,
             self.missile_design_id,
@@ -107,7 +119,9 @@ class CraftDesignRaw(_EntityBaseRaw):
                 "CraftAttackType": self.craft_attack_type,
                 "CraftDesignId": self.craft_design_id,
                 "CraftName": self.craft_name,
+                "CraftPathingType": self.craft_pathing_type,
                 "CraftTargetType": self.craft_target_type,
+                "EntityCount": self.entity_count,
                 "FlightSpeed": self.flight_speed,
                 "Hp": self.hp,
                 "MissileDesignId": self.missile_design_id,

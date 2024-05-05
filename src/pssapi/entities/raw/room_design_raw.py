@@ -56,6 +56,7 @@ class RoomDesignRaw(_EntityBaseRaw):
         self._room_name: str = _parse.pss_str(room_design_info.pop("RoomName", None))
         self._room_short_name: str = _parse.pss_str(room_design_info.pop("RoomShortName", None))
         self._room_type: str = _parse.pss_str(room_design_info.pop("RoomType", None))
+        self._room_variant_type: int = _parse.pss_int(room_design_info.pop("RoomVariantType", None))
         self._root_room_design_id: int = _parse.pss_int(room_design_info.pop("RootRoomDesignId", None))
         self._rotate: bool = _parse.pss_bool(room_design_info.pop("Rotate", None))
         self._rows: int = _parse.pss_int(room_design_info.pop("Rows", None))
@@ -231,6 +232,10 @@ class RoomDesignRaw(_EntityBaseRaw):
         return self._room_type
 
     @property
+    def room_variant_type(self) -> int:
+        return self._room_variant_type
+
+    @property
     def root_room_design_id(self) -> int:
         return self._root_room_design_id
 
@@ -305,6 +310,7 @@ class RoomDesignRaw(_EntityBaseRaw):
             self.room_name,
             self.room_short_name,
             self.room_type,
+            self.room_variant_type,
             self.root_room_design_id,
             self.rotate,
             self.rows,
@@ -359,6 +365,7 @@ class RoomDesignRaw(_EntityBaseRaw):
                 "RoomName": self.room_name,
                 "RoomShortName": self.room_short_name,
                 "RoomType": self.room_type,
+                "RoomVariantType": self.room_variant_type,
                 "RootRoomDesignId": self.root_room_design_id,
                 "Rotate": self.rotate,
                 "Rows": self.rows,

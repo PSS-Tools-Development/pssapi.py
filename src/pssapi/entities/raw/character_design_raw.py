@@ -20,6 +20,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
         self._dict: _Dict[str, _Any] = {}
         self._action_sound_file_id: int = _parse.pss_int(character_design_info.pop("ActionSoundFileId", None))
         self._attack: float = _parse.pss_float(character_design_info.pop("Attack", None))
+        self._boost_values_string: str = _parse.pss_str(character_design_info.pop("BoostValuesString", None))
         self._character_body_part_id: int = _parse.pss_int(character_design_info.pop("CharacterBodyPartId", None))
         self._character_design_description: str = _parse.pss_str(character_design_info.pop("CharacterDesignDescription", None))
         self._character_design_id: int = _parse.pss_int(character_design_info.pop("CharacterDesignId", None))
@@ -80,6 +81,10 @@ class CharacterDesignRaw(_EntityBaseRaw):
     @property
     def attack(self) -> float:
         return self._attack
+
+    @property
+    def boost_values_string(self) -> str:
+        return self._boost_values_string
 
     @property
     def character_body_part_id(self) -> int:
@@ -281,6 +286,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
         return (
             self.action_sound_file_id,
             self.attack,
+            self.boost_values_string,
             self.character_body_part_id,
             self.character_design_description,
             self.character_design_id,
@@ -337,6 +343,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
             self._dict = {
                 "ActionSoundFileId": self.action_sound_file_id,
                 "Attack": self.attack,
+                "BoostValuesString": self.boost_values_string,
                 "CharacterBodyPartId": self.character_body_part_id,
                 "CharacterDesignDescription": self.character_design_description,
                 "CharacterDesignId": self.character_design_id,

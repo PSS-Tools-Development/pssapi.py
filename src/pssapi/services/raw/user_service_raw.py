@@ -25,7 +25,9 @@ DEVICE_LOGIN_11_BASE_PATH: str = "UserService/DeviceLogin11"
 DEVICE_LOGIN_12_BASE_PATH: str = "UserService/DeviceLogin12"
 DEVICE_LOGIN_15_BASE_PATH: str = "UserService/DeviceLogin15"
 LIST_FRIENDS_BASE_PATH: str = "UserService/ListFriends"
+LIST_SKIN_SETS_2_BASE_PATH: str = "UserService/ListSkinSets2"
 LIST_SKINS_BASE_PATH: str = "UserService/ListSkins"
+LIST_SKINS_2_BASE_PATH: str = "UserService/ListSkins2"
 REMOVE_FRIEND_BASE_PATH: str = "UserService/RemoveFriend"
 SEARCH_USERS_BASE_PATH: str = "UserService/SearchUsers"
 STEAM_LOGIN_3_BASE_PATH: str = "UserService/SteamLogin3"
@@ -188,9 +190,21 @@ async def list_friends(production_server: str, user_id: int, access_token: str, 
     return result
 
 
+async def list_skin_sets_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_SkinSet]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True),), "SkinSets", production_server, LIST_SKIN_SETS_2_BASE_PATH, "GET", response_gzipped=False, **params)
+    return result
+
+
 async def list_skins(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", response_gzipped=False, **params)
+    return result
+
+
+async def list_skins_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_Skin]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(((_Skin, "Skins", True),), "Skins", production_server, LIST_SKINS_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
