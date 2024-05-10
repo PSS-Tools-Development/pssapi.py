@@ -359,7 +359,17 @@ class _RoomPropertiesBase:
 
 
 class AndroidRoomProperties(_RoomPropertiesBase):
-    pass
+    @property
+    def deploy_limit(self) -> int:
+        return self._room_design.range
+    
+    @property
+    def queue_limit(self) -> int:
+        return self._room_design.manufacture_capacity
+    
+    @property
+    def storage_limit(self) -> int:
+        return self._room_design.capacity
 
 
 class AntiCraftProperties(_RoomPropertiesBase):
