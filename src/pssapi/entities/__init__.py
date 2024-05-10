@@ -1,4 +1,4 @@
-from . import metadata
+from . import metadata, properties
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
 from .alliance import Alliance
@@ -70,6 +70,7 @@ __all__ = [
     EntityWithIdBase.__name__,
     EntityBase.__name__,
     metadata.__name__,
+    properties.__name__,
     AchievementDesign.__name__,
     ActionType.__name__,
     Alliance.__name__,
