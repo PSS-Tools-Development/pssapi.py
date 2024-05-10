@@ -361,19 +361,53 @@ class _RoomPropertiesBase:
 class AndroidRoomProperties(_RoomPropertiesBase):
     @property
     def deploy_limit(self) -> int:
+        """
+        The maximum number of droids the room can have deployed at the same time.
+        """
         return self._room_design.range
     
     @property
     def queue_limit(self) -> int:
+        """
+        The limit of the build queue.
+        """
         return self._room_design.manufacture_capacity
     
     @property
     def storage_limit(self) -> int:
+        """
+        The maximum number of droids the room can store.
+        """
         return self._room_design.capacity
 
 
 class AntiCraftProperties(_RoomPropertiesBase):
-    pass
+    def __init__(self, room_design: RoomDesign):
+        super().__init__(room_design)
+        self._reload_time: float = None
+
+    @property
+    def max_range(self) -> int:
+        """
+        The maximum range of the room in pixels.
+        """
+        return self._room_design.range
+    
+    @property
+    def min_range(self) -> int:
+        """
+        The minimum range of the room in pixels.
+        """
+        return self._room_design.min_range
+    
+    @property
+    def reload_time(self) -> float:
+        """
+        Reload time of the room in seconds.
+        """
+        if self._reload_time is None:
+            self._reload_time = self._room_design.reload_time / 40.0
+        return self._reload_time
 
 
 class BedroomRoomProperties(_RoomPropertiesBase):
