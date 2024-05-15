@@ -8,8 +8,8 @@ from .bridge_room_properties import BridgeRoomProperties
 from .cannon_room_properties import CannonRoomProperties
 from .carrier_room_properties import CarrierRoomProperties
 from .command_room_properties import CommandRoomProperties
-from .council_room_properties import CouncilRoomProperties
 from .corridor_room_properties import CorridorRoomProperties
+from .council_room_properties import CouncilRoomProperties
 from .engine_room_properties import EngineRoomProperties
 from .hull_room_properties import HullRoomProperties
 from .laser_room_properties import LaserRoomProperties

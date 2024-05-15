@@ -19,6 +19,7 @@ from .reactor_room_properties import ReactorRoomProperties
 from .recycling_room_properties import RecyclingRoomProperties
 from .research_room_properties import ResearchRoomProperties
 from .resource_room_properties import ResourceRoomProperties
+from .room_type_properties import RoomTypeProperties, get_room_properties_by_type
 from .shield_room_properties import ShieldRoomProperties
 from .station_missile_properties import StationMissileRoomProperties
 from .stealth_room_properties import StealthRoomProperties
@@ -28,7 +29,6 @@ from .teleport_room_properties import TeleportRoomProperties
 from .training_room_properties import TrainingRoomProperties
 from .trap_room_properties import TrapRoomProperties
 from .wall_room_properties import WallRoomProperties
-from .room_type_properties import RoomTypeProperties, get_room_properties_by_type
 
 __all__ = [
     RoomTypeProperties.__name__,

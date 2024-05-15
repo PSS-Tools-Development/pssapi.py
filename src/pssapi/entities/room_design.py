@@ -3,10 +3,10 @@ from typing import Union
 from .. import enums
 from ..types import EntityInfo
 from ..utils import parse as _parse
+from . import properties
 from .entity_base import EntityWithIdBase
 from .metadata import RoomDesignMetadata
 from .raw import RoomDesignRaw
-from . import properties
 
 
 class RoomDesign(RoomDesignRaw, EntityWithIdBase):
