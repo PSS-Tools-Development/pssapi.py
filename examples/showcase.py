@@ -34,7 +34,7 @@ async def main() -> None:
     print(f"Found {len(shield_room_designs)} shield room designs.")
     random.shuffle(shield_room_designs)
     for room_design in sorted(shield_room_designs[:5], key=lambda x: x.room_name):
-        shield_room_properties: entities.properties.ShieldRoomProperties = room_design.get_room_type_properties()
+        shield_room_properties: entities.properties.room_properties.ShieldRoomProperties = room_design.get_room_type_properties()
         print(f"{room_design.room_name} - Shield points: {shield_room_properties.shield_hp} - Shield restored on reload: {room_design.room_type_properties.shield_room_properties.restore_on_reload}")
 
     sales = await client.market_service.list_sales_by_item_design_id(0, 81, "Sold", 10)
