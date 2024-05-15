@@ -1,5 +1,5 @@
-from .room_properties_base import RoomPropertiesBase
+from .room_properties_base import RoomPropertiesPowerUsedBase
 
 
-class CarrierRoomProperties(RoomPropertiesBase):
+class CarrierRoomProperties(RoomPropertiesPowerUsedBase):
     pass

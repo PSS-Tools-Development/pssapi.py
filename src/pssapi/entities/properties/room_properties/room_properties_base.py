@@ -6,12 +6,20 @@ class RoomPropertiesBase:
         self._room_design: entities.RoomDesign = room_design
 
     @property
+    def activation_delay(self) -> int:
+        return self._room_design.activation_delay
+
+    @property
     def build_time(self) -> int:
         return self._room_design.construction_time
 
     @property
     def category(self) -> "enums.CategoryType":
         return self._room_design.category_type_enum
+    
+    @property
+    def enhancement_type(self) -> "enums.EnhancementType":
+        return self._room_design.enhancement_type_enum
 
     @property
     def height(self) -> int:
@@ -34,34 +42,22 @@ class RoomPropertiesBase:
         return self._room_design.columns
 
 
-class RoomPropertiesPowerGeneratedBase(RoomPropertiesBase):
-    @property
-    def max_power_generated(self) -> int:
-        return self._room_design.max_power_generated
-
-
-class RoomPropertiesPowerUsedBase(RoomPropertiesBase):
-    @property
-    def max_power_used(self) -> int:
-        return self._room_design.max_system_power
-
-
 class RoomPropertiesHpBase(RoomPropertiesBase):
     @property
     def max_hp(self) -> int:
         return max(self._room_design.max_power_generated, self._room_design.max_system_power)
 
 
-class RoomPropertiesActivationDelayBase(RoomPropertiesBase):
+class RoomPropertiesPowerGeneratedBase(RoomPropertiesHpBase):
     @property
-    def activation_delay(self) -> int:
-        return self._room_design.activation_delay
+    def max_power_generated(self) -> int:
+        return self._room_design.max_power_generated
 
 
-class RoomPropertiesEnhancementTypeBase(RoomPropertiesBase):
+class RoomPropertiesPowerUsedBase(RoomPropertiesHpBase):
     @property
-    def enhancement_type(self) -> "enums.EnhancementType":
-        return self._room_design.enhancement_type_enum
+    def max_power_used(self) -> int:
+        return self._room_design.max_system_power
 
 
 class RoomPropertiesReloadBase(RoomPropertiesBase):
@@ -77,4 +73,6 @@ class RoomPropertiesReloadBase(RoomPropertiesBase):
         """
         Number of reloads per second.
         """
+        if self._room_design.reload_time == 0:
+            return 0
         return 40.0 / self._room_design.reload_time

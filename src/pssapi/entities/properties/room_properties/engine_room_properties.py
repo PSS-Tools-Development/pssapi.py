@@ -1,5 +1,5 @@
-from .room_properties_base import RoomPropertiesBase
+from .room_properties_base import RoomPropertiesPowerUsedBase
 
 
-class EngineRoomProperties(RoomPropertiesBase):
+class EngineRoomProperties(RoomPropertiesPowerUsedBase):
     pass

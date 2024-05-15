@@ -1,7 +1,7 @@
-from .room_properties_base import RoomPropertiesBase
+from .room_properties_base import RoomPropertiesPowerUsedBase
 
 
-class RecyclingRoomProperties(RoomPropertiesBase):
+class RecyclingRoomProperties(RoomPropertiesPowerUsedBase):
     @property
     def gas_per_crew(self) -> int:
         """

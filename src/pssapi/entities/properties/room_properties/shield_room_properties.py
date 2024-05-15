@@ -1,7 +1,7 @@
-from .room_properties_base import RoomPropertiesBase
+from .room_properties_base import RoomPropertiesHpBase
 
 
-class ShieldRoomProperties(RoomPropertiesBase):
+class ShieldRoomProperties(RoomPropertiesHpBase):
     @property
     def shield_hp(self) -> int:
         """

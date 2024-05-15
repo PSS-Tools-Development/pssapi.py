@@ -1,7 +1,7 @@
-from .room_properties_base import RoomPropertiesBase
+from .room_properties_base import RoomPropertiesPowerUsedBase
 
 
-class AntiCraftProperties(RoomPropertiesBase):
+class AntiCraftProperties(RoomPropertiesPowerUsedBase):
     @property
     def max_range(self) -> int:
         """
