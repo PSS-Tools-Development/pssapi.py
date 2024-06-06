@@ -65,7 +65,7 @@ async def main() -> None:
             game_of_phones = fleets_named_game_of_phones[0]
             print(f"Fleet '{game_of_phones.alliance_name}' (ID: {game_of_phones.id}) has {game_of_phones.number_of_members} members.")
         else:
-            print(f"A fleet with the name 'game of phones' could not be found.")
+            print("A fleet with the name 'game of phones' could not be found.")
 
 
 def run_main_synchronous() -> None:
