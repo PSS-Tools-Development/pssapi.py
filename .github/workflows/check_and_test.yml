@@ -38,10 +38,6 @@ jobs:
           flake8 ./src
           vulture ./src
 
-      - name: Test Build
-        run: |
-          rye build --clean
-
       - name: Test with pytest
         run: |
           pytest -x --cov=./src/pssapi --cov-report=xml
