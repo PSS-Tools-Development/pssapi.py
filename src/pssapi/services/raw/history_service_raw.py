@@ -6,6 +6,7 @@
 from ... import core as _core
 from ...entities import History as _History
 
+
 # ---------- Constants ----------
 
 PRICE_HISTORY_BASE_PATH: str = "HistoryService/PriceHistory"

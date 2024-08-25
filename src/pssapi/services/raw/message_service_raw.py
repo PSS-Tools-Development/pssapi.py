@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import Message as _Message
 
+
 # ---------- Constants ----------
 
 LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH: str = "MessageService/ListActiveMarketplaceMessages5"

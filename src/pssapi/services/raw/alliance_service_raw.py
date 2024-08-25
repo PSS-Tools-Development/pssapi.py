@@ -12,6 +12,7 @@ from ...entities import Character as _Character
 from ...entities import Message as _Message
 from ...entities import User as _User
 
+
 # ---------- Constants ----------
 
 GET_ALLIANCE_BASE_PATH: str = "AllianceService/GetAlliance"

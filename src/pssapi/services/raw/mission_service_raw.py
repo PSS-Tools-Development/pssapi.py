@@ -12,6 +12,7 @@ from ...entities import MissionDesign as _MissionDesign
 from ...entities import MissionEvent as _MissionEvent
 from ...entities import User as _User
 
+
 # ---------- Constants ----------
 
 CREATE_MISSION_2_BASE_PATH: str = "MissionService/CreateMission2"

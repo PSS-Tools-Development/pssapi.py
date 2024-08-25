@@ -3,6 +3,7 @@ from typing import Dict
 
 import pssapi
 
+
 MARKET_DATA: Dict[int, pssapi.entities.Message] = {}
 TOKEN: str = ""
 USER_ID: str = ""

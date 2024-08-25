@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import PromotionDesign as _PromotionDesign
 
+
 # ---------- Constants ----------
 
 LIST_ALL_PROMOTION_DESIGNS_2_BASE_PATH: str = "PromotionService/ListAllPromotionDesigns2"

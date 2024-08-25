@@ -9,6 +9,7 @@ import pssapi.client as _client
 import pssapi.entities as _entities
 import pssapi.enums as _enums
 
+
 T = _TypeVar("T")
 P = _ParamSpec("P")
 

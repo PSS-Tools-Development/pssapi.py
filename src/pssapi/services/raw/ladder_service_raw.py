@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import User as _User
 
+
 # ---------- Constants ----------
 
 LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH: str = "LadderService/ListUsersByChampionshipScoreRanking"

@@ -6,6 +6,7 @@
 from ... import core as _core
 from ...entities import Ship as _Ship
 
+
 # ---------- Constants ----------
 
 GET_SHIP_DETAILS_BASE_PATH: str = "PublicService/GetShipDetails"

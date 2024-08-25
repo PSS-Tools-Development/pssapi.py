@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 FRIEND_USER_ID: int = 8729280  # Dolores 2.0
 SEARCH_USER_NAME: str = "Dolores 2.0"
 USER_ID: int = 4510693  # The worst.

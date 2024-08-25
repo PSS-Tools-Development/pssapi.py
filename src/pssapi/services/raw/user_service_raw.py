@@ -16,6 +16,7 @@ from ...entities import User as _User
 from ...entities import UserEmailPasswordAuthorize as _UserEmailPasswordAuthorize
 from ...entities import UserLogin as _UserLogin
 
+
 # ---------- Constants ----------
 
 ACCEPT_FRIEND_REQUEST_BASE_PATH: str = "UserService/AcceptFriendRequest"

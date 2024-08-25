@@ -2,6 +2,7 @@ import pytest
 
 import pssapi
 
+
 ITEM_DESIGN_ID: int = 778  # Void Particle
 
 

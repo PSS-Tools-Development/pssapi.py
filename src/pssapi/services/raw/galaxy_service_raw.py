@@ -15,6 +15,7 @@ from ...entities import StarSystemMarker as _StarSystemMarker
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 from ...entities import UserMarker as _UserMarker
 
+
 # ---------- Constants ----------
 
 GO_TO_BASE_PATH: str = "GalaxyService/GoTo"

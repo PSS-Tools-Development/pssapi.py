@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import CollectionDesign as _CollectionDesign
 
+
 # ---------- Constants ----------
 
 LIST_ALL_COLLECTION_DESIGNS_BASE_PATH: str = "CollectionService/ListAllCollectionDesigns"

@@ -11,6 +11,7 @@ from ...entities import Ship as _Ship
 from ...entities import ShipDesign as _ShipDesign
 from ...entities import User as _User
 
+
 # ---------- Constants ----------
 
 GET_SHIP_BY_USER_ID_BASE_PATH: str = "ShipService/GetShipByUserId"

@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 SHIP_DESIGN_NAME: str = "Oumaumau Progenitor Extended"
 USER_ID: int = 4510693  # The worst.
 

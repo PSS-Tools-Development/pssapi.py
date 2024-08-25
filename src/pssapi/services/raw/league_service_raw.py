@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import League as _League
 
+
 # ---------- Constants ----------
 
 LIST_LEAGUES_2_BASE_PATH: str = "LeagueService/ListLeagues2"
