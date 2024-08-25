@@ -1,11 +1,16 @@
 Set-StrictMode -Version Latest
 
-function init {
-    poetry install
+function all {
+    format
+    check
+    coverage
 }
 
-function test {
-    pytest
+function init-dev {
+	rye self update
+	rye sync --update-all
+	pre-commit install
+	pre-commit run --all-files
 }
 
 function format {
@@ -18,27 +23,34 @@ function check {
     & flake8 .
 }
 
-function build {
-    python -m build
+function test {
+    pytest
 }
 
-function all {
-    format
-    check
-    test
+function coverage {
+    pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+}
+
+function build {
+    rye build --clean
+}
+
+function publish {
+    rye build --clean
+	rye publish --yes
 }
 
 $target = $args[0]
 
 switch ($target) {
-    "init" {
-        init
+    "all" {
+        all
 
         break
     }
 
-    "test" {
-        test
+    "init-dev" {
+        init-dev
 
         break
     }
@@ -55,20 +67,32 @@ switch ($target) {
         break
     }
 
+    "test" {
+        test
+
+        break
+    }
+
+    "coverage" {
+        coverage
+
+        break
+    }
+
     "build" {
         build
 
         break
     }
 
-    "all" {
-        all
+    "publish" {
+        publish
 
         break
     }
 
     default {
-        "Valid keywords: init, test, format, check, build, all"
+        "Valid keywords: all, build, check, coverage, format, init-dev, publish, test"
 
         break
     }

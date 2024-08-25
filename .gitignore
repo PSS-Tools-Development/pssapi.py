@@ -1,6 +1,7 @@
 # Visual Studio Code
 .pylintrc
-.vscode/
+.vscode/*
+!.vscode/settings.json
 
 # Intellij
 .idea/
