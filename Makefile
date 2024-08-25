@@ -1,5 +1,5 @@
 .PHONY: all
-all: format check test
+all: format check coverage
 
 # setup
 .PHONY: init-dev
