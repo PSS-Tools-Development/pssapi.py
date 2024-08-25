@@ -1,3 +1,6 @@
+# Code coevrage
+cov.xml
+
 # Visual Studio Code
 .pylintrc
 .vscode/*
