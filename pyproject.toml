@@ -84,11 +84,17 @@ ignore-init-module-imports = true
 recursive = true
 
 [tool.isort]
-src_paths = ["src", "tests", "showcase.py"]
+src_paths = ["./src", "./tests", "./showcase.py"]
 profile = "black"
 line_length = 200
+lines_after_imports = 2
 
 [tool.black]
 line-length = 200
 target-version = ['py311']
 include = '\.pyi?$'
+
+[tool.vulture]
+min_confidence = 100
+paths = ["./src/pssapi"]
+sort_by_size = true
