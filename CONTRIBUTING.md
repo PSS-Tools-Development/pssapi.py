@@ -47,6 +47,7 @@ password = <YOUR PROJECT-SPECIFIC TOKEN>
 3. Go to [The pssapi.py management page](https://pypi.org/manage/project/pssapi/settings/) and create an API Token.
 4. Replace `<YOUR PROJECT-SPECIFIC TOKEN>` in step 2 with the token you've just generated.
 5. Use `make publish` to publish the package to pypi.org. The command will:
+   - Install twine
    - Clean the build directory
    - Build the package
    - Check the distribution files
