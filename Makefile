@@ -4,42 +4,46 @@ all: format check coverage
 # setup
 .PHONY: init-dev
 init-dev:
-	rye self update
-	rye sync --update-all
-	pre-commit install
-	pre-commit run --all-files
+	uv self update
+	uv python install
+	uv sync
+	uv run pre-commit install
+	uv run pre-commit run --all-files
 
-.PHONY: update
-update:
-	rye sync --update-all
+.PHONY: upgrade
+upgrade:
+	uv sync -U
 
 # formatting and linting
 .PHONY: check
 check:
-	flake8 ./src
-	vulture
+	uv run flake8 ./src
+	uv run vulture
 
 .PHONY: format
 format:
-	autoflake .
-	isort .
-	black .
+	uv run autoflake .
+	uv run isort .
+	uv run black .
 
 # testing
 .PHONY: test
 test:
-	pytest
+	uv run pytest
 
 .PHONY: coverage
 coverage:
-	pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+	uv run pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
 
 # build & publish
 .PHONY: build
 build:
-	rye build --clean
+	rm -rf dist/*
+	uvx --from build pyproject-build --installer uv
 
 .PHONY: publish
 publish:
-	rye build --clean
-	rye publish --yes
+	uv pip install -U twine
+	make build
+	twine check dist/*
+	twine upload --repository pssapi.py dist/*

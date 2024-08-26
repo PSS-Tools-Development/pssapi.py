@@ -7,37 +7,41 @@ function all {
 }
 
 function init-dev {
-	rye self update
-	rye sync --update-all
-	pre-commit install
-	pre-commit run --all-files
+	uv self update
+	uv python install
+	uv sync
+	uv run pre-commit install
+	uv run pre-commit run --all-files
 }
 
 function format {
-    & autoflake .
-    & isort .
-    & black .
+    & uv run autoflake .
+    & uv run isort .
+    & uv run black .
 }
 
 function check {
-    & flake8 .
+    & uv run flake8 .
 }
 
 function test {
-    pytest
+    uv run pytest
 }
 
 function coverage {
-    pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+    uv run pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
 }
 
 function build {
-    rye build --clean
+	rm -rf dist/*
+	uvx --from build pyproject-build --installer uv
 }
 
 function publish {
-    rye build --clean
-	rye publish --yes
+	uv pip install -U twine
+	make build
+	twine check dist/*
+	twine upload --repository pssapi.py dist/*
 }
 
 $target = $args[0]
