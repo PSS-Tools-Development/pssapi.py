@@ -21,17 +21,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements-dev.lock
-        shell: bash
-
-      - name: Install dependencies for Codecov
+      - name: Install dependencies for Codecov & uv
         run: >
           apt-get update &&
           apt-get install --no-install-recommends --yes
           ca-certificates curl git gpg gpg-agent
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Install dependencies
+        run: uv sync --dev
 
       - name: Check with flake8 & vulture
         run: |
