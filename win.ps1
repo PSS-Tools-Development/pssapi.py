@@ -21,7 +21,8 @@ function format {
 }
 
 function check {
-    & uv run flake8 .
+    & uv run flake8 ./src
+    & uv run vulture
 }
 
 function test {
