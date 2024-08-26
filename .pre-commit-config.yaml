@@ -11,3 +11,11 @@ repos:
     rev: 24.4.2
     hooks:
       - id: black
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    # uv version.
+    rev: 0.3.3
+    hooks:
+      # Run the pip compile
+      - id: pip-compile
+        name: pip-compile requirements.in
+        args: [pyproject.toml, -o, requirements.txt]
