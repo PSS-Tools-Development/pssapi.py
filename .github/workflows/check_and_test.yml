@@ -35,12 +35,12 @@ jobs:
 
       - name: Check with flake8 & vulture
         run: |
-          flake8 ./src
-          vulture ./src
+          uv run flake8 ./src
+          uv run vulture ./src
 
       - name: Test with pytest
         run: |
-          pytest -x --cov=./src/pssapi --cov-report=xml
+          uv run pytest -x --cov=./src/pssapi --cov-report=xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
