@@ -1,17 +1,9 @@
 # pssapi.py
 
-<a href="https://discord.gg/kKguSec" target="_blank">
-    <img src="https://discord.com/api/guilds/565819215731228672/embed.png" alt="Support Discord server invite">
-</a>
-<a href="https://pypi.org/project/pssapi" target="_blank">
-    <img src="https://img.shields.io/pypi/status/pssapi?color=%23DAB420&label=status" alt="Development status">
-</a>
-<a href="https://pypi.org/project/pssapi" target="_blank">
-    <img src="https://img.shields.io/pypi/v/pssapi?color=%23DAB420&label=pypi%20package" alt="Package version">
-</a>
-<a href="https://pypi.org/project/pssapi" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/pssapi.svg?color=%23DAB420" alt="Supported Python versions">
-</a>
+<a href="https://discord.gg/kKguSec" target="_blank"><img src="https://discord.com/api/guilds/565819215731228672/embed.png" alt="Support Discord server invite"></a>
+<a href="https://pypi.org/project/pssapi" target="_blank"><img src="https://img.shields.io/pypi/status/pssapi?color=%23DAB420&label=status" alt="Development status"></a>
+<a href="https://pypi.org/project/pssapi" target="_blank"><img src="https://img.shields.io/pypi/v/pssapi?color=%23DAB420&label=pypi%20package" alt="Package version"></a>
+<a href="https://pypi.org/project/pssapi" target="_blank"><img src="https://img.shields.io/pypi/pyversions/pssapi.svg?color=%23DAB420" alt="Supported Python versions"></a>
 <img src="https://img.shields.io/codecov/c/github/pss-tools-development/pssapi.py" alt="Code coverage">
 
 > An async client library to access the [Pixel Starships API](https://pixelstarships.com).
