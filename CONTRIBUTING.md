@@ -7,8 +7,11 @@ This project makes use of [uv](https://github.com/astral-sh/uv) for package depe
 An installation of Python is not required, **uv** will handle this.
 
 ## Windows
+Alternatively to **Make** you can use the included **Powershell** functions.
+### Install `Make` (optional)
 - Install [chocolatey](https://chocolatey.org/install) (a package manager).
 - Run `choco install make` to install **Make**.
+### Install `uv`
 - Follow the [installation instructions](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) of **uv**.
 
 ## Linux / Windows Subsystem for Linux (WSL 2)
@@ -41,8 +44,8 @@ repository = https://upload.pypi.org/legacy/
 username = __token__
 password = <YOUR PROJECT-SPECIFIC TOKEN>
 ```
-3. Go to [The pssapi.py management page](https://pypi.org/manage/project/pssapi/settings/) and create an API Token
-4. Replace `<YOUR PROJECT-SPECIFIC TOKEN>` in step 2 with the token you've just generated
+3. Go to [The pssapi.py management page](https://pypi.org/manage/project/pssapi/settings/) and create an API Token.
+4. Replace `<YOUR PROJECT-SPECIFIC TOKEN>` in step 2 with the token you've just generated.
 5. Use `make publish` to publish the package to pypi.org. The command will:
    - Clean the build directory
    - Build the package
