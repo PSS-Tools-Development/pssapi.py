@@ -4,7 +4,8 @@ version = "0.5.1"
 description = "A wrapper for the Pixel Starships API."
 authors = [
     { name = "The worst.", email = "theworstpss@gmail.com" },
-    { name = "Solevis"}
+    { name = "Solevis"},
+    { name = "architelos"}
 ]
 license = "MIT"
 readme = "README.md"
