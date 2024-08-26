@@ -17,5 +17,6 @@ repos:
     hooks:
       # Run the pip compile
       - id: pip-compile
-        name: pip-compile requirements.in
+        name: pip-compile
         args: [pyproject.toml, -o, requirements.txt]
+        files: ^pyproject.toml|requirements.txt$
