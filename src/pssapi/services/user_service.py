@@ -3,6 +3,7 @@ import hashlib as _hashlib
 import random as _random
 import string as _string
 from typing import List as _List
+from uuid import uuid4
 
 import pssapi.services.service_base as _service_base
 
@@ -14,7 +15,21 @@ from .raw import UserServiceRaw as _UserServiceRaw
 
 class _UserServiceUtils:
     @staticmethod
-    def create_device_login_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime.datetime, checksum_key: str) -> str:
+    def create_device_login_checksum(device_type: _enums.DeviceType, client_datetime: _datetime.datetime, checksum_key: str = None, device_key: str = None) -> str:
+        """
+        Generate a checksum for the `DeviceLogin` endpoints.
+
+        :param device_type: Device type.
+        :param client_datetime: Current UTC date and time.
+        :param checksum_key: A secret key for creating the checksum. While easily found online, it won't be included in pssapi, complying with SavySoda.
+        :param device_key: Optional UUID; will be generated if left empty.
+        """
+        if not checksum_key:
+            raise _utils.exceptions.InvalidChecksumKey()
+
+        if not device_key:
+            device_key = uuid4()
+
         timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
         result = _hashlib.md5(f"{device_key}{timestamp}{device_type}{checksum_key}savysoda".encode("utf-8")).hexdigest()
         return result
@@ -23,7 +38,6 @@ class _UserServiceUtils:
     def _create_device_key() -> str:
         result = "".join(_random.choice(_string.hexdigits) + _random.choice("26ae") + _random.choices(_string.hexdigits, k=10))
         return result
-
 
 class UserService(_service_base.ServiceBase):
     utils = _UserServiceUtils()

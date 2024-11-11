@@ -22,5 +22,5 @@ class PssApiClient(_client_base.PssApiClientBase):
             _entities.UserLogin: An object containing information on the last user logged on the device with the provided `device_key` and an access token for that user.
         """
         client_date_time = _utils.get_utc_now()
-        checksum = self.user_service.utils.create_device_login_checksum(device_key, self.device_type, client_date_time, checksum_key)
+        checksum = self.user_service.utils.create_device_login_checksum(self.device_type, client_date_time, checksum_key, device_key)
         return await self.user_service.device_login(checksum, client_date_time, device_key, self.device_type)
