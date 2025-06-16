@@ -18,8 +18,6 @@ keywords = [
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Framework :: AsyncIO",
-    "Framework :: Pydantic",
-    "Framework :: Pydantic :: 2",
     "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
     "Natural Language :: English",
