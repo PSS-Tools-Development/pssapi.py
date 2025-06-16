@@ -1,12 +1,13 @@
 from abc import abstractmethod
 from xml.etree import ElementTree as _ElementTree
 
+from ..types import EntityInfo as _EntityInfo
 from .raw import EntityBaseRaw as _EntityBaseRaw
 
 
 class EntityBase(_EntityBaseRaw):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, entity_info: _EntityInfo):
+        super().__init__(entity_info)
         self._node: _ElementTree.Element = None
 
     @property
