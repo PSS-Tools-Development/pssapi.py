@@ -2,6 +2,7 @@ import pytest
 
 import pssapi
 
+
 USER_ID: int = 4510693  # The worst.
 
 

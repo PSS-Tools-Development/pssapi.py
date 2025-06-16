@@ -1,5 +1,6 @@
 import asyncio
 import os
+from xml.etree import ElementTree
 
 from pssapi import PssApiClient, entities
 
@@ -15,6 +16,12 @@ async def main() -> None:
     ship_designs: list[entities.ShipDesign] = await client.ship_service.list_all_ship_designs()
     print(f"Found {len(ship_designs)} ship designs.")
     print(f"First ship: {ship_designs[0].ship_design_name}")
+
+    character_designs: list[entities.CharacterDesign] = await client.character_service.list_all_character_designs()
+    print(f"Found {len(character_designs)} character designs.")
+    print(f"First character: {character_designs[0].character_design_name}")
+    xml = ElementTree.tostring(character_designs[0].node).decode().replace("\n", " ")
+    print(f"First character XML: {xml}")
 
     item_designs: list[entities.ItemDesign] = await client.item_service.list_item_designs()
     print(f"Found {len(item_designs)} item designs.")

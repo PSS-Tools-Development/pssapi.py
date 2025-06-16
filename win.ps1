@@ -1,44 +1,61 @@
 Set-StrictMode -Version Latest
 
-function init {
-    poetry install
-}
-
-function test {
-    pytest
-}
-
-function format {
-    & autoflake .
-    & isort .
-    & black .
-}
-
-function check {
-    & flake8 .
-}
-
-function build {
-    python -m build
-}
-
 function all {
     format
     check
-    test
+    coverage
+}
+
+function init-dev {
+	uv self update
+	uv python install
+	uv sync
+	uv run pre-commit install
+	uv run pre-commit run --all-files
+}
+
+function format {
+    & uv run autoflake .
+    & uv run isort .
+    & uv run black .
+}
+
+function check {
+    & uv run flake8 ./src
+    & uv run vulture
+}
+
+function test {
+    uv run pytest
+}
+
+function coverage {
+    uv run pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+}
+
+function build {
+	rm -rf dist/*
+	uvx --from build pyproject-build --installer uv
+}
+
+function publish {
+	uv pip install -U twine
+	make build
+	twine check dist/*
+	twine upload --repository pssapi.py dist/*
 }
 
 $target = $args[0]
 
 switch ($target) {
-    "init" {
-        init
+    "all" {
+        all
 
         break
     }
 
-    "test" {
-        test
+    "init-dev" {
+        init-dev
 
         break
     }
@@ -55,20 +72,32 @@ switch ($target) {
         break
     }
 
+    "test" {
+        test
+
+        break
+    }
+
+    "coverage" {
+        coverage
+
+        break
+    }
+
     "build" {
         build
 
         break
     }
 
-    "all" {
-        all
+    "publish" {
+        publish
 
         break
     }
 
     default {
-        "Valid keywords: init, test, format, check, build, all"
+        "Valid keywords: all, build, check, coverage, format, init-dev, publish, test"
 
         break
     }

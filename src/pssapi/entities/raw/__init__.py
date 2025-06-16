@@ -65,6 +65,7 @@ from .user_raw import UserRaw
 from .user_season_raw import UserSeasonRaw
 from .user_star_system_raw import UserStarSystemRaw
 
+
 __all__ = [
     EntityBaseRaw.__name__,
     AchievementDesignRaw.__name__,

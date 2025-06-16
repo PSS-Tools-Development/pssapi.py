@@ -11,6 +11,7 @@ from .skin_metadata import SkinMetadata
 from .skin_set_metadata import SkinSetMetadata
 from .star_system_marker_generator_metadata import StarSystemMarkerGeneratorMetadata
 
+
 all = [
     Color.__name__,
     ItemDesignMetadata.__name__,

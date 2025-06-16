@@ -1,6 +1,6 @@
 """
-    This file has been generated automatically.
-    Any changes to this file will be lost eventually.
+This file has been generated automatically.
+Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
@@ -11,6 +11,7 @@ from ...entities import Alliance as _Alliance
 from ...entities import Character as _Character
 from ...entities import Message as _Message
 from ...entities import User as _User
+
 
 # ---------- Constants ----------
 

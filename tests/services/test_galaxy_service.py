@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 STAR_SYSTEM_ID: int = 53  # Golgotha
 
 

@@ -1,5 +1,5 @@
 """
-    This file has been generated automatically
+This file has been generated automatically
 """
 
 from datetime import datetime as _datetime

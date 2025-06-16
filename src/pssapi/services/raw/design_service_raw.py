@@ -1,6 +1,6 @@
 """
-    This file has been generated automatically.
-    Any changes to this file will be lost eventually.
+This file has been generated automatically.
+Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
@@ -42,6 +42,7 @@ from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 from ...entities import TaskDesign as _TaskDesign
 from ...entities import TrainingDesign as _TrainingDesign
+
 
 # ---------- Constants ----------
 

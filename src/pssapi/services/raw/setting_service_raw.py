@@ -1,6 +1,6 @@
 """
-    This file has been generated automatically.
-    Any changes to this file will be lost eventually.
+This file has been generated automatically.
+Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import NewsDesign as _NewsDesign
 from ...entities import Setting as _Setting
+
 
 # ---------- Constants ----------
 

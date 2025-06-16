@@ -2,6 +2,7 @@ import pytest
 
 import pssapi
 
+
 ALLIANCE_ID = 21  # Trek Wolfpack
 ALLIANCE_NAME = "Trek "
 

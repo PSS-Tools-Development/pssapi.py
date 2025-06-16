@@ -31,6 +31,7 @@ from . import task_service_raw as TaskServiceRaw
 from . import training_service_raw as TrainingServiceRaw
 from . import user_service_raw as UserServiceRaw
 
+
 __all__ = [
     AchievementServiceRaw.__name__,
     AllianceServiceRaw.__name__,

@@ -16,6 +16,7 @@ import pssapi.entities as _entities
 import pssapi.enums as _enums
 import pssapi.utils as _utils
 
+
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
     "deviceType": str(_enums.DeviceType.ANDROID),
     "languageKey": str(_enums.LanguageKey.ENGLISH),
@@ -60,10 +61,15 @@ async def get_entities_from_path(
             continue
 
         if is_list:
-            entities = [entity_type(__get_raw_entity_xml(entity)) for entity in entity_parent_node]
+            entities = []
+            for entity_node in entity_parent_node:
+                entity = entity_type(__get_raw_entity_xml(entity_node))
+                entity.node = entity_node
+                entities.append(entity)
             result.append(entities)
         else:
             entity = entity_type(__get_raw_entity_xml(entity_parent_node))
+            entity.node = entity_parent_node
             result.append(entity)
     if len(result) > 1:
         return tuple(result)

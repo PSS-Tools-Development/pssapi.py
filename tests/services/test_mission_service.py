@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 MISSION_DESIGN_ID: int = 244  # Explore Valhalla
 
 

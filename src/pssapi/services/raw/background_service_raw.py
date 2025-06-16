@@ -1,12 +1,13 @@
 """
-    This file has been generated automatically.
-    Any changes to this file will be lost eventually.
+This file has been generated automatically.
+Any changes to this file will be lost eventually.
 """
 
 from typing import List as _List
 
 from ... import core as _core
 from ...entities import Background as _Background
+
 
 # ---------- Constants ----------
 

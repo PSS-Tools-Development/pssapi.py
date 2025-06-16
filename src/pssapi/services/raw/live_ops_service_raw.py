@@ -1,12 +1,12 @@
 """
-    This file has been generated automatically.
-    Any changes to this file will be lost eventually.
+This file has been generated automatically.
+Any changes to this file will be lost eventually.
 """
-
 
 from ... import core as _core
 from ...entities import GetCatalogQuantity as _GetCatalogQuantity
 from ...entities import LiveOps as _LiveOps
+
 
 # ---------- Constants ----------
 

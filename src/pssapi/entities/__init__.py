@@ -66,6 +66,7 @@ from .user_marker import UserMarker
 from .user_season import UserSeason
 from .user_star_system import UserStarSystem
 
+
 __all__ = [
     EntityWithIdBase.__name__,
     EntityBase.__name__,
