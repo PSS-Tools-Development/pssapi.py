@@ -39,6 +39,8 @@ jobs:
           uv run vulture ./src
 
       - name: Test with pytest
+        env:
+          PSS_DEVICE_LOGIN_CHECKSUM_KEY: ${{secrets.PSS_DEVICE_LOGIN_CHECKSUM_KEY}}
         run: |
           uv run pytest -x --cov=./src/pssapi --cov-report=xml
 
