@@ -18,6 +18,7 @@ from .market_service import MarketService
 from .message_service import MessageService
 from .mission_service import MissionService
 from .promotion_service import PromotionService
+from .public_service import PublicService
 from .research_service import ResearchService
 from .reward_service import RewardService
 from .room_design_sprite_service import RoomDesignSpriteService
@@ -51,6 +52,7 @@ __all__ = [
     MessageService.__name__,
     MissionService.__name__,
     PromotionService.__name__,
+    PublicService.__name__,
     ResearchService.__name__,
     RewardService.__name__,
     RoomDesignSpriteService.__name__,

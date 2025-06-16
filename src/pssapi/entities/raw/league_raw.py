@@ -7,22 +7,24 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class LeagueRaw:
+class LeagueRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "League"
 
     def __init__(self, league_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._background_sprite_id: int = _parse.pss_int(league_info.get("BackgroundSpriteId"))
-        self._gas_reward: int = _parse.pss_int(league_info.get("GasReward"))
-        self._large_logo_sprite_id: int = _parse.pss_int(league_info.get("LargeLogoSpriteId"))
-        self._league_id: int = _parse.pss_int(league_info.get("LeagueId"))
-        self._league_name: str = _parse.pss_str(league_info.get("LeagueName"))
-        self._logo_sprite_id: int = _parse.pss_int(league_info.get("LogoSpriteId"))
-        self._max_trophy: int = _parse.pss_int(league_info.get("MaxTrophy"))
-        self._min_trophy: int = _parse.pss_int(league_info.get("MinTrophy"))
-        self._mineral_reward: int = _parse.pss_int(league_info.get("MineralReward"))
+        self._background_sprite_id: int = _parse.pss_int(league_info.pop("BackgroundSpriteId", None))
+        self._gas_reward: int = _parse.pss_int(league_info.pop("GasReward", None))
+        self._large_logo_sprite_id: int = _parse.pss_int(league_info.pop("LargeLogoSpriteId", None))
+        self._league_id: int = _parse.pss_int(league_info.pop("LeagueId", None))
+        self._league_name: str = _parse.pss_str(league_info.pop("LeagueName", None))
+        self._logo_sprite_id: int = _parse.pss_int(league_info.pop("LogoSpriteId", None))
+        self._max_trophy: int = _parse.pss_int(league_info.pop("MaxTrophy", None))
+        self._min_trophy: int = _parse.pss_int(league_info.pop("MinTrophy", None))
+        self._mineral_reward: int = _parse.pss_int(league_info.pop("MineralReward", None))
+        super().__init__(league_info)
 
     @property
     def background_sprite_id(self) -> int:
@@ -86,5 +88,6 @@ class LeagueRaw:
                 "MinTrophy": self.min_trophy,
                 "MineralReward": self.mineral_reward,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

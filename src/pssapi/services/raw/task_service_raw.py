@@ -16,7 +16,7 @@ LIST_ALL_TASK_DESIGNS_2_BASE_PATH: str = "TaskService/ListAllTaskDesigns2"
 # ---------- Endpoints ----------
 
 
-async def list_all_task_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_TaskDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_TaskDesign, "TaskDesigns", True),), "TaskDesigns", production_server, LIST_ALL_TASK_DESIGNS_2_BASE_PATH, "GET", **params)
+async def list_all_task_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_TaskDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(((_TaskDesign, "TaskDesigns", True),), "TaskDesigns", production_server, LIST_ALL_TASK_DESIGNS_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result

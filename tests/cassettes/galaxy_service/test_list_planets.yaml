@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListPlanets
+  response:
+    body:
+      string: <GalaxyService><ListPlanets version="333"><Planets></Planets></ListPlanets></GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:22 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 ba7b83fea0750f0a671a6626ceefabf0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MGDhTXQcD7FacuHsKbNJFqSyl0My0oqmTIjUZXkb1twlhoq_NCgDIQ==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

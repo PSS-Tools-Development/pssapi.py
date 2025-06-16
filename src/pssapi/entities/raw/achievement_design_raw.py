@@ -7,31 +7,33 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class AchievementDesignRaw:
+class AchievementDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "AchievementDesign"
 
     def __init__(self, achievement_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._achievement_description: str = _parse.pss_str(achievement_design_info.get("AchievementDescription"))
-        self._achievement_design_id: int = _parse.pss_int(achievement_design_info.get("AchievementDesignId"))
-        self._achievement_goal: int = _parse.pss_int(achievement_design_info.get("AchievementGoal"))
-        self._achievement_key: str = _parse.pss_str(achievement_design_info.get("AchievementKey"))
-        self._achievement_reward: int = _parse.pss_int(achievement_design_info.get("AchievementReward"))
-        self._achievement_title: str = _parse.pss_str(achievement_design_info.get("AchievementTitle"))
-        self._achievement_type: str = _parse.pss_str(achievement_design_info.get("AchievementType"))
-        self._duration_type: str = _parse.pss_str(achievement_design_info.get("DurationType"))
-        self._gas_reward: int = _parse.pss_int(achievement_design_info.get("GasReward"))
-        self._guide_argument: int = _parse.pss_int(achievement_design_info.get("GuideArgument"))
-        self._guide_type: str = _parse.pss_str(achievement_design_info.get("GuideType"))
-        self._is_hidden: bool = _parse.pss_bool(achievement_design_info.get("IsHidden"))
-        self._mineral_reward: int = _parse.pss_int(achievement_design_info.get("MineralReward"))
-        self._order_index: int = _parse.pss_int(achievement_design_info.get("OrderIndex"))
-        self._parent_achievement_design_id: int = _parse.pss_int(achievement_design_info.get("ParentAchievementDesignId"))
-        self._reward_string: str = _parse.pss_str(achievement_design_info.get("RewardString"))
-        self._root_achievement_design_id: int = _parse.pss_int(achievement_design_info.get("RootAchievementDesignId"))
-        self._sprite_id: int = _parse.pss_int(achievement_design_info.get("SpriteId"))
+        self._achievement_description: str = _parse.pss_str(achievement_design_info.pop("AchievementDescription", None))
+        self._achievement_design_id: int = _parse.pss_int(achievement_design_info.pop("AchievementDesignId", None))
+        self._achievement_goal: int = _parse.pss_int(achievement_design_info.pop("AchievementGoal", None))
+        self._achievement_key: str = _parse.pss_str(achievement_design_info.pop("AchievementKey", None))
+        self._achievement_reward: int = _parse.pss_int(achievement_design_info.pop("AchievementReward", None))
+        self._achievement_title: str = _parse.pss_str(achievement_design_info.pop("AchievementTitle", None))
+        self._achievement_type: str = _parse.pss_str(achievement_design_info.pop("AchievementType", None))
+        self._duration_type: str = _parse.pss_str(achievement_design_info.pop("DurationType", None))
+        self._gas_reward: int = _parse.pss_int(achievement_design_info.pop("GasReward", None))
+        self._guide_argument: int = _parse.pss_int(achievement_design_info.pop("GuideArgument", None))
+        self._guide_type: str = _parse.pss_str(achievement_design_info.pop("GuideType", None))
+        self._is_hidden: bool = _parse.pss_bool(achievement_design_info.pop("IsHidden", None))
+        self._mineral_reward: int = _parse.pss_int(achievement_design_info.pop("MineralReward", None))
+        self._order_index: int = _parse.pss_int(achievement_design_info.pop("OrderIndex", None))
+        self._parent_achievement_design_id: int = _parse.pss_int(achievement_design_info.pop("ParentAchievementDesignId", None))
+        self._reward_string: str = _parse.pss_str(achievement_design_info.pop("RewardString", None))
+        self._root_achievement_design_id: int = _parse.pss_int(achievement_design_info.pop("RootAchievementDesignId", None))
+        self._sprite_id: int = _parse.pss_int(achievement_design_info.pop("SpriteId", None))
+        super().__init__(achievement_design_info)
 
     @property
     def achievement_description(self) -> str:
@@ -149,5 +151,6 @@ class AchievementDesignRaw:
                 "RootAchievementDesignId": self.root_achievement_design_id,
                 "SpriteId": self.sprite_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

@@ -8,28 +8,30 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class SaleRaw:
+class SaleRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Sale"
 
     def __init__(self, sale_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._buyer_ship_id: int = _parse.pss_int(sale_info.get("BuyerShipId"))
-        self._buyer_ship_name: str = _parse.pss_str(sale_info.get("BuyerShipName"))
-        self._character_design_id: int = _parse.pss_int(sale_info.get("CharacterDesignId"))
-        self._character_id: int = _parse.pss_int(sale_info.get("CharacterId"))
-        self._currency_type: str = _parse.pss_str(sale_info.get("CurrencyType"))
-        self._currency_value: int = _parse.pss_int(sale_info.get("CurrencyValue"))
-        self._item_design_id: int = _parse.pss_int(sale_info.get("ItemDesignId"))
-        self._item_id: int = _parse.pss_int(sale_info.get("ItemId"))
-        self._quantity: int = _parse.pss_int(sale_info.get("Quantity"))
-        self._sale_id: int = _parse.pss_int(sale_info.get("SaleId"))
-        self._sale_status: str = _parse.pss_str(sale_info.get("SaleStatus"))
-        self._seller_ship_id: int = _parse.pss_int(sale_info.get("SellerShipId"))
-        self._seller_ship_name: str = _parse.pss_str(sale_info.get("SellerShipName"))
-        self._starbux_value: int = _parse.pss_int(sale_info.get("StarbuxValue"))
-        self._status_date: _datetime = _parse.pss_datetime(sale_info.get("StatusDate"))
+        self._buyer_ship_id: int = _parse.pss_int(sale_info.pop("BuyerShipId", None))
+        self._buyer_ship_name: str = _parse.pss_str(sale_info.pop("BuyerShipName", None))
+        self._character_design_id: int = _parse.pss_int(sale_info.pop("CharacterDesignId", None))
+        self._character_id: int = _parse.pss_int(sale_info.pop("CharacterId", None))
+        self._currency_type: str = _parse.pss_str(sale_info.pop("CurrencyType", None))
+        self._currency_value: int = _parse.pss_int(sale_info.pop("CurrencyValue", None))
+        self._item_design_id: int = _parse.pss_int(sale_info.pop("ItemDesignId", None))
+        self._item_id: int = _parse.pss_int(sale_info.pop("ItemId", None))
+        self._quantity: int = _parse.pss_int(sale_info.pop("Quantity", None))
+        self._sale_id: int = _parse.pss_int(sale_info.pop("SaleId", None))
+        self._sale_status: str = _parse.pss_str(sale_info.pop("SaleStatus", None))
+        self._seller_ship_id: int = _parse.pss_int(sale_info.pop("SellerShipId", None))
+        self._seller_ship_name: str = _parse.pss_str(sale_info.pop("SellerShipName", None))
+        self._starbux_value: int = _parse.pss_int(sale_info.pop("StarbuxValue", None))
+        self._status_date: _datetime = _parse.pss_datetime(sale_info.pop("StatusDate", None))
+        super().__init__(sale_info)
 
     @property
     def buyer_ship_id(self) -> int:
@@ -129,5 +131,6 @@ class SaleRaw:
                 "StarbuxValue": self.starbux_value,
                 "StatusDate": self.status_date,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

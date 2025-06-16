@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListStarSystemLinks?clientDateTime=2024-03-24T17%3A17%3A02
+  response:
+    body:
+      string: <GalaxyService><ListStarSystemLinks version="354"><StarSystemLinks><StarSystemLink
+        StarSystemLinkId="1" FromStarSystemId="2" ToStarSystemId="3" IsTwoWay="true"
+        TravelTime="30" /><StarSystemLink StarSystemLinkId="2" FromStarSystemId="4"
+        ToStarSystemId="2" IsTwoWay="true" TravelTime="50" /><StarSystemLink StarSystemLinkId="3"
+        FromStarSystemId="3" ToStarSystemId="4" IsTwoWay="true" TravelTime="30" /><StarSystemLink
+        StarSystemLinkId="4" FromStarSystemId="3" ToStarSystemId="53" IsTwoWay="true"
+        TravelTime="300" /><StarSystemLink StarSystemLinkId="5" FromStarSystemId="6"
+        ToStarSystemId="8" IsTwoWay="true" TravelTime="30" /><StarSystemLink StarSystemLinkId="6"
+        FromStarSystemId="8" ToStarSystemId="7" IsTwoWay="true" TravelTime="50" /><StarSystemLink
+        StarSystemLinkId="7" FromStarSystemId="7" ToStarSystemId="6" IsTwoWay="true"
+        TravelTime="30" /><StarSystemLink StarSystemLinkId="8" FromStarSystemId="6"
+        ToStarSystemId="17" IsTwoWay="true" TravelTime="300" /><StarSystemLink StarSystemLinkId="9"
+        FromStarSystemId="10" ToStarSystemId="9" IsTwoWay="true" TravelTime="30" /><StarSystemLink
+        StarSystemLinkId="10" FromStarSystemId="9" ToStarSystemId="11" IsTwoWay="true"
+        TravelTime="30" /><StarSystemLink StarSystemLinkId="11" FromStarSystemId="11"
+        ToStarSystemId="10" IsTwoWay="true" TravelTime="50" /><StarSystemLink StarSystemLinkId="12"
+        FromStarSystemId="9" ToStarSystemId="35" IsTwoWay="true" TravelTime="300"
+        /><StarSystemLink StarSystemLinkId="14" FromStarSystemId="5" ToStarSystemId="35"
+        IsTwoWay="true" TravelTime="400" /><StarSystemLink StarSystemLinkId="15" FromStarSystemId="7"
+        ToStarSystemId="30" IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="16"
+        FromStarSystemId="11" ToStarSystemId="36" IsTwoWay="true" TravelTime="45"
+        /><StarSystemLink StarSystemLinkId="17" FromStarSystemId="6" ToStarSystemId="50"
+        IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="18" FromStarSystemId="16"
+        ToStarSystemId="43" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="19"
+        FromStarSystemId="24" ToStarSystemId="36" IsTwoWay="true" TravelTime="45"
+        /><StarSystemLink StarSystemLinkId="20" FromStarSystemId="14" ToStarSystemId="30"
+        IsTwoWay="true" TravelTime="30" /><StarSystemLink StarSystemLinkId="21" FromStarSystemId="8"
+        ToStarSystemId="43" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="22"
+        FromStarSystemId="53" ToStarSystemId="18" IsTwoWay="true" TravelTime="180"
+        /><StarSystemLink StarSystemLinkId="23" FromStarSystemId="18" ToStarSystemId="35"
+        IsTwoWay="true" TravelTime="180" /><StarSystemLink StarSystemLinkId="24" FromStarSystemId="19"
+        ToStarSystemId="35" IsTwoWay="true" TravelTime="180" /><StarSystemLink StarSystemLinkId="25"
+        FromStarSystemId="20" ToStarSystemId="50" IsTwoWay="true" TravelTime="60"
+        /><StarSystemLink StarSystemLinkId="26" FromStarSystemId="20" ToStarSystemId="17"
+        IsTwoWay="true" TravelTime="180" /><StarSystemLink StarSystemLinkId="27" FromStarSystemId="4"
+        ToStarSystemId="22" IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="28"
+        FromStarSystemId="40" ToStarSystemId="22" IsTwoWay="true" TravelTime="30"
+        /><StarSystemLink StarSystemLinkId="29" FromStarSystemId="50" ToStarSystemId="44"
+        IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="30" FromStarSystemId="22"
+        ToStarSystemId="32" IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="31"
+        FromStarSystemId="4" ToStarSystemId="22" IsTwoWay="true" TravelTime="60" /><StarSystemLink
+        StarSystemLinkId="34" FromStarSystemId="12" ToStarSystemId="31" IsTwoWay="true"
+        TravelTime="90" /><StarSystemLink StarSystemLinkId="35" FromStarSystemId="12"
+        ToStarSystemId="30" IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="36"
+        FromStarSystemId="33" ToStarSystemId="23" IsTwoWay="true" TravelTime="30"
+        /><StarSystemLink StarSystemLinkId="37" FromStarSystemId="29" ToStarSystemId="21"
+        IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="38" FromStarSystemId="30"
+        ToStarSystemId="42" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="39"
+        FromStarSystemId="25" ToStarSystemId="33" IsTwoWay="true" TravelTime="45"
+        /><StarSystemLink StarSystemLinkId="40" FromStarSystemId="29" ToStarSystemId="2"
+        IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="41" FromStarSystemId="10"
+        ToStarSystemId="25" IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="42"
+        FromStarSystemId="3" ToStarSystemId="27" IsTwoWay="true" TravelTime="60" /><StarSystemLink
+        StarSystemLinkId="43" FromStarSystemId="25" ToStarSystemId="15" IsTwoWay="true"
+        TravelTime="90" /><StarSystemLink StarSystemLinkId="44" FromStarSystemId="27"
+        ToStarSystemId="18" IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="45"
+        FromStarSystemId="9" ToStarSystemId="31" IsTwoWay="true" TravelTime="60" /><StarSystemLink
+        StarSystemLinkId="46" FromStarSystemId="15" ToStarSystemId="37" IsTwoWay="true"
+        TravelTime="60" /><StarSystemLink StarSystemLinkId="47" FromStarSystemId="40"
+        ToStarSystemId="26" IsTwoWay="true" TravelTime="30" /><StarSystemLink StarSystemLinkId="48"
+        FromStarSystemId="26" ToStarSystemId="47" IsTwoWay="true" TravelTime="30"
+        /><StarSystemLink StarSystemLinkId="49" FromStarSystemId="40" ToStarSystemId="16"
+        IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="50" FromStarSystemId="19"
+        ToStarSystemId="17" IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="51"
+        FromStarSystemId="28" ToStarSystemId="31" IsTwoWay="true" TravelTime="60"
+        /><StarSystemLink StarSystemLinkId="53" FromStarSystemId="18" ToStarSystemId="27"
+        IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="54" FromStarSystemId="24"
+        ToStarSystemId="46" IsTwoWay="true" TravelTime="30" /><StarSystemLink StarSystemLinkId="56"
+        FromStarSystemId="44" ToStarSystemId="22" IsTwoWay="true" TravelTime="90"
+        /><StarSystemLink StarSystemLinkId="57" FromStarSystemId="46" ToStarSystemId="13"
+        IsTwoWay="true" TravelTime="30" /><StarSystemLink StarSystemLinkId="58" FromStarSystemId="16"
+        ToStarSystemId="38" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="59"
+        FromStarSystemId="27" ToStarSystemId="39" IsTwoWay="true" TravelTime="60"
+        /><StarSystemLink StarSystemLinkId="60" FromStarSystemId="34" ToStarSystemId="41"
+        IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="61" FromStarSystemId="24"
+        ToStarSystemId="42" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="62"
+        FromStarSystemId="23" ToStarSystemId="45" IsTwoWay="true" TravelTime="30"
+        /><StarSystemLink StarSystemLinkId="63" FromStarSystemId="15" ToStarSystemId="27"
+        IsTwoWay="true" TravelTime="90" /><StarSystemLink StarSystemLinkId="64" FromStarSystemId="33"
+        ToStarSystemId="21" IsTwoWay="true" TravelTime="45" /><StarSystemLink StarSystemLinkId="65"
+        FromStarSystemId="41" ToStarSystemId="44" IsTwoWay="true" TravelTime="60"
+        /><StarSystemLink StarSystemLinkId="66" FromStarSystemId="12" ToStarSystemId="19"
+        IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="67" FromStarSystemId="53"
+        ToStarSystemId="5" IsTwoWay="true" TravelTime="240" /><StarSystemLink StarSystemLinkId="68"
+        FromStarSystemId="5" ToStarSystemId="20" IsTwoWay="true" TravelTime="90" /><StarSystemLink
+        StarSystemLinkId="69" FromStarSystemId="17" ToStarSystemId="5" IsTwoWay="true"
+        TravelTime="240" /><StarSystemLink StarSystemLinkId="70" FromStarSystemId="12"
+        ToStarSystemId="49" IsTwoWay="true" TravelTime="60" /><StarSystemLink StarSystemLinkId="71"
+        FromStarSystemId="25" ToStarSystemId="54" IsTwoWay="true" TravelTime="90"
+        /><StarSystemLink StarSystemLinkId="72" FromStarSystemId="54" ToStarSystemId="37"
+        IsTwoWay="true" TravelTime="60" /></StarSystemLinks></ListStarSystemLinks></GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:23 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:37:23 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:23 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 6d74947505437c57fd215b170c6b3d90.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Mg0m_diwh65hTFqH_cRy49hZTwCrZKbqTTwGsaLhFlUw4JTBj-x_9A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

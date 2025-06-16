@@ -30,10 +30,13 @@ from ..entities import RoomDesignSprite as _RoomDesignSprite
 from ..entities import SeasonDesign as _SeasonDesign
 from ..entities import ShipDesign as _ShipDesign
 from ..entities import SituationDesign as _SituationDesign
+from ..entities import Skin as _Skin
+from ..entities import SkinSet as _SkinSet
 from ..entities import Sprite as _Sprite
 from ..entities import StarSystem as _StarSystem
 from ..entities import StarSystemLink as _StarSystemLink
 from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
+from ..entities import TaskDesign as _TaskDesign
 from ..entities import TrainingDesign as _TrainingDesign
 from .raw import DesignServiceRaw as _DesignServiceRaw
 
@@ -74,6 +77,7 @@ class DesignService(_service_base.ServiceBase):
         list_room_design_sprite_version: int,
         list_room_design_version: int,
         list_season_design_version: int,
+        list_skin_version: int,
         list_sprite_version: int,
         list_star_system_link_version: int,
         list_star_system_version: int,
@@ -105,6 +109,8 @@ class DesignService(_service_base.ServiceBase):
         _List[_SeasonDesign],
         _List[_ShipDesign],
         _List[_SituationDesign],
+        _List[_SkinSet],
+        _List[_Skin],
         _List[_Sprite],
         _List[_StarSystemLink],
         _List[_StarSystemMarkerGenerator],
@@ -112,7 +118,7 @@ class DesignService(_service_base.ServiceBase):
         _List[_TrainingDesign],
     ]:
         production_server = await self.get_production_server()
-        result = await _DesignServiceRaw.list_all_designs_4(
+        result = await _DesignServiceRaw.list_all_designs_5(
             production_server,
             language_key,
             list_achievement_design_version,
@@ -147,6 +153,124 @@ class DesignService(_service_base.ServiceBase):
             list_room_design_sprite_version,
             list_room_design_version,
             list_season_design_version,
+            list_skin_version,
+            list_sprite_version,
+            list_star_system_link_version,
+            list_star_system_version,
+        )
+        return result
+
+    async def list_all_dynamic_designs(
+        self, list_all_promotion_design_version: int, list_all_task_design_version: int, list_item_design_version: int
+    ) -> _Tuple[_List[_ItemDesign], _List[_PromotionDesign], _List[_TaskDesign]]:
+        production_server = await self.get_production_server()
+        result = await _DesignServiceRaw.list_all_dynamic_designs(production_server, self.language_key, list_all_promotion_design_version, list_all_task_design_version, list_item_design_version)
+        return result
+
+    async def list_all_static_designs(
+        self,
+        list_achievement_design_version: int = 0,
+        list_action_type_version: int = 0,
+        list_all_challenge_design_version: int = 0,
+        list_all_character_design_action_version: int = 0,
+        list_all_character_design_version: int = 0,
+        list_all_collection_design_version: int = 0,
+        list_all_division_design_version: int = 0,
+        list_all_draw_design_version: int = 0,
+        list_all_mission_design_version: int = 0,
+        list_all_news_design_version: int = 0,
+        list_all_research_design_version: int = 0,
+        list_all_reward_design_version: int = 0,
+        list_all_ship_design_version: int = 0,
+        list_all_situation_design_version: int = 0,
+        list_all_training_design_version: int = 0,
+        list_animation_version: int = 0,
+        list_asset_version: int = 0,
+        list_background_version: int = 0,
+        list_condition_type_version: int = 0,
+        list_craft_design_version: int = 0,
+        list_file_version: int = 0,
+        list_item_design_action_version: int = 0,
+        list_league_version: int = 0,
+        list_marker_generator_design_version: int = 0,
+        list_missile_design_version: int = 0,
+        list_room_design_purchase_version: int = 0,
+        list_room_design_sprite_version: int = 0,
+        list_room_design_version: int = 0,
+        list_season_design_version: int = 0,
+        list_skin_set_version: int = 0,
+        list_skin_version: int = 0,
+        list_sprite_version: int = 0,
+        list_star_system_link_version: int = 0,
+        list_star_system_version: int = 0,
+    ) -> _Tuple[
+        _List[_AchievementDesign],
+        _List[_Animation],
+        _List[_Background],
+        _List[_ChallengeDesign],
+        _List[_CharacterDesignAction],
+        _List[_CharacterDesign],
+        _List[_CollectionDesign],
+        _List[_CraftDesign],
+        _List[_DivisionDesign],
+        _List[_DrawDesign],
+        _List[_File],
+        _List[_ItemDesignAction],
+        _List[_League],
+        _List[_MissileDesign],
+        _List[_MissionDesign],
+        _List[_NewsDesign],
+        _List[_ResearchDesign],
+        _List[_RewardDesign],
+        _List[_RoomDesignPurchase],
+        _List[_RoomDesignSprite],
+        _List[_RoomDesign],
+        _List[_SeasonDesign],
+        _List[_ShipDesign],
+        _List[_SituationDesign],
+        _List[_SkinSet],
+        _List[_Skin],
+        _List[_Sprite],
+        _List[_StarSystemLink],
+        _List[_StarSystemMarkerGenerator],
+        _List[_StarSystem],
+        _List[_TrainingDesign],
+    ]:
+        production_server = await self.get_production_server()
+        result = await _DesignServiceRaw.list_all_static_designs(
+            production_server,
+            self.language_key,
+            list_achievement_design_version,
+            list_action_type_version,
+            list_all_challenge_design_version,
+            list_all_character_design_action_version,
+            list_all_character_design_version,
+            list_all_collection_design_version,
+            list_all_division_design_version,
+            list_all_draw_design_version,
+            list_all_mission_design_version,
+            list_all_news_design_version,
+            list_all_research_design_version,
+            list_all_reward_design_version,
+            list_all_ship_design_version,
+            list_all_situation_design_version,
+            list_all_training_design_version,
+            list_animation_version,
+            list_asset_version,
+            list_background_version,
+            list_condition_type_version,
+            list_craft_design_version,
+            list_file_version,
+            list_item_design_action_version,
+            list_league_version,
+            list_marker_generator_design_version,
+            list_missile_design_version,
+            list_room_design_purchase_version,
+            list_room_design_sprite_version,
+            list_room_design_version,
+            list_season_design_version,
+            list_skin_set_version,
+            list_skin_version,
             list_sprite_version,
             list_star_system_link_version,
             list_star_system_version,

@@ -1,0 +1,434 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/ListMarkerGeneratorDesigns?clientDateTime=2024-03-24T17%3A17%3A02&languageKey=en
+  response:
+    body:
+      string: <GalaxyService><ListMarkerGeneratorDesigns version="50"><StarSystemMarkerGenerators><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="1" Name="TEST NPC Ship" ShipIds="" MarkerFlags="10"
+        GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="" RequirementString=""
+        GenerationInterval="3600" NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="1"
+        TravelTimeMultiplier="300" MarkerDuration="36000" Metadata="" TravelDuration="300"
+        TravelCoolDownTime="0" Title="NPC Ship" CompletionOriginalValue="100" MarkerRequirementString=""
+        Tags="" CostType="None" Description="" ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2021-06-06T00:00:00"
+        StartDate="2021-06-06T00:00:00" EndDate="2021-08-06T00:00:00" StarSystemId="24"
+        FromStarSystemId="39" NextStarSystemId="27" OriginStarSystemId="39" OriginNextStarSystemId="27"
+        SpriteId="18117" CompletionValueType="Hp" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="2"
+        Name="TEST Merchant Ship" ShipIds="" MarkerFlags="10" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="3600"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="2" TravelTimeMultiplier="100"
+        MarkerDuration="36000" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18125&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18127&quot;, &quot;NPCSpriteId&quot;:&quot;18126&quot;}"
+        TravelDuration="300" TravelCoolDownTime="0" Title="Merchant Ship" CompletionOriginalValue="0"
+        MarkerRequirementString="" Tags="" CostType="None" Description="" ShipTags=""
+        Slots="" NumberOfShips="0" MarkerType="MerchantShip" MovementType="TwoWay"
+        TravelStartDate="2021-06-06T00:00:00" StartDate="2021-06-06T00:00:00" EndDate="2021-08-06T00:00:00"
+        StarSystemId="19" FromStarSystemId="17" NextStarSystemId="17" OriginStarSystemId="17"
+        OriginNextStarSystemId="17" SpriteId="18116" CompletionValueType="None" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="3" Name="TEST Global Merchant Ship" ShipIds=""
+        MarkerFlags="9" GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString=""
+        RequirementString="" GenerationInterval="3600" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="3" TravelTimeMultiplier="3600" MarkerDuration="36000" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18125&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18127&quot;, &quot;NPCSpriteId&quot;:&quot;18126&quot;}"
+        TravelDuration="3600" TravelCoolDownTime="0" Title="Global Merchant Ship"
+        CompletionOriginalValue="0" MarkerRequirementString="" Tags="" CostType="None"
+        Description="" ShipTags="" Slots="" NumberOfShips="0" MarkerType="MerchantShip"
+        MovementType="None" TravelStartDate="2021-06-06T00:00:00" StartDate="2021-06-06T00:00:00"
+        EndDate="2021-06-06T00:00:00" StarSystemId="8" FromStarSystemId="8" NextStarSystemId="8"
+        OriginStarSystemId="8" OriginNextStarSystemId="8" SpriteId="18116" CompletionValueType="None"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="4" Name="TEST Static
+        NPC Ship" ShipIds="" MarkerFlags="10" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="" RequirementString="" GenerationInterval="3600"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="4" TravelTimeMultiplier="3600"
+        MarkerDuration="36000" Metadata="" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="Static NPC Ship" CompletionOriginalValue="1" MarkerRequirementString=""
+        Tags="" CostType="None" Description="" ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="OneWay" TravelStartDate="2021-12-06T00:00:00"
+        StartDate="2021-06-06T00:00:00" EndDate="2021-06-06T00:00:00" StarSystemId="20"
+        FromStarSystemId="20" NextStarSystemId="20" OriginStarSystemId="20" OriginNextStarSystemId="20"
+        SpriteId="18117" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="5"
+        Name="TEST Static Merchant Ship" ShipIds="" MarkerFlags="10" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="3600"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="5" TravelTimeMultiplier="3600"
+        MarkerDuration="36000" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18125&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18127&quot;, &quot;NPCSpriteId&quot;:&quot;18126&quot;}"
+        TravelDuration="3600" TravelCoolDownTime="0" Title="Static Merchant Ship"
+        CompletionOriginalValue="0" MarkerRequirementString="" Tags="" CostType="None"
+        Description="" ShipTags="" Slots="" NumberOfShips="0" MarkerType="MerchantShip"
+        MovementType="OneWay" TravelStartDate="2021-12-06T00:00:00" StartDate="2021-06-06T00:00:00"
+        EndDate="2021-06-06T00:00:00" StarSystemId="5" FromStarSystemId="5" NextStarSystemId="5"
+        OriginStarSystemId="5" OriginNextStarSystemId="5" SpriteId="18116" CompletionValueType="None"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="6" Name="TEST Expired
+        Ship" ShipIds="" MarkerFlags="10" GenerationFlags="0" BehaviorFlags="0" CostString=""
+        RewardString="" RequirementString="" GenerationInterval="3600" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="6" TravelTimeMultiplier="3600" MarkerDuration="120"
+        Metadata="" TravelDuration="3600" TravelCoolDownTime="0" Title="Expired Ship"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="" ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip"
+        MovementType="Wander" TravelStartDate="2021-06-06T00:00:00" StartDate="2021-06-06T00:00:00"
+        EndDate="2021-06-06T00:00:00" StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0"
+        OriginStarSystemId="0" OriginNextStarSystemId="0" SpriteId="18117" CompletionValueType="Wins"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="7" Name="TEST Static
+        Expired Ship" ShipIds="" MarkerFlags="10" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="" RequirementString="" GenerationInterval="3600"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="7" TravelTimeMultiplier="3600"
+        MarkerDuration="120" Metadata="" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="Static Expired Ship" CompletionOriginalValue="1" MarkerRequirementString=""
+        Tags="" CostType="None" Description="" ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="None" TravelStartDate="2021-06-06T00:00:00"
+        StartDate="2021-06-06T00:00:00" EndDate="2021-06-06T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18117" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="8"
+        Name="Global Merchant Scrapper" ShipIds="" MarkerFlags="73" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="172800"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="8" TravelTimeMultiplier="300"
+        MarkerDuration="43195" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18125&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18127&quot;}" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="Scrapper Union" CompletionOriginalValue="0" MarkerRequirementString=""
+        Tags="scrapperunion" CostType="None" Description="A free trade vessel of the
+        venerable Scrapper Union. Be quick! Stock is updated regularly across its
+        voyage." ShipTags="" Slots="unique|unique|epic|epic|heroic|uber" NumberOfShips="0"
+        MarkerType="MerchantShip" MovementType="Wander" TravelStartDate="2022-07-24T00:00:00"
+        StartDate="2022-07-24T00:00:00" EndDate="2025-07-24T12:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18116" CompletionValueType="None" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="9"
+        Name="Global Merchant Robot" ShipIds="" MarkerFlags="73" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="172800"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="9" TravelTimeMultiplier="300"
+        MarkerDuration="43195" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18212&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18213&quot;}" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="RoboTrade Collective" CompletionOriginalValue="0" MarkerRequirementString=""
+        Tags="robotrader" CostType="None" Description="An automated Vendorship marked
+        'RoboTrade and Associates'. Be quick! Stock is updated regularly across its
+        voyage." ShipTags="" Slots="unique|unique|epic|epic|heroic|uber" NumberOfShips="0"
+        MarkerType="MerchantShip" MovementType="Wander" TravelStartDate="2022-07-24T12:00:00"
+        StartDate="2022-07-24T12:00:00" EndDate="2025-07-25T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18117" CompletionValueType="None" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="10"
+        Name="Global Merchant Visiri" ShipIds="" MarkerFlags="73" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="172800"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="10" TravelTimeMultiplier="300"
+        MarkerDuration="43195" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18217&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18219&quot;}" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="Visiri Emissary" CompletionOriginalValue="0" MarkerRequirementString=""
+        Tags="visiritrader" CostType="None" Description="A representative from the
+        Visiri Expansionary Trade Guild. Be quick! Stock is updated regularly across
+        its voyage." ShipTags="" Slots="unique|unique|epic|epic|heroic|uber" NumberOfShips="0"
+        MarkerType="MerchantShip" MovementType="Wander" TravelStartDate="2022-07-25T00:00:00"
+        StartDate="2022-07-25T00:00:00" EndDate="2025-07-25T12:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18218" CompletionValueType="None" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="11"
+        Name="Global Merchant Gray" ShipIds="" MarkerFlags="73" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="" RequirementString="" GenerationInterval="172800"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="11" TravelTimeMultiplier="300"
+        MarkerDuration="43195" Metadata="{&quot;BackgroundSpriteId&quot;:&quot;18215&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18216&quot;}" TravelDuration="3600" TravelCoolDownTime="0"
+        Title="Gray Bazaar" CompletionOriginalValue="0" MarkerRequirementString=""
+        Tags="graytrader" CostType="None" Description="A strange craft rarely seen
+        in this sector, boasting rarely seen deals at rarely seen prices. Be quick!
+        Stock is updated regularly across its voyage." ShipTags="" Slots="unique|unique|epic|epic|heroic|uber"
+        NumberOfShips="0" MarkerType="MerchantShip" MovementType="Wander" TravelStartDate="2022-07-25T12:00:00"
+        StartDate="2022-07-25T12:00:00" EndDate="2025-07-26T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18214" CompletionValueType="None" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="12"
+        Name="Low Level Hostiles 1" ShipIds="204,209,210" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x12|item:741x2" RequirementString="shipLevel
+        &gt; 2 &amp;&amp; shipLevel &lt; 10" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="12" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Outcast Pirate"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="This outlaw ship prowls around the galaxy looking for easy prey.
+        Maybe you should show him who's boss?" ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2022-07-23T00:00:00"
+        StartDate="2024-02-16T00:00:00" EndDate="2024-12-01T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18222" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="13"
+        Name="Mid Level Hostiles 1" ShipIds="201,205,206" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x20|item:742x2" RequirementString="shipLevel
+        &gt; 7 &amp;&amp; shipLevel &lt; 13" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="13" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Daisy Jones'
+        Raiders" CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="A particularly audacious gang of pirates have taken to holding
+        up traders on a popular trade route. This is bad for business, and people
+        will pay good money to put an end to it." ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2022-07-23T00:00:00"
+        StartDate="2024-02-16T00:00:00" EndDate="2024-12-01T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18223" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="14"
+        Name="High Level Hostiles 1" ShipIds="207,208,211" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x30|item:1489x1" RequirementString="shipLevel
+        &gt; 9" GenerationInterval="21605" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="14" TravelTimeMultiplier="300" MarkerDuration="21600" Metadata=""
+        TravelDuration="300" TravelCoolDownTime="0" Title="Daisy Jones' War Council"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="The legendary pirate Daisy Jones' gang of outlaws roam the galaxy
+        still. Last you checked, there was still an active bounty for them... Dead
+        or Alive." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="TwoWay"
+        TravelStartDate="2022-07-23T00:00:00" StartDate="2024-02-16T00:00:00" EndDate="2024-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="18224" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="15" Name="NPC Pirate Boss 1" ShipIds="218" MarkerFlags="74"
+        GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:778x30|item:743x1|item:1489x1"
+        RequirementString="shipLevel &gt; 11" GenerationInterval="86405" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="15" TravelTimeMultiplier="300" MarkerDuration="86400"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Daisy Jones!"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="Repeated attacks on her organization have finally brought Daisy
+        Jones out of hiding. Now you must face down the infamous Duchess of Destruction
+        herself!" ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="OneWay"
+        TravelStartDate="2022-07-23T00:00:00" StartDate="2024-02-16T00:00:00" EndDate="2024-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="18241" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="16" Name="Void Asteroid" ShipIds="228" MarkerFlags="10"
+        GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:778x100"
+        RequirementString="shipLevel &gt; 7" GenerationInterval="604800" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="16" TravelTimeMultiplier="400" MarkerDuration="7200"
+        Metadata="" TravelDuration="7200" TravelCoolDownTime="0" Title="Void Asteroid"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="Travelling interstellar object. Point of origin unknown." ShipTags=""
+        Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="OneWay" TravelStartDate="2022-09-07T00:00:00"
+        StartDate="2022-09-07T00:00:00" EndDate="2029-09-07T00:00:00" StarSystemId="47"
+        FromStarSystemId="36" NextStarSystemId="36" OriginStarSystemId="36" OriginNextStarSystemId="36"
+        SpriteId="18249" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="17"
+        Name="Low Level Hostiles 2" ShipIds="212,213,214" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x12|item:741x2" RequirementString="shipLevel
+        &gt; 2 &amp;&amp; shipLevel &lt; 10" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="17" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Close Encounters"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="A Gray scouting party is gathering intel on system defences.
+        Best ensure that information doesn't get back to their fleets." ShipTags=""
+        Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2022-12-01T00:00:00"
+        StartDate="2022-12-01T00:00:00" EndDate="2023-07-01T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18314" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="18"
+        Name="Mid Level Hostiles 2" ShipIds="216,225,226" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x15|item:741x1|item:742x1"
+        RequirementString="shipLevel &gt; 7 &amp;&amp; shipLevel &lt; 13" GenerationInterval="21605"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="18" TravelTimeMultiplier="300"
+        MarkerDuration="21600" Metadata="" TravelDuration="300" TravelCoolDownTime="0"
+        Title="Raiding Party" CompletionOriginalValue="1" MarkerRequirementString=""
+        Tags="" CostType="None" Description="Reports are coming in of a Gray raiding
+        party abducting people from remote settlements. With citizens frightened to
+        leave their homes, local governments need a quick solution." ShipTags="" Slots=""
+        NumberOfShips="0" MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2022-12-01T00:00:00"
+        StartDate="2022-12-01T00:00:00" EndDate="2023-07-01T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18315" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="19"
+        Name="High Level Hostiles 2" ShipIds="215,217,227" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x20|item:1489x1" RequirementString="shipLevel
+        &gt; 9" GenerationInterval="21605" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="19" TravelTimeMultiplier="300" MarkerDuration="21600" Metadata=""
+        TravelDuration="300" TravelCoolDownTime="0" Title="Invasion Fleet" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="Long-range
+        scans show a large Gray fleet heading toward several heavily populated worlds.
+        Whatever they've got planned, they shouldn't be allowed to go through with
+        it." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="TwoWay"
+        TravelStartDate="2022-12-01T00:00:00" StartDate="2022-12-01T00:00:00" EndDate="2023-07-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="18316" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="20" Name="NPC Gray Boss 1" ShipIds="224" MarkerFlags="74"
+        GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:778x30|item:743x1|item:1489x1"
+        RequirementString="shipLevel &gt; 11" GenerationInterval="86405" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="20" TravelTimeMultiplier="300" MarkerDuration="86400"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Grey Mothership!"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="Entire cities are evacuated ahead of this grim engine of destruction.
+        Stop it in its path, or the consequences could be catastrophic." ShipTags=""
+        Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="OneWay" TravelStartDate="2022-12-01T00:00:00"
+        StartDate="2022-12-01T00:00:00" EndDate="2023-07-01T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18317" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="21"
+        Name="Event Halloween" ShipIds="229" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:744x1|item:814x30" RequirementString="shipLevel
+        &gt; 9" GenerationInterval="604800" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="21" TravelTimeMultiplier="300" MarkerDuration="604800" Metadata=""
+        TravelDuration="300" TravelCoolDownTime="0" Title="Ship of the Lost" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="The walls
+        between the worlds grow hazy, and something terrible slips through the cracks.
+        Send it back to whatever dread realm it calls home!" ShipTags="" Slots=""
+        NumberOfShips="0" MarkerType="NPCShip" MovementType="Wander" TravelStartDate="2023-10-20T00:00:00"
+        StartDate="2023-10-20T00:00:00" EndDate="2023-11-03T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18350" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="22"
+        Name="Event Thanksgiving" ShipIds="231" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:999x1|item:986x20" RequirementString="shipLevel
+        &gt; 6" GenerationInterval="86400" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="22" TravelTimeMultiplier="300" MarkerDuration="86400" Metadata=""
+        TravelDuration="300" TravelCoolDownTime="0" Title="Turkey Time" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="This scrumptious
+        starship has been spotted doing a dinner dash across the galactic shipping
+        lanes, weighed down by its flavourful freight. Give thanks for the free meal!"
+        ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="Wander"
+        TravelStartDate="2023-11-17T00:00:00" StartDate="2023-11-17T00:00:00" EndDate="2023-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="18455" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="23" Name="Xmas Event" ShipIds="222" MarkerFlags="74"
+        GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:247|item:1022x10"
+        RequirementString="shipLevel &gt; 6" GenerationInterval="86400" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="23" TravelTimeMultiplier="300" MarkerDuration="86400"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Star Claus"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="A near-impenetrable fug of brandy fumes and snowflakes follows
+        this cherry-red vessel on its erratic journey. Stop it for long enough for
+        Santa to sober up, or the holidays are in trouble!" ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="Wander" TravelStartDate="2022-12-15T00:00:00"
+        StartDate="2022-12-15T00:00:00" EndDate="2022-12-29T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="18635" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="24"
+        Name="Egg Hunt" ShipIds="58" MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="item:1136x10" RequirementString="shipLevel &gt;
+        9" GenerationInterval="86400" NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="24"
+        TravelTimeMultiplier="300" MarkerDuration="86400" Metadata="" TravelDuration="300"
+        TravelCoolDownTime="0" Title="Egg Hunt" CompletionOriginalValue="1" MarkerRequirementString=""
+        Tags="" CostType="None" Description="The hunt is on! A priceless load of delicious
+        chocolate eggs has been lost in a farflung asteroid belt. Which one exactly?
+        It's a race to find out!" ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip"
+        MovementType="Wander" TravelStartDate="2024-03-19T00:00:00" StartDate="2024-03-19T00:00:00"
+        EndDate="2024-04-02T00:00:00" StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0"
+        OriginStarSystemId="0" OriginNextStarSystemId="0" SpriteId="19487" CompletionValueType="Wins"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="25" Name="Low Level
+        Hostiles 3" ShipIds="234,235,236" MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="item:778x12|item:741x2" RequirementString="shipLevel
+        &gt; 2 &amp;&amp; shipLevel &lt; 10" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="25" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Outbreak" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="The forerunner
+        of a Visiri migratory fleet, best discouraged from straying too close to any
+        populated worlds." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip"
+        MovementType="TwoWay" TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00"
+        EndDate="2024-02-16T00:00:00" StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0"
+        OriginStarSystemId="0" OriginNextStarSystemId="0" SpriteId="19819" CompletionValueType="Wins"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="26" Name="Mid Level
+        Hostiles 3" ShipIds="237,238,239" MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="item:778x15|item:741x1|item:742x1" RequirementString="shipLevel
+        &gt; 7 &amp;&amp; shipLevel &lt; 13" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="26" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Infestation"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="The migrant fleet grows more bold and aggressive as spawning
+        season nears, and local enforcers are looking for help to drive them away."
+        ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="TwoWay"
+        TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00" EndDate="2024-02-16T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="19820" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="27" Name="High Level Hostiles 3" ShipIds="240,241,242"
+        MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:778x20|item:1489x1"
+        RequirementString="shipLevel &gt; 9" GenerationInterval="21605" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="27" TravelTimeMultiplier="300" MarkerDuration="21600"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Epidemic" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="Attempts to
+        route Visiri from the area grow harder, as their fleets dig in to defend newly
+        established hives spread throughout the region." ShipTags="" Slots="" NumberOfShips="0"
+        MarkerType="NPCShip" MovementType="TwoWay" TravelStartDate="2023-07-01T00:00:00"
+        StartDate="2023-07-01T00:00:00" EndDate="2024-02-16T00:00:00" StarSystemId="0"
+        FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0" OriginNextStarSystemId="0"
+        SpriteId="19821" CompletionValueType="Wins" /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="28"
+        Name="NPC Visiri Boss 1" ShipIds="243" MarkerFlags="74" GenerationFlags="0"
+        BehaviorFlags="0" CostString="" RewardString="item:778x30|item:743x1|item:1489x1"
+        RequirementString="shipLevel &gt; 11" GenerationInterval="86405" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="28" TravelTimeMultiplier="300" MarkerDuration="86400"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Visiri Hivemind!"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="This battle-scarred hulk leads and protects the fledgling migrant
+        fleet as it grows. Drive it away, and the Visiri infestation will go with
+        it." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="OneWay"
+        TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00" EndDate="2024-02-16T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="19818" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="29" Name="Low Level Starbase" ShipIds="250,253"
+        MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:81x1|item:84x1|gas:6000|mineral:6000"
+        RequirementString="shipLevel &gt; 2 &amp;&amp; shipLevel &lt; 10" GenerationInterval="86405"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="29" TravelTimeMultiplier="300"
+        MarkerDuration="21605" Metadata="" TravelDuration="300" TravelCoolDownTime="0"
+        Title="Outpost" CompletionOriginalValue="1" MarkerRequirementString="" Tags=""
+        CostType="None" Description="The alarm system on this automated relay station
+        is down for routine maintainence, leaving it open to a quick smash and grab."
+        ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="None"
+        TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00" EndDate="2024-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="20145" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="30" Name="Mid Level Starbase" ShipIds="247,251"
+        MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:81x3|item:84x3|gas:15000|mineral:15000"
+        RequirementString="shipLevel &gt; 7 &amp;&amp; shipLevel &lt; 13" GenerationInterval="86405"
+        NumberOfMarkers="1" MaxActiveMarkers="1" MarkerDesignId="30" TravelTimeMultiplier="300"
+        MarkerDuration="21605" Metadata="" TravelDuration="300" TravelCoolDownTime="0"
+        Title="Garrison" CompletionOriginalValue="1" MarkerRequirementString="" Tags=""
+        CostType="None" Description="A contraband smuggling ring have reportedly infiltrated
+        this security station. The local government will pay well for chasing the
+        smugglers away." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip"
+        MovementType="None" TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00"
+        EndDate="2024-12-01T00:00:00" StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0"
+        OriginStarSystemId="0" OriginNextStarSystemId="0" SpriteId="20146" CompletionValueType="Wins"
+        /><StarSystemMarkerGenerator StarSystemMarkerGeneratorId="31" Name="High Level
+        Starbase" ShipIds="248,254" MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0"
+        CostString="" RewardString="item:82x1|item:85x1|gas:40000|mineral:40000" RequirementString="shipLevel
+        &gt; 9" GenerationInterval="86405" NumberOfMarkers="1" MaxActiveMarkers="1"
+        MarkerDesignId="31" TravelTimeMultiplier="300" MarkerDuration="21605" Metadata=""
+        TravelDuration="300" TravelCoolDownTime="0" Title="Fortress" CompletionOriginalValue="1"
+        MarkerRequirementString="" Tags="" CostType="None" Description="An erratic
+        orbital path has taken this corporate distribution hub briefly out of the
+        planetary defense grid. A fast strike could easily liberate some goods in
+        that time." ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="None"
+        TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00" EndDate="2024-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="20147" CompletionValueType="Wins" /><StarSystemMarkerGenerator
+        StarSystemMarkerGeneratorId="32" Name="NPC Starbase Boss 1" ShipIds="252"
+        MarkerFlags="74" GenerationFlags="0" BehaviorFlags="0" CostString="" RewardString="item:83x1|item:86x1|gas:75000|mineral:75000"
+        RequirementString="shipLevel &gt; 11" GenerationInterval="86400" NumberOfMarkers="1"
+        MaxActiveMarkers="1" MarkerDesignId="32" TravelTimeMultiplier="300" MarkerDuration="86400"
+        Metadata="" TravelDuration="300" TravelCoolDownTime="0" Title="Stronghold"
+        CompletionOriginalValue="1" MarkerRequirementString="" Tags="" CostType="None"
+        Description="Corporate spies suspect rival secrets are hidden in this nigh-impregnable
+        orbital vault, and will pay handsomely for you to punch a hole in its defences."
+        ShipTags="" Slots="" NumberOfShips="0" MarkerType="NPCShip" MovementType="None"
+        TravelStartDate="2023-07-01T00:00:00" StartDate="2023-07-01T00:00:00" EndDate="2024-12-01T00:00:00"
+        StarSystemId="0" FromStarSystemId="0" NextStarSystemId="0" OriginStarSystemId="0"
+        OriginNextStarSystemId="0" SpriteId="20148" CompletionValueType="Wins" /></StarSystemMarkerGenerators></ListMarkerGeneratorDesigns></GalaxyService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:22 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:37:22 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:22 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 e1dafdc346c45e381eadf0a96d4694c6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - faXGVCbsNdYvngZZRebnHpJc0ayG2s0oYL4KwVvoZLkAo33JGhiXVw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

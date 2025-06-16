@@ -8,24 +8,26 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class FriendRaw:
+class FriendRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Friend"
 
     def __init__(self, friend_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._date_updated: _datetime = _parse.pss_datetime(friend_info.get("DateUpdated"))
-        self._friend_icon_sprite_id: int = _parse.pss_int(friend_info.get("FriendIconSpriteId"))
-        self._friend_trophy: int = _parse.pss_int(friend_info.get("FriendTrophy"))
-        self._friend_type: str = _parse.pss_str(friend_info.get("FriendType"))
-        self._friend_user_id: int = _parse.pss_int(friend_info.get("FriendUserId"))
-        self._id_: int = _parse.pss_int(friend_info.get("Id"))
-        self._last_interaction_date: _datetime = _parse.pss_datetime(friend_info.get("LastInteractionDate"))
-        self._last_login_date: _datetime = _parse.pss_datetime(friend_info.get("LastLoginDate"))
-        self._level: int = _parse.pss_int(friend_info.get("Level"))
-        self._name: str = _parse.pss_str(friend_info.get("Name"))
-        self._unread_messages: int = _parse.pss_int(friend_info.get("UnreadMessages"))
+        self._date_updated: _datetime = _parse.pss_datetime(friend_info.pop("DateUpdated", None))
+        self._friend_icon_sprite_id: int = _parse.pss_int(friend_info.pop("FriendIconSpriteId", None))
+        self._friend_trophy: int = _parse.pss_int(friend_info.pop("FriendTrophy", None))
+        self._friend_type: str = _parse.pss_str(friend_info.pop("FriendType", None))
+        self._friend_user_id: int = _parse.pss_int(friend_info.pop("FriendUserId", None))
+        self._id_: int = _parse.pss_int(friend_info.pop("Id", None))
+        self._last_interaction_date: _datetime = _parse.pss_datetime(friend_info.pop("LastInteractionDate", None))
+        self._last_login_date: _datetime = _parse.pss_datetime(friend_info.pop("LastLoginDate", None))
+        self._level: int = _parse.pss_int(friend_info.pop("Level", None))
+        self._name: str = _parse.pss_str(friend_info.pop("Name", None))
+        self._unread_messages: int = _parse.pss_int(friend_info.pop("UnreadMessages", None))
+        super().__init__(friend_info)
 
     @property
     def date_updated(self) -> _datetime:
@@ -101,5 +103,6 @@ class FriendRaw:
                 "Name": self.name,
                 "UnreadMessages": self.unread_messages,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

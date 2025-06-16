@@ -8,20 +8,22 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class UserSeasonRaw:
+class UserSeasonRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "UserSeason"
 
     def __init__(self, user_season_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._points: int = _parse.pss_int(user_season_info.get("Points"))
-        self._purchase_vip_date: _datetime = _parse.pss_datetime(user_season_info.get("PurchaseVIPDate"))
-        self._purchase_vip_status: str = _parse.pss_str(user_season_info.get("PurchaseVIPStatus"))
-        self._season_design_id: int = _parse.pss_int(user_season_info.get("SeasonDesignId"))
-        self._unlocked_reward_design_ids: str = _parse.pss_str(user_season_info.get("UnlockedRewardDesignIds"))
-        self._user_id: int = _parse.pss_int(user_season_info.get("UserId"))
-        self._user_season_id: int = _parse.pss_int(user_season_info.get("UserSeasonId"))
+        self._points: int = _parse.pss_int(user_season_info.pop("Points", None))
+        self._purchase_vip_date: _datetime = _parse.pss_datetime(user_season_info.pop("PurchaseVIPDate", None))
+        self._purchase_vip_status: str = _parse.pss_str(user_season_info.pop("PurchaseVIPStatus", None))
+        self._season_design_id: int = _parse.pss_int(user_season_info.pop("SeasonDesignId", None))
+        self._unlocked_reward_design_ids: str = _parse.pss_str(user_season_info.pop("UnlockedRewardDesignIds", None))
+        self._user_id: int = _parse.pss_int(user_season_info.pop("UserId", None))
+        self._user_season_id: int = _parse.pss_int(user_season_info.pop("UserSeasonId", None))
+        super().__init__(user_season_info)
 
     @property
     def points(self) -> int:
@@ -73,5 +75,6 @@ class UserSeasonRaw:
                 "UserId": self.user_id,
                 "UserSeasonId": self.user_season_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

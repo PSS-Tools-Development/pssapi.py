@@ -1,0 +1,881 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/ListAlliancesByChampionshipScoreRanking?from=0&to=100
+  response:
+    body:
+      string: "<AllianceService><ListUsersByChampionshipScoreRanking><Alliances><Alliance
+        AllianceId=\"43776\" AllianceName=\"Summit\" MinTrophyRequired=\"4400\" RequiresApproval=\"true\"
+        AllianceDescription=\"&lt;color=#FFFF00&gt;United in the pursuit of peace,
+        we forge ahead, standing together as one. SUMMIT strives to become the greatest
+        force in the universe.&lt;/color&gt;A;&lt;color=#67ffd0&gt;&lt;size=20&gt;Welcome
+        to join us!&lt;/size&gt;&lt;/color&gt;Discord link: https://discord.gg/7ZBzHChTQC&lt;color=#FF3399&gt;
+        \  \u8054\u5408\u4E3A\u548C\u5E73\u800C\u6218\uFF0C\u52C7\u5F80\u76F4\u524D\uFF0C\u9F50\u5FC3\u534F\u529B\u3002SUMMIT\uFF0C\u52AA\u529B\u6210\u4E3A\u5B87\u5B99\u4E2D\u6700\u4F1F\u5927\u7684\u529B\u91CF\uFF0C&lt;/color&gt;
+        &lt;color=RED&gt;\u6B22\u8FCE\u52A0\u5165Q\u7FA4\uFF1A705292502\u6216197607912
+        &lt;/color&gt;A;\u0412\u0441\u0442\u0443\u043F\u0430\u0439 \u0432 \u0441\u043E\u043E\u0431\u0449\u0435\u0441\u0442\u0432\u043E
+        SUMMI\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"101\" Score=\"0\"
+        ChampionshipScore=\"200\" MinScoreContribution=\"0\" Trophy=\"560759\" Ranking=\"0\"
+        AllianceSpriteId=\"19374\" ChannelId=\"48119\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\"
+        AllianceShipUserId=\"8831629\" ImmunityDate=\"2024-03-24T23:08:56\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"9343\" AllianceName=\"Trek Federation\" MinTrophyRequired=\"4800\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#26d&gt;Trek Server:
+        &lt;b&gt;&lt;color=#db2&gt;discord.gg/psstrek&lt;/color&gt;&lt;/b&gt; - JOIN
+        DISCORD FOR INFO AND HELP - We welcome beginners and veterans alike, just
+        check the other fleets of our community to find the one that suits you: Trek
+        Pastafarians, Trek Wolfpack, Trek Academy, Trek Prodigy, Trek Trainer, Trek
+        Lower Decks. &lt;b&gt;&lt;color=#db2&gt;Discord required&lt;/color&gt;&lt;/b&gt;&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2055\" Score=\"0\"
+        ChampionshipScore=\"110\" MinScoreContribution=\"80\" Trophy=\"550791\" Ranking=\"0\"
+        AllianceSpriteId=\"2317\" ChannelId=\"13668\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\"
+        AllianceShipUserId=\"2641722\" ImmunityDate=\"2024-03-24T17:21:46\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43801\" AllianceName=\"CITAD\u0415L\" MinTrophyRequired=\"3500\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#b00000&gt;\u041D\u0430\u0448
+        \u0414\u0438\u0441\u043A\u043E\u0440\u0434:&lt;/color&gt; &lt;color=#aca4ea&gt;discord.gg/PSS-CITADEL&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"177\" Score=\"0\" ChampionshipScore=\"70\"
+        MinScoreContribution=\"80\" Trophy=\"356744\" Ranking=\"0\" AllianceSpriteId=\"19346\"
+        ChannelId=\"48144\" NumberOfMembers=\"77\" NumberOfApprovedMembers=\"77\"
+        AllianceShipUserId=\"8841927\" ImmunityDate=\"2024-03-24T18:48:42\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44930\" AllianceName=\"PHOENI\u0425\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;size=15&gt; &lt;color=#ff7f00&gt;
+        The great bird, reborned from the ashes, which forgot its past lives, found
+        itself in space and began to take the first steps &lt;/color&gt; &lt;/size&gt;A;&lt;size=20&gt;
+        &lt;color=#fe0000&gt; https://dsc.gg/PHOENIXFLEET &lt;/color&gt; &lt;/size&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1\" Score=\"0\" ChampionshipScore=\"70\"
+        MinScoreContribution=\"0\" Trophy=\"2104\" Ranking=\"0\" AllianceSpriteId=\"19351\"
+        ChannelId=\"49277\" NumberOfMembers=\"2\" NumberOfApprovedMembers=\"2\" AllianceShipUserId=\"10939476\"
+        ImmunityDate=\"2024-03-24T19:40:04\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44522\"
+        AllianceName=\"RADIANCE\" MinTrophyRequired=\"4000\" RequiresApproval=\"true\"
+        AllianceDescription=\"&lt;color=#fdb41b&gt;\u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0435\u043D\u0438\u0435
+        \u043B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0433\u043E \u0444\u043B\u043E\u0442\u0430
+        RADIANCE.&lt;/color&gt;                                                                              &lt;color=#fdb41b&gt;The
+        return of the legendary RADIANCE.&lt;/color&gt;&lt;size=15&gt;                                      &lt;color=#c22d2d&gt;https://discord.gg/bysG59h&lt;/color&gt;&lt;/size&gt;
+        \  \" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"129\" Score=\"0\"
+        ChampionshipScore=\"64\" MinScoreContribution=\"0\" Trophy=\"415503\" Ranking=\"0\"
+        AllianceSpriteId=\"2315\" ChannelId=\"48866\" NumberOfMembers=\"81\" NumberOfApprovedMembers=\"81\"
+        AllianceShipUserId=\"10254644\" ImmunityDate=\"2024-03-24T21:16:25\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"30723\" AllianceName=\"Veritas Vikings\" MinTrophyRequired=\"4500\"
+        RequiresApproval=\"true\" AllianceDescription=\"The Era of the Viking approaches,
+        &lt;color=white&gt;Discord required.&lt;/color&gt;&lt;size=20&gt;&lt;color=red&gt;discord.gg/pssvikings&lt;/color&gt;&lt;/size&gt;\n&lt;size=10&gt;Not
+        enough trophies? Join our trainer fleet &lt;color=white&gt;Viking Outpost&lt;/color&gt;&lt;/size&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1052\" Score=\"0\"
+        ChampionshipScore=\"60\" MinScoreContribution=\"80\" Trophy=\"499850\" Ranking=\"0\"
+        AllianceSpriteId=\"19385\" ChannelId=\"35066\" NumberOfMembers=\"98\" NumberOfApprovedMembers=\"98\"
+        AllianceShipUserId=\"5754125\" ImmunityDate=\"2024-03-24T20:20:39\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"14349\" AllianceName=\"The Dynasty \" MinTrophyRequired=\"3300\"
+        RequiresApproval=\"true\" AllianceDescription=\"We are The Dynasty. We are
+        the home to orphaned captains, aspiring legends, and everything in between.
+        Join our family, Lots of support in our discord! Download the Discord app
+        and use this link: https://discord.gg/TheDynasty-PSS &lt;i&gt;PLEASE APPLY
+        VIA DISCORD - INTERNAL PROMOTION ONLY&lt;/i&gt;\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1970\" Score=\"0\" ChampionshipScore=\"60\"
+        MinScoreContribution=\"0\" Trophy=\"386077\" Ranking=\"0\" AllianceSpriteId=\"654\"
+        ChannelId=\"18683\" NumberOfMembers=\"88\" NumberOfApprovedMembers=\"88\"
+        AllianceShipUserId=\"3652308\" ImmunityDate=\"2024-03-24T21:18:48\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"12008\" AllianceName=\"Trek Pastafarians\" MinTrophyRequired=\"3800\"
+        RequiresApproval=\"true\" AllianceDescription=\"Pasta is the first sister
+        fleet of Trek Federation. Short on trophies? You are welcome in Trek Wolfpack.
+        Ships ranked ensign scoring below 100 stars during tournaments susceptible
+        to kick. Join our Discord for fun and mutual help: discord.gg/psstrek - RAMEN
+        ! NOTE - fleet currently closed, even though minimum trophies are normal.
+        please reach out to the fleet admiral if you want to join\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2\" Score=\"0\" ChampionshipScore=\"50\" MinScoreContribution=\"80\"
+        Trophy=\"331483\" Ranking=\"0\" AllianceSpriteId=\"19381\" ChannelId=\"16338\"
+        NumberOfMembers=\"72\" NumberOfApprovedMembers=\"71\" AllianceShipUserId=\"3060044\"
+        ImmunityDate=\"2024-03-24T17:36:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"5567\"
+        AllianceName=\"\u4E2D\u56FD\u8230\u961F\" MinTrophyRequired=\"3000\" RequiresApproval=\"false\"
+        AllianceDescription=\"\u6B22\u8FCE\u52A0\u5165\u4E2D\u56EF\u8230\u961F\uFF0C\u6211\u4EEC\u6709\u4E09\u4E2A\u9644\u5C5E\u8230\u961F\uFF1A\u661F\u754C\u519B\u3001\u4E2D\u56FDno.1\u3001\u5C0F\u670B\u53CB\u3002A;\u8230\u961FQQ\u7FA4\u53F7\u662F\uFF1A853295919\uFF0C\u7FA4\u5185\u6709\u5927\u4F6C\u5728\u7EBF\u89E3\u7591\uFF0C\u4E5F\u6709\u53CB\u5584\u7684\u7FA4\u53CB\u6C34\u7FA4\u5520\u55D1\uFF0C\u4E0D\u52A0\u8230\u961F\u4E5F\u6B22\u8FCE\u6765\u804A\u5929\u3002\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"423\" Score=\"0\" ChampionshipScore=\"48\"
+        MinScoreContribution=\"0\" Trophy=\"435481\" Ranking=\"0\" AllianceSpriteId=\"2282\"
+        ChannelId=\"9879\" NumberOfMembers=\"99\" NumberOfApprovedMembers=\"99\" AllianceShipUserId=\"7514959\"
+        ImmunityDate=\"2024-03-24T22:46:17\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44231\"
+        AllianceName=\"Summit RISING\" MinTrophyRequired=\"4000\" RequiresApproval=\"true\"
+        AllianceDescription=\"https://discord.gg/XeGjA7jH   Application only via Discord
+        Trophies can be lowered for joining\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"13857\" Score=\"0\" ChampionshipScore=\"48\" MinScoreContribution=\"0\"
+        Trophy=\"423734\" Ranking=\"0\" AllianceSpriteId=\"19374\" ChannelId=\"48574\"
+        NumberOfMembers=\"98\" NumberOfApprovedMembers=\"97\" AllianceShipUserId=\"9692356\"
+        ImmunityDate=\"2024-03-24T19:50:15\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43488\"
+        AllianceName=\"W\u041ERD BEARERS\" MinTrophyRequired=\"1500\" RequiresApproval=\"true\"
+        AllianceDescription=\"\u041F\u0420\u0418\u0401\u041C \u0412\u041E \u0424\u041B\u041E\u0422
+        \u0422\u041E\u041B\u042C\u041A\u041E \u0427\u0415\u0420\u0415\u0417 \u0414\u0418\u0421\u041A\u041E\u0420\u0414
+        \u0421\u0415\u0420\u0412\u0415\u0420: discord.gg/5eDdBycEAA\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1331\" Score=\"0\" ChampionshipScore=\"35\"
+        MinScoreContribution=\"35\" Trophy=\"320688\" Ranking=\"0\" AllianceSpriteId=\"19349\"
+        ChannelId=\"47831\" NumberOfMembers=\"82\" NumberOfApprovedMembers=\"81\"
+        AllianceShipUserId=\"7662470\" ImmunityDate=\"2024-03-25T01:19:12\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"35055\" AllianceName=\"Ashen Strangers\" MinTrophyRequired=\"3000\"
+        RequiresApproval=\"true\" AllianceDescription=\"\u0424\u043B\u043E\u0442 Ashen
+        Strangers \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442
+        \u0442\u0435\u0431\u044F - \u043C\u044B \u0440\u0430\u0434\u044B \u043D\u043E\u0432\u044B\u043C
+        \u0433\u043E\u0441\u0442\u044F\u043C, \u0430 \u0435\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0435
+        \u043D\u043E\u0432\u044B\u043C \u043A\u0430\u043D\u0434\u0438\u0442\u0430\u0442\u0430\u043C!)
+        \u041D\u0430\u0445\u043E\u0434\u044F\u0441\u044C \u0443 \u043D\u0430\u0441,\u0442\u044B
+        \u043C\u043E\u0436\u0435\u0448\u044C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+        \u043F\u0435\u0440\u0432\u043E\u043A\u043B\u0430\u0441\u0441\u043D\u043E\u0435
+        \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u0435)
+        \u0414\u043B\u044F \u043E\u0431\u0449\u0435\u043D\u0438\u044F \u043C\u044B
+        \u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u0434\u0438\u0441\u043A\u043E\u0440\u0434
+        \u0441\u0435\u0440\u0432\u0435\u0440: https://discord.gg/fwaxqqu\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"268\" Score=\"0\" ChampionshipScore=\"34\" MinScoreContribution=\"0\"
+        Trophy=\"375412\" Ranking=\"0\" AllianceSpriteId=\"2317\" ChannelId=\"39398\"
+        NumberOfMembers=\"96\" NumberOfApprovedMembers=\"95\" AllianceShipUserId=\"6304767\"
+        ImmunityDate=\"2024-03-24T21:35:01\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"28436\"
+        AllianceName=\"Vega Corp \u7E54\u5973\u661F\u8ECD\u5718\" MinTrophyRequired=\"9999\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=lime&gt;\u300AVega
+        Corp \u7E54\u5973\u661F\u8ECD\u5718\u300B&lt;/color&gt;A;&lt;color=white&gt;(1)
+        \u6210\u54E1\u591A\u70BA\u53F0\u6E2F\u6FB3\u73A9\u5BB6\uFF0C\u6D3B\u8E8D\u5EA6\u9AD8\uFF0C\u5B9A\u671F\u5254\u9664AFK\u73A9\u5BB6\uFF0C\u9664\u975E\u4E8B\u5148\u8ACB\u5047A;(2)
+        DISCORD\u983B\u9053\uFF1Adiscord.gg/vegacorp \u5167\u6709\u5404\u7A2E\u9032\u653B/\u9632\u79A6\u7B49AI\u6559\u5B78\u3001\u8CC7\u6E90\u6339\u6CE8\u3001\u8239\u54E1\u8A13\u7DF4\u53CA\u76F8\u95DC\u8A0E\u8AD6A;(3)
+        \u53EF\u52A0LINE ID\uFF1A Shrimp1109A;(4) \u65B0\u4EBA\u73A9\u5BB6\u6B61\u8FCE\u52A0\u5165\u5B50\u8266\u968A&lt;/color&gt;&lt;color=lime&gt;\u300ADeneb
+        Corp \u5929\u6D25\u56DB\u8ECD\u5718\u300B&lt;/color&gt;&lt;color=white&gt;A;(5)
+        &lt;/color&gt;&lt;color=orange&gt;\u300ASUMMIT ALLIANCE\u300B&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2031\" Score=\"0\"
+        ChampionshipScore=\"30\" MinScoreContribution=\"50\" Trophy=\"361931\" Ranking=\"0\"
+        AllianceSpriteId=\"19384\" ChannelId=\"32778\" NumberOfMembers=\"90\" NumberOfApprovedMembers=\"90\"
+        AllianceShipUserId=\"5402491\" ImmunityDate=\"2024-03-24T21:41:33\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"22572\" AllianceName=\"Firefly Vikings\" MinTrophyRequired=\"4200\"
+        RequiresApproval=\"true\" AllianceDescription=\"Join our Discord @ &lt;color=red&gt;&lt;b&gt;&lt;size=20&gt;discord.gg/pssvikings&lt;/size&gt;&lt;/b&gt;&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"4468\" Score=\"0\"
+        ChampionshipScore=\"30\" MinScoreContribution=\"1\" Trophy=\"353716\" Ranking=\"0\"
+        AllianceSpriteId=\"19370\" ChannelId=\"26908\" NumberOfMembers=\"77\" NumberOfApprovedMembers=\"77\"
+        AllianceShipUserId=\"4682843\" ImmunityDate=\"2024-03-24T22:01:21\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"13019\" AllianceName=\"The Conjoint\" MinTrophyRequired=\"3000\"
+        RequiresApproval=\"true\" AllianceDescription=\"discord.gg/gGPg9Tx    Apply
+        in game, then join our discord chat server to be accepted.  Discord is mandatory.
+        The Conjoint - 3k / Fallen Angels - 1.2k\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"3555\" Score=\"0\" ChampionshipScore=\"27\" MinScoreContribution=\"0\"
+        Trophy=\"319024\" Ranking=\"0\" AllianceSpriteId=\"15066\" ChannelId=\"17352\"
+        NumberOfMembers=\"79\" NumberOfApprovedMembers=\"79\" AllianceShipUserId=\"3310811\"
+        ImmunityDate=\"2024-03-24T18:58:05\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"30828\"
+        AllianceName=\"Blue Star Vikings\" MinTrophyRequired=\"2300\" RequiresApproval=\"true\"
+        AllianceDescription=\"Welcome to the Blue Star Vikings! Div C fleet of the
+        Viking Family! &lt;color=white&gt;Discord is mandatory&lt;/color&gt;, you
+        will not be accepted into the fleet without discord: &lt;color=red&gt;discord.gg/pssvikings&lt;/color&gt;
+        \ Do well and rank up to Firefly Vikings\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"2424\" Score=\"0\" ChampionshipScore=\"27\" MinScoreContribution=\"1\"
+        Trophy=\"298311\" Ranking=\"0\" AllianceSpriteId=\"19359\" ChannelId=\"35171\"
+        NumberOfMembers=\"79\" NumberOfApprovedMembers=\"78\" AllianceShipUserId=\"5740641\"
+        ImmunityDate=\"2024-03-24T23:54:15\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"21\"
+        AllianceName=\"Trek Wolfpack\" MinTrophyRequired=\"3200\" RequiresApproval=\"true\"
+        AllianceDescription=\"Welcome to Wolfpack! We are a proud member of the Trek
+        Federation. Come into the den, where we shape young wolves into battle-hardened
+        veterans that roam the skies hunting for prey. This fleet is a competitive
+        fleet in div. B, that requires a minimum of 50 stars per tournament - activity
+        is mandatory. Minimum hull level: 9. Activity on Discord is mandatory:A;https://discord.gg/cBcB3ap.A;AWOOOOOOO!\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2481\" Score=\"0\"
+        ChampionshipScore=\"25\" MinScoreContribution=\"40\" Trophy=\"334137\" Ranking=\"0\"
+        AllianceSpriteId=\"19349\" ChannelId=\"120\" NumberOfMembers=\"79\" NumberOfApprovedMembers=\"78\"
+        AllianceShipUserId=\"2624870\" ImmunityDate=\"2024-03-24T22:31:39\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44794\" AllianceName=\"VN StarConqueror\" MinTrophyRequired=\"3000\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;b&gt;&lt;color=#EFFD5F&gt;M\u1ECDi
+        ng\u01B0\u1EDDi v\xE0o fleet s\u1EBD \u0111\u01B0\u1EE3c ph\xEA duy\u1EC7t
+        sau khi n\u1ED9p \u0111\u01A1n qua Discord &lt;i&gt;(&lt;color=#FFFFFF&gt;b\u1EAFt
+        bu\u1ED9c&lt;/color&gt;)&lt;/i&gt; t\u1EA1i | Everyone who wishes to be accepted
+        into the fleet are &lt;color=#FFFFFF&gt;required&lt;/color&gt; to submit application
+        through:&lt;/color&gt;&lt;/b&gt;&lt;color=#39FF14&gt;&lt;size=24&gt;&lt;a&gt;https://dsc.gg/VNPSS&lt;/a&gt;&lt;/size&gt;&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"271\" Score=\"0\" ChampionshipScore=\"23\"
+        MinScoreContribution=\"30\" Trophy=\"351303\" Ranking=\"0\" AllianceSpriteId=\"2306\"
+        ChannelId=\"49141\" NumberOfMembers=\"83\" NumberOfApprovedMembers=\"82\"
+        AllianceShipUserId=\"10752416\" ImmunityDate=\"2024-03-24T19:13:25\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44228\" AllianceName=\"\u0395lysium\" MinTrophyRequired=\"2400\"
+        RequiresApproval=\"false\" AllianceDescription=\"Welcome to Elysium! We are
+        a competitive Fleet with a focus on Tournaments. If you desire to fight your
+        way to the top, join now and become a legend among the stars! Discord: https://discord.gg/RY4s24R2jv\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"131\" Score=\"0\" ChampionshipScore=\"20\"
+        MinScoreContribution=\"4\" Trophy=\"402278\" Ranking=\"0\" AllianceSpriteId=\"19375\"
+        ChannelId=\"48571\" NumberOfMembers=\"98\" NumberOfApprovedMembers=\"98\"
+        AllianceShipUserId=\"9667547\" ImmunityDate=\"2024-03-24T23:23:17\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44208\" AllianceName=\"Die Nasty\" MinTrophyRequired=\"1000\"
+        RequiresApproval=\"true\" AllianceDescription=\"Are you a murderous bastage?
+        Want to be praised for your darker impulses and learn to be more murderey
+        from other like-minded monsters?A;A;If so, Dynasty is the family you didn't
+        know you needed.A;A;Join us now or pss off.A;A;https://discord.gg/thedynasty-pss\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2703\" Score=\"0\"
+        ChampionshipScore=\"20\" MinScoreContribution=\"75\" Trophy=\"330588\" Ranking=\"0\"
+        AllianceSpriteId=\"654\" ChannelId=\"48551\" NumberOfMembers=\"90\" NumberOfApprovedMembers=\"89\"
+        AllianceShipUserId=\"9913531\" ImmunityDate=\"2024-03-25T00:57:22\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"17364\" AllianceName=\"\u4E2D\u534E\u8054\u90A6\u4E09\u5206\u4F1A\"
+        MinTrophyRequired=\"2000\" RequiresApproval=\"false\" AllianceDescription=\"\u53F8\u4EE4\u6D3B\u8DC3\uFF0C\u6B22\u8FCE\u6765\u73A9\uFF0C\u968F\u8FDB\u968F\u9000\u3002\u6B22\u8FCE\u4F60\u7684\u5230\u6765\u3002\u76EE\u524D\u7ED3\u76DF\uFF1A\u85E4\u4E38\u55B5\u55B5\u5C4B\u3001\u5FC5\u8DEA\u56ED\u3001\u957F\u6C5F\u3002
+        \u9644\u5C5E\u8230\u961F\uFF1A\u4E2D\u534E\u8054\u90A6\u4E8C\u5206\u4F1A\u3001\u4E2D\u534E\u8054\u90A6\u56DB\u5206\u4F1A\u3002QQ\u7FA4\uFF1A697055725
+        \u5165\u8230\u961F\u8BF7\u4E00\u5B9A\u8981\u8FDB\u7FA4\uFF0C\u5426\u5219\u5F88\u5BB9\u6613\u5728\u5B9A\u671F\u6E05\u6D17\u4E2D\u88AB\u98DE\u673A\u7968\uFF08\u5728\u7FA4\u91CC\u4E14\u6D3B\u8DC3\u5C31\u4E0D\u4F1A\u6E05\u6D17\u4F60\u4E86\uFF09\u7FA4\u5185\u5927\u4F6C\u5728\u7EBF\u6559\u5B66\uFF0C\u4E0D\u8981\u9519\u8FC7\u4E86\uFF0C\u800C\u4E14\u5F88\u591A\u4E8B\u60C5\u5728\u516C\u5C4F\u662F\u4E0D\u597D\u804A\u7684\uFF0C\u5728\u7FA4\u91CC\u5C31\u53EF\u4EE5\u4E86\uFF0C\u6709\u95EE\u9898\u968F\u4FBF\u95EE\u3002\u5982\u679C\u56DE\u590D\u4F60\u7684\u4EBA\u8BED\u6C14\u53EF\u80FD\u5F88\u96BE\u542C\uFF0C\u4F46\u4E0D\u662F\u9A82\u4F60\u7684\u3002\u4E0D\u8981\u5F53\u6DF7\u5B50\u54E6\uFF0C\u8FD9\u8FB9\u867D\u7136\u70C8\u5EA6\u4F4E\uFF0C\u4F46\u4E5F\u4E0D\u662F\u517B\u8001\u8230\u961F\u5462
+        \u3002(\u9700\u8981\u8D44\u6E90\u53EF\u4EE5\u5728qq\u7FA4\u91CC\u8BF4\u4E00\u58F0\uFF0C\u9A6C\u4E0A\u9001\u5230\u4F60\u624B\u91CC\u3002A;Chinese
+        Only!!!!!!\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"239\"
+        Score=\"0\" ChampionshipScore=\"20\" MinScoreContribution=\"0\" Trophy=\"323262\"
+        Ranking=\"0\" AllianceSpriteId=\"19390\" ChannelId=\"21700\" NumberOfMembers=\"96\"
+        NumberOfApprovedMembers=\"96\" AllianceShipUserId=\"3993698\" ImmunityDate=\"2024-03-24T17:47:49\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44353\" AllianceName=\"Dynasty
+        Mutiny\" MinTrophyRequired=\"2000\" RequiresApproval=\"true\" AllianceDescription=\"We
+        are Dynasty Mutiny.  Division C bronze medal Jan-24.  Want to take your game
+        to the next level? Join us today!  International applicants welcome, Discord
+        membership required  https://discord.gg/thedynasty-pss\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1437\" Score=\"0\" ChampionshipScore=\"20\"
+        MinScoreContribution=\"42\" Trophy=\"308691\" Ranking=\"0\" AllianceSpriteId=\"654\"
+        ChannelId=\"48696\" NumberOfMembers=\"86\" NumberOfApprovedMembers=\"86\"
+        AllianceShipUserId=\"9916816\" ImmunityDate=\"2024-03-24T19:05:39\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43900\" AllianceName=\"Viking Station\" MinTrophyRequired=\"2000\"
+        RequiresApproval=\"true\" AllianceDescription=\"Welcome to the Viking Station
+        ! Div C fleet of the Viking family. Discord is mandatory, the tournament is
+        obligatory, you will not be accepted into the fleet with out discord. http://discord.gg/pssvikingsA;Discord
+        en fran\xE7ais Viking Station : discord.gg/PkjnbR6\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2035\" Score=\"0\" ChampionshipScore=\"20\"
+        MinScoreContribution=\"10\" Trophy=\"216531\" Ranking=\"0\" AllianceSpriteId=\"19379\"
+        ChannelId=\"48242\" NumberOfMembers=\"61\" NumberOfApprovedMembers=\"61\"
+        AllianceShipUserId=\"9023242\" ImmunityDate=\"2024-03-24T20:22:24\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"37251\" AllianceName=\"Sahara\" MinTrophyRequired=\"2500\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;i&gt;We are travelers
+        in the great ocean of time and space...&lt;/i&gt; &lt;color=#c15f00&gt;S&lt;/color&gt;&lt;color=#ce7100&gt;a&lt;/color&gt;&lt;color=#da8300&gt;h&lt;/color&gt;&lt;color=#e59500&gt;a&lt;/color&gt;&lt;color=#f0a800&gt;r&lt;/color&gt;&lt;color=#f9bb00&gt;a&lt;/color&gt;:2500
+        Gobi and Kalahari: open\u3000 https://discord.gg/FQaGudWRzu\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"10697\" Score=\"0\" ChampionshipScore=\"16\"
+        MinScoreContribution=\"1\" Trophy=\"323897\" Ranking=\"0\" AllianceSpriteId=\"19377\"
+        ChannelId=\"41600\" NumberOfMembers=\"95\" NumberOfApprovedMembers=\"95\"
+        AllianceShipUserId=\"6594156\" ImmunityDate=\"2024-03-25T00:58:21\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44572\" AllianceName=\"Soltan Empire\" MinTrophyRequired=\"3000\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#8c6bb1&gt;Welcome
+        to &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;The Soltan Empire!&lt;/b&gt;&lt;/color&gt;
+        &lt;color=#8c6bb1&gt;A fleet for growth and greatness. Together we will take
+        the galaxy!&lt;/color&gt; &lt;color=#e9d502&gt;&lt;b&gt;Glory to The Soltan
+        Empire!&lt;/b&gt;&lt;/color&gt;                                           &lt;color=#8c96c6&gt;&lt;I&gt;Discord:
+        https://discord.com/invite/hZGWURAPQx&lt;/I&gt;&lt;/color&gt;\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2157\" Score=\"0\" ChampionshipScore=\"16\"
+        MinScoreContribution=\"100\" Trophy=\"282046\" Ranking=\"0\" AllianceSpriteId=\"19373\"
+        ChannelId=\"48916\" NumberOfMembers=\"73\" NumberOfApprovedMembers=\"73\"
+        AllianceShipUserId=\"10331333\" ImmunityDate=\"2024-03-24T20:03:53\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43851\" AllianceName=\"SPARTA!\" MinTrophyRequired=\"1600\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#b00000&gt;Lumnii
+        nishaamikunu. Lumnu sha anini.&lt;/color&gt; &lt;color=#aca4ea&gt;discord.gg/PSS-CITADEL&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2340\" Score=\"0\"
+        ChampionshipScore=\"12\" MinScoreContribution=\"25\" Trophy=\"285029\" Ranking=\"0\"
+        AllianceSpriteId=\"19390\" ChannelId=\"48194\" NumberOfMembers=\"86\" NumberOfApprovedMembers=\"84\"
+        AllianceShipUserId=\"9736091\" ImmunityDate=\"2024-03-25T01:31:37\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43836\" AllianceName=\"Italian pixels\" MinTrophyRequired=\"2000\"
+        RequiresApproval=\"true\" AllianceDescription=\"Italian Pixels is the European
+        fleet active in Division C tournament. A;We only accept active players in
+        tournaments (entry fleet required: &gt; 2500 points). A;Follow us on Discord:
+        https://discord.gg/wseTwvj98E\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"1648\" Score=\"0\" ChampionshipScore=\"12\" MinScoreContribution=\"42\"
+        Trophy=\"235624\" Ranking=\"0\" AllianceSpriteId=\"2273\" ChannelId=\"48179\"
+        NumberOfMembers=\"64\" NumberOfApprovedMembers=\"64\" AllianceShipUserId=\"8902761\"
+        ImmunityDate=\"2024-03-24T14:55:52\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44514\"
+        AllianceName=\"Dynasty Savages\" MinTrophyRequired=\"1000\" RequiresApproval=\"true\"
+        AllianceDescription=\"The Dynasty trainer fleet, we have great AI and strategies,
+        and can teach you how to fight, and to win. We expect you to use all of your
+        tournament attempts. Make sure to join our discord, its the best and the only
+        way to learn! https://discord.gg/thedynasty-pss\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2824\" Score=\"0\" ChampionshipScore=\"10\"
+        MinScoreContribution=\"30\" Trophy=\"198263\" Ranking=\"0\" AllianceSpriteId=\"654\"
+        ChannelId=\"48858\" NumberOfMembers=\"88\" NumberOfApprovedMembers=\"86\"
+        AllianceShipUserId=\"10245695\" ImmunityDate=\"2024-03-24T16:06:38\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"9130\" AllianceName=\"Trek Prodigy\" MinTrophyRequired=\"2000\"
+        RequiresApproval=\"true\" AllianceDescription=\"First there was white noise.
+        Then the sound of bass. And Trek Prodigy was born. Welcome to the Trek Family
+        and begin your journey here!A;Next Step: Trek - WolfpackA;Join our Discord
+        for help and chat!   discord.gg/psstrekA;Competitive Div C fleet, Tournament
+        participation mandatory. Discord members are eligible for promotion based
+        on Tournament results.\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1246\"
+        Score=\"0\" ChampionshipScore=\"9\" MinScoreContribution=\"20\" Trophy=\"310197\"
+        Ranking=\"0\" AllianceSpriteId=\"2316\" ChannelId=\"13455\" NumberOfMembers=\"99\"
+        NumberOfApprovedMembers=\"97\" AllianceShipUserId=\"2674758\" ImmunityDate=\"2024-03-25T02:44:49\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44552\" AllianceName=\"TheHighClass
+        THC\" MinTrophyRequired=\"1000\" RequiresApproval=\"true\" AllianceDescription=\"&lt;b&gt;Welcome
+        by &lt;color=#008060&gt;The&lt;/color&gt;&lt;color=#009973&gt;Hi&lt;/color&gt;&lt;color=#00b386&gt;gh&lt;/color&gt;&lt;color=#00cc99&gt;Cla&lt;/color&gt;&lt;color=#00e6ac&gt;ss&lt;/color&gt;&lt;color=#00ffbf&gt;
+        THC&lt;/color&gt; &lt;/b&gt;   nice community, helpful players, join today
+        :)A; https://discord.gg/T4SceJtT\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"1375\" Score=\"0\" ChampionshipScore=\"9\" MinScoreContribution=\"25\"
+        Trophy=\"290184\" Ranking=\"0\" AllianceSpriteId=\"19387\" ChannelId=\"48896\"
+        NumberOfMembers=\"96\" NumberOfApprovedMembers=\"96\" AllianceShipUserId=\"10290962\"
+        ImmunityDate=\"2024-03-24T22:01:54\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43757\"
+        AllianceName=\"\u0414\u0435\u0442\u0438 \u041B\u0443\u043D\u044B\" MinTrophyRequired=\"1000\"
+        RequiresApproval=\"true\" AllianceDescription=\"\u041C\u0438\u043B\u043E\u0435
+        \u0414\u0438\u0442\u044F! \u0412\u0441\u0442\u0443\u043F\u043B\u0435\u043D\u0438\u0435
+        \u0432\u043E \u0424\u043B\u043E\u0442 \u0442\u043E\u043B\u044C\u043A\u043E
+        \u0447\u0435\u0440\u0435\u0437 \u0434\u0438\u0441\u043A\u043E\u0440\u0434!
+        https://discord.gg/A3g5gJFjynA;\u041A\u0442\u043E \u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0438
+        7 \u0434\u043D\u0435\u0439 \u043F\u043E\u0441\u043B\u0435 \u043F\u043E\u0434\u0430\u0447\u0438
+        \u0437\u0430\u044F\u0432\u043A\u0438 \u043D\u0430 \u0432\u0441\u0442\u0443\u043F\u043B\u0435\u043D\u0438\u0435
+        \u043D\u0435 \u043F\u043E\u0441\u0435\u0442\u0438\u0442 \u0434\u0438\u0441\u043A\u043E\u0440\u0434
+        - \u0431\u0443\u0434\u0435\u0442 \u0438\u0437\u0433\u043D\u0430\u043D.\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"3813\" Score=\"0\" ChampionshipScore=\"9\" MinScoreContribution=\"50\"
+        Trophy=\"211095\" Ranking=\"0\" AllianceSpriteId=\"2321\" ChannelId=\"48100\"
+        NumberOfMembers=\"80\" NumberOfApprovedMembers=\"67\" AllianceShipUserId=\"8801877\"
+        ImmunityDate=\"2024-03-24T18:06:47\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"40258\"
+        AllianceName=\"\u041F\u043B\u0430\u043D\u0435\u0442\u0430 \u041F\u0427\u0414\"
+        MinTrophyRequired=\"1\" RequiresApproval=\"true\" AllianceDescription=\"\u0412\u0441\u0435
+        \u043C\u044B \u2013 \u0448\u0442\u043E\u0440\u043C \u0431\u0435\u0440\u0443\u0449\u0438\u0439
+        \u0432\u0435\u0440\u0445\u0430! &lt;color=#00ffff&gt;\u041D\u0435\u0432\u0430\u0436\u0435\u043D
+        \u0432\u0430\u0448 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0438 \u043C\u043E\u0449\u044C,
+        \u0432\u0441\u0435 \u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u0435\u0441\u044C
+        \u043A \u043D\u0430\u043C, \u0432\u0441\u0435\u0445 \u043C\u044B \u043F\u0440\u0438\u043C\u0435\u043C!
+        \u0417\u0430\u0445\u043E\u0434\u0438\u0442\u0435 \u043D\u0430 \u0414\u0421
+        \u0441\u0435\u0440\u0432\u0435\u0440, \u0432\u0435\u0434\u044C \u0442\u0430\u043C:
+        \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435, \u043A\u043E\u043D\u043A\u0443\u0440\u0441\u044B
+        \u0441 \u043F\u0440\u0438\u0437\u0430\u043C\u0438, \u0442\u0430\u043C\u0430\u0434\u0430,
+        \u0433\u0430\u0439\u0434\u044B \u0438 \u043E\u0431\u0449\u0435\u043D\u0438\u0435&lt;/color&gt;
+        \u2013&gt; https://discord.gg/XtmpFyqutg\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"1891\" Score=\"0\" ChampionshipScore=\"7\" MinScoreContribution=\"36\"
+        Trophy=\"198419\" Ranking=\"0\" AllianceSpriteId=\"19380\" ChannelId=\"44607\"
+        NumberOfMembers=\"69\" NumberOfApprovedMembers=\"67\" AllianceShipUserId=\"9575876\"
+        ImmunityDate=\"2024-03-24T23:37:38\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"11059\"
+        AllianceName=\"Space Drunker\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"\uFF1C\u53EA\u4ECA\u6A21\u69D8\u66FF\u3048\u4E2D\u30FBPRI\u306F\u57FA\u672C\u7684\u306B\u5DE6\u4E0B\u306B\u914D\u7F6E\uFF1E\u25C6\u8266\u968A\u898F\u52472004\u25C6\u2776\u304A\u9152\u306F1\u65E53\u5408\u307E\u3067\uFF01\u2777\u5451\u3093\u3060\u3089\u4E57\u308B\u306A\uFF01\u5B87\u5B99\u8239\uFF01\u2778\u9577\u6642\u9593\u306E\u904B\u8EE2\u3067\u306F\u9069\u5EA6\u306B\u5B87\u5B99PA\u3067\u4F11\u606F\u3092\uFF01\u2779FTL\u822A\u884C\u6642\u306F\u4FBF\u5EA7\u3092\u4E0B\u3059\u3053\u3068\uFF01\u25C6\u6D3B\u52D5\u6307\u91DD\u3068\u76EE\u6A19\u25C6\u6211\u3005\u306F\u4EF2\u9593\u3067\u3042\u308A\u3069\u3093\u306A\u9298\u67C4\u3092\u5451\u3093\u3067\u3044\u3088\u3046\u3068\u3082\u52A9\u3051\u5408\u3046\u3082\u306E\u3068\u3059\u308B\u3002\u6B21\u306E\u65E5\u5F8C\u6094\u3059\u308B\u5451\u307F\u65B9\u306F\u3057\u306A\u3044\u3057\u4EF2\u9593\u306B\u3082\u3055\u305B\u306A\u3044\u3002\u307E\u305F\u3001PSS\u5B87\u5B99\u306B\u304A\u3051\u308B\u7DCF\u54E1\u306E\u30D7\u30EC\u30A4\u30B9\u30BF\u30A4\u30EB\u3092\u78BA\u7ACB\u3057\u3001AI\u6226\u8853\u3092\u9032\u5316\u767A\u5C55\u3055\u305B\u7D9A\u3051\u308B\u3002\u30A4\u30CE\u30D9\u30FC\u30B7\u30E7\u30F3\u306B\u3088\u308B\u4E0B\u524B\u4E0A\u3092\u4FC3\u9032\u3057\u3001\u5451\u3093\u3060\u304F\u308C\u306E\u5730\u4F4D\u5411\u4E0A\u3092\u56F3\u308B\u3002\u3010\u9664\u968A\u30EB\u30FC\u30EB\u3011\u2460\u30CE\u30F3\u30A2\u30AF\u30C6\u30A3\u30D6\u306A\u63D0\u7763\u2461\u30B5\u30D6\u30A2\u30AB\u63D0\u7763\u2462\u610F\u601D\u758E\u901A\u4E0D\u53EF\u80FD\u306A\u63D0\u7763\u306F\u6F38\u52A0\u7684\u306B\u964D\u683C\u9664\u968A\u51E6\u7F6E\u3092\u81F4\u3057\u307E\u3059\u3002\"
+        AllianceCountryCode=\"JP\" EnableWars=\"true\" Credits=\"1794\" Score=\"0\"
+        ChampionshipScore=\"6\" MinScoreContribution=\"0\" Trophy=\"294294\" Ranking=\"0\"
+        AllianceSpriteId=\"2281\" ChannelId=\"15387\" NumberOfMembers=\"95\" NumberOfApprovedMembers=\"95\"
+        AllianceShipUserId=\"3798438\" ImmunityDate=\"2024-03-24T20:17:32\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44294\" AllianceName=\"\u043D\u0443 \u0437\u0434\u043E\u0440\u043E\u0432\u043E
+        \u043E\u0442\u0435\u0446\" MinTrophyRequired=\"1600\" RequiresApproval=\"true\"
+        AllianceDescription=\"&lt;color=#00ff00&gt;\u0412\u0435\u0441\u0401\u043B\u044B\u0435&lt;/color&gt;,
+        &lt;color=#ffff00&gt;\u0441\u043C\u0435\u0428\u043D\u044B\u0435&lt;/color&gt;,
+        &lt;color=#ff0000&gt;\u0431\u043E\u043B\u042C\u043D\u044B\u0435&lt;/color&gt;
+        \u0438 &lt;color=#ee82ee&gt;\u0441\u0442\u0440\u0430\u043D\u043D\u042B\u0435&lt;/color&gt;
+        \u043B\u042E\u0434\u0438 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0442\u0441\u044F
+        \u0437\u0434\u0435\u0441\u044C! \u041D\u0430\u0448 \u0434\u0438\u0441\u043A\u043E\u0440\u0434:
+        &lt;color=#ffd700&gt;https://discord.com/invite/YPkTAQacnj&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"829\" Score=\"0\" ChampionshipScore=\"6\"
+        MinScoreContribution=\"10\" Trophy=\"290508\" Ranking=\"0\" AllianceSpriteId=\"2261\"
+        ChannelId=\"48637\" NumberOfMembers=\"97\" NumberOfApprovedMembers=\"97\"
+        AllianceShipUserId=\"9815689\" ImmunityDate=\"2024-03-25T03:10:56\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"22032\" AllianceName=\"Viking Valkyries\" MinTrophyRequired=\"1500\"
+        RequiresApproval=\"true\" AllianceDescription=\"A member of the Viking Family,
+        Join us! &lt;color=white&gt;Discord MANDATORY to get accepted!&lt;/color&gt;
+        &lt;size=18&gt;&lt;color=red&gt;discord.gg/pssvikings&lt;/color&gt;&lt;/size&gt;
+        === Join our other fleets === &lt;color=red&gt;Veritas Vikings&lt;/color&gt;
+        || &lt;color=orange&gt;Firefly Vikings&lt;/color&gt; || &lt;color=cyan&gt;Blue
+        Star Vikings&lt;/color&gt; Not enough trophies? Join Viking Outpost!\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2886\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"1\"
+        Trophy=\"273263\" Ranking=\"0\" AllianceSpriteId=\"19356\" ChannelId=\"26368\"
+        NumberOfMembers=\"91\" NumberOfApprovedMembers=\"90\" AllianceShipUserId=\"4680214\"
+        ImmunityDate=\"2024-03-24T15:08:34\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44589\"
+        AllianceName=\"\u957F\u6C5F\" MinTrophyRequired=\"1300\" RequiresApproval=\"false\"
+        AllianceDescription=\"\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6B22\u8FCE\u6765\u5230\u957F\u6C5F\uFF01\uFF01\uFF01\u4E3A\u8F85\u52A9\u65B0\u4EBA\u6210\u957F\uFF0C\u8FBE2000\u676F\uFF0C\u53EF\u8FDB\u7FA4\u83B7\u5F97\u4EF7\u503C2\u53E8\uFF081
+        5 r\uFF09\u9AD8\u8FBE\u9996\u51B2\u4E00\u4EFD\uFF01\uFF01Q Q\u603B\u7FA4\uFF1A226768698
+        \u56FE\u4E66\u9986Q Q\u7FA4\uFF1A914971430  \u5404\u4F4D\u8230\u957F\u4E00\u5B9A\u4E00\u5B9A\u4E0D\u8981\u5FD8\u8BB0\u5230\u8230\u961F\u57FA\u5730\u9886\u7968\uFF01\uFF01\uFF01
+        \u540C\u76DF\uFF1A\u4E2D\u534E\u8054\u90A6\u4E09\u5206\u4F1A\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"30\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"1\"
+        Trophy=\"260703\" Ranking=\"0\" AllianceSpriteId=\"19390\" ChannelId=\"48933\"
+        NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\" AllianceShipUserId=\"10346658\"
+        ImmunityDate=\"2024-03-24T15:26:15\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"12758\"
+        AllianceName=\"Trek Academy\" MinTrophyRequired=\"2000\" RequiresApproval=\"true\"
+        AllianceDescription=\"&lt;color=#8f0&gt;Trek Academy is a training fleet of
+        the Trek Federation - We will help you understand the game and grow! &lt;b&gt;&lt;color=red&gt;Joining
+        our Discord is required (&lt;color=#db2&gt;dsc.gg/psstrek&lt;/color&gt;)&lt;/color&gt;&lt;/b&gt;
+        as we have help channels and teaching materials available.&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"972\" Score=\"0\" ChampionshipScore=\"6\"
+        MinScoreContribution=\"15\" Trophy=\"252385\" Ranking=\"0\" AllianceSpriteId=\"2320\"
+        ChannelId=\"17091\" NumberOfMembers=\"85\" NumberOfApprovedMembers=\"84\"
+        AllianceShipUserId=\"3226287\" ImmunityDate=\"2024-03-24T15:35:23\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"4935\" AllianceName=\"\u661F\u754C\u519B\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"\u6B22\u8FCE\u5927\u5BB6\u52A0\u5165\u661F\u754C\u519B\uFF01\u8BB0\u5F97\u52A0\u6263\u6263\u7FA4\u53F7\uFF1A853295919\u767E\u4EBA\u7FA4\uFF0C\u7FA4\u5185\u5927\u4F6C\u5728\u7EBF\u6307\u5BFC\uFF0C\u7ED9\u840C\u65B0\u9001\u77FF\u6CB9\uFF0C\u5168\u5929\u5520\u55D1\u3002\u672C\u76DF\u548C\u4E2D\u56FDno.1\u3001\u5C0F\u670B\u53CB\u5747\u4E3A\u4E2D\u56FD\u8230\u961F\u65D7\u4E0B\u9644\u5C5E\u8230\u961F\uFF0C3000\u676F\u53EF\u4EE5\u664B\u5347\u4E3B\u8230\u961F!\u4E3B\u8230\u961F\u548C\u661F\u754C\u519B\u6708\u5E95\u90FD\u6709\u8054\u8D5B\u5956\u52B1\u3002\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2115\" Score=\"0\"
+        ChampionshipScore=\"6\" MinScoreContribution=\"0\" Trophy=\"246470\" Ranking=\"0\"
+        AllianceSpriteId=\"2282\" ChannelId=\"9245\" NumberOfMembers=\"98\" NumberOfApprovedMembers=\"98\"
+        AllianceShipUserId=\"6333985\" ImmunityDate=\"2024-03-24T15:26:20\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44925\" AllianceName=\"ARCHANGEL XC\" MinTrophyRequired=\"2800\"
+        RequiresApproval=\"false\" AllianceDescription=\"Tournament Finished! Prizes
+        sent! Competitive FLEET aiming for Division B/C. You MUST Join discord: https://discord.gg/QNjYGgRQdE\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"456\" Score=\"0\" ChampionshipScore=\"6\"
+        MinScoreContribution=\"15\" Trophy=\"239505\" Ranking=\"0\" AllianceSpriteId=\"19356\"
+        ChannelId=\"49272\" NumberOfMembers=\"80\" NumberOfApprovedMembers=\"80\"
+        AllianceShipUserId=\"10937135\" ImmunityDate=\"2024-03-24T15:55:43\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"11899\" AllianceName=\"Fallen Angels\" MinTrophyRequired=\"800\"
+        RequiresApproval=\"true\" AllianceDescription=\"DISCORD: discord.gg/gGPg9Tx
+        - before joining fleet please join discord. Stay active, donate/request crew
+        essential. The Conjoint(3k) and Trinity(casual) are our sister fleets. 0 stars
+        during tourney - kick.\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2789\"
+        Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"0\" Trophy=\"236770\"
+        Ranking=\"0\" AllianceSpriteId=\"2316\" ChannelId=\"16229\" NumberOfMembers=\"93\"
+        NumberOfApprovedMembers=\"92\" AllianceShipUserId=\"3042045\" ImmunityDate=\"2024-03-24T16:17:56\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44153\" AllianceName=\"Deneb
+        Corp \u5929\u6D25\u56DB\u8ECD\u5718\" MinTrophyRequired=\"1300\" RequiresApproval=\"false\"
+        AllianceDescription=\"(1)\u672C\u8266\u968A\u70BAA\u7D44\u8266\u968A &lt;Vega
+        Corp\u7E54\u5973\u661F\u8ECD\u5718&gt; \u4E4B\u5B50\u8266\u968A\uFF0C\u6B61\u8FCE\u4E2D\u6587\u73A9\u5BB6\u52A0\u5165\u3002\u82E5\u60F3\u63D0\u5347\u81EA\u6211\u6230\u529B\u8ACB\u52A0\u5165DISCORD\uFF0C\u96FB\u8166\u7248\u9023\u7D50
+        discord.gg/gCZEHsDb \u8B93\u4F60\u8F15\u9B06\u5347\u4E0A4,000\u676F\u3002(2)\u6BCF\u5929\u53EF\u9032\u8266\u968A\u57FA\u5730\u9818\u53D64bux\u3002(3)AFK\u4E00\u5468\u4EE5\u4E0A\u8005\u8E22\u51FA\u3002\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2047\" Score=\"0\"
+        ChampionshipScore=\"6\" MinScoreContribution=\"0\" Trophy=\"235502\" Ranking=\"0\"
+        AllianceSpriteId=\"2315\" ChannelId=\"48496\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\"
+        AllianceShipUserId=\"9531806\" ImmunityDate=\"2024-03-24T17:40:52\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"7710\" AllianceName=\"\u4E2D\u56FDno.1\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"\u300A\u4E2D\u56EF\u8230\u961F\u300B\u5168\u9762\u62DB\u65B0\u4E86\uFF1A\u672C\u8230\u961F\u4E3AA\u533A\u56FD\u4EBA\u8230\u961F\u300A\u4E2D\u56FD\u8230\u961F\u300B\u7684\u9644\u5C5E\u8230\u961F\uFF0CQQ\u7FA4\uFF1A853295919\u3002\u53E6\u6709\u9644\u5C5E\u8230\u961F\uFF1A\u661F\u754C\u519B\u3001\u4E2D\u56FDno.1\u3001\u5C0F\u670B\u53CB\u3002\u4E3A\u5168\u5206\u6BB5\u5927\u4F6C\u3001\u840C\u65B0\u63D0\u4F9B\u5FC3\u4EEA\u4E4B\u6240\u3002\u606D\u8BF7\u5404\u4F4D\u540C\u597D\u524D\u6765\u5171\u8944\u76DB\u4E3E\u3002\"
+        AllianceCountryCode=\"CN\" EnableWars=\"true\" Credits=\"1150\" Score=\"0\"
+        ChampionshipScore=\"6\" MinScoreContribution=\"0\" Trophy=\"223023\" Ranking=\"0\"
+        AllianceSpriteId=\"2282\" ChannelId=\"12025\" NumberOfMembers=\"95\" NumberOfApprovedMembers=\"95\"
+        AllianceShipUserId=\"9146395\" ImmunityDate=\"2024-03-24T23:17:54\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43932\" AllianceName=\"Elysium Guardians\" MinTrophyRequired=\"1000\"
+        RequiresApproval=\"false\" AllianceDescription=\"Welcome to Elysium Guardians.
+        We are the Elite Guard of Elysium and protect it and our allies from any threat.
+        Join the discord today! https://discord.gg/Cg7HgdmSAK\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"3726\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"10\"
+        Trophy=\"217814\" Ranking=\"0\" AllianceSpriteId=\"19375\" ChannelId=\"48274\"
+        NumberOfMembers=\"85\" NumberOfApprovedMembers=\"85\" AllianceShipUserId=\"9131174\"
+        ImmunityDate=\"2024-03-24T16:43:07\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44215\"
+        AllianceName=\"\u0411\u0410\u0428\u041E\u0419 \u041F\u0410\u0421\u0422\u0423\u041A\"
+        MinTrophyRequired=\"1600\" RequiresApproval=\"true\" AllianceDescription=\"\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F
+        \u0444\u043B\u043E\u0442\u0430 Ashen Strangers. \u0411\u0443\u0434\u0435\u043C
+        \u0440\u0430\u0434\u044B! \u0414\u0438\u0441\u043A\u043E\u0440\u0434 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u0435\u043D:
+        https://discord.gg/fwaxqqu\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"847\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"0\"
+        Trophy=\"216621\" Ranking=\"0\" AllianceSpriteId=\"2317\" ChannelId=\"48558\"
+        NumberOfMembers=\"86\" NumberOfApprovedMembers=\"86\" AllianceShipUserId=\"10178576\"
+        ImmunityDate=\"2024-03-24T21:05:24\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43461\"
+        AllianceName=\"TheNobody\" MinTrophyRequired=\"1400\" RequiresApproval=\"true\"
+        AllianceDescription=\"We are The Nobody's, a veteran fleet full of experienced
+        and well trained captains. We have been around for a while and we are always
+        looking to add to our veteran crew. Do you have what it takes to become a
+        somebody? \nDISCORD IS MANDATORY \u2014-&gt; discord.gg/Nq7RtyxdJ6\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1198\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"40\"
+        Trophy=\"212921\" Ranking=\"0\" AllianceSpriteId=\"19352\" ChannelId=\"47804\"
+        NumberOfMembers=\"62\" NumberOfApprovedMembers=\"61\" AllianceShipUserId=\"7617557\"
+        ImmunityDate=\"2024-03-24T20:41:26\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44617\"
+        AllianceName=\"RADIANCE BEAM\" MinTrophyRequired=\"1400\" RequiresApproval=\"true\"
+        AllianceDescription=\"\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F \u043B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0433\u043E
+        \u0444\u043B\u043E\u0442\u0430 RADIANCE. \u0427\u0442\u043E\u0431\u044B \u0432\u0430\u0448\u0443
+        \u0437\u0430\u044F\u0432\u043A\u0443 \u043F\u0440\u0438\u043D\u044F\u043B\u0438,
+        \u0437\u0430\u0445\u043E\u0434\u0438\u0442\u0435 \u043D\u0430 \u043D\u0430\u0448
+        \u0434\u0438\u0441\u043A\u043E\u0440\u0434 \u0441\u0435\u0440\u0432\u0435\u0440
+        discord.gg/bysG59h\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1036\"
+        Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"11\" Trophy=\"211409\"
+        Ranking=\"0\" AllianceSpriteId=\"19376\" ChannelId=\"48961\" NumberOfMembers=\"65\"
+        NumberOfApprovedMembers=\"63\" AllianceShipUserId=\"10420273\" ImmunityDate=\"2024-03-24T15:59:29\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44384\" AllianceName=\"Summit
+        Eden\" MinTrophyRequired=\"0\" RequiresApproval=\"true\" AllianceDescription=\"summit
+        eden \uD568\uB300\uC5D0 \uC624\uC2E0\uAC78 \uD658\uC601\uD569\uB2C8\uB2E4!A;\uCE74\uD1A1
+        \uC624\uD508\uCC44\uD305\uBC29 \uD53D\uC140\uC2A4\uD0C0\uC27D\uC73C\uB85C
+        \uC624\uC2DC\uBA74 \uAC00\uC785 \uC2B9\uC778\uD574\uB4DC\uB9BD\uB2C8\uB2E4!A;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"811\" Score=\"0\" ChampionshipScore=\"6\"
+        MinScoreContribution=\"0\" Trophy=\"207105\" Ranking=\"0\" AllianceSpriteId=\"19353\"
+        ChannelId=\"48727\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"99\"
+        AllianceShipUserId=\"9981458\" ImmunityDate=\"2024-03-24T22:35:37\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44890\" AllianceName=\"Soltan Legion\" MinTrophyRequired=\"1800\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#8c6bb1&gt;Welcome
+        to the &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Soltan Legion! &lt;/b&gt;&lt;/color&gt;&lt;color=#8c6bb1&gt;The
+        competitive/training branch of the &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Soltan
+        Empire. &lt;/b&gt;&lt;/color&gt;&lt;color=#8c6bb1&gt;Together we will take
+        the galaxy! &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Glory to the Soltan
+        Legion!&lt;/b&gt;&lt;/color&gt; &lt;color=#8c96c6&gt;&lt;I&gt;Discord: https://discord.gg/X3NYP792CH&lt;/I&gt;&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"516\" Score=\"0\" ChampionshipScore=\"6\"
+        MinScoreContribution=\"40\" Trophy=\"206254\" Ranking=\"0\" AllianceSpriteId=\"19373\"
+        ChannelId=\"49237\" NumberOfMembers=\"81\" NumberOfApprovedMembers=\"81\"
+        AllianceShipUserId=\"10897413\" ImmunityDate=\"2024-03-24T19:50:23\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"40636\" AllianceName=\"Viking Ethereals\" MinTrophyRequired=\"1700\"
+        RequiresApproval=\"false\" AllianceDescription=\"Trainer fleet for the Viking
+        Community! Join now! &lt;color=red&gt;&lt;size=20&gt; discord.gg/pssvikings
+        &lt;/size&gt;&lt;/color&gt;\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"6026\" Score=\"0\" ChampionshipScore=\"6\" MinScoreContribution=\"1\"
+        Trophy=\"166732\" Ranking=\"0\" AllianceSpriteId=\"2322\" ChannelId=\"44978\"
+        NumberOfMembers=\"61\" NumberOfApprovedMembers=\"61\" AllianceShipUserId=\"9006384\"
+        ImmunityDate=\"2024-03-24T19:21:09\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"42581\"
+        AllianceName=\"Die Furchtlosen\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"Hallo lasst uns zusammen das Universum erforschen..\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"3912\" Score=\"0\"
+        ChampionshipScore=\"5\" MinScoreContribution=\"0\" Trophy=\"205372\" Ranking=\"0\"
+        AllianceSpriteId=\"2771\" ChannelId=\"46924\" NumberOfMembers=\"93\" NumberOfApprovedMembers=\"93\"
+        AllianceShipUserId=\"7397626\" ImmunityDate=\"2024-03-25T02:23:04\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43395\" AllianceName=\"Legion Basilea\" MinTrophyRequired=\"50\"
+        RequiresApproval=\"true\" AllianceDescription=\"Somos los gentleman de la
+        chatarrer\xEDa espacial\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1484\"
+        Score=\"0\" ChampionshipScore=\"5\" MinScoreContribution=\"1\" Trophy=\"195824\"
+        Ranking=\"0\" AllianceSpriteId=\"2268\" ChannelId=\"47738\" NumberOfMembers=\"93\"
+        NumberOfApprovedMembers=\"93\" AllianceShipUserId=\"7551027\" ImmunityDate=\"2024-03-24T20:49:54\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44387\" AllianceName=\"/SPACE
+        TEMPLARS\\\" MinTrophyRequired=\"1400\" RequiresApproval=\"false\" AllianceDescription=\"SPACE
+        TEMPLARS is dedicated to helping new players learn the basics of pvp and growing
+        a sense of community within the fleet. We promote players based on loyalty
+        and respect for their fellow crew. https://discord.gg/cFWN9XrkVG\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"966\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"0\"
+        Trophy=\"231867\" Ranking=\"0\" AllianceSpriteId=\"19350\" ChannelId=\"48730\"
+        NumberOfMembers=\"97\" NumberOfApprovedMembers=\"97\" AllianceShipUserId=\"9982559\"
+        ImmunityDate=\"2024-03-24T16:09:23\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44665\"
+        AllianceName=\"\u0427\u0412\u041A \u0410\u043B\u043A\u043E\u0442\u0440\u043E\u043D\u0443\u0441\"
+        MinTrophyRequired=\"1300\" RequiresApproval=\"false\" AllianceDescription=\"\u0412
+        \u0442\u0451\u043C\u043D\u043E\u043C \u0431\u0443\u0434\u0443\u0449\u0435\u043C
+        \u043F\u0438\u043A\u0441\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u043A\u043E\u0441\u043C\u043E\u0441\u0430
+        \u0435\u0441\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0412\u041E\u0419\u041D\u0410!
+        \u0410 \u0434\u0438\u0441\u043A\u043E\u0440\u0434\u0430 \u043D\u0435\u0442.
+        \u0418, \u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435, \u043D\u0435\u0431\u0443\u0434\u0435\u0442...
+        \u0418\u0431\u043E \u043B\u0435\u043D\u044C.\u0412\u043E\u0442.\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"3366\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"30\"
+        Trophy=\"209612\" Ranking=\"0\" AllianceSpriteId=\"2261\" ChannelId=\"49009\"
+        NumberOfMembers=\"84\" NumberOfApprovedMembers=\"84\" AllianceShipUserId=\"10659366\"
+        ImmunityDate=\"2024-03-25T00:55:45\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"42556\"
+        AllianceName=\"Holy Lands\" MinTrophyRequired=\"2000\" RequiresApproval=\"true\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"13\"
+        Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"0\" Trophy=\"202103\"
+        Ranking=\"0\" AllianceSpriteId=\"19352\" ChannelId=\"46899\" NumberOfMembers=\"81\"
+        NumberOfApprovedMembers=\"78\" AllianceShipUserId=\"9927768\" ImmunityDate=\"2024-03-24T19:49:46\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44371\" AllianceName=\"RAJA\"
+        MinTrophyRequired=\"1300\" RequiresApproval=\"false\" AllianceDescription=\"Belajar
+        dari pengalaman orang hebat kalah dengan orang beruntung\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2673\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"10\"
+        Trophy=\"200917\" Ranking=\"0\" AllianceSpriteId=\"2307\" ChannelId=\"48714\"
+        NumberOfMembers=\"97\" NumberOfApprovedMembers=\"97\" AllianceShipUserId=\"9948524\"
+        ImmunityDate=\"2024-03-24T18:04:04\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44791\"
+        AllianceName=\"Sunny Ship\" MinTrophyRequired=\"700\" RequiresApproval=\"true\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"10\"
+        Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"0\" Trophy=\"191228\"
+        Ranking=\"0\" AllianceSpriteId=\"19376\" ChannelId=\"49138\" NumberOfMembers=\"99\"
+        NumberOfApprovedMembers=\"96\" AllianceShipUserId=\"10822472\" ImmunityDate=\"2024-03-24T18:46:45\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"21757\" AllianceName=\"Trek
+        Lower Decks\" MinTrophyRequired=\"800\" RequiresApproval=\"false\" AllianceDescription=\"Training
+        fleet for Trek Federation - JOIN THE TREK DISCORD at discord.gg/cBcB3ap for
+        advices and info with veterans who can help you.. Crew donations and activity
+        required. Join Trek First Contact if full, Trek Academy, or Trek Prodigy once
+        you reach 2000 trophies, or Trek Wolfpack above 2400!\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"3579\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"0\"
+        Trophy=\"184592\" Ranking=\"0\" AllianceSpriteId=\"2318\" ChannelId=\"26093\"
+        NumberOfMembers=\"80\" NumberOfApprovedMembers=\"80\" AllianceShipUserId=\"4582988\"
+        ImmunityDate=\"2024-03-24T23:12:46\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44931\"
+        AllianceName=\"Bubble Gum Pink\" MinTrophyRequired=\"1100\" RequiresApproval=\"false\"
+        AllianceDescription=\"Awesome fleet :DA;Join for a cookie :DA;A;Join the discord
+        server for guides and help :DA;discord.gg/5zcucjDUbq\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"372\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"5\"
+        Trophy=\"155596\" Ranking=\"0\" AllianceSpriteId=\"19383\" ChannelId=\"49278\"
+        NumberOfMembers=\"94\" NumberOfApprovedMembers=\"94\" AllianceShipUserId=\"10939315\"
+        ImmunityDate=\"2024-03-24T19:50:36\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43450\"
+        AllianceName=\"Dragonborn\" MinTrophyRequired=\"300\" RequiresApproval=\"true\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"160\"
+        Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"0\" Trophy=\"149473\"
+        Ranking=\"0\" AllianceSpriteId=\"19356\" ChannelId=\"47793\" NumberOfMembers=\"75\"
+        NumberOfApprovedMembers=\"74\" AllianceShipUserId=\"7597861\" ImmunityDate=\"2024-03-24T21:10:41\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44927\" AllianceName=\"Python\"
+        MinTrophyRequired=\"1750\" RequiresApproval=\"false\" AllianceDescription=\"1750+
+        English Fleet! Top 100 Fleet! Tournaments! Active Fleet! Please Donate Materials
+        &lt;3 Invite Friends! Join! Please Raid Starbases!\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1014\" Score=\"0\" ChampionshipScore=\"4\" MinScoreContribution=\"100\"
+        Trophy=\"148325\" Ranking=\"0\" AllianceSpriteId=\"19344\" ChannelId=\"49274\"
+        NumberOfMembers=\"62\" NumberOfApprovedMembers=\"62\" AllianceShipUserId=\"10936728\"
+        ImmunityDate=\"2024-03-25T05:13:36\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44169\"
+        AllianceName=\"TYPHOON\" MinTrophyRequired=\"1500\" RequiresApproval=\"true\"
+        AllianceDescription=\"discord.gg/zd5MWGE6eZA;QQ\u7FA4\uFF1A875968174\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"19160\" Score=\"0\" ChampionshipScore=\"4\"
+        MinScoreContribution=\"0\" Trophy=\"136549\" Ranking=\"0\" AllianceSpriteId=\"19372\"
+        ChannelId=\"48512\" NumberOfMembers=\"76\" NumberOfApprovedMembers=\"76\"
+        AllianceShipUserId=\"9571881\" ImmunityDate=\"2024-03-24T22:39:00\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44836\" AllianceName=\"Zooted\" MinTrophyRequired=\"2500\"
+        RequiresApproval=\"true\" AllianceDescription=\"We will rise to the top!!
+        Rule 1. Smoke beer and drink kush. Tournament Participation is prioritized.
+        Minimum trophies will increase as we become developed. We have AwakedPotato!
+        \ Starbase up! Donate to build it!! Tater Loves You All!\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"4454\" Score=\"0\" ChampionshipScore=\"3\" MinScoreContribution=\"10\"
+        Trophy=\"292094\" Ranking=\"0\" AllianceSpriteId=\"19371\" ChannelId=\"49183\"
+        NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\" AllianceShipUserId=\"10829990\"
+        ImmunityDate=\"2024-03-24T16:22:10\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"18112\"
+        AllianceName=\"HKG \u81EA\u7531\u60D1\u661F\u9A0E\u58EB\u56E3\" MinTrophyRequired=\"1000\"
+        RequiresApproval=\"false\" AllianceDescription=\"\u300C\u958B\u5FC3\u73A9\uFF01\u300D\u662F\u672C\u5718\u5B97\u65E8\u3002\u76EE\u6A19\u8A13\u7DF4\u65B0\u624B\u548C\u6210\u54E1\u4E00\u8D77\u63A2\u7D22/\u722D\u9738\u661F\u6D77\u3002\u516B\u7D1A\u57FA\u5730\uFF1A\u798F\u5229\uFF1A\u6BCF\u5929\u57FA\u5730\uFF08\u5E95\u90E8\uFF09\u9818\u7DA0\u7968\u3002\u8ECD\u968E\u6703\u66F4\u65B0\u3002\u5230\u6703\u8B70\u5BA4\u6350/\u501F\u8239\u54E1\u4F86\u5E6B\u52A9\u968A\u53CB\u589E\u52A0\u6230\u529B\u3001\u6210\u9577\u8239\u54E1\u3002\u968A\u54E1\u53EF\u53C3\u52A0\u57FA\u5730\u6230\u53D6\u5F97\u661F\u7AD9\u8CC7\u6E90(\u53F3\u908A\u596C\u676F\u63A3\u9078\u9802\u7D1A\u8266\u968A)(\u53EF\u89E3\u6210\u5C31)\u3002\u6709\u554F\u984C\u6B61\u8FCE\u767C\u554F(\u76E1\u529B\u89E3\u7B54)\u3002\u6703\u4E0D\u5B9A\u671F\u8655\u7406\u9577\u671F\u4E0D\u4E0A\u7DDA\u6210\u54E1\u8B93\u4F4D\u65B0\u4EBA\u52A0\u5165\u3002\u4E0D\u8981\u4E0D\u8981\u4E0D\u8981\u6350\u9322\u6216\u7269\u8CC7\u7D66\u57FA\u5730\uFF08\u7559\u4E0B\u81EA\u5DF1\u63D0\u5347\u6230\u529B\uFF09\uFF01\uFF01\uFF01\"
+        AllianceCountryCode=\"HK\" EnableWars=\"true\" Credits=\"1008\" Score=\"0\"
+        ChampionshipScore=\"3\" MinScoreContribution=\"10\" Trophy=\"224843\" Ranking=\"0\"
+        AllianceSpriteId=\"2289\" ChannelId=\"22450\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\"
+        AllianceShipUserId=\"4201346\" ImmunityDate=\"2024-03-25T02:43:45\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44964\" AllianceName=\"Dynasty Exiles\" MinTrophyRequired=\"500\"
+        RequiresApproval=\"false\" AllianceDescription=\"&lt;COLOR=#ff3333&gt;DYNASTY-EXILES&lt;/COLOR&gt;
+        \                                                                                                                    &lt;color=#FFFFFF&gt;The
+        Dynasty Fleets - 6 Fleets - 1 Family&lt;/color&gt;                                                                       &lt;COLOR=#00FF00&gt;JOIN
+        --&gt;&lt;/color&gt; https://discord.gg/thedynasty-pss - Our Discord has training
+        &amp; starbux giveways!\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2195\"
+        Score=\"0\" ChampionshipScore=\"3\" MinScoreContribution=\"21\" Trophy=\"189408\"
+        Ranking=\"0\" AllianceSpriteId=\"654\" ChannelId=\"49311\" NumberOfMembers=\"93\"
+        NumberOfApprovedMembers=\"93\" AllianceShipUserId=\"11001716\" ImmunityDate=\"2024-03-25T03:19:56\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"25961\" AllianceName=\"La
+        Legion\" MinTrophyRequired=\"1455\" RequiresApproval=\"false\" AllianceDescription=\"Separando
+        la paja del trigo  Idioma: Espa\xF1ol \" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"156\" Score=\"0\" ChampionshipScore=\"3\" MinScoreContribution=\"45\"
+        Trophy=\"141648\" Ranking=\"0\" AllianceSpriteId=\"19372\" ChannelId=\"30301\"
+        NumberOfMembers=\"52\" NumberOfApprovedMembers=\"52\" AllianceShipUserId=\"5090935\"
+        ImmunityDate=\"2024-03-25T00:38:56\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"41093\"
+        AllianceName=\"THE V\u03A9ID\" MinTrophyRequired=\"1000\" RequiresApproval=\"true\"
+        AllianceDescription=\"Wilkommen bei THE V\u03A9ID!   Tipps, Hilfe und Organisatorisches
+        findet ihr auf unserem Discordserver!     https://discord.gg/kDxp5x59NY Dies
+        ist die kleine Ausbildungsflotte von Summit Basecamp, f\xFCr einen Wechsel
+        bitte im Discord melden!\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1553\"
+        Score=\"0\" ChampionshipScore=\"3\" MinScoreContribution=\"0\" Trophy=\"113688\"
+        Ranking=\"0\" AllianceSpriteId=\"2321\" ChannelId=\"45435\" NumberOfMembers=\"67\"
+        NumberOfApprovedMembers=\"65\" AllianceShipUserId=\"7292488\" ImmunityDate=\"2024-03-24T08:10:48\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"12789\" AllianceName=\"Trek
+        Trainer\" MinTrophyRequired=\"1000\" RequiresApproval=\"false\" AllianceDescription=\"Competative
+        Division D Training fleet for Trek---JOIN THE TREK DISCORD at https://discord.gg/psstrek---INGAME
+        ACTIVITY REQUIRED TO BE ELEGIBLE FOR FLEET PROMOTION(TREK ACADEMY)---CONTACT
+        ME (TheEdgeTransit) DIRECTLY INGAME IF YOU DO NOT WISH TO JOIN DISCORD BUT
+        WOULD LIKE A PROMOTION---Please join Trek Academy once you reach 2000 trophies!\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"597\" Score=\"0\" ChampionshipScore=\"2\"
+        MinScoreContribution=\"0\" Trophy=\"174515\" Ranking=\"0\" AllianceSpriteId=\"2318\"
+        ChannelId=\"17122\" NumberOfMembers=\"91\" NumberOfApprovedMembers=\"91\"
+        AllianceShipUserId=\"3296275\" ImmunityDate=\"2024-03-24T16:47:17\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"28652\" AllianceName=\"Nero-chan\" MinTrophyRequired=\"1600\"
+        RequiresApproval=\"false\" AllianceDescription=\"&lt;b&gt;&lt;color=#f6fa02&gt;N\u01A1i
+        \u0111\xE2y l\xE0 fleet b\xE9 c\u1EE7a fleet vn starconqueror, \xF0\xE2y l\xE0
+        n\u01A1i h\u1ECDc h\u1ECFi, t\u1ED5 ch\u1EE9c \u0111\xE1nh tour v\xE0 ti\u1EBFp
+        thu kinh nghi\u1EC7m tr\u01B0\u1EDBc, sau \u0111\xF3 khi \u0111\u1EE7 \u0111i\u1EC1u
+        ki\u1EC7n s\u1EBD \u0111\u01B0\u1EE3c x\xE9t duy\u1EC7t l\xEAn fleet ch\xEDnh
+        / h\xE3y gia nh\u1EADp discord v\xE0 &lt;i&gt;(&lt;color=#FFFFFF&gt; X\xC1C
+        MINH&lt;/color&gt; )&lt;/i&gt;  \u0111\u1EC3 \u0111\u01B0\u1EE3c x\xE9t duy\u1EC7t
+        v\xE0o \u0111\xE2y: &lt;/color&gt;&lt;/b&gt; &lt;color=#fa3002&gt;&lt;size=24&gt;&lt;b&gt;&lt;i&gt;
+        DSC.GG/VNPSS&lt;/i&gt;&lt;/b&gt;&lt;/size&gt;&lt;/color&gt;\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"3082\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"1\"
+        Trophy=\"171098\" Ranking=\"0\" AllianceSpriteId=\"2306\" ChannelId=\"32994\"
+        NumberOfMembers=\"81\" NumberOfApprovedMembers=\"81\" AllianceShipUserId=\"5593210\"
+        ImmunityDate=\"2024-03-24T19:51:08\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43835\"
+        AllianceName=\"Viking Outpost\" MinTrophyRequired=\"1000\" RequiresApproval=\"false\"
+        AllianceDescription=\"Welcome to Viking Outpost, casual fleet of the Viking
+        Community! Trainer fleet for the Viking Community! Join now! &lt;color=red&gt;&lt;size=20&gt;
+        discord.gg/pssvikings &lt;/size&gt;&lt;/color&gt;\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"5545\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\"
+        Trophy=\"160091\" Ranking=\"0\" AllianceSpriteId=\"19382\" ChannelId=\"48178\"
+        NumberOfMembers=\"84\" NumberOfApprovedMembers=\"84\" AllianceShipUserId=\"8900454\"
+        ImmunityDate=\"2024-03-25T03:06:32\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44691\"
+        AllianceName=\"ARCHANGEL -X-\" MinTrophyRequired=\"1500\" RequiresApproval=\"false\"
+        AllianceDescription=\"Collect BUX from StarBase Daily/ Train your crew/ Chilax
+        &amp; Don't stress out if you need help! 2W+ afk will be kicked! Get help
+        in our DISCORD: https://discord.com/invite/QNjYGgRQdE (updated!)\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"100\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"10\"
+        Trophy=\"147595\" Ranking=\"0\" AllianceSpriteId=\"19356\" ChannelId=\"49035\"
+        NumberOfMembers=\"72\" NumberOfApprovedMembers=\"72\" AllianceShipUserId=\"10635472\"
+        ImmunityDate=\"2024-03-24T15:39:25\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44841\"
+        AllianceName=\"Phoenix XIII\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"We are Phoenix XIII! We\u2019re a casual fleet with
+        a really strange origin story. All are welcome! Join our new and improved
+        Discord!  --&gt; https://discord.gg/Y53qtjh3\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"2096\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"1\"
+        Trophy=\"137011\" Ranking=\"0\" AllianceSpriteId=\"19390\" ChannelId=\"49188\"
+        NumberOfMembers=\"73\" NumberOfApprovedMembers=\"73\" AllianceShipUserId=\"10804683\"
+        ImmunityDate=\"2024-03-24T21:39:24\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"8472\"
+        AllianceName=\"Sons of Lightning\" MinTrophyRequired=\"1000\" RequiresApproval=\"false\"
+        AllianceDescription=\"Welcome!  We are allied with The Dynasty.  Get expert
+        advice and a huge network of support at https://discord.gg/thedynasty-pss
+        ; This is an old fleet we are bringing back to life :)\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"808\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"1\"
+        Trophy=\"134889\" Ranking=\"0\" AllianceSpriteId=\"19366\" ChannelId=\"12795\"
+        NumberOfMembers=\"82\" NumberOfApprovedMembers=\"82\" AllianceShipUserId=\"2626735\"
+        ImmunityDate=\"2024-03-24T19:51:54\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"32745\"
+        AllianceName=\"\u5973\u4F2F\u7235\u548C\u5979\u7684\u99AC\" MinTrophyRequired=\"999\"
+        RequiresApproval=\"true\" AllianceDescription=\"\u6B61\u8FCE\u5404\u4F4D\u4F86\u5230\u5973\u4F2F\u7235\u548C\u5979\u7684\u99AC\uFF0C\u6B61\u8FCE\u53F0\u6E2F\u6FB3\u73A9\u5BB6\u52A0\u5165\u5171\u540C\u52AA\u529B\u3002\u7533\u8ACB\u52A0\u5165\u4E00\u5F8B\u8ACB\u806F\u7D61\u8266\u968A\u7D93\u7406\u5BE9\u6838\uFF0C\u300ELine
+        ID : libra77777\u300F\u3002\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"27204\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\"
+        Trophy=\"130554\" Ranking=\"0\" AllianceSpriteId=\"19344\" ChannelId=\"37088\"
+        NumberOfMembers=\"95\" NumberOfApprovedMembers=\"95\" AllianceShipUserId=\"5928671\"
+        ImmunityDate=\"2024-03-24T19:35:33\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44946\"
+        AllianceName=\"Reaper Inc\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"693\"
+        Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\" Trophy=\"90457\"
+        Ranking=\"0\" AllianceSpriteId=\"653\" ChannelId=\"49293\" NumberOfMembers=\"94\"
+        NumberOfApprovedMembers=\"94\" AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44941\" AllianceName=\"Nawar
+        bolt\" MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"216\" Score=\"0\" ChampionshipScore=\"2\"
+        MinScoreContribution=\"0\" Trophy=\"89237\" Ranking=\"0\" AllianceSpriteId=\"19344\"
+        ChannelId=\"49288\" NumberOfMembers=\"91\" NumberOfApprovedMembers=\"91\"
+        AllianceShipUserId=\"10976449\" ImmunityDate=\"2024-03-24T19:51:06\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44766\" AllianceName=\"R3dacted\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"Welcome to R3dacted! This
+        is a fleet for the ones who follow truth and integrity, while seeking for
+        self improvement. As well as being active in tournaments, and helping the
+        ones in need. Hope you enjoy your stay and feel at home! Discord is also mandatory.
+        A;A;Discord link: https://discord.gg/mAnJmBdXhr\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"2007\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\"
+        Trophy=\"80312\" Ranking=\"0\" AllianceSpriteId=\"19362\" ChannelId=\"49113\"
+        NumberOfMembers=\"51\" NumberOfApprovedMembers=\"51\" AllianceShipUserId=\"10759443\"
+        ImmunityDate=\"2024-03-24T16:59:48\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44898\"
+        AllianceName=\"Fish\" MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"&quot;When
+        in reality, we're all just a fish swimming in a ocean we call home.&quot;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"104\" Score=\"0\" ChampionshipScore=\"2\"
+        MinScoreContribution=\"1\" Trophy=\"73072\" Ranking=\"0\" AllianceSpriteId=\"19380\"
+        ChannelId=\"49245\" NumberOfMembers=\"90\" NumberOfApprovedMembers=\"90\"
+        AllianceShipUserId=\"10900679\" ImmunityDate=\"2024-03-24T19:51:25\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43909\" AllianceName=\"Training Station\" MinTrophyRequired=\"2500\"
+        RequiresApproval=\"false\" AllianceDescription=\"La Training Station est ferm\xE9e\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1449\" Score=\"0\"
+        ChampionshipScore=\"2\" MinScoreContribution=\"0\" Trophy=\"68191\" Ranking=\"0\"
+        AllianceSpriteId=\"19362\" ChannelId=\"48251\" NumberOfMembers=\"36\" NumberOfApprovedMembers=\"36\"
+        AllianceShipUserId=\"9079502\" ImmunityDate=\"2024-03-24T14:55:09\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"43628\" AllianceName=\"\u9F99\u7684\u4F20\u4EBA\"
+        MinTrophyRequired=\"1000\" RequiresApproval=\"true\" AllianceDescription=\"\u5165\u961F\u8BF7\u52A0\u7FA4\uFF1A929709603\u3002---\u7FA4\u5185\u6709\u5B8C\u5584\u7684\u653B\u7565\uFF0C\u767E\u5F3A\u5927\u4F6C\u5728\u7EBF\u7B54\u7591\u3002\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"165\" Score=\"0\" ChampionshipScore=\"2\"
+        MinScoreContribution=\"20\" Trophy=\"64527\" Ranking=\"0\" AllianceSpriteId=\"2282\"
+        ChannelId=\"47971\" NumberOfMembers=\"75\" NumberOfApprovedMembers=\"74\"
+        AllianceShipUserId=\"7890304\" ImmunityDate=\"2024-03-24T21:54:11\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44908\" AllianceName=\"Galactic Plague\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"English speaking fleet. Join
+        so we can conquer the galaxy!\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"1532\" Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\"
+        Trophy=\"53859\" Ranking=\"0\" AllianceSpriteId=\"19348\" ChannelId=\"49255\"
+        NumberOfMembers=\"83\" NumberOfApprovedMembers=\"83\" AllianceShipUserId=\"10926987\"
+        ImmunityDate=\"2024-03-24T19:51:13\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44932\"
+        AllianceName=\"Flota Lobo Verde\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"111\"
+        Score=\"0\" ChampionshipScore=\"2\" MinScoreContribution=\"0\" Trophy=\"45662\"
+        Ranking=\"0\" AllianceSpriteId=\"2268\" ChannelId=\"49279\" NumberOfMembers=\"90\"
+        NumberOfApprovedMembers=\"90\" AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44917\" AllianceName=\"PIXELMEN\"
+        MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"A;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"525\" Score=\"0\" ChampionshipScore=\"2\"
+        MinScoreContribution=\"11111\" Trophy=\"42756\" Ranking=\"0\" AllianceSpriteId=\"19379\"
+        ChannelId=\"49264\" NumberOfMembers=\"91\" NumberOfApprovedMembers=\"91\"
+        AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44969\" AllianceName=\"2ooted\" MinTrophyRequired=\"1700\"
+        RequiresApproval=\"false\" AllianceDescription=\"Welcome to 2ooted!!! This
+        is Zooted\u2019s second fleet and we plan on taking over the pixel universe!!!
+        Join discord for events prizes and more! https://discord.gg/DGfupjMp\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"1126\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"204932\" Ranking=\"0\" AllianceSpriteId=\"19371\" ChannelId=\"49316\"
+        NumberOfMembers=\"92\" NumberOfApprovedMembers=\"92\" AllianceShipUserId=\"11043762\"
+        ImmunityDate=\"2024-03-24T19:33:07\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44971\"
+        AllianceName=\"the no names\" MinTrophyRequired=\"1500\" RequiresApproval=\"false\"
+        AllianceDescription=\"we have no name  :|A;A;Must be active or will be kicked.
+        Discord invite: https://discord.com/invite/JsMtCyG9\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"364\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"6\"
+        Trophy=\"168378\" Ranking=\"0\" AllianceSpriteId=\"2277\" ChannelId=\"49318\"
+        NumberOfMembers=\"79\" NumberOfApprovedMembers=\"79\" AllianceShipUserId=\"11016252\"
+        ImmunityDate=\"2024-03-24T18:27:59\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44956\"
+        AllianceName=\"Highnins Buxfarm\" MinTrophyRequired=\"1\" RequiresApproval=\"false\"
+        AllianceDescription=\"Welcome to Highnin's Buxfarm (opened 02/02/2024)! Complimentary
+        retirement parking! Discord server (shared with ARCHANGEL CIX/XC): JOIN US
+        HERE! https://discord.gg/QNjYGgRQdED; and verify yourself in PSS.\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"305\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"154112\" Ranking=\"0\" AllianceSpriteId=\"2311\" ChannelId=\"49303\"
+        NumberOfMembers=\"92\" NumberOfApprovedMembers=\"92\" AllianceShipUserId=\"10993722\"
+        ImmunityDate=\"2024-03-25T02:17:08\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44958\"
+        AllianceName=\"ERT\" MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"225\" Score=\"0\" ChampionshipScore=\"1\"
+        MinScoreContribution=\"0\" Trophy=\"143431\" Ranking=\"0\" AllianceSpriteId=\"19344\"
+        ChannelId=\"49305\" NumberOfMembers=\"96\" NumberOfApprovedMembers=\"96\"
+        AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44975\" AllianceName=\"TitanBrawlers\" MinTrophyRequired=\"1000\"
+        RequiresApproval=\"false\" AllianceDescription=\"Looking for active players.
+        \" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"803\" Score=\"0\"
+        ChampionshipScore=\"1\" MinScoreContribution=\"1000\" Trophy=\"142162\" Ranking=\"0\"
+        AllianceSpriteId=\"19379\" ChannelId=\"49322\" NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\"
+        AllianceShipUserId=\"11024780\" ImmunityDate=\"2024-03-25T02:37:09\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44882\" AllianceName=\"Dynasty Immortal\" MinTrophyRequired=\"500\"
+        RequiresApproval=\"false\" AllianceDescription=\"We are a tournament fleet
+        going for gold in division D. We have resources and people to teach you whatever
+        you want to know, however fast you want to learn it. We will teach you how
+        to play and in exchange, you will fight in the monthly tournament.A;A;Discord
+        required. Discord.gg/thedynasty-pss \" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"770\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"42\"
+        Trophy=\"136568\" Ranking=\"0\" AllianceSpriteId=\"654\" ChannelId=\"49229\"
+        NumberOfMembers=\"67\" NumberOfApprovedMembers=\"67\" AllianceShipUserId=\"10870028\"
+        ImmunityDate=\"2024-03-24T18:25:47\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44949\"
+        AllianceName=\"the noobs\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"come and get noob\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"1870\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"133120\" Ranking=\"0\" AllianceSpriteId=\"655\" ChannelId=\"49296\"
+        NumberOfMembers=\"90\" NumberOfApprovedMembers=\"90\" AllianceShipUserId=\"0\"
+        ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44967\"
+        AllianceName=\"NoMansFleet\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"521\"
+        Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\" Trophy=\"131761\"
+        Ranking=\"0\" AllianceSpriteId=\"2314\" ChannelId=\"49314\" NumberOfMembers=\"99\"
+        NumberOfApprovedMembers=\"99\" AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44965\" AllianceName=\"DRUZE\"
+        MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"178\" Score=\"0\" ChampionshipScore=\"1\"
+        MinScoreContribution=\"0\" Trophy=\"130293\" Ranking=\"0\" AllianceSpriteId=\"2280\"
+        ChannelId=\"49312\" NumberOfMembers=\"97\" NumberOfApprovedMembers=\"97\"
+        AllianceShipUserId=\"0\" ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44682\" AllianceName=\"Soltan Militia\" MinTrophyRequired=\"1100\"
+        RequiresApproval=\"true\" AllianceDescription=\"&lt;color=#8c6bb1&gt;Welcome
+        to the &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Soltan Militia! &lt;/b&gt;&lt;/color&gt;&lt;color=#8c6bb1&gt;The
+        training/casual branch of the &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Soltan
+        Empire. &lt;/b&gt;&lt;/color&gt;&lt;color=#8c6bb1&gt;Together we will take
+        the galaxy! &lt;/color&gt;&lt;color=#e9d502&gt;&lt;b&gt;Glory to the Soltan
+        Militia!&lt;/b&gt;&lt;/color&gt;            &lt;color=#8c96c6&gt;&lt;I&gt;Discord:https://discord.com/invite/E4NXt59jQg&lt;/I&gt;&lt;/color&gt;\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"2695\" Score=\"0\"
+        ChampionshipScore=\"1\" MinScoreContribution=\"0\" Trophy=\"127755\" Ranking=\"0\"
+        AllianceSpriteId=\"19373\" ChannelId=\"49026\" NumberOfMembers=\"61\" NumberOfApprovedMembers=\"61\"
+        AllianceShipUserId=\"10525686\" ImmunityDate=\"2024-03-25T02:50:05\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44952\" AllianceName=\"Star Leaders\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"235\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"127688\" Ranking=\"0\" AllianceSpriteId=\"2316\" ChannelId=\"49299\"
+        NumberOfMembers=\"86\" NumberOfApprovedMembers=\"86\" AllianceShipUserId=\"11024432\"
+        ImmunityDate=\"2024-03-24T20:16:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44961\"
+        AllianceName=\"Nook Syndicate\" MinTrophyRequired=\"1100\" RequiresApproval=\"false\"
+        AllianceDescription=\"Casual players group.\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"497\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"109989\" Ranking=\"0\" AllianceSpriteId=\"19382\" ChannelId=\"49308\"
+        NumberOfMembers=\"58\" NumberOfApprovedMembers=\"58\" AllianceShipUserId=\"0\"
+        ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44945\"
+        AllianceName=\"Rude Awakening\" MinTrophyRequired=\"0\" RequiresApproval=\"true\"
+        AllianceDescription=\"A Fleet for those who dont want the sweat life but a
+        decent level of action. A top 100 leaderboard fleet set on conquering the
+        competition!!\" AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1298\"
+        Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"10\" Trophy=\"102438\"
+        Ranking=\"0\" AllianceSpriteId=\"19348\" ChannelId=\"49292\" NumberOfMembers=\"58\"
+        NumberOfApprovedMembers=\"58\" AllianceShipUserId=\"10986559\" ImmunityDate=\"2024-03-25T01:01:47\"
+        DivisionDesignId=\"0\" /><Alliance AllianceId=\"44950\" AllianceName=\"LAZER\"
+        MinTrophyRequired=\"0\" RequiresApproval=\"false\" AllianceDescription=\"LAZER
+        starship fleet ! Join us as we dominate the battlefield;A;A;English speaking
+        clan; A;Located in India; A;Newbie Friendly; A;Looking for active players;
+        \ A;A;https://discord.gg/qJeQzwDZ\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"159\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"102367\" Ranking=\"0\" AllianceSpriteId=\"19378\" ChannelId=\"49297\"
+        NumberOfMembers=\"95\" NumberOfApprovedMembers=\"95\" AllianceShipUserId=\"0\"
+        ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44942\"
+        AllianceName=\"Cosmic Leviathan\" MinTrophyRequired=\"1450\" RequiresApproval=\"false\"
+        AllianceDescription=\"Become one with the Cosmic Leviathan! The galaxy will
+        become ensared by our coil!A;We are looking for good members to take our fleet
+        to the next level! A fleet Discord server is on the way!\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"363\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"101163\" Ranking=\"0\" AllianceSpriteId=\"19372\" ChannelId=\"49289\"
+        NumberOfMembers=\"81\" NumberOfApprovedMembers=\"81\" AllianceShipUserId=\"11067106\"
+        ImmunityDate=\"2024-03-24T00:50:15\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"44519\"
+        AllianceName=\"Star Pickles\" MinTrophyRequired=\"0\" RequiresApproval=\"false\"
+        AllianceDescription=\"We are the pickle people. Defenders of pickles everywhere.
+        Pickles now, Pickles tomorrow, Pickles forever.   Discord: https://discord.gg/RfQcA6PP9P\"
+        AllianceCountryCode=\"\" EnableWars=\"true\" Credits=\"1838\" Score=\"0\"
+        ChampionshipScore=\"1\" MinScoreContribution=\"20\" Trophy=\"94914\" Ranking=\"0\"
+        AllianceSpriteId=\"19385\" ChannelId=\"48863\" NumberOfMembers=\"67\" NumberOfApprovedMembers=\"67\"
+        AllianceShipUserId=\"10275589\" ImmunityDate=\"2024-03-25T00:16:08\" DivisionDesignId=\"0\"
+        /><Alliance AllianceId=\"44944\" AllianceName=\"Raven Corps.\" MinTrophyRequired=\"0\"
+        RequiresApproval=\"false\" AllianceDescription=\"\" AllianceCountryCode=\"\"
+        EnableWars=\"true\" Credits=\"401\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"94339\" Ranking=\"0\" AllianceSpriteId=\"19383\" ChannelId=\"49291\"
+        NumberOfMembers=\"85\" NumberOfApprovedMembers=\"85\" AllianceShipUserId=\"0\"
+        ImmunityDate=\"2000-01-01T00:00:00\" DivisionDesignId=\"0\" /><Alliance AllianceId=\"43799\"
+        AllianceName=\"PsyloPilot\" MinTrophyRequired=\"500\" RequiresApproval=\"false\"
+        AllianceDescription=\"Nur mit Helm!\" AllianceCountryCode=\"\" EnableWars=\"true\"
+        Credits=\"0\" Score=\"0\" ChampionshipScore=\"1\" MinScoreContribution=\"0\"
+        Trophy=\"90690\" Ranking=\"0\" AllianceSpriteId=\"2285\" ChannelId=\"48142\"
+        NumberOfMembers=\"100\" NumberOfApprovedMembers=\"100\" AllianceShipUserId=\"8851582\"
+        ImmunityDate=\"2024-03-24T19:39:17\" DivisionDesignId=\"0\" /></Alliances></ListUsersByChampionshipScoreRanking></AllianceService>"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:02 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:01 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:01 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 95e3cc9e14ff093ad937f013959268c0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - WSPC8Um0-z2tyxe9bKj56mlt2F2jkHIutrnuS-CxWyYMejaJnnGFFw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

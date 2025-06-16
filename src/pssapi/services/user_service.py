@@ -1,9 +1,9 @@
+import datetime as _datetime
 import hashlib as _hashlib
 import random as _random
 import string as _string
-from datetime import datetime as _datetime
 from typing import List as _List
-from typing import Tuple as _Tuple
+from uuid import uuid4
 
 import pssapi.services.service_base as _service_base
 
@@ -15,7 +15,21 @@ from .raw import UserServiceRaw as _UserServiceRaw
 
 class _UserServiceUtils:
     @staticmethod
-    def create_device_login_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime, checksum_key: str) -> str:
+    def create_device_login_checksum(device_type: _enums.DeviceType, client_datetime: _datetime.datetime, checksum_key: str = None, device_key: str = None) -> str:
+        """
+        Generate a checksum for the `DeviceLogin` endpoints.
+
+        :param device_type: Device type.
+        :param client_datetime: Current UTC date and time.
+        :param checksum_key: A secret key for creating the checksum. While easily found online, it won't be included in pssapi, complying with SavySoda.
+        :param device_key: Optional UUID; will be generated if left empty.
+        """
+        if not checksum_key:
+            raise _utils.exceptions.InvalidChecksumKey()
+
+        if not device_key:
+            device_key = uuid4()
+
         timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
         result = _hashlib.md5(f"{device_key}{timestamp}{device_type}{checksum_key}savysoda".encode("utf-8")).hexdigest()
         return result
@@ -24,7 +38,6 @@ class _UserServiceUtils:
     def _create_device_key() -> str:
         result = "".join(_random.choice(_string.hexdigits) + _random.choice("26ae") + _random.choices(_string.hexdigits, k=10))
         return result
-
 
 class UserService(_service_base.ServiceBase):
     utils = _UserServiceUtils()
@@ -47,7 +60,7 @@ class UserService(_service_base.ServiceBase):
     async def device_login(
         self,
         checksum: str,
-        client_date_time: _datetime,
+        client_date_time: _datetime.datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         access_token: str = None,
@@ -87,7 +100,7 @@ class UserService(_service_base.ServiceBase):
     async def device_login_11(
         self,
         checksum: str,
-        client_date_time: _datetime,
+        client_date_time: _datetime.datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
@@ -114,7 +127,7 @@ class UserService(_service_base.ServiceBase):
     async def device_login_12(
         self,
         checksum: str,
-        client_date_time: _datetime,
+        client_date_time: _datetime.datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
@@ -155,7 +168,7 @@ class UserService(_service_base.ServiceBase):
     async def device_login_15(
         self,
         checksum: str,
-        client_date_time: _datetime,
+        client_date_time: _datetime.datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
@@ -198,9 +211,14 @@ class UserService(_service_base.ServiceBase):
         result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
         return result
 
-    async def list_skins(self, design_version: int = None) -> _Tuple[_entities.SkinSet, _entities.Skin]:
+    async def list_skin_sets(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_entities.SkinSet]:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.list_skins(production_server, design_version, self.language_key)
+        result = await _UserServiceRaw.list_skin_sets_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
+        return result
+
+    async def list_skins(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_entities.Skin]:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.list_skins_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
 
     async def remove_friend(self, access_token: str, friend_user_id: int) -> None:
@@ -215,7 +233,7 @@ class UserService(_service_base.ServiceBase):
     async def steam_login(
         self,
         checksum: str,
-        client_date_time: _datetime,
+        client_date_time: _datetime.datetime,
         device_key: str,
         device_type: _enums.DeviceType,
         language_key: _enums.LanguageKey,
@@ -256,8 +274,10 @@ class UserService(_service_base.ServiceBase):
         return result
 
     async def user_email_password_authorize(
-        self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, language_key: str, password: str
+        self, access_token: str, checksum: str, client_date_time: _datetime.datetime, device_key: str, email: str, is_web: bool, language_key: str, password: str
     ) -> _entities.UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.user_email_password_authorize_4(production_server, access_token, checksum, client_date_time, device_key, email, is_web, language_key, password)
+        result = await _UserServiceRaw.user_email_password_authorize_4(
+            production_server, access_token, checksum, _utils.datetime.convert_to_pss_timestamp(client_date_time), device_key, email, is_web, language_key, password
+        )
         return result

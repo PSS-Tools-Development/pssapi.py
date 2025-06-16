@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/LiveOpsService/GetCatalogQuantity
+  response:
+    body:
+      string: <LiveOpsService><GetCatalogQuantity LimitedCatalogQuantity="42"/></LiveOpsService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:25 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 11bc309875abf4cdfea734f39118b58e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - kLckZFM3uv3pru9EHUWsCYyoEuf3ZoJoi9Mi9L7h_H_NOHpyMU533A==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

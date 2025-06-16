@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/GetAlliance?allianceId=21
+  response:
+    body:
+      string: '<AllianceService><GetAlliance><Alliance AllianceId="21" AllianceName="Trek
+        Wolfpack" MinTrophyRequired="3200" RequiresApproval="true" AllianceDescription="Welcome
+        to Wolfpack! We are a proud member of the Trek Federation. Come into the den,
+        where we shape young wolves into battle-hardened veterans that roam the skies
+        hunting for prey. This fleet is a competitive fleet in div. B, that requires
+        a minimum of 50 stars per tournament - activity is mandatory. Minimum hull
+        level: 9. Activity on Discord is mandatory:A;https://discord.gg/cBcB3ap.A;AWOOOOOOO!"
+        AllianceCountryCode="" EnableWars="true" Credits="2481" Score="0" ChampionshipScore="25"
+        MinScoreContribution="40" Trophy="334137" Ranking="14" AllianceSpriteId="19349"
+        ChannelId="120" NumberOfMembers="79" NumberOfApprovedMembers="0" AllianceShipUserId="2624870"
+        ImmunityDate="2024-03-24T22:31:39" DivisionDesignId="0" /></GetAlliance></AllianceService>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '910'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:00 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:18:00 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:00 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Via:
+      - 1.1 29a3bbd8332d2baa21b0652a77f11198.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - s8ZcOddVUv6nlgu1jD2qjNEGFwR6FZGBRD-bY0OAZy-sPDNm7cyUzA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

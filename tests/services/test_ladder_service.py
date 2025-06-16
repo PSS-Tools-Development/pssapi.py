@@ -5,7 +5,7 @@ import pssapi
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(record_mode="once")
 async def test_list_users_by_championship_score_ranking(client: pssapi.PssApiClient, access_token: str):
     users = await client.ladder_service.list_users_by_championship_score_ranking(access_token, 1, 100)
     assert isinstance(users, list)
@@ -15,7 +15,7 @@ async def test_list_users_by_championship_score_ranking(client: pssapi.PssApiCli
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(record_mode="once")
 async def test_list_users_by_ranking(client: pssapi.PssApiClient, access_token: str):
     users = await client.ladder_service.list_users_by_ranking(access_token, 1, 100)
     assert isinstance(users, list)

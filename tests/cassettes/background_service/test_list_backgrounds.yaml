@@ -1,0 +1,204 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/BackgroundService/ListBackgrounds?clientDateTime=2024-03-24T17%3A17%3A02
+  response:
+    body:
+      string: <BackgroundService><ListBackgrounds version="500"><Backgrounds><Background
+        BackgroundId="4" BackgroundSpriteId="469" FarObjectSpriteId="465,466,467"
+        MediumObjectSpriteId="462,463,464" CloseObjectSpriteId="468" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="5" BackgroundSpriteId="531" FarObjectSpriteId="533"
+        MediumObjectSpriteId="" CloseObjectSpriteId="532" BackgroundEffectType="Nebula"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="7" BackgroundSpriteId="2424" FarObjectSpriteId="2427"
+        MediumObjectSpriteId="2426" CloseObjectSpriteId="2425" BackgroundEffectType="Normal"
+        BackgroundType="Main" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="8" BackgroundSpriteId="2465" FarObjectSpriteId=""
+        MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Special" EnvironmentType="None" EnvironmentIntArgument="0"
+        EnvironmentFloatArgument="0" IsActive="true" HazardType="None" HazardArgument="0"
+        MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0" HazardCategory="None"
+        OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0"
+        OrbitAnimationId="0" /><Background BackgroundId="13" BackgroundSpriteId="2647"
+        FarObjectSpriteId="2648,2649,2650,2651" MediumObjectSpriteId="" CloseObjectSpriteId="2652"
+        BackgroundEffectType="Mirror" BackgroundType="Both" EnvironmentType="None"
+        EnvironmentIntArgument="0" EnvironmentFloatArgument="0" IsActive="true" HazardType="None"
+        HazardArgument="0" MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0"
+        HazardCategory="None" OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0"
+        HazardEffectSpriteId="0" OrbitAnimationId="0" /><Background BackgroundId="14"
+        BackgroundSpriteId="2424" FarObjectSpriteId="3309,3310" MediumObjectSpriteId="3306,3307,3308"
+        CloseObjectSpriteId="3305" BackgroundEffectType="Normal" BackgroundType="Main"
+        EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="15" BackgroundSpriteId="2424" FarObjectSpriteId="3812,3814,3815"
+        MediumObjectSpriteId="3810,3811,3813" CloseObjectSpriteId="3809" BackgroundEffectType="Normal"
+        BackgroundType="Main" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="16" BackgroundSpriteId="2424" FarObjectSpriteId="4352"
+        MediumObjectSpriteId="4353,4354" CloseObjectSpriteId="4355" BackgroundEffectType="Normal"
+        BackgroundType="Main" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="17" BackgroundSpriteId="5051" FarObjectSpriteId=""
+        MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="18" BackgroundSpriteId="10834" FarObjectSpriteId=""
+        MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Special" EnvironmentType="None" EnvironmentIntArgument="0"
+        EnvironmentFloatArgument="0" IsActive="false" HazardType="None" HazardArgument="0"
+        MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0" HazardCategory="None"
+        OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0"
+        OrbitAnimationId="0" /><Background BackgroundId="19" BackgroundSpriteId="11337"
+        FarObjectSpriteId="" MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Special" EnvironmentType="None" EnvironmentIntArgument="0"
+        EnvironmentFloatArgument="0" IsActive="true" HazardType="None" HazardArgument="0"
+        MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0" HazardCategory="None"
+        OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0"
+        OrbitAnimationId="0" /><Background BackgroundId="20" BackgroundSpriteId="13279"
+        FarObjectSpriteId="" MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="EMP" HazardArgument="400" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="100" HazardCategory="Initial" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="21" BackgroundSpriteId="469" FarObjectSpriteId="465,466,467"
+        MediumObjectSpriteId="462,463,464" CloseObjectSpriteId="468" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="Fire" HazardArgument="600" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="100" HazardCategory="Initial" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="22" BackgroundSpriteId="13264" FarObjectSpriteId=""
+        MediumObjectSpriteId="462,463,464" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="Freeze" HazardArgument="400" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="100" HazardCategory="Initial" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="23" BackgroundSpriteId="13279" FarObjectSpriteId=""
+        MediumObjectSpriteId="" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="EMP" HazardArgument="200" MinHazardInterval="600"
+        MaxHazardInterval="1200" HazardChance="50" HazardCategory="Interval" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="24" BackgroundSpriteId="469" FarObjectSpriteId="465,466,467"
+        MediumObjectSpriteId="462,463,464" CloseObjectSpriteId="468" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="Fire" HazardArgument="240" MinHazardInterval="800"
+        MaxHazardInterval="1600" HazardChance="30" HazardCategory="Interval" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="25" BackgroundSpriteId="13264" FarObjectSpriteId=""
+        MediumObjectSpriteId="462,463,464" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="false" HazardType="Freeze" HazardArgument="200" MinHazardInterval="500"
+        MaxHazardInterval="600" HazardChance="40" HazardCategory="Interval" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="2728" HazardEffectSpriteId="4632" OrbitAnimationId="0"
+        /><Background BackgroundId="34" BackgroundSpriteId="15692" FarObjectSpriteId="15648,15651"
+        MediumObjectSpriteId="15647,15651" CloseObjectSpriteId="15646,15651" BackgroundEffectType="Normal"
+        BackgroundType="Main" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="35" BackgroundSpriteId="16123" FarObjectSpriteId="16207"
+        MediumObjectSpriteId="16206,16124" CloseObjectSpriteId="16205,16124" BackgroundEffectType="Normal"
+        BackgroundType="Main" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="37" BackgroundSpriteId="16504" FarObjectSpriteId="16527"
+        MediumObjectSpriteId="16527" CloseObjectSpriteId="" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Bottom"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="38" BackgroundSpriteId="16631" FarObjectSpriteId="16630"
+        MediumObjectSpriteId="16629" CloseObjectSpriteId="16628" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="39" BackgroundSpriteId="16818" FarObjectSpriteId="2427"
+        MediumObjectSpriteId="2426" CloseObjectSpriteId="2425" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Bottom"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="1616"
+        /><Background BackgroundId="40" BackgroundSpriteId="16935" FarObjectSpriteId="2427"
+        MediumObjectSpriteId="2426,13114" CloseObjectSpriteId="2425" BackgroundEffectType="Normal"
+        BackgroundType="Both" EnvironmentType="None" EnvironmentIntArgument="0" EnvironmentFloatArgument="0"
+        IsActive="true" HazardType="None" HazardArgument="0" MinHazardInterval="0"
+        MaxHazardInterval="0" HazardChance="0" HazardCategory="None" OrbitAnchorAlignment="Center"
+        MusicFileId="0" HazardIconSpriteId="0" HazardEffectSpriteId="0" OrbitAnimationId="0"
+        /><Background BackgroundId="41" BackgroundSpriteId="2424" FarObjectSpriteId="17005,
+        15168" MediumObjectSpriteId="17005, 15168" CloseObjectSpriteId="17005, 15168"
+        BackgroundEffectType="Normal" BackgroundType="Main" EnvironmentType="None"
+        EnvironmentIntArgument="0" EnvironmentFloatArgument="0" IsActive="true" HazardType="None"
+        HazardArgument="0" MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0"
+        HazardCategory="None" OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0"
+        HazardEffectSpriteId="0" OrbitAnimationId="0" /><Background BackgroundId="42"
+        BackgroundSpriteId="17116" FarObjectSpriteId="" MediumObjectSpriteId="" CloseObjectSpriteId="11354,7436,13100"
+        BackgroundEffectType="Normal" BackgroundType="Both" EnvironmentType="None"
+        EnvironmentIntArgument="0" EnvironmentFloatArgument="0" IsActive="true" HazardType="None"
+        HazardArgument="0" MinHazardInterval="0" MaxHazardInterval="0" HazardChance="0"
+        HazardCategory="None" OrbitAnchorAlignment="Center" MusicFileId="0" HazardIconSpriteId="0"
+        HazardEffectSpriteId="0" OrbitAnimationId="0" /></Backgrounds></ListBackgrounds></BackgroundService>
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=1200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 24 Mar 2024 17:17:06 GMT
+      Expires:
+      - Sun, 24 Mar 2024 17:37:06 GMT
+      Last-Modified:
+      - Sun, 24 Mar 2024 17:17:06 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 55c4cb6ad29c7bbcd0c8f2d8b906a83e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - gic9qT3YmudvfSxoUTr-AAU8rvgUWjgcPMiFNOLjXPAUI_A2-A9ZiA==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

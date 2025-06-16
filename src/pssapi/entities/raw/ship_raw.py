@@ -11,53 +11,57 @@ import pssapi.entities as _entities
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class ShipRaw:
+class ShipRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "Ship"
 
     def __init__(self, ship_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._brightness_value: float = _parse.pss_float(ship_info.get("BrightnessValue"))
-        self._center_x: int = _parse.pss_int(ship_info.get("CenterX"))
-        self._center_y: int = _parse.pss_int(ship_info.get("CenterY"))
-        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.get("Characters")] if ship_info.get("Characters") else []
-        self._from_star_system_id: int = _parse.pss_int(ship_info.get("FromStarSystemId"))
-        self._hp: float = _parse.pss_float(ship_info.get("Hp"))
-        self._hue_value: float = _parse.pss_float(ship_info.get("HueValue"))
-        self._immunity_date: _datetime = _parse.pss_datetime(ship_info.get("ImmunityDate"))
-        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.get("Items")] if ship_info.get("Items") else []
-        self._next_android_character_id: int = _parse.pss_int(ship_info.get("NextAndroidCharacterId"))
-        self._next_star_system_id: int = _parse.pss_int(ship_info.get("NextStarSystemId"))
-        self._origin_next_star_system_id: int = _parse.pss_int(ship_info.get("OriginNextStarSystemId"))
-        self._origin_star_system_id: int = _parse.pss_int(ship_info.get("OriginStarSystemId"))
-        self._original_race_id: int = _parse.pss_int(ship_info.get("OriginalRaceId"))
-        self._power_score: int = _parse.pss_int(ship_info.get("PowerScore"))
-        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.get("Rooms")] if ship_info.get("Rooms") else []
-        self._salvage_argument: int = _parse.pss_int(ship_info.get("SalvageArgument"))
-        self._saturation_value: float = _parse.pss_float(ship_info.get("SaturationValue"))
-        self._shield: int = _parse.pss_int(ship_info.get("Shield"))
-        self._ship_design_id: int = _parse.pss_int(ship_info.get("ShipDesignId"))
-        self._ship_id: int = _parse.pss_int(ship_info.get("ShipId"))
-        self._ship_level: int = _parse.pss_int(ship_info.get("ShipLevel"))
-        self._ship_name: str = _parse.pss_str(ship_info.get("ShipName"))
-        self._ship_status: str = _parse.pss_str(ship_info.get("ShipStatus"))
-        self._skin_item_design_id: int = _parse.pss_int(ship_info.get("SkinItemDesignId"))
-        self._skin_opacity_value: float = _parse.pss_float(ship_info.get("SkinOpacityValue"))
-        self._standard_character_draws: int = _parse.pss_int(ship_info.get("StandardCharacterDraws"))
-        self._star_system_arrival_date: _datetime = _parse.pss_datetime(ship_info.get("StarSystemArrivalDate"))
-        self._star_system_id: int = _parse.pss_int(ship_info.get("StarSystemId"))
-        self._status_start_date: _datetime = _parse.pss_datetime(ship_info.get("StatusStartDate"))
-        self._sticker_string: str = _parse.pss_str(ship_info.get("StickerString"))
-        self._tags: str = _parse.pss_str(ship_info.get("Tags"))
-        self._top_left_x: int = _parse.pss_int(ship_info.get("TopLeftX"))
-        self._top_left_y: int = _parse.pss_int(ship_info.get("TopLeftY"))
-        self._unique_character_draws: int = _parse.pss_int(ship_info.get("UniqueCharacterDraws"))
-        self._update_date: _datetime = _parse.pss_datetime(ship_info.get("UpdateDate"))
-        self._upgrade_ship_design_id: int = _parse.pss_int(ship_info.get("UpgradeShipDesignId"))
-        self._upgrade_start_date: _datetime = _parse.pss_datetime(ship_info.get("UpgradeStartDate"))
-        self._user_id: int = _parse.pss_int(ship_info.get("UserId"))
-        self._user_star_systems: _List[_entities.UserStarSystem] = [_entities.UserStarSystem(child_info) for child_info in ship_info.get("UserStarSystems")] if ship_info.get("UserStarSystems") else []
+        self._brightness_value: float = _parse.pss_float(ship_info.pop("BrightnessValue", None))
+        self._center_x: int = _parse.pss_int(ship_info.pop("CenterX", None))
+        self._center_y: int = _parse.pss_int(ship_info.pop("CenterY", None))
+        self._characters: _List[_entities.Character] = [_entities.Character(child_info) for child_info in ship_info.pop("Characters")[0].get("Character", [])] if ship_info.get("Characters") else []
+        self._from_star_system_id: int = _parse.pss_int(ship_info.pop("FromStarSystemId", None))
+        self._hp: float = _parse.pss_float(ship_info.pop("Hp", None))
+        self._hue_value: float = _parse.pss_float(ship_info.pop("HueValue", None))
+        self._immunity_date: _datetime = _parse.pss_datetime(ship_info.pop("ImmunityDate", None))
+        self._items: _List[_entities.Item] = [_entities.Item(child_info) for child_info in ship_info.pop("Items")[0].get("Item", [])] if ship_info.get("Items") else []
+        self._next_android_character_id: int = _parse.pss_int(ship_info.pop("NextAndroidCharacterId", None))
+        self._next_star_system_id: int = _parse.pss_int(ship_info.pop("NextStarSystemId", None))
+        self._origin_next_star_system_id: int = _parse.pss_int(ship_info.pop("OriginNextStarSystemId", None))
+        self._origin_star_system_id: int = _parse.pss_int(ship_info.pop("OriginStarSystemId", None))
+        self._original_race_id: int = _parse.pss_int(ship_info.pop("OriginalRaceId", None))
+        self._power_score: int = _parse.pss_int(ship_info.pop("PowerScore", None))
+        self._rooms: _List[_entities.Room] = [_entities.Room(child_info) for child_info in ship_info.pop("Rooms")[0].get("Room", [])] if ship_info.get("Rooms") else []
+        self._salvage_argument: int = _parse.pss_int(ship_info.pop("SalvageArgument", None))
+        self._saturation_value: float = _parse.pss_float(ship_info.pop("SaturationValue", None))
+        self._shield: int = _parse.pss_int(ship_info.pop("Shield", None))
+        self._ship_design_id: int = _parse.pss_int(ship_info.pop("ShipDesignId", None))
+        self._ship_id: int = _parse.pss_int(ship_info.pop("ShipId", None))
+        self._ship_level: int = _parse.pss_int(ship_info.pop("ShipLevel", None))
+        self._ship_name: str = _parse.pss_str(ship_info.pop("ShipName", None))
+        self._ship_status: str = _parse.pss_str(ship_info.pop("ShipStatus", None))
+        self._skin_item_design_id: int = _parse.pss_int(ship_info.pop("SkinItemDesignId", None))
+        self._skin_opacity_value: float = _parse.pss_float(ship_info.pop("SkinOpacityValue", None))
+        self._standard_character_draws: int = _parse.pss_int(ship_info.pop("StandardCharacterDraws", None))
+        self._star_system_arrival_date: _datetime = _parse.pss_datetime(ship_info.pop("StarSystemArrivalDate", None))
+        self._star_system_id: int = _parse.pss_int(ship_info.pop("StarSystemId", None))
+        self._status_start_date: _datetime = _parse.pss_datetime(ship_info.pop("StatusStartDate", None))
+        self._sticker_string: str = _parse.pss_str(ship_info.pop("StickerString", None))
+        self._tags: str = _parse.pss_str(ship_info.pop("Tags", None))
+        self._top_left_x: int = _parse.pss_int(ship_info.pop("TopLeftX", None))
+        self._top_left_y: int = _parse.pss_int(ship_info.pop("TopLeftY", None))
+        self._unique_character_draws: int = _parse.pss_int(ship_info.pop("UniqueCharacterDraws", None))
+        self._update_date: _datetime = _parse.pss_datetime(ship_info.pop("UpdateDate", None))
+        self._upgrade_ship_design_id: int = _parse.pss_int(ship_info.pop("UpgradeShipDesignId", None))
+        self._upgrade_start_date: _datetime = _parse.pss_datetime(ship_info.pop("UpgradeStartDate", None))
+        self._user_id: int = _parse.pss_int(ship_info.pop("UserId", None))
+        self._user_star_systems: _List[_entities.UserStarSystem] = (
+            [_entities.UserStarSystem(child_info) for child_info in ship_info.pop("UserStarSystems")[0].get("UserStarSystem", [])] if ship_info.get("UserStarSystems") else []
+        )
+        super().__init__(ship_info)
 
     @property
     def brightness_value(self) -> float:
@@ -307,5 +311,6 @@ class ShipRaw:
                 "UserId": self.user_id,
                 "UserStarSystems": [dict(child) for child in self.user_star_systems],
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

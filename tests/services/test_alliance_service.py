@@ -8,7 +8,7 @@ ALLIANCE_NAME = "Trek "
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(recode_mode="once")
 async def test_get_alliance(access_token: str, client: pssapi.PssApiClient):
     alliance = await client.alliance_service.get_alliance(access_token, ALLIANCE_ID)
     assert isinstance(alliance, pssapi.entities.Alliance)
@@ -16,7 +16,7 @@ async def test_get_alliance(access_token: str, client: pssapi.PssApiClient):
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(recode_mode="once")
 async def test_list_alliances_by_championship_score_ranking(access_token: str, client: pssapi.PssApiClient):
     alliances = await client.alliance_service.list_alliances_by_championship_score_ranking(access_token, 0, 100)
     assert isinstance(alliances, list)
@@ -53,7 +53,7 @@ async def test_list_alliances_with_division(client: pssapi.PssApiClient):
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(recode_mode="once")
 async def test_list_characters_given_in_alliance(access_token: str, client: pssapi.PssApiClient):
     characters = await client.alliance_service.list_characters_given_in_alliance(access_token, ALLIANCE_ID, 0, 100)
     assert isinstance(characters, list)
@@ -63,7 +63,7 @@ async def test_list_characters_given_in_alliance(access_token: str, client: pssa
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(recode_mode="once")
 async def test_list_users(access_token: str, client: pssapi.PssApiClient):
     users = await client.alliance_service.list_users(access_token, ALLIANCE_ID, 0, 100)
     assert isinstance(users, list)
@@ -73,7 +73,7 @@ async def test_list_users(access_token: str, client: pssapi.PssApiClient):
 
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
-@pytest.mark.vcr()
+@pytest.mark.vcr(recode_mode="once")
 async def test_search_alliances(access_token: str, client: pssapi.PssApiClient):
     alliances = await client.alliance_service.search_alliances(access_token, ALLIANCE_NAME, 0, 100)
     assert isinstance(alliances, list)

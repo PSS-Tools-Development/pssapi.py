@@ -16,7 +16,9 @@ LIST_ALL_RESEARCH_DESIGNS_2_BASE_PATH: str = "ResearchService/ListAllResearchDes
 # ---------- Endpoints ----------
 
 
-async def list_all_research_designs_2(production_server: str, design_version: int, language_key: str, **params) -> _List[_ResearchDesign]:
-    params = {"designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_ResearchDesign, "ResearchDesigns", True),), "ResearchDesigns", production_server, LIST_ALL_RESEARCH_DESIGNS_2_BASE_PATH, "GET", **params)
+async def list_all_research_designs_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_ResearchDesign]:
+    params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
+    result = await _core.get_entities_from_path(
+        ((_ResearchDesign, "ResearchDesigns", True),), "ResearchDesigns", production_server, LIST_ALL_RESEARCH_DESIGNS_2_BASE_PATH, "GET", response_gzipped=False, **params
+    )
     return result

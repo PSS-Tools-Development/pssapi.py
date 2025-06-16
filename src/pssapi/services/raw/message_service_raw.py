@@ -34,26 +34,28 @@ async def list_active_marketplace_messages_5(
         "userId": user_id,
         **params,
     }
-    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_ACTIVE_MARKETPLACE_MESSAGES_5_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def list_messages_for_channel_key(production_server: str, access_token: str, channel_key: str, **params) -> _List[_Message]:
     params = {"accessToken": access_token, "channelKey": channel_key, **params}
-    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_MESSAGES_FOR_CHANNEL_KEY_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def list_private_messages(production_server: str, access_token: str, **params) -> _List[_Message]:
     params = {"accessToken": access_token, **params}
-    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_PRIVATE_MESSAGES_BASE_PATH, "GET", **params)
+    result = await _core.get_entities_from_path(((_Message, "Messages", True),), "Messages", production_server, LIST_PRIVATE_MESSAGES_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def send_message_3(production_server: str, access_token: str, channel_key: str, message: str, **params) -> _Message:
     params = {"AccessToken": access_token, "ChannelKey": channel_key, "Message": message, **params}
     content = _core.create_request_content(__SEND_MESSAGE_3_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_Message, "Message", False),), "SendMessage", production_server, SEND_MESSAGE_3_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_Message, "Message", False),), "SendMessage", production_server, SEND_MESSAGE_3_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 
@@ -63,7 +65,9 @@ __SEND_MESSAGE_3_REQUEST_CONTENT_STRUCTURE: str = '{"AccessToken":"str","Channel
 async def send_private_message_3(production_server: str, access_token: str, message: str, to_user_id: int, **params) -> _Message:
     params = {"AccessToken": access_token, "Message": message, "ToUserId": to_user_id, **params}
     content = _core.create_request_content(__SEND_PRIVATE_MESSAGE_3_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(((_Message, "Message", False),), "SendMessage", production_server, SEND_PRIVATE_MESSAGE_3_BASE_PATH, "POST", request_content=content, **params)
+    result = await _core.get_entities_from_path(
+        ((_Message, "Message", False),), "SendMessage", production_server, SEND_PRIVATE_MESSAGE_3_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    )
     return result
 
 

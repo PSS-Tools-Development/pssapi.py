@@ -10,7 +10,7 @@ class CollectionDesign(_CollectionDesignRaw, _EntityWithIdBase):
         super().__init__(collection_design_info)
         self._collection_type_enum: _enums.CollectionType = _parse.pss_str_enum(self.collection_type, _enums.CollectionType)
         self._enhancement_type_enum: _enums.EnhancementType = _parse.pss_str_enum(self.enhancement_type, _enums.EnhancementType)
-        # self._flags_enum: _enums. = _parse.pss_str_enum(self.flags, _enums.)   # This enum does not exist up to PSS v0.994.1
+        self._flags_enum: _enums.CollectionDesignFlag = _parse.pss_str_enum(self.flags, _enums.CollectionDesignFlag)
 
     @property
     def id(self) -> int:
@@ -23,3 +23,7 @@ class CollectionDesign(_CollectionDesignRaw, _EntityWithIdBase):
     @property
     def enhancement_type_enum(self) -> "_enums.EnhancementType":
         return self._enhancement_type_enum
+
+    @property
+    def flags_enum(self) -> "_enums.CollectionDesignFlag":
+        return self._flags_enum

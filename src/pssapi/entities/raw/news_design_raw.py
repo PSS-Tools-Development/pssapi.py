@@ -8,22 +8,24 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class NewsDesignRaw:
+class NewsDesignRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "NewsDesign"
 
     def __init__(self, news_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._description: str = _parse.pss_str(news_design_info.get("Description"))
-        self._expiry_date: _datetime = _parse.pss_datetime(news_design_info.get("ExpiryDate"))
-        self._from_date: _datetime = _parse.pss_datetime(news_design_info.get("FromDate"))
-        self._link: str = _parse.pss_str(news_design_info.get("Link"))
-        self._news_design_id: int = _parse.pss_int(news_design_info.get("NewsDesignId"))
-        self._sprite_id: int = _parse.pss_int(news_design_info.get("SpriteId"))
-        self._title: str = _parse.pss_str(news_design_info.get("Title"))
-        self._update_date: _datetime = _parse.pss_datetime(news_design_info.get("UpdateDate"))
-        self._user_id: int = _parse.pss_int(news_design_info.get("UserId"))
+        self._description: str = _parse.pss_str(news_design_info.pop("Description", None))
+        self._expiry_date: _datetime = _parse.pss_datetime(news_design_info.pop("ExpiryDate", None))
+        self._from_date: _datetime = _parse.pss_datetime(news_design_info.pop("FromDate", None))
+        self._link: str = _parse.pss_str(news_design_info.pop("Link", None))
+        self._news_design_id: int = _parse.pss_int(news_design_info.pop("NewsDesignId", None))
+        self._sprite_id: int = _parse.pss_int(news_design_info.pop("SpriteId", None))
+        self._title: str = _parse.pss_str(news_design_info.pop("Title", None))
+        self._update_date: _datetime = _parse.pss_datetime(news_design_info.pop("UpdateDate", None))
+        self._user_id: int = _parse.pss_int(news_design_info.pop("UserId", None))
+        super().__init__(news_design_info)
 
     @property
     def description(self) -> str:
@@ -87,5 +89,6 @@ class NewsDesignRaw:
                 "UpdateDate": self.update_date,
                 "UserId": self.user_id,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict

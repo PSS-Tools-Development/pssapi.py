@@ -7,32 +7,39 @@ from typing import Dict as _Dict
 
 from ...types import EntityInfo as _EntityInfo
 from ...utils import parse as _parse
+from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
-class ConditionTypeRaw:
+class ConditionTypeRaw(_EntityBaseRaw):
     XML_NODE_NAME: str = "ConditionType"
 
     def __init__(self, condition_type_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
-        self._color_string: str = _parse.pss_str(condition_type_info.get("ColorString"))
-        self._condition_type_availability: int = _parse.pss_int(condition_type_info.get("ConditionTypeAvailability"))
-        self._condition_type_category: str = _parse.pss_str(condition_type_info.get("ConditionTypeCategory"))
-        self._condition_type_comparison: str = _parse.pss_str(condition_type_info.get("ConditionTypeComparison"))
-        self._condition_type_description: str = _parse.pss_str(condition_type_info.get("ConditionTypeDescription"))
-        self._condition_type_id: int = _parse.pss_int(condition_type_info.get("ConditionTypeId"))
-        self._condition_type_key: str = _parse.pss_str(condition_type_info.get("ConditionTypeKey"))
-        self._condition_type_name: str = _parse.pss_str(condition_type_info.get("ConditionTypeName"))
-        self._condition_type_parameter: str = _parse.pss_str(condition_type_info.get("ConditionTypeParameter"))
-        self._condition_type_parameter_value: int = _parse.pss_int(condition_type_info.get("ConditionTypeParameterValue"))
-        self._image_sprite_id: int = _parse.pss_int(condition_type_info.get("ImageSpriteId"))
-        self._order_index: int = _parse.pss_int(condition_type_info.get("OrderIndex"))
-        self._required_research_design_id: int = _parse.pss_int(condition_type_info.get("RequiredResearchDesignId"))
-        self._room_category_type: str = _parse.pss_str(condition_type_info.get("RoomCategoryType"))
-        self._room_type: str = _parse.pss_str(condition_type_info.get("RoomType"))
+        self._color_string: str = _parse.pss_str(condition_type_info.pop("ColorString", None))
+        self._condition_parameter_argument: int = _parse.pss_int(condition_type_info.pop("ConditionParameterArgument", None))
+        self._condition_type_availability: int = _parse.pss_int(condition_type_info.pop("ConditionTypeAvailability", None))
+        self._condition_type_category: str = _parse.pss_str(condition_type_info.pop("ConditionTypeCategory", None))
+        self._condition_type_comparison: str = _parse.pss_str(condition_type_info.pop("ConditionTypeComparison", None))
+        self._condition_type_description: str = _parse.pss_str(condition_type_info.pop("ConditionTypeDescription", None))
+        self._condition_type_id: int = _parse.pss_int(condition_type_info.pop("ConditionTypeId", None))
+        self._condition_type_key: str = _parse.pss_str(condition_type_info.pop("ConditionTypeKey", None))
+        self._condition_type_name: str = _parse.pss_str(condition_type_info.pop("ConditionTypeName", None))
+        self._condition_type_parameter: str = _parse.pss_str(condition_type_info.pop("ConditionTypeParameter", None))
+        self._condition_type_parameter_value: int = _parse.pss_int(condition_type_info.pop("ConditionTypeParameterValue", None))
+        self._image_sprite_id: int = _parse.pss_int(condition_type_info.pop("ImageSpriteId", None))
+        self._order_index: int = _parse.pss_int(condition_type_info.pop("OrderIndex", None))
+        self._required_research_design_id: int = _parse.pss_int(condition_type_info.pop("RequiredResearchDesignId", None))
+        self._room_category_type: str = _parse.pss_str(condition_type_info.pop("RoomCategoryType", None))
+        self._room_type: str = _parse.pss_str(condition_type_info.pop("RoomType", None))
+        super().__init__(condition_type_info)
 
     @property
     def color_string(self) -> str:
         return self._color_string
+
+    @property
+    def condition_parameter_argument(self) -> int:
+        return self._condition_parameter_argument
 
     @property
     def condition_type_availability(self) -> int:
@@ -93,6 +100,7 @@ class ConditionTypeRaw:
     def _key(self):
         return (
             self.color_string,
+            self.condition_parameter_argument,
             self.condition_type_availability,
             self.condition_type_category,
             self.condition_type_comparison,
@@ -113,6 +121,7 @@ class ConditionTypeRaw:
         if not self._dict:
             self._dict = {
                 "ColorString": self.color_string,
+                "ConditionParameterArgument": self.condition_parameter_argument,
                 "ConditionTypeAvailability": self.condition_type_availability,
                 "ConditionTypeCategory": self.condition_type_category,
                 "ConditionTypeComparison": self.condition_type_comparison,
@@ -128,5 +137,6 @@ class ConditionTypeRaw:
                 "RoomCategoryType": self.room_category_type,
                 "RoomType": self.room_type,
             }
+            self._dict.update(super().__dict__())
 
         return self._dict
