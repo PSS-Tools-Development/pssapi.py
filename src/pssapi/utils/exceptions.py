@@ -30,13 +30,10 @@ class PssXmlError(PssApiError, _XmlParseError):
 
 
 class InvalidChecksumKey(Exception):
-    def __init__(self):
-        super().__init__(
-"""
-Missing checksum key.
+    """
+    Missing checksum key.
 
-(used to calculate various checksums used in different POST endpoints.
-Though not supposed to be public, it can be found on GitHub and Google in general.
-Complying with Savy, this key will never be shared in pssapi.)
-"""
-        )
+    (used to calculate various checksums used in different POST endpoints.
+    Though not supposed to be public, it can be found on GitHub and Google in general.
+    Complying with Savy, this key will never be shared in pssapi.)
+    """
