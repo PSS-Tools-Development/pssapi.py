@@ -9,6 +9,7 @@ from ... import core as _core
 from ...entities import NewsDesign as _NewsDesign
 from ...entities import Setting as _Setting
 
+
 # ---------- Constants ----------
 
 GET_LATEST_VERSION_3_BASE_PATH: str = "SettingService/GetLatestVersion3"

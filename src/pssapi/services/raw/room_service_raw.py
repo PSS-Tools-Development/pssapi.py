@@ -13,6 +13,7 @@ from ...entities import MissileDesign as _MissileDesign
 from ...entities import RoomDesign as _RoomDesign
 from ...entities import RoomDesignPurchase as _RoomDesignPurchase
 
+
 # ---------- Constants ----------
 
 GET_MISSILE_DESIGN_BASE_PATH: str = "RoomService/GetMissileDesign"

@@ -1,6 +1,10 @@
+# Code coevrage
+cov.xml
+
 # Visual Studio Code
 .pylintrc
-.vscode/
+.vscode/*
+!.vscode/settings.json
 
 # Intellij
 .idea/
@@ -78,9 +82,6 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# pyenv
-.python-version
 
 # celery beat schedule file
 celerybeat-schedule

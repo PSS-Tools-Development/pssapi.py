@@ -31,6 +31,7 @@ from .task_service import TaskService
 from .training_service import TrainingService
 from .user_service import UserService
 
+
 __all__ = [
     AchievementService.__name__,
     AllianceService.__name__,

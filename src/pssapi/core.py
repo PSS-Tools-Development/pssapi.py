@@ -16,6 +16,7 @@ import pssapi.entities as _entities
 import pssapi.enums as _enums
 import pssapi.utils as _utils
 
+
 __LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
     "deviceType": str(_enums.DeviceType.ANDROID),
     "languageKey": str(_enums.LanguageKey.ENGLISH),

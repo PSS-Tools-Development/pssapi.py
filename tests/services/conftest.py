@@ -8,6 +8,7 @@ import vcr.request
 
 import pssapi
 
+
 RX_ACCESS_TOKEN_IN_RESPONSE_BODY: re.Pattern = re.compile(r"accessToken=\".*?\"")
 ACCESS_TOKEN_IN_RESPONSE_BODY_REPLACEMENT: str = 'accessToken="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"'
 

@@ -121,6 +121,7 @@ from .user_status import UserStatus
 from .user_type import UserType
 from .visibility_flags import VisibilityFlags
 
+
 __all__ = [
     AchievementType.__name__,
     ActionTypeCategory.__name__,

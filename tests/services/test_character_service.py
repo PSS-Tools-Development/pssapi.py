@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 CHARACTER_DESIGN_ID: int = 19  # Xin
 
 

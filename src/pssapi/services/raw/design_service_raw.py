@@ -43,6 +43,7 @@ from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 from ...entities import TaskDesign as _TaskDesign
 from ...entities import TrainingDesign as _TrainingDesign
 
+
 # ---------- Constants ----------
 
 LIST_ALL_DESIGNS_2_BASE_PATH: str = "DesignService/ListAllDesigns2"

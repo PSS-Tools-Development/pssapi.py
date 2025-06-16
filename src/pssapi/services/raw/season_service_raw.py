@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import SeasonDesign as _SeasonDesign
 
+
 # ---------- Constants ----------
 
 LIST_ALL_SEASON_DESIGNS_BASE_PATH: str = "SeasonService/ListAllSeasonDesigns"

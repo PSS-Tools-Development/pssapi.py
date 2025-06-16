@@ -4,6 +4,7 @@ import pytest
 
 import pssapi
 
+
 MISSILE_DESIGN_ID: int = 2  # Rocket Lv1
 ROOM_DESIGN_ID: int = 2  # Bedroom Lv1
 

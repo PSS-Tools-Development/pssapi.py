@@ -8,6 +8,7 @@ from typing import List as _List
 from ... import core as _core
 from ...entities import Sale as _Sale
 
+
 # ---------- Constants ----------
 
 LIST_SALES_BY_ITEM_DESIGN_ID_BASE_PATH: str = "MarketService/ListSalesByItemDesignId"
