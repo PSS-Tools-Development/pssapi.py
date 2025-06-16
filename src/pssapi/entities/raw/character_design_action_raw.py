@@ -1,5 +1,5 @@
 """
-    This file has been generated automatically
+This file has been generated automatically
 """
 
 from typing import Any as _Any
