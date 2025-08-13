@@ -2,70 +2,29 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class StarSystemRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class StarSystemRaw(EntityBaseRaw, tag="StarSystem"):
     XML_NODE_NAME: str = "StarSystem"
 
-    def __init__(self, star_system_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._exploration_duration: int = _parse.pss_int(star_system_info.pop("ExplorationDuration", None))
-        self._icon_sprite_id: int = _parse.pss_int(star_system_info.pop("IconSpriteId", None))
-        self._requirement_description: str = _parse.pss_str(star_system_info.pop("RequirementDescription", None))
-        self._requirement_string: str = _parse.pss_str(star_system_info.pop("RequirementString", None))
-        self._star_system_description: str = _parse.pss_str(star_system_info.pop("StarSystemDescription", None))
-        self._star_system_id: int = _parse.pss_int(star_system_info.pop("StarSystemId", None))
-        self._star_system_title: str = _parse.pss_str(star_system_info.pop("StarSystemTitle", None))
-        self._x: int = _parse.pss_int(star_system_info.pop("X", None))
-        self._y: int = _parse.pss_int(star_system_info.pop("Y", None))
-        self._z: int = _parse.pss_int(star_system_info.pop("Z", None))
-        super().__init__(star_system_info)
-
-    @property
-    def exploration_duration(self) -> int:
-        return self._exploration_duration
-
-    @property
-    def icon_sprite_id(self) -> int:
-        return self._icon_sprite_id
-
-    @property
-    def requirement_description(self) -> str:
-        return self._requirement_description
-
-    @property
-    def requirement_string(self) -> str:
-        return self._requirement_string
-
-    @property
-    def star_system_description(self) -> str:
-        return self._star_system_description
-
-    @property
-    def star_system_id(self) -> int:
-        return self._star_system_id
-
-    @property
-    def star_system_title(self) -> str:
-        return self._star_system_title
-
-    @property
-    def x(self) -> int:
-        return self._x
-
-    @property
-    def y(self) -> int:
-        return self._y
-
-    @property
-    def z(self) -> int:
-        return self._z
+    exploration_duration: Optional[int] = attr(name="ExplorationDuration", default=None)
+    icon_sprite_id: Optional[int] = attr(name="IconSpriteId", default=None)
+    requirement_description: Optional[str] = attr(name="RequirementDescription", default=None)
+    requirement_string: Optional[str] = attr(name="RequirementString", default=None)
+    star_system_description: Optional[str] = attr(name="StarSystemDescription", default=None)
+    star_system_id: Optional[int] = attr(name="StarSystemId", default=None)
+    star_system_title: Optional[str] = attr(name="StarSystemTitle", default=None)
+    x: Optional[int] = attr(name="X", default=None)
+    y: Optional[int] = attr(name="Y", default=None)
+    z: Optional[int] = attr(name="Z", default=None)
 
     def _key(self):
         return (
@@ -81,20 +40,7 @@ class StarSystemRaw(_EntityBaseRaw):
             self.z,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "ExplorationDuration": self.exploration_duration,
-                "IconSpriteId": self.icon_sprite_id,
-                "RequirementDescription": self.requirement_description,
-                "RequirementString": self.requirement_string,
-                "StarSystemDescription": self.star_system_description,
-                "StarSystemId": self.star_system_id,
-                "StarSystemTitle": self.star_system_title,
-                "X": self.x,
-                "Y": self.y,
-                "Z": self.z,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "StarSystemRaw",
+]

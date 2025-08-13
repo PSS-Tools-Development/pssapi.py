@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class SaleStatus(_StrEnumBase):
+class SaleStatus(_StrEnum):
     EXPIRED = "Expired"
     EXPIRY_PENDING = "ExpiryPending"
     LISTED = "Listed"

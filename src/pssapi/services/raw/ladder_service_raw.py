@@ -3,10 +3,10 @@ This file has been generated automatically.
 Any changes to this file will be lost eventually.
 """
 
-from typing import List as _List
+from typing import List
 
-from ... import core as _core
-from ...entities import User as _User
+from ... import core
+from ...entities import User
 
 
 # ---------- Constants ----------
@@ -14,17 +14,19 @@ from ...entities import User as _User
 LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH: str = "LadderService/ListUsersByChampionshipScoreRanking"
 LIST_USERS_BY_RANKING_BASE_PATH: str = "LadderService/ListUsersByRanking"
 
+# ---------- Endpoint structure ----------
+
 
 # ---------- Endpoints ----------
 
 
-async def list_users_by_championship_score_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> _List[_User]:
+async def list_users_by_championship_score_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> List[User]:
     params = {"accessToken": access_token, "from": from_, "to": to, **params}
-    result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((User, "Users", True),), "Users", production_server, LIST_USERS_BY_CHAMPIONSHIP_SCORE_RANKING_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
-async def list_users_by_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> _List[_User]:
+async def list_users_by_ranking(production_server: str, access_token: str, from_: int, to: int, **params) -> List[User]:
     params = {"accessToken": access_token, "from": from_, "to": to, **params}
-    result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, LIST_USERS_BY_RANKING_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((User, "Users", True),), "Users", production_server, LIST_USERS_BY_RANKING_BASE_PATH, "GET", response_gzipped=False, **params)
     return result

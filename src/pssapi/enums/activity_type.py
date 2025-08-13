@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class ActivityType(_StrEnumBase):
+class ActivityType(_StrEnum):
     NONE = "None"
     ACTIONED = "Actioned"
     ALLIANCE_ANNOUNCEMENT = "AllianceAnnouncement"
@@ -28,6 +28,7 @@ class ActivityType(_StrEnumBase):
     MARKET_LISTED = "MarketListed"
     MARKET_SOLD = "MarketSold"
     MEMBERSHIP_CHANGED = "MembershipChanged"
+    MESSAGE_ON_HOLD = "MessageOnHold"
     MODEL_UPDATE = "ModelUpdate"
     RELOAD_USER_DATA = "ReloadUserData"
     REPLAY = "Replay"

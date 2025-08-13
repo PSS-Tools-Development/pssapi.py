@@ -2,80 +2,31 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class DivisionDesignRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class DivisionDesignRaw(EntityBaseRaw, tag="DivisionDesign"):
     XML_NODE_NAME: str = "DivisionDesign"
 
-    def __init__(self, division_design_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._background_sprite_id: int = _parse.pss_int(division_design_info.pop("BackgroundSpriteId", None))
-        self._banner_sprite_ids: str = _parse.pss_str(division_design_info.pop("BannerSpriteIds", None))
-        self._division_design_id: int = _parse.pss_int(division_design_info.pop("DivisionDesignId", None))
-        self._division_name: str = _parse.pss_str(division_design_info.pop("DivisionName", None))
-        self._division_type: str = _parse.pss_str(division_design_info.pop("DivisionType", None))
-        self._finals_immunity_percentage: int = _parse.pss_int(division_design_info.pop("FinalsImmunityPercentage", None))
-        self._logo_sprite_id: int = _parse.pss_int(division_design_info.pop("LogoSpriteId", None))
-        self._max_rank: int = _parse.pss_int(division_design_info.pop("MaxRank", None))
-        self._min_rank: int = _parse.pss_int(division_design_info.pop("MinRank", None))
-        self._monthly_achievement_design_ids: str = _parse.pss_str(division_design_info.pop("MonthlyAchievementDesignIds", None))
-        self._reward_strings: str = _parse.pss_str(division_design_info.pop("RewardStrings", None))
-        self._yearly_achievement_design_ids: str = _parse.pss_str(division_design_info.pop("YearlyAchievementDesignIds", None))
-        super().__init__(division_design_info)
-
-    @property
-    def background_sprite_id(self) -> int:
-        return self._background_sprite_id
-
-    @property
-    def banner_sprite_ids(self) -> str:
-        return self._banner_sprite_ids
-
-    @property
-    def division_design_id(self) -> int:
-        return self._division_design_id
-
-    @property
-    def division_name(self) -> str:
-        return self._division_name
-
-    @property
-    def division_type(self) -> str:
-        return self._division_type
-
-    @property
-    def finals_immunity_percentage(self) -> int:
-        return self._finals_immunity_percentage
-
-    @property
-    def logo_sprite_id(self) -> int:
-        return self._logo_sprite_id
-
-    @property
-    def max_rank(self) -> int:
-        return self._max_rank
-
-    @property
-    def min_rank(self) -> int:
-        return self._min_rank
-
-    @property
-    def monthly_achievement_design_ids(self) -> str:
-        return self._monthly_achievement_design_ids
-
-    @property
-    def reward_strings(self) -> str:
-        return self._reward_strings
-
-    @property
-    def yearly_achievement_design_ids(self) -> str:
-        return self._yearly_achievement_design_ids
+    background_sprite_id: Optional[int] = attr(name="BackgroundSpriteId", default=None)
+    banner_sprite_ids: Optional[str] = attr(name="BannerSpriteIds", default=None)
+    division_design_id: Optional[int] = attr(name="DivisionDesignId", default=None)
+    division_name: Optional[str] = attr(name="DivisionName", default=None)
+    division_type: Optional[str] = attr(name="DivisionType", default=None)
+    finals_immunity_percentage: Optional[int] = attr(name="FinalsImmunityPercentage", default=None)
+    logo_sprite_id: Optional[int] = attr(name="LogoSpriteId", default=None)
+    max_rank: Optional[int] = attr(name="MaxRank", default=None)
+    min_rank: Optional[int] = attr(name="MinRank", default=None)
+    monthly_achievement_design_ids: Optional[str] = attr(name="MonthlyAchievementDesignIds", default=None)
+    reward_strings: Optional[str] = attr(name="RewardStrings", default=None)
+    yearly_achievement_design_ids: Optional[str] = attr(name="YearlyAchievementDesignIds", default=None)
 
     def _key(self):
         return (
@@ -93,22 +44,7 @@ class DivisionDesignRaw(_EntityBaseRaw):
             self.yearly_achievement_design_ids,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "BackgroundSpriteId": self.background_sprite_id,
-                "BannerSpriteIds": self.banner_sprite_ids,
-                "DivisionDesignId": self.division_design_id,
-                "DivisionName": self.division_name,
-                "DivisionType": self.division_type,
-                "FinalsImmunityPercentage": self.finals_immunity_percentage,
-                "LogoSpriteId": self.logo_sprite_id,
-                "MaxRank": self.max_rank,
-                "MinRank": self.min_rank,
-                "MonthlyAchievementDesignIds": self.monthly_achievement_design_ids,
-                "RewardStrings": self.reward_strings,
-                "YearlyAchievementDesignIds": self.yearly_achievement_design_ids,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "DivisionDesignRaw",
+]

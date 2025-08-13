@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import IntEnum as _IntEnum
 
 
 """
@@ -7,6 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class PurchaseVIPStatus(_StrEnumBase):
-    NONE = "None"
-    VIP = "VIP"
+class PurchaseVIPStatus(_IntEnum):
+    NONE = 0
+    VIP = 1

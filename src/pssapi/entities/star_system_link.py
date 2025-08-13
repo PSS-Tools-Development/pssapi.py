@@ -1,12 +1,13 @@
-from ..types import EntityInfo as _EntityInfo
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import StarSystemLinkRaw as _StarSystemLinkRaw
+from .entity_base import EntityWithIdBase
+from .raw import StarSystemLinkRaw
 
 
-class StarSystemLink(_StarSystemLinkRaw, _EntityWithIdBase):
-    def __init__(self, star_system_link_info: _EntityInfo) -> None:
-        super().__init__(star_system_link_info)
-
+class StarSystemLink(StarSystemLinkRaw, EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.star_system_link_id
+
+
+__all__ = [
+    "StarSystemLink",
+]

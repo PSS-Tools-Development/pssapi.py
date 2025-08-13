@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,12 +7,16 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class PromotionType(_StrEnumBase):
+class PromotionType(_StrEnum):
     NONE = "None"
+    BOOSTING_GIFT = "BoostingGift"
     CODE = "Code"
     DAILY_DEAL_OFFER = "DailyDealOffer"
+    LEVEL_GIFT = "LevelGift"
+    MONTHLY_CARD = "MonthlyCard"
     NON_PREMIUM_DAILY_DEAL_OFFER = "NonPremiumDailyDealOffer"
     OFFER = "Offer"
+    THEME_ACTIVITY = "ThemeActivity"
     VIP = "VIP"
     VALUE_OFFER = "ValueOffer"
     WEB_PROMOTION = "WebPromotion"

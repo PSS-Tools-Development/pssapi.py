@@ -1,4 +1,4 @@
-import datetime as _datetime
+from datetime import datetime, timezone
 
 
 PSS_DATETIME_FORMAT_ISO: str = "%Y-%m-%dT%H:%M:%S"
@@ -6,14 +6,14 @@ PSS_DATETIME_FORMAT_ISO_DETAILED: str = "%Y-%m-%dT%H:%M:%S.%f"
 PSS_DATETIME_FORMAT_CUSTOM: str = "%d.%m.%y %H:%M"
 
 
-def convert_to_pss_timestamp(dt: _datetime.datetime) -> str:
+def convert_to_pss_timestamp(dt: datetime) -> str:
     if dt is None:
         return None
     result = dt.strftime(PSS_DATETIME_FORMAT_ISO)
     return result
 
 
-def get_first_of_next_month(now: _datetime.datetime) -> _datetime.datetime:
+def get_first_of_next_month(now: datetime) -> datetime:
     if now is None:
         raise ValueError("Parameter 'dt' must not be None!")
 
@@ -23,9 +23,9 @@ def get_first_of_next_month(now: _datetime.datetime) -> _datetime.datetime:
         year += 1
         month = 1
 
-    result = _datetime.datetime(year, month, 1, 0, 0, 0, 0, _datetime.timezone.utc)
+    result = datetime(year, month, 1, 0, 0, 0, 0, timezone.utc)
     return result
 
 
-def get_utc_now() -> _datetime.datetime:
-    return _datetime.datetime.now(_datetime.timezone.utc)
+def get_utc_now() -> datetime:
+    return datetime.now(timezone.utc)

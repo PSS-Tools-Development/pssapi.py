@@ -2,216 +2,59 @@
 This file has been generated automatically
 """
 
-from datetime import datetime as _datetime
-from typing import Any as _Any
-from typing import Dict as _Dict
+from datetime import datetime
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class StarSystemMarkerGeneratorRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class StarSystemMarkerGeneratorRaw(EntityBaseRaw, tag="StarSystemMarkerGenerator"):
     XML_NODE_NAME: str = "StarSystemMarkerGenerator"
 
-    def __init__(self, star_system_marker_generator_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._behavior_flags: int = _parse.pss_int(star_system_marker_generator_info.pop("BehaviorFlags", None))
-        self._completion_original_value: int = _parse.pss_int(star_system_marker_generator_info.pop("CompletionOriginalValue", None))
-        self._completion_value_type: str = _parse.pss_str(star_system_marker_generator_info.pop("CompletionValueType", None))
-        self._cost_string: str = _parse.pss_str(star_system_marker_generator_info.pop("CostString", None))
-        self._cost_type: str = _parse.pss_str(star_system_marker_generator_info.pop("CostType", None))
-        self._description: str = _parse.pss_str(star_system_marker_generator_info.pop("Description", None))
-        self._end_date: _datetime = _parse.pss_datetime(star_system_marker_generator_info.pop("EndDate", None))
-        self._from_star_system_id: int = _parse.pss_int(star_system_marker_generator_info.pop("FromStarSystemId", None))
-        self._generation_flags: int = _parse.pss_int(star_system_marker_generator_info.pop("GenerationFlags", None))
-        self._generation_interval: int = _parse.pss_int(star_system_marker_generator_info.pop("GenerationInterval", None))
-        self._marker_design_id: int = _parse.pss_int(star_system_marker_generator_info.pop("MarkerDesignId", None))
-        self._marker_duration: int = _parse.pss_int(star_system_marker_generator_info.pop("MarkerDuration", None))
-        self._marker_flags: int = _parse.pss_int(star_system_marker_generator_info.pop("MarkerFlags", None))
-        self._marker_requirement_string: str = _parse.pss_str(star_system_marker_generator_info.pop("MarkerRequirementString", None))
-        self._marker_type: str = _parse.pss_str(star_system_marker_generator_info.pop("MarkerType", None))
-        self._max_active_markers: int = _parse.pss_int(star_system_marker_generator_info.pop("MaxActiveMarkers", None))
-        self._metadata: str = _parse.pss_str(star_system_marker_generator_info.pop("Metadata", None))
-        self._movement_type: str = _parse.pss_str(star_system_marker_generator_info.pop("MovementType", None))
-        self._name: str = _parse.pss_str(star_system_marker_generator_info.pop("Name", None))
-        self._next_star_system_id: int = _parse.pss_int(star_system_marker_generator_info.pop("NextStarSystemId", None))
-        self._number_of_markers: int = _parse.pss_int(star_system_marker_generator_info.pop("NumberOfMarkers", None))
-        self._number_of_ships: int = _parse.pss_int(star_system_marker_generator_info.pop("NumberOfShips", None))
-        self._origin_next_star_system_id: int = _parse.pss_int(star_system_marker_generator_info.pop("OriginNextStarSystemId", None))
-        self._origin_star_system_id: int = _parse.pss_int(star_system_marker_generator_info.pop("OriginStarSystemId", None))
-        self._requirement_string: str = _parse.pss_str(star_system_marker_generator_info.pop("RequirementString", None))
-        self._reward_string: str = _parse.pss_str(star_system_marker_generator_info.pop("RewardString", None))
-        self._ship_ids: str = _parse.pss_str(star_system_marker_generator_info.pop("ShipIds", None))
-        self._ship_tags: str = _parse.pss_str(star_system_marker_generator_info.pop("ShipTags", None))
-        self._slots: str = _parse.pss_str(star_system_marker_generator_info.pop("Slots", None))
-        self._sprite_id: int = _parse.pss_int(star_system_marker_generator_info.pop("SpriteId", None))
-        self._star_system_id: int = _parse.pss_int(star_system_marker_generator_info.pop("StarSystemId", None))
-        self._star_system_marker_generator_id: int = _parse.pss_int(star_system_marker_generator_info.pop("StarSystemMarkerGeneratorId", None))
-        self._start_date: _datetime = _parse.pss_datetime(star_system_marker_generator_info.pop("StartDate", None))
-        self._tags: str = _parse.pss_str(star_system_marker_generator_info.pop("Tags", None))
-        self._title: str = _parse.pss_str(star_system_marker_generator_info.pop("Title", None))
-        self._travel_cool_down_time: int = _parse.pss_int(star_system_marker_generator_info.pop("TravelCoolDownTime", None))
-        self._travel_duration: int = _parse.pss_int(star_system_marker_generator_info.pop("TravelDuration", None))
-        self._travel_start_date: _datetime = _parse.pss_datetime(star_system_marker_generator_info.pop("TravelStartDate", None))
-        self._travel_time_multiplier: int = _parse.pss_int(star_system_marker_generator_info.pop("TravelTimeMultiplier", None))
-        super().__init__(star_system_marker_generator_info)
-
-    @property
-    def behavior_flags(self) -> int:
-        return self._behavior_flags
-
-    @property
-    def completion_original_value(self) -> int:
-        return self._completion_original_value
-
-    @property
-    def completion_value_type(self) -> str:
-        return self._completion_value_type
-
-    @property
-    def cost_string(self) -> str:
-        return self._cost_string
-
-    @property
-    def cost_type(self) -> str:
-        return self._cost_type
-
-    @property
-    def description(self) -> str:
-        return self._description
-
-    @property
-    def end_date(self) -> _datetime:
-        return self._end_date
-
-    @property
-    def from_star_system_id(self) -> int:
-        return self._from_star_system_id
-
-    @property
-    def generation_flags(self) -> int:
-        return self._generation_flags
-
-    @property
-    def generation_interval(self) -> int:
-        return self._generation_interval
-
-    @property
-    def marker_design_id(self) -> int:
-        return self._marker_design_id
-
-    @property
-    def marker_duration(self) -> int:
-        return self._marker_duration
-
-    @property
-    def marker_flags(self) -> int:
-        return self._marker_flags
-
-    @property
-    def marker_requirement_string(self) -> str:
-        return self._marker_requirement_string
-
-    @property
-    def marker_type(self) -> str:
-        return self._marker_type
-
-    @property
-    def max_active_markers(self) -> int:
-        return self._max_active_markers
-
-    @property
-    def metadata(self) -> str:
-        return self._metadata
-
-    @property
-    def movement_type(self) -> str:
-        return self._movement_type
-
-    @property
-    def name(self) -> str:
-        return self._name
-
-    @property
-    def next_star_system_id(self) -> int:
-        return self._next_star_system_id
-
-    @property
-    def number_of_markers(self) -> int:
-        return self._number_of_markers
-
-    @property
-    def number_of_ships(self) -> int:
-        return self._number_of_ships
-
-    @property
-    def origin_next_star_system_id(self) -> int:
-        return self._origin_next_star_system_id
-
-    @property
-    def origin_star_system_id(self) -> int:
-        return self._origin_star_system_id
-
-    @property
-    def requirement_string(self) -> str:
-        return self._requirement_string
-
-    @property
-    def reward_string(self) -> str:
-        return self._reward_string
-
-    @property
-    def ship_ids(self) -> str:
-        return self._ship_ids
-
-    @property
-    def ship_tags(self) -> str:
-        return self._ship_tags
-
-    @property
-    def slots(self) -> str:
-        return self._slots
-
-    @property
-    def sprite_id(self) -> int:
-        return self._sprite_id
-
-    @property
-    def star_system_id(self) -> int:
-        return self._star_system_id
-
-    @property
-    def star_system_marker_generator_id(self) -> int:
-        return self._star_system_marker_generator_id
-
-    @property
-    def start_date(self) -> _datetime:
-        return self._start_date
-
-    @property
-    def tags(self) -> str:
-        return self._tags
-
-    @property
-    def title(self) -> str:
-        return self._title
-
-    @property
-    def travel_cool_down_time(self) -> int:
-        return self._travel_cool_down_time
-
-    @property
-    def travel_duration(self) -> int:
-        return self._travel_duration
-
-    @property
-    def travel_start_date(self) -> _datetime:
-        return self._travel_start_date
-
-    @property
-    def travel_time_multiplier(self) -> int:
-        return self._travel_time_multiplier
+    behavior_flags: Optional[int] = attr(name="BehaviorFlags", default=None)
+    completion_original_value: Optional[int] = attr(name="CompletionOriginalValue", default=None)
+    completion_value_type: Optional[str] = attr(name="CompletionValueType", default=None)
+    cost_string: Optional[str] = attr(name="CostString", default=None)
+    cost_type: Optional[str] = attr(name="CostType", default=None)
+    description: Optional[str] = attr(name="Description", default=None)
+    end_date: Optional[datetime] = attr(name="EndDate", default=None)
+    from_star_system_id: Optional[int] = attr(name="FromStarSystemId", default=None)
+    generation_flags: Optional[int] = attr(name="GenerationFlags", default=None)
+    generation_interval: Optional[int] = attr(name="GenerationInterval", default=None)
+    marker_design_id: Optional[int] = attr(name="MarkerDesignId", default=None)
+    marker_duration: Optional[int] = attr(name="MarkerDuration", default=None)
+    marker_flags: Optional[int] = attr(name="MarkerFlags", default=None)
+    marker_requirement_string: Optional[str] = attr(name="MarkerRequirementString", default=None)
+    marker_type: Optional[str] = attr(name="MarkerType", default=None)
+    max_active_markers: Optional[int] = attr(name="MaxActiveMarkers", default=None)
+    metadata: Optional[str] = attr(name="Metadata", default=None)
+    movement_type: Optional[str] = attr(name="MovementType", default=None)
+    name: Optional[str] = attr(name="Name", default=None)
+    next_star_system_id: Optional[int] = attr(name="NextStarSystemId", default=None)
+    number_of_markers: Optional[int] = attr(name="NumberOfMarkers", default=None)
+    number_of_ships: Optional[int] = attr(name="NumberOfShips", default=None)
+    origin_next_star_system_id: Optional[int] = attr(name="OriginNextStarSystemId", default=None)
+    origin_star_system_id: Optional[int] = attr(name="OriginStarSystemId", default=None)
+    requirement_string: Optional[str] = attr(name="RequirementString", default=None)
+    reward_string: Optional[str] = attr(name="RewardString", default=None)
+    ship_ids: Optional[str] = attr(name="ShipIds", default=None)
+    ship_tags: Optional[str] = attr(name="ShipTags", default=None)
+    slots: Optional[str] = attr(name="Slots", default=None)
+    sprite_id: Optional[int] = attr(name="SpriteId", default=None)
+    star_system_id: Optional[int] = attr(name="StarSystemId", default=None)
+    star_system_marker_generator_id: Optional[int] = attr(name="StarSystemMarkerGeneratorId", default=None)
+    start_date: Optional[datetime] = attr(name="StartDate", default=None)
+    tags: Optional[str] = attr(name="Tags", default=None)
+    title: Optional[str] = attr(name="Title", default=None)
+    travel_cool_down_time: Optional[int] = attr(name="TravelCoolDownTime", default=None)
+    travel_duration: Optional[int] = attr(name="TravelDuration", default=None)
+    travel_start_date: Optional[datetime] = attr(name="TravelStartDate", default=None)
+    travel_time_multiplier: Optional[int] = attr(name="TravelTimeMultiplier", default=None)
 
     def _key(self):
         return (
@@ -256,49 +99,7 @@ class StarSystemMarkerGeneratorRaw(_EntityBaseRaw):
             self.travel_time_multiplier,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "BehaviorFlags": self.behavior_flags,
-                "CompletionOriginalValue": self.completion_original_value,
-                "CompletionValueType": self.completion_value_type,
-                "CostString": self.cost_string,
-                "CostType": self.cost_type,
-                "Description": self.description,
-                "EndDate": self.end_date,
-                "FromStarSystemId": self.from_star_system_id,
-                "GenerationFlags": self.generation_flags,
-                "GenerationInterval": self.generation_interval,
-                "MarkerDesignId": self.marker_design_id,
-                "MarkerDuration": self.marker_duration,
-                "MarkerFlags": self.marker_flags,
-                "MarkerRequirementString": self.marker_requirement_string,
-                "MarkerType": self.marker_type,
-                "MaxActiveMarkers": self.max_active_markers,
-                "Metadata": self.metadata,
-                "MovementType": self.movement_type,
-                "Name": self.name,
-                "NextStarSystemId": self.next_star_system_id,
-                "NumberOfMarkers": self.number_of_markers,
-                "NumberOfShips": self.number_of_ships,
-                "OriginNextStarSystemId": self.origin_next_star_system_id,
-                "OriginStarSystemId": self.origin_star_system_id,
-                "RequirementString": self.requirement_string,
-                "RewardString": self.reward_string,
-                "ShipIds": self.ship_ids,
-                "ShipTags": self.ship_tags,
-                "Slots": self.slots,
-                "SpriteId": self.sprite_id,
-                "StarSystemId": self.star_system_id,
-                "StarSystemMarkerGeneratorId": self.star_system_marker_generator_id,
-                "StartDate": self.start_date,
-                "Tags": self.tags,
-                "Title": self.title,
-                "TravelCoolDownTime": self.travel_cool_down_time,
-                "TravelDuration": self.travel_duration,
-                "TravelStartDate": self.travel_start_date,
-                "TravelTimeMultiplier": self.travel_time_multiplier,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "StarSystemMarkerGeneratorRaw",
+]

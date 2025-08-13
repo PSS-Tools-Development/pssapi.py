@@ -1,35 +1,24 @@
-import datetime as _datetime
-from typing import List as _List
-from typing import Tuple as _Tuple
+from typing import List, Tuple
 
-import pssapi.services.service_base as _service_base
+from pssapi.services import service_base
 
-from .. import utils as _utils
-from ..entities import Ship as _Ship
-from ..entities import ShipDesign as _ShipDesign
-from ..entities import User as _User
-from .raw import ShipServiceRaw as _ShipServiceRaw
+from ..entities import Ship, ShipDesign, User
+from .raw import ShipServiceRaw
 
 
-class ShipService(_service_base.CacheableServiceBase):
-    async def to_ship(self, ship_name: str, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ShipDesign]:
-        ships = await self.list_all_ship_designs(client_date_time, design_version)
-        result = list(filter(lambda ship: ship_name.lower() in ship.ship_design_name.lower(), ships))
-
+class ShipService(service_base.CacheableServiceBase):
+    async def get_ship_by_user_id(self, access_token: str, client_date_time: str, user_id: int) -> Ship:
+        production_server = await self.get_production_server()
+        result = await ShipServiceRaw.get_ship_by_user_id(production_server, access_token, client_date_time, user_id)
         return result
 
-    async def get_ship_by_user_id(self, access_token: str, client_date_time: _datetime.datetime, user_id: int) -> _Ship:
+    async def inspect_ship(self, access_token: str, user_id: int) -> Tuple[Ship, User]:
         production_server = await self.get_production_server()
-        result = await _ShipServiceRaw.get_ship_by_user_id(production_server, access_token, _utils.datetime.convert_to_pss_timestamp(client_date_time), user_id)
+        result = await ShipServiceRaw.inspect_ship_2(production_server, access_token, user_id)
         return result
 
-    async def inspect_ship(self, access_token: str, user_id: int) -> _Tuple[_Ship, _User]:
+    @service_base.cache_endpoint("ShipDesignVersion")
+    async def list_all_ship_designs(self, client_date_time: str, design_version: int = None) -> List[ShipDesign]:
         production_server = await self.get_production_server()
-        result = await _ShipServiceRaw.inspect_ship_2(production_server, access_token, user_id)
-        return result
-
-    @_service_base.cache_endpoint("ShipDesignVersion")
-    async def list_all_ship_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ShipDesign]:
-        production_server = await self.get_production_server()
-        result = await _ShipServiceRaw.list_all_ship_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
+        result = await ShipServiceRaw.list_all_ship_designs_2(production_server, client_date_time, design_version, self.language_key)
         return result

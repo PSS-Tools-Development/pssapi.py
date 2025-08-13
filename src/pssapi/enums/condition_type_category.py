@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,8 +7,10 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class ConditionTypeCategory(_StrEnumBase):
+class ConditionTypeCategory(_StrEnum):
     NONE = "None"
+    ALL_ENEMY_ROOM = "AllEnemyRoom"
+    ALL_FRIENDLY_ROOM = "AllFriendlyRoom"
     CURRENT = "Current"
     CURRENT_ROOM = "CurrentRoom"
     ENEMY_CHARACTER = "EnemyCharacter"

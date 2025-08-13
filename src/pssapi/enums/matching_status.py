@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class MatchingStatus(_StrEnumBase):
+class MatchingStatus(_StrEnum):
     ACTIVE = "Active"
     EXCLUDED = "Excluded"
     INACTIVE = "Inactive"

@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,14 +7,18 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class CurrencyType(_StrEnumBase):
+class CurrencyType(_StrEnum):
     AI = "AI"
     ALL_CHARACTERS = "AllCharacters"
+    ALL_CHARACTERS_OF_LEVEL = "AllCharactersOfLevel"
+    ALL_CHARACTERS_OF_RARITY = "AllCharactersOfRarity"
     ALL_ITEMS = "AllItems"
     ALL_ROOMS = "AllRooms"
     BACKGROUND_ID = "BackgroundId"
     CHARACTER = "Character"
     CHARACTER_ID = "CharacterId"
+    CHARACTERS_OF_LEVEL = "CharactersOfLevel"
+    CHARACTERS_OF_RARITY = "CharactersOfRarity"
     EVENT = "Event"
     GAS = "Gas"
     ITEM = "Item"
@@ -31,7 +35,9 @@ class CurrencyType(_StrEnumBase):
     SCORE = "Score"
     SECONDS_SINCE_LAST_PURCHASE = "SecondsSinceLastPurchase"
     SITUATION = "Situation"
+    SKIN = "Skin"
     STARBUX = "Starbux"
     SUPPLY = "Supply"
     SYSTEM = "System"
+    TROPHY = "Trophy"
     XP = "XP"

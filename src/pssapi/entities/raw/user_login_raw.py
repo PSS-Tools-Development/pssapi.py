@@ -2,43 +2,25 @@
 This file has been generated automatically
 """
 
-from datetime import datetime as _datetime
-from typing import Any as _Any
-from typing import Dict as _Dict
+from datetime import datetime
+from typing import TYPE_CHECKING, Optional
 
-import pssapi.entities as _entities
-
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr, element
 
 
-class UserLoginRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    from pssapi import entities
+
+from .entity_base_raw import EntityBaseRaw
+
+
+class UserLoginRaw(EntityBaseRaw, tag="UserLogin"):
     XML_NODE_NAME: str = "UserLogin"
 
-    def __init__(self, user_login_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._previous_last_login_date: _datetime = _parse.pss_datetime(user_login_info.pop("PreviousLastLoginDate", None))
-        self._user: _entities.User = _entities.User(user_login_info.pop("User")[0]) if user_login_info.get("User", []) else None
-        self._user_id: int = _parse.pss_int(user_login_info.pop("UserId", None))
-        self._access_token: str = _parse.pss_str(user_login_info.pop("accessToken", None))
-        super().__init__(user_login_info)
-
-    @property
-    def previous_last_login_date(self) -> _datetime:
-        return self._previous_last_login_date
-
-    @property
-    def user(self) -> "_entities.User":
-        return self._user
-
-    @property
-    def user_id(self) -> int:
-        return self._user_id
-
-    @property
-    def access_token(self) -> str:
-        return self._access_token
+    previous_last_login_date: Optional[datetime] = attr(name="PreviousLastLoginDate", default=None)
+    user: Optional["entities.User"] = element(tag="User", default=None)
+    user_id: Optional[int] = attr(name="UserId", default=None)
+    access_token: Optional[str] = attr(name="accessToken", default=None)
 
     def _key(self):
         return (
@@ -48,14 +30,7 @@ class UserLoginRaw(_EntityBaseRaw):
             self.access_token,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "PreviousLastLoginDate": self.previous_last_login_date,
-                "User": dict(self.user) if self.user else None,
-                "UserId": self.user_id,
-                "accessToken": self.access_token,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "UserLoginRaw",
+]

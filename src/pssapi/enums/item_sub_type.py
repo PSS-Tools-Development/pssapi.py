@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class ItemSubType(_StrEnumBase):
+class ItemSubType(_StrEnum):
     NONE = "None"
     AI_BOOK = "AIBook"
     ARTIFACT = "Artifact"
@@ -41,12 +41,11 @@ class ItemSubType(_StrEnumBase):
     RENAME = "Rename"
     RESET_TRAINING = "ResetTraining"
     REVIVE = "Revive"
-    ROOM_SKIN = "RoomSkin"
     SCRATCHY = "Scratchy"
     SHIP_SKIN = "ShipSkin"
     SITUATION = "Situation"
-    SKIP_BATTLE_PASS_TIERS = "SkipBattlePassTiers"
     SKIN = "Skin"
+    SKIP_BATTLE_PASS_TIERS = "SkipBattlePassTiers"
     SPEED_UP_CONSTRUCTION = "SpeedUpConstruction"
     SPEED_UP_RESEARCH = "SpeedUpResearch"
     STICKER = "Sticker"

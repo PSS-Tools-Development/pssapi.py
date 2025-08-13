@@ -2,95 +2,34 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class CraftDesignRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class CraftDesignRaw(EntityBaseRaw, tag="CraftDesign"):
     XML_NODE_NAME: str = "CraftDesign"
 
-    def __init__(self, craft_design_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._attack_distance: int = _parse.pss_int(craft_design_info.pop("AttackDistance", None))
-        self._attack_range: int = _parse.pss_int(craft_design_info.pop("AttackRange", None))
-        self._craft_attack_type: str = _parse.pss_str(craft_design_info.pop("CraftAttackType", None))
-        self._craft_design_id: int = _parse.pss_int(craft_design_info.pop("CraftDesignId", None))
-        self._craft_name: str = _parse.pss_str(craft_design_info.pop("CraftName", None))
-        self._craft_pathing_type: str = _parse.pss_str(craft_design_info.pop("CraftPathingType", None))
-        self._craft_target_type: str = _parse.pss_str(craft_design_info.pop("CraftTargetType", None))
-        self._entity_count: int = _parse.pss_int(craft_design_info.pop("EntityCount", None))
-        self._flight_speed: int = _parse.pss_int(craft_design_info.pop("FlightSpeed", None))
-        self._hp: int = _parse.pss_int(craft_design_info.pop("Hp", None))
-        self._missile_design_id: int = _parse.pss_int(craft_design_info.pop("MissileDesignId", None))
-        self._reload: int = _parse.pss_int(craft_design_info.pop("Reload", None))
-        self._sprite_id: int = _parse.pss_int(craft_design_info.pop("SpriteId", None))
-        self._volley: int = _parse.pss_int(craft_design_info.pop("Volley", None))
-        self._volley_delay: int = _parse.pss_int(craft_design_info.pop("VolleyDelay", None))
-        super().__init__(craft_design_info)
-
-    @property
-    def attack_distance(self) -> int:
-        return self._attack_distance
-
-    @property
-    def attack_range(self) -> int:
-        return self._attack_range
-
-    @property
-    def craft_attack_type(self) -> str:
-        return self._craft_attack_type
-
-    @property
-    def craft_design_id(self) -> int:
-        return self._craft_design_id
-
-    @property
-    def craft_name(self) -> str:
-        return self._craft_name
-
-    @property
-    def craft_pathing_type(self) -> str:
-        return self._craft_pathing_type
-
-    @property
-    def craft_target_type(self) -> str:
-        return self._craft_target_type
-
-    @property
-    def entity_count(self) -> int:
-        return self._entity_count
-
-    @property
-    def flight_speed(self) -> int:
-        return self._flight_speed
-
-    @property
-    def hp(self) -> int:
-        return self._hp
-
-    @property
-    def missile_design_id(self) -> int:
-        return self._missile_design_id
-
-    @property
-    def reload(self) -> int:
-        return self._reload
-
-    @property
-    def sprite_id(self) -> int:
-        return self._sprite_id
-
-    @property
-    def volley(self) -> int:
-        return self._volley
-
-    @property
-    def volley_delay(self) -> int:
-        return self._volley_delay
+    attack_distance: Optional[int] = attr(name="AttackDistance", default=None)
+    attack_range: Optional[int] = attr(name="AttackRange", default=None)
+    craft_attack_type: Optional[str] = attr(name="CraftAttackType", default=None)
+    craft_design_id: Optional[int] = attr(name="CraftDesignId", default=None)
+    craft_name: Optional[str] = attr(name="CraftName", default=None)
+    craft_pathing_type: Optional[str] = attr(name="CraftPathingType", default=None)
+    craft_target_type: Optional[str] = attr(name="CraftTargetType", default=None)
+    entity_count: Optional[int] = attr(name="EntityCount", default=None)
+    flight_speed: Optional[int] = attr(name="FlightSpeed", default=None)
+    hp: Optional[int] = attr(name="Hp", default=None)
+    missile_design_id: Optional[int] = attr(name="MissileDesignId", default=None)
+    reload: Optional[int] = attr(name="Reload", default=None)
+    sprite_id: Optional[int] = attr(name="SpriteId", default=None)
+    volley: Optional[int] = attr(name="Volley", default=None)
+    volley_delay: Optional[int] = attr(name="VolleyDelay", default=None)
 
     def _key(self):
         return (
@@ -111,25 +50,7 @@ class CraftDesignRaw(_EntityBaseRaw):
             self.volley_delay,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "AttackDistance": self.attack_distance,
-                "AttackRange": self.attack_range,
-                "CraftAttackType": self.craft_attack_type,
-                "CraftDesignId": self.craft_design_id,
-                "CraftName": self.craft_name,
-                "CraftPathingType": self.craft_pathing_type,
-                "CraftTargetType": self.craft_target_type,
-                "EntityCount": self.entity_count,
-                "FlightSpeed": self.flight_speed,
-                "Hp": self.hp,
-                "MissileDesignId": self.missile_design_id,
-                "Reload": self.reload,
-                "SpriteId": self.sprite_id,
-                "Volley": self.volley,
-                "VolleyDelay": self.volley_delay,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "CraftDesignRaw",
+]

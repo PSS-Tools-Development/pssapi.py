@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class HistoryType(_StrEnumBase):
+class HistoryType(_StrEnum):
     ALLIANCE_TROPHY = "AllianceTrophy"
     ITEM_PRICES = "ItemPrices"
     ITEMS_IN_CIRCULATION = "ItemsInCirculation"

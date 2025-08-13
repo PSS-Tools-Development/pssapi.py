@@ -1,12 +1,13 @@
-from ..types import EntityInfo as _EntityInfo
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import RoomActionRaw as _RoomActionRaw
+from .entity_base import EntityWithIdBase
+from .raw import RoomActionRaw
 
 
-class RoomAction(_RoomActionRaw, _EntityWithIdBase):
-    def __init__(self, room_action_info: _EntityInfo) -> None:
-        super().__init__(room_action_info)
-
+class RoomAction(RoomActionRaw, EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.room_action_id
+
+
+__all__ = [
+    "RoomAction",
+]

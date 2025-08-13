@@ -1,30 +1,24 @@
-import datetime as _datetime
-from typing import List as _List
-from typing import Tuple as _Tuple
+from typing import List, Tuple
 
-import pssapi.services.service_base as _service_base
+from pssapi.services import service_base
 
-from .. import utils as _utils
-from ..entities import Battle as _Battle
-from ..entities import MissionDesign as _MissionDesign
-from ..entities import MissionEvent as _MissionEvent
-from ..entities import User as _User
-from .raw import MissionServiceRaw as _MissionServiceRaw
+from ..entities import Battle, MissionDesign, MissionEvent, User
+from .raw import MissionServiceRaw
 
 
-class MissionService(_service_base.CacheableServiceBase):
-    async def create_mission(self, access_token: str, checksum: str, client_date_time: str, message_id: int, mission_design_id: int) -> _Tuple[_Battle, _MissionEvent, _User, _List[_MissionEvent]]:
+class MissionService(service_base.CacheableServiceBase):
+    async def create_mission(self, access_token: str, checksum: str, client_date_time: str, message_id: int, mission_design_id: int) -> Tuple[Battle, MissionEvent, User, List[MissionEvent]]:
         production_server = await self.get_production_server()
-        result = await _MissionServiceRaw.create_mission_2(production_server, access_token, checksum, client_date_time, message_id, mission_design_id)
+        result = await MissionServiceRaw.create_mission_2(production_server, access_token, checksum, client_date_time, message_id, mission_design_id)
         return result
 
-    @_service_base.cache_endpoint("MissionDesignVersion")
-    async def list_all_mission_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_MissionDesign]:
+    @service_base.cache_endpoint("MissionDesignVersion")
+    async def list_all_mission_designs(self, client_date_time: str, design_version: int = None) -> List[MissionDesign]:
         production_server = await self.get_production_server()
-        result = await _MissionServiceRaw.list_all_mission_designs_4(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
+        result = await MissionServiceRaw.list_all_mission_designs_4(production_server, client_date_time, design_version, self.language_key)
         return result
 
-    async def select_event(self, access_token: str, battle_id: int, checksum: str, client_date_time: str, client_number: int, mission_event_id: int) -> _Tuple[_Battle, _User]:
+    async def select_event(self, access_token: str, battle_id: int, checksum: str, client_date_time: str, client_number: int, mission_event_id: int) -> Tuple[Battle, User]:
         production_server = await self.get_production_server()
-        result = await _MissionServiceRaw.select_event_3(production_server, access_token, battle_id, checksum, client_date_time, client_number, mission_event_id)
+        result = await MissionServiceRaw.select_event_3(production_server, access_token, battle_id, checksum, client_date_time, client_number, mission_event_id)
         return result

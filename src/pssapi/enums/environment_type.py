@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class EnvironmentType(_StrEnumBase):
+class EnvironmentType(_StrEnum):
     NONE = "None"
     ASTEROID = "Asteroid"
     SOLAR = "Solar"

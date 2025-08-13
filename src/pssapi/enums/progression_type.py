@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class ProgressionType(_StrEnumBase):
+class ProgressionType(_StrEnum):
     EASE_IN = "EaseIn"
     EASE_OUT = "EaseOut"
     LINEAR = "Linear"

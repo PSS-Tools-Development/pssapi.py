@@ -3,18 +3,11 @@ This file has been generated automatically.
 Any changes to this file will be lost eventually.
 """
 
-from datetime import datetime as _datetime
-from typing import List as _List
-from typing import Tuple as _Tuple
+from datetime import datetime
+from typing import List, Tuple
 
-from ... import core as _core
-from ...entities import Friend as _Friend
-from ...entities import ListFriends as _ListFriends
-from ...entities import Skin as _Skin
-from ...entities import SkinSet as _SkinSet
-from ...entities import User as _User
-from ...entities import UserEmailPasswordAuthorize as _UserEmailPasswordAuthorize
-from ...entities import UserLogin as _UserLogin
+from ... import core
+from ...entities import Friend, ListFriends, Skin, SkinSet, User, UserEmailPasswordAuthorize, UserLogin
 
 
 # ---------- Constants ----------
@@ -36,25 +29,27 @@ STEAM_LOGIN_6_BASE_PATH: str = "UserService/SteamLogin6"
 USER_EMAIL_PASSWORD_AUTHORIZE_2_BASE_PATH: str = "UserService/UserEmailPasswordAuthorize2"
 USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH: str = "UserService/UserEmailPasswordAuthorize4"
 
+# ---------- Endpoint structure ----------
+
 
 # ---------- Endpoints ----------
 
 
-async def accept_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
+async def accept_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AcceptFriendRequest", production_server, ACCEPT_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((Friend, "Friend", False),), "AcceptFriendRequest", production_server, ACCEPT_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
-async def add_friend_2(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
+async def add_friend_2(production_server: str, access_token: str, friend_user_id: int, **params) -> Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "AddFriend", production_server, ADD_FRIEND_2_BASE_PATH, "POST", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((Friend, "Friend", False),), "AddFriend", production_server, ADD_FRIEND_2_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
-async def decline_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> _Friend:
+async def decline_friend_request(production_server: str, access_token: str, friend_user_id: int, **params) -> Friend:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    result = await _core.get_entities_from_path(((_Friend, "Friend", False),), "DeclineFriendRequest", production_server, DECLINE_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((Friend, "Friend", False),), "DeclineFriendRequest", production_server, DECLINE_FRIEND_REQUEST_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
@@ -62,7 +57,7 @@ async def device_login_11(
     production_server: str,
     advertising_key: str,
     checksum: str,
-    client_date_time: _datetime,
+    client_date_time: datetime,
     device_key: str,
     device_type: str,
     is_jail_broken: bool,
@@ -70,7 +65,7 @@ async def device_login_11(
     refresh_token: str,
     signal: bool,
     **params,
-) -> _UserLogin:
+) -> UserLogin:
     params = {
         "advertisingKey": advertising_key,
         "checksum": checksum,
@@ -83,7 +78,7 @@ async def device_login_11(
         "signal": signal,
         **params,
     }
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
@@ -93,7 +88,7 @@ async def device_login_12(
     advertising_key: str,
     checksum: str,
     client_build: int,
-    client_date_time: _datetime,
+    client_date_time: datetime,
     client_version: str,
     device_key: str,
     device_name: str,
@@ -106,7 +101,7 @@ async def device_login_12(
     refresh_token: str,
     signal: bool,
     **params,
-) -> _UserLogin:
+) -> UserLogin:
     params = {
         "AccessToken": access_token,
         "AdvertisingKey": advertising_key,
@@ -126,9 +121,9 @@ async def device_login_12(
         "Signal": signal,
         **params,
     }
-    content = _core.create_request_content(__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_12_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    content = core.create_request_content(__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, "json")
+    result = await core.get_entities_from_path(
+        ((UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_12_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
     )
     return result
 
@@ -144,7 +139,7 @@ async def device_login_15(
     advertising_key: str,
     checksum: str,
     client_build: int,
-    client_date_time: _datetime,
+    client_date_time: datetime,
     client_version: str,
     device_key: str,
     device_name: str,
@@ -157,7 +152,7 @@ async def device_login_15(
     refresh_token: str,
     signal: bool,
     **params,
-) -> _UserLogin:
+) -> UserLogin:
     params = {
         "AccessToken": access_token,
         "AdvertisingKey": advertising_key,
@@ -177,9 +172,9 @@ async def device_login_15(
         "Signal": signal,
         **params,
     }
-    content = _core.create_request_content(__DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_15_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    content = core.create_request_content(__DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE, params, "json")
+    result = await core.get_entities_from_path(
+        ((UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_15_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
     )
     return result
 
@@ -189,38 +184,38 @@ __DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE: str = (
 )
 
 
-async def list_friends(production_server: str, user_id: int, access_token: str, **params) -> _ListFriends:
+async def list_friends(production_server: str, user_id: int, access_token: str, **params) -> ListFriends:
     params = {"UserId": user_id, "accessToken": access_token, **params}
-    result = await _core.get_entities_from_path(((_ListFriends, "ListFriends", False),), "UserService", production_server, LIST_FRIENDS_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((ListFriends, "ListFriends", False),), "UserService", production_server, LIST_FRIENDS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
-async def list_skin_sets_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_SkinSet]:
+async def list_skin_sets_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> List[SkinSet]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True),), "SkinSets", production_server, LIST_SKIN_SETS_2_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((SkinSet, "SkinSets", True),), "SkinSets", production_server, LIST_SKIN_SETS_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
-async def list_skins(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _Tuple[_List[_SkinSet], _List[_Skin]]:
+async def list_skins(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> Tuple[List[SkinSet], List[Skin]]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_SkinSet, "SkinSets", True), (_Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((SkinSet, "SkinSets", True), (Skin, "Skins", True)), "ListSkins", production_server, LIST_SKINS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
-async def list_skins_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> _List[_Skin]:
+async def list_skins_2(production_server: str, client_date_time: str, design_version: int, language_key: str, **params) -> List[Skin]:
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
-    result = await _core.get_entities_from_path(((_Skin, "Skins", True),), "Skins", production_server, LIST_SKINS_2_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((Skin, "Skins", True),), "Skins", production_server, LIST_SKINS_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
 async def remove_friend(production_server: str, access_token: str, friend_user_id: int, **params) -> None:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
-    await _core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", response_gzipped=False, **params)
+    await core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", response_gzipped=False, **params)
 
 
-async def search_users(production_server: str, search_string: str, **params) -> _List[_User]:
+async def search_users(production_server: str, search_string: str, **params) -> List[User]:
     params = {"searchString": search_string, **params}
-    result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, SEARCH_USERS_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await core.get_entities_from_path(((User, "Users", True),), "Users", production_server, SEARCH_USERS_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
 
 
@@ -244,7 +239,7 @@ async def steam_login_3(
     signal: bool,
     ticket: str,
     **params,
-) -> _UserLogin:
+) -> UserLogin:
     params = {
         "AccessToken": access_token,
         "AdvertisingKey": advertising_key,
@@ -265,9 +260,9 @@ async def steam_login_3(
         "Ticket": ticket,
         **params,
     }
-    content = _core.create_request_content(__STEAM_LOGIN_3_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_3_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    content = core.create_request_content(__STEAM_LOGIN_3_REQUEST_CONTENT_STRUCTURE, params, "json")
+    result = await core.get_entities_from_path(
+        ((UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_3_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
     )
     return result
 
@@ -297,7 +292,7 @@ async def steam_login_6(
     signal: bool,
     ticket: str,
     **params,
-) -> _UserLogin:
+) -> UserLogin:
     params = {
         "AccessToken": access_token,
         "AdvertisingKey": advertising_key,
@@ -318,9 +313,9 @@ async def steam_login_6(
         "Ticket": ticket,
         **params,
     }
-    content = _core.create_request_content(__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_6_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+    content = core.create_request_content(__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE, params, "json")
+    result = await core.get_entities_from_path(
+        ((UserLogin, "UserLogin", False),), "UserService", production_server, STEAM_LOGIN_6_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
     )
     return result
 
@@ -332,17 +327,17 @@ __STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE: str = (
 
 async def user_email_password_authorize_2(
     production_server: str, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, password: str, **params
-) -> _UserEmailPasswordAuthorize:
+) -> UserEmailPasswordAuthorize:
     params = {"accessToken": access_token, "checksum": checksum, "clientDateTime": client_date_time, "deviceKey": device_key, "email": email, "password": password, **params}
-    result = await _core.get_entities_from_path(
-        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_2_BASE_PATH, "POST", response_gzipped=False, **params
+    result = await core.get_entities_from_path(
+        ((UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_2_BASE_PATH, "POST", response_gzipped=False, **params
     )
     return result
 
 
 async def user_email_password_authorize_4(
     production_server: str, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, language_key: str, password: str, **params
-) -> _UserEmailPasswordAuthorize:
+) -> UserEmailPasswordAuthorize:
     params = {
         "accessToken": access_token,
         "checksum": checksum,
@@ -354,7 +349,7 @@ async def user_email_password_authorize_4(
         "password": password,
         **params,
     }
-    result = await _core.get_entities_from_path(
-        ((_UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH, "POST", response_gzipped=False, **params
+    result = await core.get_entities_from_path(
+        ((UserEmailPasswordAuthorize, "UserEmailPasswordAuthorize", False),), "UserService", production_server, USER_EMAIL_PASSWORD_AUTHORIZE_4_BASE_PATH, "POST", response_gzipped=False, **params
     )
     return result

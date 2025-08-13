@@ -1,26 +1,26 @@
-from abc import ABC as _ABC
+from typing import Any
 
-from ...types import EntityInfo as _EntityInfo
+from pydantic import ConfigDict
+from pydantic_xml import BaseXmlModel
+from pydantic_xml.fields import XmlEntityInfo
+
+from ...types import EntityInfo
 
 
-class EntityBaseRaw(_ABC):
-    XML_NODE_NAME: str = None
+class T(BaseXmlModel):
+    pass
 
-    def __init__(self, entity_info: _EntityInfo):
-        self._untracked_fields = entity_info or {}
 
+class EntityBaseRaw(BaseXmlModel):
     @property
-    def untracked_properties(self) -> _EntityInfo:
-        return self._untracked_fields
+    def untracked_properties(self) -> EntityInfo:
+        return self.model_extra or {}
 
     def _key(self):
         return tuple()
 
     def __contains__(self, key):
-        return key in self.__dict__().keys()
-
-    def __dict__(self):
-        return self.untracked_properties
+        return key in self.to_dict().keys()
 
     def __eq__(self, other):
         if isinstance(other, type(self)):
@@ -28,13 +28,13 @@ class EntityBaseRaw(_ABC):
         return False
 
     def __getitem__(self, key):
-        return self.__dict__()[key]
+        return self.to_dict()[key]
 
     def __hash__(self):
         return hash(self._key())
 
     def __iter__(self):
-        for key, value in self.__dict__().items():
+        for key, value in self.to_dict().items():
             yield key, value
 
     def __ne__(self, other):
@@ -46,3 +46,15 @@ class EntityBaseRaw(_ABC):
 
     def __str__(self):
         return self.__repr__()
+
+    def to_dict(self) -> dict[str, Any]:
+        model_dump = self.model_dump()
+        original_attributes = {field.path: model_dump[property_name] for property_name, field in self.__class__.model_fields.items() if isinstance(field, XmlEntityInfo)}
+        return model_dump | original_attributes
+
+    model_config = ConfigDict(extra="allow")
+
+
+__all__ = [
+    "EntityBaseRaw",
+]

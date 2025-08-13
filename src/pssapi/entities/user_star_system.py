@@ -1,12 +1,13 @@
-from ..types import EntityInfo as _EntityInfo
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import UserStarSystemRaw as _UserStarSystemRaw
+from .entity_base import EntityWithIdBase
+from .raw import UserStarSystemRaw
 
 
-class UserStarSystem(_UserStarSystemRaw, _EntityWithIdBase):
-    def __init__(self, user_star_system_info: _EntityInfo) -> None:
-        super().__init__(user_star_system_info)
-
+class UserStarSystem(UserStarSystemRaw, EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.user_star_system_id
+
+
+__all__ = [
+    "UserStarSystem",
+]

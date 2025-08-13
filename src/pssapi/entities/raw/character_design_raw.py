@@ -2,285 +2,72 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
-from typing import List as _List
+from typing import TYPE_CHECKING, List, Optional
 
-import pssapi.entities as _entities
-
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr, element, wrapped
 
 
-class CharacterDesignRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    from pssapi import entities
+
+from .entity_base_raw import EntityBaseRaw
+
+
+class CharacterDesignRaw(EntityBaseRaw, tag="CharacterDesign"):
     XML_NODE_NAME: str = "CharacterDesign"
 
-    def __init__(self, character_design_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._action_sound_file_id: int = _parse.pss_int(character_design_info.pop("ActionSoundFileId", None))
-        self._attack: float = _parse.pss_float(character_design_info.pop("Attack", None))
-        self._boost_values_string: str = _parse.pss_str(character_design_info.pop("BoostValuesString", None))
-        self._character_body_part_id: int = _parse.pss_int(character_design_info.pop("CharacterBodyPartId", None))
-        self._character_design_description: str = _parse.pss_str(character_design_info.pop("CharacterDesignDescription", None))
-        self._character_design_id: int = _parse.pss_int(character_design_info.pop("CharacterDesignId", None))
-        self._character_design_name: str = _parse.pss_str(character_design_info.pop("CharacterDesignName", None))
-        self._character_head_part_id: int = _parse.pss_int(character_design_info.pop("CharacterHeadPartId", None))
-        self._character_leg_part_id: int = _parse.pss_int(character_design_info.pop("CharacterLegPartId", None))
-        self._character_parts: _List[_entities.CharacterPart] = (
-            [_entities.CharacterPart(child_info) for child_info in character_design_info.pop("CharacterParts")[0].get("CharacterPart", [])] if character_design_info.get("CharacterParts") else []
-        )
-        self._collection_design_id: int = _parse.pss_int(character_design_info.pop("CollectionDesignId", None))
-        self._engine: float = _parse.pss_float(character_design_info.pop("Engine", None))
-        self._equipment_mask: int = _parse.pss_int(character_design_info.pop("EquipmentMask", None))
-        self._final_attack: float = _parse.pss_float(character_design_info.pop("FinalAttack", None))
-        self._final_engine: float = _parse.pss_float(character_design_info.pop("FinalEngine", None))
-        self._final_hp: int = _parse.pss_int(character_design_info.pop("FinalHp", None))
-        self._final_pilot: float = _parse.pss_float(character_design_info.pop("FinalPilot", None))
-        self._final_repair: float = _parse.pss_float(character_design_info.pop("FinalRepair", None))
-        self._final_research: int = _parse.pss_int(character_design_info.pop("FinalResearch", None))
-        self._final_science: float = _parse.pss_float(character_design_info.pop("FinalScience", None))
-        self._final_weapon: float = _parse.pss_float(character_design_info.pop("FinalWeapon", None))
-        self._fire_resistance: int = _parse.pss_int(character_design_info.pop("FireResistance", None))
-        self._flags: int = _parse.pss_int(character_design_info.pop("Flags", None))
-        self._gender_type: str = _parse.pss_str(character_design_info.pop("GenderType", None))
-        self._hp: int = _parse.pss_int(character_design_info.pop("Hp", None))
-        self._level: int = _parse.pss_int(character_design_info.pop("Level", None))
-        self._max_character_level: int = _parse.pss_int(character_design_info.pop("MaxCharacterLevel", None))
-        self._max_count: int = _parse.pss_int(character_design_info.pop("MaxCount", None))
-        self._min_ship_level: int = _parse.pss_int(character_design_info.pop("MinShipLevel", None))
-        self._pilot: float = _parse.pss_float(character_design_info.pop("Pilot", None))
-        self._profile_sprite_id: int = _parse.pss_int(character_design_info.pop("ProfileSpriteId", None))
-        self._progression_type: str = _parse.pss_str(character_design_info.pop("ProgressionType", None))
-        self._race_type: str = _parse.pss_str(character_design_info.pop("RaceType", None))
-        self._rarity: str = _parse.pss_str(character_design_info.pop("Rarity", None))
-        self._repair: float = _parse.pss_float(character_design_info.pop("Repair", None))
-        self._research: int = _parse.pss_int(character_design_info.pop("Research", None))
-        self._root_character_design_id: int = _parse.pss_int(character_design_info.pop("RootCharacterDesignId", None))
-        self._run_speed: int = _parse.pss_int(character_design_info.pop("RunSpeed", None))
-        self._science: float = _parse.pss_float(character_design_info.pop("Science", None))
-        self._special_ability_argument: int = _parse.pss_int(character_design_info.pop("SpecialAbilityArgument", None))
-        self._special_ability_final_argument: int = _parse.pss_int(character_design_info.pop("SpecialAbilityFinalArgument", None))
-        self._special_ability_type: str = _parse.pss_str(character_design_info.pop("SpecialAbilityType", None))
-        self._speech_phrases: str = _parse.pss_str(character_design_info.pop("SpeechPhrases", None))
-        self._speech_pitch: int = _parse.pss_int(character_design_info.pop("SpeechPitch", None))
-        self._speech_rate: int = _parse.pss_int(character_design_info.pop("SpeechRate", None))
-        self._speech_voice: str = _parse.pss_str(character_design_info.pop("SpeechVoice", None))
-        self._tags: str = _parse.pss_str(character_design_info.pop("Tags", None))
-        self._tap_sound_file_id: int = _parse.pss_int(character_design_info.pop("TapSoundFileId", None))
-        self._training_capacity: int = _parse.pss_int(character_design_info.pop("TrainingCapacity", None))
-        self._walking_speed: int = _parse.pss_int(character_design_info.pop("WalkingSpeed", None))
-        self._weapon: float = _parse.pss_float(character_design_info.pop("Weapon", None))
-        self._xp_requirement_scale: int = _parse.pss_int(character_design_info.pop("XpRequirementScale", None))
-        super().__init__(character_design_info)
-
-    @property
-    def action_sound_file_id(self) -> int:
-        return self._action_sound_file_id
-
-    @property
-    def attack(self) -> float:
-        return self._attack
-
-    @property
-    def boost_values_string(self) -> str:
-        return self._boost_values_string
-
-    @property
-    def character_body_part_id(self) -> int:
-        return self._character_body_part_id
-
-    @property
-    def character_design_description(self) -> str:
-        return self._character_design_description
-
-    @property
-    def character_design_id(self) -> int:
-        return self._character_design_id
-
-    @property
-    def character_design_name(self) -> str:
-        return self._character_design_name
-
-    @property
-    def character_head_part_id(self) -> int:
-        return self._character_head_part_id
-
-    @property
-    def character_leg_part_id(self) -> int:
-        return self._character_leg_part_id
-
-    @property
-    def character_parts(self) -> _List["_entities.CharacterPart"]:
-        return self._character_parts
-
-    @property
-    def collection_design_id(self) -> int:
-        return self._collection_design_id
-
-    @property
-    def engine(self) -> float:
-        return self._engine
-
-    @property
-    def equipment_mask(self) -> int:
-        return self._equipment_mask
-
-    @property
-    def final_attack(self) -> float:
-        return self._final_attack
-
-    @property
-    def final_engine(self) -> float:
-        return self._final_engine
-
-    @property
-    def final_hp(self) -> int:
-        return self._final_hp
-
-    @property
-    def final_pilot(self) -> float:
-        return self._final_pilot
-
-    @property
-    def final_repair(self) -> float:
-        return self._final_repair
-
-    @property
-    def final_research(self) -> int:
-        return self._final_research
-
-    @property
-    def final_science(self) -> float:
-        return self._final_science
-
-    @property
-    def final_weapon(self) -> float:
-        return self._final_weapon
-
-    @property
-    def fire_resistance(self) -> int:
-        return self._fire_resistance
-
-    @property
-    def flags(self) -> int:
-        return self._flags
-
-    @property
-    def gender_type(self) -> str:
-        return self._gender_type
-
-    @property
-    def hp(self) -> int:
-        return self._hp
-
-    @property
-    def level(self) -> int:
-        return self._level
-
-    @property
-    def max_character_level(self) -> int:
-        return self._max_character_level
-
-    @property
-    def max_count(self) -> int:
-        return self._max_count
-
-    @property
-    def min_ship_level(self) -> int:
-        return self._min_ship_level
-
-    @property
-    def pilot(self) -> float:
-        return self._pilot
-
-    @property
-    def profile_sprite_id(self) -> int:
-        return self._profile_sprite_id
-
-    @property
-    def progression_type(self) -> str:
-        return self._progression_type
-
-    @property
-    def race_type(self) -> str:
-        return self._race_type
-
-    @property
-    def rarity(self) -> str:
-        return self._rarity
-
-    @property
-    def repair(self) -> float:
-        return self._repair
-
-    @property
-    def research(self) -> int:
-        return self._research
-
-    @property
-    def root_character_design_id(self) -> int:
-        return self._root_character_design_id
-
-    @property
-    def run_speed(self) -> int:
-        return self._run_speed
-
-    @property
-    def science(self) -> float:
-        return self._science
-
-    @property
-    def special_ability_argument(self) -> int:
-        return self._special_ability_argument
-
-    @property
-    def special_ability_final_argument(self) -> int:
-        return self._special_ability_final_argument
-
-    @property
-    def special_ability_type(self) -> str:
-        return self._special_ability_type
-
-    @property
-    def speech_phrases(self) -> str:
-        return self._speech_phrases
-
-    @property
-    def speech_pitch(self) -> int:
-        return self._speech_pitch
-
-    @property
-    def speech_rate(self) -> int:
-        return self._speech_rate
-
-    @property
-    def speech_voice(self) -> str:
-        return self._speech_voice
-
-    @property
-    def tags(self) -> str:
-        return self._tags
-
-    @property
-    def tap_sound_file_id(self) -> int:
-        return self._tap_sound_file_id
-
-    @property
-    def training_capacity(self) -> int:
-        return self._training_capacity
-
-    @property
-    def walking_speed(self) -> int:
-        return self._walking_speed
-
-    @property
-    def weapon(self) -> float:
-        return self._weapon
-
-    @property
-    def xp_requirement_scale(self) -> int:
-        return self._xp_requirement_scale
+    action_sound_file_id: Optional[int] = attr(name="ActionSoundFileId", default=None)
+    attack: Optional[float] = attr(name="Attack", default=None)
+    boost_values_string: Optional[str] = attr(name="BoostValuesString", default=None)
+    character_body_part_id: Optional[int] = attr(name="CharacterBodyPartId", default=None)
+    character_design_description: Optional[str] = attr(name="CharacterDesignDescription", default=None)
+    character_design_id: Optional[int] = attr(name="CharacterDesignId", default=None)
+    character_design_name: Optional[str] = attr(name="CharacterDesignName", default=None)
+    character_head_part_id: Optional[int] = attr(name="CharacterHeadPartId", default=None)
+    character_leg_part_id: Optional[int] = attr(name="CharacterLegPartId", default=None)
+    character_parts: List["entities.CharacterPart"] = wrapped("CharacterParts", element(tag="CharacterPart", default_factory=list))
+    collection_design_id: Optional[int] = attr(name="CollectionDesignId", default=None)
+    engine: Optional[float] = attr(name="Engine", default=None)
+    equipment_mask: Optional[int] = attr(name="EquipmentMask", default=None)
+    final_attack: Optional[float] = attr(name="FinalAttack", default=None)
+    final_engine: Optional[float] = attr(name="FinalEngine", default=None)
+    final_hp: Optional[int] = attr(name="FinalHp", default=None)
+    final_pilot: Optional[float] = attr(name="FinalPilot", default=None)
+    final_repair: Optional[float] = attr(name="FinalRepair", default=None)
+    final_research: Optional[int] = attr(name="FinalResearch", default=None)
+    final_science: Optional[float] = attr(name="FinalScience", default=None)
+    final_weapon: Optional[float] = attr(name="FinalWeapon", default=None)
+    fire_resistance: Optional[int] = attr(name="FireResistance", default=None)
+    flags: Optional[int] = attr(name="Flags", default=None)
+    gender_type: Optional[str] = attr(name="GenderType", default=None)
+    hp: Optional[int] = attr(name="Hp", default=None)
+    level: Optional[int] = attr(name="Level", default=None)
+    max_character_level: Optional[int] = attr(name="MaxCharacterLevel", default=None)
+    max_count: Optional[int] = attr(name="MaxCount", default=None)
+    min_ship_level: Optional[int] = attr(name="MinShipLevel", default=None)
+    pilot: Optional[float] = attr(name="Pilot", default=None)
+    profile_sprite_id: Optional[int] = attr(name="ProfileSpriteId", default=None)
+    progression_type: Optional[str] = attr(name="ProgressionType", default=None)
+    race_type: Optional[str] = attr(name="RaceType", default=None)
+    rarity: Optional[str] = attr(name="Rarity", default=None)
+    repair: Optional[float] = attr(name="Repair", default=None)
+    research: Optional[int] = attr(name="Research", default=None)
+    root_character_design_id: Optional[int] = attr(name="RootCharacterDesignId", default=None)
+    run_speed: Optional[int] = attr(name="RunSpeed", default=None)
+    science: Optional[float] = attr(name="Science", default=None)
+    special_ability_argument: Optional[int] = attr(name="SpecialAbilityArgument", default=None)
+    special_ability_final_argument: Optional[int] = attr(name="SpecialAbilityFinalArgument", default=None)
+    special_ability_type: Optional[str] = attr(name="SpecialAbilityType", default=None)
+    speech_phrases: Optional[str] = attr(name="SpeechPhrases", default=None)
+    speech_pitch: Optional[int] = attr(name="SpeechPitch", default=None)
+    speech_rate: Optional[int] = attr(name="SpeechRate", default=None)
+    speech_voice: Optional[str] = attr(name="SpeechVoice", default=None)
+    tags: Optional[str] = attr(name="Tags", default=None)
+    tap_sound_file_id: Optional[int] = attr(name="TapSoundFileId", default=None)
+    training_capacity: Optional[int] = attr(name="TrainingCapacity", default=None)
+    walking_speed: Optional[int] = attr(name="WalkingSpeed", default=None)
+    weapon: Optional[float] = attr(name="Weapon", default=None)
+    xp_requirement_scale: Optional[int] = attr(name="XpRequirementScale", default=None)
 
     def _key(self):
         return (
@@ -338,62 +125,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
             self.xp_requirement_scale,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "ActionSoundFileId": self.action_sound_file_id,
-                "Attack": self.attack,
-                "BoostValuesString": self.boost_values_string,
-                "CharacterBodyPartId": self.character_body_part_id,
-                "CharacterDesignDescription": self.character_design_description,
-                "CharacterDesignId": self.character_design_id,
-                "CharacterDesignName": self.character_design_name,
-                "CharacterHeadPartId": self.character_head_part_id,
-                "CharacterLegPartId": self.character_leg_part_id,
-                "CharacterParts": [dict(child) for child in self.character_parts],
-                "CollectionDesignId": self.collection_design_id,
-                "Engine": self.engine,
-                "EquipmentMask": self.equipment_mask,
-                "FinalAttack": self.final_attack,
-                "FinalEngine": self.final_engine,
-                "FinalHp": self.final_hp,
-                "FinalPilot": self.final_pilot,
-                "FinalRepair": self.final_repair,
-                "FinalResearch": self.final_research,
-                "FinalScience": self.final_science,
-                "FinalWeapon": self.final_weapon,
-                "FireResistance": self.fire_resistance,
-                "Flags": self.flags,
-                "GenderType": self.gender_type,
-                "Hp": self.hp,
-                "Level": self.level,
-                "MaxCharacterLevel": self.max_character_level,
-                "MaxCount": self.max_count,
-                "MinShipLevel": self.min_ship_level,
-                "Pilot": self.pilot,
-                "ProfileSpriteId": self.profile_sprite_id,
-                "ProgressionType": self.progression_type,
-                "RaceType": self.race_type,
-                "Rarity": self.rarity,
-                "Repair": self.repair,
-                "Research": self.research,
-                "RootCharacterDesignId": self.root_character_design_id,
-                "RunSpeed": self.run_speed,
-                "Science": self.science,
-                "SpecialAbilityArgument": self.special_ability_argument,
-                "SpecialAbilityFinalArgument": self.special_ability_final_argument,
-                "SpecialAbilityType": self.special_ability_type,
-                "SpeechPhrases": self.speech_phrases,
-                "SpeechPitch": self.speech_pitch,
-                "SpeechRate": self.speech_rate,
-                "SpeechVoice": self.speech_voice,
-                "Tags": self.tags,
-                "TapSoundFileId": self.tap_sound_file_id,
-                "TrainingCapacity": self.training_capacity,
-                "WalkingSpeed": self.walking_speed,
-                "Weapon": self.weapon,
-                "XpRequirementScale": self.xp_requirement_scale,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "CharacterDesignRaw",
+]

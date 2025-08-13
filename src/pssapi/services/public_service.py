@@ -1,22 +1,16 @@
-import pssapi.services.service_base as _service_base
+from pssapi.services import service_base
 
-from ..entities import Ship as _Ship
-from .raw import PublicServiceRaw as _PublicServiceRaw
+from ..entities import Ship
+from .raw import PublicServiceRaw
 
 
-class PublicService(_service_base.ServiceBase):
-    async def get_ship_details(self, access_token: str, user_id: int) -> _Ship:
-        """
-        Parameter 'access_token' needs to be a permanent token. A generated token doesn't work.
-        """
+class PublicService(service_base.ServiceBase):
+    async def get_ship_details(self, access_token: str, user_id: int) -> Ship:
         production_server = await self.get_production_server()
-        result = await _PublicServiceRaw.get_ship_details(production_server, access_token, user_id)
+        result = await PublicServiceRaw.get_ship_details(production_server, access_token, user_id)
         return result
 
-    async def get_ship_room_details(self, access_token: str, user_id: int) -> _Ship:
-        """
-        Parameter 'access_token' needs to be a permanent token. A generated token doesn't work.
-        """
+    async def get_ship_room_details(self, access_token: str, user_id: int) -> Ship:
         production_server = await self.get_production_server()
-        result = await _PublicServiceRaw.get_ship_room_details(production_server, access_token, user_id)
+        result = await PublicServiceRaw.get_ship_room_details(production_server, access_token, user_id)
         return result

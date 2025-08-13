@@ -1,278 +1,137 @@
-import datetime as _datetime
-import hashlib as _hashlib
-from typing import List as _List
-from uuid import uuid4
+from datetime import datetime
+from typing import List
 
-import pssapi.services.service_base as _service_base
+from pssapi.services import service_base
 
-from .. import entities as _entities
-from .. import enums as _enums
-from .. import utils as _utils
-from .raw import UserServiceRaw as _UserServiceRaw
+from ..entities import Friend, ListFriends, Skin, SkinSet, User, UserEmailPasswordAuthorize, UserLogin
+from .raw import UserServiceRaw
 
 
-class _UserServiceUtils:
-    @staticmethod
-    def create_device_login_checksum(device_key: str, device_type: _enums.DeviceType, client_datetime: _datetime.datetime, checksum_key: str) -> str:
-        """
-        Generate a checksum for the `DeviceLogin` endpoints.
-
-        :param device_type: Device type.
-        :param client_datetime: Current UTC date and time.
-        :param checksum_key: A secret key for creating the checksum. While easily found online, it won't be included in pssapi, complying with SavySoda.
-        :param device_key: Optional UUID; will be generated if left empty.
-        """
-        if not checksum_key:
-            raise _utils.exceptions.InvalidChecksumKey()
-
-        timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
-        result = _hashlib.md5(f"{device_key}{timestamp}{device_type}{checksum_key}savysoda".encode("utf-8")).hexdigest()
+class UserService(service_base.ServiceBase):
+    async def accept_friend_request(self, access_token: str, friend_user_id: int) -> Friend:
+        production_server = await self.get_production_server()
+        result = await UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
         return result
 
-    @staticmethod
-    def _create_device_key() -> str:
-        return str(uuid4())
-
-
-class UserService(_service_base.ServiceBase):
-    utils = _UserServiceUtils()
-
-    async def accept_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
+    async def add_friend(self, access_token: str, friend_user_id: int) -> Friend:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.accept_friend_request(production_server, access_token, friend_user_id)
+        result = await UserServiceRaw.add_friend_2(production_server, access_token, friend_user_id)
         return result
 
-    async def add_friend(self, access_token: str, friend_user_id: int) -> _entities.Friend:
+    async def decline_friend_request(self, access_token: str, friend_user_id: int) -> Friend:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.add_friend_2(production_server, access_token, friend_user_id)
-        return result
-
-    async def decline_friend_request(self, access_token: str, friend_user_id: int) -> _entities.Friend:
-        production_server = await self.get_production_server()
-        result = await _UserServiceRaw.decline_friend_request(production_server, access_token, friend_user_id)
+        result = await UserServiceRaw.decline_friend_request(production_server, access_token, friend_user_id)
         return result
 
     async def device_login(
         self,
+        access_token: str,
+        advertising_key: str,
         checksum: str,
-        client_date_time: _datetime.datetime,
+        client_build: int,
+        client_date_time: datetime,
+        client_version: str,
         device_key: str,
-        device_type: _enums.DeviceType,
-        access_token: str = None,
-        advertising_key: str = None,
-        client_build: int = None,
-        client_version: str = None,
-        device_name: str = None,
-        is_jail_broken: bool = None,
-        locale: str = None,
-        os_build: int = None,
-        os_version: str = None,
-        refresh_token: str = None,
-        signal: bool = None,
-    ) -> _entities.UserLogin:
-        """
-        This is a shortcut to `UserService.device_login_15`.
-        """
-        return await self.device_login_15(
-            checksum,
-            client_date_time,
-            device_key,
-            device_type,
-            self.language_key,
+        device_name: str,
+        device_type: str,
+        is_jail_broken: bool,
+        language_key: str,
+        locale: str,
+        os_build: int,
+        os_version: str,
+        refresh_token: str,
+        signal: bool,
+    ) -> UserLogin:
+        production_server = await self.get_production_server()
+        result = await UserServiceRaw.device_login_15(
+            production_server,
             access_token,
             advertising_key,
+            checksum,
             client_build,
+            client_date_time,
             client_version,
+            device_key,
             device_name,
+            device_type,
             is_jail_broken,
+            language_key,
             locale,
             os_build,
             os_version,
             refresh_token,
             signal,
         )
-
-    async def device_login_11(
-        self,
-        checksum: str,
-        client_date_time: _datetime.datetime,
-        device_key: str,
-        device_type: _enums.DeviceType,
-        language_key: _enums.LanguageKey,
-        advertising_key: str = None,
-        is_jail_broken: bool = None,
-        refresh_token: str = None,
-        signal: bool = None,
-    ) -> _entities.UserLogin:
-        production_server = await self.get_production_server()
-        result = await _UserServiceRaw.device_login_11(
-            production_server,
-            advertising_key or '""',
-            checksum,
-            _utils.datetime.convert_to_pss_timestamp(client_date_time),
-            device_key,
-            str(device_type),
-            _utils.convert.to_pss_bool(is_jail_broken or False),
-            str(language_key) if language_key else None,
-            refresh_token,
-            _utils.convert.to_pss_bool(signal or False),
-        )
         return result
 
-    async def device_login_12(
-        self,
-        checksum: str,
-        client_date_time: _datetime.datetime,
-        device_key: str,
-        device_type: _enums.DeviceType,
-        language_key: _enums.LanguageKey,
-        access_token: str = None,
-        advertising_key: str = None,
-        client_build: int = None,
-        client_version: str = None,
-        device_name: str = None,
-        is_jail_broken: bool = None,
-        locale: str = None,
-        os_build: int = None,
-        os_version: str = None,
-        refresh_token: str = None,
-        signal: bool = None,
-    ) -> _entities.UserLogin:
+    async def list_friends(self, user_id: int, access_token: str) -> ListFriends:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.device_login_12(
-            production_server,
-            access_token or "00000000-0000-0000-0000-000000000000",
-            advertising_key or "00000000-0000-0000-0000-000000000000",
-            checksum,
-            client_build or "",
-            _utils.datetime.convert_to_pss_timestamp(client_date_time),
-            client_version,
-            device_key,
-            device_name or "",
-            str(device_type),
-            _utils.convert.to_pss_bool(is_jail_broken or False),
-            str(language_key) if language_key else None,
-            locale or "",
-            os_build or "",
-            os_version or "",
-            refresh_token,
-            _utils.convert.to_pss_bool(signal or False),
-        )
+        result = await UserServiceRaw.list_friends(production_server, user_id, access_token)
         return result
 
-    async def device_login_15(
-        self,
-        checksum: str,
-        client_date_time: _datetime.datetime,
-        device_key: str,
-        device_type: _enums.DeviceType,
-        language_key: _enums.LanguageKey,
-        access_token: str = None,
-        advertising_key: str = None,
-        client_build: int = None,
-        client_version: str = None,
-        device_name: str = None,
-        is_jail_broken: bool = None,
-        locale: str = None,
-        os_build: int = None,
-        os_version: str = None,
-        refresh_token: str = None,
-        signal: bool = None,
-    ) -> _entities.UserLogin:
+    async def list_skin_sets(self, client_date_time: str, design_version: int = None) -> List[SkinSet]:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.device_login_15(
-            production_server,
-            access_token or "00000000-0000-0000-0000-000000000000",
-            advertising_key or "00000000-0000-0000-0000-000000000000",
-            checksum,
-            client_build or "",
-            _utils.datetime.convert_to_pss_timestamp(client_date_time),
-            client_version,
-            device_key,
-            device_name or "",
-            str(device_type),
-            _utils.convert.to_pss_bool(is_jail_broken or False),
-            str(language_key) if language_key else None,
-            locale or "",
-            os_build or "",
-            os_version or "",
-            refresh_token,
-            _utils.convert.to_pss_bool(signal or False),
-        )
+        result = await UserServiceRaw.list_skin_sets_2(production_server, client_date_time, design_version, self.language_key)
         return result
 
-    async def list_friends(self, user_id: int, access_token: str) -> _entities.ListFriends:
+    async def list_skins(self, client_date_time: str, design_version: int = None) -> List[Skin]:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.list_friends(production_server, user_id, access_token)
-        return result
-
-    async def list_skin_sets(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_entities.SkinSet]:
-        production_server = await self.get_production_server()
-        result = await _UserServiceRaw.list_skin_sets_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
-        return result
-
-    async def list_skins(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_entities.Skin]:
-        production_server = await self.get_production_server()
-        result = await _UserServiceRaw.list_skins_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
+        result = await UserServiceRaw.list_skins_2(production_server, client_date_time, design_version, self.language_key)
         return result
 
     async def remove_friend(self, access_token: str, friend_user_id: int) -> None:
         production_server = await self.get_production_server()
-        await _UserServiceRaw.remove_friend(production_server, access_token, friend_user_id)
+        await UserServiceRaw.remove_friend(production_server, access_token, friend_user_id)
 
-    async def search_users(self, search_string: str) -> _List[_entities.User]:
+    async def search_users(self, search_string: str) -> List[User]:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.search_users(production_server, search_string)
+        result = await UserServiceRaw.search_users(production_server, search_string)
         return result
 
     async def steam_login(
         self,
+        access_token: str,
+        advertising_key: str,
         checksum: str,
-        client_date_time: _datetime.datetime,
+        client_build: int,
+        client_date_time: str,
+        client_version: str,
         device_key: str,
-        device_type: _enums.DeviceType,
-        language_key: _enums.LanguageKey,
-        access_token: str = None,
-        advertising_key: str = None,
-        client_build: int = None,
-        client_version: str = None,
-        device_name: str = None,
-        is_jail_broken: bool = None,
-        locale: str = None,
-        os_build: int = None,
-        os_version: str = None,
-        refresh_token: str = None,
-        signal: bool = None,
-        ticket: str = None,
-    ) -> _entities.UserLogin:
+        device_name: str,
+        device_type: str,
+        is_jail_broken: bool,
+        language_key: str,
+        locale: str,
+        os_build: int,
+        os_version: str,
+        refresh_token: str,
+        signal: bool,
+        ticket: str,
+    ) -> UserLogin:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.steam_login_6(
+        result = await UserServiceRaw.steam_login_6(
             production_server,
-            access_token or "00000000-0000-0000-0000-00000000",
-            advertising_key or "00000000-0000-0000-0000-00000000",
+            access_token,
+            advertising_key,
             checksum,
             client_build,
-            _utils.datetime.convert_to_pss_timestamp(client_date_time),
+            client_date_time,
             client_version,
             device_key,
             device_name,
-            str(device_type),
-            _utils.convert.to_pss_bool(is_jail_broken or False),
-            str(language_key),
-            str(locale),
+            device_type,
+            is_jail_broken,
+            language_key,
+            locale,
             os_build,
             os_version,
             refresh_token,
-            _utils.convert.to_pss_bool(signal or False),
+            signal,
             ticket,
         )
         return result
 
-    async def user_email_password_authorize(
-        self, access_token: str, checksum: str, client_date_time: _datetime.datetime, device_key: str, email: str, is_web: bool, language_key: str, password: str
-    ) -> _entities.UserEmailPasswordAuthorize:
+    async def user_email_password_authorize(self, access_token: str, checksum: str, client_date_time: str, device_key: str, email: str, is_web: bool, password: str) -> UserEmailPasswordAuthorize:
         production_server = await self.get_production_server()
-        result = await _UserServiceRaw.user_email_password_authorize_4(
-            production_server, access_token, checksum, _utils.datetime.convert_to_pss_timestamp(client_date_time), device_key, email, is_web, language_key, password
-        )
+        result = await UserServiceRaw.user_email_password_authorize_4(production_server, access_token, checksum, client_date_time, device_key, email, is_web, self.language_key, password)
         return result

@@ -2,140 +2,43 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class CollectionDesignRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class CollectionDesignRaw(EntityBaseRaw, tag="CollectionDesign"):
     XML_NODE_NAME: str = "CollectionDesign"
 
-    def __init__(self, collection_design_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._ability_icon_sprite_id: int = _parse.pss_int(collection_design_info.pop("AbilityIconSpriteId", None))
-        self._ability_name: str = _parse.pss_str(collection_design_info.pop("AbilityName", None))
-        self._argument: int = _parse.pss_int(collection_design_info.pop("Argument", None))
-        self._base_chance: int = _parse.pss_int(collection_design_info.pop("BaseChance", None))
-        self._base_enhancement_value: int = _parse.pss_int(collection_design_info.pop("BaseEnhancementValue", None))
-        self._collection_description: str = _parse.pss_str(collection_design_info.pop("CollectionDescription", None))
-        self._collection_design_id: int = _parse.pss_int(collection_design_info.pop("CollectionDesignId", None))
-        self._collection_name: str = _parse.pss_str(collection_design_info.pop("CollectionName", None))
-        self._collection_type: str = _parse.pss_str(collection_design_info.pop("CollectionType", None))
-        self._color_string: str = _parse.pss_str(collection_design_info.pop("ColorString", None))
-        self._cooldown_time: int = _parse.pss_int(collection_design_info.pop("CooldownTime", None))
-        self._enhancement_type: str = _parse.pss_str(collection_design_info.pop("EnhancementType", None))
-        self._flags: int = _parse.pss_int(collection_design_info.pop("Flags", None))
-        self._halo_animation_id: int = _parse.pss_int(collection_design_info.pop("HaloAnimationId", None))
-        self._icon_sprite_id: int = _parse.pss_int(collection_design_info.pop("IconSpriteId", None))
-        self._max_combo: int = _parse.pss_int(collection_design_info.pop("MaxCombo", None))
-        self._max_use: int = _parse.pss_int(collection_design_info.pop("MaxUse", None))
-        self._metadata: str = _parse.pss_str(collection_design_info.pop("Metadata", None))
-        self._min_combo: int = _parse.pss_int(collection_design_info.pop("MinCombo", None))
-        self._sprite_id: int = _parse.pss_int(collection_design_info.pop("SpriteId", None))
-        self._step_chance: int = _parse.pss_int(collection_design_info.pop("StepChance", None))
-        self._step_enhancement_value: float = _parse.pss_float(collection_design_info.pop("StepEnhancementValue", None))
-        self._trigger_animation_id: int = _parse.pss_int(collection_design_info.pop("TriggerAnimationId", None))
-        self._trigger_type: str = _parse.pss_str(collection_design_info.pop("TriggerType", None))
-        super().__init__(collection_design_info)
-
-    @property
-    def ability_icon_sprite_id(self) -> int:
-        return self._ability_icon_sprite_id
-
-    @property
-    def ability_name(self) -> str:
-        return self._ability_name
-
-    @property
-    def argument(self) -> int:
-        return self._argument
-
-    @property
-    def base_chance(self) -> int:
-        return self._base_chance
-
-    @property
-    def base_enhancement_value(self) -> int:
-        return self._base_enhancement_value
-
-    @property
-    def collection_description(self) -> str:
-        return self._collection_description
-
-    @property
-    def collection_design_id(self) -> int:
-        return self._collection_design_id
-
-    @property
-    def collection_name(self) -> str:
-        return self._collection_name
-
-    @property
-    def collection_type(self) -> str:
-        return self._collection_type
-
-    @property
-    def color_string(self) -> str:
-        return self._color_string
-
-    @property
-    def cooldown_time(self) -> int:
-        return self._cooldown_time
-
-    @property
-    def enhancement_type(self) -> str:
-        return self._enhancement_type
-
-    @property
-    def flags(self) -> int:
-        return self._flags
-
-    @property
-    def halo_animation_id(self) -> int:
-        return self._halo_animation_id
-
-    @property
-    def icon_sprite_id(self) -> int:
-        return self._icon_sprite_id
-
-    @property
-    def max_combo(self) -> int:
-        return self._max_combo
-
-    @property
-    def max_use(self) -> int:
-        return self._max_use
-
-    @property
-    def metadata(self) -> str:
-        return self._metadata
-
-    @property
-    def min_combo(self) -> int:
-        return self._min_combo
-
-    @property
-    def sprite_id(self) -> int:
-        return self._sprite_id
-
-    @property
-    def step_chance(self) -> int:
-        return self._step_chance
-
-    @property
-    def step_enhancement_value(self) -> float:
-        return self._step_enhancement_value
-
-    @property
-    def trigger_animation_id(self) -> int:
-        return self._trigger_animation_id
-
-    @property
-    def trigger_type(self) -> str:
-        return self._trigger_type
+    ability_icon_sprite_id: Optional[int] = attr(name="AbilityIconSpriteId", default=None)
+    ability_name: Optional[str] = attr(name="AbilityName", default=None)
+    argument: Optional[int] = attr(name="Argument", default=None)
+    base_chance: Optional[int] = attr(name="BaseChance", default=None)
+    base_enhancement_value: Optional[int] = attr(name="BaseEnhancementValue", default=None)
+    collection_description: Optional[str] = attr(name="CollectionDescription", default=None)
+    collection_design_id: Optional[int] = attr(name="CollectionDesignId", default=None)
+    collection_name: Optional[str] = attr(name="CollectionName", default=None)
+    collection_type: Optional[str] = attr(name="CollectionType", default=None)
+    color_string: Optional[str] = attr(name="ColorString", default=None)
+    cooldown_time: Optional[int] = attr(name="CooldownTime", default=None)
+    enhancement_type: Optional[str] = attr(name="EnhancementType", default=None)
+    flags: Optional[int] = attr(name="Flags", default=None)
+    halo_animation_id: Optional[int] = attr(name="HaloAnimationId", default=None)
+    icon_sprite_id: Optional[int] = attr(name="IconSpriteId", default=None)
+    max_combo: Optional[int] = attr(name="MaxCombo", default=None)
+    max_use: Optional[int] = attr(name="MaxUse", default=None)
+    metadata: Optional[str] = attr(name="Metadata", default=None)
+    min_combo: Optional[int] = attr(name="MinCombo", default=None)
+    sprite_id: Optional[int] = attr(name="SpriteId", default=None)
+    step_chance: Optional[int] = attr(name="StepChance", default=None)
+    step_enhancement_value: Optional[float] = attr(name="StepEnhancementValue", default=None)
+    trigger_animation_id: Optional[int] = attr(name="TriggerAnimationId", default=None)
+    trigger_type: Optional[str] = attr(name="TriggerType", default=None)
 
     def _key(self):
         return (
@@ -165,34 +68,7 @@ class CollectionDesignRaw(_EntityBaseRaw):
             self.trigger_type,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "AbilityIconSpriteId": self.ability_icon_sprite_id,
-                "AbilityName": self.ability_name,
-                "Argument": self.argument,
-                "BaseChance": self.base_chance,
-                "BaseEnhancementValue": self.base_enhancement_value,
-                "CollectionDescription": self.collection_description,
-                "CollectionDesignId": self.collection_design_id,
-                "CollectionName": self.collection_name,
-                "CollectionType": self.collection_type,
-                "ColorString": self.color_string,
-                "CooldownTime": self.cooldown_time,
-                "EnhancementType": self.enhancement_type,
-                "Flags": self.flags,
-                "HaloAnimationId": self.halo_animation_id,
-                "IconSpriteId": self.icon_sprite_id,
-                "MaxCombo": self.max_combo,
-                "MaxUse": self.max_use,
-                "Metadata": self.metadata,
-                "MinCombo": self.min_combo,
-                "SpriteId": self.sprite_id,
-                "StepChance": self.step_chance,
-                "StepEnhancementValue": self.step_enhancement_value,
-                "TriggerAnimationId": self.trigger_animation_id,
-                "TriggerType": self.trigger_type,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "CollectionDesignRaw",
+]

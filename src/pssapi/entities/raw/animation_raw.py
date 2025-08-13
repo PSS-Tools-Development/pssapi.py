@@ -2,45 +2,24 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class AnimationRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class AnimationRaw(EntityBaseRaw, tag="Animation"):
     XML_NODE_NAME: str = "Animation"
 
-    def __init__(self, animation_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._animation_effect_type: str = _parse.pss_str(animation_info.pop("AnimationEffectType", None))
-        self._animation_id: int = _parse.pss_int(animation_info.pop("AnimationId", None))
-        self._animation_sprites: str = _parse.pss_str(animation_info.pop("AnimationSprites", None))
-        self._duration: int = _parse.pss_int(animation_info.pop("Duration", None))
-        self._key: str = _parse.pss_str(animation_info.pop("Key", None))
-        super().__init__(animation_info)
-
-    @property
-    def animation_effect_type(self) -> str:
-        return self._animation_effect_type
-
-    @property
-    def animation_id(self) -> int:
-        return self._animation_id
-
-    @property
-    def animation_sprites(self) -> str:
-        return self._animation_sprites
-
-    @property
-    def duration(self) -> int:
-        return self._duration
-
-    @property
-    def key(self) -> str:
-        return self._key
+    animation_effect_type: Optional[str] = attr(name="AnimationEffectType", default=None)
+    animation_id: Optional[int] = attr(name="AnimationId", default=None)
+    animation_sprites: Optional[str] = attr(name="AnimationSprites", default=None)
+    duration: Optional[int] = attr(name="Duration", default=None)
+    key: Optional[str] = attr(name="Key", default=None)
 
     def _key(self):
         return (
@@ -51,15 +30,7 @@ class AnimationRaw(_EntityBaseRaw):
             self.key,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "AnimationEffectType": self.animation_effect_type,
-                "AnimationId": self.animation_id,
-                "AnimationSprites": self.animation_sprites,
-                "Duration": self.duration,
-                "Key": self.key,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "AnimationRaw",
+]

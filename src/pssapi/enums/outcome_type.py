@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,7 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class OutcomeType(_StrEnumBase):
+class OutcomeType(_StrEnum):
     ATTACKER_RETREATED = "AttackerRetreated"
     ATTACKER_WON = "AttackerWon"
     DEFENDER_WON = "DefenderWon"

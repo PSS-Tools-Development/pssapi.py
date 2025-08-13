@@ -1,29 +1,22 @@
-import base64 as _base64
-import json as _json
-import zlib as _zlib
-from datetime import datetime as _datetime
-from typing import Any as _Any
-from typing import Dict as _Dict
-from typing import Iterable as _Iterable
-from typing import Tuple as _Tuple
-from typing import Type as _Type
-from xml.etree import ElementTree as _ElementTree
+import base64 as base64
+import json as json
+import zlib as zlib
+from datetime import datetime
+from typing import Any, Dict, Iterable, Tuple, Type
+from xml.etree import ElementTree
 
 import aiohttp as _aiohttp
 
-import pssapi.constants as _constants
-import pssapi.entities as _entities
-import pssapi.enums as _enums
-import pssapi.utils as _utils
+from pssapi import constants, entities, enums, utils
 
 
-__LATEST_SETTINGS_BASE_PARAMS: _Dict[str, str] = {
-    "deviceType": str(_enums.DeviceType.ANDROID),
-    "languageKey": str(_enums.LanguageKey.ENGLISH),
+__LATEST_SETTINGS_BASE_PARAMS: Dict[str, str] = {
+    "deviceType": str(enums.DeviceType.ANDROID),
+    "languageKey": str(enums.LanguageKey.ENGLISH),
 }
 
 
-def create_request_content(structure: str, params: _Dict[str, _Any], content_type: str) -> str:
+def create_request_content(structure: str, params: Dict[str, Any], content_type: str) -> str:
     if content_type == "json":
         return create_json_request_content(structure, params)
     elif content_type == "xml":
@@ -31,7 +24,7 @@ def create_request_content(structure: str, params: _Dict[str, _Any], content_typ
 
 
 async def get_entities_from_path(
-    entity_tags: _Iterable[_Tuple[_Type["_entities.EntityBase"], str, bool]],
+    entity_tags: Iterable[Tuple[Type["entities.EntityBase"], str, bool]],
     xml_parent_tag_name: str,
     production_server: str,
     path: str,
@@ -42,16 +35,19 @@ async def get_entities_from_path(
 ):
     raw_xml = await __get_data_from_path(production_server, path, method, content=request_content, response_gzipped=response_gzipped, **params)
 
-    root = _ElementTree.fromstring(raw_xml)
-    if root is None or root.tag is None or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
-        raise _utils.exceptions.PssApiError(f"A server error occured: {raw_xml}")
+    root = ElementTree.fromstring(raw_xml)
+    if root is None or root.tag.startswith("{http://www.w3.org/1999/xhtml}html"):
+        raise utils.exceptions.PssApiError(f"A server error occured: {raw_xml}")
     if "errorMessage" in root.attrib:
-        raise _utils.exceptions.PssApiError(root.attrib["errorMessage"])
+        raise utils.exceptions.PssApiError(root.attrib["errorMessage"])
 
     if xml_parent_tag_name and root.tag != xml_parent_tag_name:
         parent_node = root.find(f".//{xml_parent_tag_name}")
     else:
         parent_node = root
+
+    if parent_node is None:
+        raise utils.exceptions.PssApiError(f"The root node {xml_parent_tag_name} could not be found.")
 
     result = []
 
@@ -63,14 +59,17 @@ async def get_entities_from_path(
         if is_list:
             entities = []
             for entity_node in entity_parent_node:
-                entity = entity_type(__get_raw_entity_xml(entity_node))
+                str(entity_node)
+                entity = entity_type.from_xml_tree(entity_node)
                 entity.node = entity_node
                 entities.append(entity)
             result.append(entities)
         else:
-            entity = entity_type(__get_raw_entity_xml(entity_parent_node))
-            entity.node = entity_parent_node
+            entity_node = parent_node.find(f".//{parent_tag_name}")
+            entity = entity_type.from_xml_tree(entity_node)
+            entity.node = entity_node
             result.append(entity)
+
     if len(result) > 1:
         return tuple(result)
     elif len(result) == 1:
@@ -79,7 +78,7 @@ async def get_entities_from_path(
 
 async def get_production_server(device_type: str, language_key: str) -> str:
     raw_xml = await __get_data_from_path("api.pixelstarships.com", "SettingService/GetLatestVersion3", "GET", deviceType=device_type, languageKey=language_key)
-    tree = _ElementTree.fromstring(raw_xml)
+    tree = ElementTree.fromstring(raw_xml)
     setting_node = tree.find(".//Setting")
     result = setting_node.attrib.get("ProductionServer")
     if not result:
@@ -87,10 +86,10 @@ async def get_production_server(device_type: str, language_key: str) -> str:
     return result
 
 
-def create_json_request_content(structure: str, params: _Dict[str, _Any]) -> str:
-    d = _json.loads(structure)
+def create_json_request_content(structure: str, params: Dict[str, Any]) -> str:
+    d = json.loads(structure)
     __update_nested_dict_values(d, params)
-    return _json.dumps(d)
+    return json.dumps(d)
 
 
 async def __get_data_from_path(production_server: str, path: str, method: str, content: str = None, response_gzipped: bool = False, **params) -> str:
@@ -107,8 +106,8 @@ async def __get_data_from_url(url: str, method: str, content: str = None, respon
         if value is None:
             continue
 
-        if isinstance(value, _datetime):
-            filtered_params[key] = value.strftime(_constants.DATETIME_FORMAT_ISO)
+        if isinstance(value, datetime):
+            filtered_params[key] = value.strftime(constants.DATETIME_FORMAT_ISO)
         else:
             filtered_params[key] = value
 
@@ -123,36 +122,36 @@ async def __get_data_from_url(url: str, method: str, content: str = None, respon
 
     if response_gzipped:
         try:
-            base64_decoded_data = _base64.b64decode(response_data)
-            response_data = _zlib.decompress(base64_decoded_data, _zlib.MAX_WBITS | 32)
-        except Exception:
+            base64_decoded_data = base64.b64decode(response_data)
+            response_data = zlib.decompress(base64_decoded_data, zlib.MAX_WBITS | 32)
+        except:
             pass  # If the data can't be base64-decoded or unzipped, then the endpoint returned an error message in plain xml instead.
 
     decoded_data = response_data.decode("utf-8")
     return decoded_data
 
 
-def __get_raw_entity_xml(node: _ElementTree.Element) -> dict[str, str]:
+def __get_raw_entity_xml(node: ElementTree.Element) -> dict[str, str]:
     result = node.attrib
     for child in node:
         result.setdefault(child.tag, []).append(__get_raw_entity_xml(child))
     return result
 
 
-def __get_raw_entities_xml(node: _ElementTree.Element) -> dict[str, str]:
+def __get_raw_entities_xml(node: ElementTree.Element) -> dict[str, str]:
     result = []
     for child in node:
         result.append(__get_raw_entity_xml(child))
     return result
 
 
-def __update_nested_dict_values(d: dict, params: _Dict[str, _Any]) -> None:
+def __update_nested_dict_values(d: dict, params: Dict[str, Any]) -> None:
     for key, value in d.items():
         value_is_dict = isinstance(value, dict)
         param_value = params.get(key)
         if param_value:
-            if value == "datetime" and isinstance(param_value, _datetime):
-                d[key] = param_value.strftime(_constants.DATETIME_FORMAT_ISO)
+            if value == "datetime" and isinstance(param_value, datetime):
+                d[key] = param_value.strftime(constants.DATETIME_FORMAT_ISO)
             else:
                 d[key] = param_value
         elif value_is_dict:

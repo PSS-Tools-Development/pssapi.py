@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,7 +7,6 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class GenderType(_StrEnumBase):
+class GenderType(_StrEnum):
     FEMALE = "Female"
     MALE = "Male"
-    UNKNOWN = "Unknown"

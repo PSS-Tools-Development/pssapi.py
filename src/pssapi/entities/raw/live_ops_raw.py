@@ -2,171 +2,50 @@
 This file has been generated automatically
 """
 
-from datetime import datetime as _datetime
-from typing import Any as _Any
-from typing import Dict as _Dict
+from datetime import datetime
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class LiveOpsRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class LiveOpsRaw(EntityBaseRaw, tag="LiveOps"):
     XML_NODE_NAME: str = "LiveOps"
 
-    def __init__(self, live_ops_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._cargo_items: str = _parse.pss_str(live_ops_info.pop("CargoItems", None))
-        self._cargo_prices: str = _parse.pss_str(live_ops_info.pop("CargoPrices", None))
-        self._common_crew_id: int = _parse.pss_int(live_ops_info.pop("CommonCrewId", None))
-        self._daily_item_rewards: str = _parse.pss_str(live_ops_info.pop("DailyItemRewards", None))
-        self._daily_reward_argument: int = _parse.pss_int(live_ops_info.pop("DailyRewardArgument", None))
-        self._daily_reward_type: str = _parse.pss_str(live_ops_info.pop("DailyRewardType", None))
-        self._hero_crew_id: int = _parse.pss_int(live_ops_info.pop("HeroCrewId", None))
-        self._limited_catalog_argument: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogArgument", None))
-        self._limited_catalog_currency_amount: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogCurrencyAmount", None))
-        self._limited_catalog_currency_type: str = _parse.pss_str(live_ops_info.pop("LimitedCatalogCurrencyType", None))
-        self._limited_catalog_expiry_date: _datetime = _parse.pss_datetime(live_ops_info.pop("LimitedCatalogExpiryDate", None))
-        self._limited_catalog_max_total: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogMaxTotal", None))
-        self._limited_catalog_quantity: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogQuantity", None))
-        self._limited_catalog_restock_quantity: int = _parse.pss_int(live_ops_info.pop("LimitedCatalogRestockQuantity", None))
-        self._limited_catalog_type: str = _parse.pss_str(live_ops_info.pop("LimitedCatalogType", None))
-        self._live_ops_id: int = _parse.pss_int(live_ops_info.pop("LiveOpsId", None))
-        self._news: str = _parse.pss_str(live_ops_info.pop("News", None))
-        self._news_sprite_id: int = _parse.pss_int(live_ops_info.pop("NewsSpriteId", None))
-        self._news_update_date: _datetime = _parse.pss_datetime(live_ops_info.pop("NewsUpdateDate", None))
-        self._sale_argument: int = _parse.pss_int(live_ops_info.pop("SaleArgument", None))
-        self._sale_end_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SaleEndDate", None))
-        self._sale_item_mask: int = _parse.pss_int(live_ops_info.pop("SaleItemMask", None))
-        self._sale_once_only: bool = _parse.pss_bool(live_ops_info.pop("SaleOnceOnly", None))
-        self._sale_quantity: int = _parse.pss_int(live_ops_info.pop("SaleQuantity", None))
-        self._sale_reward_string: str = _parse.pss_str(live_ops_info.pop("SaleRewardString", None))
-        self._sale_start_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SaleStartDate", None))
-        self._sale_title: str = _parse.pss_str(live_ops_info.pop("SaleTitle", None))
-        self._sale_type: str = _parse.pss_str(live_ops_info.pop("SaleType", None))
-        self._support_task_ran_date: _datetime = _parse.pss_datetime(live_ops_info.pop("SupportTaskRanDate", None))
-        self._tournament_news: str = _parse.pss_str(live_ops_info.pop("TournamentNews", None))
-        super().__init__(live_ops_info)
-
-    @property
-    def cargo_items(self) -> str:
-        return self._cargo_items
-
-    @property
-    def cargo_prices(self) -> str:
-        return self._cargo_prices
-
-    @property
-    def common_crew_id(self) -> int:
-        return self._common_crew_id
-
-    @property
-    def daily_item_rewards(self) -> str:
-        return self._daily_item_rewards
-
-    @property
-    def daily_reward_argument(self) -> int:
-        return self._daily_reward_argument
-
-    @property
-    def daily_reward_type(self) -> str:
-        return self._daily_reward_type
-
-    @property
-    def hero_crew_id(self) -> int:
-        return self._hero_crew_id
-
-    @property
-    def limited_catalog_argument(self) -> int:
-        return self._limited_catalog_argument
-
-    @property
-    def limited_catalog_currency_amount(self) -> int:
-        return self._limited_catalog_currency_amount
-
-    @property
-    def limited_catalog_currency_type(self) -> str:
-        return self._limited_catalog_currency_type
-
-    @property
-    def limited_catalog_expiry_date(self) -> _datetime:
-        return self._limited_catalog_expiry_date
-
-    @property
-    def limited_catalog_max_total(self) -> int:
-        return self._limited_catalog_max_total
-
-    @property
-    def limited_catalog_quantity(self) -> int:
-        return self._limited_catalog_quantity
-
-    @property
-    def limited_catalog_restock_quantity(self) -> int:
-        return self._limited_catalog_restock_quantity
-
-    @property
-    def limited_catalog_type(self) -> str:
-        return self._limited_catalog_type
-
-    @property
-    def live_ops_id(self) -> int:
-        return self._live_ops_id
-
-    @property
-    def news(self) -> str:
-        return self._news
-
-    @property
-    def news_sprite_id(self) -> int:
-        return self._news_sprite_id
-
-    @property
-    def news_update_date(self) -> _datetime:
-        return self._news_update_date
-
-    @property
-    def sale_argument(self) -> int:
-        return self._sale_argument
-
-    @property
-    def sale_end_date(self) -> _datetime:
-        return self._sale_end_date
-
-    @property
-    def sale_item_mask(self) -> int:
-        return self._sale_item_mask
-
-    @property
-    def sale_once_only(self) -> bool:
-        return self._sale_once_only
-
-    @property
-    def sale_quantity(self) -> int:
-        return self._sale_quantity
-
-    @property
-    def sale_reward_string(self) -> str:
-        return self._sale_reward_string
-
-    @property
-    def sale_start_date(self) -> _datetime:
-        return self._sale_start_date
-
-    @property
-    def sale_title(self) -> str:
-        return self._sale_title
-
-    @property
-    def sale_type(self) -> str:
-        return self._sale_type
-
-    @property
-    def support_task_ran_date(self) -> _datetime:
-        return self._support_task_ran_date
-
-    @property
-    def tournament_news(self) -> str:
-        return self._tournament_news
+    cargo_items: Optional[str] = attr(name="CargoItems", default=None)
+    cargo_prices: Optional[str] = attr(name="CargoPrices", default=None)
+    common_crew_id: Optional[int] = attr(name="CommonCrewId", default=None)
+    daily_item_rewards: Optional[str] = attr(name="DailyItemRewards", default=None)
+    daily_reward_argument: Optional[int] = attr(name="DailyRewardArgument", default=None)
+    daily_reward_type: Optional[str] = attr(name="DailyRewardType", default=None)
+    hero_crew_id: Optional[int] = attr(name="HeroCrewId", default=None)
+    limited_catalog_argument: Optional[int] = attr(name="LimitedCatalogArgument", default=None)
+    limited_catalog_currency_amount: Optional[int] = attr(name="LimitedCatalogCurrencyAmount", default=None)
+    limited_catalog_currency_type: Optional[str] = attr(name="LimitedCatalogCurrencyType", default=None)
+    limited_catalog_expiry_date: Optional[datetime] = attr(name="LimitedCatalogExpiryDate", default=None)
+    limited_catalog_max_total: Optional[int] = attr(name="LimitedCatalogMaxTotal", default=None)
+    limited_catalog_quantity: Optional[int] = attr(name="LimitedCatalogQuantity", default=None)
+    limited_catalog_restock_quantity: Optional[int] = attr(name="LimitedCatalogRestockQuantity", default=None)
+    limited_catalog_type: Optional[str] = attr(name="LimitedCatalogType", default=None)
+    live_ops_id: Optional[int] = attr(name="LiveOpsId", default=None)
+    news: Optional[str] = attr(name="News", default=None)
+    news_sprite_id: Optional[int] = attr(name="NewsSpriteId", default=None)
+    news_update_date: Optional[datetime] = attr(name="NewsUpdateDate", default=None)
+    sale_argument: Optional[int] = attr(name="SaleArgument", default=None)
+    sale_end_date: Optional[datetime] = attr(name="SaleEndDate", default=None)
+    sale_item_mask: Optional[int] = attr(name="SaleItemMask", default=None)
+    sale_once_only: Optional[bool] = attr(name="SaleOnceOnly", default=None)
+    sale_quantity: Optional[int] = attr(name="SaleQuantity", default=None)
+    sale_reward_string: Optional[str] = attr(name="SaleRewardString", default=None)
+    sale_start_date: Optional[datetime] = attr(name="SaleStartDate", default=None)
+    sale_title: Optional[str] = attr(name="SaleTitle", default=None)
+    sale_type: Optional[str] = attr(name="SaleType", default=None)
+    support_task_ran_date: Optional[datetime] = attr(name="SupportTaskRanDate", default=None)
+    tournament_news: Optional[str] = attr(name="TournamentNews", default=None)
 
     def _key(self):
         return (
@@ -202,40 +81,7 @@ class LiveOpsRaw(_EntityBaseRaw):
             self.tournament_news,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "CargoItems": self.cargo_items,
-                "CargoPrices": self.cargo_prices,
-                "CommonCrewId": self.common_crew_id,
-                "DailyItemRewards": self.daily_item_rewards,
-                "DailyRewardArgument": self.daily_reward_argument,
-                "DailyRewardType": self.daily_reward_type,
-                "HeroCrewId": self.hero_crew_id,
-                "LimitedCatalogArgument": self.limited_catalog_argument,
-                "LimitedCatalogCurrencyAmount": self.limited_catalog_currency_amount,
-                "LimitedCatalogCurrencyType": self.limited_catalog_currency_type,
-                "LimitedCatalogExpiryDate": self.limited_catalog_expiry_date,
-                "LimitedCatalogMaxTotal": self.limited_catalog_max_total,
-                "LimitedCatalogQuantity": self.limited_catalog_quantity,
-                "LimitedCatalogRestockQuantity": self.limited_catalog_restock_quantity,
-                "LimitedCatalogType": self.limited_catalog_type,
-                "LiveOpsId": self.live_ops_id,
-                "News": self.news,
-                "NewsSpriteId": self.news_sprite_id,
-                "NewsUpdateDate": self.news_update_date,
-                "SaleArgument": self.sale_argument,
-                "SaleEndDate": self.sale_end_date,
-                "SaleItemMask": self.sale_item_mask,
-                "SaleOnceOnly": self.sale_once_only,
-                "SaleQuantity": self.sale_quantity,
-                "SaleRewardString": self.sale_reward_string,
-                "SaleStartDate": self.sale_start_date,
-                "SaleTitle": self.sale_title,
-                "SaleType": self.sale_type,
-                "SupportTaskRanDate": self.support_task_ran_date,
-                "TournamentNews": self.tournament_news,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "LiveOpsRaw",
+]

@@ -1,12 +1,13 @@
-from ..types import EntityInfo as _EntityInfo
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import CharacterDesignActionRaw as _CharacterDesignActionRaw
+from .entity_base import EntityWithIdBase
+from .raw import CharacterDesignActionRaw
 
 
-class CharacterDesignAction(_CharacterDesignActionRaw, _EntityWithIdBase):
-    def __init__(self, character_design_action_info: _EntityInfo) -> None:
-        super().__init__(character_design_action_info)
-
+class CharacterDesignAction(CharacterDesignActionRaw, EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.character_design_action_id
+
+
+__all__ = [
+    "CharacterDesignAction",
+]

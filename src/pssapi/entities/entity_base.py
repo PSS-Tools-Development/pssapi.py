@@ -1,29 +1,27 @@
 from abc import abstractmethod
-from xml.etree import ElementTree as _ElementTree
+from xml.etree import ElementTree
 
-from ..types import EntityInfo as _EntityInfo
-from .raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic import computed_field
+
+from .raw import EntityBaseRaw
 
 
-class EntityBase(_EntityBaseRaw):
-    def __init__(self, entity_info: _EntityInfo):
-        super().__init__(entity_info)
-        self._node: _ElementTree.Element = None
-
+class EntityBase(EntityBaseRaw):
     @property
     def entity_name(self):
-        return self.XML_NODE_NAME
+        return self.__xml_tag__
 
     @property
-    def node(self) -> _ElementTree.Element:
+    def node(self) -> ElementTree.Element:
         return self._node
 
     @node.setter
-    def node(self, node: _ElementTree.Element):
+    def node(self, node: ElementTree.Element):
         self._node = node
 
 
 class EntityWithIdBase(EntityBase):
+    @computed_field
     @property
     @abstractmethod
     def id(self) -> int:
@@ -31,3 +29,9 @@ class EntityWithIdBase(EntityBase):
 
     def __str__(self):
         return f"<{type(self).__name__} id={self.id}>"
+
+
+__all__ = [
+    "EntityBase",
+    "EntityWithIdBase",
+]

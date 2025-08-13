@@ -2,306 +2,77 @@
 This file has been generated automatically
 """
 
-from datetime import datetime as _datetime
-from typing import Any as _Any
-from typing import Dict as _Dict
+from datetime import datetime
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class BattleRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class BattleRaw(EntityBaseRaw, tag="Battle"):
     XML_NODE_NAME: str = "Battle"
 
-    def __init__(self, battle_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._adventure_xml: str = _parse.pss_str(battle_info.pop("AdventureXml", None))
-        self._alliance_war_id: int = _parse.pss_int(battle_info.pop("AllianceWarId", None))
-        self._attacker_base_win_rewards: str = _parse.pss_str(battle_info.pop("AttackerBaseWinRewards", None))
-        self._attacker_lose_rewards: str = _parse.pss_str(battle_info.pop("AttackerLoseRewards", None))
-        self._attacker_win_rewards: str = _parse.pss_str(battle_info.pop("AttackerWinRewards", None))
-        self._attacking_alliance_id: int = _parse.pss_int(battle_info.pop("AttackingAllianceId", None))
-        self._attacking_alliance_name: str = _parse.pss_str(battle_info.pop("AttackingAllianceName", None))
-        self._attacking_alliance_sprite_id: int = _parse.pss_int(battle_info.pop("AttackingAllianceSpriteId", None))
-        self._attacking_ship_id: int = _parse.pss_int(battle_info.pop("AttackingShipId", None))
-        self._attacking_ship_name: str = _parse.pss_str(battle_info.pop("AttackingShipName", None))
-        self._attacking_ship_xml: str = _parse.pss_str(battle_info.pop("AttackingShipXml", None))
-        self._attacking_user_id: int = _parse.pss_int(battle_info.pop("AttackingUserId", None))
-        self._attacking_user_trophy: int = _parse.pss_int(battle_info.pop("AttackingUserTrophy", None))
-        self._attacking_user_xml: str = _parse.pss_str(battle_info.pop("AttackingUserXml", None))
-        self._background_id: int = _parse.pss_int(battle_info.pop("BackgroundId", None))
-        self._battle_date: _datetime = _parse.pss_datetime(battle_info.pop("BattleDate", None))
-        self._battle_end_date: _datetime = _parse.pss_datetime(battle_info.pop("BattleEndDate", None))
-        self._battle_end_frame: int = _parse.pss_int(battle_info.pop("BattleEndFrame", None))
-        self._battle_id: int = _parse.pss_int(battle_info.pop("BattleId", None))
-        self._battle_type: str = _parse.pss_str(battle_info.pop("BattleType", None))
-        self._challenge_design_id: int = _parse.pss_int(battle_info.pop("ChallengeDesignId", None))
-        self._client_end_frame: int = _parse.pss_int(battle_info.pop("ClientEndFrame", None))
-        self._client_outcome_type: str = _parse.pss_str(battle_info.pop("ClientOutcomeType", None))
-        self._commands: str = _parse.pss_str(battle_info.pop("Commands", None))
-        self._defender_lose_rewards: str = _parse.pss_str(battle_info.pop("DefenderLoseRewards", None))
-        self._defender_win_rewards: str = _parse.pss_str(battle_info.pop("DefenderWinRewards", None))
-        self._defending_alliance_id: int = _parse.pss_int(battle_info.pop("DefendingAllianceId", None))
-        self._defending_alliance_name: str = _parse.pss_str(battle_info.pop("DefendingAllianceName", None))
-        self._defending_alliance_sprite_id: int = _parse.pss_int(battle_info.pop("DefendingAllianceSpriteId", None))
-        self._defending_client_end_frame: int = _parse.pss_int(battle_info.pop("DefendingClientEndFrame", None))
-        self._defending_client_outcome_type: str = _parse.pss_str(battle_info.pop("DefendingClientOutcomeType", None))
-        self._defending_ship_id: int = _parse.pss_int(battle_info.pop("DefendingShipId", None))
-        self._defending_ship_name: str = _parse.pss_str(battle_info.pop("DefendingShipName", None))
-        self._defending_ship_xml: str = _parse.pss_str(battle_info.pop("DefendingShipXml", None))
-        self._defending_user_id: int = _parse.pss_int(battle_info.pop("DefendingUserId", None))
-        self._defending_user_trophy: int = _parse.pss_int(battle_info.pop("DefendingUserTrophy", None))
-        self._defending_user_xml: str = _parse.pss_str(battle_info.pop("DefendingUserXml", None))
-        self._is_online_battle: bool = _parse.pss_bool(battle_info.pop("IsOnlineBattle", None))
-        self._is_star_battle: bool = _parse.pss_bool(battle_info.pop("IsStarBattle", None))
-        self._league_type: str = _parse.pss_str(battle_info.pop("LeagueType", None))
-        self._lose_gas_result: int = _parse.pss_int(battle_info.pop("LoseGasResult", None))
-        self._lose_minerals_result: int = _parse.pss_int(battle_info.pop("LoseMineralsResult", None))
-        self._lose_rewards: str = _parse.pss_str(battle_info.pop("LoseRewards", None))
-        self._lose_trophy_result: int = _parse.pss_int(battle_info.pop("LoseTrophyResult", None))
-        self._mission_design_id: int = _parse.pss_int(battle_info.pop("MissionDesignId", None))
-        self._mission_event_id: int = _parse.pss_int(battle_info.pop("MissionEventId", None))
-        self._outcome_type: str = _parse.pss_str(battle_info.pop("OutcomeType", None))
-        self._random_seed: int = _parse.pss_int(battle_info.pop("RandomSeed", None))
-        self._rewards: str = _parse.pss_str(battle_info.pop("Rewards", None))
-        self._server_outcome_type: str = _parse.pss_str(battle_info.pop("ServerOutcomeType", None))
-        self._star_system_marker_id: int = _parse.pss_int(battle_info.pop("StarSystemMarkerId", None))
-        self._station_room_design_ids: str = _parse.pss_str(battle_info.pop("StationRoomDesignIds", None))
-        self._station_ship_design_id: int = _parse.pss_int(battle_info.pop("StationShipDesignId", None))
-        self._win_gas_result: int = _parse.pss_int(battle_info.pop("WinGasResult", None))
-        self._win_minerals_result: int = _parse.pss_int(battle_info.pop("WinMineralsResult", None))
-        self._win_rewards: str = _parse.pss_str(battle_info.pop("WinRewards", None))
-        self._win_trophy_result: int = _parse.pss_int(battle_info.pop("WinTrophyResult", None))
-        super().__init__(battle_info)
-
-    @property
-    def adventure_xml(self) -> str:
-        return self._adventure_xml
-
-    @property
-    def alliance_war_id(self) -> int:
-        return self._alliance_war_id
-
-    @property
-    def attacker_base_win_rewards(self) -> str:
-        return self._attacker_base_win_rewards
-
-    @property
-    def attacker_lose_rewards(self) -> str:
-        return self._attacker_lose_rewards
-
-    @property
-    def attacker_win_rewards(self) -> str:
-        return self._attacker_win_rewards
-
-    @property
-    def attacking_alliance_id(self) -> int:
-        return self._attacking_alliance_id
-
-    @property
-    def attacking_alliance_name(self) -> str:
-        return self._attacking_alliance_name
-
-    @property
-    def attacking_alliance_sprite_id(self) -> int:
-        return self._attacking_alliance_sprite_id
-
-    @property
-    def attacking_ship_id(self) -> int:
-        return self._attacking_ship_id
-
-    @property
-    def attacking_ship_name(self) -> str:
-        return self._attacking_ship_name
-
-    @property
-    def attacking_ship_xml(self) -> str:
-        return self._attacking_ship_xml
-
-    @property
-    def attacking_user_id(self) -> int:
-        return self._attacking_user_id
-
-    @property
-    def attacking_user_trophy(self) -> int:
-        return self._attacking_user_trophy
-
-    @property
-    def attacking_user_xml(self) -> str:
-        return self._attacking_user_xml
-
-    @property
-    def background_id(self) -> int:
-        return self._background_id
-
-    @property
-    def battle_date(self) -> _datetime:
-        return self._battle_date
-
-    @property
-    def battle_end_date(self) -> _datetime:
-        return self._battle_end_date
-
-    @property
-    def battle_end_frame(self) -> int:
-        return self._battle_end_frame
-
-    @property
-    def battle_id(self) -> int:
-        return self._battle_id
-
-    @property
-    def battle_type(self) -> str:
-        return self._battle_type
-
-    @property
-    def challenge_design_id(self) -> int:
-        return self._challenge_design_id
-
-    @property
-    def client_end_frame(self) -> int:
-        return self._client_end_frame
-
-    @property
-    def client_outcome_type(self) -> str:
-        return self._client_outcome_type
-
-    @property
-    def commands(self) -> str:
-        return self._commands
-
-    @property
-    def defender_lose_rewards(self) -> str:
-        return self._defender_lose_rewards
-
-    @property
-    def defender_win_rewards(self) -> str:
-        return self._defender_win_rewards
-
-    @property
-    def defending_alliance_id(self) -> int:
-        return self._defending_alliance_id
-
-    @property
-    def defending_alliance_name(self) -> str:
-        return self._defending_alliance_name
-
-    @property
-    def defending_alliance_sprite_id(self) -> int:
-        return self._defending_alliance_sprite_id
-
-    @property
-    def defending_client_end_frame(self) -> int:
-        return self._defending_client_end_frame
-
-    @property
-    def defending_client_outcome_type(self) -> str:
-        return self._defending_client_outcome_type
-
-    @property
-    def defending_ship_id(self) -> int:
-        return self._defending_ship_id
-
-    @property
-    def defending_ship_name(self) -> str:
-        return self._defending_ship_name
-
-    @property
-    def defending_ship_xml(self) -> str:
-        return self._defending_ship_xml
-
-    @property
-    def defending_user_id(self) -> int:
-        return self._defending_user_id
-
-    @property
-    def defending_user_trophy(self) -> int:
-        return self._defending_user_trophy
-
-    @property
-    def defending_user_xml(self) -> str:
-        return self._defending_user_xml
-
-    @property
-    def is_online_battle(self) -> bool:
-        return self._is_online_battle
-
-    @property
-    def is_star_battle(self) -> bool:
-        return self._is_star_battle
-
-    @property
-    def league_type(self) -> str:
-        return self._league_type
-
-    @property
-    def lose_gas_result(self) -> int:
-        return self._lose_gas_result
-
-    @property
-    def lose_minerals_result(self) -> int:
-        return self._lose_minerals_result
-
-    @property
-    def lose_rewards(self) -> str:
-        return self._lose_rewards
-
-    @property
-    def lose_trophy_result(self) -> int:
-        return self._lose_trophy_result
-
-    @property
-    def mission_design_id(self) -> int:
-        return self._mission_design_id
-
-    @property
-    def mission_event_id(self) -> int:
-        return self._mission_event_id
-
-    @property
-    def outcome_type(self) -> str:
-        return self._outcome_type
-
-    @property
-    def random_seed(self) -> int:
-        return self._random_seed
-
-    @property
-    def rewards(self) -> str:
-        return self._rewards
-
-    @property
-    def server_outcome_type(self) -> str:
-        return self._server_outcome_type
-
-    @property
-    def star_system_marker_id(self) -> int:
-        return self._star_system_marker_id
-
-    @property
-    def station_room_design_ids(self) -> str:
-        return self._station_room_design_ids
-
-    @property
-    def station_ship_design_id(self) -> int:
-        return self._station_ship_design_id
-
-    @property
-    def win_gas_result(self) -> int:
-        return self._win_gas_result
-
-    @property
-    def win_minerals_result(self) -> int:
-        return self._win_minerals_result
-
-    @property
-    def win_rewards(self) -> str:
-        return self._win_rewards
-
-    @property
-    def win_trophy_result(self) -> int:
-        return self._win_trophy_result
+    adventure_xml: Optional[str] = attr(name="AdventureXml", default=None)
+    alliance_war_id: Optional[int] = attr(name="AllianceWarId", default=None)
+    attacker_base_win_rewards: Optional[str] = attr(name="AttackerBaseWinRewards", default=None)
+    attacker_lose_rewards: Optional[str] = attr(name="AttackerLoseRewards", default=None)
+    attacker_win_rewards: Optional[str] = attr(name="AttackerWinRewards", default=None)
+    attacking_alliance_id: Optional[int] = attr(name="AttackingAllianceId", default=None)
+    attacking_alliance_name: Optional[str] = attr(name="AttackingAllianceName", default=None)
+    attacking_alliance_sprite_id: Optional[int] = attr(name="AttackingAllianceSpriteId", default=None)
+    attacking_ship_id: Optional[int] = attr(name="AttackingShipId", default=None)
+    attacking_ship_name: Optional[str] = attr(name="AttackingShipName", default=None)
+    attacking_ship_xml: Optional[str] = attr(name="AttackingShipXml", default=None)
+    attacking_user_id: Optional[int] = attr(name="AttackingUserId", default=None)
+    attacking_user_trophy: Optional[int] = attr(name="AttackingUserTrophy", default=None)
+    attacking_user_xml: Optional[str] = attr(name="AttackingUserXml", default=None)
+    background_id: Optional[int] = attr(name="BackgroundId", default=None)
+    battle_date: Optional[datetime] = attr(name="BattleDate", default=None)
+    battle_end_date: Optional[datetime] = attr(name="BattleEndDate", default=None)
+    battle_end_frame: Optional[int] = attr(name="BattleEndFrame", default=None)
+    battle_id: Optional[int] = attr(name="BattleId", default=None)
+    battle_type: Optional[str] = attr(name="BattleType", default=None)
+    challenge_design_id: Optional[int] = attr(name="ChallengeDesignId", default=None)
+    client_end_frame: Optional[int] = attr(name="ClientEndFrame", default=None)
+    client_outcome_type: Optional[str] = attr(name="ClientOutcomeType", default=None)
+    commands: Optional[str] = attr(name="Commands", default=None)
+    defender_lose_rewards: Optional[str] = attr(name="DefenderLoseRewards", default=None)
+    defender_win_rewards: Optional[str] = attr(name="DefenderWinRewards", default=None)
+    defending_alliance_id: Optional[int] = attr(name="DefendingAllianceId", default=None)
+    defending_alliance_name: Optional[str] = attr(name="DefendingAllianceName", default=None)
+    defending_alliance_sprite_id: Optional[int] = attr(name="DefendingAllianceSpriteId", default=None)
+    defending_client_end_frame: Optional[int] = attr(name="DefendingClientEndFrame", default=None)
+    defending_client_outcome_type: Optional[str] = attr(name="DefendingClientOutcomeType", default=None)
+    defending_ship_id: Optional[int] = attr(name="DefendingShipId", default=None)
+    defending_ship_name: Optional[str] = attr(name="DefendingShipName", default=None)
+    defending_ship_xml: Optional[str] = attr(name="DefendingShipXml", default=None)
+    defending_user_id: Optional[int] = attr(name="DefendingUserId", default=None)
+    defending_user_trophy: Optional[int] = attr(name="DefendingUserTrophy", default=None)
+    defending_user_xml: Optional[str] = attr(name="DefendingUserXml", default=None)
+    is_online_battle: Optional[bool] = attr(name="IsOnlineBattle", default=None)
+    is_star_battle: Optional[bool] = attr(name="IsStarBattle", default=None)
+    league_type: Optional[str] = attr(name="LeagueType", default=None)
+    lose_gas_result: Optional[int] = attr(name="LoseGasResult", default=None)
+    lose_minerals_result: Optional[int] = attr(name="LoseMineralsResult", default=None)
+    lose_rewards: Optional[str] = attr(name="LoseRewards", default=None)
+    lose_trophy_result: Optional[int] = attr(name="LoseTrophyResult", default=None)
+    mission_design_id: Optional[int] = attr(name="MissionDesignId", default=None)
+    mission_event_id: Optional[int] = attr(name="MissionEventId", default=None)
+    outcome_type: Optional[str] = attr(name="OutcomeType", default=None)
+    random_seed: Optional[int] = attr(name="RandomSeed", default=None)
+    rewards: Optional[str] = attr(name="Rewards", default=None)
+    server_outcome_type: Optional[str] = attr(name="ServerOutcomeType", default=None)
+    star_system_marker_id: Optional[int] = attr(name="StarSystemMarkerId", default=None)
+    station_room_design_ids: Optional[str] = attr(name="StationRoomDesignIds", default=None)
+    station_ship_design_id: Optional[int] = attr(name="StationShipDesignId", default=None)
+    win_gas_result: Optional[int] = attr(name="WinGasResult", default=None)
+    win_minerals_result: Optional[int] = attr(name="WinMineralsResult", default=None)
+    win_rewards: Optional[str] = attr(name="WinRewards", default=None)
+    win_trophy_result: Optional[int] = attr(name="WinTrophyResult", default=None)
 
     def _key(self):
         return (
@@ -364,67 +135,7 @@ class BattleRaw(_EntityBaseRaw):
             self.win_trophy_result,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "AdventureXml": self.adventure_xml,
-                "AllianceWarId": self.alliance_war_id,
-                "AttackerBaseWinRewards": self.attacker_base_win_rewards,
-                "AttackerLoseRewards": self.attacker_lose_rewards,
-                "AttackerWinRewards": self.attacker_win_rewards,
-                "AttackingAllianceId": self.attacking_alliance_id,
-                "AttackingAllianceName": self.attacking_alliance_name,
-                "AttackingAllianceSpriteId": self.attacking_alliance_sprite_id,
-                "AttackingShipId": self.attacking_ship_id,
-                "AttackingShipName": self.attacking_ship_name,
-                "AttackingShipXml": self.attacking_ship_xml,
-                "AttackingUserId": self.attacking_user_id,
-                "AttackingUserTrophy": self.attacking_user_trophy,
-                "AttackingUserXml": self.attacking_user_xml,
-                "BackgroundId": self.background_id,
-                "BattleDate": self.battle_date,
-                "BattleEndDate": self.battle_end_date,
-                "BattleEndFrame": self.battle_end_frame,
-                "BattleId": self.battle_id,
-                "BattleType": self.battle_type,
-                "ChallengeDesignId": self.challenge_design_id,
-                "ClientEndFrame": self.client_end_frame,
-                "ClientOutcomeType": self.client_outcome_type,
-                "Commands": self.commands,
-                "DefenderLoseRewards": self.defender_lose_rewards,
-                "DefenderWinRewards": self.defender_win_rewards,
-                "DefendingAllianceId": self.defending_alliance_id,
-                "DefendingAllianceName": self.defending_alliance_name,
-                "DefendingAllianceSpriteId": self.defending_alliance_sprite_id,
-                "DefendingClientEndFrame": self.defending_client_end_frame,
-                "DefendingClientOutcomeType": self.defending_client_outcome_type,
-                "DefendingShipId": self.defending_ship_id,
-                "DefendingShipName": self.defending_ship_name,
-                "DefendingShipXml": self.defending_ship_xml,
-                "DefendingUserId": self.defending_user_id,
-                "DefendingUserTrophy": self.defending_user_trophy,
-                "DefendingUserXml": self.defending_user_xml,
-                "IsOnlineBattle": self.is_online_battle,
-                "IsStarBattle": self.is_star_battle,
-                "LeagueType": self.league_type,
-                "LoseGasResult": self.lose_gas_result,
-                "LoseMineralsResult": self.lose_minerals_result,
-                "LoseRewards": self.lose_rewards,
-                "LoseTrophyResult": self.lose_trophy_result,
-                "MissionDesignId": self.mission_design_id,
-                "MissionEventId": self.mission_event_id,
-                "OutcomeType": self.outcome_type,
-                "RandomSeed": self.random_seed,
-                "Rewards": self.rewards,
-                "ServerOutcomeType": self.server_outcome_type,
-                "StarSystemMarkerId": self.star_system_marker_id,
-                "StationRoomDesignIds": self.station_room_design_ids,
-                "StationShipDesignId": self.station_ship_design_id,
-                "WinGasResult": self.win_gas_result,
-                "WinMineralsResult": self.win_minerals_result,
-                "WinRewards": self.win_rewards,
-                "WinTrophyResult": self.win_trophy_result,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "BattleRaw",
+]

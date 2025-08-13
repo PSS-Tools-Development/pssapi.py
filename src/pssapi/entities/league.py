@@ -1,12 +1,13 @@
-from ..types import EntityInfo as _EntityInfo
-from .entity_base import EntityWithIdBase as _EntityWithIdBase
-from .raw import LeagueRaw as _LeagueRaw
+from .entity_base import EntityWithIdBase
+from .raw import LeagueRaw
 
 
-class League(_LeagueRaw, _EntityWithIdBase):
-    def __init__(self, league_info: _EntityInfo) -> None:
-        super().__init__(league_info)
-
+class League(LeagueRaw, EntityWithIdBase):
     @property
     def id(self) -> int:
         return self.league_id
+
+
+__all__ = [
+    "League",
+]

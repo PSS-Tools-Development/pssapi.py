@@ -1,4 +1,4 @@
-from .str_enum_base import StrEnumBase as _StrEnumBase
+from enum import StrEnum as _StrEnum
 
 
 """
@@ -7,11 +7,10 @@ fixing, if Savy uses enum values that are python keywords.
 """
 
 
-class RaceType(_StrEnumBase):
+class RaceType(_StrEnum):
     ALIEN = "Alien"
     ANIMAL = "Animal"
     ASIAN = "Asian"
     BLACK = "Black"
     ROBOT = "Robot"
     WHITE = "White"
-    UNKNOWN = "Unknown"

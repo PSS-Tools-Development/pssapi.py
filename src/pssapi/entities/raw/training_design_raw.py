@@ -2,140 +2,43 @@
 This file has been generated automatically
 """
 
-from typing import Any as _Any
-from typing import Dict as _Dict
+from typing import TYPE_CHECKING, Optional
 
-from ...types import EntityInfo as _EntityInfo
-from ...utils import parse as _parse
-from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
+from pydantic_xml import attr
 
 
-class TrainingDesignRaw(_EntityBaseRaw):
+if TYPE_CHECKING:
+    pass
+from .entity_base_raw import EntityBaseRaw
+
+
+class TrainingDesignRaw(EntityBaseRaw, tag="TrainingDesign"):
     XML_NODE_NAME: str = "TrainingDesign"
 
-    def __init__(self, training_design_info: _EntityInfo) -> None:
-        self._dict: _Dict[str, _Any] = {}
-        self._ability_chance: int = _parse.pss_int(training_design_info.pop("AbilityChance", None))
-        self._attack_chance: int = _parse.pss_int(training_design_info.pop("AttackChance", None))
-        self._duration: int = _parse.pss_int(training_design_info.pop("Duration", None))
-        self._engine_chance: int = _parse.pss_int(training_design_info.pop("EngineChance", None))
-        self._fatigue: int = _parse.pss_int(training_design_info.pop("Fatigue", None))
-        self._gas_cost: int = _parse.pss_int(training_design_info.pop("GasCost", None))
-        self._hp_chance: int = _parse.pss_int(training_design_info.pop("HpChance", None))
-        self._mineral_cost: int = _parse.pss_int(training_design_info.pop("MineralCost", None))
-        self._minimum_guarantee: int = _parse.pss_int(training_design_info.pop("MinimumGuarantee", None))
-        self._pilot_chance: int = _parse.pss_int(training_design_info.pop("PilotChance", None))
-        self._rank: int = _parse.pss_int(training_design_info.pop("Rank", None))
-        self._repair_chance: int = _parse.pss_int(training_design_info.pop("RepairChance", None))
-        self._required_research_design_id: int = _parse.pss_int(training_design_info.pop("RequiredResearchDesignId", None))
-        self._required_room_level: int = _parse.pss_int(training_design_info.pop("RequiredRoomLevel", None))
-        self._required_training_design_id: int = _parse.pss_int(training_design_info.pop("RequiredTrainingDesignId", None))
-        self._science_chance: int = _parse.pss_int(training_design_info.pop("ScienceChance", None))
-        self._stamina_chance: int = _parse.pss_int(training_design_info.pop("StaminaChance", None))
-        self._training_animation_style: str = _parse.pss_str(training_design_info.pop("TrainingAnimationStyle", None))
-        self._training_description: str = _parse.pss_str(training_design_info.pop("TrainingDescription", None))
-        self._training_design_id: int = _parse.pss_int(training_design_info.pop("TrainingDesignId", None))
-        self._training_name: str = _parse.pss_str(training_design_info.pop("TrainingName", None))
-        self._training_sprite_id: int = _parse.pss_int(training_design_info.pop("TrainingSpriteId", None))
-        self._weapon_chance: int = _parse.pss_int(training_design_info.pop("WeaponChance", None))
-        self._xp_chance: int = _parse.pss_int(training_design_info.pop("XpChance", None))
-        super().__init__(training_design_info)
-
-    @property
-    def ability_chance(self) -> int:
-        return self._ability_chance
-
-    @property
-    def attack_chance(self) -> int:
-        return self._attack_chance
-
-    @property
-    def duration(self) -> int:
-        return self._duration
-
-    @property
-    def engine_chance(self) -> int:
-        return self._engine_chance
-
-    @property
-    def fatigue(self) -> int:
-        return self._fatigue
-
-    @property
-    def gas_cost(self) -> int:
-        return self._gas_cost
-
-    @property
-    def hp_chance(self) -> int:
-        return self._hp_chance
-
-    @property
-    def mineral_cost(self) -> int:
-        return self._mineral_cost
-
-    @property
-    def minimum_guarantee(self) -> int:
-        return self._minimum_guarantee
-
-    @property
-    def pilot_chance(self) -> int:
-        return self._pilot_chance
-
-    @property
-    def rank(self) -> int:
-        return self._rank
-
-    @property
-    def repair_chance(self) -> int:
-        return self._repair_chance
-
-    @property
-    def required_research_design_id(self) -> int:
-        return self._required_research_design_id
-
-    @property
-    def required_room_level(self) -> int:
-        return self._required_room_level
-
-    @property
-    def required_training_design_id(self) -> int:
-        return self._required_training_design_id
-
-    @property
-    def science_chance(self) -> int:
-        return self._science_chance
-
-    @property
-    def stamina_chance(self) -> int:
-        return self._stamina_chance
-
-    @property
-    def training_animation_style(self) -> str:
-        return self._training_animation_style
-
-    @property
-    def training_description(self) -> str:
-        return self._training_description
-
-    @property
-    def training_design_id(self) -> int:
-        return self._training_design_id
-
-    @property
-    def training_name(self) -> str:
-        return self._training_name
-
-    @property
-    def training_sprite_id(self) -> int:
-        return self._training_sprite_id
-
-    @property
-    def weapon_chance(self) -> int:
-        return self._weapon_chance
-
-    @property
-    def xp_chance(self) -> int:
-        return self._xp_chance
+    ability_chance: Optional[int] = attr(name="AbilityChance", default=None)
+    attack_chance: Optional[int] = attr(name="AttackChance", default=None)
+    duration: Optional[int] = attr(name="Duration", default=None)
+    engine_chance: Optional[int] = attr(name="EngineChance", default=None)
+    fatigue: Optional[int] = attr(name="Fatigue", default=None)
+    gas_cost: Optional[int] = attr(name="GasCost", default=None)
+    hp_chance: Optional[int] = attr(name="HpChance", default=None)
+    mineral_cost: Optional[int] = attr(name="MineralCost", default=None)
+    minimum_guarantee: Optional[int] = attr(name="MinimumGuarantee", default=None)
+    pilot_chance: Optional[int] = attr(name="PilotChance", default=None)
+    rank: Optional[int] = attr(name="Rank", default=None)
+    repair_chance: Optional[int] = attr(name="RepairChance", default=None)
+    required_research_design_id: Optional[int] = attr(name="RequiredResearchDesignId", default=None)
+    required_room_level: Optional[int] = attr(name="RequiredRoomLevel", default=None)
+    required_training_design_id: Optional[int] = attr(name="RequiredTrainingDesignId", default=None)
+    science_chance: Optional[int] = attr(name="ScienceChance", default=None)
+    stamina_chance: Optional[int] = attr(name="StaminaChance", default=None)
+    training_animation_style: Optional[str] = attr(name="TrainingAnimationStyle", default=None)
+    training_description: Optional[str] = attr(name="TrainingDescription", default=None)
+    training_design_id: Optional[int] = attr(name="TrainingDesignId", default=None)
+    training_name: Optional[str] = attr(name="TrainingName", default=None)
+    training_sprite_id: Optional[int] = attr(name="TrainingSpriteId", default=None)
+    weapon_chance: Optional[int] = attr(name="WeaponChance", default=None)
+    xp_chance: Optional[int] = attr(name="XpChance", default=None)
 
     def _key(self):
         return (
@@ -165,34 +68,7 @@ class TrainingDesignRaw(_EntityBaseRaw):
             self.xp_chance,
         )
 
-    def __dict__(self):
-        if not self._dict:
-            self._dict = {
-                "AbilityChance": self.ability_chance,
-                "AttackChance": self.attack_chance,
-                "Duration": self.duration,
-                "EngineChance": self.engine_chance,
-                "Fatigue": self.fatigue,
-                "GasCost": self.gas_cost,
-                "HpChance": self.hp_chance,
-                "MineralCost": self.mineral_cost,
-                "MinimumGuarantee": self.minimum_guarantee,
-                "PilotChance": self.pilot_chance,
-                "Rank": self.rank,
-                "RepairChance": self.repair_chance,
-                "RequiredResearchDesignId": self.required_research_design_id,
-                "RequiredRoomLevel": self.required_room_level,
-                "RequiredTrainingDesignId": self.required_training_design_id,
-                "ScienceChance": self.science_chance,
-                "StaminaChance": self.stamina_chance,
-                "TrainingAnimationStyle": self.training_animation_style,
-                "TrainingDescription": self.training_description,
-                "TrainingDesignId": self.training_design_id,
-                "TrainingName": self.training_name,
-                "TrainingSpriteId": self.training_sprite_id,
-                "WeaponChance": self.weapon_chance,
-                "XpChance": self.xp_chance,
-            }
-            self._dict.update(super().__dict__())
 
-        return self._dict
+__all__ = [
+    "TrainingDesignRaw",
+]
