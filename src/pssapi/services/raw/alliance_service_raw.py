@@ -9,7 +9,6 @@ from typing import Tuple as _Tuple
 from ... import core as _core
 from ...entities import Alliance as _Alliance
 from ...entities import Character as _Character
-from ...entities import Message as _Message
 from ...entities import User as _User
 
 
@@ -68,9 +67,11 @@ async def list_characters_given_in_alliance(production_server: str, access_token
     return result
 
 
-async def list_users_2(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _Tuple[_List[_Message], _List[_User]]:
+async def list_users_2(production_server: str, access_token: str, alliance_id: int, skip: int, take: int, **params) -> _Tuple[_Alliance, _List[_User]]:
     params = {"accessToken": access_token, "allianceId": alliance_id, "skip": skip, "take": take, **params}
-    result = await _core.get_entities_from_path(((_Message, "Messages", True), (_User, "Users", True)), "ListUsers", production_server, LIST_USERS_2_BASE_PATH, "GET", response_gzipped=False, **params)
+    result = await _core.get_entities_from_path(
+        ((_Alliance, "Alliance", False), (_User, "Users", True)), "ListUsers", production_server, LIST_USERS_2_BASE_PATH, "GET", response_gzipped=False, **params
+    )
     return result
 
 

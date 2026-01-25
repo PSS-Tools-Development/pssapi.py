@@ -27,6 +27,7 @@ class UserRaw(_EntityBaseRaw):
         self._alliance_name: str = _parse.pss_str(user_info.pop("AllianceName", None))
         self._alliance_qualify_division_design_id: int = _parse.pss_int(user_info.pop("AllianceQualifyDivisionDesignId", None))
         self._alliance_score: int = _parse.pss_int(user_info.pop("AllianceScore", None))
+        self._alliance_score_at_start_of_day: int = _parse.pss_int(user_info.pop("AllianceScoreAtStartOfDay", None))
         self._alliance_sprite_id: int = _parse.pss_int(user_info.pop("AllianceSpriteId", None))
         self._alliance_supply_donation: int = _parse.pss_int(user_info.pop("AllianceSupplyDonation", None))
         self._authentication_type: str = _parse.pss_str(user_info.pop("AuthenticationType", None))
@@ -43,6 +44,8 @@ class UserRaw(_EntityBaseRaw):
         self._completed_mission_event_ids: str = _parse.pss_str(user_info.pop("CompletedMissionEventIds", None))
         self._cooldown_expiry: _datetime = _parse.pss_datetime(user_info.pop("CooldownExpiry", None))
         self._creation_date: _datetime = _parse.pss_datetime(user_info.pop("CreationDate", None))
+        self._creator_code: str = _parse.pss_str(user_info.pop("CreatorCode", None))
+        self._creator_support_date: _datetime = _parse.pss_datetime(user_info.pop("CreatorSupportDate", None))
         self._credits: str = _parse.pss_str(user_info.pop("Credits", None))
         self._crew_donated: int = _parse.pss_int(user_info.pop("CrewDonated", None))
         self._crew_received: int = _parse.pss_int(user_info.pop("CrewReceived", None))
@@ -52,9 +55,11 @@ class UserRaw(_EntityBaseRaw):
         self._daily_pvp_attacks: int = _parse.pss_int(user_info.pop("DailyPVPAttacks", None))
         self._daily_pv_p_defence: int = _parse.pss_int(user_info.pop("DailyPvPDefence", None))
         self._daily_reward_status: int = _parse.pss_int(user_info.pop("DailyRewardStatus", None))
+        self._draws_string: str = _parse.pss_str(user_info.pop("DrawsString", None))
         self._draws_used_today: int = _parse.pss_int(user_info.pop("DrawsUsedToday", None))
         self._email: str = _parse.pss_str(user_info.pop("Email", None))
         self._email_verification_status: str = _parse.pss_str(user_info.pop("EmailVerificationStatus", None))
+        self._engagement_cooldown_end_date: _datetime = _parse.pss_datetime(user_info.pop("EngagementCooldownEndDate", None))
         self._explored_star_system_ids: str = _parse.pss_str(user_info.pop("ExploredStarSystemIds", None))
         self._facebook_token: str = _parse.pss_str(user_info.pop("FacebookToken", None))
         self._facebook_token_expiry_date: _datetime = _parse.pss_datetime(user_info.pop("FacebookTokenExpiryDate", None))
@@ -97,10 +102,12 @@ class UserRaw(_EntityBaseRaw):
         self._pass_points: int = _parse.pss_int(user_info.pop("PassPoints", None))
         self._profile_image_url: str = _parse.pss_str(user_info.pop("ProfileImageUrl", None))
         self._purchase_reward_points: int = _parse.pss_int(user_info.pop("PurchaseRewardPoints", None))
+        self._pv_p_continuous_losses: int = _parse.pss_int(user_info.pop("PvPContinuousLosses", None))
         self._race_type: str = _parse.pss_str(user_info.pop("RaceType", None))
         self._ranking: int = _parse.pss_int(user_info.pop("Ranking", None))
         self._rewards_collectable: bool = _parse.pss_bool(user_info.pop("RewardsCollectable", None))
         self._rewards_collectable_amount: int = _parse.pss_int(user_info.pop("RewardsCollectableAmount", None))
+        self._ribbon_sprite_id: int = _parse.pss_int(user_info.pop("RibbonSpriteId", None))
         self._ship_design_id: int = _parse.pss_int(user_info.pop("ShipDesignId", None))
         self._situation_occurrences: str = _parse.pss_str(user_info.pop("SituationOccurrences", None))
         self._situation_occurrences_today: int = _parse.pss_int(user_info.pop("SituationOccurrencesToday", None))
@@ -108,6 +115,7 @@ class UserRaw(_EntityBaseRaw):
         self._steam_id: str = _parse.pss_str(user_info.pop("SteamId", None))
         self._task_reroll_count: int = _parse.pss_int(user_info.pop("TaskRerollCount", None))
         self._tip_status: int = _parse.pss_int(user_info.pop("TipStatus", None))
+        self._total_battle_searches: int = _parse.pss_int(user_info.pop("TotalBattleSearches", None))
         self._total_supply_donation: int = _parse.pss_int(user_info.pop("TotalSupplyDonation", None))
         self._tournament_bonus_score: int = _parse.pss_int(user_info.pop("TournamentBonusScore", None))
         self._tournament_reset_date: _datetime = _parse.pss_datetime(user_info.pop("TournamentResetDate", None))
@@ -163,6 +171,10 @@ class UserRaw(_EntityBaseRaw):
     @property
     def alliance_score(self) -> int:
         return self._alliance_score
+
+    @property
+    def alliance_score_at_start_of_day(self) -> int:
+        return self._alliance_score_at_start_of_day
 
     @property
     def alliance_sprite_id(self) -> int:
@@ -229,6 +241,14 @@ class UserRaw(_EntityBaseRaw):
         return self._creation_date
 
     @property
+    def creator_code(self) -> str:
+        return self._creator_code
+
+    @property
+    def creator_support_date(self) -> _datetime:
+        return self._creator_support_date
+
+    @property
     def credits(self) -> str:
         return self._credits
 
@@ -265,6 +285,10 @@ class UserRaw(_EntityBaseRaw):
         return self._daily_reward_status
 
     @property
+    def draws_string(self) -> str:
+        return self._draws_string
+
+    @property
     def draws_used_today(self) -> int:
         return self._draws_used_today
 
@@ -275,6 +299,10 @@ class UserRaw(_EntityBaseRaw):
     @property
     def email_verification_status(self) -> str:
         return self._email_verification_status
+
+    @property
+    def engagement_cooldown_end_date(self) -> _datetime:
+        return self._engagement_cooldown_end_date
 
     @property
     def explored_star_system_ids(self) -> str:
@@ -445,6 +473,10 @@ class UserRaw(_EntityBaseRaw):
         return self._purchase_reward_points
 
     @property
+    def pv_p_continuous_losses(self) -> int:
+        return self._pv_p_continuous_losses
+
+    @property
     def race_type(self) -> str:
         return self._race_type
 
@@ -459,6 +491,10 @@ class UserRaw(_EntityBaseRaw):
     @property
     def rewards_collectable_amount(self) -> int:
         return self._rewards_collectable_amount
+
+    @property
+    def ribbon_sprite_id(self) -> int:
+        return self._ribbon_sprite_id
 
     @property
     def ship_design_id(self) -> int:
@@ -487,6 +523,10 @@ class UserRaw(_EntityBaseRaw):
     @property
     def tip_status(self) -> int:
         return self._tip_status
+
+    @property
+    def total_battle_searches(self) -> int:
+        return self._total_battle_searches
 
     @property
     def total_supply_donation(self) -> int:
@@ -571,6 +611,7 @@ class UserRaw(_EntityBaseRaw):
             self.alliance_name,
             self.alliance_qualify_division_design_id,
             self.alliance_score,
+            self.alliance_score_at_start_of_day,
             self.alliance_sprite_id,
             self.alliance_supply_donation,
             self.authentication_type,
@@ -587,6 +628,8 @@ class UserRaw(_EntityBaseRaw):
             self.completed_mission_event_ids,
             self.cooldown_expiry,
             self.creation_date,
+            self.creator_code,
+            self.creator_support_date,
             self.credits,
             self.crew_donated,
             self.crew_received,
@@ -596,9 +639,11 @@ class UserRaw(_EntityBaseRaw):
             self.daily_pvp_attacks,
             self.daily_pv_p_defence,
             self.daily_reward_status,
+            self.draws_string,
             self.draws_used_today,
             self.email,
             self.email_verification_status,
+            self.engagement_cooldown_end_date,
             self.explored_star_system_ids,
             self.facebook_token,
             self.facebook_token_expiry_date,
@@ -641,10 +686,12 @@ class UserRaw(_EntityBaseRaw):
             self.pass_points,
             self.profile_image_url,
             self.purchase_reward_points,
+            self.pv_p_continuous_losses,
             self.race_type,
             self.ranking,
             self.rewards_collectable,
             self.rewards_collectable_amount,
+            self.ribbon_sprite_id,
             self.ship_design_id,
             self.situation_occurrences,
             self.situation_occurrences_today,
@@ -652,6 +699,7 @@ class UserRaw(_EntityBaseRaw):
             self.steam_id,
             self.task_reroll_count,
             self.tip_status,
+            self.total_battle_searches,
             self.total_supply_donation,
             self.tournament_bonus_score,
             self.tournament_reset_date,
@@ -684,6 +732,7 @@ class UserRaw(_EntityBaseRaw):
                 "AllianceName": self.alliance_name,
                 "AllianceQualifyDivisionDesignId": self.alliance_qualify_division_design_id,
                 "AllianceScore": self.alliance_score,
+                "AllianceScoreAtStartOfDay": self.alliance_score_at_start_of_day,
                 "AllianceSpriteId": self.alliance_sprite_id,
                 "AllianceSupplyDonation": self.alliance_supply_donation,
                 "AuthenticationType": self.authentication_type,
@@ -700,6 +749,8 @@ class UserRaw(_EntityBaseRaw):
                 "CompletedMissionEventIds": self.completed_mission_event_ids,
                 "CooldownExpiry": self.cooldown_expiry,
                 "CreationDate": self.creation_date,
+                "CreatorCode": self.creator_code,
+                "CreatorSupportDate": self.creator_support_date,
                 "Credits": self.credits,
                 "CrewDonated": self.crew_donated,
                 "CrewReceived": self.crew_received,
@@ -709,9 +760,11 @@ class UserRaw(_EntityBaseRaw):
                 "DailyPVPAttacks": self.daily_pvp_attacks,
                 "DailyPvPDefence": self.daily_pv_p_defence,
                 "DailyRewardStatus": self.daily_reward_status,
+                "DrawsString": self.draws_string,
                 "DrawsUsedToday": self.draws_used_today,
                 "Email": self.email,
                 "EmailVerificationStatus": self.email_verification_status,
+                "EngagementCooldownEndDate": self.engagement_cooldown_end_date,
                 "ExploredStarSystemIds": self.explored_star_system_ids,
                 "FacebookToken": self.facebook_token,
                 "FacebookTokenExpiryDate": self.facebook_token_expiry_date,
@@ -754,10 +807,12 @@ class UserRaw(_EntityBaseRaw):
                 "PassPoints": self.pass_points,
                 "ProfileImageUrl": self.profile_image_url,
                 "PurchaseRewardPoints": self.purchase_reward_points,
+                "PvPContinuousLosses": self.pv_p_continuous_losses,
                 "RaceType": self.race_type,
                 "Ranking": self.ranking,
                 "RewardsCollectable": self.rewards_collectable,
                 "RewardsCollectableAmount": self.rewards_collectable_amount,
+                "RibbonSpriteId": self.ribbon_sprite_id,
                 "ShipDesignId": self.ship_design_id,
                 "SituationOccurrences": self.situation_occurrences,
                 "SituationOccurrencesToday": self.situation_occurrences_today,
@@ -765,6 +820,7 @@ class UserRaw(_EntityBaseRaw):
                 "SteamId": self.steam_id,
                 "TaskRerollCount": self.task_reroll_count,
                 "TipStatus": self.tip_status,
+                "TotalBattleSearches": self.total_battle_searches,
                 "TotalSupplyDonation": self.total_supply_donation,
                 "TournamentBonusScore": self.tournament_bonus_score,
                 "TournamentResetDate": self.tournament_reset_date,

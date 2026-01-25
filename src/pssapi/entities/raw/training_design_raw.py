@@ -37,6 +37,7 @@ class TrainingDesignRaw(_EntityBaseRaw):
         self._training_design_id: int = _parse.pss_int(training_design_info.pop("TrainingDesignId", None))
         self._training_name: str = _parse.pss_str(training_design_info.pop("TrainingName", None))
         self._training_sprite_id: int = _parse.pss_int(training_design_info.pop("TrainingSpriteId", None))
+        self._variable_chance: float = _parse.pss_float(training_design_info.pop("VariableChance", None))
         self._weapon_chance: int = _parse.pss_int(training_design_info.pop("WeaponChance", None))
         self._xp_chance: int = _parse.pss_int(training_design_info.pop("XpChance", None))
         super().__init__(training_design_info)
@@ -130,6 +131,10 @@ class TrainingDesignRaw(_EntityBaseRaw):
         return self._training_sprite_id
 
     @property
+    def variable_chance(self) -> float:
+        return self._variable_chance
+
+    @property
     def weapon_chance(self) -> int:
         return self._weapon_chance
 
@@ -161,6 +166,7 @@ class TrainingDesignRaw(_EntityBaseRaw):
             self.training_design_id,
             self.training_name,
             self.training_sprite_id,
+            self.variable_chance,
             self.weapon_chance,
             self.xp_chance,
         )
@@ -190,6 +196,7 @@ class TrainingDesignRaw(_EntityBaseRaw):
                 "TrainingDesignId": self.training_design_id,
                 "TrainingName": self.training_name,
                 "TrainingSpriteId": self.training_sprite_id,
+                "VariableChance": self.variable_chance,
                 "WeaponChance": self.weapon_chance,
                 "XpChance": self.xp_chance,
             }

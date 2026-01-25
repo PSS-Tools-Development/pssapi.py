@@ -25,6 +25,7 @@ class DrawDesignRaw(_EntityBaseRaw):
         self._draw_name: str = _parse.pss_str(draw_design_info.pop("DrawName", None))
         self._draw_sprite_id: int = _parse.pss_int(draw_design_info.pop("DrawSpriteId", None))
         self._draw_type: str = _parse.pss_str(draw_design_info.pop("DrawType", None))
+        self._guaranteed_heroic_draws: int = _parse.pss_int(draw_design_info.pop("GuaranteedHeroicDraws", None))
         self._max_cost_percentage_increase: int = _parse.pss_int(draw_design_info.pop("MaxCostPercentageIncrease", None))
         self._max_crew_rarity: int = _parse.pss_int(draw_design_info.pop("MaxCrewRarity", None))
         self._max_crews_drawn: int = _parse.pss_int(draw_design_info.pop("MaxCrewsDrawn", None))
@@ -34,6 +35,7 @@ class DrawDesignRaw(_EntityBaseRaw):
         self._min_items: int = _parse.pss_int(draw_design_info.pop("MinItems", None))
         self._order_index: int = _parse.pss_int(draw_design_info.pop("OrderIndex", None))
         self._required_research_design_id: int = _parse.pss_int(draw_design_info.pop("RequiredResearchDesignId", None))
+        self._visibility_flags: str = _parse.pss_str(draw_design_info.pop("VisibilityFlags", None))
         super().__init__(draw_design_info)
 
     @property
@@ -77,6 +79,10 @@ class DrawDesignRaw(_EntityBaseRaw):
         return self._draw_type
 
     @property
+    def guaranteed_heroic_draws(self) -> int:
+        return self._guaranteed_heroic_draws
+
+    @property
     def max_cost_percentage_increase(self) -> int:
         return self._max_cost_percentage_increase
 
@@ -112,6 +118,10 @@ class DrawDesignRaw(_EntityBaseRaw):
     def required_research_design_id(self) -> int:
         return self._required_research_design_id
 
+    @property
+    def visibility_flags(self) -> str:
+        return self._visibility_flags
+
     def _key(self):
         return (
             self.background_sprite_id,
@@ -124,6 +134,7 @@ class DrawDesignRaw(_EntityBaseRaw):
             self.draw_name,
             self.draw_sprite_id,
             self.draw_type,
+            self.guaranteed_heroic_draws,
             self.max_cost_percentage_increase,
             self.max_crew_rarity,
             self.max_crews_drawn,
@@ -133,6 +144,7 @@ class DrawDesignRaw(_EntityBaseRaw):
             self.min_items,
             self.order_index,
             self.required_research_design_id,
+            self.visibility_flags,
         )
 
     def __dict__(self):
@@ -148,6 +160,7 @@ class DrawDesignRaw(_EntityBaseRaw):
                 "DrawName": self.draw_name,
                 "DrawSpriteId": self.draw_sprite_id,
                 "DrawType": self.draw_type,
+                "GuaranteedHeroicDraws": self.guaranteed_heroic_draws,
                 "MaxCostPercentageIncrease": self.max_cost_percentage_increase,
                 "MaxCrewRarity": self.max_crew_rarity,
                 "MaxCrewsDrawn": self.max_crews_drawn,
@@ -157,6 +170,7 @@ class DrawDesignRaw(_EntityBaseRaw):
                 "MinItems": self.min_items,
                 "OrderIndex": self.order_index,
                 "RequiredResearchDesignId": self.required_research_design_id,
+                "VisibilityFlags": self.visibility_flags,
             }
             self._dict.update(super().__dict__())
 

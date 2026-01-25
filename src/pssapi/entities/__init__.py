@@ -1,9 +1,12 @@
 from . import metadata
+from .achievement import Achievement
 from .achievement_design import AchievementDesign
 from .action_type import ActionType
 from .alliance import Alliance
+from .alliance_task import AllianceTask
 from .animation import Animation
 from .asset import Asset
+from .attacking_engagement_group import AttackingEngagementGroup
 from .background import Background
 from .battle import Battle
 from .challenge_design import ChallengeDesign
@@ -15,13 +18,17 @@ from .character_part import CharacterPart
 from .collection_design import CollectionDesign
 from .condition_type import ConditionType
 from .craft_design import CraftDesign
+from .defending_engagement_group import DefendingEngagementGroup
 from .division_design import DivisionDesign
 from .draw_design import DrawDesign
+from .engagement import Engagement
+from .engagement_group_user import EngagementGroupUser
 from .entity_base import EntityBase, EntityWithIdBase
 from .file import File
 from .friend import Friend
 from .get_catalog_quantity import GetCatalogQuantity
 from .history import History
+from .infrastructure_design import InfrastructureDesign
 from .item import Item
 from .item_design import ItemDesign
 from .item_design_action import ItemDesignAction
@@ -36,6 +43,7 @@ from .news_design import NewsDesign
 from .planet import Planet
 from .prestige import Prestige
 from .promotion_design import PromotionDesign
+from .redeem_code import RedeemCode
 from .research import Research
 from .research_design import ResearchDesign
 from .reward_design import RewardDesign
@@ -49,14 +57,19 @@ from .season_design import SeasonDesign
 from .setting import Setting
 from .ship import Ship
 from .ship_design import ShipDesign
+from .situation import Situation
 from .situation_design import SituationDesign
 from .skin import Skin
 from .skin_set import SkinSet
 from .sprite import Sprite
 from .star_system import StarSystem
+from .star_system_detail import StarSystemDetail
+from .star_system_infrastructure_design import StarSystemInfrastructureDesign
+from .star_system_infrastructures import StarSystemInfrastructures
 from .star_system_link import StarSystemLink
 from .star_system_marker import StarSystemMarker
 from .star_system_marker_generator import StarSystemMarkerGenerator
+from .task import Task
 from .task_design import TaskDesign
 from .training_design import TrainingDesign
 from .user import User
@@ -64,6 +77,7 @@ from .user_email_password_authorize import UserEmailPasswordAuthorize
 from .user_login import UserLogin
 from .user_marker import UserMarker
 from .user_season import UserSeason
+from .user_skin import UserSkin
 from .user_star_system import UserStarSystem
 
 
@@ -71,11 +85,14 @@ __all__ = [
     EntityWithIdBase.__name__,
     EntityBase.__name__,
     metadata.__name__,
+    Achievement.__name__,
     AchievementDesign.__name__,
     ActionType.__name__,
     Alliance.__name__,
+    AllianceTask.__name__,
     Animation.__name__,
     Asset.__name__,
+    AttackingEngagementGroup.__name__,
     Background.__name__,
     Battle.__name__,
     ChallengeDesign.__name__,
@@ -87,12 +104,16 @@ __all__ = [
     CollectionDesign.__name__,
     ConditionType.__name__,
     CraftDesign.__name__,
+    DefendingEngagementGroup.__name__,
     DivisionDesign.__name__,
     DrawDesign.__name__,
+    Engagement.__name__,
+    EngagementGroupUser.__name__,
     File.__name__,
     Friend.__name__,
     GetCatalogQuantity.__name__,
     History.__name__,
+    InfrastructureDesign.__name__,
     Item.__name__,
     ItemDesign.__name__,
     ItemDesignAction.__name__,
@@ -107,6 +128,7 @@ __all__ = [
     Planet.__name__,
     Prestige.__name__,
     PromotionDesign.__name__,
+    RedeemCode.__name__,
     Research.__name__,
     ResearchDesign.__name__,
     RewardDesign.__name__,
@@ -120,14 +142,19 @@ __all__ = [
     Setting.__name__,
     Ship.__name__,
     ShipDesign.__name__,
+    Situation.__name__,
     SituationDesign.__name__,
     Skin.__name__,
     SkinSet.__name__,
     Sprite.__name__,
     StarSystem.__name__,
+    StarSystemDetail.__name__,
+    StarSystemInfrastructureDesign.__name__,
+    StarSystemInfrastructures.__name__,
     StarSystemLink.__name__,
     StarSystemMarker.__name__,
     StarSystemMarkerGenerator.__name__,
+    Task.__name__,
     TaskDesign.__name__,
     TrainingDesign.__name__,
     User.__name__,
@@ -135,5 +162,6 @@ __all__ = [
     UserLogin.__name__,
     UserMarker.__name__,
     UserSeason.__name__,
+    UserSkin.__name__,
     UserStarSystem.__name__,
 ]

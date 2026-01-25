@@ -23,6 +23,7 @@ class StarSystemMarkerRaw(_EntityBaseRaw):
         self._cost_string: str = _parse.pss_str(star_system_marker_info.pop("CostString", None))
         self._cost_type: str = _parse.pss_str(star_system_marker_info.pop("CostType", None))
         self._description: str = _parse.pss_str(star_system_marker_info.pop("Description", None))
+        self._engagement_id: int = _parse.pss_int(star_system_marker_info.pop("EngagementId", None))
         self._expiry_date: _datetime = _parse.pss_datetime(star_system_marker_info.pop("ExpiryDate", None))
         self._from_star_system_id: int = _parse.pss_int(star_system_marker_info.pop("FromStarSystemId", None))
         self._is_collected: bool = _parse.pss_bool(star_system_marker_info.pop("IsCollected", None))
@@ -82,6 +83,10 @@ class StarSystemMarkerRaw(_EntityBaseRaw):
     @property
     def description(self) -> str:
         return self._description
+
+    @property
+    def engagement_id(self) -> int:
+        return self._engagement_id
 
     @property
     def expiry_date(self) -> _datetime:
@@ -212,6 +217,7 @@ class StarSystemMarkerRaw(_EntityBaseRaw):
             self.cost_string,
             self.cost_type,
             self.description,
+            self.engagement_id,
             self.expiry_date,
             self.from_star_system_id,
             self.is_collected,
@@ -254,6 +260,7 @@ class StarSystemMarkerRaw(_EntityBaseRaw):
                 "CostString": self.cost_string,
                 "CostType": self.cost_type,
                 "Description": self.description,
+                "EngagementId": self.engagement_id,
                 "ExpiryDate": self.expiry_date,
                 "FromStarSystemId": self.from_star_system_id,
                 "IsCollected": self.is_collected,

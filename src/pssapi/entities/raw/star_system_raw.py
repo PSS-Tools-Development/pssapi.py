@@ -15,6 +15,7 @@ class StarSystemRaw(_EntityBaseRaw):
 
     def __init__(self, star_system_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._background_sprite_id: int = _parse.pss_int(star_system_info.pop("BackgroundSpriteId", None))
         self._exploration_duration: int = _parse.pss_int(star_system_info.pop("ExplorationDuration", None))
         self._icon_sprite_id: int = _parse.pss_int(star_system_info.pop("IconSpriteId", None))
         self._requirement_description: str = _parse.pss_str(star_system_info.pop("RequirementDescription", None))
@@ -26,6 +27,10 @@ class StarSystemRaw(_EntityBaseRaw):
         self._y: int = _parse.pss_int(star_system_info.pop("Y", None))
         self._z: int = _parse.pss_int(star_system_info.pop("Z", None))
         super().__init__(star_system_info)
+
+    @property
+    def background_sprite_id(self) -> int:
+        return self._background_sprite_id
 
     @property
     def exploration_duration(self) -> int:
@@ -69,6 +74,7 @@ class StarSystemRaw(_EntityBaseRaw):
 
     def _key(self):
         return (
+            self.background_sprite_id,
             self.exploration_duration,
             self.icon_sprite_id,
             self.requirement_description,
@@ -84,6 +90,7 @@ class StarSystemRaw(_EntityBaseRaw):
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "BackgroundSpriteId": self.background_sprite_id,
                 "ExplorationDuration": self.exploration_duration,
                 "IconSpriteId": self.icon_sprite_id,
                 "RequirementDescription": self.requirement_description,

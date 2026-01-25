@@ -23,6 +23,7 @@ class RewardDesignRaw(_EntityBaseRaw):
         self._available_to: _datetime = _parse.pss_datetime(reward_design_info.pop("AvailableTo", None))
         self._background_sprite_id: int = _parse.pss_int(reward_design_info.pop("BackgroundSpriteId", None))
         self._battle_pass_tier_index: int = _parse.pss_int(reward_design_info.pop("BattlePassTierIndex", None))
+        self._bonus_reward_string: str = _parse.pss_str(reward_design_info.pop("BonusRewardString", None))
         self._flags: int = _parse.pss_int(reward_design_info.pop("Flags", None))
         self._grids: int = _parse.pss_int(reward_design_info.pop("Grids", None))
         self._max_per_user: int = _parse.pss_int(reward_design_info.pop("MaxPerUser", None))
@@ -65,6 +66,10 @@ class RewardDesignRaw(_EntityBaseRaw):
     @property
     def battle_pass_tier_index(self) -> int:
         return self._battle_pass_tier_index
+
+    @property
+    def bonus_reward_string(self) -> str:
+        return self._bonus_reward_string
 
     @property
     def flags(self) -> int:
@@ -127,6 +132,7 @@ class RewardDesignRaw(_EntityBaseRaw):
             self.available_to,
             self.background_sprite_id,
             self.battle_pass_tier_index,
+            self.bonus_reward_string,
             self.flags,
             self.grids,
             self.max_per_user,
@@ -152,6 +158,7 @@ class RewardDesignRaw(_EntityBaseRaw):
                 "AvailableTo": self.available_to,
                 "BackgroundSpriteId": self.background_sprite_id,
                 "BattlePassTierIndex": self.battle_pass_tier_index,
+                "BonusRewardString": self.bonus_reward_string,
                 "Flags": self.flags,
                 "Grids": self.grids,
                 "MaxPerUser": self.max_per_user,

@@ -58,6 +58,10 @@ class PssApiClientBase:
         return self.__background_service
 
     @property
+    def battle_service(self) -> "_services.BattleService":
+        return self.__battle_service
+
+    @property
     def challenge_service(self) -> "_services.ChallengeService":
         return self.__challenge_service
 
@@ -196,6 +200,7 @@ class PssApiClientBase:
         self.__alliance_service: _services.AllianceService = _services.AllianceService(self)
         self.__animation_service: _services.AnimationService = _services.AnimationService(self)
         self.__background_service: _services.BackgroundService = _services.BackgroundService(self)
+        self.__battle_service: _services.BattleService = _services.BattleService(self)
         self.__challenge_service: _services.ChallengeService = _services.ChallengeService(self)
         self.__character_service: _services.CharacterService = _services.CharacterService(self)
         self.__collection_service: _services.CollectionService = _services.CollectionService(self)

@@ -16,6 +16,7 @@ class ShipDesignRaw(_EntityBaseRaw):
     def __init__(self, ship_design_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._allow_interacial: bool = _parse.pss_bool(ship_design_info.pop("AllowInteracial", None))
+        self._attacks: int = _parse.pss_int(ship_design_info.pop("Attacks", None))
         self._background_asset_id: int = _parse.pss_int(ship_design_info.pop("BackgroundAssetId", None))
         self._columns: int = _parse.pss_int(ship_design_info.pop("Columns", None))
         self._door_frame_left_file_id: int = _parse.pss_int(ship_design_info.pop("DoorFrameLeftFileId", None))
@@ -36,9 +37,11 @@ class ShipDesignRaw(_EntityBaseRaw):
         self._interior_sprite_id: int = _parse.pss_int(ship_design_info.pop("InteriorSpriteId", None))
         self._lift_file_id: int = _parse.pss_int(ship_design_info.pop("LiftFileId", None))
         self._lift_sprite_id: int = _parse.pss_int(ship_design_info.pop("LiftSpriteId", None))
+        self._lives: int = _parse.pss_int(ship_design_info.pop("Lives", None))
         self._logo_file_id: int = _parse.pss_int(ship_design_info.pop("LogoFileId", None))
         self._logo_sprite_id: int = _parse.pss_int(ship_design_info.pop("LogoSpriteId", None))
         self._mask: str = _parse.pss_str(ship_design_info.pop("Mask", None))
+        self._metadata: str = _parse.pss_str(ship_design_info.pop("Metadata", None))
         self._mineral_capacity: int = _parse.pss_int(ship_design_info.pop("MineralCapacity", None))
         self._mineral_cost: int = _parse.pss_int(ship_design_info.pop("MineralCost", None))
         self._mini_ship_sprite_id: int = _parse.pss_int(ship_design_info.pop("MiniShipSpriteId", None))
@@ -71,6 +74,10 @@ class ShipDesignRaw(_EntityBaseRaw):
     @property
     def allow_interacial(self) -> bool:
         return self._allow_interacial
+
+    @property
+    def attacks(self) -> int:
+        return self._attacks
 
     @property
     def background_asset_id(self) -> int:
@@ -153,6 +160,10 @@ class ShipDesignRaw(_EntityBaseRaw):
         return self._lift_sprite_id
 
     @property
+    def lives(self) -> int:
+        return self._lives
+
+    @property
     def logo_file_id(self) -> int:
         return self._logo_file_id
 
@@ -163,6 +174,10 @@ class ShipDesignRaw(_EntityBaseRaw):
     @property
     def mask(self) -> str:
         return self._mask
+
+    @property
+    def metadata(self) -> str:
+        return self._metadata
 
     @property
     def mineral_capacity(self) -> int:
@@ -275,6 +290,7 @@ class ShipDesignRaw(_EntityBaseRaw):
     def _key(self):
         return (
             self.allow_interacial,
+            self.attacks,
             self.background_asset_id,
             self.columns,
             self.door_frame_left_file_id,
@@ -295,9 +311,11 @@ class ShipDesignRaw(_EntityBaseRaw):
             self.interior_sprite_id,
             self.lift_file_id,
             self.lift_sprite_id,
+            self.lives,
             self.logo_file_id,
             self.logo_sprite_id,
             self.mask,
+            self.metadata,
             self.mineral_capacity,
             self.mineral_cost,
             self.mini_ship_sprite_id,
@@ -331,6 +349,7 @@ class ShipDesignRaw(_EntityBaseRaw):
         if not self._dict:
             self._dict = {
                 "AllowInteracial": self.allow_interacial,
+                "Attacks": self.attacks,
                 "BackgroundAssetId": self.background_asset_id,
                 "Columns": self.columns,
                 "DoorFrameLeftFileId": self.door_frame_left_file_id,
@@ -351,9 +370,11 @@ class ShipDesignRaw(_EntityBaseRaw):
                 "InteriorSpriteId": self.interior_sprite_id,
                 "LiftFileId": self.lift_file_id,
                 "LiftSpriteId": self.lift_sprite_id,
+                "Lives": self.lives,
                 "LogoFileId": self.logo_file_id,
                 "LogoSpriteId": self.logo_sprite_id,
                 "Mask": self.mask,
+                "Metadata": self.metadata,
                 "MineralCapacity": self.mineral_capacity,
                 "MineralCost": self.mineral_cost,
                 "MiniShipSpriteId": self.mini_ship_sprite_id,

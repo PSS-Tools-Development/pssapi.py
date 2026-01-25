@@ -19,6 +19,8 @@ class SettingRaw(_EntityBaseRaw):
         self._ab_testing_rollout: int = _parse.pss_int(setting_info.pop("ABTestingRollout", None))
         self._ab_testing_start_date: _datetime = _parse.pss_datetime(setting_info.pop("ABTestingStartDate", None))
         self._a_feature_mask: int = _parse.pss_int(setting_info.pop("AFeatureMask", None))
+        self._ama_message: str = _parse.pss_str(setting_info.pop("AMAMessage", None))
+        self._ama_start_date: _datetime = _parse.pss_datetime(setting_info.pop("AMAStartDate", None))
         self._ability_design_version: int = _parse.pss_int(setting_info.pop("AbilityDesignVersion", None))
         self._achievement_design_version: int = _parse.pss_int(setting_info.pop("AchievementDesignVersion", None))
         self._action_type_version: int = _parse.pss_int(setting_info.pop("ActionTypeVersion", None))
@@ -28,11 +30,14 @@ class SettingRaw(_EntityBaseRaw):
         self._b_feature_mask: int = _parse.pss_int(setting_info.pop("BFeatureMask", None))
         self._background_id: int = _parse.pss_int(setting_info.pop("BackgroundId", None))
         self._background_version: int = _parse.pss_int(setting_info.pop("BackgroundVersion", None))
+        self._bank_groups: str = _parse.pss_str(setting_info.pop("BankGroups", None))
         self._battle_background_id: int = _parse.pss_int(setting_info.pop("BattleBackgroundId", None))
+        self._battle_searches_hard_limit: int = _parse.pss_int(setting_info.pop("BattleSearchesHardLimit", None))
         self._boost_duration: int = _parse.pss_int(setting_info.pop("BoostDuration", None))
         self._boost_gauge_mobile: int = _parse.pss_int(setting_info.pop("BoostGaugeMobile", None))
         self._boost_gauge_pc: int = _parse.pss_int(setting_info.pop("BoostGaugePC", None))
         self._boost_multiplier: int = _parse.pss_int(setting_info.pop("BoostMultiplier", None))
+        self._capped_value_for_star_battle_max_range: int = _parse.pss_int(setting_info.pop("CappedValueForStarBattleMaxRange", None))
         self._cargo_items: str = _parse.pss_str(setting_info.pop("CargoItems", None))
         self._cargo_prices: str = _parse.pss_str(setting_info.pop("CargoPrices", None))
         self._challenge_design_version: int = _parse.pss_int(setting_info.pop("ChallengeDesignVersion", None))
@@ -44,19 +49,28 @@ class SettingRaw(_EntityBaseRaw):
         self._collection_design_version: int = _parse.pss_int(setting_info.pop("CollectionDesignVersion", None))
         self._common_crew_id: int = _parse.pss_int(setting_info.pop("CommonCrewId", None))
         self._condition_type_version: int = _parse.pss_int(setting_info.pop("ConditionTypeVersion", None))
+        self._cost_string_to_search: str = _parse.pss_str(setting_info.pop("CostStringToSearch", None))
+        self._cost_to_search_multiplier: int = _parse.pss_int(setting_info.pop("CostToSearchMultiplier", None))
         self._craft_design_version: int = _parse.pss_int(setting_info.pop("CraftDesignVersion", None))
+        self._creator_code_duration: int = _parse.pss_int(setting_info.pop("CreatorCodeDuration", None))
         self._current_android_version: str = _parse.pss_str(setting_info.pop("CurrentAndroidVersion", None))
         self._daily_item_rewards: str = _parse.pss_str(setting_info.pop("DailyItemRewards", None))
         self._daily_reward_argument: int = _parse.pss_int(setting_info.pop("DailyRewardArgument", None))
         self._daily_reward_type: str = _parse.pss_str(setting_info.pop("DailyRewardType", None))
         self._division_design_version: int = _parse.pss_int(setting_info.pop("DivisionDesignVersion", None))
         self._draw_design_version: int = _parse.pss_int(setting_info.pop("DrawDesignVersion", None))
+        self._engagement_invasion_duration: int = _parse.pss_int(setting_info.pop("EngagementInvasionDuration", None))
+        self._engagement_power_per_supply_cost: int = _parse.pss_int(setting_info.pop("EngagementPowerPerSupplyCost", None))
+        self._engagement_raid_duration: int = _parse.pss_int(setting_info.pop("EngagementRaidDuration", None))
+        self._engagement_supply_reward_percentage: int = _parse.pss_int(setting_info.pop("EngagementSupplyRewardPercentage", None))
         self._engine_efficiency_loss: float = _parse.pss_float(setting_info.pop("EngineEfficiencyLoss", None))
         self._feature_mask: int = _parse.pss_int(setting_info.pop("FeatureMask", None))
+        self._featured_video_url: str = _parse.pss_str(setting_info.pop("FeaturedVideoURL", None))
         self._file_version: int = _parse.pss_int(setting_info.pop("FileVersion", None))
         self._flags: int = _parse.pss_int(setting_info.pop("Flags", None))
         self._grace_period: int = _parse.pss_int(setting_info.pop("GracePeriod", None))
         self._hero_crew_id: int = _parse.pss_int(setting_info.pop("HeroCrewId", None))
+        self._infrastructure_design_version: int = _parse.pss_int(setting_info.pop("InfrastructureDesignVersion", None))
         self._is_debug: bool = _parse.pss_bool(setting_info.pop("IsDebug", None))
         self._item_design_action_version: int = _parse.pss_int(setting_info.pop("ItemDesignActionVersion", None))
         self._item_design_version: int = _parse.pss_int(setting_info.pop("ItemDesignVersion", None))
@@ -83,18 +97,24 @@ class SettingRaw(_EntityBaseRaw):
         self._loading_subtitle_sprite_id: int = _parse.pss_int(setting_info.pop("LoadingSubtitleSpriteId", None))
         self._loading_title_sprite_id: int = _parse.pss_int(setting_info.pop("LoadingTitleSpriteId", None))
         self._loot_modifiers: str = _parse.pss_str(setting_info.pop("LootModifiers", None))
+        self._lower_base_value_for_star_battle: int = _parse.pss_int(setting_info.pop("LowerBaseValueForStarBattle", None))
         self._maintenance_date: _datetime = _parse.pss_datetime(setting_info.pop("MaintenanceDate", None))
         self._maintenance_message: str = _parse.pss_str(setting_info.pop("MaintenanceMessage", None))
         self._maintenance_title: str = _parse.pss_str(setting_info.pop("MaintenanceTitle", None))
         self._marker_generator_design_version: int = _parse.pss_int(setting_info.pop("MarkerGeneratorDesignVersion", None))
+        self._max_battle_searches: int = _parse.pss_int(setting_info.pop("MaxBattleSearches", None))
         self._max_boost_duration: int = _parse.pss_int(setting_info.pop("MaxBoostDuration", None))
         self._max_crews: int = _parse.pss_int(setting_info.pop("MaxCrews", None))
         self._max_daily_draws: int = _parse.pss_int(setting_info.pop("MaxDailyDraws", None))
+        self._max_engagement_supply_cost: int = _parse.pss_int(setting_info.pop("MaxEngagementSupplyCost", None))
         self._max_redemption_count: int = _parse.pss_int(setting_info.pop("MaxRedemptionCount", None))
         self._max_redemption_count_per_month: int = _parse.pss_int(setting_info.pop("MaxRedemptionCountPerMonth", None))
+        self._max_star_systems_per_fleet: int = _parse.pss_int(setting_info.pop("MaxStarSystemsPerFleet", None))
         self._merchant_ship_exterior_sprite_id: int = _parse.pss_int(setting_info.pop("MerchantShipExteriorSpriteId", None))
         self._merchant_ship_sprite_id: int = _parse.pss_int(setting_info.pop("MerchantShipSpriteId", None))
+        self._min_engagement_supply_cost: int = _parse.pss_int(setting_info.pop("MinEngagementSupplyCost", None))
         self._min_purchase_reward_points_for_starbux_trading: int = _parse.pss_int(setting_info.pop("MinPurchaseRewardPointsForStarbuxTrading", None))
+        self._min_ship_level_for_sync_server: int = _parse.pss_int(setting_info.pop("MinShipLevelForSyncServer", None))
         self._min_trophies_for_starbux_trading: int = _parse.pss_int(setting_info.pop("MinTrophiesForStarbuxTrading", None))
         self._minimum_client_version: str = _parse.pss_str(setting_info.pop("MinimumClientVersion", None))
         self._minimum_version: str = _parse.pss_str(setting_info.pop("MinimumVersion", None))
@@ -140,8 +160,13 @@ class SettingRaw(_EntityBaseRaw):
         self._skin_set_version: int = _parse.pss_int(setting_info.pop("SkinSetVersion", None))
         self._skin_version: int = _parse.pss_int(setting_info.pop("SkinVersion", None))
         self._sprite_version: int = _parse.pss_int(setting_info.pop("SpriteVersion", None))
+        self._star_system_cooldown_modifier: float = _parse.pss_float(setting_info.pop("StarSystemCooldownModifier", None))
+        self._star_system_infrastructure_design_version: int = _parse.pss_int(setting_info.pop("StarSystemInfrastructureDesignVersion", None))
         self._star_system_link_version: int = _parse.pss_int(setting_info.pop("StarSystemLinkVersion", None))
         self._star_system_version: int = _parse.pss_int(setting_info.pop("StarSystemVersion", None))
+        self._starbux_market_price_cap: int = _parse.pss_int(setting_info.pop("StarbuxMarketPriceCap", None))
+        self._step_for_star_battle_max_range: int = _parse.pss_int(setting_info.pop("StepForStarBattleMaxRange", None))
+        self._step_for_star_battle_min_range: int = _parse.pss_int(setting_info.pop("StepForStarBattleMinRange", None))
         self._support_email: str = _parse.pss_str(setting_info.pop("SupportEmail", None))
         self._support_task_ran_date: _datetime = _parse.pss_datetime(setting_info.pop("SupportTaskRanDate", None))
         self._task_design_version: int = _parse.pss_int(setting_info.pop("TaskDesignVersion", None))
@@ -149,9 +174,12 @@ class SettingRaw(_EntityBaseRaw):
         self._task_reroll_max_count: int = _parse.pss_int(setting_info.pop("TaskRerollMaxCount", None))
         self._tournament_bonus_score: int = _parse.pss_int(setting_info.pop("TournamentBonusScore", None))
         self._tournament_final_duration: int = _parse.pss_int(setting_info.pop("TournamentFinalDuration", None))
+        self._tournament_immunity_time_in_seconds: int = _parse.pss_int(setting_info.pop("TournamentImmunityTimeInSeconds", None))
         self._tournament_news: str = _parse.pss_str(setting_info.pop("TournamentNews", None))
         self._tournament_sprite_id: int = _parse.pss_int(setting_info.pop("TournamentSpriteId", None))
         self._training_design_version: int = _parse.pss_int(setting_info.pop("TrainingDesignVersion", None))
+        self._upper_base_value_for_star_battle: int = _parse.pss_int(setting_info.pop("UpperBaseValueForStarBattle", None))
+        self._user_engagement_cooldowntime: int = _parse.pss_int(setting_info.pop("UserEngagementCooldowntime", None))
         self._vip_design_version: int = _parse.pss_int(setting_info.pop("VipDesignVersion", None))
         self._voting_duration: int = _parse.pss_int(setting_info.pop("VotingDuration", None))
         super().__init__(setting_info)
@@ -167,6 +195,14 @@ class SettingRaw(_EntityBaseRaw):
     @property
     def a_feature_mask(self) -> int:
         return self._a_feature_mask
+
+    @property
+    def ama_message(self) -> str:
+        return self._ama_message
+
+    @property
+    def ama_start_date(self) -> _datetime:
+        return self._ama_start_date
 
     @property
     def ability_design_version(self) -> int:
@@ -205,8 +241,16 @@ class SettingRaw(_EntityBaseRaw):
         return self._background_version
 
     @property
+    def bank_groups(self) -> str:
+        return self._bank_groups
+
+    @property
     def battle_background_id(self) -> int:
         return self._battle_background_id
+
+    @property
+    def battle_searches_hard_limit(self) -> int:
+        return self._battle_searches_hard_limit
 
     @property
     def boost_duration(self) -> int:
@@ -223,6 +267,10 @@ class SettingRaw(_EntityBaseRaw):
     @property
     def boost_multiplier(self) -> int:
         return self._boost_multiplier
+
+    @property
+    def capped_value_for_star_battle_max_range(self) -> int:
+        return self._capped_value_for_star_battle_max_range
 
     @property
     def cargo_items(self) -> str:
@@ -269,8 +317,20 @@ class SettingRaw(_EntityBaseRaw):
         return self._condition_type_version
 
     @property
+    def cost_string_to_search(self) -> str:
+        return self._cost_string_to_search
+
+    @property
+    def cost_to_search_multiplier(self) -> int:
+        return self._cost_to_search_multiplier
+
+    @property
     def craft_design_version(self) -> int:
         return self._craft_design_version
+
+    @property
+    def creator_code_duration(self) -> int:
+        return self._creator_code_duration
 
     @property
     def current_android_version(self) -> str:
@@ -297,12 +357,32 @@ class SettingRaw(_EntityBaseRaw):
         return self._draw_design_version
 
     @property
+    def engagement_invasion_duration(self) -> int:
+        return self._engagement_invasion_duration
+
+    @property
+    def engagement_power_per_supply_cost(self) -> int:
+        return self._engagement_power_per_supply_cost
+
+    @property
+    def engagement_raid_duration(self) -> int:
+        return self._engagement_raid_duration
+
+    @property
+    def engagement_supply_reward_percentage(self) -> int:
+        return self._engagement_supply_reward_percentage
+
+    @property
     def engine_efficiency_loss(self) -> float:
         return self._engine_efficiency_loss
 
     @property
     def feature_mask(self) -> int:
         return self._feature_mask
+
+    @property
+    def featured_video_url(self) -> str:
+        return self._featured_video_url
 
     @property
     def file_version(self) -> int:
@@ -319,6 +399,10 @@ class SettingRaw(_EntityBaseRaw):
     @property
     def hero_crew_id(self) -> int:
         return self._hero_crew_id
+
+    @property
+    def infrastructure_design_version(self) -> int:
+        return self._infrastructure_design_version
 
     @property
     def is_debug(self) -> bool:
@@ -425,6 +509,10 @@ class SettingRaw(_EntityBaseRaw):
         return self._loot_modifiers
 
     @property
+    def lower_base_value_for_star_battle(self) -> int:
+        return self._lower_base_value_for_star_battle
+
+    @property
     def maintenance_date(self) -> _datetime:
         return self._maintenance_date
 
@@ -441,6 +529,10 @@ class SettingRaw(_EntityBaseRaw):
         return self._marker_generator_design_version
 
     @property
+    def max_battle_searches(self) -> int:
+        return self._max_battle_searches
+
+    @property
     def max_boost_duration(self) -> int:
         return self._max_boost_duration
 
@@ -453,12 +545,20 @@ class SettingRaw(_EntityBaseRaw):
         return self._max_daily_draws
 
     @property
+    def max_engagement_supply_cost(self) -> int:
+        return self._max_engagement_supply_cost
+
+    @property
     def max_redemption_count(self) -> int:
         return self._max_redemption_count
 
     @property
     def max_redemption_count_per_month(self) -> int:
         return self._max_redemption_count_per_month
+
+    @property
+    def max_star_systems_per_fleet(self) -> int:
+        return self._max_star_systems_per_fleet
 
     @property
     def merchant_ship_exterior_sprite_id(self) -> int:
@@ -469,8 +569,16 @@ class SettingRaw(_EntityBaseRaw):
         return self._merchant_ship_sprite_id
 
     @property
+    def min_engagement_supply_cost(self) -> int:
+        return self._min_engagement_supply_cost
+
+    @property
     def min_purchase_reward_points_for_starbux_trading(self) -> int:
         return self._min_purchase_reward_points_for_starbux_trading
+
+    @property
+    def min_ship_level_for_sync_server(self) -> int:
+        return self._min_ship_level_for_sync_server
 
     @property
     def min_trophies_for_starbux_trading(self) -> int:
@@ -653,12 +761,32 @@ class SettingRaw(_EntityBaseRaw):
         return self._sprite_version
 
     @property
+    def star_system_cooldown_modifier(self) -> float:
+        return self._star_system_cooldown_modifier
+
+    @property
+    def star_system_infrastructure_design_version(self) -> int:
+        return self._star_system_infrastructure_design_version
+
+    @property
     def star_system_link_version(self) -> int:
         return self._star_system_link_version
 
     @property
     def star_system_version(self) -> int:
         return self._star_system_version
+
+    @property
+    def starbux_market_price_cap(self) -> int:
+        return self._starbux_market_price_cap
+
+    @property
+    def step_for_star_battle_max_range(self) -> int:
+        return self._step_for_star_battle_max_range
+
+    @property
+    def step_for_star_battle_min_range(self) -> int:
+        return self._step_for_star_battle_min_range
 
     @property
     def support_email(self) -> str:
@@ -689,6 +817,10 @@ class SettingRaw(_EntityBaseRaw):
         return self._tournament_final_duration
 
     @property
+    def tournament_immunity_time_in_seconds(self) -> int:
+        return self._tournament_immunity_time_in_seconds
+
+    @property
     def tournament_news(self) -> str:
         return self._tournament_news
 
@@ -699,6 +831,14 @@ class SettingRaw(_EntityBaseRaw):
     @property
     def training_design_version(self) -> int:
         return self._training_design_version
+
+    @property
+    def upper_base_value_for_star_battle(self) -> int:
+        return self._upper_base_value_for_star_battle
+
+    @property
+    def user_engagement_cooldowntime(self) -> int:
+        return self._user_engagement_cooldowntime
 
     @property
     def vip_design_version(self) -> int:
@@ -713,6 +853,8 @@ class SettingRaw(_EntityBaseRaw):
             self.ab_testing_rollout,
             self.ab_testing_start_date,
             self.a_feature_mask,
+            self.ama_message,
+            self.ama_start_date,
             self.ability_design_version,
             self.achievement_design_version,
             self.action_type_version,
@@ -722,11 +864,14 @@ class SettingRaw(_EntityBaseRaw):
             self.b_feature_mask,
             self.background_id,
             self.background_version,
+            self.bank_groups,
             self.battle_background_id,
+            self.battle_searches_hard_limit,
             self.boost_duration,
             self.boost_gauge_mobile,
             self.boost_gauge_pc,
             self.boost_multiplier,
+            self.capped_value_for_star_battle_max_range,
             self.cargo_items,
             self.cargo_prices,
             self.challenge_design_version,
@@ -738,19 +883,28 @@ class SettingRaw(_EntityBaseRaw):
             self.collection_design_version,
             self.common_crew_id,
             self.condition_type_version,
+            self.cost_string_to_search,
+            self.cost_to_search_multiplier,
             self.craft_design_version,
+            self.creator_code_duration,
             self.current_android_version,
             self.daily_item_rewards,
             self.daily_reward_argument,
             self.daily_reward_type,
             self.division_design_version,
             self.draw_design_version,
+            self.engagement_invasion_duration,
+            self.engagement_power_per_supply_cost,
+            self.engagement_raid_duration,
+            self.engagement_supply_reward_percentage,
             self.engine_efficiency_loss,
             self.feature_mask,
+            self.featured_video_url,
             self.file_version,
             self.flags,
             self.grace_period,
             self.hero_crew_id,
+            self.infrastructure_design_version,
             self.is_debug,
             self.item_design_action_version,
             self.item_design_version,
@@ -777,18 +931,24 @@ class SettingRaw(_EntityBaseRaw):
             self.loading_subtitle_sprite_id,
             self.loading_title_sprite_id,
             self.loot_modifiers,
+            self.lower_base_value_for_star_battle,
             self.maintenance_date,
             self.maintenance_message,
             self.maintenance_title,
             self.marker_generator_design_version,
+            self.max_battle_searches,
             self.max_boost_duration,
             self.max_crews,
             self.max_daily_draws,
+            self.max_engagement_supply_cost,
             self.max_redemption_count,
             self.max_redemption_count_per_month,
+            self.max_star_systems_per_fleet,
             self.merchant_ship_exterior_sprite_id,
             self.merchant_ship_sprite_id,
+            self.min_engagement_supply_cost,
             self.min_purchase_reward_points_for_starbux_trading,
+            self.min_ship_level_for_sync_server,
             self.min_trophies_for_starbux_trading,
             self.minimum_client_version,
             self.minimum_version,
@@ -834,8 +994,13 @@ class SettingRaw(_EntityBaseRaw):
             self.skin_set_version,
             self.skin_version,
             self.sprite_version,
+            self.star_system_cooldown_modifier,
+            self.star_system_infrastructure_design_version,
             self.star_system_link_version,
             self.star_system_version,
+            self.starbux_market_price_cap,
+            self.step_for_star_battle_max_range,
+            self.step_for_star_battle_min_range,
             self.support_email,
             self.support_task_ran_date,
             self.task_design_version,
@@ -843,9 +1008,12 @@ class SettingRaw(_EntityBaseRaw):
             self.task_reroll_max_count,
             self.tournament_bonus_score,
             self.tournament_final_duration,
+            self.tournament_immunity_time_in_seconds,
             self.tournament_news,
             self.tournament_sprite_id,
             self.training_design_version,
+            self.upper_base_value_for_star_battle,
+            self.user_engagement_cooldowntime,
             self.vip_design_version,
             self.voting_duration,
         )
@@ -856,6 +1024,8 @@ class SettingRaw(_EntityBaseRaw):
                 "ABTestingRollout": self.ab_testing_rollout,
                 "ABTestingStartDate": self.ab_testing_start_date,
                 "AFeatureMask": self.a_feature_mask,
+                "AMAMessage": self.ama_message,
+                "AMAStartDate": self.ama_start_date,
                 "AbilityDesignVersion": self.ability_design_version,
                 "AchievementDesignVersion": self.achievement_design_version,
                 "ActionTypeVersion": self.action_type_version,
@@ -865,11 +1035,14 @@ class SettingRaw(_EntityBaseRaw):
                 "BFeatureMask": self.b_feature_mask,
                 "BackgroundId": self.background_id,
                 "BackgroundVersion": self.background_version,
+                "BankGroups": self.bank_groups,
                 "BattleBackgroundId": self.battle_background_id,
+                "BattleSearchesHardLimit": self.battle_searches_hard_limit,
                 "BoostDuration": self.boost_duration,
                 "BoostGaugeMobile": self.boost_gauge_mobile,
                 "BoostGaugePC": self.boost_gauge_pc,
                 "BoostMultiplier": self.boost_multiplier,
+                "CappedValueForStarBattleMaxRange": self.capped_value_for_star_battle_max_range,
                 "CargoItems": self.cargo_items,
                 "CargoPrices": self.cargo_prices,
                 "ChallengeDesignVersion": self.challenge_design_version,
@@ -881,19 +1054,28 @@ class SettingRaw(_EntityBaseRaw):
                 "CollectionDesignVersion": self.collection_design_version,
                 "CommonCrewId": self.common_crew_id,
                 "ConditionTypeVersion": self.condition_type_version,
+                "CostStringToSearch": self.cost_string_to_search,
+                "CostToSearchMultiplier": self.cost_to_search_multiplier,
                 "CraftDesignVersion": self.craft_design_version,
+                "CreatorCodeDuration": self.creator_code_duration,
                 "CurrentAndroidVersion": self.current_android_version,
                 "DailyItemRewards": self.daily_item_rewards,
                 "DailyRewardArgument": self.daily_reward_argument,
                 "DailyRewardType": self.daily_reward_type,
                 "DivisionDesignVersion": self.division_design_version,
                 "DrawDesignVersion": self.draw_design_version,
+                "EngagementInvasionDuration": self.engagement_invasion_duration,
+                "EngagementPowerPerSupplyCost": self.engagement_power_per_supply_cost,
+                "EngagementRaidDuration": self.engagement_raid_duration,
+                "EngagementSupplyRewardPercentage": self.engagement_supply_reward_percentage,
                 "EngineEfficiencyLoss": self.engine_efficiency_loss,
                 "FeatureMask": self.feature_mask,
+                "FeaturedVideoURL": self.featured_video_url,
                 "FileVersion": self.file_version,
                 "Flags": self.flags,
                 "GracePeriod": self.grace_period,
                 "HeroCrewId": self.hero_crew_id,
+                "InfrastructureDesignVersion": self.infrastructure_design_version,
                 "IsDebug": self.is_debug,
                 "ItemDesignActionVersion": self.item_design_action_version,
                 "ItemDesignVersion": self.item_design_version,
@@ -920,18 +1102,24 @@ class SettingRaw(_EntityBaseRaw):
                 "LoadingSubtitleSpriteId": self.loading_subtitle_sprite_id,
                 "LoadingTitleSpriteId": self.loading_title_sprite_id,
                 "LootModifiers": self.loot_modifiers,
+                "LowerBaseValueForStarBattle": self.lower_base_value_for_star_battle,
                 "MaintenanceDate": self.maintenance_date,
                 "MaintenanceMessage": self.maintenance_message,
                 "MaintenanceTitle": self.maintenance_title,
                 "MarkerGeneratorDesignVersion": self.marker_generator_design_version,
+                "MaxBattleSearches": self.max_battle_searches,
                 "MaxBoostDuration": self.max_boost_duration,
                 "MaxCrews": self.max_crews,
                 "MaxDailyDraws": self.max_daily_draws,
+                "MaxEngagementSupplyCost": self.max_engagement_supply_cost,
                 "MaxRedemptionCount": self.max_redemption_count,
                 "MaxRedemptionCountPerMonth": self.max_redemption_count_per_month,
+                "MaxStarSystemsPerFleet": self.max_star_systems_per_fleet,
                 "MerchantShipExteriorSpriteId": self.merchant_ship_exterior_sprite_id,
                 "MerchantShipSpriteId": self.merchant_ship_sprite_id,
+                "MinEngagementSupplyCost": self.min_engagement_supply_cost,
                 "MinPurchaseRewardPointsForStarbuxTrading": self.min_purchase_reward_points_for_starbux_trading,
+                "MinShipLevelForSyncServer": self.min_ship_level_for_sync_server,
                 "MinTrophiesForStarbuxTrading": self.min_trophies_for_starbux_trading,
                 "MinimumClientVersion": self.minimum_client_version,
                 "MinimumVersion": self.minimum_version,
@@ -977,8 +1165,13 @@ class SettingRaw(_EntityBaseRaw):
                 "SkinSetVersion": self.skin_set_version,
                 "SkinVersion": self.skin_version,
                 "SpriteVersion": self.sprite_version,
+                "StarSystemCooldownModifier": self.star_system_cooldown_modifier,
+                "StarSystemInfrastructureDesignVersion": self.star_system_infrastructure_design_version,
                 "StarSystemLinkVersion": self.star_system_link_version,
                 "StarSystemVersion": self.star_system_version,
+                "StarbuxMarketPriceCap": self.starbux_market_price_cap,
+                "StepForStarBattleMaxRange": self.step_for_star_battle_max_range,
+                "StepForStarBattleMinRange": self.step_for_star_battle_min_range,
                 "SupportEmail": self.support_email,
                 "SupportTaskRanDate": self.support_task_ran_date,
                 "TaskDesignVersion": self.task_design_version,
@@ -986,9 +1179,12 @@ class SettingRaw(_EntityBaseRaw):
                 "TaskRerollMaxCount": self.task_reroll_max_count,
                 "TournamentBonusScore": self.tournament_bonus_score,
                 "TournamentFinalDuration": self.tournament_final_duration,
+                "TournamentImmunityTimeInSeconds": self.tournament_immunity_time_in_seconds,
                 "TournamentNews": self.tournament_news,
                 "TournamentSpriteId": self.tournament_sprite_id,
                 "TrainingDesignVersion": self.training_design_version,
+                "UpperBaseValueForStarBattle": self.upper_base_value_for_star_battle,
+                "UserEngagementCooldowntime": self.user_engagement_cooldowntime,
                 "VipDesignVersion": self.vip_design_version,
                 "VotingDuration": self.voting_duration,
             }

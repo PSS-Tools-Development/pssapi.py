@@ -48,6 +48,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
         self._level: int = _parse.pss_int(character_design_info.pop("Level", None))
         self._max_character_level: int = _parse.pss_int(character_design_info.pop("MaxCharacterLevel", None))
         self._max_count: int = _parse.pss_int(character_design_info.pop("MaxCount", None))
+        self._metadata: str = _parse.pss_str(character_design_info.pop("Metadata", None))
         self._min_ship_level: int = _parse.pss_int(character_design_info.pop("MinShipLevel", None))
         self._pilot: float = _parse.pss_float(character_design_info.pop("Pilot", None))
         self._profile_sprite_id: int = _parse.pss_int(character_design_info.pop("ProfileSpriteId", None))
@@ -187,6 +188,10 @@ class CharacterDesignRaw(_EntityBaseRaw):
         return self._max_count
 
     @property
+    def metadata(self) -> str:
+        return self._metadata
+
+    @property
     def min_ship_level(self) -> int:
         return self._min_ship_level
 
@@ -312,6 +317,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
             self.level,
             self.max_character_level,
             self.max_count,
+            self.metadata,
             self.min_ship_level,
             self.pilot,
             self.profile_sprite_id,
@@ -369,6 +375,7 @@ class CharacterDesignRaw(_EntityBaseRaw):
                 "Level": self.level,
                 "MaxCharacterLevel": self.max_character_level,
                 "MaxCount": self.max_count,
+                "Metadata": self.metadata,
                 "MinShipLevel": self.min_ship_level,
                 "Pilot": self.pilot,
                 "ProfileSpriteId": self.profile_sprite_id,
