@@ -21,7 +21,7 @@ class _BattleServiceUtils:
             raise _utils.exceptions.InvalidChecksumKey()
 
         timestamp = _utils.datetime.convert_to_pss_timestamp(client_datetime)
-        result = _hashlib.md5(f"{timestamp}{checksum_key}savysoda".encode("utf-8")).hexdigest()
+        result = _hashlib.md5(f"{timestamp}{checksum_key}".encode("utf-8")).hexdigest()
         return result
 
 
