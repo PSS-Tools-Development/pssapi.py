@@ -24,7 +24,7 @@ def access_token() -> str:
 
 @pytest.fixture(scope="session")
 def checksum_key() -> str:
-    return os.environ.get("PSS_DEVICE_LOGIN_CHECKSUM_KEY")
+    return os.environ.get("PSS_DEVICE_LOGIN_17_CHECKSUM_KEY")
 
 
 @pytest.fixture(scope="session")

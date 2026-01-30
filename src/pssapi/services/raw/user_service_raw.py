@@ -39,9 +39,7 @@ from ...entities import UserStarSystem as _UserStarSystem
 ACCEPT_FRIEND_REQUEST_BASE_PATH: str = "UserService/AcceptFriendRequest"
 ADD_FRIEND_2_BASE_PATH: str = "UserService/AddFriend2"
 DECLINE_FRIEND_REQUEST_BASE_PATH: str = "UserService/DeclineFriendRequest"
-DEVICE_LOGIN_11_BASE_PATH: str = "UserService/DeviceLogin11"
-DEVICE_LOGIN_12_BASE_PATH: str = "UserService/DeviceLogin12"
-DEVICE_LOGIN_15_BASE_PATH: str = "UserService/DeviceLogin15"
+DEVICE_LOGIN_17_BASE_PATH: str = "UserService/DeviceLogin17"
 LIST_ALL_USER_DATA_FIRST_2_BASE_PATH: str = "UserService/ListAllUserDataFirst2"
 LIST_FRIENDS_BASE_PATH: str = "UserService/ListFriends"
 LIST_SKIN_SETS_2_BASE_PATH: str = "UserService/ListSkinSets2"
@@ -80,36 +78,7 @@ async def decline_friend_request(production_server: str, access_token: str, frie
     return result
 
 
-async def device_login_11(
-    production_server: str,
-    advertising_key: str,
-    checksum: str,
-    client_date_time: _datetime,
-    device_key: str,
-    device_type: str,
-    is_jail_broken: bool,
-    language_key: str,
-    refresh_token: str,
-    signal: bool,
-    **params,
-) -> _UserLogin:
-    params = {
-        "advertisingKey": advertising_key,
-        "checksum": checksum,
-        "clientDateTime": client_date_time,
-        "device_key": device_key,
-        "device_type": device_type,
-        "is_jail_broken": is_jail_broken,
-        "language_key": language_key,
-        "refresh_token": refresh_token,
-        "signal": signal,
-        **params,
-    }
-    result = await _core.get_entities_from_path(((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_11_BASE_PATH, "POST", response_gzipped=False, **params)
-    return result
-
-
-async def device_login_12(
+async def device_login_17(
     production_server: str,
     access_token: str,
     advertising_key: str,
@@ -148,65 +117,14 @@ async def device_login_12(
         "Signal": signal,
         **params,
     }
-    content = _core.create_request_content(__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE, params, "json")
+    content = _core.create_request_content(__DEVICE_LOGIN_17_REQUEST_CONTENT_STRUCTURE, params, "json")
     result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_12_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
+        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_17_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
     )
     return result
 
 
-__DEVICE_LOGIN_12_REQUEST_CONTENT_STRUCTURE: str = (
-    '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"datetime","DeviceKey":"str","DeviceType":"str","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
-)
-
-
-async def device_login_15(
-    production_server: str,
-    access_token: str,
-    advertising_key: str,
-    checksum: str,
-    client_build: int,
-    client_date_time: _datetime,
-    client_version: str,
-    device_key: str,
-    device_name: str,
-    device_type: str,
-    is_jail_broken: bool,
-    language_key: str,
-    locale: str,
-    os_build: int,
-    os_version: str,
-    refresh_token: str,
-    signal: bool,
-    **params,
-) -> _UserLogin:
-    params = {
-        "AccessToken": access_token,
-        "AdvertisingKey": advertising_key,
-        "Checksum": checksum,
-        "ClientBuild": client_build,
-        "ClientDateTime": client_date_time,
-        "ClientVersion": client_version,
-        "DeviceKey": device_key,
-        "DeviceName": device_name,
-        "DeviceType": device_type,
-        "IsJailBroken": is_jail_broken,
-        "LanguageKey": language_key,
-        "Locale": locale,
-        "OSBuild": os_build,
-        "OsVersion": os_version,
-        "RefreshToken": refresh_token,
-        "Signal": signal,
-        **params,
-    }
-    content = _core.create_request_content(__DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE, params, "json")
-    result = await _core.get_entities_from_path(
-        ((_UserLogin, "UserLogin", False),), "UserService", production_server, DEVICE_LOGIN_15_BASE_PATH, "POST", request_content=content, response_gzipped=False, **params
-    )
-    return result
-
-
-__DEVICE_LOGIN_15_REQUEST_CONTENT_STRUCTURE: str = (
+__DEVICE_LOGIN_17_REQUEST_CONTENT_STRUCTURE: str = (
     '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"datetime","DeviceKey":"str","DeviceType":"str","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
 )
 
