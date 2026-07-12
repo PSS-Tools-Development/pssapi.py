@@ -3,6 +3,7 @@ This file has been generated automatically.
 Any changes to this file will be lost eventually.
 """
 
+import json
 from datetime import datetime as _datetime
 from typing import List as _List
 from typing import Tuple as _Tuple
@@ -124,12 +125,26 @@ async def device_login_17(
     return result
 
 
-__DEVICE_LOGIN_17_REQUEST_CONTENT_STRUCTURE: str = (
-    '{"AccessToken":"str","AdvertisingKey":"str","Checksum":"str","ClientDateTime":"datetime","DeviceKey":"str","DeviceType":"str","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
+__DEVICE_LOGIN_17_REQUEST_CONTENT_STRUCTURE: str = json.dumps(
+    {
+        "AccessToken": "str",
+        "AdvertisingKey": "str",
+        "Checksum": "str",
+        "ClientDateTime": "datetime",
+        "DeviceKey": "str",
+        "DeviceType": "str",
+        "IsJailBroken": "bool",
+        "LanguageKey": "str",
+        "RefreshToken": "str",
+        "Signal": "bool",
+        "UserDeviceInfo": {"ClientBuild": "int", "ClientVersion": "str", "DeviceName": "str", "Locale": "str", "OSBuild": "int", "OsVersion": "str"},
+    }
 )
 
 
-async def list_all_user_data_first_2(production_server: str, access_token: str, user_id: int, **params) -> _Tuple[
+async def list_all_user_data_first_2(
+    production_server: str, access_token: str, user_id: int, **params
+) -> _Tuple[
     _List[_Achievement],
     _List[_AllianceTask],
     _List[_Battle],
@@ -279,8 +294,21 @@ async def steam_login_3(
     return result
 
 
-__STEAM_LOGIN_3_REQUEST_CONTENT_STRUCTURE: str = (
-    '{"AccessToken":"str","AdvertisingKey":null,"Checksum":"str","ClientDateTime":"str","DeviceKey":"str","DeviceType":"str","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","Ticket":"str","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
+__STEAM_LOGIN_3_REQUEST_CONTENT_STRUCTURE: str = json.dumps(
+    {
+        "AccessToken": "str",
+        "AdvertisingKey": None,
+        "Checksum": "str",
+        "ClientDateTime": "str",
+        "DeviceKey": "str",
+        "DeviceType": "str",
+        "IsJailBroken": "bool",
+        "LanguageKey": "str",
+        "RefreshToken": "str",
+        "Signal": "bool",
+        "Ticket": "str",
+        "UserDeviceInfo": {"ClientBuild": "int", "ClientVersion": "str", "DeviceName": "str", "Locale": "str", "OSBuild": "int", "OsVersion": "str"},
+    }
 )
 
 
@@ -332,8 +360,21 @@ async def steam_login_6(
     return result
 
 
-__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE: str = (
-    '{"AccessToken":"str","AdvertisingKey":null,"Checksum":"str","ClientDateTime":"str","DeviceKey":"str","DeviceType":"str","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","Ticket":"str","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
+__STEAM_LOGIN_6_REQUEST_CONTENT_STRUCTURE: str = json.dumps(
+    {
+        "AccessToken": "str",
+        "AdvertisingKey": None,
+        "Checksum": "str",
+        "ClientDateTime": "str",
+        "DeviceKey": "str",
+        "DeviceType": "str",
+        "IsJailBroken": "bool",
+        "LanguageKey": "str",
+        "RefreshToken": "str",
+        "Signal": "bool",
+        "Ticket": "str",
+        "UserDeviceInfo": {"ClientBuild": "int", "ClientVersion": "str", "DeviceName": "str", "Locale": "str", "OSBuild": "int", "OsVersion": "str"},
+    }
 )
 
 
@@ -385,8 +426,21 @@ async def steam_login_8(
     return result
 
 
-__STEAM_LOGIN_8_REQUEST_CONTENT_STRUCTURE: str = (
-    '{"AccessToken":"str","AdvertisingKey":null,"Checksum":"str","ClientDateTime":"str","DeviceKey":"str","DeviceType":"int","IsJailBroken":"bool","LanguageKey":"str","RefreshToken":"str","Signal":"bool","Ticket":"str","UserDeviceInfo":{"ClientBuild":"int","ClientVersion":"str","DeviceName":"str","Locale":"str","OSBuild":"int","OsVersion":"str"}}'
+__STEAM_LOGIN_8_REQUEST_CONTENT_STRUCTURE: str = json.dumps(
+    {
+        "AccessToken": "str",
+        "AdvertisingKey": None,
+        "Checksum": "str",
+        "ClientDateTime": "str",
+        "DeviceKey": "str",
+        "DeviceType": "int",
+        "IsJailBroken": "bool",
+        "LanguageKey": "str",
+        "RefreshToken": "str",
+        "Signal": "bool",
+        "Ticket": "str",
+        "UserDeviceInfo": {"ClientBuild": "int", "ClientVersion": "str", "DeviceName": "str", "Locale": "str", "OSBuild": "int", "OsVersion": "str"},
+    }
 )
 
 
