@@ -17,14 +17,14 @@ upgrade:
 # formatting and linting
 .PHONY: check
 check:
-	uv run flake8 ./src
+	uv run ruff check ./src
 	uv run vulture
 
 .PHONY: format
 format:
-	uv run autoflake .
-	uv run isort .
-	uv run black .
+	uv run ruff check --fix .
+	uv run ruff format .
+
 
 # testing
 .PHONY: test
