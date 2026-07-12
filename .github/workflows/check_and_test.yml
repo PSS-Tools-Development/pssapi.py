@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --dev
 
-      - name: Check with flake8 & vulture
+      - name: Check with ruff & vulture
         run: |
           uv run ruff check
           uv run vulture ./src
@@ -41,6 +41,7 @@ jobs:
       - name: Test with pytest
         env:
           PSS_DEVICE_LOGIN_CHECKSUM_KEY: ${{secrets.PSS_DEVICE_LOGIN_CHECKSUM_KEY}}
+          PSS_DEVICE_LOGIN_17_CHECKSUM_KEY: ${{secrets.PSS_DEVICE_LOGIN_17_CHECKSUM_KEY}}
         run: |
           uv run pytest -x --cov=./src/pssapi --cov-report=xml
 
