@@ -14,6 +14,14 @@ init-dev:
 upgrade:
 	uv sync -U
 
+
+# dev tools
+.PHONY: lock
+lock:
+	uv export --no-hashes --no-header --no-annotate --no-dev --format requirements.txt > requirements.txt
+	uv export --no-hashes --no-header --no-annotate --format requirements.txt > requirements-dev.txt
+
+
 # formatting and linting
 .PHONY: check
 check:
@@ -34,6 +42,7 @@ test:
 .PHONY: coverage
 coverage:
 	uv run pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+
 
 # build & publish
 .PHONY: build

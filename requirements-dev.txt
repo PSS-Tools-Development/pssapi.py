@@ -1,0 +1,50 @@
+-e .
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.1
+aiosignal==1.4.0
+anyio==4.14.1
+apscheduler==3.11.3
+attrs==26.1.0
+certifi==2026.6.17
+cfgv==3.5.0
+colorama==0.4.6 ; sys_platform == 'win32'
+coverage==7.15.0
+distlib==0.4.3
+filelock==3.29.7
+frozenlist==1.8.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+identify==2.6.19
+idna==3.18
+iniconfig==2.3.0
+multidict==6.7.1
+nodeenv==1.10.0
+packaging==26.2
+platformdirs==4.10.0
+pluggy==1.6.0
+pre-commit==4.6.0
+propcache==0.5.2
+pygments==2.20.0
+pyment==0.3.3
+pytest==9.1.1
+pytest-asyncio==1.4.0
+pytest-cov==7.1.0
+pytest-env==1.6.0
+pytest-httpx==0.36.2
+pytest-vcr==1.0.2
+python-discovery==1.4.4
+python-dotenv==1.2.2
+pytz==2026.2
+pyyaml==6.0.3
+ruff==0.15.21
+tomli==2.4.1 ; python_full_version <= '3.11'
+typing-extensions==4.16.0 ; python_full_version < '3.13'
+tzdata==2026.3 ; sys_platform == 'win32'
+tzlocal==5.4.4
+vcrpy==8.3.0
+virtualenv==21.6.1
+vulture==2.16
+websockets==16.1
+wrapt==2.2.2
+yarl==1.24.2
