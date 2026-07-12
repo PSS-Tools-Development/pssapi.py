@@ -1,8 +1,11 @@
 from .achievement_design_raw import AchievementDesignRaw
+from .achievement_raw import AchievementRaw
 from .action_type_raw import ActionTypeRaw
 from .alliance_raw import AllianceRaw
+from .alliance_task_raw import AllianceTaskRaw
 from .animation_raw import AnimationRaw
 from .asset_raw import AssetRaw
+from .attacking_engagement_group_raw import AttackingEngagementGroupRaw
 from .background_raw import BackgroundRaw
 from .battle_raw import BattleRaw
 from .challenge_design_raw import ChallengeDesignRaw
@@ -14,13 +17,17 @@ from .character_raw import CharacterRaw
 from .collection_design_raw import CollectionDesignRaw
 from .condition_type_raw import ConditionTypeRaw
 from .craft_design_raw import CraftDesignRaw
+from .defending_engagement_group_raw import DefendingEngagementGroupRaw
 from .division_design_raw import DivisionDesignRaw
 from .draw_design_raw import DrawDesignRaw
+from .engagement_group_user_raw import EngagementGroupUserRaw
+from .engagement_raw import EngagementRaw
 from .entity_base_raw import EntityBaseRaw
 from .file_raw import FileRaw
 from .friend_raw import FriendRaw
 from .get_catalog_quantity_raw import GetCatalogQuantityRaw
 from .history_raw import HistoryRaw
+from .infrastructure_design_raw import InfrastructureDesignRaw
 from .item_design_action_raw import ItemDesignActionRaw
 from .item_design_raw import ItemDesignRaw
 from .item_raw import ItemRaw
@@ -35,6 +42,7 @@ from .news_design_raw import NewsDesignRaw
 from .planet_raw import PlanetRaw
 from .prestige_raw import PrestigeRaw
 from .promotion_design_raw import PromotionDesignRaw
+from .redeem_code_raw import RedeemCodeRaw
 from .research_design_raw import ResearchDesignRaw
 from .research_raw import ResearchRaw
 from .reward_design_raw import RewardDesignRaw
@@ -49,30 +57,39 @@ from .setting_raw import SettingRaw
 from .ship_design_raw import ShipDesignRaw
 from .ship_raw import ShipRaw
 from .situation_design_raw import SituationDesignRaw
+from .situation_raw import SituationRaw
 from .skin_raw import SkinRaw
 from .skin_set_raw import SkinSetRaw
 from .sprite_raw import SpriteRaw
+from .star_system_detail_raw import StarSystemDetailRaw
+from .star_system_infrastructure_design_raw import StarSystemInfrastructureDesignRaw
+from .star_system_infrastructures_raw import StarSystemInfrastructuresRaw
 from .star_system_link_raw import StarSystemLinkRaw
 from .star_system_marker_generator_raw import StarSystemMarkerGeneratorRaw
 from .star_system_marker_raw import StarSystemMarkerRaw
 from .star_system_raw import StarSystemRaw
 from .task_design_raw import TaskDesignRaw
+from .task_raw import TaskRaw
 from .training_design_raw import TrainingDesignRaw
 from .user_email_password_authorize_raw import UserEmailPasswordAuthorizeRaw
 from .user_login_raw import UserLoginRaw
 from .user_marker_raw import UserMarkerRaw
 from .user_raw import UserRaw
 from .user_season_raw import UserSeasonRaw
+from .user_skin_raw import UserSkinRaw
 from .user_star_system_raw import UserStarSystemRaw
 
 
 __all__ = [
     EntityBaseRaw.__name__,
+    AchievementRaw.__name__,
     AchievementDesignRaw.__name__,
     ActionTypeRaw.__name__,
     AllianceRaw.__name__,
+    AllianceTaskRaw.__name__,
     AnimationRaw.__name__,
     AssetRaw.__name__,
+    AttackingEngagementGroupRaw.__name__,
     BackgroundRaw.__name__,
     BattleRaw.__name__,
     ChallengeDesignRaw.__name__,
@@ -84,12 +101,16 @@ __all__ = [
     CollectionDesignRaw.__name__,
     ConditionTypeRaw.__name__,
     CraftDesignRaw.__name__,
+    DefendingEngagementGroupRaw.__name__,
     DivisionDesignRaw.__name__,
     DrawDesignRaw.__name__,
+    EngagementRaw.__name__,
+    EngagementGroupUserRaw.__name__,
     FileRaw.__name__,
     FriendRaw.__name__,
     GetCatalogQuantityRaw.__name__,
     HistoryRaw.__name__,
+    InfrastructureDesignRaw.__name__,
     ItemRaw.__name__,
     ItemDesignRaw.__name__,
     ItemDesignActionRaw.__name__,
@@ -104,6 +125,7 @@ __all__ = [
     PlanetRaw.__name__,
     PrestigeRaw.__name__,
     PromotionDesignRaw.__name__,
+    RedeemCodeRaw.__name__,
     ResearchRaw.__name__,
     ResearchDesignRaw.__name__,
     RewardDesignRaw.__name__,
@@ -117,14 +139,19 @@ __all__ = [
     SettingRaw.__name__,
     ShipRaw.__name__,
     ShipDesignRaw.__name__,
+    SituationRaw.__name__,
     SituationDesignRaw.__name__,
     SkinRaw.__name__,
     SkinSetRaw.__name__,
     SpriteRaw.__name__,
     StarSystemRaw.__name__,
+    StarSystemDetailRaw.__name__,
+    StarSystemInfrastructureDesignRaw.__name__,
+    StarSystemInfrastructuresRaw.__name__,
     StarSystemLinkRaw.__name__,
     StarSystemMarkerRaw.__name__,
     StarSystemMarkerGeneratorRaw.__name__,
+    TaskRaw.__name__,
     TaskDesignRaw.__name__,
     TrainingDesignRaw.__name__,
     UserRaw.__name__,
@@ -132,5 +159,6 @@ __all__ = [
     UserLoginRaw.__name__,
     UserMarkerRaw.__name__,
     UserSeasonRaw.__name__,
+    UserSkinRaw.__name__,
     UserStarSystemRaw.__name__,
 ]

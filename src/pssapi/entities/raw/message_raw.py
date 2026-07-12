@@ -28,6 +28,7 @@ class MessageRaw(_EntityBaseRaw):
         self._message_date: _datetime = _parse.pss_datetime(message_info.pop("MessageDate", None))
         self._message_id: int = _parse.pss_int(message_info.pop("MessageId", None))
         self._message_type: str = _parse.pss_str(message_info.pop("MessageType", None))
+        self._ribbon_sprite_id: int = _parse.pss_int(message_info.pop("RibbonSpriteId", None))
         self._sale_id: str = _parse.pss_str(message_info.pop("SaleId", None))
         self._ship_design_id: int = _parse.pss_int(message_info.pop("ShipDesignId", None))
         self._to_user_id: str = _parse.pss_str(message_info.pop("ToUserId", None))
@@ -86,6 +87,10 @@ class MessageRaw(_EntityBaseRaw):
         return self._message_type
 
     @property
+    def ribbon_sprite_id(self) -> int:
+        return self._ribbon_sprite_id
+
+    @property
     def sale_id(self) -> str:
         return self._sale_id
 
@@ -127,6 +132,7 @@ class MessageRaw(_EntityBaseRaw):
             self.message_date,
             self.message_id,
             self.message_type,
+            self.ribbon_sprite_id,
             self.sale_id,
             self.ship_design_id,
             self.to_user_id,
@@ -151,6 +157,7 @@ class MessageRaw(_EntityBaseRaw):
                 "MessageDate": self.message_date,
                 "MessageId": self.message_id,
                 "MessageType": self.message_type,
+                "RibbonSpriteId": self.ribbon_sprite_id,
                 "SaleId": self.sale_id,
                 "ShipDesignId": self.ship_design_id,
                 "ToUserId": self.to_user_id,

@@ -34,11 +34,14 @@ class ChallengeDesignRaw(_EntityBaseRaw):
         self._max_battle_prize: int = _parse.pss_int(challenge_design_info.pop("MaxBattlePrize", None))
         self._min_battle_prize: int = _parse.pss_int(challenge_design_info.pop("MinBattlePrize", None))
         self._name: str = _parse.pss_str(challenge_design_info.pop("Name", None))
-        self._opponent_ship_ids: str = _parse.pss_str(challenge_design_info.pop("OpponentShipIds", None))
+        self._objective_argument: str = _parse.pss_str(challenge_design_info.pop("ObjectiveArgument", None))
+        self._objective_condition: str = _parse.pss_str(challenge_design_info.pop("ObjectiveCondition", None))
+        self._opponent_ship_ids: int = _parse.pss_int(challenge_design_info.pop("OpponentShipIds", None))
         self._poster_sprite_id: int = _parse.pss_int(challenge_design_info.pop("PosterSpriteId", None))
         self._requirement_string: str = _parse.pss_str(challenge_design_info.pop("RequirementString", None))
         self._reward_string: str = _parse.pss_str(challenge_design_info.pop("RewardString", None))
         self._root_achievement_design_id: int = _parse.pss_int(challenge_design_info.pop("RootAchievementDesignId", None))
+        self._score_title: str = _parse.pss_str(challenge_design_info.pop("ScoreTitle", None))
         self._special_rule_argument: int = _parse.pss_int(challenge_design_info.pop("SpecialRuleArgument", None))
         self._special_rule_type: str = _parse.pss_str(challenge_design_info.pop("SpecialRuleType", None))
         self._start_date: _datetime = _parse.pss_datetime(challenge_design_info.pop("StartDate", None))
@@ -117,7 +120,15 @@ class ChallengeDesignRaw(_EntityBaseRaw):
         return self._name
 
     @property
-    def opponent_ship_ids(self) -> str:
+    def objective_argument(self) -> str:
+        return self._objective_argument
+
+    @property
+    def objective_condition(self) -> str:
+        return self._objective_condition
+
+    @property
+    def opponent_ship_ids(self) -> int:
         return self._opponent_ship_ids
 
     @property
@@ -135,6 +146,10 @@ class ChallengeDesignRaw(_EntityBaseRaw):
     @property
     def root_achievement_design_id(self) -> int:
         return self._root_achievement_design_id
+
+    @property
+    def score_title(self) -> str:
+        return self._score_title
 
     @property
     def special_rule_argument(self) -> int:
@@ -168,11 +183,14 @@ class ChallengeDesignRaw(_EntityBaseRaw):
             self.max_battle_prize,
             self.min_battle_prize,
             self.name,
+            self.objective_argument,
+            self.objective_condition,
             self.opponent_ship_ids,
             self.poster_sprite_id,
             self.requirement_string,
             self.reward_string,
             self.root_achievement_design_id,
+            self.score_title,
             self.special_rule_argument,
             self.special_rule_type,
             self.start_date,
@@ -199,11 +217,14 @@ class ChallengeDesignRaw(_EntityBaseRaw):
                 "MaxBattlePrize": self.max_battle_prize,
                 "MinBattlePrize": self.min_battle_prize,
                 "Name": self.name,
+                "ObjectiveArgument": self.objective_argument,
+                "ObjectiveCondition": self.objective_condition,
                 "OpponentShipIds": self.opponent_ship_ids,
                 "PosterSpriteId": self.poster_sprite_id,
                 "RequirementString": self.requirement_string,
                 "RewardString": self.reward_string,
                 "RootAchievementDesignId": self.root_achievement_design_id,
+                "ScoreTitle": self.score_title,
                 "SpecialRuleArgument": self.special_rule_argument,
                 "SpecialRuleType": self.special_rule_type,
                 "StartDate": self.start_date,

@@ -17,6 +17,7 @@ from ...entities import User as _User
 GET_SHIP_BY_USER_ID_BASE_PATH: str = "ShipService/GetShipByUserId"
 INSPECT_SHIP_2_BASE_PATH: str = "ShipService/InspectShip2"
 LIST_ALL_SHIP_DESIGNS_2_BASE_PATH: str = "ShipService/ListAllShipDesigns2"
+LIST_SHIP_LAYOUTS_BASE_PATH: str = "ShipService/ListShipLayouts"
 
 
 # ---------- Endpoints ----------
@@ -38,3 +39,8 @@ async def list_all_ship_designs_2(production_server: str, client_date_time: str,
     params = {"clientDateTime": client_date_time, "designVersion": design_version, "languageKey": language_key, **params}
     result = await _core.get_entities_from_path(((_ShipDesign, "ShipDesigns", True),), "ShipDesigns", production_server, LIST_ALL_SHIP_DESIGNS_2_BASE_PATH, "GET", response_gzipped=False, **params)
     return result
+
+
+async def list_ship_layouts(production_server: str, access_token: str, ship_id: int, **params) -> None:
+    params = {"accessToken": access_token, "shipId": ship_id, **params}
+    await _core.get_entities_from_path((), None, production_server, LIST_SHIP_LAYOUTS_BASE_PATH, "GET", response_gzipped=False, **params)

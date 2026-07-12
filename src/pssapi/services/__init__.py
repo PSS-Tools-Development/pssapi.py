@@ -2,6 +2,7 @@ from .achievement_service import AchievementService
 from .alliance_service import AllianceService
 from .animation_service import AnimationService
 from .background_service import BackgroundService
+from .battle_service import BattleService
 from .challenge_service import ChallengeService
 from .character_service import CharacterService
 from .collection_service import CollectionService
@@ -37,6 +38,7 @@ __all__ = [
     AllianceService.__name__,
     AnimationService.__name__,
     BackgroundService.__name__,
+    BattleService.__name__,
     ChallengeService.__name__,
     CharacterService.__name__,
     CollectionService.__name__,

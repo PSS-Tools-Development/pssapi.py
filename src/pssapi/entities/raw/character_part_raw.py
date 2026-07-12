@@ -21,6 +21,7 @@ class CharacterPartRaw(_EntityBaseRaw):
         self._character_part_id: int = _parse.pss_int(character_part_info.pop("CharacterPartId", None))
         self._character_part_name: str = _parse.pss_str(character_part_info.pop("CharacterPartName", None))
         self._character_part_type: str = _parse.pss_str(character_part_info.pop("CharacterPartType", None))
+        self._flags: int = _parse.pss_int(character_part_info.pop("Flags", None))
         self._standard_border_file_id: int = _parse.pss_int(character_part_info.pop("StandardBorderFileId", None))
         self._standard_file_id: int = _parse.pss_int(character_part_info.pop("StandardFileId", None))
         self._standard_sprite_id: int = _parse.pss_int(character_part_info.pop("StandardSpriteId", None))
@@ -51,6 +52,10 @@ class CharacterPartRaw(_EntityBaseRaw):
         return self._character_part_type
 
     @property
+    def flags(self) -> int:
+        return self._flags
+
+    @property
     def standard_border_file_id(self) -> int:
         return self._standard_border_file_id
 
@@ -70,6 +75,7 @@ class CharacterPartRaw(_EntityBaseRaw):
             self.character_part_id,
             self.character_part_name,
             self.character_part_type,
+            self.flags,
             self.standard_border_file_id,
             self.standard_file_id,
             self.standard_sprite_id,
@@ -84,6 +90,7 @@ class CharacterPartRaw(_EntityBaseRaw):
                 "CharacterPartId": self.character_part_id,
                 "CharacterPartName": self.character_part_name,
                 "CharacterPartType": self.character_part_type,
+                "Flags": self.flags,
                 "StandardBorderFileId": self.standard_border_file_id,
                 "StandardFileId": self.standard_file_id,
                 "StandardSpriteId": self.standard_sprite_id,

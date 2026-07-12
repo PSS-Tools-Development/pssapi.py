@@ -21,6 +21,7 @@ class SkinSetRaw(_EntityBaseRaw):
         self._date_updated: _datetime = _parse.pss_datetime(skin_set_info.pop("DateUpdated", None))
         self._flags: int = _parse.pss_int(skin_set_info.pop("Flags", None))
         self._metadata: str = _parse.pss_str(skin_set_info.pop("Metadata", None))
+        self._purchase_count: int = _parse.pss_int(skin_set_info.pop("PurchaseCount", None))
         self._requirement_string: str = _parse.pss_str(skin_set_info.pop("RequirementString", None))
         self._skin_set_description: str = _parse.pss_str(skin_set_info.pop("SkinSetDescription", None))
         self._skin_set_id: int = _parse.pss_int(skin_set_info.pop("SkinSetId", None))
@@ -49,6 +50,10 @@ class SkinSetRaw(_EntityBaseRaw):
         return self._metadata
 
     @property
+    def purchase_count(self) -> int:
+        return self._purchase_count
+
+    @property
     def requirement_string(self) -> str:
         return self._requirement_string
 
@@ -75,6 +80,7 @@ class SkinSetRaw(_EntityBaseRaw):
             self.date_updated,
             self.flags,
             self.metadata,
+            self.purchase_count,
             self.requirement_string,
             self.skin_set_description,
             self.skin_set_id,
@@ -90,6 +96,7 @@ class SkinSetRaw(_EntityBaseRaw):
                 "DateUpdated": self.date_updated,
                 "Flags": self.flags,
                 "Metadata": self.metadata,
+                "PurchaseCount": self.purchase_count,
                 "RequirementString": self.requirement_string,
                 "SkinSetDescription": self.skin_set_description,
                 "SkinSetId": self.skin_set_id,

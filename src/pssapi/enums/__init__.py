@@ -1,3 +1,4 @@
+from .achievement_scoring_type import AchievementScoringType
 from .achievement_type import AchievementType
 from .action_type_category import ActionTypeCategory
 from .action_type_parameter_relativity import ActionTypeParameterRelativity
@@ -30,6 +31,7 @@ from .condition_type_comparison import ConditionTypeComparison
 from .condition_type_parameter import ConditionTypeParameter
 from .cost_type import CostType
 from .craft_attack_type import CraftAttackType
+from .craft_pathing_type import CraftPathingType
 from .craft_target_type import CraftTargetType
 from .crew_rarity import CrewRarity
 from .currency_type import CurrencyType
@@ -41,6 +43,10 @@ from .download_type import DownloadType
 from .draw_type import DrawType
 from .duration_type import DurationType
 from .email_verification_status import EmailVerificationStatus
+from .engagement_approval_state import EngagementApprovalState
+from .engagement_group_user_state import EngagementGroupUserState
+from .engagement_scoring_type import EngagementScoringType
+from .engagement_type import EngagementType
 from .enhancement_type import EnhancementType
 from .environment_type import EnvironmentType
 from .equipment_mask_flag import EquipmentMaskFlag
@@ -56,6 +62,8 @@ from .guide_type import GuideType
 from .hazard_category import HazardCategory
 from .hazard_type import HazardType
 from .history_type import HistoryType
+from .infrastructure_reward_type import InfrastructureRewardType
+from .infrastructure_type import InfrastructureType
 from .item_design_flag_type import ItemDesignFlagType
 from .item_sub_type import ItemSubType
 from .item_type import ItemType
@@ -102,6 +110,7 @@ from .season_type import SeasonType
 from .setting_flags import SettingFlags
 from .ship_status import ShipStatus
 from .ship_type import ShipType
+from .situation_category import SituationCategory
 from .situation_design_flag import SituationDesignFlag
 from .situation_type import SituationType
 from .skin_type import SkinType
@@ -123,6 +132,7 @@ from .visibility_flags import VisibilityFlags
 
 
 __all__ = [
+    AchievementScoringType.__name__,
     AchievementType.__name__,
     ActionTypeCategory.__name__,
     ActionTypeParameterRelativity.__name__,
@@ -154,6 +164,7 @@ __all__ = [
     ConditionTypeParameter.__name__,
     CostType.__name__,
     CraftAttackType.__name__,
+    CraftPathingType.__name__,
     CraftTargetType.__name__,
     CrewRarity.__name__,
     CurrencyType.__name__,
@@ -165,6 +176,10 @@ __all__ = [
     DrawType.__name__,
     DurationType.__name__,
     EmailVerificationStatus.__name__,
+    EngagementApprovalState.__name__,
+    EngagementScoringType.__name__,
+    EngagementGroupUserState.__name__,
+    EngagementType.__name__,
     EnhancementType.__name__,
     EnvironmentType.__name__,
     EquipmentMaskFlag.__name__,
@@ -180,6 +195,8 @@ __all__ = [
     HazardCategory.__name__,
     HazardType.__name__,
     HistoryType.__name__,
+    InfrastructureRewardType.__name__,
+    InfrastructureType.__name__,
     ItemDesignFlagType.__name__,
     ItemSubType.__name__,
     ItemType.__name__,
@@ -226,6 +243,7 @@ __all__ = [
     SettingFlags.__name__,
     ShipStatus.__name__,
     ShipType.__name__,
+    SituationCategory.__name__,
     SituationDesignFlag.__name__,
     SituationType.__name__,
     SkinType.__name__,

@@ -14,17 +14,25 @@ init-dev:
 upgrade:
 	uv sync -U
 
+
+# dev tools
+.PHONY: lock
+lock:
+	uv export --no-hashes --no-header --no-annotate --no-dev --format requirements.txt > requirements.txt
+	uv export --no-hashes --no-header --no-annotate --format requirements.txt > requirements-dev.txt
+
+
 # formatting and linting
 .PHONY: check
 check:
-	uv run flake8 ./src
+	uv run ruff check ./src
 	uv run vulture
 
 .PHONY: format
 format:
-	uv run autoflake .
-	uv run isort .
-	uv run black .
+	uv run ruff check --fix .
+	uv run ruff format .
+
 
 # testing
 .PHONY: test
@@ -34,6 +42,7 @@ test:
 .PHONY: coverage
 coverage:
 	uv run pytest --cov=./src/pssapi --cov-report=xml:cov.xml --cov-report=term
+
 
 # build & publish
 .PHONY: build

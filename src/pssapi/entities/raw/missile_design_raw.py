@@ -40,6 +40,7 @@ class MissileDesignRaw(_EntityBaseRaw):
         self._missile_design_id: int = _parse.pss_int(missile_design_info.pop("MissileDesignId", None))
         self._missile_design_name: str = _parse.pss_str(missile_design_info.pop("MissileDesignName", None))
         self._missile_type: str = _parse.pss_str(missile_design_info.pop("MissileType", None))
+        self._root_missile_design_id: int = _parse.pss_int(missile_design_info.pop("RootMissileDesignId", None))
         self._shield_damage: float = _parse.pss_float(missile_design_info.pop("ShieldDamage", None))
         self._speed: int = _parse.pss_int(missile_design_info.pop("Speed", None))
         self._sprite_id: int = _parse.pss_int(missile_design_info.pop("SpriteId", None))
@@ -150,6 +151,10 @@ class MissileDesignRaw(_EntityBaseRaw):
         return self._missile_type
 
     @property
+    def root_missile_design_id(self) -> int:
+        return self._root_missile_design_id
+
+    @property
     def shield_damage(self) -> float:
         return self._shield_damage
 
@@ -204,6 +209,7 @@ class MissileDesignRaw(_EntityBaseRaw):
             self.missile_design_id,
             self.missile_design_name,
             self.missile_type,
+            self.root_missile_design_id,
             self.shield_damage,
             self.speed,
             self.sprite_id,
@@ -241,6 +247,7 @@ class MissileDesignRaw(_EntityBaseRaw):
                 "MissileDesignId": self.missile_design_id,
                 "MissileDesignName": self.missile_design_name,
                 "MissileType": self.missile_type,
+                "RootMissileDesignId": self.root_missile_design_id,
                 "ShieldDamage": self.shield_damage,
                 "Speed": self.speed,
                 "SpriteId": self.sprite_id,

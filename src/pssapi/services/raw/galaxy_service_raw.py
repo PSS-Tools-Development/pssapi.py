@@ -10,6 +10,7 @@ from ... import core as _core
 from ...entities import Planet as _Planet
 from ...entities import Ship as _Ship
 from ...entities import StarSystem as _StarSystem
+from ...entities import StarSystemDetail as _StarSystemDetail
 from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarker as _StarSystemMarker
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
@@ -18,6 +19,7 @@ from ...entities import UserMarker as _UserMarker
 
 # ---------- Constants ----------
 
+GET_STAR_SYSTEM_DETAILS_BASE_PATH: str = "GalaxyService/GetStarSystemDetails"
 GO_TO_BASE_PATH: str = "GalaxyService/GoTo"
 LIST_MARKER_GENERATOR_DESIGNS_BASE_PATH: str = "GalaxyService/ListMarkerGeneratorDesigns"
 LIST_PLANETS_BASE_PATH: str = "GalaxyService/ListPlanets"
@@ -28,6 +30,14 @@ LIST_STAR_SYSTEMS_BASE_PATH: str = "GalaxyService/ListStarSystems"
 
 
 # ---------- Endpoints ----------
+
+
+async def get_star_system_details(production_server: str, access_token: str, star_system_id: int, **params) -> _StarSystemDetail:
+    params = {"accessToken": access_token, "starSystemId": star_system_id, **params}
+    result = await _core.get_entities_from_path(
+        ((_StarSystemDetail, "StarSystemDetail", False),), "GetStarSystemDetails", production_server, GET_STAR_SYSTEM_DETAILS_BASE_PATH, "GET", response_gzipped=False, **params
+    )
+    return result
 
 
 async def go_to(production_server: str, access_token: str, checksum: str, client_date_time: str, star_system_id: int, **params) -> _Ship:

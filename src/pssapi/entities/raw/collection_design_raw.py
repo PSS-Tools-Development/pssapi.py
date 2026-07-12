@@ -36,8 +36,12 @@ class CollectionDesignRaw(_EntityBaseRaw):
         self._min_combo: int = _parse.pss_int(collection_design_info.pop("MinCombo", None))
         self._sprite_id: int = _parse.pss_int(collection_design_info.pop("SpriteId", None))
         self._step_chance: int = _parse.pss_int(collection_design_info.pop("StepChance", None))
+        self._step_cooldown_time: int = _parse.pss_int(collection_design_info.pop("StepCooldownTime", None))
         self._step_enhancement_value: float = _parse.pss_float(collection_design_info.pop("StepEnhancementValue", None))
+        self._step_max_use: int = _parse.pss_int(collection_design_info.pop("StepMaxUse", None))
         self._trigger_animation_id: int = _parse.pss_int(collection_design_info.pop("TriggerAnimationId", None))
+        self._trigger_argument: int = _parse.pss_int(collection_design_info.pop("TriggerArgument", None))
+        self._trigger_argument_comparison: str = _parse.pss_str(collection_design_info.pop("TriggerArgumentComparison", None))
         self._trigger_type: str = _parse.pss_str(collection_design_info.pop("TriggerType", None))
         super().__init__(collection_design_info)
 
@@ -126,12 +130,28 @@ class CollectionDesignRaw(_EntityBaseRaw):
         return self._step_chance
 
     @property
+    def step_cooldown_time(self) -> int:
+        return self._step_cooldown_time
+
+    @property
     def step_enhancement_value(self) -> float:
         return self._step_enhancement_value
 
     @property
+    def step_max_use(self) -> int:
+        return self._step_max_use
+
+    @property
     def trigger_animation_id(self) -> int:
         return self._trigger_animation_id
+
+    @property
+    def trigger_argument(self) -> int:
+        return self._trigger_argument
+
+    @property
+    def trigger_argument_comparison(self) -> str:
+        return self._trigger_argument_comparison
 
     @property
     def trigger_type(self) -> str:
@@ -160,8 +180,12 @@ class CollectionDesignRaw(_EntityBaseRaw):
             self.min_combo,
             self.sprite_id,
             self.step_chance,
+            self.step_cooldown_time,
             self.step_enhancement_value,
+            self.step_max_use,
             self.trigger_animation_id,
+            self.trigger_argument,
+            self.trigger_argument_comparison,
             self.trigger_type,
         )
 
@@ -189,8 +213,12 @@ class CollectionDesignRaw(_EntityBaseRaw):
                 "MinCombo": self.min_combo,
                 "SpriteId": self.sprite_id,
                 "StepChance": self.step_chance,
+                "StepCooldownTime": self.step_cooldown_time,
                 "StepEnhancementValue": self.step_enhancement_value,
+                "StepMaxUse": self.step_max_use,
                 "TriggerAnimationId": self.trigger_animation_id,
+                "TriggerArgument": self.trigger_argument,
+                "TriggerArgumentComparison": self.trigger_argument_comparison,
                 "TriggerType": self.trigger_type,
             }
             self._dict.update(super().__dict__())

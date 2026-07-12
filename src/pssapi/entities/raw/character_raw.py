@@ -30,7 +30,7 @@ class CharacterRaw(_EntityBaseRaw):
             [_entities.CharacterAction(child_info) for child_info in character_info.pop("CharacterActions")[0].get("CharacterAction", [])] if character_info.get("CharacterActions") else []
         )
         self._character_design_id: int = _parse.pss_int(character_info.pop("CharacterDesignId", None))
-        self._character_id: int = _parse.pss_int(character_info.pop("CharacterId", None))
+        self._character_id: str = _parse.pss_str(character_info.pop("CharacterId", None))
         self._character_name: str = _parse.pss_str(character_info.pop("CharacterName", None))
         self._deployment_date: _datetime = _parse.pss_datetime(character_info.pop("DeploymentDate", None))
         self._designated_room_id: int = _parse.pss_int(character_info.pop("DesignatedRoomId", None))
@@ -103,7 +103,7 @@ class CharacterRaw(_EntityBaseRaw):
         return self._character_design_id
 
     @property
-    def character_id(self) -> int:
+    def character_id(self) -> str:
         return self._character_id
 
     @property

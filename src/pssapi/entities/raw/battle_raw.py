@@ -24,11 +24,14 @@ class BattleRaw(_EntityBaseRaw):
         self._attacking_alliance_id: int = _parse.pss_int(battle_info.pop("AttackingAllianceId", None))
         self._attacking_alliance_name: str = _parse.pss_str(battle_info.pop("AttackingAllianceName", None))
         self._attacking_alliance_sprite_id: int = _parse.pss_int(battle_info.pop("AttackingAllianceSpriteId", None))
+        self._attacking_engagement_group_user_id: int = _parse.pss_int(battle_info.pop("AttackingEngagementGroupUserId", None))
+        self._attacking_ship_design_id: int = _parse.pss_int(battle_info.pop("AttackingShipDesignId", None))
         self._attacking_ship_id: int = _parse.pss_int(battle_info.pop("AttackingShipId", None))
         self._attacking_ship_name: str = _parse.pss_str(battle_info.pop("AttackingShipName", None))
         self._attacking_ship_xml: str = _parse.pss_str(battle_info.pop("AttackingShipXml", None))
         self._attacking_user_id: int = _parse.pss_int(battle_info.pop("AttackingUserId", None))
         self._attacking_user_trophy: int = _parse.pss_int(battle_info.pop("AttackingUserTrophy", None))
+        self._attacking_user_type: str = _parse.pss_str(battle_info.pop("AttackingUserType", None))
         self._attacking_user_xml: str = _parse.pss_str(battle_info.pop("AttackingUserXml", None))
         self._background_id: int = _parse.pss_int(battle_info.pop("BackgroundId", None))
         self._battle_date: _datetime = _parse.pss_datetime(battle_info.pop("BattleDate", None))
@@ -39,6 +42,7 @@ class BattleRaw(_EntityBaseRaw):
         self._challenge_design_id: int = _parse.pss_int(battle_info.pop("ChallengeDesignId", None))
         self._client_end_frame: int = _parse.pss_int(battle_info.pop("ClientEndFrame", None))
         self._client_outcome_type: str = _parse.pss_str(battle_info.pop("ClientOutcomeType", None))
+        self._client_version: str = _parse.pss_str(battle_info.pop("ClientVersion", None))
         self._commands: str = _parse.pss_str(battle_info.pop("Commands", None))
         self._defender_lose_rewards: str = _parse.pss_str(battle_info.pop("DefenderLoseRewards", None))
         self._defender_win_rewards: str = _parse.pss_str(battle_info.pop("DefenderWinRewards", None))
@@ -47,12 +51,16 @@ class BattleRaw(_EntityBaseRaw):
         self._defending_alliance_sprite_id: int = _parse.pss_int(battle_info.pop("DefendingAllianceSpriteId", None))
         self._defending_client_end_frame: int = _parse.pss_int(battle_info.pop("DefendingClientEndFrame", None))
         self._defending_client_outcome_type: str = _parse.pss_str(battle_info.pop("DefendingClientOutcomeType", None))
+        self._defending_engagement_group_user_id: int = _parse.pss_int(battle_info.pop("DefendingEngagementGroupUserId", None))
+        self._defending_ship_design_id: int = _parse.pss_int(battle_info.pop("DefendingShipDesignId", None))
         self._defending_ship_id: int = _parse.pss_int(battle_info.pop("DefendingShipId", None))
         self._defending_ship_name: str = _parse.pss_str(battle_info.pop("DefendingShipName", None))
         self._defending_ship_xml: str = _parse.pss_str(battle_info.pop("DefendingShipXml", None))
         self._defending_user_id: int = _parse.pss_int(battle_info.pop("DefendingUserId", None))
         self._defending_user_trophy: int = _parse.pss_int(battle_info.pop("DefendingUserTrophy", None))
+        self._defending_user_type: str = _parse.pss_str(battle_info.pop("DefendingUserType", None))
         self._defending_user_xml: str = _parse.pss_str(battle_info.pop("DefendingUserXml", None))
+        self._engagement_id: int = _parse.pss_int(battle_info.pop("EngagementId", None))
         self._is_online_battle: bool = _parse.pss_bool(battle_info.pop("IsOnlineBattle", None))
         self._is_star_battle: bool = _parse.pss_bool(battle_info.pop("IsStarBattle", None))
         self._league_type: str = _parse.pss_str(battle_info.pop("LeagueType", None))
@@ -67,7 +75,7 @@ class BattleRaw(_EntityBaseRaw):
         self._rewards: str = _parse.pss_str(battle_info.pop("Rewards", None))
         self._server_outcome_type: str = _parse.pss_str(battle_info.pop("ServerOutcomeType", None))
         self._star_system_marker_id: int = _parse.pss_int(battle_info.pop("StarSystemMarkerId", None))
-        self._station_room_design_ids: str = _parse.pss_str(battle_info.pop("StationRoomDesignIds", None))
+        self._station_room_design_ids: int = _parse.pss_int(battle_info.pop("StationRoomDesignIds", None))
         self._station_ship_design_id: int = _parse.pss_int(battle_info.pop("StationShipDesignId", None))
         self._win_gas_result: int = _parse.pss_int(battle_info.pop("WinGasResult", None))
         self._win_minerals_result: int = _parse.pss_int(battle_info.pop("WinMineralsResult", None))
@@ -108,6 +116,14 @@ class BattleRaw(_EntityBaseRaw):
         return self._attacking_alliance_sprite_id
 
     @property
+    def attacking_engagement_group_user_id(self) -> int:
+        return self._attacking_engagement_group_user_id
+
+    @property
+    def attacking_ship_design_id(self) -> int:
+        return self._attacking_ship_design_id
+
+    @property
     def attacking_ship_id(self) -> int:
         return self._attacking_ship_id
 
@@ -126,6 +142,10 @@ class BattleRaw(_EntityBaseRaw):
     @property
     def attacking_user_trophy(self) -> int:
         return self._attacking_user_trophy
+
+    @property
+    def attacking_user_type(self) -> str:
+        return self._attacking_user_type
 
     @property
     def attacking_user_xml(self) -> str:
@@ -168,6 +188,10 @@ class BattleRaw(_EntityBaseRaw):
         return self._client_outcome_type
 
     @property
+    def client_version(self) -> str:
+        return self._client_version
+
+    @property
     def commands(self) -> str:
         return self._commands
 
@@ -200,6 +224,14 @@ class BattleRaw(_EntityBaseRaw):
         return self._defending_client_outcome_type
 
     @property
+    def defending_engagement_group_user_id(self) -> int:
+        return self._defending_engagement_group_user_id
+
+    @property
+    def defending_ship_design_id(self) -> int:
+        return self._defending_ship_design_id
+
+    @property
     def defending_ship_id(self) -> int:
         return self._defending_ship_id
 
@@ -220,8 +252,16 @@ class BattleRaw(_EntityBaseRaw):
         return self._defending_user_trophy
 
     @property
+    def defending_user_type(self) -> str:
+        return self._defending_user_type
+
+    @property
     def defending_user_xml(self) -> str:
         return self._defending_user_xml
+
+    @property
+    def engagement_id(self) -> int:
+        return self._engagement_id
 
     @property
     def is_online_battle(self) -> bool:
@@ -280,7 +320,7 @@ class BattleRaw(_EntityBaseRaw):
         return self._star_system_marker_id
 
     @property
-    def station_room_design_ids(self) -> str:
+    def station_room_design_ids(self) -> int:
         return self._station_room_design_ids
 
     @property
@@ -313,11 +353,14 @@ class BattleRaw(_EntityBaseRaw):
             self.attacking_alliance_id,
             self.attacking_alliance_name,
             self.attacking_alliance_sprite_id,
+            self.attacking_engagement_group_user_id,
+            self.attacking_ship_design_id,
             self.attacking_ship_id,
             self.attacking_ship_name,
             self.attacking_ship_xml,
             self.attacking_user_id,
             self.attacking_user_trophy,
+            self.attacking_user_type,
             self.attacking_user_xml,
             self.background_id,
             self.battle_date,
@@ -328,6 +371,7 @@ class BattleRaw(_EntityBaseRaw):
             self.challenge_design_id,
             self.client_end_frame,
             self.client_outcome_type,
+            self.client_version,
             self.commands,
             self.defender_lose_rewards,
             self.defender_win_rewards,
@@ -336,12 +380,16 @@ class BattleRaw(_EntityBaseRaw):
             self.defending_alliance_sprite_id,
             self.defending_client_end_frame,
             self.defending_client_outcome_type,
+            self.defending_engagement_group_user_id,
+            self.defending_ship_design_id,
             self.defending_ship_id,
             self.defending_ship_name,
             self.defending_ship_xml,
             self.defending_user_id,
             self.defending_user_trophy,
+            self.defending_user_type,
             self.defending_user_xml,
+            self.engagement_id,
             self.is_online_battle,
             self.is_star_battle,
             self.league_type,
@@ -375,11 +423,14 @@ class BattleRaw(_EntityBaseRaw):
                 "AttackingAllianceId": self.attacking_alliance_id,
                 "AttackingAllianceName": self.attacking_alliance_name,
                 "AttackingAllianceSpriteId": self.attacking_alliance_sprite_id,
+                "AttackingEngagementGroupUserId": self.attacking_engagement_group_user_id,
+                "AttackingShipDesignId": self.attacking_ship_design_id,
                 "AttackingShipId": self.attacking_ship_id,
                 "AttackingShipName": self.attacking_ship_name,
                 "AttackingShipXml": self.attacking_ship_xml,
                 "AttackingUserId": self.attacking_user_id,
                 "AttackingUserTrophy": self.attacking_user_trophy,
+                "AttackingUserType": self.attacking_user_type,
                 "AttackingUserXml": self.attacking_user_xml,
                 "BackgroundId": self.background_id,
                 "BattleDate": self.battle_date,
@@ -390,6 +441,7 @@ class BattleRaw(_EntityBaseRaw):
                 "ChallengeDesignId": self.challenge_design_id,
                 "ClientEndFrame": self.client_end_frame,
                 "ClientOutcomeType": self.client_outcome_type,
+                "ClientVersion": self.client_version,
                 "Commands": self.commands,
                 "DefenderLoseRewards": self.defender_lose_rewards,
                 "DefenderWinRewards": self.defender_win_rewards,
@@ -398,12 +450,16 @@ class BattleRaw(_EntityBaseRaw):
                 "DefendingAllianceSpriteId": self.defending_alliance_sprite_id,
                 "DefendingClientEndFrame": self.defending_client_end_frame,
                 "DefendingClientOutcomeType": self.defending_client_outcome_type,
+                "DefendingEngagementGroupUserId": self.defending_engagement_group_user_id,
+                "DefendingShipDesignId": self.defending_ship_design_id,
                 "DefendingShipId": self.defending_ship_id,
                 "DefendingShipName": self.defending_ship_name,
                 "DefendingShipXml": self.defending_ship_xml,
                 "DefendingUserId": self.defending_user_id,
                 "DefendingUserTrophy": self.defending_user_trophy,
+                "DefendingUserType": self.defending_user_type,
                 "DefendingUserXml": self.defending_user_xml,
+                "EngagementId": self.engagement_id,
                 "IsOnlineBattle": self.is_online_battle,
                 "IsStarBattle": self.is_star_battle,
                 "LeagueType": self.league_type,

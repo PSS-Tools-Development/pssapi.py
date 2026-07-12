@@ -43,6 +43,7 @@ class RoomDesignRaw(_EntityBaseRaw):
         self._metadata: str = _parse.pss_str(room_design_info.pop("Metadata", None))
         self._min_range: int = _parse.pss_int(room_design_info.pop("MinRange", None))
         self._min_ship_level: int = _parse.pss_int(room_design_info.pop("MinShipLevel", None))
+        self._min_starbase_ship_level: int = _parse.pss_int(room_design_info.pop("MinStarbaseShipLevel", None))
         self._missile_design_id: int = _parse.pss_int(room_design_info.pop("MissileDesignId", None))
         self._price_string: str = _parse.pss_str(room_design_info.pop("PriceString", None))
         self._random_improvements: int = _parse.pss_int(room_design_info.pop("RandomImprovements", None))
@@ -61,6 +62,7 @@ class RoomDesignRaw(_EntityBaseRaw):
         self._rotate: bool = _parse.pss_bool(room_design_info.pop("Rotate", None))
         self._rows: int = _parse.pss_int(room_design_info.pop("Rows", None))
         self._sort_index: int = _parse.pss_int(room_design_info.pop("SortIndex", None))
+        self._starbase_price_string: str = _parse.pss_str(room_design_info.pop("StarbasePriceString", None))
         self._supported_grid_types: int = _parse.pss_int(room_design_info.pop("SupportedGridTypes", None))
         self._tags: str = _parse.pss_str(room_design_info.pop("Tags", None))
         self._target_type: str = _parse.pss_str(room_design_info.pop("TargetType", None))
@@ -180,6 +182,10 @@ class RoomDesignRaw(_EntityBaseRaw):
         return self._min_ship_level
 
     @property
+    def min_starbase_ship_level(self) -> int:
+        return self._min_starbase_ship_level
+
+    @property
     def missile_design_id(self) -> int:
         return self._missile_design_id
 
@@ -252,6 +258,10 @@ class RoomDesignRaw(_EntityBaseRaw):
         return self._sort_index
 
     @property
+    def starbase_price_string(self) -> str:
+        return self._starbase_price_string
+
+    @property
     def supported_grid_types(self) -> int:
         return self._supported_grid_types
 
@@ -297,6 +307,7 @@ class RoomDesignRaw(_EntityBaseRaw):
             self.metadata,
             self.min_range,
             self.min_ship_level,
+            self.min_starbase_ship_level,
             self.missile_design_id,
             self.price_string,
             self.random_improvements,
@@ -315,6 +326,7 @@ class RoomDesignRaw(_EntityBaseRaw):
             self.rotate,
             self.rows,
             self.sort_index,
+            self.starbase_price_string,
             self.supported_grid_types,
             self.tags,
             self.target_type,
@@ -352,6 +364,7 @@ class RoomDesignRaw(_EntityBaseRaw):
                 "Metadata": self.metadata,
                 "MinRange": self.min_range,
                 "MinShipLevel": self.min_ship_level,
+                "MinStarbaseShipLevel": self.min_starbase_ship_level,
                 "MissileDesignId": self.missile_design_id,
                 "PriceString": self.price_string,
                 "RandomImprovements": self.random_improvements,
@@ -370,6 +383,7 @@ class RoomDesignRaw(_EntityBaseRaw):
                 "Rotate": self.rotate,
                 "Rows": self.rows,
                 "SortIndex": self.sort_index,
+                "StarbasePriceString": self.starbase_price_string,
                 "SupportedGridTypes": self.supported_grid_types,
                 "Tags": self.tags,
                 "TargetType": self.target_type,

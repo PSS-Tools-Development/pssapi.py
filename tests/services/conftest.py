@@ -24,7 +24,7 @@ def access_token() -> str:
 
 @pytest.fixture(scope="session")
 def checksum_key() -> str:
-    return os.environ.get("PSS_DEVICE_LOGIN_CHECKSUM_KEY")
+    return os.environ.get("PSS_DEVICE_LOGIN_17_CHECKSUM_KEY")
 
 
 @pytest.fixture(scope="session")
@@ -58,9 +58,8 @@ def device_type() -> pssapi.enums.DeviceType:
 
 
 @pytest_asyncio.fixture()
-async def generated_access_token(client: pssapi.PssApiClient, device_key: str, device_type: pssapi.enums.DeviceType, client_date_time: datetime.datetime, checksum_key: str, language_key: str) -> str:
-    checksum = client.user_service.utils.create_device_login_checksum(device_key, device_type, client_date_time, checksum_key)
-    user_login = await client.user_service.device_login(checksum, client_date_time, device_key, device_type, language_key)
+async def generated_access_token(client: pssapi.PssApiClient, device_key: str, checksum_key: str) -> str:
+    user_login = await client.device_login(device_key, checksum_key)
     result = user_login.access_token
     return result
 

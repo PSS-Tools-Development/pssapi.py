@@ -16,6 +16,7 @@ class ConditionTypeRaw(_EntityBaseRaw):
     def __init__(self, condition_type_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
         self._color_string: str = _parse.pss_str(condition_type_info.pop("ColorString", None))
+        self._condition_category_argument: int = _parse.pss_int(condition_type_info.pop("ConditionCategoryArgument", None))
         self._condition_parameter_argument: int = _parse.pss_int(condition_type_info.pop("ConditionParameterArgument", None))
         self._condition_type_availability: int = _parse.pss_int(condition_type_info.pop("ConditionTypeAvailability", None))
         self._condition_type_category: str = _parse.pss_str(condition_type_info.pop("ConditionTypeCategory", None))
@@ -36,6 +37,10 @@ class ConditionTypeRaw(_EntityBaseRaw):
     @property
     def color_string(self) -> str:
         return self._color_string
+
+    @property
+    def condition_category_argument(self) -> int:
+        return self._condition_category_argument
 
     @property
     def condition_parameter_argument(self) -> int:
@@ -100,6 +105,7 @@ class ConditionTypeRaw(_EntityBaseRaw):
     def _key(self):
         return (
             self.color_string,
+            self.condition_category_argument,
             self.condition_parameter_argument,
             self.condition_type_availability,
             self.condition_type_category,
@@ -121,6 +127,7 @@ class ConditionTypeRaw(_EntityBaseRaw):
         if not self._dict:
             self._dict = {
                 "ColorString": self.color_string,
+                "ConditionCategoryArgument": self.condition_category_argument,
                 "ConditionParameterArgument": self.condition_parameter_argument,
                 "ConditionTypeAvailability": self.condition_type_availability,
                 "ConditionTypeCategory": self.condition_type_category,

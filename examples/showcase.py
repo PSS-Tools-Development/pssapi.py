@@ -46,7 +46,7 @@ async def main() -> None:
     user = users[0]
     print(f"First user: {user.id}, {user.name}, {user.trophy} trophies")
     has_highest_user_type_property = "UserType" in user
-    print(f'{user} has property "UserType": {has_highest_user_type_property}' + (f' (value: {user["UserType"]})' if has_highest_user_type_property else ""))
+    print(f'{user} has property "UserType": {has_highest_user_type_property}' + (f" (value: {user['UserType']})" if has_highest_user_type_property else ""))
     print(f'{user} has property "XYZ": {"XYZ" in user}')
 
     # Do a simple device login to get an access token,

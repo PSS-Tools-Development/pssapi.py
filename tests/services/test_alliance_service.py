@@ -66,10 +66,12 @@ async def test_list_characters_given_in_alliance(access_token: str, client: pssa
 @pytest.mark.usefixtures("access_token", "client")
 @pytest.mark.vcr(recode_mode="once")
 async def test_list_users(access_token: str, client: pssapi.PssApiClient):
-    users = await client.alliance_service.list_users(access_token, ALLIANCE_ID, 0, 100)
-    assert isinstance(users, list)
-    assert len(users) > 0
-    assert isinstance(users[0], pssapi.entities.User)
+    response = await client.alliance_service.list_users(access_token, ALLIANCE_ID, 0, 100)
+    assert isinstance(response, tuple)
+    assert len(response) == 2
+    assert isinstance(response[0], pssapi.entities.Alliance)
+    assert len(response[1]) > 0
+    assert isinstance(response[1][0], pssapi.entities.User)
 
 
 @pytest.mark.asyncio

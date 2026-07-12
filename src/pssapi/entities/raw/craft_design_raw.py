@@ -17,6 +17,7 @@ class CraftDesignRaw(_EntityBaseRaw):
         self._dict: _Dict[str, _Any] = {}
         self._attack_distance: int = _parse.pss_int(craft_design_info.pop("AttackDistance", None))
         self._attack_range: int = _parse.pss_int(craft_design_info.pop("AttackRange", None))
+        self._capacity: int = _parse.pss_int(craft_design_info.pop("Capacity", None))
         self._craft_attack_type: str = _parse.pss_str(craft_design_info.pop("CraftAttackType", None))
         self._craft_design_id: int = _parse.pss_int(craft_design_info.pop("CraftDesignId", None))
         self._craft_name: str = _parse.pss_str(craft_design_info.pop("CraftName", None))
@@ -27,6 +28,7 @@ class CraftDesignRaw(_EntityBaseRaw):
         self._hp: int = _parse.pss_int(craft_design_info.pop("Hp", None))
         self._missile_design_id: int = _parse.pss_int(craft_design_info.pop("MissileDesignId", None))
         self._reload: int = _parse.pss_int(craft_design_info.pop("Reload", None))
+        self._root_craft_design_id: int = _parse.pss_int(craft_design_info.pop("RootCraftDesignId", None))
         self._sprite_id: int = _parse.pss_int(craft_design_info.pop("SpriteId", None))
         self._volley: int = _parse.pss_int(craft_design_info.pop("Volley", None))
         self._volley_delay: int = _parse.pss_int(craft_design_info.pop("VolleyDelay", None))
@@ -39,6 +41,10 @@ class CraftDesignRaw(_EntityBaseRaw):
     @property
     def attack_range(self) -> int:
         return self._attack_range
+
+    @property
+    def capacity(self) -> int:
+        return self._capacity
 
     @property
     def craft_attack_type(self) -> str:
@@ -81,6 +87,10 @@ class CraftDesignRaw(_EntityBaseRaw):
         return self._reload
 
     @property
+    def root_craft_design_id(self) -> int:
+        return self._root_craft_design_id
+
+    @property
     def sprite_id(self) -> int:
         return self._sprite_id
 
@@ -96,6 +106,7 @@ class CraftDesignRaw(_EntityBaseRaw):
         return (
             self.attack_distance,
             self.attack_range,
+            self.capacity,
             self.craft_attack_type,
             self.craft_design_id,
             self.craft_name,
@@ -106,6 +117,7 @@ class CraftDesignRaw(_EntityBaseRaw):
             self.hp,
             self.missile_design_id,
             self.reload,
+            self.root_craft_design_id,
             self.sprite_id,
             self.volley,
             self.volley_delay,
@@ -116,6 +128,7 @@ class CraftDesignRaw(_EntityBaseRaw):
             self._dict = {
                 "AttackDistance": self.attack_distance,
                 "AttackRange": self.attack_range,
+                "Capacity": self.capacity,
                 "CraftAttackType": self.craft_attack_type,
                 "CraftDesignId": self.craft_design_id,
                 "CraftName": self.craft_name,
@@ -126,6 +139,7 @@ class CraftDesignRaw(_EntityBaseRaw):
                 "Hp": self.hp,
                 "MissileDesignId": self.missile_design_id,
                 "Reload": self.reload,
+                "RootCraftDesignId": self.root_craft_design_id,
                 "SpriteId": self.sprite_id,
                 "Volley": self.volley,
                 "VolleyDelay": self.volley_delay,

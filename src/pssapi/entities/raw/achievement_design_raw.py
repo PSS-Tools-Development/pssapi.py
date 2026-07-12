@@ -20,17 +20,22 @@ class AchievementDesignRaw(_EntityBaseRaw):
         self._achievement_goal: int = _parse.pss_int(achievement_design_info.pop("AchievementGoal", None))
         self._achievement_key: str = _parse.pss_str(achievement_design_info.pop("AchievementKey", None))
         self._achievement_reward: int = _parse.pss_int(achievement_design_info.pop("AchievementReward", None))
+        self._achievement_scoring_type: str = _parse.pss_str(achievement_design_info.pop("AchievementScoringType", None))
         self._achievement_title: str = _parse.pss_str(achievement_design_info.pop("AchievementTitle", None))
         self._achievement_type: str = _parse.pss_str(achievement_design_info.pop("AchievementType", None))
+        self._achievement_type_argument: int = _parse.pss_int(achievement_design_info.pop("AchievementTypeArgument", None))
         self._duration_type: str = _parse.pss_str(achievement_design_info.pop("DurationType", None))
         self._gas_reward: int = _parse.pss_int(achievement_design_info.pop("GasReward", None))
         self._guide_argument: int = _parse.pss_int(achievement_design_info.pop("GuideArgument", None))
         self._guide_type: str = _parse.pss_str(achievement_design_info.pop("GuideType", None))
         self._is_hidden: bool = _parse.pss_bool(achievement_design_info.pop("IsHidden", None))
         self._mineral_reward: int = _parse.pss_int(achievement_design_info.pop("MineralReward", None))
+        self._objective_argument: str = _parse.pss_str(achievement_design_info.pop("ObjectiveArgument", None))
+        self._objective_type: str = _parse.pss_str(achievement_design_info.pop("ObjectiveType", None))
         self._order_index: int = _parse.pss_int(achievement_design_info.pop("OrderIndex", None))
         self._parent_achievement_design_id: int = _parse.pss_int(achievement_design_info.pop("ParentAchievementDesignId", None))
         self._reward_string: str = _parse.pss_str(achievement_design_info.pop("RewardString", None))
+        self._ribbon_sprite_id: int = _parse.pss_int(achievement_design_info.pop("RibbonSpriteId", None))
         self._root_achievement_design_id: int = _parse.pss_int(achievement_design_info.pop("RootAchievementDesignId", None))
         self._sprite_id: int = _parse.pss_int(achievement_design_info.pop("SpriteId", None))
         super().__init__(achievement_design_info)
@@ -56,12 +61,20 @@ class AchievementDesignRaw(_EntityBaseRaw):
         return self._achievement_reward
 
     @property
+    def achievement_scoring_type(self) -> str:
+        return self._achievement_scoring_type
+
+    @property
     def achievement_title(self) -> str:
         return self._achievement_title
 
     @property
     def achievement_type(self) -> str:
         return self._achievement_type
+
+    @property
+    def achievement_type_argument(self) -> int:
+        return self._achievement_type_argument
 
     @property
     def duration_type(self) -> str:
@@ -88,6 +101,14 @@ class AchievementDesignRaw(_EntityBaseRaw):
         return self._mineral_reward
 
     @property
+    def objective_argument(self) -> str:
+        return self._objective_argument
+
+    @property
+    def objective_type(self) -> str:
+        return self._objective_type
+
+    @property
     def order_index(self) -> int:
         return self._order_index
 
@@ -98,6 +119,10 @@ class AchievementDesignRaw(_EntityBaseRaw):
     @property
     def reward_string(self) -> str:
         return self._reward_string
+
+    @property
+    def ribbon_sprite_id(self) -> int:
+        return self._ribbon_sprite_id
 
     @property
     def root_achievement_design_id(self) -> int:
@@ -114,17 +139,22 @@ class AchievementDesignRaw(_EntityBaseRaw):
             self.achievement_goal,
             self.achievement_key,
             self.achievement_reward,
+            self.achievement_scoring_type,
             self.achievement_title,
             self.achievement_type,
+            self.achievement_type_argument,
             self.duration_type,
             self.gas_reward,
             self.guide_argument,
             self.guide_type,
             self.is_hidden,
             self.mineral_reward,
+            self.objective_argument,
+            self.objective_type,
             self.order_index,
             self.parent_achievement_design_id,
             self.reward_string,
+            self.ribbon_sprite_id,
             self.root_achievement_design_id,
             self.sprite_id,
         )
@@ -137,17 +167,22 @@ class AchievementDesignRaw(_EntityBaseRaw):
                 "AchievementGoal": self.achievement_goal,
                 "AchievementKey": self.achievement_key,
                 "AchievementReward": self.achievement_reward,
+                "AchievementScoringType": self.achievement_scoring_type,
                 "AchievementTitle": self.achievement_title,
                 "AchievementType": self.achievement_type,
+                "AchievementTypeArgument": self.achievement_type_argument,
                 "DurationType": self.duration_type,
                 "GasReward": self.gas_reward,
                 "GuideArgument": self.guide_argument,
                 "GuideType": self.guide_type,
                 "IsHidden": self.is_hidden,
                 "MineralReward": self.mineral_reward,
+                "ObjectiveArgument": self.objective_argument,
+                "ObjectiveType": self.objective_type,
                 "OrderIndex": self.order_index,
                 "ParentAchievementDesignId": self.parent_achievement_design_id,
                 "RewardString": self.reward_string,
+                "RibbonSpriteId": self.ribbon_sprite_id,
                 "RootAchievementDesignId": self.root_achievement_design_id,
                 "SpriteId": self.sprite_id,
             }

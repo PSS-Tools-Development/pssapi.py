@@ -18,15 +18,25 @@ class UserLoginRaw(_EntityBaseRaw):
 
     def __init__(self, user_login_info: _EntityInfo) -> None:
         self._dict: _Dict[str, _Any] = {}
+        self._battle: _entities.Battle = _entities.Battle(user_login_info.pop("Battle")[0]) if user_login_info.get("Battle", []) else None
         self._previous_last_login_date: _datetime = _parse.pss_datetime(user_login_info.pop("PreviousLastLoginDate", None))
+        self._reward_string: str = _parse.pss_str(user_login_info.pop("RewardString", None))
         self._user: _entities.User = _entities.User(user_login_info.pop("User")[0]) if user_login_info.get("User", []) else None
         self._user_id: int = _parse.pss_int(user_login_info.pop("UserId", None))
         self._access_token: str = _parse.pss_str(user_login_info.pop("accessToken", None))
         super().__init__(user_login_info)
 
     @property
+    def battle(self) -> "_entities.Battle":
+        return self._battle
+
+    @property
     def previous_last_login_date(self) -> _datetime:
         return self._previous_last_login_date
+
+    @property
+    def reward_string(self) -> str:
+        return self._reward_string
 
     @property
     def user(self) -> "_entities.User":
@@ -42,7 +52,9 @@ class UserLoginRaw(_EntityBaseRaw):
 
     def _key(self):
         return (
+            self.battle._key() if self.battle else None,
             self.previous_last_login_date,
+            self.reward_string,
             self.user._key() if self.user else None,
             self.user_id,
             self.access_token,
@@ -51,7 +63,9 @@ class UserLoginRaw(_EntityBaseRaw):
     def __dict__(self):
         if not self._dict:
             self._dict = {
+                "Battle": dict(self.battle) if self.battle else None,
                 "PreviousLastLoginDate": self.previous_last_login_date,
+                "RewardString": self.reward_string,
                 "User": dict(self.user) if self.user else None,
                 "UserId": self.user_id,
                 "accessToken": self.access_token,

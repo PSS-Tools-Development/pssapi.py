@@ -40,6 +40,7 @@ class RoomRaw(_EntityBaseRaw):
         self._manufactured: int = _parse.pss_int(room_info.pop("Manufactured", None))
         self._power_generated: int = _parse.pss_int(room_info.pop("PowerGenerated", None))
         self._previous_skin_key: int = _parse.pss_int(room_info.pop("PreviousSkinKey", None))
+        self._priority: int = _parse.pss_int(room_info.pop("Priority", None))
         self._progress: int = _parse.pss_int(room_info.pop("Progress", None))
         self._protect_room_frame: int = _parse.pss_int(room_info.pop("ProtectRoomFrame", None))
         self._random_seed: int = _parse.pss_int(room_info.pop("RandomSeed", None))
@@ -149,6 +150,10 @@ class RoomRaw(_EntityBaseRaw):
         return self._previous_skin_key
 
     @property
+    def priority(self) -> int:
+        return self._priority
+
+    @property
     def progress(self) -> int:
         return self._progress
 
@@ -251,6 +256,7 @@ class RoomRaw(_EntityBaseRaw):
             self.manufactured,
             self.power_generated,
             self.previous_skin_key,
+            self.priority,
             self.progress,
             self.protect_room_frame,
             self.random_seed,
@@ -297,6 +303,7 @@ class RoomRaw(_EntityBaseRaw):
                 "Manufactured": self.manufactured,
                 "PowerGenerated": self.power_generated,
                 "PreviousSkinKey": self.previous_skin_key,
+                "Priority": self.priority,
                 "Progress": self.progress,
                 "ProtectRoomFrame": self.protect_room_frame,
                 "RandomSeed": self.random_seed,

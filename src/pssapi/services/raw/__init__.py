@@ -2,6 +2,7 @@ from . import achievement_service_raw as AchievementServiceRaw
 from . import alliance_service_raw as AllianceServiceRaw
 from . import animation_service_raw as AnimationServiceRaw
 from . import background_service_raw as BackgroundServiceRaw
+from . import battle_service_raw as BattleServiceRaw
 from . import challenge_service_raw as ChallengeServiceRaw
 from . import character_service_raw as CharacterServiceRaw
 from . import collection_service_raw as CollectionServiceRaw
@@ -37,6 +38,7 @@ __all__ = [
     AllianceServiceRaw.__name__,
     AnimationServiceRaw.__name__,
     BackgroundServiceRaw.__name__,
+    BattleServiceRaw.__name__,
     ChallengeServiceRaw.__name__,
     CharacterServiceRaw.__name__,
     CollectionServiceRaw.__name__,
