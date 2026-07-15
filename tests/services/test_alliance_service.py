@@ -5,6 +5,7 @@ import pssapi
 
 ALLIANCE_ID = 21  # Trek Wolfpack
 ALLIANCE_NAME = "Trek "
+USER_ID = 4771414  # The worse.
 
 
 @pytest.mark.asyncio
@@ -13,6 +14,14 @@ ALLIANCE_NAME = "Trek "
 async def test_get_alliance(access_token: str, client: pssapi.PssApiClient):
     alliance = await client.alliance_service.get_alliance(access_token, ALLIANCE_ID)
     assert isinstance(alliance, pssapi.entities.Alliance)
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("access_token", "client")
+@pytest.mark.vcr(recode_mode="once")
+async def test_get_user(access_token: str, client: pssapi.PssApiClient):
+    user = await client.alliance_service.get_user(access_token, USER_ID)
+    assert isinstance(user, pssapi.entities.User)
 
 
 @pytest.mark.asyncio
