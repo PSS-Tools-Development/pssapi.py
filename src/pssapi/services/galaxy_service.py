@@ -8,6 +8,7 @@ from .. import utils as _utils
 from ..entities import Planet as _Planet
 from ..entities import Ship as _Ship
 from ..entities import StarSystem as _StarSystem
+from ..entities import StarSystemDetail as _StarSystemDetail
 from ..entities import StarSystemLink as _StarSystemLink
 from ..entities import StarSystemMarker as _StarSystemMarker
 from ..entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
@@ -16,6 +17,11 @@ from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
 
 
 class GalaxyService(_service_base.CacheableServiceBase):
+    async def get_star_system_details(self, access_token: str, star_system_id: int) -> _StarSystemDetail:
+        production_server = await self.get_production_server()
+        result = await _GalaxyServiceRaw.get_star_system_details(production_server, access_token, star_system_id)
+        return result
+
     async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _Ship:
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.go_to(production_server, access_token, checksum, client_date_time, star_system_id)
