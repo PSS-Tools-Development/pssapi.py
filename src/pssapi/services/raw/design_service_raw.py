@@ -8,6 +8,7 @@ from typing import Tuple as _Tuple
 
 from ... import core as _core
 from ...entities import AchievementDesign as _AchievementDesign
+from ...entities import ActionType as _ActionType
 from ...entities import Animation as _Animation
 from ...entities import Asset as _Asset
 from ...entities import Background as _Background
@@ -15,10 +16,12 @@ from ...entities import ChallengeDesign as _ChallengeDesign
 from ...entities import CharacterDesign as _CharacterDesign
 from ...entities import CharacterDesignAction as _CharacterDesignAction
 from ...entities import CollectionDesign as _CollectionDesign
+from ...entities import ConditionType as _ConditionType
 from ...entities import CraftDesign as _CraftDesign
 from ...entities import DivisionDesign as _DivisionDesign
 from ...entities import DrawDesign as _DrawDesign
 from ...entities import File as _File
+from ...entities import InfrastructureDesign as _InfrastructureDesign
 from ...entities import ItemDesign as _ItemDesign
 from ...entities import ItemDesignAction as _ItemDesignAction
 from ...entities import League as _League
@@ -38,6 +41,7 @@ from ...entities import Skin as _Skin
 from ...entities import SkinSet as _SkinSet
 from ...entities import Sprite as _Sprite
 from ...entities import StarSystem as _StarSystem
+from ...entities import StarSystemInfrastructureDesign as _StarSystemInfrastructureDesign
 from ...entities import StarSystemLink as _StarSystemLink
 from ...entities import StarSystemMarkerGenerator as _StarSystemMarkerGenerator
 from ...entities import TaskDesign as _TaskDesign
@@ -690,6 +694,171 @@ async def list_all_static_designs_2(
         "ListAllStaticDesigns",
         production_server,
         LIST_ALL_STATIC_DESIGNS_BASE_PATH,
+        "GET",
+        response_gzipped=True,
+        **params,
+    )
+    return result
+
+
+async def list_all_static_designs_2(
+    production_server: str,
+    language_key: str,
+    list_achievement_design_version: int,
+    list_action_type_version: int,
+    list_all_challenge_design_version: int,
+    list_all_character_design_action_version: int,
+    list_all_character_design_version: int,
+    list_all_collection_design_version: int,
+    list_all_division_design_version: int,
+    list_all_draw_design_version: int,
+    list_all_mission_design_version: int,
+    list_all_news_design_version: int,
+    list_all_research_design_version: int,
+    list_all_reward_design_version: int,
+    list_all_ship_design_version: int,
+    list_all_situation_design_version: int,
+    list_all_training_design_version: int,
+    list_animation_version: int,
+    list_asset_version: int,
+    list_background_version: int,
+    list_condition_type_version: int,
+    list_craft_design_version: int,
+    list_file_version: int,
+    list_infrastructure_design_version: int,
+    list_item_design_action_version: int,
+    list_league_version: int,
+    list_marker_generator_design_version: int,
+    list_missile_design_version: int,
+    list_room_design_purchase_version: int,
+    list_room_design_sprite_version: int,
+    list_room_design_version: int,
+    list_season_design_version: int,
+    list_skin_set_version: int,
+    list_skin_version: int,
+    list_sprite_version: int,
+    list_star_system_infrastructure_design_version: int,
+    list_star_system_link_version: int,
+    list_star_system_version: int,
+    **params,
+) -> _Tuple[
+    _List[_AchievementDesign],
+    _List[_ActionType],
+    _List[_Animation],
+    _List[_Background],
+    _List[_ChallengeDesign],
+    _List[_CharacterDesignAction],
+    _List[_CharacterDesign],
+    _List[_CollectionDesign],
+    _List[_ConditionType],
+    _List[_CraftDesign],
+    _List[_DivisionDesign],
+    _List[_DrawDesign],
+    _List[_File],
+    _List[_InfrastructureDesign],
+    _List[_ItemDesignAction],
+    _List[_League],
+    _List[_MissileDesign],
+    _List[_MissionDesign],
+    _List[_NewsDesign],
+    _List[_ResearchDesign],
+    _List[_RewardDesign],
+    _List[_RoomDesignPurchase],
+    _List[_RoomDesignSprite],
+    _List[_RoomDesign],
+    _List[_SeasonDesign],
+    _List[_ShipDesign],
+    _List[_SituationDesign],
+    _List[_SkinSet],
+    _List[_Skin],
+    _List[_Sprite],
+    _List[_StarSystemInfrastructureDesign],
+    _List[_StarSystemLink],
+    _List[_StarSystemMarkerGenerator],
+    _List[_StarSystem],
+    _List[_TrainingDesign],
+]:
+    params = {
+        "LanguageKey": language_key,
+        "ListAchievementDesignVersion": list_achievement_design_version,
+        "ListActionTypeVersion": list_action_type_version,
+        "ListAllChallengeDesignVersion": list_all_challenge_design_version,
+        "ListAllCharacterDesignActionVersion": list_all_character_design_action_version,
+        "ListAllCharacterDesignVersion": list_all_character_design_version,
+        "ListAllCollectionDesignVersion": list_all_collection_design_version,
+        "ListAllDivisionDesignVersion": list_all_division_design_version,
+        "ListAllDrawDesignVersion": list_all_draw_design_version,
+        "ListAllMissionDesignVersion": list_all_mission_design_version,
+        "ListAllNewsDesignVersion": list_all_news_design_version,
+        "ListAllResearchDesignVersion": list_all_research_design_version,
+        "ListAllRewardDesignVersion": list_all_reward_design_version,
+        "ListAllShipDesignVersion": list_all_ship_design_version,
+        "ListAllSituationDesignVersion": list_all_situation_design_version,
+        "ListAllTrainingDesignVersion": list_all_training_design_version,
+        "ListAnimationVersion": list_animation_version,
+        "ListAssetVersion": list_asset_version,
+        "ListBackgroundVersion": list_background_version,
+        "ListConditionTypeVersion": list_condition_type_version,
+        "ListCraftDesignVersion": list_craft_design_version,
+        "ListFileVersion": list_file_version,
+        "ListInfrastructureDesignVersion": list_infrastructure_design_version,
+        "ListItemDesignActionVersion": list_item_design_action_version,
+        "ListLeagueVersion": list_league_version,
+        "ListMarkerGeneratorDesignVersion": list_marker_generator_design_version,
+        "ListMissileDesignVersion": list_missile_design_version,
+        "ListRoomDesignPurchaseVersion": list_room_design_purchase_version,
+        "ListRoomDesignSpriteVersion": list_room_design_sprite_version,
+        "ListRoomDesignVersion": list_room_design_version,
+        "ListSeasonDesignVersion": list_season_design_version,
+        "ListSkinSetVersion": list_skin_set_version,
+        "ListSkinVersion": list_skin_version,
+        "ListSpriteVersion": list_sprite_version,
+        "ListStarSystemInfrastructureDesignVersion": list_star_system_infrastructure_design_version,
+        "ListStarSystemLinkVersion": list_star_system_link_version,
+        "ListStarSystemVersion": list_star_system_version,
+        **params,
+    }
+    result = await _core.get_entities_from_path(
+        (
+            (_AchievementDesign, "AchievementDesigns", True),
+            (_ActionType, "ActionTypes", True),
+            (_Animation, "Animations", True),
+            (_Background, "Backgrounds", True),
+            (_ChallengeDesign, "ChallengeDesigns", True),
+            (_CharacterDesignAction, "CharacterDesignActions", True),
+            (_CharacterDesign, "CharacterDesigns", True),
+            (_CollectionDesign, "CollectionDesigns", True),
+            (_ConditionType, "ConditionTypes", True),
+            (_CraftDesign, "CraftDesigns", True),
+            (_DivisionDesign, "DivisionDesigns", True),
+            (_DrawDesign, "DrawDesigns", True),
+            (_File, "Files", True),
+            (_InfrastructureDesign, "InfrastructureDesigns", True),
+            (_ItemDesignAction, "ItemDesignActions", True),
+            (_League, "Leagues", True),
+            (_MissileDesign, "MissileDesigns", True),
+            (_MissionDesign, "MissionDesigns", True),
+            (_NewsDesign, "NewsDesigns", True),
+            (_ResearchDesign, "ResearchDesigns", True),
+            (_RewardDesign, "RewardDesigns", True),
+            (_RoomDesignPurchase, "RoomDesignPurchases", True),
+            (_RoomDesignSprite, "RoomDesignSprites", True),
+            (_RoomDesign, "RoomDesigns", True),
+            (_SeasonDesign, "SeasonDesigns", True),
+            (_ShipDesign, "ShipDesigns", True),
+            (_SituationDesign, "SituationDesigns", True),
+            (_SkinSet, "SkinSets", True),
+            (_Skin, "Skins", True),
+            (_Sprite, "Sprites", True),
+            (_StarSystemInfrastructureDesign, "StarSystemInfrastructureDesigns", True),
+            (_StarSystemLink, "StarSystemLinks", True),
+            (_StarSystemMarkerGenerator, "StarSystemMarkerGenerators", True),
+            (_StarSystem, "StarSystems", True),
+            (_TrainingDesign, "TrainingDesigns", True),
+        ),
+        "ListAllStaticDesigns",
+        production_server,
+        LIST_ALL_STATIC_DESIGNS_2_BASE_PATH,
         "GET",
         response_gzipped=True,
         **params,
