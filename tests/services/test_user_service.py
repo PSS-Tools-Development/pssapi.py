@@ -61,6 +61,37 @@ async def test_device_login_17(
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client")
 @pytest.mark.vcr(record_mode="once")
+async def test_list_all_user_data_first(client: pssapi.PssApiClient, access_token: str):
+    types = (
+        (pssapi.entities.Achievement, True),
+        (pssapi.entities.CharacterAction, True),
+        (pssapi.entities.Character, True),
+        (pssapi.entities.Item, True),
+        (pssapi.entities.MissionEvent, True),
+        (pssapi.entities.Research, False),
+        (pssapi.entities.RoomAction, True),
+        (pssapi.entities.Room, True),
+        (pssapi.entities.Situation, True),
+        (pssapi.entities.StarSystemDetail, True),
+        (pssapi.entities.StarSystemMarker, True),
+        (pssapi.entities.Task, True),
+        (pssapi.entities.UserMarker, True),
+        (pssapi.entities.UserStarSystem, True),
+    )
+    all_user_data = await client.user_service.list_all_user_data_first(access_token, FRIEND_USER_ID)  # Dolores 2.0
+    for i, (entity_type, is_list) in enumerate(types):
+        data = all_user_data[i]
+        if is_list:
+            assert isinstance(data, list)
+            assert len(data) > 0
+            assert isinstance(data[0], entity_type)
+        else:
+            assert isinstance(data, entity_type)
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("access_token", "client")
+@pytest.mark.vcr(record_mode="once")
 async def test_list_friends(client: pssapi.PssApiClient, access_token: str):
     list_friends = await client.user_service.list_friends(access_token, FRIEND_USER_ID)
     assert isinstance(list_friends, pssapi.entities.ListFriends)

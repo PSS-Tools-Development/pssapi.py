@@ -1,0 +1,1888 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/UserService/ListAllUserDataFirst2?userId=8729280
+  response:
+    body:
+      string: "<UserService><ListAllUserDataFirst><Researches><Research ResearchId=\"20961116\"
+        ShipId=\"6546989\" ResearchDesignId=\"10\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-23T09:20:21\"
+        /><Research ResearchId=\"20961204\" ShipId=\"6546989\" ResearchDesignId=\"80\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-23T07:06:01\" /><Research
+        ResearchId=\"20961571\" ShipId=\"6546989\" ResearchDesignId=\"38\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-09-23T11:35:57\" /><Research ResearchId=\"20962422\"
+        ShipId=\"6546989\" ResearchDesignId=\"39\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-23T14:23:23\"
+        /><Research ResearchId=\"20963674\" ShipId=\"6546989\" ResearchDesignId=\"94\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-23T18:50:08\" /><Research
+        ResearchId=\"20967225\" ShipId=\"6546989\" ResearchDesignId=\"97\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-09-24T10:26:15\" /><Research ResearchId=\"20973293\"
+        ShipId=\"6546989\" ResearchDesignId=\"126\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-25T09:58:22\"
+        /><Research ResearchId=\"20974164\" ShipId=\"6546989\" ResearchDesignId=\"6\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-25T13:02:56\" /><Research
+        ResearchId=\"20979177\" ShipId=\"6546989\" ResearchDesignId=\"134\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-09-26T09:14:55\" /><Research ResearchId=\"20979179\"
+        ShipId=\"6546989\" ResearchDesignId=\"127\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-26T09:15:04\"
+        /><Research ResearchId=\"20981679\" ShipId=\"6546989\" ResearchDesignId=\"2\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-26T17:36:50\" /><Research
+        ResearchId=\"20982899\" ShipId=\"6546989\" ResearchDesignId=\"108\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-09-26T22:31:24\" /><Research ResearchId=\"20982900\"
+        ShipId=\"6546989\" ResearchDesignId=\"107\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-26T22:36:31\"
+        /><Research ResearchId=\"20987476\" ShipId=\"6546989\" ResearchDesignId=\"74\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-27T17:09:51\" /><Research
+        ResearchId=\"20990596\" ShipId=\"6546989\" ResearchDesignId=\"1\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-09-28T06:44:12\" /><Research ResearchId=\"20996903\"
+        ShipId=\"6546989\" ResearchDesignId=\"140\" ResearchState=\"Completed\" ResearchStartDate=\"2021-09-29T08:54:58\"
+        /><Research ResearchId=\"20998611\" ShipId=\"6546989\" ResearchDesignId=\"40\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-09-29T15:29:14\" /><Research
+        ResearchId=\"21008123\" ShipId=\"6546989\" ResearchDesignId=\"81\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-10-01T06:27:08\" /><Research ResearchId=\"21015335\"
+        ShipId=\"6546989\" ResearchDesignId=\"9\" ResearchState=\"Completed\" ResearchStartDate=\"2021-10-02T15:40:33\"
+        /><Research ResearchId=\"21018436\" ShipId=\"6546989\" ResearchDesignId=\"75\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-10-03T05:56:35\" /><Research
+        ResearchId=\"21025731\" ShipId=\"6546989\" ResearchDesignId=\"33\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-10-04T12:58:47\" /><Research ResearchId=\"21030905\"
+        ShipId=\"6546989\" ResearchDesignId=\"4\" ResearchState=\"Completed\" ResearchStartDate=\"2021-10-05T12:04:49\"
+        /><Research ResearchId=\"21035244\" ShipId=\"6546989\" ResearchDesignId=\"5\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-10-06T07:43:47\" /><Research
+        ResearchId=\"21035561\" ShipId=\"6546989\" ResearchDesignId=\"23\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-10-06T09:16:04\" /><Research ResearchId=\"21109129\"
+        ShipId=\"6546989\" ResearchDesignId=\"7\" ResearchState=\"Completed\" ResearchStartDate=\"2021-10-18T11:10:03\"
+        /><Research ResearchId=\"21256841\" ShipId=\"6546989\" ResearchDesignId=\"28\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-11-09T16:16:49\" /><Research
+        ResearchId=\"21269062\" ShipId=\"6546989\" ResearchDesignId=\"24\" ResearchState=\"Completed\"
+        ResearchStartDate=\"2021-11-11T16:16:54\" /><Research ResearchId=\"21293255\"
+        ShipId=\"6546989\" ResearchDesignId=\"29\" ResearchState=\"Completed\" ResearchStartDate=\"2021-11-15T15:07:35\"
+        /><Research ResearchId=\"21438993\" ShipId=\"6546989\" ResearchDesignId=\"101\"
+        ResearchState=\"Completed\" ResearchStartDate=\"2021-12-08T11:09:26\" /></Researches><Items><Item
+        ItemId=\"168283600\" ShipId=\"6546989\" ItemDesignId=\"3\" Quantity=\"4650\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"168283601\" ShipId=\"6546989\"
+        ItemDesignId=\"2\" Quantity=\"88607\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"168283602\" ShipId=\"6546989\" ItemDesignId=\"18\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283603\" ShipId=\"6546989\"
+        ItemDesignId=\"5\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283604\" ShipId=\"6546989\" ItemDesignId=\"6\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283605\" ShipId=\"6546989\"
+        ItemDesignId=\"33\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283606\" ShipId=\"6546989\" ItemDesignId=\"38\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283607\" ShipId=\"6546989\"
+        ItemDesignId=\"42\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283608\" ShipId=\"6546989\" ItemDesignId=\"11\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283609\" ShipId=\"6546989\"
+        ItemDesignId=\"47\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283610\" ShipId=\"6546989\" ItemDesignId=\"48\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283611\" ShipId=\"6546989\"
+        ItemDesignId=\"65\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283612\" ShipId=\"6546989\" ItemDesignId=\"140\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283613\" ShipId=\"6546989\"
+        ItemDesignId=\"186\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283614\" ShipId=\"6546989\" ItemDesignId=\"204\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283615\" ShipId=\"6546989\"
+        ItemDesignId=\"209\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283616\" ShipId=\"6546989\" ItemDesignId=\"214\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283617\" ShipId=\"6546989\"
+        ItemDesignId=\"243\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283618\" ShipId=\"6546989\" ItemDesignId=\"287\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283619\" ShipId=\"6546989\"
+        ItemDesignId=\"293\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283620\" ShipId=\"6546989\" ItemDesignId=\"294\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283621\" ShipId=\"6546989\"
+        ItemDesignId=\"295\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283622\" ShipId=\"6546989\" ItemDesignId=\"407\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168283623\" ShipId=\"6546989\"
+        ItemDesignId=\"413\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283624\" ShipId=\"6546989\" ItemDesignId=\"745\" Quantity=\"20\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"168283625\" ShipId=\"6546989\"
+        ItemDesignId=\"813\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168283626\" ShipId=\"6546989\" ItemDesignId=\"823\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168328710\" ShipId=\"6546989\"
+        ItemDesignId=\"82\" Quantity=\"6\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168329171\" ShipId=\"6546989\" ItemDesignId=\"102\" Quantity=\"5\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168329172\" ShipId=\"6546989\"
+        ItemDesignId=\"84\" Quantity=\"9\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168335435\" ShipId=\"6546989\" ItemDesignId=\"806\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168341067\" ShipId=\"6546989\"
+        ItemDesignId=\"778\" Quantity=\"12\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168349614\" ShipId=\"6546989\" ItemDesignId=\"749\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168349615\" ShipId=\"6546989\"
+        ItemDesignId=\"752\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168375350\" ShipId=\"6546989\" ItemDesignId=\"90\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168375352\" ShipId=\"6546989\"
+        ItemDesignId=\"85\" Quantity=\"3\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168382661\" ShipId=\"6546989\" ItemDesignId=\"330\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168383708\" ShipId=\"6546989\"
+        ItemDesignId=\"353\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168432321\" ShipId=\"6546989\" ItemDesignId=\"81\" Quantity=\"13\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168466396\" ShipId=\"6546989\"
+        ItemDesignId=\"167\" Quantity=\"3\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168516988\" ShipId=\"6546989\" ItemDesignId=\"173\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168517310\" ShipId=\"6546989\"
+        ItemDesignId=\"400\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168518571\" ShipId=\"6546989\" ItemDesignId=\"306\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168519022\" ShipId=\"6546989\"
+        ItemDesignId=\"291\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168519023\" ShipId=\"6546989\" ItemDesignId=\"156\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168519113\" ShipId=\"6546989\"
+        ItemDesignId=\"139\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168519192\" ShipId=\"6546989\" ItemDesignId=\"179\" Quantity=\"3\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168553930\" ShipId=\"6546989\"
+        ItemDesignId=\"394\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168553931\" ShipId=\"6546989\" ItemDesignId=\"401\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168554029\" ShipId=\"6546989\"
+        ItemDesignId=\"444\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168554042\" ShipId=\"6546989\" ItemDesignId=\"446\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168554043\" ShipId=\"6546989\"
+        ItemDesignId=\"443\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168554114\" ShipId=\"6546989\" ItemDesignId=\"797\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168554349\" ShipId=\"6546989\"
+        ItemDesignId=\"119\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168556501\" ShipId=\"6546989\" ItemDesignId=\"154\" Quantity=\"3\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168557466\" ShipId=\"6546989\"
+        ItemDesignId=\"463\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168576449\" ShipId=\"6546989\" ItemDesignId=\"222\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168576521\" ShipId=\"6546989\"
+        ItemDesignId=\"105\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168576526\" ShipId=\"6546989\" ItemDesignId=\"180\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168581206\" ShipId=\"6546989\"
+        ItemDesignId=\"751\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168583118\" ShipId=\"6546989\" ItemDesignId=\"402\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168583492\" ShipId=\"6546989\"
+        ItemDesignId=\"737\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168583576\" ShipId=\"6546989\" ItemDesignId=\"518\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168583616\" ShipId=\"6546989\"
+        ItemDesignId=\"949\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168594635\" ShipId=\"6546989\" ItemDesignId=\"951\" Quantity=\"2\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168594677\" ShipId=\"6546989\"
+        ItemDesignId=\"1229\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168594747\" ShipId=\"6546989\" ItemDesignId=\"547\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168630937\" ShipId=\"6546989\"
+        ItemDesignId=\"753\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168630952\" ShipId=\"6546989\" ItemDesignId=\"297\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"168694569\" ShipId=\"6546989\"
+        ItemDesignId=\"766\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"168781826\" ShipId=\"6546989\" ItemDesignId=\"563\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"171095533\" ShipId=\"6546989\"
+        ItemDesignId=\"83\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"171453346\" ShipId=\"6546989\" ItemDesignId=\"220\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"171559239\" ShipId=\"6546989\"
+        ItemDesignId=\"1241\" Quantity=\"9\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"171624974\" ShipId=\"6546989\" ItemDesignId=\"999\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"171624975\" ShipId=\"6546989\"
+        ItemDesignId=\"992\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"171624978\" ShipId=\"6546989\" ItemDesignId=\"824\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"171657529\" ShipId=\"6546989\"
+        ItemDesignId=\"822\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"171883585\" ShipId=\"6546989\" ItemDesignId=\"986\" Quantity=\"37\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"171951315\" ShipId=\"6546989\"
+        ItemDesignId=\"781\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"171960210\" ShipId=\"6546989\" ItemDesignId=\"223\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"172021534\" ShipId=\"6546989\"
+        ItemDesignId=\"995\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"172301150\" ShipId=\"6546989\" ItemDesignId=\"103\" Quantity=\"9\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"172356040\" ShipId=\"6546989\"
+        ItemDesignId=\"221\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"172369367\" ShipId=\"6546989\" ItemDesignId=\"233\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"172465358\" ShipId=\"6546989\"
+        ItemDesignId=\"219\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"172574919\" ShipId=\"6546989\" ItemDesignId=\"448\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"172798468\" ShipId=\"6546989\"
+        ItemDesignId=\"98\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"172913979\" ShipId=\"6546989\" ItemDesignId=\"101\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173153266\" ShipId=\"6546989\"
+        ItemDesignId=\"739\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173281494\" ShipId=\"6546989\" ItemDesignId=\"1022\" Quantity=\"30\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173282508\" ShipId=\"6546989\"
+        ItemDesignId=\"1240\" Quantity=\"4\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173287795\" ShipId=\"6546989\" ItemDesignId=\"248\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173615656\" ShipId=\"6546989\"
+        ItemDesignId=\"991\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173615660\" ShipId=\"6546989\" ItemDesignId=\"990\" Quantity=\"2\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173615664\" ShipId=\"6546989\"
+        ItemDesignId=\"989\" Quantity=\"3\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173615666\" ShipId=\"6546989\" ItemDesignId=\"988\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173617337\" ShipId=\"6546989\"
+        ItemDesignId=\"831\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173753724\" ShipId=\"6546989\" ItemDesignId=\"560\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173923706\" ShipId=\"6546989\"
+        ItemDesignId=\"548\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"173923707\" ShipId=\"6546989\" ItemDesignId=\"549\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"173923708\" ShipId=\"6546989\"
+        ItemDesignId=\"550\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"174592702\" ShipId=\"6546989\" ItemDesignId=\"1242\" Quantity=\"5\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"174597329\" ShipId=\"6546989\"
+        ItemDesignId=\"462\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"174733003\" ShipId=\"6546989\" ItemDesignId=\"569\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"175794037\" ShipId=\"6546989\"
+        ItemDesignId=\"1029\" Quantity=\"50\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"175794126\" ShipId=\"6546989\" ItemDesignId=\"104\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"175794175\" ShipId=\"6546989\"
+        ItemDesignId=\"1033\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"175794177\" ShipId=\"6546989\" ItemDesignId=\"1034\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"175794353\" ShipId=\"6546989\"
+        ItemDesignId=\"814\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"175794386\" ShipId=\"6546989\" ItemDesignId=\"816\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"175879836\" ShipId=\"6546989\"
+        ItemDesignId=\"688\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"175879837\" ShipId=\"6546989\" ItemDesignId=\"241\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"175879838\" ShipId=\"6546989\"
+        ItemDesignId=\"242\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"175919132\" ShipId=\"6546989\" ItemDesignId=\"570\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"179661631\" ShipId=\"6546989\"
+        ItemDesignId=\"230\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"179752290\" ShipId=\"6546989\" ItemDesignId=\"728\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"179894058\" ShipId=\"6546989\"
+        ItemDesignId=\"359\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"181271234\" ShipId=\"6546989\" ItemDesignId=\"131\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"181987295\" ShipId=\"6546989\"
+        ItemDesignId=\"994\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001489\" ShipId=\"6546989\" ItemDesignId=\"149\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001556\" ShipId=\"6546989\"
+        ItemDesignId=\"272\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001558\" ShipId=\"6546989\" ItemDesignId=\"134\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001559\" ShipId=\"6546989\"
+        ItemDesignId=\"158\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001561\" ShipId=\"6546989\" ItemDesignId=\"80\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001563\" ShipId=\"6546989\"
+        ItemDesignId=\"381\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001564\" ShipId=\"6546989\" ItemDesignId=\"271\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001565\" ShipId=\"6546989\"
+        ItemDesignId=\"153\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001568\" ShipId=\"6546989\" ItemDesignId=\"284\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001569\" ShipId=\"6546989\"
+        ItemDesignId=\"431\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001571\" ShipId=\"6546989\" ItemDesignId=\"524\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001572\" ShipId=\"6546989\"
+        ItemDesignId=\"78\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182001573\" ShipId=\"6546989\" ItemDesignId=\"1166\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182001575\" ShipId=\"6546989\"
+        ItemDesignId=\"428\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182002467\" ShipId=\"6546989\" ItemDesignId=\"130\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182538472\" ShipId=\"6546989\"
+        ItemDesignId=\"1150\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"182538690\" ShipId=\"6546989\" ItemDesignId=\"1137\" Quantity=\"7\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"182538691\" ShipId=\"6546989\"
+        ItemDesignId=\"148\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"189880941\" ShipId=\"6546989\" ItemDesignId=\"1207\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"189881212\" ShipId=\"6546989\"
+        ItemDesignId=\"232\" Quantity=\"3\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"189881219\" ShipId=\"6546989\" ItemDesignId=\"86\" Quantity=\"4\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"189888585\" ShipId=\"6546989\"
+        ItemDesignId=\"79\" Quantity=\"2\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"189892006\" ShipId=\"6546989\" ItemDesignId=\"738\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"189892007\" ShipId=\"6546989\"
+        ItemDesignId=\"157\" Quantity=\"8\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"189892008\" ShipId=\"6546989\" ItemDesignId=\"254\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"192944237\" ShipId=\"6546989\"
+        ItemDesignId=\"1257\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"196204590\" ShipId=\"6546989\" ItemDesignId=\"1511\" Quantity=\"2\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"198238993\" ShipId=\"6546989\"
+        ItemDesignId=\"975\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"204149266\" ShipId=\"6546989\" ItemDesignId=\"1461\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"204149342\" ShipId=\"6546989\"
+        ItemDesignId=\"1031\" Quantity=\"5\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"205524351\" ShipId=\"6546989\" ItemDesignId=\"87\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"211052762\" ShipId=\"6546989\"
+        ItemDesignId=\"1656\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"211052763\" ShipId=\"6546989\" ItemDesignId=\"1660\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"211052764\" ShipId=\"6546989\"
+        ItemDesignId=\"1664\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"211052765\" ShipId=\"6546989\" ItemDesignId=\"1668\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"214316548\" ShipId=\"6546989\"
+        ItemDesignId=\"1246\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"214316549\" ShipId=\"6546989\" ItemDesignId=\"1296\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"219382147\" ShipId=\"6546989\"
+        ItemDesignId=\"1689\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"221015638\" ShipId=\"6546989\" ItemDesignId=\"1699\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"221016314\" ShipId=\"6546989\"
+        ItemDesignId=\"1187\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"223811053\" ShipId=\"6546989\" ItemDesignId=\"571\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"223812609\" ShipId=\"6546989\"
+        ItemDesignId=\"572\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"229223302\" ShipId=\"6546989\" ItemDesignId=\"733\" Quantity=\"1\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"229487672\" ShipId=\"6546989\"
+        ItemDesignId=\"1741\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"229487673\" ShipId=\"6546989\" ItemDesignId=\"1742\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"229487674\" ShipId=\"6546989\"
+        ItemDesignId=\"1746\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"229487835\" ShipId=\"6546989\" ItemDesignId=\"965\" Quantity=\"3\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"234475549\" ShipId=\"6546989\"
+        ItemDesignId=\"732\" Quantity=\"0\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"247922876\" ShipId=\"6546989\" ItemDesignId=\"1941\" Quantity=\"0\"
+        \  IsNew=\"false\" SkinKey=\"0\" /><Item ItemId=\"247922963\" ShipId=\"6546989\"
+        ItemDesignId=\"1412\" Quantity=\"1\"   IsNew=\"false\" SkinKey=\"0\" /><Item
+        ItemId=\"296993365\" ShipId=\"6546989\" ItemDesignId=\"1737\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993366\" ShipId=\"6546989\"
+        ItemDesignId=\"1738\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"296993367\" ShipId=\"6546989\" ItemDesignId=\"1739\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993368\" ShipId=\"6546989\"
+        ItemDesignId=\"1740\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"296993369\" ShipId=\"6546989\" ItemDesignId=\"2036\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993370\" ShipId=\"6546989\"
+        ItemDesignId=\"2044\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"296993371\" ShipId=\"6546989\" ItemDesignId=\"2057\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993372\" ShipId=\"6546989\"
+        ItemDesignId=\"2058\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"296993373\" ShipId=\"6546989\" ItemDesignId=\"2059\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993374\" ShipId=\"6546989\"
+        ItemDesignId=\"2060\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"296993375\" ShipId=\"6546989\" ItemDesignId=\"2061\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"296993376\" ShipId=\"6546989\"
+        ItemDesignId=\"2215\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064767\" ShipId=\"6546989\" ItemDesignId=\"2312\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064768\" ShipId=\"6546989\"
+        ItemDesignId=\"2313\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064769\" ShipId=\"6546989\" ItemDesignId=\"2467\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064770\" ShipId=\"6546989\"
+        ItemDesignId=\"2468\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064771\" ShipId=\"6546989\" ItemDesignId=\"2469\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064772\" ShipId=\"6546989\"
+        ItemDesignId=\"2470\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064773\" ShipId=\"6546989\" ItemDesignId=\"2471\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064774\" ShipId=\"6546989\"
+        ItemDesignId=\"2472\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064775\" ShipId=\"6546989\" ItemDesignId=\"2473\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064776\" ShipId=\"6546989\"
+        ItemDesignId=\"2474\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064777\" ShipId=\"6546989\" ItemDesignId=\"2475\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064778\" ShipId=\"6546989\"
+        ItemDesignId=\"2476\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064779\" ShipId=\"6546989\" ItemDesignId=\"2477\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064780\" ShipId=\"6546989\"
+        ItemDesignId=\"2478\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064781\" ShipId=\"6546989\" ItemDesignId=\"2556\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064782\" ShipId=\"6546989\"
+        ItemDesignId=\"2559\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064783\" ShipId=\"6546989\" ItemDesignId=\"2562\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064784\" ShipId=\"6546989\"
+        ItemDesignId=\"2500\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064785\" ShipId=\"6546989\" ItemDesignId=\"2501\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064786\" ShipId=\"6546989\"
+        ItemDesignId=\"2502\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064787\" ShipId=\"6546989\" ItemDesignId=\"2503\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064788\" ShipId=\"6546989\"
+        ItemDesignId=\"2504\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064789\" ShipId=\"6546989\" ItemDesignId=\"2488\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064790\" ShipId=\"6546989\"
+        ItemDesignId=\"2565\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064791\" ShipId=\"6546989\" ItemDesignId=\"2568\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064792\" ShipId=\"6546989\"
+        ItemDesignId=\"2593\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064793\" ShipId=\"6546989\" ItemDesignId=\"2601\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064794\" ShipId=\"6546989\"
+        ItemDesignId=\"2604\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /><Item
+        ItemId=\"310064795\" ShipId=\"6546989\" ItemDesignId=\"2607\" Quantity=\"0\"
+        \  IsNew=\"true\" SkinKey=\"0\" /><Item ItemId=\"310064796\" ShipId=\"6546989\"
+        ItemDesignId=\"2610\" Quantity=\"0\"   IsNew=\"true\" SkinKey=\"0\" /></Items><Characters><Character
+        CharacterId=\"49960613\" ShipId=\"6546989\" CharacterDesignId=\"253\" CharacterName=\"Dolores
+        2.0\" Xp=\"40804\" Level=\"20\" OwnerShipId=\"6546989\" HpImprovement=\"1\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"68\"
+        StaminaImprovement=\"7\" Fatigue=\"6\" ItemIds=\"172021534,174597329,175794177,175794175,175794386\"
+        Flags=\"1\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"2022-03-05T01:13:10\"
+        TrainingDesignId=\"0\" RoomId=\"137101318\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"49960662\" ShipId=\"6546989\" CharacterDesignId=\"183\" CharacterName=\"Captain
+        Mack Swallow\" Xp=\"2074\" Level=\"5\" OwnerShipId=\"6546989\" HpImprovement=\"3\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"1\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"2021-09-23T20:58:28\" TrainingDesignId=\"0\" RoomId=\"0\"
+        DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"49983151\"
+        ShipId=\"6546989\" CharacterDesignId=\"423\" CharacterName=\"Savyserver\"
+        Xp=\"34871\" Level=\"19\" OwnerShipId=\"6546989\" HpImprovement=\"2\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"1\" ItemIds=\"173923706,168554029\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"2021-09-23T21:47:09\" TrainingDesignId=\"0\"
+        RoomId=\"137031560\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"49984276\" ShipId=\"6546989\" CharacterDesignId=\"183\" CharacterName=\"Captain
+        Mack Swallow\" Xp=\"1971\" Level=\"5\" OwnerShipId=\"6546989\" HpImprovement=\"1\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"1\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"2021-09-23T20:58:43\" TrainingDesignId=\"0\" RoomId=\"0\"
+        DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"50003643\"
+        ShipId=\"6546989\" CharacterDesignId=\"403\" CharacterName=\"Jack\" Xp=\"4365\"
+        Level=\"7\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"189892007,168594747\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\"
+        RoomId=\"137068991\" DeploymentDate=\"2021-09-27T17:32:01\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50003652\" ShipId=\"6546989\" CharacterDesignId=\"315\" CharacterName=\"Gray
+        Virtuoso\" Xp=\"24251\" Level=\"16\" OwnerShipId=\"6546989\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168554043,172574919\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\"
+        RoomId=\"137068991\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50003655\" ShipId=\"6546989\" CharacterDesignId=\"258\" CharacterName=\"First
+        Mate\" Xp=\"33576\" Level=\"18\" OwnerShipId=\"6546989\" HpImprovement=\"0\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168583616,168594635\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\"
+        RoomId=\"137061962\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50003657\" ShipId=\"6546989\" CharacterDesignId=\"85\" CharacterName=\"Omar\"
+        Xp=\"6870\" Level=\"9\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"189892007,168554349\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\"
+        RoomId=\"137031560\" DeploymentDate=\"2021-09-27T17:32:02\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50070772\" ShipId=\"6546989\" CharacterDesignId=\"101\" CharacterName=\"Simon\"
+        Xp=\"33676\" Level=\"18\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168554114,173923707\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"2021-11-30T10:42:37\" TrainingDesignId=\"0\"
+        RoomId=\"137068991\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50070798\" ShipId=\"6546989\" CharacterDesignId=\"46\" CharacterName=\"Gentleman\"
+        Xp=\"0\" Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"50070800\"
+        ShipId=\"6546989\" CharacterDesignId=\"31\" CharacterName=\"Dennis\" Xp=\"29706\"
+        Level=\"17\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168554349,173923708\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\"
+        RoomId=\"137031560\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"50091813\" ShipId=\"6546989\" CharacterDesignId=\"258\" CharacterName=\"First
+        Mate\" Xp=\"0\" Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"50091814\"
+        ShipId=\"6546989\" CharacterDesignId=\"396\" CharacterName=\"Major Rust\"
+        Xp=\"0\" Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"50091831\"
+        ShipId=\"6546989\" CharacterDesignId=\"84\" CharacterName=\"Paul\" Xp=\"0\"
+        Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"50234223\"
+        ShipId=\"6546989\" CharacterDesignId=\"272\" CharacterName=\"Mistycball\"
+        Xp=\"24551\" Level=\"16\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"2\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"1\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168594677,173153266\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"2022-01-19T10:01:09\" TrainingDesignId=\"0\"
+        RoomId=\"137061962\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"51117951\" ShipId=\"6546989\" CharacterDesignId=\"120\" CharacterName=\"Zombie\"
+        Xp=\"18414\" Level=\"14\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"26\" StaminaImprovement=\"0\"
+        Fatigue=\"6\" ItemIds=\"182002467,182001575\" Flags=\"0\" TrainingData=\"\"
+        IsNew=\"false\" BoostLevel=\"0\" TrainingEndDate=\"2022-03-31T13:57:08\" TrainingDesignId=\"0\"
+        RoomId=\"137061962\" DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\"
+        Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character
+        CharacterId=\"51584759\" ShipId=\"6546989\" CharacterDesignId=\"190\" CharacterName=\"Dolores
+        2.0\" Xp=\"21554\" Level=\"15\" OwnerShipId=\"6546989\" HpImprovement=\"42\"
+        PilotImprovement=\"0\" RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\"
+        EngineImprovement=\"0\" AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"6\"
+        Fatigue=\"6\" ItemIds=\"\" Flags=\"1\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"2022-03-31T13:57:13\" TrainingDesignId=\"0\" RoomId=\"137101318\"
+        DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"52801266\"
+        ShipId=\"6546989\" CharacterDesignId=\"21\" CharacterName=\"Roborob\" Xp=\"0\"
+        Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"54060339\"
+        ShipId=\"6546989\" CharacterDesignId=\"273\" CharacterName=\"Ardent Templar\"
+        Xp=\"0\" Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"54953616\"
+        ShipId=\"6546989\" CharacterDesignId=\"405\" CharacterName=\"Penny\" Xp=\"0\"
+        Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"168583492\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\"
+        BoostLevel=\"0\" TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\"
+        DeploymentDate=\"\" AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character><Character CharacterId=\"66237908\"
+        ShipId=\"6546989\" CharacterDesignId=\"461\" CharacterName=\"Apex\" Xp=\"0\"
+        Level=\"1\" OwnerShipId=\"6546989\" HpImprovement=\"0\" PilotImprovement=\"0\"
+        RepairImprovement=\"0\" WeaponImprovement=\"0\" ScienceImprovement=\"0\" EngineImprovement=\"0\"
+        AttackImprovement=\"0\" AbilityImprovement=\"0\" StaminaImprovement=\"0\"
+        Fatigue=\"0\" ItemIds=\"\" Flags=\"0\" TrainingData=\"\" IsNew=\"false\" BoostLevel=\"0\"
+        TrainingEndDate=\"\" TrainingDesignId=\"0\" RoomId=\"0\" DeploymentDate=\"\"
+        AvailableDate=\"1900-01-01T00:00:00\" Stamina=\"0\"><IsPrestiging>false</IsPrestiging><Items
+        /><FrameToAttackOrRepair>0</FrameToAttackOrRepair></Character></Characters><Rooms><Room
+        RoomId=\"151175628\" RoomDesignId=\"301\" ShipId=\"6546989\" RoomStatus=\"Inventory\"
+        Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"146769701\" RoomDesignId=\"223\" ShipId=\"6546989\" RoomStatus=\"Normal\"
+        Row=\"8\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"146135405\" RoomDesignId=\"505\" ShipId=\"6546989\" RoomStatus=\"Inventory\"
+        Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"142002504\" RoomDesignId=\"490\" ShipId=\"6546989\" RoomStatus=\"Normal\"
+        Row=\"6\" Column=\"18\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"168466396\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"142001703\" RoomDesignId=\"217\" ShipId=\"6546989\" RoomStatus=\"Normal\"
+        Row=\"1\" Column=\"7\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"140533036\" RoomDesignId=\"262\" ShipId=\"6546989\" RoomStatus=\"Normal\"
+        Row=\"8\" Column=\"14\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"140346276\" RoomDesignId=\"243\" ShipId=\"6546989\" RoomStatus=\"Normal\"
+        Row=\"8\" Column=\"11\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\" ConstructionStartDate=\"\"
+        UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room
+        RoomId=\"140027402\" RoomDesignId=\"94\" ShipId=\"6546989\" RoomStatus=\"Inventory\"
+        Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\" CapacityUsed=\"0\"
+        ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\" TargetManufactureString=\"\"
+        Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2022-07-10T14:13:39\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"138936978\" RoomDesignId=\"144\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"5x10|42x15\" Priority=\"1\" PowerGenerated=\"0\"
+        ManufactureStartDate=\"2023-01-27T10:38:26\" ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\"
+        CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room RoomId=\"137489257\" RoomDesignId=\"494\"
+        ShipId=\"6546989\" RoomStatus=\"Normal\" Row=\"4\" Column=\"16\" Manufactured=\"0\"
+        RandomSeed=\"1\" CapacityUsed=\"0\" ItemIds=\"168519192\" SalvageString=\"\"
+        ManufactureString=\"\" TargetManufactureString=\"745x20\" Priority=\"1\" PowerGenerated=\"0\"
+        ManufactureStartDate=\"2026-01-20T15:53:15\" ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\"
+        CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room RoomId=\"137392878\" RoomDesignId=\"406\"
+        ShipId=\"6546989\" RoomStatus=\"Normal\" Row=\"8\" Column=\"19\" Manufactured=\"0\"
+        RandomSeed=\"1\" CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137329772\" RoomDesignId=\"250\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137329771\" RoomDesignId=\"3\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137224258\" RoomDesignId=\"299\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"11\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137224257\" RoomDesignId=\"299\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"9\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137224255\" RoomDesignId=\"299\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"9\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137224254\" RoomDesignId=\"299\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"7\" Column=\"9\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137224253\" RoomDesignId=\"299\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"25\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137198374\" RoomDesignId=\"93\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2022-07-10T14:14:01\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137186425\" RoomDesignId=\"483\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"1\" Column=\"13\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"55\" ItemIds=\"168519192\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2024-07-11T10:42:24\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137180222\" RoomDesignId=\"247\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137180221\" RoomDesignId=\"247\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137180220\" RoomDesignId=\"247\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137180219\" RoomDesignId=\"247\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137180218\" RoomDesignId=\"247\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173251\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173249\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"2\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173246\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"2\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173244\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173243\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137173241\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"5\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137104630\" RoomDesignId=\"557\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"18\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"168556501\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137101318\" RoomDesignId=\"18\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"5\" Column=\"22\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"168519192\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137100040\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"17\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137100039\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"14\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137100038\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"13\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137100037\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"16\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137100035\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"17\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137075109\" RoomDesignId=\"285\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137070459\" RoomDesignId=\"151\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"10\" Column=\"18\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137070159\" RoomDesignId=\"144\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"5x15|42x10\" Priority=\"1\" PowerGenerated=\"0\"
+        ManufactureStartDate=\"2023-01-27T10:38:17\" ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\"
+        CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room RoomId=\"137068991\" RoomDesignId=\"126\"
+        ShipId=\"6546989\" RoomStatus=\"Normal\" Row=\"2\" Column=\"22\" Manufactured=\"0\"
+        RandomSeed=\"1\" CapacityUsed=\"0\" ItemIds=\"168466396\" SalvageString=\"\"
+        ManufactureString=\"\" TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\"
+        ManufactureStartDate=\"2026-07-15T05:38:56\" ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\"
+        CurrentSkinKey=\"0\" PreviousSkinKey=\"0\" /><Room RoomId=\"137066934\" RoomDesignId=\"134\"
+        ShipId=\"6546989\" RoomStatus=\"Normal\" Row=\"4\" Column=\"24\" Manufactured=\"0\"
+        RandomSeed=\"1\" CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066932\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"14\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066930\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"23\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066929\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"16\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066927\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"15\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066926\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"13\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066925\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"18\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066924\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"20\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066922\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"22\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066920\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"1\" Column=\"12\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066919\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"10\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066916\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"11\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066915\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"15\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066914\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"19\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066912\" RoomDesignId=\"134\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"10\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137066339\" RoomDesignId=\"226\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137065322\" RoomDesignId=\"20\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"10\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137063414\" RoomDesignId=\"81\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137062254\" RoomDesignId=\"557\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"1\" Column=\"9\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061962\" RoomDesignId=\"185\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"13\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"168576526\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061958\" RoomDesignId=\"94\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"5\" Column=\"6\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2026-07-15T05:38:56\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061897\" RoomDesignId=\"74\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061882\" RoomDesignId=\"77\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"8\" Column=\"23\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061692\" RoomDesignId=\"93\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"5\" Column=\"8\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2026-07-15T05:38:56\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137061687\" RoomDesignId=\"160\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"10\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"100\" ItemIds=\"223811053\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031560\" RoomDesignId=\"126\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"1\" Column=\"15\" Manufactured=\"0\" RandomSeed=\"1\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"2026-07-15T05:38:56\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031548\" RoomDesignId=\"23\" ShipId=\"6546989\"
+        RoomStatus=\"Inventory\" Row=\"0\" Column=\"0\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031547\" RoomDesignId=\"51\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"8\" Column=\"16\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"229223302\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031546\" RoomDesignId=\"557\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"1\" Column=\"18\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031545\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"6\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031544\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"4\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031543\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"3\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031542\" RoomDesignId=\"253\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"5\" Column=\"21\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /><Room RoomId=\"137031541\" RoomDesignId=\"20\" ShipId=\"6546989\"
+        RoomStatus=\"Normal\" Row=\"10\" Column=\"24\" Manufactured=\"0\" RandomSeed=\"2\"
+        CapacityUsed=\"0\" ItemIds=\"\" SalvageString=\"\" ManufactureString=\"\"
+        TargetManufactureString=\"\" Priority=\"1\" PowerGenerated=\"0\" ManufactureStartDate=\"\"
+        ConstructionStartDate=\"\" UpgradeRoomDesignId=\"0\" CurrentSkinKey=\"0\"
+        PreviousSkinKey=\"0\" /></Rooms><Achievements><Achievement AchievementId=\"144068736\"
+        AchievementDesignId=\"39\" UserId=\"8729280\" ProgressValue=\"3\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068737\" AchievementDesignId=\"1\" UserId=\"8729280\"
+        ProgressValue=\"1\" Collected=\"true\" /><Achievement AchievementId=\"144068738\"
+        AchievementDesignId=\"4\" UserId=\"8729280\" ProgressValue=\"2\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068739\" AchievementDesignId=\"7\" UserId=\"8729280\"
+        ProgressValue=\"2\" Collected=\"true\" /><Achievement AchievementId=\"144068740\"
+        AchievementDesignId=\"10\" UserId=\"8729280\" ProgressValue=\"10\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068741\" AchievementDesignId=\"13\" UserId=\"8729280\"
+        ProgressValue=\"10\" Collected=\"true\" /><Achievement AchievementId=\"144068742\"
+        AchievementDesignId=\"16\" UserId=\"8729280\" ProgressValue=\"1\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068743\" AchievementDesignId=\"19\" UserId=\"8729280\"
+        ProgressValue=\"1402\" Collected=\"true\" /><Achievement AchievementId=\"144068744\"
+        AchievementDesignId=\"22\" UserId=\"8729280\" ProgressValue=\"2\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068745\" AchievementDesignId=\"26\" UserId=\"8729280\"
+        ProgressValue=\"1\" Collected=\"true\" /><Achievement AchievementId=\"144068746\"
+        AchievementDesignId=\"29\" UserId=\"8729280\" ProgressValue=\"10\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068747\" AchievementDesignId=\"48\" UserId=\"8729280\"
+        ProgressValue=\"1760\" Collected=\"false\" /><Achievement AchievementId=\"144068748\"
+        AchievementDesignId=\"53\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Achievement AchievementId=\"144068749\" AchievementDesignId=\"93\" UserId=\"8729280\"
+        ProgressValue=\"10\" Collected=\"true\" /><Achievement AchievementId=\"144068750\"
+        AchievementDesignId=\"96\" UserId=\"8729280\" ProgressValue=\"5\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068751\" AchievementDesignId=\"122\" UserId=\"8729280\"
+        ProgressValue=\"1\" Collected=\"true\" /><Achievement AchievementId=\"144068752\"
+        AchievementDesignId=\"133\" UserId=\"8729280\" ProgressValue=\"5\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068753\" AchievementDesignId=\"179\" UserId=\"8729280\"
+        ProgressValue=\"2\" Collected=\"true\" /><Achievement AchievementId=\"144068754\"
+        AchievementDesignId=\"182\" UserId=\"8729280\" ProgressValue=\"1\" Collected=\"true\"
+        /><Achievement AchievementId=\"144068797\" AchievementDesignId=\"8\" UserId=\"8729280\"
+        ProgressValue=\"5\" Collected=\"true\" /><Achievement AchievementId=\"144104561\"
+        AchievementDesignId=\"5\" UserId=\"8729280\" ProgressValue=\"5\" Collected=\"true\"
+        /><Achievement AchievementId=\"144104563\" AchievementDesignId=\"183\" UserId=\"8729280\"
+        ProgressValue=\"6\" Collected=\"true\" /><Achievement AchievementId=\"144104779\"
+        AchievementDesignId=\"24\" UserId=\"8729280\" ProgressValue=\"2\" Collected=\"true\"
+        /><Achievement AchievementId=\"144104782\" AchievementDesignId=\"25\" UserId=\"8729280\"
+        ProgressValue=\"3\" Collected=\"true\" /><Achievement AchievementId=\"144104850\"
+        AchievementDesignId=\"2\" UserId=\"8729280\" ProgressValue=\"3\" Collected=\"true\"
+        /><Achievement AchievementId=\"144104873\" AchievementDesignId=\"27\" UserId=\"8729280\"
+        ProgressValue=\"2\" Collected=\"true\" /><Achievement AchievementId=\"144104973\"
+        AchievementDesignId=\"180\" UserId=\"8729280\" ProgressValue=\"4\" Collected=\"true\"
+        /><Achievement AchievementId=\"144104975\" AchievementDesignId=\"28\" UserId=\"8729280\"
+        ProgressValue=\"3\" Collected=\"true\" /><Achievement AchievementId=\"144105485\"
+        AchievementDesignId=\"181\" UserId=\"8729280\" ProgressValue=\"2\" Collected=\"true\"
+        /><Achievement AchievementId=\"144105525\" AchievementDesignId=\"3\" UserId=\"8729280\"
+        ProgressValue=\"9\" Collected=\"true\" /><Achievement AchievementId=\"144106966\"
+        AchievementDesignId=\"184\" UserId=\"8729280\" ProgressValue=\"1\" Collected=\"true\"
+        /><Achievement AchievementId=\"144109482\" AchievementDesignId=\"9\" UserId=\"8729280\"
+        ProgressValue=\"12\" Collected=\"true\" /><Achievement AchievementId=\"144109484\"
+        AchievementDesignId=\"34\" UserId=\"8729280\" ProgressValue=\"25\" Collected=\"true\"
+        /><Achievement AchievementId=\"144111472\" AchievementDesignId=\"11\" UserId=\"8729280\"
+        ProgressValue=\"83\" Collected=\"false\" /><Achievement AchievementId=\"144115445\"
+        AchievementDesignId=\"17\" UserId=\"8729280\" ProgressValue=\"7\" Collected=\"false\"
+        /><Achievement AchievementId=\"144121231\" AchievementDesignId=\"123\" UserId=\"8729280\"
+        ProgressValue=\"3\" Collected=\"true\" /><Achievement AchievementId=\"144121233\"
+        AchievementDesignId=\"124\" UserId=\"8729280\" ProgressValue=\"5\" Collected=\"true\"
+        /><Achievement AchievementId=\"144124010\" AchievementDesignId=\"134\" UserId=\"8729280\"
+        ProgressValue=\"14\" Collected=\"false\" /><Achievement AchievementId=\"144148970\"
+        AchievementDesignId=\"6\" UserId=\"8729280\" ProgressValue=\"5\" Collected=\"false\"
+        /><Achievement AchievementId=\"144253047\" AchievementDesignId=\"94\" UserId=\"8729280\"
+        ProgressValue=\"29\" Collected=\"false\" /><Achievement AchievementId=\"144264733\"
+        AchievementDesignId=\"97\" UserId=\"8729280\" ProgressValue=\"25\" Collected=\"true\"
+        /><Achievement AchievementId=\"144264807\" AchievementDesignId=\"35\" UserId=\"8729280\"
+        ProgressValue=\"42\" Collected=\"false\" /><Achievement AchievementId=\"146312039\"
+        AchievementDesignId=\"20\" UserId=\"8729280\" ProgressValue=\"1908\" Collected=\"false\"
+        /><Achievement AchievementId=\"146312040\" AchievementDesignId=\"14\" UserId=\"8729280\"
+        ProgressValue=\"200\" Collected=\"true\" /><Achievement AchievementId=\"146937737\"
+        AchievementDesignId=\"98\" UserId=\"8729280\" ProgressValue=\"74\" Collected=\"false\"
+        /><Achievement AchievementId=\"154222841\" AchievementDesignId=\"15\" UserId=\"8729280\"
+        ProgressValue=\"816\" Collected=\"false\" /><Achievement AchievementId=\"160625230\"
+        AchievementDesignId=\"60\" UserId=\"8729280\" ProgressValue=\"1\" Collected=\"true\"
+        /><Achievement AchievementId=\"218631122\" AchievementDesignId=\"261\" UserId=\"8729280\"
+        ProgressValue=\"1\" Collected=\"false\" /><Achievement AchievementId=\"218631125\"
+        AchievementDesignId=\"248\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Achievement AchievementId=\"218631126\" AchievementDesignId=\"249\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Achievement AchievementId=\"218631127\"
+        AchievementDesignId=\"250\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Achievement AchievementId=\"218631128\" AchievementDesignId=\"253\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Achievement AchievementId=\"218631129\"
+        AchievementDesignId=\"254\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Achievement AchievementId=\"218631130\" AchievementDesignId=\"255\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Achievement AchievementId=\"218631131\"
+        AchievementDesignId=\"256\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Achievement AchievementId=\"218631132\" AchievementDesignId=\"257\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /></Achievements><Tasks><Task TaskId=\"455235422\"
+        TaskDesignId=\"17197\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235423\" TaskDesignId=\"17198\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235424\" TaskDesignId=\"17199\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235425\" TaskDesignId=\"17200\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235426\"
+        TaskDesignId=\"17202\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235427\" TaskDesignId=\"17203\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235428\" TaskDesignId=\"17204\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235429\" TaskDesignId=\"17156\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235430\"
+        TaskDesignId=\"17118\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235431\" TaskDesignId=\"17119\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235432\" TaskDesignId=\"17120\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235433\" TaskDesignId=\"17121\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235434\"
+        TaskDesignId=\"17122\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235435\" TaskDesignId=\"17123\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235436\" TaskDesignId=\"17112\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235437\" TaskDesignId=\"17113\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235438\"
+        TaskDesignId=\"17114\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235439\" TaskDesignId=\"17115\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235440\" TaskDesignId=\"17116\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235441\" TaskDesignId=\"17117\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235442\"
+        TaskDesignId=\"17106\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235443\" TaskDesignId=\"17107\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235444\" TaskDesignId=\"17108\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235445\" TaskDesignId=\"17109\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235446\"
+        TaskDesignId=\"17110\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235447\" TaskDesignId=\"17111\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235448\" TaskDesignId=\"17100\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235449\" TaskDesignId=\"17101\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235450\"
+        TaskDesignId=\"17102\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235451\" TaskDesignId=\"17103\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235452\" TaskDesignId=\"17104\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235453\" TaskDesignId=\"17105\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235454\"
+        TaskDesignId=\"17094\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235455\" TaskDesignId=\"17095\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235456\" TaskDesignId=\"17096\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235457\" TaskDesignId=\"17097\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235458\"
+        TaskDesignId=\"17098\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235459\" TaskDesignId=\"17099\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235460\" TaskDesignId=\"17088\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235461\" TaskDesignId=\"17089\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235462\"
+        TaskDesignId=\"17090\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235463\" TaskDesignId=\"17091\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235464\" TaskDesignId=\"17092\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235465\" TaskDesignId=\"17093\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235466\"
+        TaskDesignId=\"17082\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235467\" TaskDesignId=\"17083\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235468\" TaskDesignId=\"17084\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235469\" TaskDesignId=\"17085\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235470\"
+        TaskDesignId=\"17086\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235471\" TaskDesignId=\"17087\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235472\" TaskDesignId=\"17076\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235473\" TaskDesignId=\"17077\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235474\"
+        TaskDesignId=\"17078\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455235475\" TaskDesignId=\"17079\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455235476\" TaskDesignId=\"17080\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455235477\" TaskDesignId=\"17081\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455657288\"
+        TaskDesignId=\"17230\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455657289\" TaskDesignId=\"17232\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455657290\" TaskDesignId=\"17233\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455657291\" TaskDesignId=\"17235\"
+        UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\" /><Task TaskId=\"455657292\"
+        TaskDesignId=\"17236\" UserId=\"8729280\" ProgressValue=\"0\" Collected=\"false\"
+        /><Task TaskId=\"455657293\" TaskDesignId=\"17237\" UserId=\"8729280\" ProgressValue=\"0\"
+        Collected=\"false\" /><Task TaskId=\"455657294\" TaskDesignId=\"17213\" UserId=\"8729280\"
+        ProgressValue=\"0\" Collected=\"false\" /></Tasks><UserStarSystems><UserStarSystem
+        UserStarSystemId=\"3073809\" UserId=\"8729280\" StarSystemId=\"3\" ExplorationPercentage=\"100\"
+        /><UserStarSystem UserStarSystemId=\"3073834\" UserId=\"8729280\" StarSystemId=\"4\"
+        ExplorationPercentage=\"100\" /><UserStarSystem UserStarSystemId=\"3073517\"
+        UserId=\"8729280\" StarSystemId=\"5\" ExplorationPercentage=\"100\" /><UserStarSystem
+        UserStarSystemId=\"3075688\" UserId=\"8729280\" StarSystemId=\"6\" ExplorationPercentage=\"100\"
+        /><UserStarSystem UserStarSystemId=\"3075705\" UserId=\"8729280\" StarSystemId=\"7\"
+        ExplorationPercentage=\"100\" /><UserStarSystem UserStarSystemId=\"3072353\"
+        UserId=\"8729280\" StarSystemId=\"9\" ExplorationPercentage=\"100\" /><UserStarSystem
+        UserStarSystemId=\"3072340\" UserId=\"8729280\" StarSystemId=\"10\" ExplorationPercentage=\"100\"
+        /><UserStarSystem UserStarSystemId=\"3068385\" UserId=\"8729280\" StarSystemId=\"11\"
+        ExplorationPercentage=\"100\" /><UserStarSystem UserStarSystemId=\"3073837\"
+        UserId=\"8729280\" StarSystemId=\"17\" ExplorationPercentage=\"100\" /><UserStarSystem
+        UserStarSystemId=\"3324457\" UserId=\"8729280\" StarSystemId=\"18\" ExplorationPercentage=\"100\"
+        /><UserStarSystem UserStarSystemId=\"3324246\" UserId=\"8729280\" StarSystemId=\"19\"
+        ExplorationPercentage=\"100\" /><UserStarSystem UserStarSystemId=\"3323924\"
+        UserId=\"8729280\" StarSystemId=\"20\" ExplorationPercentage=\"100\" /><UserStarSystem
+        UserStarSystemId=\"3072842\" UserId=\"8729280\" StarSystemId=\"35\" ExplorationPercentage=\"100\"
+        /><UserStarSystem UserStarSystemId=\"3073617\" UserId=\"8729280\" StarSystemId=\"53\"
+        ExplorationPercentage=\"100\" /></UserStarSystems><StarSystemMarkers><StarSystemMarker
+        StarSystemMarkerId=\"7805174\" StarSystemId=\"39\" FromStarSystemId=\"39\"
+        NextStarSystemId=\"39\" OriginStarSystemId=\"39\" OriginNextStarSystemId=\"39\"
+        MarkerFlags=\"6\" MarkerType=\"MissionObjective\" CostString=\"\" RewardString=\"\"
+        IsCollected=\"false\" IsRepeatable=\"false\" Title=\"\" TravelTimeMultiplier=\"0\"
+        PurchaseFlags=\"0\" Metadata=\"\" ShipIds=\"\" MovementType=\"None\" TravelCoolDownTime=\"0\"
+        CompletionOriginalValue=\"0\" CompletionValueType=\"None\" CompletionRemainingValue=\"0\"
+        RequirementString=\"\" CostType=\"None\" Description=\"\" EngagementId=\"0\"
+        StarSystemArrivalDate=\"2021-11-24T10:17:09\" ExpiryDate=\"2055-07-22T00:00:00\"
+        UserId=\"8729280\" MissionDesignId=\"194\" CompletionDate=\"2055-07-22T00:00:00\"
+        SpriteId=\"12838\" MissionEventId=\"0\" MarkerDesignId=\"0\" ShipId=\"0\"
+        TravelStartDate=\"2022-08-22T07:04:33\" LastUpdateDate=\"2022-08-22T07:06:13\"
+        StarSystemMarkerGeneratorId=\"0\" /><StarSystemMarker StarSystemMarkerId=\"15267489\"
+        StarSystemId=\"19\" FromStarSystemId=\"19\" NextStarSystemId=\"19\" OriginStarSystemId=\"19\"
+        OriginNextStarSystemId=\"19\" MarkerFlags=\"42\" MarkerType=\"Mining\" CostString=\"item:781x1\"
+        RewardString=\"item:781x1|item:103x1\" IsCollected=\"false\" IsRepeatable=\"true\"
+        Title=\"Mining Drone\" TravelTimeMultiplier=\"1\" PurchaseFlags=\"0\" Metadata=\"\"
+        ShipIds=\"\" MovementType=\"None\" TravelCoolDownTime=\"0\" CompletionOriginalValue=\"1\"
+        CompletionValueType=\"Wins\" CompletionRemainingValue=\"1\" RequirementString=\"\"
+        CostType=\"None\" Description=\"\" EngagementId=\"0\" StarSystemArrivalDate=\"2022-10-04T09:16:26\"
+        ExpiryDate=\"2055-07-22T00:00:00\" UserId=\"8729280\" MissionDesignId=\"301\"
+        CompletionDate=\"2022-10-04T21:16:26\" SpriteId=\"12840\" MissionEventId=\"1661\"
+        MarkerDesignId=\"0\" ShipId=\"0\" TravelStartDate=\"2022-10-04T09:16:26\"
+        LastUpdateDate=\"2022-10-04T09:16:26\" StarSystemMarkerGeneratorId=\"0\" /><StarSystemMarker
+        StarSystemMarkerId=\"94655181\" StarSystemId=\"32\" FromStarSystemId=\"26\"
+        NextStarSystemId=\"40\" OriginStarSystemId=\"26\" OriginNextStarSystemId=\"40\"
+        MarkerFlags=\"74\" MarkerType=\"NPCShip\" CostString=\"\" RewardString=\"item:778x12|item:741x2\"
+        IsCollected=\"false\" IsRepeatable=\"false\" Title=\"Outbreak\" TravelTimeMultiplier=\"300\"
+        PurchaseFlags=\"0\" Metadata=\"\" ShipIds=\"234,235,236\" MovementType=\"TwoWay\"
+        TravelCoolDownTime=\"0\" CompletionOriginalValue=\"1\" CompletionValueType=\"Wins\"
+        CompletionRemainingValue=\"1\" RequirementString=\"\" CostType=\"None\" Description=\"The
+        forerunner of a Visiri migratory fleet, best discouraged from straying too
+        close to any populated worlds.\" EngagementId=\"0\" StarSystemArrivalDate=\"2026-07-19T12:33:55\"
+        ExpiryDate=\"2026-07-19T17:42:39\" UserId=\"8729280\" MissionDesignId=\"0\"
+        CompletionDate=\"2000-01-01T00:00:00\" SpriteId=\"19819\" MissionEventId=\"0\"
+        MarkerDesignId=\"25\" ShipId=\"236\" TravelStartDate=\"2026-07-19T12:26:25\"
+        LastUpdateDate=\"2026-07-19T12:29:03\" StarSystemMarkerGeneratorId=\"25\"
+        /><StarSystemMarker StarSystemMarkerId=\"94654449\" StarSystemId=\"20\" FromStarSystemId=\"30\"
+        NextStarSystemId=\"7\" OriginStarSystemId=\"30\" OriginNextStarSystemId=\"7\"
+        MarkerFlags=\"73\" MarkerType=\"MerchantShip\" CostString=\"item:741x8|item:741x14|item:742x15|item:778x266|item:743x13|item:744x5|item:744x10\"
+        RewardString=\"item:820|item:235|item:1241|item:114|item:930|item:222|item:1177\"
+        IsCollected=\"false\" IsRepeatable=\"false\" Title=\"RoboTrade Collective\"
+        TravelTimeMultiplier=\"300\" PurchaseFlags=\"0\" Metadata=\"{&quot;BackgroundSpriteId&quot;:&quot;18212&quot;,
+        &quot;TitleImageSpriteId&quot;:&quot;18213&quot;}\" ShipIds=\"\" MovementType=\"Wander\"
+        TravelCoolDownTime=\"0\" CompletionOriginalValue=\"0\" CompletionValueType=\"None\"
+        CompletionRemainingValue=\"0\" RequirementString=\"\" CostType=\"None\" Description=\"An
+        automated Vendorship marked 'RoboTrade and Associates'. Be quick! Stock is
+        updated regularly across its voyage.\" EngagementId=\"0\" StarSystemArrivalDate=\"2026-07-19T12:37:00\"
+        ExpiryDate=\"2026-07-19T23:59:55\" UserId=\"0\" MissionDesignId=\"0\" CompletionDate=\"2000-01-01T00:00:00\"
+        SpriteId=\"18117\" MissionEventId=\"0\" MarkerDesignId=\"9\" ShipId=\"0\"
+        TravelStartDate=\"2026-07-19T12:26:30\" LastUpdateDate=\"2026-07-19T12:01:28\"
+        StarSystemMarkerGeneratorId=\"9\" /></StarSystemMarkers><UserMarkers><UserMarker
+        UserMarkerId=\"31022309\" UserId=\"8729280\" StarSystemMarkerId=\"94654449\"
+        PurchaseFlags=\"0\" MarkerProgressValue=\"0\" IsCollected=\"false\" LastUpdateDate=\"2026-07-19T12:29:03\"
+        /></UserMarkers><MissionEvents><MissionEvent MissionEventId=\"2\" MissionDesignId=\"1\"
+        PercentWeight=\"33\" StartDescription=\"Get Ready!\" EndDescription=\"\" TimeLimit=\"180\"
+        MissionEventType=\"Battle\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"mineral:200\" RequirementString=\"\" CostString=\"\" FunctionString=\"\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"146\" BackgroundSpriteId=\"1284\" /><MissionEvent MissionEventId=\"131\"
+        MissionDesignId=\"53\" PercentWeight=\"30\" StartDescription=\"A smile cracks
+        your face; this will make a fine offering for your return home.\" EndDescription=\"This
+        ship is... not what you were expecting. The strange crystalline structures
+        throb and distort, defying your attempts to harvest them.|In mounting discomfort
+        you hurriedly raid the ship's holds, keen to put the strange object behind
+        you.|Homeworld will need to hear of this.\" TimeLimit=\"180\" MissionEventType=\"Battle\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"mineral:500\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=11,markerType=MissionObjective,markerFlags=6,missionDesignId=54,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"18\" BackgroundSpriteId=\"1284\" /><MissionEvent MissionEventId=\"20\"
+        MissionDesignId=\"10\" PercentWeight=\"100\" StartDescription=\"The start
+        of your new life nearly becomes the end, as a marauder tries to take advantage
+        of your inexperience. Use your new-found skills to see them off!\" EndDescription=\"You
+        can find more captains to battle for rewards by selecting the PVP button on
+        the galaxy map.\" TimeLimit=\"181\" MissionEventType=\"Battle\" EventXmlString=\"\"
+        Title=\"\" IsSinglePlay=\"true\" RewardString=\"mineral:600|gas:300\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\"
+        ParentMissionEventId=\"0\" BackgroundId=\"0\" ShipId=\"445\" BackgroundSpriteId=\"0\"
+        /><MissionEvent MissionEventId=\"516\" MissionDesignId=\"20\" PercentWeight=\"50\"
+        StartDescription=\"[3009]Prof. Brenda: Don't worry, you won't have to give
+        up your pilot's licence. After all, trying to ground several billion academy
+        graduates would probably start a civil war.|[3009]Prof. Brenda: Instead, we're
+        offering a quick and easy crash course, to familiarize you with all the stuff
+        the academy should have taught you but probably didn't.|[3009]Prof. Brenda:
+        Best of all, we won't charge you a single starcent! You can contact me through
+        your mission interface whenever you're ready to begin.\" EndDescription=\"\"
+        TimeLimit=\"0\" MissionEventType=\"Story\" EventXmlString=\"\" Title=\"That's
+        terrible!\" IsSinglePlay=\"true\" RewardString=\"\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=21,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"32\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"32\"
+        MissionDesignId=\"20\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: A bit of bad news, I'm afraid: One of our teacher AIs blew a fuse,
+        and has been giving straight As to every student for the past decade.|[3009]
+        Prof. Brenda: Long story short, your current diploma of graduation is now
+        very slightly less than worthless.\" EndDescription=\"\" TimeLimit=\"180\"
+        MissionEventType=\"Story\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"\" RequirementString=\"\" CostString=\"\" FunctionString=\"\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"33\"
+        MissionDesignId=\"21\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: The Federation is a collection of star systems claimed by the united
+        governments of Earth, and policed by the powerful Federation navy.|[3009]Prof.
+        Brenda: The Federation do a pretty good job of guarding their borders, but
+        their constant expansion tends to make them unpopular with other species.|[3009]Prof.
+        Brenda: As you'd expect, a lot of folks get pretty upset when the Federation
+        decides to colonize a world they already live on.|[3009]Prof. Brenda: The
+        Federation is run by the admiralty board, experts in combat and logistics.
+        Unfortunately they seldom agree on things, and Federation captains often come
+        to blows over conflicting orders.|[3009]Prof. Brenda: Now, let's examine the
+        combat efficiency of the average federation enforcer. First hand.\" EndDescription=\"[3009]Prof.
+        Brenda: Well done captain, I'm giving you a pass for this lesson. See you
+        next time!\" TimeLimit=\"180\" MissionEventType=\"Battle\" EventXmlString=\"\"
+        Title=\"\" IsSinglePlay=\"true\" RewardString=\"mineral:1500|gas:700\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=22,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"126\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"34\"
+        MissionDesignId=\"22\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: Viewed as a whole, the pirates represent the strongest military force
+        in the galaxy, with an unrivaled amount of ships and natural resources.|[3009]Prof.
+        Brenda: Fortunately for everyone, they're far from unified. More than 100
+        distinct nations exist in pirate space, constantly squabbling for power and
+        prestige.|[3009]Prof. Brenda: Although regarded as crude, the pirates show
+        strength and bravery in the face of adversity, and in fact insulate Federation
+        space against much of the alien threats it may otherwise face.|[3009]Prof.
+        Brenda: Fascinating stuff, no? Now, let's get a good look at that famous bravery.
+        Good luck!\" EndDescription=\"[3009]Prof. Brenda: Those third gen fusion drives
+        sure do make a big boom, huh? Great work today, captain!\" TimeLimit=\"180\"
+        MissionEventType=\"Battle\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"mineral:2000|gas:1000\" RequirementString=\"\" CostString=\"\"
+        FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=23,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"127\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"35\"
+        MissionDesignId=\"23\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: I'm gonna be straight with you, captain. We honestly don't know much
+        at all about them. And neither, it seems, do they.|[3009]Prof. Brenda: Like
+        most of the major races, Qtarians possess a basically human physiology and
+        psychology. Unfortunately, a compulsive drive to recycle means they have neither
+        history books or fossil records.|[3009]Prof. Brenda: A series of ruins spread
+        across the galaxy indicate that Qtarians have possessed FTL technology for
+        almost half a million years. What became of this expansive empire can only
+        be guessed at.|[3009]Prof. Brenda: A network of ancient machines-- too exotic
+        for modern science to comprehend-- grants every Qtarian a psychic link to
+        others of their race. Human scientists have likened it to a colony of ants,
+        although never where Qtarians might hear them.|[3009]Prof. Brenda: Their ships
+        and weapons are often a patchwork of repurposed odds and ends, but nonetheless
+        show the ingenuity of design their race is famous for. Let's check it out!\"
+        EndDescription=\"[3009]Prof. Brenda: You're flying through these lessons,
+        captain. I wish all my students were this receptive.\" TimeLimit=\"180\" MissionEventType=\"Battle\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:154x1|mineral:2000|gas:1000\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=24,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"128\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"36\"
+        MissionDesignId=\"24\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: These associations are not undeserved, but they don't show the whole
+        picture. The first thing one should know is that the Visiri are probably not
+        natural in origin.|[3009]Prof. Brenda: What we refer to as Visiri actually
+        encompasses several related but distinct species, bound in tight symbiosis.
+        While every species has some relationships like that, the degree of specialization
+        in the Visiri has raised eyebrows.|[3009]Prof. Brenda: Now, we don't know
+        who made them, or when, but it seems obvious they're born warriors, perhaps
+        built for some long-forgotten conflict.|[3009]Prof. Brenda: I don't know about
+        you, but that makes me want to cut them some slack. After all, what could
+        be a sadder fate than to outlive one's purpose?|[3009]Prof. Brenda: Ah, enough
+        explaining. Some things are better in demonstration.\" EndDescription=\"[3009]Prof.
+        Brenda: Well done captain. I'm not sure how much more I've got to teach you.\"
+        TimeLimit=\"180\" MissionEventType=\"Battle\" EventXmlString=\"\" Title=\"\"
+        IsSinglePlay=\"true\" RewardString=\"mineral:3000|gas:1500\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=25,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"124\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"37\"
+        MissionDesignId=\"25\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: Earth's oldest surviving records, as far back as the first lunar landings,
+        show reports of Gray ship sightings. Unfortunately, the first extraterrestrial
+        species known to humanity is also arguably the worst.|[3009]Prof. Brenda:
+        Although the Grays are unquestionably intelligent, they show none of the drive
+        to communicate and understand that makes cross-cultural diplomacy possible.|[3009]Prof.
+        Brenda: To our knowledge, no race has ever had a meaningful interaction with
+        the Grays, beyond violence or abduction. To this day, we don't know if they're
+        even capable of speech.[3009]Prof. Brenda: In spite of their universal hostility
+        to other life, their ship designs show a great attention to detail, and even
+        what other races might classify as passion. Observe!\" EndDescription=\"[3009]Prof.
+        Brenda: Ah, what I'd give to know what was going on in their heads. Anyway,
+        good job, captain. You pass once more!\" TimeLimit=\"180\" MissionEventType=\"Battle\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"mineral:3500|gas:2000\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=26,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"51\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"38\"
+        MissionDesignId=\"26\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: Of course, there's way too many to cover in a month, let alone six
+        text boxes, but I'll try to touch on the more common specimens.|[3009]Prof.
+        Brenda: One that you've probably already come across would be the robots.
+        We're not sure why, but it seems like every time anyone makes a mechanical
+        race, they try to wipe out all organic life. At this point it's more or less
+        just a seasonal hazard, like mosquitoes.|[3009]Prof. Brenda: Beyond that,
+        there's really no limit to what you'll find out there, from the  mighty Ardents
+        to the insectile Roaches, the sessile Liffim to the now-extinct Draconians.|[3009]Prof.
+        Brenda: There's the Oobranids, the Audemedian axis, the Children of the Torch,
+        the Eaten Alliance, and of course the unpronounceable Dominion of Ggggg. That's
+        just to name a few; we're finding more every day.|[3009]Prof. Brenda: No practical
+        test today, captain, just prepare for the final exam. I'll see you then.\"
+        EndDescription=\"\" TimeLimit=\"180\" MissionEventType=\"Story\" EventXmlString=\"\"
+        Title=\"\" IsSinglePlay=\"true\" RewardString=\"mineral:5000|gas:3000\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=27,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"39\"
+        MissionDesignId=\"27\" PercentWeight=\"100\" StartDescription=\"[3009]Prof.
+        Brenda: To celebrate the conclusion of our lessons, I have a gift for you.
+        You know that final exam I told you about? It doesn't really exist.|[3009]Prof.
+        Brenda: It gives me great personal pleasure to announce that you have passed
+        my course with flying colours. Congratulations on earning your diploma, this
+        time without the aid of a malfunctioning AI.|[3009]Prof. Brenda: Look, I can't
+        really stay and chat. I've got a lot more students to take care of, but. Um.|[3009]Prof.
+        Brenda: If you ever find yourself in the neighbourhood, I'd love to buy you
+        a drink. Good luck, captain. And goodbye.\" EndDescription=\"\" TimeLimit=\"180\"
+        MissionEventType=\"Story\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"item:353x1\" RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=211,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"356\"
+        MissionDesignId=\"81\" PercentWeight=\"20\" StartDescription=\"You back horse
+        11! Why? Nobody knows.|As the race starts you notice your horse is farting
+        with each gallop.|Incredibly the other horses are attracted to the smell and
+        submit to your horse.|Your horse wins by default! Disgusting!\" EndDescription=\"You
+        happily collect the prize from the bookie.\" TimeLimit=\"0\" MissionEventType=\"Story\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:222x1\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"\" RequirementDescription=\"\"
+        Flags=\"0\" ParentMissionEventId=\"301\" BackgroundId=\"0\" ShipId=\"0\" BackgroundSpriteId=\"0\"
+        /><MissionEvent MissionEventId=\"1205\" MissionDesignId=\"211\" PercentWeight=\"50\"
+        StartDescription=\"[12387]Prof. Brenda: Now that you've proven your basic
+        proficiency as a star captain, I thought it was time for a follow-up lesson.|[12387]Prof.
+        Brenda: A successful captain requires good ship AI; you can't be everywhere
+        at once, so it's important that your ship and crew can work effectively without
+        you.|[12387]Prof. Brenda: Good AI comes largely from trial and error, but
+        AI chips can be a good starting place for any captains unfamiliar with programming
+        ship AI.|[12387]Prof. Brenda: I've prepared a combat simulation for you, using
+        the AI chips for the enemy ship. Be sure to pay careful attention to the crew's
+        behaviours!\" EndDescription=\"[12387]Prof. Brenda: Note the defensive focus,
+        and how well it can be augmented with some simple AI commands.|[12387]Prof.
+        Brenda: Have a play around with that one, and come back when you're ready
+        to see more!\" TimeLimit=\"180\" MissionEventType=\"Battle\" EventXmlString=\"\"
+        Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:751x1\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=215,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"97\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"1234\"
+        MissionDesignId=\"215\" PercentWeight=\"50\" StartDescription=\"[12387]Prof.
+        Brenda: This next ship has AI focusing on more aggressive tactics. Now, these
+        are real weapons, so try not to die horribly!|[userprofile]You: ...Wait, what!?\"
+        EndDescription=\"[12387]Prof. Brenda: Remember that it's inefficient to have
+        all your crew focus on weapons only. A balanced ship has several roles for
+        the crew, and a different AI setup for each!\" TimeLimit=\"180\" MissionEventType=\"Battle\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:753x1\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=5,markerType=MissionObjective,markerFlags=6,missionDesignId=216,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\"
+        ShipId=\"98\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"1235\"
+        MissionDesignId=\"216\" PercentWeight=\"50\" StartDescription=\"[12387]Prof.
+        Brenda: This last ship has been programmed to run boarder tactics; teleporting
+        your crew to wreak havoc on the enemy ship.|[12387]Prof. Brenda: It's a risky
+        strategy, but it can be highly rewarding with the right AI setup. See for
+        yourself!\" EndDescription=\"[12387]Prof. Brenda: Now you see the benefits
+        of a robust AI, here are some chips for you to play around with. Good luck,
+        and don't be scared to experiment!\" TimeLimit=\"180\" MissionEventType=\"Battle\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:752x1|item:749x1\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"\" RequirementDescription=\"\"
+        Flags=\"0\" ParentMissionEventId=\"0\" BackgroundId=\"0\" ShipId=\"99\" BackgroundSpriteId=\"0\"
+        /><MissionEvent MissionEventId=\"111\" MissionDesignId=\"36\" PercentWeight=\"100\"
+        StartDescription=\"[userProfile]You: Sure, hop aboard!|[5602]Dolores: Thanks
+        for going out on a limb for me, Captain! You're the best!|[5602]Dolores: You
+        might need to give me a leg up though; I'm a bit short-handed right now.\"
+        EndDescription=\"\" TimeLimit=\"0\" MissionEventType=\"Story\" EventXmlString=\"\"
+        Title=\"Help her onboard\" IsSinglePlay=\"true\" RewardString=\"item:220x1\"
+        RequirementString=\"( item:220 + item:233 + character:190 ) &lt; 1\" CostString=\"\"
+        FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"110\"
+        BackgroundId=\"17\" ShipId=\"0\" BackgroundSpriteId=\"469\" /><MissionEvent
+        MissionEventId=\"110\" MissionDesignId=\"36\" PercentWeight=\"100\" StartDescription=\"[5602]Dolores:
+        I'm not exactly spoiled for choices. I think I'll probably just float here
+        until my batteries run out. Unless...|[5602]Dolores: Do you think I could
+        come with you?\" EndDescription=\"\" TimeLimit=\"0\" MissionEventType=\"Story\"
+        EventXmlString=\"\" Title=\"Ask about her plans\" IsSinglePlay=\"true\" RewardString=\"\"
+        RequirementString=\"\" CostString=\"\" FunctionString=\"\" RequirementDescription=\"\"
+        Flags=\"0\" ParentMissionEventId=\"109\" BackgroundId=\"17\" ShipId=\"0\"
+        BackgroundSpriteId=\"469\" /><MissionEvent MissionEventId=\"109\" MissionDesignId=\"36\"
+        PercentWeight=\"100\" StartDescription=\"[5602]Dolores: Hello? Is anybody
+        out there?|[5602]Dolores: I'm Dolores, a tutorial synth onboard the mining
+        ship Nostradamus. Three weeks ago, a raider attack downed my ship, and I've
+        been drifting here ever since.|[5602]Dolores: To add insult to injury, I've
+        been --Uh, disembodied, as you can probably tell.\" EndDescription=\"\" TimeLimit=\"0\"
+        MissionEventType=\"Story\" EventXmlString=\"\" Title=\"Attempt to communicate.\"
+        IsSinglePlay=\"true\" RewardString=\"\" RequirementString=\"\" CostString=\"\"
+        FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"107\"
+        BackgroundId=\"17\" ShipId=\"0\" BackgroundSpriteId=\"469\" /><MissionEvent
+        MissionEventId=\"107\" MissionDesignId=\"36\" PercentWeight=\"100\" StartDescription=\"Moving
+        into visual range, you find the decapitated head of a Dolores-model synthetic.|Although
+        its body is completely missing, it still appears to be in relatively good
+        shape. A closer scan shows electrical activity; this synth is still operational!\"
+        EndDescription=\"\" TimeLimit=\"0\" MissionEventType=\"Story\" EventXmlString=\"\"
+        Title=\"Close in on the Object\" IsSinglePlay=\"true\" RewardString=\"\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\"
+        ParentMissionEventId=\"106\" BackgroundId=\"17\" ShipId=\"0\" BackgroundSpriteId=\"469\"
+        /><MissionEvent MissionEventId=\"106\" MissionDesignId=\"36\" PercentWeight=\"100\"
+        StartDescription=\"At a distance, the object appears to be nothing more than
+        space trash. Is it worth getting a closer look, captain?\" EndDescription=\"\"
+        TimeLimit=\"0\" MissionEventType=\"Story\" EventXmlString=\"\" Title=\"\"
+        IsSinglePlay=\"true\" RewardString=\"\" RequirementString=\"\" CostString=\"\"
+        FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\"
+        BackgroundId=\"17\" ShipId=\"0\" BackgroundSpriteId=\"469\" /><MissionEvent
+        MissionEventId=\"1303\" MissionDesignId=\"241\" PercentWeight=\"50\" StartDescription=\"[10824]Prospector:
+        Lemme tell you, it's all about mining! Trillions of folk across the galaxy
+        need houses and cars, and houses and cars need building materials.|[10824]Prospector:
+        Take my mining drone, and go find your fortune! Just leave this baby on a
+        likely looking planet for a few hours, and it'll automatically sniff out any
+        useful materials for you! ...Most of the time anyway.|[10824]Prospector: I
+        don't think I'll be needing it anymore; reckon it's time for me to retire.
+        ...Once I get this engine working again...\" EndDescription=\"\" TimeLimit=\"0\"
+        MissionEventType=\"Story\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"item:781x1\" RequirementString=\"\" CostString=\"\" FunctionString=\"marker(starSystemId=39,markerType=MissionObjective,markerFlags=6,missionDesignId=194,spriteId=12838);marker(starSystemId=19,markerType=MissionObjective,markerFlags=6,missionDesignId=196,spriteId=12838)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"1302\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"1302\"
+        MissionDesignId=\"241\" PercentWeight=\"50\" StartDescription=\"[10824]Prospector:
+        Ahoy, captain! You're just who I'd hoped to see!|[10824]Prospector: Actually,
+        I'm pretty glad to see anyone; my ship broke down almost a week ago.|[10824]Prospector:
+        Anyway, you look like a lively young go-getter! How'd you like to get rich?
+        Of course you would!\" EndDescription=\"\" TimeLimit=\"0\" MissionEventType=\"Story\"
+        EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\" RewardString=\"\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\"
+        ParentMissionEventId=\"0\" BackgroundId=\"0\" ShipId=\"0\" BackgroundSpriteId=\"0\"
+        /><MissionEvent MissionEventId=\"1294\" MissionDesignId=\"196\" PercentWeight=\"10\"
+        StartDescription=\"The drone has been successfully planted! Come back soon
+        to see the results of this mining expedition.\" EndDescription=\"\" TimeLimit=\"0\"
+        MissionEventType=\"Story\" EventXmlString=\"\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"\" RequirementString=\"\" CostString=\"item:781x1\" FunctionString=\"marker(starSystemId=[19],title=Mining
+        Drone,markerType=Mining,markerFlags=42,missionDesignId=196,rewardString=item:781x1|item:103x1,duration=43200,spriteId=12840,removeMissionEventId=1294)\"
+        RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"1389\" BackgroundId=\"0\"
+        ShipId=\"0\" BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"1755\"
+        MissionDesignId=\"315\" PercentWeight=\"100\" StartDescription=\"[7780]Leon:
+        They were meant to crew my craft, not craft my crew! I need you to take out
+        those dumb bunnies before they overrun civilization, and lose me business!|At
+        that moment your airlock opens, and you face your greatest challenge yet;
+        Rampant robot rabbits, reproducing rapidly!\" EndDescription=\"You disassemble
+        the busted bunny-bots, only to find they're made almost entirely of chocolate.
+        What kind of business is this Leon guy running!?\" TimeLimit=\"0\" MissionEventType=\"Adventure\"
+        EventXmlString=\"98:10|268:10|346:15,3\" Title=\"\" IsSinglePlay=\"true\"
+        RewardString=\"item:1150x1\" RequirementString=\"shipLevel &gt;= 5 &amp;&amp;
+        shipLevel &lt;= 8\" CostString=\"\" FunctionString=\"\" RequirementDescription=\"\"
+        Flags=\"0\" ParentMissionEventId=\"1753\" BackgroundId=\"0\" ShipId=\"0\"
+        BackgroundSpriteId=\"0\" /><MissionEvent MissionEventId=\"1776\" MissionDesignId=\"329\"
+        PercentWeight=\"50\" StartDescription=\"Your crew arrives to find a drink
+        shortage has started a massive brawl. You're confident your crew can fix the
+        broken pump responsible, but first you'll have to disperse the crowd!\" EndDescription=\"With
+        the rowdier elements sent home to rest, the taps are quickly repairs, and
+        the drinks flow freely long into the evening.\" TimeLimit=\"0\" MissionEventType=\"Adventure\"
+        EventXmlString=\"22:5|23:5|24:5|25:5|26:5|70:5|64:5|44:5|134:10,6\" Title=\"\"
+        IsSinglePlay=\"true\" RewardString=\"item:1511\" RequirementString=\"\" CostString=\"\"
+        FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\" ParentMissionEventId=\"0\"
+        BackgroundId=\"0\" ShipId=\"0\" BackgroundSpriteId=\"16603\" /><MissionEvent
+        MissionEventId=\"1848\" MissionDesignId=\"384\" PercentWeight=\"50\" StartDescription=\"Your
+        crew arrives to find a drink shortage has started a massive brawl. You're
+        confident your crew can fix the broken pump responsible, but first you'll
+        have to disperse the crowd!\" EndDescription=\"With the rowdier elements sent
+        home to rest, the taps are quickly repairs, and the drinks flow freely long
+        into the evening.\" TimeLimit=\"0\" MissionEventType=\"Adventure\" EventXmlString=\"22:5|23:5|24:5|25:5|26:5|70:5|64:5|44:5|134:10,6\"
+        Title=\"\" IsSinglePlay=\"true\" RewardString=\"item:1511\" RequirementString=\"\"
+        CostString=\"\" FunctionString=\"\" RequirementDescription=\"\" Flags=\"0\"
+        ParentMissionEventId=\"0\" BackgroundId=\"0\" ShipId=\"0\" BackgroundSpriteId=\"16603\"
+        /></MissionEvents><Situations><Situation SituationId=\"11303198\" SituationDesignId=\"32\"
+        UserId=\"8729280\" RemainingCount=\"20\" SituationCategory=\"Global\" FromDate=\"2026-07-19T00:00:00\"
+        EndDate=\"2026-07-20T00:00:00\" ResetDate=\"2026-07-19T12:30:47\" /></Situations><CharacterActions><CharacterAction
+        CharacterActionId=\"66057828\" CharacterId=\"49960613\" CharacterActionIndex=\"0\"
+        ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"56489925\"
+        CharacterId=\"49960662\" CharacterActionIndex=\"0\" ConditionTypeId=\"138\"
+        ActionTypeId=\"44\" /><CharacterAction CharacterActionId=\"66053818\" CharacterId=\"49983151\"
+        CharacterActionIndex=\"0\" ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction
+        CharacterActionId=\"56489922\" CharacterId=\"49984276\" CharacterActionIndex=\"0\"
+        ConditionTypeId=\"138\" ActionTypeId=\"44\" /><CharacterAction CharacterActionId=\"66054801\"
+        CharacterId=\"50003643\" CharacterActionIndex=\"0\" ConditionTypeId=\"52\"
+        ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66050773\" CharacterId=\"50003652\"
+        CharacterActionIndex=\"0\" ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction
+        CharacterActionId=\"66053812\" CharacterId=\"50003655\" CharacterActionIndex=\"0\"
+        ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66050811\"
+        CharacterId=\"50003657\" CharacterActionIndex=\"0\" ConditionTypeId=\"52\"
+        ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66053824\" CharacterId=\"50070772\"
+        CharacterActionIndex=\"0\" ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction
+        CharacterActionId=\"66050830\" CharacterId=\"50070800\" CharacterActionIndex=\"0\"
+        ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66050836\"
+        CharacterId=\"50234223\" CharacterActionIndex=\"0\" ConditionTypeId=\"52\"
+        ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66050819\" CharacterId=\"51117951\"
+        CharacterActionIndex=\"0\" ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction
+        CharacterActionId=\"66050850\" CharacterId=\"51584759\" CharacterActionIndex=\"0\"
+        ConditionTypeId=\"52\" ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"62920697\"
+        CharacterId=\"54953616\" CharacterActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"60\" /><CharacterAction CharacterActionId=\"66057829\" CharacterId=\"49960613\"
+        CharacterActionIndex=\"1\" ConditionTypeId=\"3\" ActionTypeId=\"12\" /><CharacterAction
+        CharacterActionId=\"56489926\" CharacterId=\"49960662\" CharacterActionIndex=\"1\"
+        ConditionTypeId=\"96\" ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"66053819\"
+        CharacterId=\"49983151\" CharacterActionIndex=\"1\" ConditionTypeId=\"138\"
+        ActionTypeId=\"44\" /><CharacterAction CharacterActionId=\"56489923\" CharacterId=\"49984276\"
+        CharacterActionIndex=\"1\" ConditionTypeId=\"96\" ActionTypeId=\"29\" /><CharacterAction
+        CharacterActionId=\"66054802\" CharacterId=\"50003643\" CharacterActionIndex=\"1\"
+        ConditionTypeId=\"1\" ActionTypeId=\"60\" /><CharacterAction CharacterActionId=\"66050807\"
+        CharacterId=\"50003652\" CharacterActionIndex=\"1\" ConditionTypeId=\"53\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053813\" CharacterId=\"50003655\"
+        CharacterActionIndex=\"1\" ConditionTypeId=\"138\" ActionTypeId=\"44\" /><CharacterAction
+        CharacterActionId=\"66050812\" CharacterId=\"50003657\" CharacterActionIndex=\"1\"
+        ConditionTypeId=\"53\" ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053825\"
+        CharacterId=\"50070772\" CharacterActionIndex=\"1\" ConditionTypeId=\"138\"
+        ActionTypeId=\"44\" /><CharacterAction CharacterActionId=\"66050831\" CharacterId=\"50070800\"
+        CharacterActionIndex=\"1\" ConditionTypeId=\"1\" ActionTypeId=\"60\" /><CharacterAction
+        CharacterActionId=\"66054670\" CharacterId=\"50234223\" CharacterActionIndex=\"1\"
+        ConditionTypeId=\"77\" ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"66050820\"
+        CharacterId=\"51117951\" CharacterActionIndex=\"1\" ConditionTypeId=\"53\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"72957235\" CharacterId=\"51584759\"
+        CharacterActionIndex=\"1\" ConditionTypeId=\"138\" ActionTypeId=\"59\" /><CharacterAction
+        CharacterActionId=\"62920701\" CharacterId=\"54953616\" CharacterActionIndex=\"1\"
+        ConditionTypeId=\"1\" ActionTypeId=\"34\" /><CharacterAction CharacterActionId=\"66057830\"
+        CharacterId=\"49960613\" CharacterActionIndex=\"2\" ConditionTypeId=\"22\"
+        ActionTypeId=\"12\" /><CharacterAction CharacterActionId=\"56489927\" CharacterId=\"49960662\"
+        CharacterActionIndex=\"2\" ConditionTypeId=\"1\" ActionTypeId=\"13\" /><CharacterAction
+        CharacterActionId=\"66053820\" CharacterId=\"49983151\" CharacterActionIndex=\"2\"
+        ConditionTypeId=\"96\" ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"56489924\"
+        CharacterId=\"49984276\" CharacterActionIndex=\"2\" ConditionTypeId=\"1\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66050774\" CharacterId=\"50003652\"
+        CharacterActionIndex=\"2\" ConditionTypeId=\"3\" ActionTypeId=\"13\" /><CharacterAction
+        CharacterActionId=\"66053814\" CharacterId=\"50003655\" CharacterActionIndex=\"2\"
+        ConditionTypeId=\"96\" ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"66050813\"
+        CharacterId=\"50003657\" CharacterActionIndex=\"2\" ConditionTypeId=\"3\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053826\" CharacterId=\"50070772\"
+        CharacterActionIndex=\"2\" ConditionTypeId=\"96\" ActionTypeId=\"29\" /><CharacterAction
+        CharacterActionId=\"66050837\" CharacterId=\"50234223\" CharacterActionIndex=\"2\"
+        ConditionTypeId=\"1\" ActionTypeId=\"60\" /><CharacterAction CharacterActionId=\"66050821\"
+        CharacterId=\"51117951\" CharacterActionIndex=\"2\" ConditionTypeId=\"3\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"72957234\" CharacterId=\"51584759\"
+        CharacterActionIndex=\"2\" ConditionTypeId=\"93\" ActionTypeId=\"29\" /><CharacterAction
+        CharacterActionId=\"66053821\" CharacterId=\"49983151\" CharacterActionIndex=\"3\"
+        ConditionTypeId=\"77\" ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"66050775\"
+        CharacterId=\"50003652\" CharacterActionIndex=\"3\" ConditionTypeId=\"1\"
+        ActionTypeId=\"26\" /><CharacterAction CharacterActionId=\"66053815\" CharacterId=\"50003655\"
+        CharacterActionIndex=\"3\" ConditionTypeId=\"77\" ActionTypeId=\"29\" /><CharacterAction
+        CharacterActionId=\"66050814\" CharacterId=\"50003657\" CharacterActionIndex=\"3\"
+        ConditionTypeId=\"1\" ActionTypeId=\"26\" /><CharacterAction CharacterActionId=\"66053827\"
+        CharacterId=\"50070772\" CharacterActionIndex=\"3\" ConditionTypeId=\"77\"
+        ActionTypeId=\"29\" /><CharacterAction CharacterActionId=\"66050822\" CharacterId=\"51117951\"
+        CharacterActionIndex=\"3\" ConditionTypeId=\"1\" ActionTypeId=\"26\" /><CharacterAction
+        CharacterActionId=\"66050851\" CharacterId=\"51584759\" CharacterActionIndex=\"3\"
+        ConditionTypeId=\"53\" ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053822\"
+        CharacterId=\"49983151\" CharacterActionIndex=\"4\" ConditionTypeId=\"1\"
+        ActionTypeId=\"60\" /><CharacterAction CharacterActionId=\"66053816\" CharacterId=\"50003655\"
+        CharacterActionIndex=\"4\" ConditionTypeId=\"1\" ActionTypeId=\"60\" /><CharacterAction
+        CharacterActionId=\"66053828\" CharacterId=\"50070772\" CharacterActionIndex=\"4\"
+        ConditionTypeId=\"1\" ActionTypeId=\"60\" /><CharacterAction CharacterActionId=\"66050852\"
+        CharacterId=\"51584759\" CharacterActionIndex=\"4\" ConditionTypeId=\"3\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053823\" CharacterId=\"49983151\"
+        CharacterActionIndex=\"5\" ConditionTypeId=\"1\" ActionTypeId=\"13\" /><CharacterAction
+        CharacterActionId=\"66053817\" CharacterId=\"50003655\" CharacterActionIndex=\"5\"
+        ConditionTypeId=\"1\" ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66053829\"
+        CharacterId=\"50070772\" CharacterActionIndex=\"5\" ConditionTypeId=\"1\"
+        ActionTypeId=\"13\" /><CharacterAction CharacterActionId=\"66050853\" CharacterId=\"51584759\"
+        CharacterActionIndex=\"5\" ConditionTypeId=\"1\" ActionTypeId=\"26\" /><CharacterAction
+        CharacterActionId=\"73066129\" CharacterId=\"51584759\" CharacterActionIndex=\"6\"
+        ConditionTypeId=\"1\" ActionTypeId=\"19\" /></CharacterActions><RoomActions><RoomAction
+        RoomActionId=\"70642668\" RoomId=\"137489257\" RoomActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"3\" /><RoomAction RoomActionId=\"78822158\" RoomId=\"137186425\"
+        RoomActionIndex=\"0\" ConditionTypeId=\"21\" ActionTypeId=\"55\" /><RoomAction
+        RoomActionId=\"70379792\" RoomId=\"137101318\" RoomActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"1\" /><RoomAction RoomActionId=\"70365630\" RoomId=\"137068991\"
+        RoomActionIndex=\"0\" ConditionTypeId=\"1\" ActionTypeId=\"3\" /><RoomAction
+        RoomActionId=\"70377167\" RoomId=\"137061962\" RoomActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"1\" /><RoomAction RoomActionId=\"78824166\" RoomId=\"137061687\"
+        RoomActionIndex=\"0\" ConditionTypeId=\"1\" ActionTypeId=\"3\" /><RoomAction
+        RoomActionId=\"78824163\" RoomId=\"137031560\" RoomActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"3\" /><RoomAction RoomActionId=\"78821769\" RoomId=\"151175628\"
+        RoomActionIndex=\"0\" ConditionTypeId=\"37\" ActionTypeId=\"3\" /><RoomAction
+        RoomActionId=\"78824174\" RoomId=\"138936978\" RoomActionIndex=\"0\" ConditionTypeId=\"35\"
+        ActionTypeId=\"3\" /><RoomAction RoomActionId=\"70377691\" RoomId=\"137070159\"
+        RoomActionIndex=\"0\" ConditionTypeId=\"35\" ActionTypeId=\"3\" /><RoomAction
+        RoomActionId=\"70331781\" RoomId=\"137031548\" RoomActionIndex=\"0\" ConditionTypeId=\"1\"
+        ActionTypeId=\"3\" /><RoomAction RoomActionId=\"70642669\" RoomId=\"137489257\"
+        RoomActionIndex=\"1\" ConditionTypeId=\"1\" ActionTypeId=\"27\" /><RoomAction
+        RoomActionId=\"70479713\" RoomId=\"137186425\" RoomActionIndex=\"1\" ConditionTypeId=\"1\"
+        ActionTypeId=\"3\" /><RoomAction RoomActionId=\"70365631\" RoomId=\"137068991\"
+        RoomActionIndex=\"1\" ConditionTypeId=\"22\" ActionTypeId=\"48\" /><RoomAction
+        RoomActionId=\"78824167\" RoomId=\"137061687\" RoomActionIndex=\"1\" ConditionTypeId=\"22\"
+        ActionTypeId=\"48\" /><RoomAction RoomActionId=\"78824164\" RoomId=\"137031560\"
+        RoomActionIndex=\"1\" ConditionTypeId=\"22\" ActionTypeId=\"48\" /><RoomAction
+        RoomActionId=\"78824175\" RoomId=\"138936978\" RoomActionIndex=\"1\" ConditionTypeId=\"1\"
+        ActionTypeId=\"55\" /><RoomAction RoomActionId=\"70358260\" RoomId=\"137070159\"
+        RoomActionIndex=\"1\" ConditionTypeId=\"1\" ActionTypeId=\"55\" /><RoomAction
+        RoomActionId=\"78822174\" RoomId=\"137186425\" RoomActionIndex=\"2\" ConditionTypeId=\"18\"
+        ActionTypeId=\"5\" /><RoomAction RoomActionId=\"78824160\" RoomId=\"137068991\"
+        RoomActionIndex=\"2\" ConditionTypeId=\"22\" ActionTypeId=\"6\" /><RoomAction
+        RoomActionId=\"78824168\" RoomId=\"137061687\" RoomActionIndex=\"2\" ConditionTypeId=\"22\"
+        ActionTypeId=\"6\" /><RoomAction RoomActionId=\"78824165\" RoomId=\"137031560\"
+        RoomActionIndex=\"2\" ConditionTypeId=\"22\" ActionTypeId=\"6\" /><RoomAction
+        RoomActionId=\"78824176\" RoomId=\"138936978\" RoomActionIndex=\"2\" ConditionTypeId=\"1\"
+        ActionTypeId=\"41\" /><RoomAction RoomActionId=\"70358262\" RoomId=\"137070159\"
+        RoomActionIndex=\"2\" ConditionTypeId=\"1\" ActionTypeId=\"37\" /><RoomAction
+        RoomActionId=\"78822165\" RoomId=\"137186425\" RoomActionIndex=\"3\" ConditionTypeId=\"38\"
+        ActionTypeId=\"29\" /><RoomAction RoomActionId=\"78824177\" RoomId=\"138936978\"
+        RoomActionIndex=\"3\" ConditionTypeId=\"22\" ActionTypeId=\"48\" /><RoomAction
+        RoomActionId=\"78824171\" RoomId=\"137070159\" RoomActionIndex=\"3\" ConditionTypeId=\"1\"
+        ActionTypeId=\"6\" /><RoomAction RoomActionId=\"78824178\" RoomId=\"138936978\"
+        RoomActionIndex=\"4\" ConditionTypeId=\"22\" ActionTypeId=\"6\" /><RoomAction
+        RoomActionId=\"78826108\" RoomId=\"137070159\" RoomActionIndex=\"4\" ConditionTypeId=\"1\"
+        ActionTypeId=\"22\" /><RoomAction RoomActionId=\"78826109\" RoomId=\"137070159\"
+        RoomActionIndex=\"5\" ConditionTypeId=\"1\" ActionTypeId=\"9\" /><RoomAction
+        RoomActionId=\"78826206\" RoomId=\"137070159\" RoomActionIndex=\"6\" ConditionTypeId=\"1\"
+        ActionTypeId=\"31\" /><RoomAction RoomActionId=\"78826209\" RoomId=\"137070159\"
+        RoomActionIndex=\"7\" ConditionTypeId=\"1\" ActionTypeId=\"5\" /></RoomActions><StarSystemDetails><StarSystemDetail
+        StarSystemDetailId=\"1\" StarSystemId=\"1\" OwnerType=\"None\" OwnerName=\"\"
+        ShipGarrisonString=\"\" OwnerId=\"0\" OwnerIconSpriteId=\"0\" EngagementCooldownEndDate=\"2026-03-31T21:55:20\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"2\" StarSystemId=\"2\" OwnerType=\"Alliance\" OwnerName=\"Summit\"
+        ShipGarrisonString=\"281x2\" OwnerId=\"43776\" OwnerIconSpriteId=\"19374\"
+        EngagementCooldownEndDate=\"2026-07-11T19:31:55\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-11T14:45:08\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"3\" StarSystemId=\"3\"
+        OwnerType=\"Alliance\" OwnerName=\"Ashen Strangers\" ShipGarrisonString=\"280x1\"
+        OwnerId=\"35055\" OwnerIconSpriteId=\"2317\" EngagementCooldownEndDate=\"2026-07-18T18:02:42\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-10T04:42:19\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"4\" StarSystemId=\"4\" OwnerType=\"Alliance\" OwnerName=\"Die
+        Nasty\" ShipGarrisonString=\"284x1\" OwnerId=\"44208\" OwnerIconSpriteId=\"654\"
+        EngagementCooldownEndDate=\"2026-07-09T22:47:16\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-09T18:01:17\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"5\" StarSystemId=\"5\"
+        OwnerType=\"Alliance\" OwnerName=\"Trek Wolfpack\" ShipGarrisonString=\"283x1\"
+        OwnerId=\"21\" OwnerIconSpriteId=\"19349\" EngagementCooldownEndDate=\"2026-07-10T23:20:32\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-03T20:40:44\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"6\" StarSystemId=\"6\" OwnerType=\"Alliance\" OwnerName=\"Ashen
+        Strangers\" ShipGarrisonString=\"282x1\" OwnerId=\"35055\" OwnerIconSpriteId=\"2317\"
+        EngagementCooldownEndDate=\"2026-07-16T03:26:19\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-05T14:28:25\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"7\" StarSystemId=\"7\"
+        OwnerType=\"Alliance\" OwnerName=\"Soltan Empire\" ShipGarrisonString=\"67x1\"
+        OwnerId=\"44572\" OwnerIconSpriteId=\"19373\" EngagementCooldownEndDate=\"2026-07-15T13:56:29\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"8\" StarSystemId=\"8\" OwnerType=\"Alliance\" OwnerName=\"\u5E7B\u60F3\u4E61Eternal\"
+        ShipGarrisonString=\"279x1\" OwnerId=\"45656\" OwnerIconSpriteId=\"19350\"
+        EngagementCooldownEndDate=\"2026-07-15T13:46:53\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-07T18:52:48\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"9\" StarSystemId=\"9\"
+        OwnerType=\"Alliance\" OwnerName=\"Summit\" ShipGarrisonString=\"283x2\" OwnerId=\"43776\"
+        OwnerIconSpriteId=\"19374\" EngagementCooldownEndDate=\"2026-07-11T19:30:31\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"10\" StarSystemId=\"10\" OwnerType=\"Alliance\" OwnerName=\"Ashen
+        Strangers\" ShipGarrisonString=\"280x1\" OwnerId=\"35055\" OwnerIconSpriteId=\"2317\"
+        EngagementCooldownEndDate=\"2026-07-18T18:02:59\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-07T13:02:56\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"11\"
+        StarSystemId=\"11\" OwnerType=\"Alliance\" OwnerName=\"Trek Federation\" ShipGarrisonString=\"283x2\"
+        OwnerId=\"9343\" OwnerIconSpriteId=\"2317\" EngagementCooldownEndDate=\"2026-05-01T00:17:32\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"12\" StarSystemId=\"12\" OwnerType=\"Alliance\" OwnerName=\"Trek
+        Wolfpack\" ShipGarrisonString=\"138x1\" OwnerId=\"21\" OwnerIconSpriteId=\"19349\"
+        EngagementCooldownEndDate=\"2026-07-11T18:41:24\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-11T13:54:36\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"13\"
+        StarSystemId=\"13\" OwnerType=\"Alliance\" OwnerName=\"\u5E7B\u60F3\u4E61Eternal\"
+        ShipGarrisonString=\"170x1\" OwnerId=\"45656\" OwnerIconSpriteId=\"19350\"
+        EngagementCooldownEndDate=\"2026-07-15T13:25:34\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-15T08:38:57\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"14\"
+        StarSystemId=\"14\" OwnerType=\"Alliance\" OwnerName=\"Vega Corp \u7E54\u5973\u661F\u8ECD\u5718\"
+        ShipGarrisonString=\"67x1\" OwnerId=\"28436\" OwnerIconSpriteId=\"19384\"
+        EngagementCooldownEndDate=\"2026-07-11T18:31:49\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-11T13:44:56\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"15\"
+        StarSystemId=\"15\" OwnerType=\"Alliance\" OwnerName=\"\u0429\u0435\u043D\u043A\u0438
+        \u0438 \u041A\u043E\u0442\u044F\u0442\u0430\" ShipGarrisonString=\"283x1\"
+        OwnerId=\"45772\" OwnerIconSpriteId=\"19352\" EngagementCooldownEndDate=\"2026-07-20T10:35:50\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-13T17:06:33\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"16\" StarSystemId=\"16\" OwnerType=\"Alliance\" OwnerName=\"Summit\"
+        ShipGarrisonString=\"282x1\" OwnerId=\"43776\" OwnerIconSpriteId=\"19374\"
+        EngagementCooldownEndDate=\"2026-07-11T19:28:38\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"17\"
+        StarSystemId=\"17\" OwnerType=\"Alliance\" OwnerName=\"Red Barons\" ShipGarrisonString=\"280x1\"
+        OwnerId=\"23429\" OwnerIconSpriteId=\"2316\" EngagementCooldownEndDate=\"2026-07-13T21:27:44\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-13T16:40:57\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"18\" StarSystemId=\"18\" OwnerType=\"Alliance\" OwnerName=\"Summit\"
+        ShipGarrisonString=\"279x1\" OwnerId=\"43776\" OwnerIconSpriteId=\"19374\"
+        EngagementCooldownEndDate=\"2026-07-11T19:31:31\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"19\"
+        StarSystemId=\"19\" OwnerType=\"Alliance\" OwnerName=\"\u5E7B\u60F3\u4E61Eternal\"
+        ShipGarrisonString=\"279x1\" OwnerId=\"45656\" OwnerIconSpriteId=\"19350\"
+        EngagementCooldownEndDate=\"2026-07-15T08:40:28\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-15T03:53:42\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"20\"
+        StarSystemId=\"20\" OwnerType=\"Alliance\" OwnerName=\"Ashen Strangers\" ShipGarrisonString=\"279x1\"
+        OwnerId=\"35055\" OwnerIconSpriteId=\"2317\" EngagementCooldownEndDate=\"2026-07-18T18:03:15\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-13T10:52:02\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"21\" StarSystemId=\"21\" OwnerType=\"Alliance\" OwnerName=\"Vega
+        Corp \u7E54\u5973\u661F\u8ECD\u5718\" ShipGarrisonString=\"279x1\" OwnerId=\"28436\"
+        OwnerIconSpriteId=\"19384\" EngagementCooldownEndDate=\"2026-07-13T19:51:35\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"22\" StarSystemId=\"22\" OwnerType=\"Alliance\" OwnerName=\"Dynasty\"
+        ShipGarrisonString=\"280x1\" OwnerId=\"14349\" OwnerIconSpriteId=\"654\" EngagementCooldownEndDate=\"2026-07-12T00:45:23\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"23\" StarSystemId=\"23\" OwnerType=\"Alliance\" OwnerName=\"Trek
+        Federation\" ShipGarrisonString=\"1x2\" OwnerId=\"9343\" OwnerIconSpriteId=\"2317\"
+        EngagementCooldownEndDate=\"2026-06-01T19:31:40\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"24\"
+        StarSystemId=\"24\" OwnerType=\"Alliance\" OwnerName=\"Soltan Empire\" ShipGarrisonString=\"279x1\"
+        OwnerId=\"44572\" OwnerIconSpriteId=\"19373\" EngagementCooldownEndDate=\"2026-07-16T23:00:14\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-16T18:13:24\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"25\" StarSystemId=\"25\" OwnerType=\"Alliance\" OwnerName=\"Trek
+        Federation\" ShipGarrisonString=\"281x1\" OwnerId=\"9343\" OwnerIconSpriteId=\"2317\"
+        EngagementCooldownEndDate=\"2026-06-11T03:52:59\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"26\"
+        StarSystemId=\"26\" OwnerType=\"Alliance\" OwnerName=\"Red Barons\" ShipGarrisonString=\"1x1\"
+        OwnerId=\"23429\" OwnerIconSpriteId=\"2316\" EngagementCooldownEndDate=\"2026-05-24T20:35:27\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"27\" StarSystemId=\"27\" OwnerType=\"Alliance\" OwnerName=\"Ashen
+        Strangers\" ShipGarrisonString=\"223x1\" OwnerId=\"35055\" OwnerIconSpriteId=\"2317\"
+        EngagementCooldownEndDate=\"2026-07-19T15:39:33\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-19T10:52:35\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"28\"
+        StarSystemId=\"28\" OwnerType=\"Alliance\" OwnerName=\"Soltan Empire\" ShipGarrisonString=\"1x1\"
+        OwnerId=\"44572\" OwnerIconSpriteId=\"19373\" EngagementCooldownEndDate=\"2026-07-05T17:34:37\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-05T12:52:29\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"29\" StarSystemId=\"29\" OwnerType=\"Alliance\" OwnerName=\"Vega
+        Corp \u7E54\u5973\u661F\u8ECD\u5718\" ShipGarrisonString=\"279x1\" OwnerId=\"28436\"
+        OwnerIconSpriteId=\"19384\" EngagementCooldownEndDate=\"2026-07-11T18:31:20\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"30\" StarSystemId=\"30\" OwnerType=\"Alliance\" OwnerName=\"Crimson
+        Barons\" ShipGarrisonString=\"279x1\" OwnerId=\"28662\" OwnerIconSpriteId=\"2316\"
+        EngagementCooldownEndDate=\"2026-06-04T13:24:29\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"31\"
+        StarSystemId=\"31\" OwnerType=\"Alliance\" OwnerName=\"Vega Corp \u7E54\u5973\u661F\u8ECD\u5718\"
+        ShipGarrisonString=\"279x1\" OwnerId=\"28436\" OwnerIconSpriteId=\"19384\"
+        EngagementCooldownEndDate=\"2026-07-13T19:51:16\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"32\"
+        StarSystemId=\"32\" OwnerType=\"Alliance\" OwnerName=\"\u5E7B\u60F3\u4E61Eternal\"
+        ShipGarrisonString=\"673x1\" OwnerId=\"45656\" OwnerIconSpriteId=\"19350\"
+        EngagementCooldownEndDate=\"2026-07-14T10:21:44\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"33\"
+        StarSystemId=\"33\" OwnerType=\"Alliance\" OwnerName=\"Red Barons\" ShipGarrisonString=\"280x1\"
+        OwnerId=\"23429\" OwnerIconSpriteId=\"2316\" EngagementCooldownEndDate=\"2026-05-22T04:42:44\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"34\" StarSystemId=\"34\" OwnerType=\"Alliance\" OwnerName=\"Firefly
+        Vikings\" ShipGarrisonString=\"83x2\" OwnerId=\"22572\" OwnerIconSpriteId=\"19370\"
+        EngagementCooldownEndDate=\"2026-07-11T18:33:28\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"35\"
+        StarSystemId=\"35\" OwnerType=\"Alliance\" OwnerName=\"Trek Federation\" ShipGarrisonString=\"283x3\"
+        OwnerId=\"9343\" OwnerIconSpriteId=\"2317\" EngagementCooldownEndDate=\"2026-05-10T20:02:17\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"36\" StarSystemId=\"36\" OwnerType=\"Alliance\" OwnerName=\"Trek
+        Pastafarians\" ShipGarrisonString=\"279x1\" OwnerId=\"12008\" OwnerIconSpriteId=\"19381\"
+        EngagementCooldownEndDate=\"2026-07-11T19:53:03\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"2026-07-11T15:07:01\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"37\"
+        StarSystemId=\"37\" OwnerType=\"Alliance\" OwnerName=\"Trek Federation\" ShipGarrisonString=\"292x2\"
+        OwnerId=\"9343\" OwnerIconSpriteId=\"2317\" EngagementCooldownEndDate=\"2026-04-26T23:38:40\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"38\" StarSystemId=\"38\" OwnerType=\"Alliance\" OwnerName=\"Soltan
+        Empire\" ShipGarrisonString=\"280x3\" OwnerId=\"44572\" OwnerIconSpriteId=\"19373\"
+        EngagementCooldownEndDate=\"2026-07-14T23:09:18\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"39\"
+        StarSystemId=\"39\" OwnerType=\"Alliance\" OwnerName=\"Trek Pastafarians\"
+        ShipGarrisonString=\"283x1\" OwnerId=\"12008\" OwnerIconSpriteId=\"19381\"
+        EngagementCooldownEndDate=\"2026-06-13T06:40:59\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"40\"
+        StarSystemId=\"40\" OwnerType=\"Alliance\" OwnerName=\"Firefly Vikings\" ShipGarrisonString=\"281x1\"
+        OwnerId=\"22572\" OwnerIconSpriteId=\"19370\" EngagementCooldownEndDate=\"2026-07-12T19:55:23\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-12T15:10:29\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"41\" StarSystemId=\"41\" OwnerType=\"Alliance\" OwnerName=\"Dynasty\"
+        ShipGarrisonString=\"1x1\" OwnerId=\"14349\" OwnerIconSpriteId=\"654\" EngagementCooldownEndDate=\"2026-06-25T22:49:04\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-06-25T18:08:54\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"42\" StarSystemId=\"42\" OwnerType=\"Alliance\" OwnerName=\"Dynasty\"
+        ShipGarrisonString=\"282x1\" OwnerId=\"14349\" OwnerIconSpriteId=\"654\" EngagementCooldownEndDate=\"2026-07-11T18:25:37\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"2026-07-11T13:38:39\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"43\" StarSystemId=\"43\" OwnerType=\"Alliance\" OwnerName=\"Summit\"
+        ShipGarrisonString=\"279x1\" OwnerId=\"43776\" OwnerIconSpriteId=\"19374\"
+        EngagementCooldownEndDate=\"2026-07-10T21:54:32\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"44\"
+        StarSystemId=\"44\" OwnerType=\"Alliance\" OwnerName=\"Red Barons\" ShipGarrisonString=\"279x1\"
+        OwnerId=\"23429\" OwnerIconSpriteId=\"2316\" EngagementCooldownEndDate=\"2026-05-22T20:45:17\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"45\" StarSystemId=\"45\" OwnerType=\"Alliance\" OwnerName=\"Dynasty\"
+        ShipGarrisonString=\"1x1\" OwnerId=\"14349\" OwnerIconSpriteId=\"654\" EngagementCooldownEndDate=\"2026-06-19T18:30:06\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"46\" StarSystemId=\"46\" OwnerType=\"Alliance\" OwnerName=\"\u5E7B\u60F3\u4E61Eternal\"
+        ShipGarrisonString=\"70x1\" OwnerId=\"45656\" OwnerIconSpriteId=\"19350\"
+        EngagementCooldownEndDate=\"2026-07-14T15:58:00\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"47\"
+        StarSystemId=\"47\" OwnerType=\"Alliance\" OwnerName=\"Italian pixels\" ShipGarrisonString=\"279x1\"
+        OwnerId=\"43836\" OwnerIconSpriteId=\"2273\" EngagementCooldownEndDate=\"2026-07-18T03:08:13\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"48\" StarSystemId=\"48\" OwnerType=\"None\" OwnerName=\"\"
+        ShipGarrisonString=\"\" OwnerId=\"0\" OwnerIconSpriteId=\"0\" EngagementCooldownEndDate=\"2026-03-11T05:47:56\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"49\" StarSystemId=\"49\" OwnerType=\"Alliance\" OwnerName=\"Firefly
+        Vikings\" ShipGarrisonString=\"280x1\" OwnerId=\"22572\" OwnerIconSpriteId=\"19370\"
+        EngagementCooldownEndDate=\"2026-05-17T15:49:12\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"50\"
+        StarSystemId=\"50\" OwnerType=\"Alliance\" OwnerName=\"Trek Prodigy\" ShipGarrisonString=\"282x1\"
+        OwnerId=\"9130\" OwnerIconSpriteId=\"2316\" EngagementCooldownEndDate=\"2026-07-04T22:58:13\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"51\" StarSystemId=\"51\" OwnerType=\"None\" OwnerName=\"\"
+        ShipGarrisonString=\"\" OwnerId=\"0\" OwnerIconSpriteId=\"0\" EngagementCooldownEndDate=\"2026-05-10T20:02:18\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"52\" StarSystemId=\"52\" OwnerType=\"None\" OwnerName=\"\"
+        ShipGarrisonString=\"\" OwnerId=\"0\" OwnerIconSpriteId=\"0\" EngagementCooldownEndDate=\"2026-03-12T15:27:58\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"53\" StarSystemId=\"53\" OwnerType=\"Alliance\" OwnerName=\"Red
+        Barons\" ShipGarrisonString=\"281x1\" OwnerId=\"23429\" OwnerIconSpriteId=\"2316\"
+        EngagementCooldownEndDate=\"2026-05-22T06:07:01\" ImmunityEndDate=\"2000-01-01T00:00:00\"
+        ShipManufactureStartDate=\"2000-01-01T00:00:00\" LastConqueredDate=\"1900-01-01T00:00:00\"
+        ShipGarrisonInfoString=\"\" /><StarSystemDetail StarSystemDetailId=\"54\"
+        StarSystemId=\"54\" OwnerType=\"Alliance\" OwnerName=\"Die Nasty\" ShipGarrisonString=\"279x1\"
+        OwnerId=\"44208\" OwnerIconSpriteId=\"654\" EngagementCooldownEndDate=\"2026-07-08T23:37:32\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /><StarSystemDetail
+        StarSystemDetailId=\"55\" StarSystemId=\"55\" OwnerType=\"None\" OwnerName=\"\"
+        ShipGarrisonString=\"\" OwnerId=\"0\" OwnerIconSpriteId=\"0\" EngagementCooldownEndDate=\"2026-03-31T05:45:44\"
+        ImmunityEndDate=\"2000-01-01T00:00:00\" ShipManufactureStartDate=\"2000-01-01T00:00:00\"
+        LastConqueredDate=\"1900-01-01T00:00:00\" ShipGarrisonInfoString=\"\" /></StarSystemDetails></ListAllUserDataFirst></UserService>"
+    headers:
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 19 Jul 2026 12:30:47 GMT
+      Server:
+      - Kestrel
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 33c97bbb27238fe2afd4da07b8379206.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - iWqWq2RqokyGLz5ECuPcBmSqE65aKuOetG2NKZiueKZsdxeTEVUwwg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1
