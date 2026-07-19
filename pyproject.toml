@@ -1,6 +1,6 @@
 [project]
 name = "pssapi"
-version = "0.7.0"
+version = "0.7.1"
 description = "A wrapper for the Pixel Starships API."
 authors = [
     { name = "The worst.", email = "theworstpss@gmail.com" },

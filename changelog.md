@@ -1,4 +1,4 @@
-# Version 0.7.0
+# Version 0.7.1
 ## Updated Library
 The library has been updated to Pixel Starships v0.999.44.15532 (Steam)
 ### Changes to Services
