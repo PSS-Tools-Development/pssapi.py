@@ -46,11 +46,8 @@ LIST_FRIENDS_BASE_PATH: str = "UserService/ListFriends"
 LIST_SKIN_SETS_2_BASE_PATH: str = "UserService/ListSkinSets2"
 LIST_SKINS_BASE_PATH: str = "UserService/ListSkins"
 LIST_SKINS_2_BASE_PATH: str = "UserService/ListSkins2"
-REDEEM_CODE_BASE_PATH: str = "UserService/RedeemCode"
 REMOVE_FRIEND_BASE_PATH: str = "UserService/RemoveFriend"
 SEARCH_USERS_BASE_PATH: str = "UserService/SearchUsers"
-SET_TIP_STATUS_BASE_PATH: str = "UserService/SetTipStatus"
-SET_TUTORIAL_STATUS_BASE_PATH: str = "UserService/SetTutorialStatus"
 STEAM_LOGIN_3_BASE_PATH: str = "UserService/SteamLogin3"
 STEAM_LOGIN_6_BASE_PATH: str = "UserService/SteamLogin6"
 STEAM_LOGIN_8_BASE_PATH: str = "UserService/SteamLogin8"
@@ -218,11 +215,6 @@ async def list_skins_2(production_server: str, client_date_time: str, design_ver
     return result
 
 
-async def redeem_code(production_server: str, access_token: str, checksum: str, client_date_time: str, code: str, **params) -> None:
-    params = {"accessToken": access_token, "checksum": checksum, "clientDateTime": client_date_time, "code": code, **params}
-    await _core.get_entities_from_path((), None, production_server, REDEEM_CODE_BASE_PATH, "POST", response_gzipped=False, **params)
-
-
 async def remove_friend(production_server: str, access_token: str, friend_user_id: int, **params) -> None:
     params = {"accessToken": access_token, "friendUserId": friend_user_id, **params}
     await _core.get_entities_from_path((), None, production_server, REMOVE_FRIEND_BASE_PATH, "POST", response_gzipped=False, **params)
@@ -231,18 +223,6 @@ async def remove_friend(production_server: str, access_token: str, friend_user_i
 async def search_users(production_server: str, search_string: str, **params) -> _List[_User]:
     params = {"searchString": search_string, **params}
     result = await _core.get_entities_from_path(((_User, "Users", True),), "Users", production_server, SEARCH_USERS_BASE_PATH, "GET", response_gzipped=False, **params)
-    return result
-
-
-async def set_tip_status(production_server: str, access_token: str, tip_status: int, **params) -> _User:
-    params = {"accessToken": access_token, "tipStatus": tip_status, **params}
-    result = await _core.get_entities_from_path(((_User, "User", False),), "SetTipStatus", production_server, SET_TIP_STATUS_BASE_PATH, "POST", response_gzipped=False, **params)
-    return result
-
-
-async def set_tutorial_status(production_server: str, access_token: str, tutorial_status: int, **params) -> _User:
-    params = {"accessToken": access_token, "tutorialStatus": tutorial_status, **params}
-    result = await _core.get_entities_from_path(((_User, "User", False),), "SetTutorialStatus", production_server, SET_TUTORIAL_STATUS_BASE_PATH, "POST", response_gzipped=False, **params)
     return result
 
 
