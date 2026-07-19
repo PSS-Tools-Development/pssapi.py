@@ -237,7 +237,7 @@ class DesignService(_service_base.ServiceBase):
         _List[_TrainingDesign],
     ]:
         production_server = await self.get_production_server()
-        result = await _DesignServiceRaw.list_all_static_designs(
+        result = await _DesignServiceRaw.list_all_static_designs_2(
             production_server,
             self.language_key,
             list_achievement_design_version,
