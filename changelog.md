@@ -1,3 +1,178 @@
+# Version 0.7.0
+## Updated Library
+The library has been updated to Pixel Starships v0.999.44.15532 (Steam)
+### Changes to Services
+- Added `BattleService`
+  - Added method `get_engagement`
+  - Added `BattleServiceUtils`
+- Changed `AllianceService`
+  - Changed return types of method `list_users`
+- Changed `DesignService`
+  - Added method `list_all_static_designs`
+- Changed `GalaxyService`
+  - Added method `get_star_system_details`
+- Changed `PublicService`
+  - Added method `get_ship_characters_by_username`
+- Changed `UserService`
+  - Added method `list_all_user_data_first`
+  - Changed method `steam_login` to use new method `UserServiceRaw.steam_login_8`
+### Changed to Raw Services
+- Added `BattleServiceRaw`
+  - Added method `get_engagement`
+- Changed `AllianceServiceRaw`
+  - Changed return types of method `list_users_2`
+- Changed `DesignServiceRaw`
+  - Added method `list_all_static_designs_2`
+- Changed `GalaxyService`
+  - Added method `get_star_system_details`
+- Changed `PublicService`
+  - Added method `get_ship_characters_by_username`
+- Changed `ShipServiceRaw`
+  - Added method `list_ship_layouts`
+- Changed `UserServiceRaw`
+  - Added method `list_all_user_data_first_2`
+  - Added method `steam_login_8`
+### Changes to Entities
+- Added `Achievement`
+- Added `AllianceTask`
+- Added `AttackingEngagementGroup`
+- Added `DefendingEngagementGroup`
+- Added `Engagement`
+- Added `EngagementGroupUser`
+- Added `InfrastructureDesign`
+- Added `Situation`
+- Added `StarSystemDetail`
+- Added `StarSystemInfrastructureDesign`
+- Added `StarSystemInfrastructures`
+- Added `Task`
+- Added `UserSkin`
+- Changed `AchievementDesign`
+  - Added property `achievement_scoring_type_enum` (`pssapi.enums.AchievementScoringType`)
+- Changed `CraftDesign`
+  - Added property `craft_pathing_type_enum` (`pssapi.enums.CraftPathingType`)
+### Changes to Raw Entities
+- Added `AchievementRaw`
+- Added `AllianceTaskRaw`
+- Added `AttackingEngagementGroupRaw`
+- Added `DefendingEngagementGroupRaw`
+- Added `EngagementRaw`
+- Added `EngagementGroupUserRaw`
+- Added `InfrastructureDesignRaw`
+- Added `SituationRaw`
+- Added `StarSystemDetailRaw`
+- Added `StarSystemInfrastructureDesignRaw`
+- Added `StarSystemInfrastructuresRaw`
+- Added `TaskRaw`
+- Added `UserSkinRaw`
+- Changed `AchievementDesignRaw`
+  - Added property `achievement_scoring_type` (`str`)
+  - Added property `achievement_type_argument` (`int`)
+  - Added property `objective_argument` (`str`)
+  - Added property `objective_type` (`str`)
+  - Added property `ribbon_sprite_id` (`int`)
+- Changed `BattleRaw`
+  - Added property `attacking_engagement_group_user_id` (`int`)
+  - Added property `attacking_ship_design_id` (`int`)
+  - Added property `attacking_user_type` (`str`)
+  - Added property `client_version` (`str`)
+  - Added property `defending_engagement_group_user_id` (`int`)
+  - Added property `defending_ship_design_id` (`int`)
+  - Added property `defending_user_type` (`str`)
+  - Added property `engagement_id` (`int`)
+- Changed `ChallengeDesignRaw`
+  - Added property `objective_argument` (`str`)
+  - Added property `objective_condition` (`str`)
+  - Added property `score_title` (`str`)
+- Changed `CharacterDesignRaw`
+  - Added property `metadata` (`str`)
+- Changed `CharacterPartRaw`
+  - Added property `flags` (`int`)
+- Changed `CharacterRaw`
+  - Changed property `character_id` type (`int` -> `str`)
+- Changed `ConditionTypeRaw`
+  - Added property `condition_category_argument` (`str`)
+- Changed `CraftDesignRaw`
+  - Added property `capacity` (`int`)
+  - Added property `root_craft_design_id` (`int`)
+- Changed `DrawDesignRaw`
+  - Added property `guaranteed_heroic_draws` (`int`)
+  - Added property `visibility_flags` (`str`)
+- Changed `MessageRaw`
+  - Added property `ribbon_sprite_id` (`int`)
+- Changed `MissileDesignRaw`
+  - Added property `root_missile_design_id` (`int`)
+- Changed `RewardDesignRaw`
+  - Added property `bonus_reward_string` (`str`)
+- Changed `RoomDesignRaw`
+  - Added property `min_starbase_ship_level` (`int`)
+  - Added property `starbase_price_string` (`str`)
+- Changed `RoomRaw`
+  - Added property `priority` (`int`)
+- Changed `SettingRaw`
+  - Added property `ama_message` (`str`)
+  - Added property `ama_start_date` (`datetime.datetime`)
+  - Added property `bank_groups` (`str`)
+  - Added property `battle_searches_hard_limit` (`int`)
+  - Added property `capped_value_for_star_battle_max_range` (`int`)
+  - Added property `cost_string_to_search` (`str`)
+  - Added property `cost_to_search_multiplier` (`int`)
+  - Added property `creator_code_duration` (`int`)
+  - Added property `engagement_invasion_duration` (`int`)
+  - Added property `engagement_power_per_supply_cost` (`int`)
+  - Added property `engagement_raid_duration` (`int`)
+  - Added property `engagement_supply_reward_percentage` (`int`)
+  - Added property `featured_video_url` (`str`)
+  - Added property `infrastructure_design_version` (`int`)
+  - Added property `lower_base_value_for_star_battle` (`int`)
+  - Added property `max_battle_searches` (`int`)
+  - Added property `max_engagement_supply_cost` (`int`)
+  - Added property `max_star_systems_per_fleet` (`int`)
+  - Added property `min_engagement_supply_cost` (`int`)
+  - Added property `min_ship_level_for_sync_server` (`int`)
+  - Added property `star_system_cooldown_modifier` (`float`)
+  - Added property `star_system_infrastructure_design_version` (`int`)
+  - Added property `starbux_market_price_cap` (`int`)
+  - Added property `step_for_star_battle_max_range` (`int`)
+  - Added property `step_for_star_battle_min_range` (`int`)
+  - Added property `tournament_immunity_time_in_seconds` (`int`)
+  - Added property `upper_base_value_for_star_battle` (`int`)
+  - Added property `user_engagement_cooldowntime` (`int`)
+- Changed `ShipDesignRaw`
+  - Added property `attacks` (`int`)
+  - Added property `lives` (`int`)
+  - Added property `metadata` (`str`)
+- Changed `SkinSetRaw`
+  - Added property `purchase_count` (`int`)
+- Changed `StarSystemMarkerRaw`
+  - Added property `engagement_id` (`int`)
+- Changed `StarSystemRaw`
+  - Added property `background_sprite_id` (`int`)
+- Changed `TrainingRaw`
+  - Added property `variable_chance` (`float`)
+- Changed `UserLoginRaw`
+  - Added property `battle` (`pssapi.entities.Battle`)
+  - Added property `reward_string` (`str`)
+- Changed `UserRaw`
+  - Added property `alliance_score_at_start_of_day` (`int`)
+  - Added property `creator_code` (`str`)
+  - Added property `creator_support_date` (`datetime.datetime`)
+  - Added property `draws_string` (`str`)
+  - Added property `engagement_cooldown_end_date` (`datetime.datetime`)
+  - Added property `pv_p_continuous_losses` (`int`)
+  - Added property `ribbon_sprite_id` (`int`)
+  - Added property `total_battle_searches` (`int`)
+### Changes to Enums
+- Added enum `AchievementScoringType`
+- Added enum `CraftPathingType`
+- Added enum `EngagementApprovalState`
+- Added enum `EngagementGroupUserState`
+- Added enum `EngagementScoringType`
+- Added enum `EngagementType`
+- Added enum `InfrastructureRewardType`
+- Added enum `InfrastructureType`
+- Added enum `SituationCategory`
+# Version 0.6.0
+tbd
 # Version 0.5.0
 ## Changes
 ### Added
@@ -10,38 +185,38 @@ The library has been updated to Pixel Starships v0.998.17.11192 (Steam) & v0.999
   - Added method `get_ship_room_details`
 - Changed `UserService`
   - Added method `list_skin_sets`
-  - Updated method `list_skins` to use new endpoint
+  - Changed method `list_skins` to use new endpoint
 ### Changes to Raw Services
 - Added `PublicServiceRaw`
   - Added method `get_ship_details`
   - Added method `get_ship_room_details`
 - Changed `UserServiceRaw`
   - Added method `list_skin_sets_2`
-  - Updated method `list_skins_2`
+  - Changed method `list_skins_2`
 ### Changes to Raw Entities
-- Updated `ActionTypeRaw`
+- Changed `ActionTypeRaw`
   - Added property `condition_parameter_argument` (`int`)
-- Updated `CharacterDesignRaw`
+- Changed `CharacterDesignRaw`
   - Added property `boost_values_string` (`str`)
-- Updated `CharacterRaw`
+- Changed `CharacterRaw`
   - Added property `bonus_training_capacity` (`int`)
   - Added property `boost_level` (`int`)
-- Updated `CollectionDesignRaw`
+- Changed `CollectionDesignRaw`
   - Added property `cooldown_time` (`int`)
   - Added property `metadata` (`str`)
   - Added property `step_enhancement_value` (`float`)
   - Added property `trigger_animation_id` (`int`)
-- Updated `ConditionTypeRaw`
+- Changed `ConditionTypeRaw`
   - Added property `condition_parameter_argument` (`int`)
-- Updated `CraftDesignRaw`
+- Changed `CraftDesignRaw`
   - Added property `craft_pathing_type` (`str`)
   - Added property `entity_count` (`int`)
-- Updated `RoomDesignRaw`
+- Changed `RoomDesignRaw`
   - Added property `room_variant_type` (`int`)
-- Updated `SeasonDesignRaw`
+- Changed `SeasonDesignRaw`
   - Added property `premium_reward_string` (`str`)
   - Added property `repeat_reward_string` (`str`)
-- Updated `SettingRaw`
+- Changed `SettingRaw`
   - Added property `max_crews` (`int`)
 ### Changes to utilities
 - Added sub-module `pss` with functions `is_tournament_time`
@@ -74,59 +249,59 @@ The library has been updated to Pixel Starships v0.998.16.10969 (Steam, testing 
 - `datetime.convert_to_pss_timestamp` now returns `None`, if the passed value is `None`, instead of raising an exception.
 ### Changes to Services
 - Changed `AnimationService`
-  - Updated method `list_animations` with new parameter `client_date_time`
+  - Changed method `list_animations` with new parameter `client_date_time`
 - Changed `BackgroundService`
-  - Updated method `list_backgrounds` with new parameter `client_date_time`
+  - Changed method `list_backgrounds` with new parameter `client_date_time`
 - Changed `ChallengeService`
-  - Updated method `list_all_challenge_designs` with new parameter `client_date_time`
+  - Changed method `list_all_challenge_designs` with new parameter `client_date_time`
 - Changed `CharacterService`
-  - Updated method `to_character` with new parameter `client_date_time`
-  - Updated method `list_all_character_design_actions` with new parameter `client_date_time`
-  - Updated method `list_all_character_designs` with new parameter `client_date_time`
-  - Updated method `list_all_draw_designs` with new parameter `client_date_time`
+  - Changed method `to_character` with new parameter `client_date_time`
+  - Changed method `list_all_character_design_actions` with new parameter `client_date_time`
+  - Changed method `list_all_character_designs` with new parameter `client_date_time`
+  - Changed method `list_all_draw_designs` with new parameter `client_date_time`
 - Changed `CollectionService`
-  - Updated method `list_all_collection_designs` with new parameter `client_date_time`
+  - Changed method `list_all_collection_designs` with new parameter `client_date_time`
 - Changed `DivisionService`
-  - Updated method `list_all_division_designs` with new parameter `client_date_time`
+  - Changed method `list_all_division_designs` with new parameter `client_date_time`
 - Changed `GalaxyService`
-  - Updated method `list_marker_generator_designs` with new parameter `client_date_time`
-  - Updated method `list_star_system_links` with new parameter `client_date_time`
-  - Updated method `list_star_systems` with new parameter `client_date_time`
+  - Changed method `list_marker_generator_designs` with new parameter `client_date_time`
+  - Changed method `list_star_system_links` with new parameter `client_date_time`
+  - Changed method `list_star_systems` with new parameter `client_date_time`
 - Changed `ItemService`
-  - Updated method `to_item` with new parameter `client_date_time`
-  - Updated method `list_item_design_actions` with new parameter `client_date_time`
-  - Updated method `list_item_designs` with new parameter `client_date_time`
+  - Changed method `to_item` with new parameter `client_date_time`
+  - Changed method `list_item_design_actions` with new parameter `client_date_time`
+  - Changed method `list_item_designs` with new parameter `client_date_time`
 - Changed `LeagueService`
-  - Updated method `list_leagues` with new parameter `client_date_time`
+  - Changed method `list_leagues` with new parameter `client_date_time`
 - Changed `MissionService`
-  - Updated method `list_all_mission_designs` with new parameter `client_date_time`
+  - Changed method `list_all_mission_designs` with new parameter `client_date_time`
 - Changed `PromotionService`
-  - Updated method `list_all_promotion_designs` with new parameter `client_date_time`
+  - Changed method `list_all_promotion_designs` with new parameter `client_date_time`
 - Changed `ResearchService`
-  - Updated method `list_all_research_designs` with new parameter `client_date_time`
+  - Changed method `list_all_research_designs` with new parameter `client_date_time`
 - Changed `RewardService`
-  - Updated method `list_all_reward_designs` with new parameter `client_date_time`
+  - Changed method `list_all_reward_designs` with new parameter `client_date_time`
 - Changed `RoomDesignSpriteService`
-  - Updated method `list_room_design_sprites` with new parameter `client_date_time`
+  - Changed method `list_room_design_sprites` with new parameter `client_date_time`
 - Changed `RoomService`
-  - Updated method `list_craft_designs` with new parameter `client_date_time`
-  - Updated method `list_missile_designs` with new parameter `client_date_time`
-  - Updated method `list_room_design_purchase` with new parameter `client_date_time`
-  - Updated method `list_room_designs` with new parameter `client_date_time`
+  - Changed method `list_craft_designs` with new parameter `client_date_time`
+  - Changed method `list_missile_designs` with new parameter `client_date_time`
+  - Changed method `list_room_design_purchase` with new parameter `client_date_time`
+  - Changed method `list_room_designs` with new parameter `client_date_time`
 - Changed `SeasonService`
-  - Updated method `list_all_season_designs` with new parameter `client_date_time`
+  - Changed method `list_all_season_designs` with new parameter `client_date_time`
 - Changed `SettingService`
-  - Updated method `list_all_news_designs` with new parameter `client_date_time`
+  - Changed method `list_all_news_designs` with new parameter `client_date_time`
 - Changed `ShipService`
-  - Updated method `to_ship` with new parameter `client_date_time`
-  - Updated type of parameter `client_date_time` for method `get_ship_by_user_id` to `datetime.datetime`
-  - Updated method `list_all_ship_designs` with new parameter `client_date_time`
+  - Changed method `to_ship` with new parameter `client_date_time`
+  - Changed type of parameter `client_date_time` for method `get_ship_by_user_id` to `datetime.datetime`
+  - Changed method `list_all_ship_designs` with new parameter `client_date_time`
 - Changed `SituationService`
-  - Updated method `list_situation_designs` with new parameter `client_date_time`
+  - Changed method `list_situation_designs` with new parameter `client_date_time`
 - Changed `TrainingService`
-  - Updated method `list_all_training_designs` with new parameter `client_date_time`
+  - Changed method `list_all_training_designs` with new parameter `client_date_time`
 - Changed `UserService`
-  - Updated endpoint `list_skins` with new parameter `client_date_time`
+  - Changed endpoint `list_skins` with new parameter `client_date_time`
 ### Changes to Raw Services
 - Changed `animation_service_raw`
   - Update endpoint `list_animations` with new parameter `client_date_time`
@@ -202,7 +377,7 @@ The library has been updated to Pixel Starships v0.998.16.10969 (Steam, testing 
   - Added value 64 (`HIDE_ON_UGC`)
 ## Changes to testing
 - All tests for methods not requiring an access token now re-record cassettes each time.
-- Updated deviceKey used for login methods
+- Changed deviceKey used for login methods
 - Remove sensitive data from recorded requests and responses
 - Update `vcrpy` version to `6.0.1`
 
@@ -224,7 +399,7 @@ The library has been updated to Pixel Starships v0.998.9.12852 (IOS) and v0.998.
   - Update endpoint `list_all_task_designs_2` with new parameter `client_date_time`
 ### Changes to Entities
 - Changed `Skin`
-  - Updated type of property `sprite_type_enum` to `SpriteType`
+  - Changed type of property `sprite_type_enum` to `SpriteType`
 ### Changes to Raw Entities
 - Changed `CharacterDesignRaw`
   - Added property `tags` (`str`)
@@ -268,10 +443,10 @@ The library has been updated to Pixel Starships v0.997.4.12193 (IOS), v0.997.4.9
 - Changed `MessageService`
   - Added endpoint `send_private_message`
 - Changed `RoomDesignSpriteService`
-  - Updated endpoint `list_room_design_sprites` to use `RoomDesignSpriteServiceRaw.list_room_design_sprites_2`
+  - Changed endpoint `list_room_design_sprites` to use `RoomDesignSpriteServiceRaw.list_room_design_sprites_2`
 - Changed `UserService`
   - Added endpoint `list_skins`
-  - Updated endpoint `user_email_password_authorize` to use `UserServiceRaw.user_email_password_authorize_4`
+  - Changed endpoint `user_email_password_authorize` to use `UserServiceRaw.user_email_password_authorize_4`
   - Endpoint `device_login_15` now provides default values
 ### Changes to Raw Services
 - Changed `MessageServiceRaw`
