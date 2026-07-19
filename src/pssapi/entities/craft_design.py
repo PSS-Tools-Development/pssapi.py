@@ -9,6 +9,7 @@ class CraftDesign(_CraftDesignRaw, _EntityWithIdBase):
     def __init__(self, craft_design_info: _EntityInfo) -> None:
         super().__init__(craft_design_info)
         self._craft_attack_type_enum: _enums.CraftAttackType = _parse.pss_str_enum(self.craft_attack_type, _enums.CraftAttackType)
+        self._craft_pathing_type_enum: _enums.CraftPathingType = _parse.pss_str_enum(self.craft_pathing_type, _enums.CraftPathingType)
         self._craft_target_type_enum: _enums.CraftTargetType = _parse.pss_str_enum(self.craft_target_type, _enums.CraftTargetType)
 
     @property
@@ -18,6 +19,10 @@ class CraftDesign(_CraftDesignRaw, _EntityWithIdBase):
     @property
     def craft_attack_type_enum(self) -> "_enums.CraftAttackType":
         return self._craft_attack_type_enum
+
+    @property
+    def craft_pathing_type_enum(self) -> "_enums.CraftPathingType":
+        return self._craft_pathing_type_enum
 
     @property
     def craft_target_type_enum(self) -> "_enums.CraftTargetType":
