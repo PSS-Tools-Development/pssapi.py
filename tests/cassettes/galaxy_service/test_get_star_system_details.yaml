@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/GalaxyService/GetStarSystemDetails?starSystemId=53
+  response:
+    body:
+      string: <GalaxyService><GetStarSystemDetails><StarSystemDetail StarSystemDetailId="53"
+        StarSystemId="53" OwnerType="Alliance" OwnerName="Red Barons" ShipGarrisonString="281x1"
+        OwnerId="23429" OwnerIconSpriteId="2316" EngagementCooldownEndDate="2026-05-22T06:07:01"
+        ImmunityEndDate="2000-01-01T00:00:00" ShipManufactureStartDate="2000-01-01T00:00:00"
+        LastConqueredDate="1900-01-01T00:00:00" ShipGarrisonInfoString="[{&quot;ShipId&quot;:281,&quot;UserId&quot;:281,&quot;ShipDesignId&quot;:12,&quot;ShipName&quot;:&quot;pirategunship5&quot;,&quot;Quantity&quot;:1,&quot;PowerScore&quot;:1845}]"><StarSystemInfrastructures
+        StarSystemInfrastructureId="142" StarSystemInfrastructureDesignId="193" InvestmentLevel="3"
+        StarSystemId="53" InvestmentEndDate="2026-07-15T18:25:44" /><StarSystemInfrastructures
+        StarSystemInfrastructureId="143" StarSystemInfrastructureDesignId="194" InvestmentLevel="3"
+        StarSystemId="53" InvestmentEndDate="2026-07-15T18:25:48" /></StarSystemDetail></GetStarSystemDetails></GalaxyService>
+    headers:
+      Cache-Control:
+      - no-store, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 15 Jul 2026 06:01:11 GMT
+      Server:
+      - Kestrel
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 5ea5681c91ed88c9c3af7fc72fa26702.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - aeFv0mNrvq2f9egln0OkjieNkfXUbz2p3l2X9vmy4DiIZtkHxr0J9w==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,6 +1,7 @@
 import datetime as _datetime
 import hashlib as _hashlib
 from typing import List as _List
+from typing import Tuple as _Tuple
 from uuid import uuid4
 
 import pssapi.services.service_base as _service_base
@@ -131,6 +132,31 @@ class UserService(_service_base.ServiceBase):
             refresh_token,
             _utils.convert.to_pss_bool(signal or False),
         )
+        return result
+
+    async def list_all_user_data_first(
+        self, access_token: str, user_id: int
+    ) -> _Tuple[
+        _List[_entities.Achievement],
+        _List[_entities.AllianceTask],
+        _List[_entities.Battle],
+        _List[_entities.CharacterAction],
+        _List[_entities.Character],
+        _List[_entities.Item],
+        _List[_entities.MissionEvent],
+        _entities.Research,
+        _List[_entities.RoomAction],
+        _List[_entities.Room],
+        _List[_entities.Situation],
+        _List[_entities.StarSystemDetail],
+        _List[_entities.StarSystemMarker],
+        _List[_entities.Task],
+        _List[_entities.UserMarker],
+        _List[_entities.UserSkin],
+        _List[_entities.UserStarSystem],
+    ]:
+        production_server = await self.get_production_server()
+        result = await _UserServiceRaw.list_all_user_data_first_2(production_server, access_token, user_id)
         return result
 
     async def list_friends(self, user_id: int, access_token: str) -> _entities.ListFriends:

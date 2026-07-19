@@ -1,0 +1,195 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/PublicService/GetShipCharactersByUsername?username=The+worst.
+  response:
+    body:
+      string: <GetShipCharactersByUsername><Characters><Character CharacterId="aade00b9-a680-2eb1-6ea1-56066fa11c6a"
+        CharacterDesignId="245" CharacterName="Smitty Werben Jagger Man Jensen" Level="40"
+        /><Character CharacterId="d013581c-bdad-a9d5-a952-dfbf06761ee3" CharacterDesignId="31"
+        CharacterName="Dennis" Level="30" /><Character CharacterId="b0d4c8b5-d635-bdc6-b881-1e3a26314b92"
+        CharacterDesignId="315" CharacterName="Gray Virtuoso" Level="40" /><Character
+        CharacterId="5149b4bd-0eb4-084c-d253-91504036b671" CharacterDesignId="185"
+        CharacterName="Mcdonalds" Level="40" /><Character CharacterId="fc194456-ab26-c171-e854-227b7531badc"
+        CharacterDesignId="161" CharacterName="Origin-EMP-010" Level="40" /><Character
+        CharacterId="0f5e26c2-3ace-5ad7-2f10-159a6b62a036" CharacterDesignId="272"
+        CharacterName="Mistycball" Level="40" /><Character CharacterId="5ec8b9ee-0b9b-0f99-83f2-f109a018b5bc"
+        CharacterDesignId="189" CharacterName="Huge Hellaloya" Level="40" /><Character
+        CharacterId="1f182c9f-1235-76e6-8dc4-903b4e3fad05" CharacterDesignId="189"
+        CharacterName="Huge Hellaloya" Level="40" /><Character CharacterId="66f3b100-b8b8-75ad-f067-ca2d0f76fb75"
+        CharacterDesignId="226" CharacterName="Daft Kittus" Level="5" /><Character
+        CharacterId="56619a64-c35b-1374-36c8-7d65daaaea9c" CharacterDesignId="361"
+        CharacterName="Origin-ION-030" Level="40" /><Character CharacterId="d34a5dcb-1e25-0c0b-f99b-f6da6dd41d3b"
+        CharacterDesignId="266" CharacterName="Mousey" Level="8" /><Character CharacterId="fa4af649-9e2a-7ccb-fc4d-42f5ce4ba528"
+        CharacterDesignId="189" CharacterName="Huge Hellaloya" Level="40" /><Character
+        CharacterId="9f50aa14-64bf-8530-53e1-040d36c9fa06" CharacterDesignId="15"
+        CharacterName="Doge" Level="3" /><Character CharacterId="2f085df6-3a36-4fa3-e192-be865911dcbc"
+        CharacterDesignId="367" CharacterName="Toma for Season Pass task" Level="40"
+        /><Character CharacterId="14fc403a-326d-75bf-7ec9-a3922d9b7b45" CharacterDesignId="190"
+        CharacterName="Dolores" Level="40" /><Character CharacterId="b62402d8-e6eb-e76d-42ba-c5b8be9f3a42"
+        CharacterDesignId="89" CharacterName="Guan Yu" Level="40" /><Character CharacterId="f0b4ea23-1215-93d4-81db-2c5ed77c9375"
+        CharacterDesignId="93" CharacterName="Origin-ION-020" Level="40" /><Character
+        CharacterId="4a426f51-cad6-aba9-2563-29de3eccfe3c" CharacterDesignId="363"
+        CharacterName="94-010 Ma Chao" Level="40" /><Character CharacterId="8ff2ef90-7ebf-e7f8-8da3-2747ee2bf6da"
+        CharacterDesignId="275" CharacterName="Schrodinger" Level="29" /><Character
+        CharacterId="9081ecb7-2778-58ae-2513-d98cfa813b8a" CharacterDesignId="99"
+        CharacterName="Mr Egggg" Level="29" /><Character CharacterId="ec43ebfe-2c32-d37b-9fb4-edad41790b9c"
+        CharacterDesignId="97" CharacterName="Xiao Qiao" Level="10" /><Character CharacterId="35f5704d-690e-ba32-bbaf-9ab16ea6f4f7"
+        CharacterDesignId="96" CharacterName="Da Qiao" Level="2" /><Character CharacterId="9a8d116d-ae61-916a-5b85-c7b7892afad6"
+        CharacterDesignId="318" CharacterName="Ardent Stardancer" Level="3" /><Character
+        CharacterId="4ce6776d-fbe3-7e59-1d7f-13b6328b4e9d" CharacterDesignId="109"
+        CharacterName="Dr Sera" Level="40" /><Character CharacterId="1f740418-9fbf-ea9e-881a-ffadaa29a936"
+        CharacterDesignId="189" CharacterName="Huge Hellaloya" Level="40" /><Character
+        CharacterId="35b86a41-7ca7-bf9d-14fd-e417f97a9c65" CharacterDesignId="272"
+        CharacterName="Mistycball" Level="40" /><Character CharacterId="cd0384b9-e0e4-61ef-a29a-b2a16497b638"
+        CharacterDesignId="92" CharacterName="Cao Cao" Level="23" /><Character CharacterId="7a7cb196-8cd3-7bb1-3ab2-34b752e0380c"
+        CharacterDesignId="100" CharacterName="Giant Slime" Level="22" /><Character
+        CharacterId="334c41c4-49f9-ca4e-5ff6-d9b6c0990b69" CharacterDesignId="259"
+        CharacterName="Qtarian Healer" Level="2" /><Character CharacterId="abdcd6bb-5ecf-dab3-a920-75f5225a4cd2"
+        CharacterDesignId="279" CharacterName="Ennui" Level="23" /><Character CharacterId="70f2ddc8-382f-2751-d1e9-f68e49f38d21"
+        CharacterDesignId="404" CharacterName="Ghostly Charles" Level="1" /><Character
+        CharacterId="6ad3c544-3991-f7a0-c513-b0a8ef35acbb" CharacterDesignId="311"
+        CharacterName="Mad Jackson" Level="1" /><Character CharacterId="58f139d6-3c19-f105-69ad-55aabb3661a0"
+        CharacterDesignId="273" CharacterName="Ardent Templar" Level="40" /><Character
+        CharacterId="e20e4fcf-17a8-7437-1bdc-539971b19fe6" CharacterDesignId="272"
+        CharacterName="Mistycball" Level="40" /><Character CharacterId="5af3c44b-5f46-d525-cdce-038a60b165cc"
+        CharacterDesignId="402" CharacterName="Origin-MLZ2-030 Baron" Level="40" /><Character
+        CharacterId="7e12c128-17a4-1287-0d70-7ba2b16f82ab" CharacterDesignId="272"
+        CharacterName="Mistycball" Level="40" /><Character CharacterId="ce27fa48-ef7c-cad2-9f11-0d1db54b9c94"
+        CharacterDesignId="355" CharacterName="Turkey Hero" Level="40" /><Character
+        CharacterId="8fdd1376-8e35-9385-d288-896cdffd99c9" CharacterDesignId="348"
+        CharacterName="Galactic Sprite" Level="40" /><Character CharacterId="a8a962a5-3537-5787-4a75-9c379d731b7c"
+        CharacterDesignId="356" CharacterName="Cyber Duck" Level="40" /><Character
+        CharacterId="ac2d1052-cf0e-9b01-8d0d-71690ba17cf2" CharacterDesignId="357"
+        CharacterName="Origin-ION-010" Level="40" /><Character CharacterId="4f37b777-17ad-eb91-0f57-0d78aff479ea"
+        CharacterDesignId="230" CharacterName="Sphinx" Level="3" /><Character CharacterId="5d9a7473-bf94-9c04-2ccc-781f766070ab"
+        CharacterDesignId="388" CharacterName="Jack O'Lantern" Level="40" /><Character
+        CharacterId="54ecd065-9abd-b092-1541-6ff87144f35c" CharacterDesignId="355"
+        CharacterName="Turkey Hero" Level="40" /><Character CharacterId="52de82ff-7058-b06a-faca-b7a2058ba920"
+        CharacterDesignId="405" CharacterName="Penny" Level="22" /><Character CharacterId="887f21fc-9b95-3ee2-e384-230763194d31"
+        CharacterDesignId="278" CharacterName="Bad Vlad" Level="32" /><Character CharacterId="682dc1de-18d2-5191-c3d5-c3cd5169bad3"
+        CharacterDesignId="392" CharacterName="Polaran Pilgrim" Level="20" /><Character
+        CharacterId="e55c334d-c7b7-2a8e-bfce-1a0471233831" CharacterDesignId="449"
+        CharacterName="Floozey" Level="18" /><Character CharacterId="73a4bc33-3ff2-3127-4de9-5f78707c6a48"
+        CharacterDesignId="272" CharacterName="Mistycball" Level="40" /><Character
+        CharacterId="b19111a8-eac0-a765-864a-afb1628eec40" CharacterDesignId="191"
+        CharacterName="Robyna Hoots" Level="1" /><Character CharacterId="c3f5813e-b136-83a6-2525-855a4b8a7920"
+        CharacterDesignId="148" CharacterName="Taura" Level="40" /><Character CharacterId="57ffe0ff-9758-9db9-812f-905be39eb29a"
+        CharacterDesignId="329" CharacterName="Origin-RG-020 Ichigo" Level="40" /><Character
+        CharacterId="2495e005-60f8-f47c-e0e6-2a17fa152259" CharacterDesignId="68"
+        CharacterName="Witch" Level="27" /><Character CharacterId="6a6f2069-92e2-8169-9eb8-2ed3ac17489b"
+        CharacterDesignId="32" CharacterName="Demon Boy" Level="22" /><Character CharacterId="f2bc0d6d-2e09-be2f-1ee6-50f5730ff087"
+        CharacterDesignId="14" CharacterName="Medusa" Level="34" /><Character CharacterId="9645c3b3-6d82-3cf2-c02f-7e1fb70d6fd8"
+        CharacterDesignId="461" CharacterName="Origin-MLZ2-010 Apex" Level="40" /><Character
+        CharacterId="a022c8ae-e476-1a0e-06ad-67809dfa049e" CharacterDesignId="284"
+        CharacterName="Mabel Mayhem" Level="1" /><Character CharacterId="d08d7cb3-d826-ab72-6268-2435e8c7e926"
+        CharacterDesignId="126" CharacterName="Willy" Level="40" /><Character CharacterId="93c5489e-92c0-4c08-5da0-31388bfd9406"
+        CharacterDesignId="393" CharacterName="Ming-Ye the Snek AI holder" Level="3"
+        /><Character CharacterId="83422699-ca75-394b-b6ea-edaf759eb039" CharacterDesignId="394"
+        CharacterName="Sir Leadf- Mitto AI holder" Level="2" /><Character CharacterId="963fa5f7-31a5-dc75-4ae9-b5087f52e6a0"
+        CharacterDesignId="462" CharacterName="Bastet" Level="4" /><Character CharacterId="05f53cbe-be8c-dbc6-afa0-394950f0c610"
+        CharacterDesignId="432" CharacterName="Origin-MLZ2-020 Saboteur Pianist" Level="40"
+        /><Character CharacterId="e5e97d42-4fa4-b92c-8300-a4b9bf3c2ba5" CharacterDesignId="461"
+        CharacterName="Origin-RG-010 Apex" Level="40" /><Character CharacterId="e1b680c9-a265-53db-21f7-e8a3b729a058"
+        CharacterDesignId="348" CharacterName="Galactic Sprite" Level="40" /><Character
+        CharacterId="83b6bcac-1496-b223-53cc-bf18551844d4" CharacterDesignId="383"
+        CharacterName="The Conjoint Archon" Level="40" /><Character CharacterId="17c14ba2-f6a1-c05b-d829-21c5bbbee5d4"
+        CharacterDesignId="383" CharacterName="Origin-EMP-040" Level="40" /><Character
+        CharacterId="97ecf93f-954c-8708-49cd-ec9174702577" CharacterDesignId="435"
+        CharacterName="Origin-EMP-030" Level="40" /><Character CharacterId="fc73e49a-bf37-bdf8-4ab0-31e329680fe7"
+        CharacterDesignId="385" CharacterName="Admiral Snek" Level="40" /><Character
+        CharacterId="99a3c376-7089-74dd-d838-2baeb882f15b" CharacterDesignId="121"
+        CharacterName="Zombieee" Level="1" /><Character CharacterId="f70eb8fe-4e71-9197-07ae-3e0fe1c2ab1c"
+        CharacterDesignId="305" CharacterName="Fixer Silvertongue" Level="1" /><Character
+        CharacterId="fef26abf-f2ba-443a-5135-a17a5bdbe236" CharacterDesignId="287"
+        CharacterName="Awful Ma Chao AI holder" Level="1" /><Character CharacterId="33bca9b7-6226-e8af-a917-15d47019124e"
+        CharacterDesignId="308" CharacterName="Vit the Idiot" Level="1" /><Character
+        CharacterId="189c9b73-275f-4faf-7092-0420fa642a7c" CharacterDesignId="363"
+        CharacterName="94-020 Ma Chao" Level="40" /><Character CharacterId="883e41eb-1a35-4cd7-f286-ac030cd3ab68"
+        CharacterDesignId="461" CharacterName="Apex" Level="1" /><Character CharacterId="c1ecc068-6a86-0b79-f5b0-492b3d7c5d21"
+        CharacterDesignId="402" CharacterName="The Red Baron" Level="40" /><Character
+        CharacterId="7057c6e4-944c-2243-5564-3e9f801a5783" CharacterDesignId="473"
+        CharacterName="Tylord" Level="1" /><Character CharacterId="0471b780-dca3-6199-3ed9-516136d4b54f"
+        CharacterDesignId="272" CharacterName="Mistycball" Level="1" /><Character
+        CharacterId="3108d360-1351-3d86-3c23-f4b96cccf77c" CharacterDesignId="348"
+        CharacterName="Galactic Sprite" Level="40" /><Character CharacterId="b626956a-8792-2f3a-b018-753c1384138f"
+        CharacterDesignId="385" CharacterName="SB-010 Snek" Level="40" /><Character
+        CharacterId="18bb052d-79d2-8df6-241f-4a24f9a42148" CharacterDesignId="357"
+        CharacterName="Origin-EMP-020" Level="40" /><Character CharacterId="78f5016b-8742-9e03-0cae-6e452b1a6eda"
+        CharacterDesignId="434" CharacterName="Origin-RG-030 Mitto" Level="40" /><Character
+        CharacterId="533b4560-e446-ef5b-7d83-262c2fdea8fd" CharacterDesignId="461"
+        CharacterName="Apex" Level="1" /><Character CharacterId="e395d338-8133-b27e-dbc7-c7dbdb5befc0"
+        CharacterDesignId="233" CharacterName="Cathulhu" Level="4" /><Character CharacterId="4b9e1db7-91fe-bceb-0db9-154a8d58e412"
+        CharacterDesignId="118" CharacterName="Meowy Cat" Level="1" /><Character CharacterId="6e52e2a1-31ca-4c3a-5d49-2324f4dbc892"
+        CharacterDesignId="377" CharacterName="Drama Llama" Level="40" /><Character
+        CharacterId="dcdf7f7b-c727-2a59-309c-f26f5c44a64d" CharacterDesignId="355"
+        CharacterName="Turkey Hero" Level="40" /><Character CharacterId="2a266f53-9a0b-0513-fb92-c24152addeaa"
+        CharacterDesignId="474" CharacterName="Ursa Major" Level="40" /><Character
+        CharacterId="988ba0d2-b81b-5ed9-bfe7-1d65dfb79ac4" CharacterDesignId="383"
+        CharacterName="SB-020 TCA" Level="40" /><Character CharacterId="918f4516-2a09-c4fe-aba0-b8e6816d88c2"
+        CharacterDesignId="311" CharacterName="Mad Jackson" Level="1" /><Character
+        CharacterId="004fbaa5-640c-a42e-201d-85eea45d8440" CharacterDesignId="483"
+        CharacterName="Smokey Katzinski" Level="40" /><Character CharacterId="0377e82d-c5b8-255d-6142-ea12324c6dfa"
+        CharacterDesignId="483" CharacterName="Smokey Katzinski" Level="40" /><Character
+        CharacterId="7a51502d-64ef-0d7f-e93c-7f51d09a0995" CharacterDesignId="120"
+        CharacterName="Zombie" Level="1" /><Character CharacterId="bcb8bc02-f8c6-f815-02d2-954e8aacd939"
+        CharacterDesignId="402" CharacterName="The Red Baron" Level="40" /><Character
+        CharacterId="66ff46a2-8858-882c-79f6-6c161d8c3c1b" CharacterDesignId="116"
+        CharacterName="94-005 Paralympic God" Level="40" /><Character CharacterId="50a0a298-e8c2-af9b-5665-64e0a0840fac"
+        CharacterDesignId="270" CharacterName="Lilith" Level="40" /><Character CharacterId="93249cc4-dbe5-9ea8-b089-6fd0659af41f"
+        CharacterDesignId="466" CharacterName="Magellan" Level="40" /><Character CharacterId="257c814a-5c45-7e4f-66f0-5e0b3e848a83"
+        CharacterDesignId="409" CharacterName="King Sejong the Great" Level="15" /><Character
+        CharacterId="705d7fbe-a240-6e40-b219-68eb576c50be" CharacterDesignId="409"
+        CharacterName="King Sejong the Great" Level="12" /><Character CharacterId="7e243297-ddcf-474f-d2ad-bc54370a7b94"
+        CharacterDesignId="126" CharacterName="Willy" Level="35" /><Character CharacterId="6b4162ac-2c98-071c-6d2a-3c67094451cb"
+        CharacterDesignId="116" CharacterName="Paralympic God" Level="15" /><Character
+        CharacterId="11c9a470-9dad-fa87-8b4b-2ce64f04a8b5" CharacterDesignId="116"
+        CharacterName="Paralympic God" Level="14" /><Character CharacterId="2d3ff265-2747-4fc4-bbeb-90fc1e5179b5"
+        CharacterDesignId="357" CharacterName="Galactic Snow Maiden" Level="32" /><Character
+        CharacterId="d8de3e84-9bb2-9895-8a5c-6fad43bca1ba" CharacterDesignId="434"
+        CharacterName="Mitto" Level="4" /><Character CharacterId="4d8e3ac4-2ab0-4f10-4424-93fec427a9ed"
+        CharacterDesignId="434" CharacterName="Mitto" Level="31" /><Character CharacterId="993051a2-1704-31ba-5e14-c1c3c92c2514"
+        CharacterDesignId="147" CharacterName="King Dong" Level="40" /><Character
+        CharacterId="41f80c5e-f784-9bba-69b6-bdb29d878818" CharacterDesignId="375"
+        CharacterName="Nezha" Level="2" /><Character CharacterId="8e483138-feb9-ff80-d6f5-f698d748fb9a"
+        CharacterDesignId="315" CharacterName="Gray Virtuoso" Level="1" /><Character
+        CharacterId="d04b3bcc-0cca-570b-e5d3-43414f7b5cf8" CharacterDesignId="487"
+        CharacterName="Beti Yeti" Level="1" /><Character CharacterId="0a55a8d5-551f-ea2c-22ee-ebcc9bd6c593"
+        CharacterDesignId="363" CharacterName="Ma Chao" Level="4" /><Character CharacterId="687c9619-d468-b9ff-a22e-ddc96759bc6a"
+        CharacterDesignId="447" CharacterName="Civilian Pilot" Level="4" /><Character
+        CharacterId="32136c64-7f08-abc1-7e53-02a0fcadd41c" CharacterDesignId="113"
+        CharacterName="Jaiden" Level="1" /><Character CharacterId="312e7fb9-fde1-5819-c685-e1c7bec5d2a8"
+        CharacterDesignId="489" CharacterName="Draco Knight" Level="1" /><Character
+        CharacterId="1dadf0d2-14d6-1475-f0b8-54b6fd8c92f4" CharacterDesignId="121"
+        CharacterName="Zombieee" Level="1" /></Characters></GetShipCharactersByUsername>
+    headers:
+      Cache-Control:
+      - no-store, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 15 Jul 2026 06:04:07 GMT
+      Server:
+      - Kestrel
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 cb643617ee4bca09492409ac12401bfc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - jELjhiNIosQCZ-xZKKLrdg_T5HC-XbNqvhZD8h1-xLRfI8o02OASgg==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1

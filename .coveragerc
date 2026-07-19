@@ -18,5 +18,10 @@ exclude_also =
     ; Don't complain about pass
     ^ *?pass *$
 
+    ; Don't complain about single-line properties
+    @property\n +?def \w+\(self\) -> [^:]+:\n +?return self\.\w+$
+    ; Don't complain about calling the parent's class constructor
+    super\(\).__init__\(\w+?\)
+
 [xml]
 output = cov.xml

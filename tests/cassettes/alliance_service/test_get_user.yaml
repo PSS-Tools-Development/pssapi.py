@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/AllianceService/GetUser?userId=4771414
+  response:
+    body:
+      string: <AllianceService><GetUser><User Id="4771414" Name="The worse." LastAlertDate="2026-07-15T05:47:16.3365204Z"
+        UserType="UserTypePaying" GenderType="Unknown" RaceType="Unknown"  ProfileImageUrl=""
+        Trophy="1367" GameCenterName="" CompletedMissionDesigns="" LanguageKey="en"
+        TutorialStatus="0" IconSpriteId="653" TipStatus="468909709" AllianceMembership="ViceAdmiral"
+        CrewDonated="0" CrewReceived="0" FreeStarbuxReceivedToday="0" DailyRewardStatus="0"
+        HeroBonusChance="0" GameCenterFriendCount="0" CompletedMissionEventIds=""
+        UnlockedShipDesignIds="12" UnlockedCharacterDesignIds="244,82,299,307,258,13,296,104,71,55,9,83,121,272,225,120,313,67"
+        Status="2097840" UserSourceAdsPlatformType="Unknown" AdsPlatformUserId=""
+        LastCatalogPurchaseDate="2022-01-06T00:00:01" VipExpiryDate="1900-01-01T00:00:00"
+        ChallengeWins="0" ChallengeLosses="0" LoadingPercentage="0" AllianceSupplyDonation="0"
+        TotalSupplyDonation="0" DailyMissionsAttempted="" PurchaseRewardPoints="0"
+        UsedRewardPoints="0" GooglePlayName="" TournamentRewardPoints="0" AllianceScore="0"
+        ChampionshipScore="0" DailyChallengeWinStreak="0" DrawsUsedToday="0" ActivatedPromotions=""
+        PVPAttackWins="0" PVPAttackLosses="0" PVPAttackDraws="0" PVPDefenceDraws="0"
+        PVPDefenceWins="0" PVPDefenceLosses="0" HighestTrophy="1000" ChatAppearance="0"
+        AuthenticationType="Basic" DailyPVPAttacks="0" ExploredStarSystemIds="" TournamentBonusScore="0"
+        SituationOccurrencesToday="0" Flags="0" EmailVerificationStatus="None" BoostAmount="0"
+        PassPoints="0" AllianceScoreAtStartOfDay="0" TaskRerollCount="0" LeagueType="Standard"
+        DailyPvPDefence="0" TrophyGained="0" UnlockedSkinKeys="" RewardsCollectable="false"
+        RewardsCollectableAmount="0" IsUnderAge="false" TotalBattleSearches="0" CreatorCode=""
+        DrawsString="" PvPContinuousLosses="0" EngagementCooldownEndDate="2000-01-01T00:00:00"
+        MatchingStatus="Inactive" ShipDesignId="12" AllianceName="Who's bad?" AllianceSpriteId="5375"
+        Ranking="247308"  TournamentResetDate="2026-07-15T05:47:16" AllianceJoinDate="2023-09-19T12:39:04"
+        LastPurchaseDate="" LastHeartBeatDate="2024-01-06T08:15:16" LastRewardActionDate="2019-03-13T14:05:23"
+        CooldownExpiry="2026-07-15T05:47:16" CreationDate="2019-03-13T14:05:23" LastLoginDate="2024-01-06T08:15:16"
+        LastVipClaimDate="2020-05-11T00:00:00" AllianceId="43348" ChallengeDesignId="0"
+        LastChallengeDesignId="0" CaptainCharacterDesignId="244" AllianceQualifyDivisionDesignId="0"
+        BlockAuthAttemptsUntilDate="2000-01-01T00:00:00" BoostEndDate="2001-01-01T00:00:00"
+        CreatorSupportDate="1900-01-01T00:00:00" LastBoostDate="2000-01-01T00:00:00"
+        UpdateDate="2025-06-19T12:35:35" OwnerUserId="0" RibbonSpriteId="0" /></GetUser></AllianceService>
+    headers:
+      Cache-Control:
+      - public,max-age=60
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 15 Jul 2026 05:47:16 GMT
+      Server:
+      - Kestrel
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 6c62711a616d17e4e2fe0b898df3c02a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DcIMD-4HkiZfPuVGcyfbJ_2CmUa1YT2gBnAdBND-_OGTrHKkFkh6tw==
+      X-Amz-Cf-Pop:
+      - TXL50-P4
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1

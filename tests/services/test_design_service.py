@@ -109,7 +109,7 @@ async def test_list_all_dynamic_designs(client: pssapi.PssApiClient, device_type
 @pytest.mark.asyncio
 @pytest.mark.usefixtures("client", "device_type")
 @pytest.mark.vcr()
-async def test_list_all_static_designs_get_all_designs(client: pssapi.PssApiClient, device_type: pssapi.enums.DeviceType):
+async def test_list_all_static_designs(client: pssapi.PssApiClient, device_type: pssapi.enums.DeviceType):
     types = [
         pssapi.entities.AchievementDesign,
         pssapi.entities.Animation,

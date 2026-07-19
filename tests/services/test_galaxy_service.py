@@ -9,6 +9,14 @@ STAR_SYSTEM_ID: int = 53  # Golgotha
 
 
 @pytest.mark.asyncio
+@pytest.mark.usefixtures("access_token", "client")
+@pytest.mark.vcr(record_mode="once")
+async def test_get_star_system_details(access_token: str, client: pssapi.PssApiClient):
+    star_system_details = await client.galaxy_service.get_star_system_details(access_token, STAR_SYSTEM_ID)
+    assert isinstance(star_system_details, pssapi.entities.StarSystemDetail)
+
+
+@pytest.mark.asyncio
 @pytest.mark.usefixtures("access_token", "client", "client_date_time")
 @pytest.mark.vcr(record_mode="once")
 async def test_go_to(access_token: str, client: pssapi.PssApiClient, client_date_time: datetime.datetime):
