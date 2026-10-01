@@ -26,6 +26,7 @@ from .entity_base_raw import EntityBaseRaw
 from .file_raw import FileRaw
 from .friend_raw import FriendRaw
 from .get_catalog_quantity_raw import GetCatalogQuantityRaw
+from .get_current_resources_raw import GetCurrentResourcesRaw
 from .history_raw import HistoryRaw
 from .infrastructure_design_raw import InfrastructureDesignRaw
 from .item_design_action_raw import ItemDesignActionRaw
@@ -109,6 +110,7 @@ __all__ = [
     FileRaw.__name__,
     FriendRaw.__name__,
     GetCatalogQuantityRaw.__name__,
+    GetCurrentResourcesRaw.__name__,
     HistoryRaw.__name__,
     InfrastructureDesignRaw.__name__,
     ItemRaw.__name__,

@@ -27,6 +27,7 @@ from .entity_base import EntityBase, EntityWithIdBase
 from .file import File
 from .friend import Friend
 from .get_catalog_quantity import GetCatalogQuantity
+from .get_current_resources import GetCurrentResources
 from .history import History
 from .infrastructure_design import InfrastructureDesign
 from .item import Item
@@ -112,6 +113,7 @@ __all__ = [
     File.__name__,
     Friend.__name__,
     GetCatalogQuantity.__name__,
+    GetCurrentResources.__name__,
     History.__name__,
     InfrastructureDesign.__name__,
     Item.__name__,

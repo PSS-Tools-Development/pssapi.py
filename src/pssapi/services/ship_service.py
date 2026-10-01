@@ -5,6 +5,7 @@ from typing import Tuple as _Tuple
 import pssapi.services.service_base as _service_base
 
 from .. import utils as _utils
+from ..entities import GetCurrentResources as _GetCurrentResources
 from ..entities import Ship as _Ship
 from ..entities import ShipDesign as _ShipDesign
 from ..entities import User as _User
@@ -16,6 +17,12 @@ class ShipService(_service_base.CacheableServiceBase):
         ships = await self.list_all_ship_designs(client_date_time, design_version)
         result = list(filter(lambda ship: ship_name.lower() in ship.ship_design_name.lower(), ships))
 
+        return result
+
+    async def get_current_resources(self, access_token: str, user_id: int) -> _GetCurrentResources:
+        """Retrieve the current ship resources of a user: credits, gas, minerals and supply."""
+        production_server = await self.get_production_server()
+        result = await _ShipServiceRaw.get_current_resources(production_server, access_token, user_id)
         return result
 
     async def get_ship_by_user_id(self, access_token: str, client_date_time: _datetime.datetime, user_id: int) -> _Ship:

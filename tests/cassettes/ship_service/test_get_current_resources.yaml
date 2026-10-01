@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.pixelstarships.com/ShipService/GetCurrentResources?userId=11483762
+  response:
+    body:
+      string: <ShipService><GetCurrentResources Credits="994" Minerals="1733600" Gas="2283876"
+        Supply="0" /></ShipService>
+    headers:
+      Cache-Control:
+      - no-store, no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '108'
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 01 Oct 2026 00:31:19 GMT
+      Server:
+      - Kestrel
+      Via:
+      - 1.1 58cb3b9ee1488076083df365a7774696.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - qTFgmTUuCC64xLB-0VwJj5D4KOLd3680uvl654CKG1po6Y6EqrtLSQ==
+      X-Amz-Cf-Pop:
+      - BOS50-P2
+      X-Cache:
+      - Miss from cloudfront
+    status:
+      code: 200
+      message: OK
+version: 1
