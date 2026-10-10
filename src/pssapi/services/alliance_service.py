@@ -5,7 +5,6 @@ import pssapi.services.service_base as _service_base
 
 from ..entities import Alliance as _Alliance
 from ..entities import Character as _Character
-from ..entities import Message as _Message
 from ..entities import User as _User
 from .raw import AllianceServiceRaw as _AllianceServiceRaw
 
@@ -41,7 +40,7 @@ class AllianceService(_service_base.ServiceBase):
         result = await _AllianceServiceRaw.list_characters_given_in_alliance(production_server, access_token, alliance_id, skip, take)
         return result
 
-    async def list_users(self, access_token: str, alliance_id: int, skip: int, take: int) -> _Tuple[_List[_Message], _List[_User]]:
+    async def list_users(self, access_token: str, alliance_id: int, skip: int, take: int) -> _Tuple[_Alliance, _List[_User]]:
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_users_2(production_server, access_token, alliance_id, skip, take)
         return result
