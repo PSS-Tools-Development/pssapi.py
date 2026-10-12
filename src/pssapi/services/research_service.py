@@ -11,6 +11,7 @@ from .raw import ResearchServiceRaw as _ResearchServiceRaw
 class ResearchService(_service_base.CacheableServiceBase):
     @_service_base.cache_endpoint("ResearchDesignVersion")
     async def list_all_research_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ResearchDesign]:
+        """List all research designs, the laboratory research projects (e.g. Incendiary Technology, Rocket Lv2) with gas cost, lab level, research time and prerequisites."""
         production_server = await self.get_production_server()
         result = await _ResearchServiceRaw.list_all_research_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result

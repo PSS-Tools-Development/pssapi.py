@@ -18,45 +18,63 @@ from .raw import GalaxyServiceRaw as _GalaxyServiceRaw
 
 class GalaxyService(_service_base.CacheableServiceBase):
     async def get_star_system_details(self, access_token: str, star_system_id: int) -> _StarSystemDetail:
+        """Retrieve the details of a single star system, by star system ID."""
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.get_star_system_details(production_server, access_token, star_system_id)
         return result
 
     async def go_to(self, access_token: str, checksum: str, client_date_time: str, star_system_id: int) -> _Ship:
+        """Move the user's ship to the given star system, returning the updated ship."""
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.go_to(production_server, access_token, checksum, client_date_time, star_system_id)
         return result
 
     @_service_base.cache_endpoint("MarkerGeneratorDesignVersion")
     async def list_marker_generator_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_StarSystemMarkerGenerator]:
+        """List all star system marker generator designs, as a versioned design list.
+
+        Generators are entities that generate markers on the galaxy map for every user. Markers are things like the
+        NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_marker_generator_designs(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
 
     @_service_base.cache_endpoint("PlanetVersion")
     async def list_planets(self, design_version: int = None) -> _List[_Planet]:
+        """List all planets, as a versioned design list."""
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_planets(production_server, design_version)
         return result
 
     @_service_base.cache_endpoint("StarSystemLinkVersion")
     async def list_star_system_links(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_StarSystemLink]:
+        """List all star system links (galaxy map connections), as a versioned design list."""
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_system_links(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result
 
     async def list_star_system_markers(self, access_token: str, client_date_time: str) -> _List[_StarSystemMarker]:
+        """List the star system markers currently placed on the galaxy map.
+
+        Markers are things like the NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_system_markers(production_server, access_token, client_date_time)
         return result
 
     async def list_star_system_markers_and_user_markers(self, access_token: str) -> _Tuple[_List[_StarSystemMarker], _List[_UserMarker]]:
+        """List the galaxy map star system markers and the current user's own markers.
+
+        Markers are things like the NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_system_markers_and_user_markers(production_server, access_token)
         return result
 
     @_service_base.cache_endpoint("StarSystemVersion")
     async def list_star_systems(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_StarSystem]:
+        """List all star systems, as a versioned design list."""
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_systems(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result

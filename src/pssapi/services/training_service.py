@@ -11,6 +11,7 @@ from .raw import TrainingServiceRaw as _TrainingServiceRaw
 class TrainingService(_service_base.CacheableServiceBase):
     @_service_base.cache_endpoint("TrainingDesignVersion")
     async def list_all_training_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_TrainingDesign]:
+        """List all training designs, the crew training courses (e.g. Kiddie Weights, Meditation) with cost, duration, stat gain chances (hp, attack, stamina, ability) and prerequisites."""
         production_server = await self.get_production_server()
         result = await _TrainingServiceRaw.list_all_training_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result

@@ -13,23 +13,27 @@ from .raw import ShipServiceRaw as _ShipServiceRaw
 
 class ShipService(_service_base.CacheableServiceBase):
     async def to_ship(self, ship_name: str, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ShipDesign]:
+        """Search ship designs by (partial) name and return the matches."""
         ships = await self.list_all_ship_designs(client_date_time, design_version)
         result = list(filter(lambda ship: ship_name.lower() in ship.ship_design_name.lower(), ships))
 
         return result
 
     async def get_ship_by_user_id(self, access_token: str, client_date_time: _datetime.datetime, user_id: int) -> _Ship:
+        """Retrieve a user's starship: hull design, level, hp, power score, star system, shield and cargo items."""
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.get_ship_by_user_id(production_server, access_token, _utils.datetime.convert_to_pss_timestamp(client_date_time), user_id)
         return result
 
     async def inspect_ship(self, access_token: str, user_id: int) -> _Tuple[_Ship, _User]:
+        """Inspect a user's starship and return the ship layout together with its owner's profile."""
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.inspect_ship_2(production_server, access_token, user_id)
         return result
 
     @_service_base.cache_endpoint("ShipDesignVersion")
     async def list_all_ship_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ShipDesign]:
+        """List all ship designs, the hull types players can build their starship from."""
         production_server = await self.get_production_server()
         result = await _ShipServiceRaw.list_all_ship_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
