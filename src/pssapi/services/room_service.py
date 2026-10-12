@@ -56,7 +56,10 @@ class RoomService(_service_base.CacheableServiceBase):
 
     @_service_base.cache_endpoint("RoomDesignPurchaseVersion")
     async def list_room_design_purchase(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_RoomDesignPurchase]:
-        """List all room design purchases (store offers of room blueprints), as a versioned design list."""
+        """List all room design purchases, as a versioned design list.
+
+        Each entry describes how many instances of a room are available at which hull level, and sometimes additional requirements (e.g. original faction).
+        """
         production_server = await self.get_production_server()
         result = await _RoomServiceRaw.list_room_design_purchase(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result

@@ -29,7 +29,7 @@ class BattleService(_service_base.ServiceBase):
     utils = _BattleServiceUtils()
 
     async def get_engagement(self, access_token: str, checksum: str, client_date_time: _datetime.datetime, engagement_id: int) -> _Engagement:
-        """Return a single battle engagement (combat record with both sides' engagement groups and users), by engagement ID."""
+        """Return a single battle engagement — an Invasion battle or a Fleet Wars raid — by engagement ID, including both sides' engagement groups and users."""
         production_server = await self.get_production_server()
         result = await _BattleServiceRaw.get_engagement(production_server, access_token, checksum, client_date_time, engagement_id)
         return result

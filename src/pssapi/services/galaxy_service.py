@@ -31,7 +31,11 @@ class GalaxyService(_service_base.CacheableServiceBase):
 
     @_service_base.cache_endpoint("MarkerGeneratorDesignVersion")
     async def list_marker_generator_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_StarSystemMarkerGenerator]:
-        """List all star system marker generators (rules that place markers on the galaxy map), as a versioned design list."""
+        """List all star system marker generator designs, as a versioned design list.
+
+        Generators are entities that generate markers on the galaxy map for every user. Markers are things like the
+        NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_marker_generator_designs(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
@@ -51,13 +55,19 @@ class GalaxyService(_service_base.CacheableServiceBase):
         return result
 
     async def list_star_system_markers(self, access_token: str, client_date_time: str) -> _List[_StarSystemMarker]:
-        """List the star system markers currently placed on the galaxy map."""
+        """List the star system markers currently placed on the galaxy map.
+
+        Markers are things like the NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_system_markers(production_server, access_token, client_date_time)
         return result
 
     async def list_star_system_markers_and_user_markers(self, access_token: str) -> _Tuple[_List[_StarSystemMarker], _List[_UserMarker]]:
-        """List the galaxy map star system markers and the current user's own markers."""
+        """List the galaxy map star system markers and the current user's own markers.
+
+        Markers are things like the NPC trader ships and the other NPC ships on the galaxy map.
+        """
         production_server = await self.get_production_server()
         result = await _GalaxyServiceRaw.list_star_system_markers_and_user_markers(production_server, access_token)
         return result

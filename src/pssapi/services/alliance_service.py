@@ -18,7 +18,7 @@ class AllianceService(_service_base.ServiceBase):
         return result
 
     async def get_user(self, access_token: str, user_id: int) -> _User:
-        """Retrieve a single user's profile, by user ID."""
+        """Retrieve a single user's profile, by user ID. Only works for users in the same alliance as the user identified by the access token."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.get_user(production_server, access_token, user_id)
         return result

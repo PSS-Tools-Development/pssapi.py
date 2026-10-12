@@ -19,7 +19,10 @@ class ItemService(_service_base.CacheableServiceBase):
 
     @_service_base.cache_endpoint("ItemDesignActionVersion")
     async def list_item_design_actions(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_ItemDesignAction]:
-        """List all item design actions (item effects), as a versioned design list."""
+        """List all item design actions, as a versioned design list.
+
+        An item design action denotes the AI that can be copied from an AI chip item.
+        """
         production_server = await self.get_production_server()
         result = await _ItemServiceRaw.list_item_design_actions(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version)
         return result

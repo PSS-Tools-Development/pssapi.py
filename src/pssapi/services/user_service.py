@@ -240,7 +240,12 @@ class UserService(_service_base.ServiceBase):
     async def user_email_password_authorize(
         self, access_token: str, checksum: str, client_date_time: _datetime.datetime, device_key: str, email: str, is_web: bool, language_key: str, password: str
     ) -> _entities.UserEmailPasswordAuthorize:
-        """Authorize a user account with email and password and return the authorization result."""
+        """
+        Authorize a user account (with email and password) on the device with the given device key: this ties the user to the device,
+        and subsequent calls to `UserService.device_login` with this device key will return this user.
+
+        Returns the authorized user and a refresh token, or an error message if authorization fails.
+        """
         production_server = await self.get_production_server()
         result = await _UserServiceRaw.user_email_password_authorize_4(
             production_server, access_token, checksum, _utils.datetime.convert_to_pss_timestamp(client_date_time), device_key, email, is_web, language_key, password
