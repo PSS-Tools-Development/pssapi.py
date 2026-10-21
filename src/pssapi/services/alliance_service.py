@@ -11,31 +11,37 @@ from .raw import AllianceServiceRaw as _AllianceServiceRaw
 
 class AllianceService(_service_base.ServiceBase):
     async def get_alliance(self, access_token: str, alliance_id: int) -> _Alliance:
+        """Retrieve a single alliance: name, trophy, championship score, description, member count, ranking and division."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.get_alliance(production_server, access_token, alliance_id)
         return result
 
     async def get_user(self, access_token: str, user_id: int) -> _User:
+        """Retrieve a single user's profile, by user ID. Only works for users in the same alliance as the user identified by the access token."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.get_user(production_server, access_token, user_id)
         return result
 
     async def list_alliances_by_championship_score_ranking(self, access_token: str, from_: int, to: int) -> _List[_Alliance]:
+        """List alliances ranked by championship score, between two ranking positions."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_by_championship_score_ranking(production_server, access_token, from_, to)
         return result
 
     async def list_alliances_by_ranking(self, skip: int, take: int) -> _List[_Alliance]:
+        """List alliances by ranking, paginated by `skip` and `take`."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_by_ranking(production_server, skip, take)
         return result
 
     async def list_alliances_with_division(self, division_design_id: int) -> _List[_Alliance]:
+        """List all alliances in a given championship division, by division design ID."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_alliances_with_division(production_server, division_design_id)
         return result
 
     async def list_characters_given_in_alliance(self, access_token: str, alliance_id: int, skip: int, take: int) -> _List[_Character]:
+        """List the characters given in an alliance, by alliance ID, paginated by `skip` and `take`."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.list_characters_given_in_alliance(production_server, access_token, alliance_id, skip, take)
         return result
@@ -46,6 +52,7 @@ class AllianceService(_service_base.ServiceBase):
         return result
 
     async def search_alliances(self, access_token: str, name: str, skip: int, take: int) -> _List[_Alliance]:
+        """Search alliances by name, paginated by `skip` and `take`, returning all matches."""
         production_server = await self.get_production_server()
         result = await _AllianceServiceRaw.search_alliances(production_server, access_token, name, skip, take)
         return result

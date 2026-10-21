@@ -11,6 +11,7 @@ from .raw import RewardServiceRaw as _RewardServiceRaw
 class RewardService(_service_base.CacheableServiceBase):
     @_service_base.cache_endpoint("RewardDesignVersion")
     async def list_all_reward_designs(self, client_date_time: _datetime.datetime = None, design_version: int = None) -> _List[_RewardDesign]:
+        """List all reward designs, the purchasable reward store items (rooms, characters, items) with price in reward points and availability."""
         production_server = await self.get_production_server()
         result = await _RewardServiceRaw.list_all_reward_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
