@@ -117,6 +117,7 @@ class DesignService(_service_base.ServiceBase):
         _List[_StarSystem],
         _List[_TrainingDesign],
     ]:
+        """Return a tuple of 34 design lists (achievements, animations, rooms, ships, items, crew, star systems, sprites, and more) in one versioned catalog call."""
         production_server = await self.get_production_server()
         result = await _DesignServiceRaw.list_all_designs_5(
             production_server,
@@ -163,6 +164,7 @@ class DesignService(_service_base.ServiceBase):
     async def list_all_dynamic_designs(
         self, list_all_promotion_design_version: int, list_all_task_design_version: int, list_item_design_version: int
     ) -> _Tuple[_List[_ItemDesign], _List[_PromotionDesign], _List[_TaskDesign]]:
+        """Return a tuple of (item designs, promotion offers, battle pass task designs) that change frequently."""
         production_server = await self.get_production_server()
         result = await _DesignServiceRaw.list_all_dynamic_designs(production_server, self.language_key, list_all_promotion_design_version, list_all_task_design_version, list_item_design_version)
         return result
@@ -236,6 +238,7 @@ class DesignService(_service_base.ServiceBase):
         _List[_StarSystem],
         _List[_TrainingDesign],
     ]:
+        """Return a tuple of 31 static design lists (rooms, ships, items, crew, star systems, sprites, and other fixed game content)."""
         production_server = await self.get_production_server()
         result = await _DesignServiceRaw.list_all_static_designs_2(
             production_server,

@@ -10,6 +10,8 @@ from .raw import PublicServiceRaw as _PublicServiceRaw
 class PublicService(_service_base.ServiceBase):
     async def get_ship_characters_by_username(self, access_token: str, username: str) -> _List[_Character]:
         """
+        List the crew characters of the ship belonging to a user, by username.
+
         Parameter 'access_token' needs to be a permanent token. A generated token doesn't work.
         """
         production_server = await self.get_production_server()
@@ -18,6 +20,8 @@ class PublicService(_service_base.ServiceBase):
 
     async def get_ship_details(self, access_token: str, user_id: int) -> _Ship:
         """
+        Retrieve the details of the ship belonging to a user, by user ID.
+
         Parameter 'access_token' needs to be a permanent token. A generated token doesn't work.
         """
         production_server = await self.get_production_server()
@@ -26,6 +30,8 @@ class PublicService(_service_base.ServiceBase):
 
     async def get_ship_room_details(self, access_token: str, user_id: int) -> _Ship:
         """
+        Retrieve the rooms of the ship belonging to a user, by user ID.
+
         Parameter 'access_token' needs to be a permanent token. A generated token doesn't work.
         """
         production_server = await self.get_production_server()

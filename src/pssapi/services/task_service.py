@@ -11,6 +11,7 @@ from .raw import TaskServiceRaw as _TaskServiceRaw
 class TaskService(_service_base.CacheableServiceBase):
     @_service_base.cache_endpoint("TaskDesignVersion")
     async def list_all_task_designs(self, client_date_time: _datetime, design_version: int = None) -> _List[_TaskDesign]:
+        """List all task designs, the battle pass season tasks with objective type/amount and pass point rewards."""
         production_server = await self.get_production_server()
         result = await _TaskServiceRaw.list_all_task_designs_2(production_server, _utils.datetime.convert_to_pss_timestamp(client_date_time), design_version, self.language_key)
         return result
