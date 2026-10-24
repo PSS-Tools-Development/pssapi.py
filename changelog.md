@@ -1,5 +1,10 @@
 # Version 0.7.3
 ## Updated Library
+The library has not been updated to a more recent version of Pixel Starships.
+### Docs
+- Added docstrings to all service methods.
+### Changes to Services
+- Fixed `AllianceService.list_users` return type
 ### Changes to Entities
 - Deprecated `GetCurrentResources`
 ### Changes to Raw Entities
