@@ -11,6 +11,8 @@ from .entity_base_raw import EntityBaseRaw as _EntityBaseRaw
 
 
 class GetCurrentResourcesRaw(_EntityBaseRaw):
+    """Deprecated: GetCurrentResourcesRaw was added on accident and will be removed in a future version."""
+
     XML_NODE_NAME: str = "GetCurrentResources"
 
     def __init__(self, get_current_resources_info: _EntityInfo) -> None:
