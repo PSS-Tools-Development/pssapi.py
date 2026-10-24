@@ -1,3 +1,9 @@
+# Version 0.7.3
+## Updated Library
+### Changes to Entities
+- Deprecated `GetCurrentResources`
+### Changes to Raw Entities
+- Deprecated `GetCurrentResourcesRaw`
 # Version 0.7.2
 ## Updated Library
 The library has been updated to Pixel Starships v0.999.44.15532 (Steam)
