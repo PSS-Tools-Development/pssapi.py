@@ -1,3 +1,5 @@
+from typing import List as _List
+
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
@@ -17,6 +19,7 @@ class StarSystemMarkerGenerator(_StarSystemMarkerGeneratorRaw, _EntityWithIdBase
         self._marker_type_enum: _enums.MarkerType = _parse.pss_str_enum(self.marker_type, _enums.MarkerType)
         self._movement_type_enum: _enums.MovementType = _parse.pss_str_enum(self.movement_type, _enums.MovementType)
         self._star_system_marker_generator_metadata: _StarSystemMarkerGeneratorMetadata = _StarSystemMarkerGeneratorMetadata(self.metadata)
+        self._ship_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.ship_ids)]
 
     @property
     def id(self) -> int:
@@ -53,3 +56,7 @@ class StarSystemMarkerGenerator(_StarSystemMarkerGeneratorRaw, _EntityWithIdBase
     @property
     def star_system_marker_generator_metadata(self) -> _StarSystemMarkerGeneratorMetadata:
         return self._star_system_marker_generator_metadata
+
+    @property
+    def ship_ids_list(self) -> _List[int]:
+        return self._ship_ids_list

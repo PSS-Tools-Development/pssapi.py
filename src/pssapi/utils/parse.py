@@ -81,3 +81,11 @@ def pss_str(value: str, default: str = None) -> _Optional[str]:
     if not value or value == "0" or value.lower() == "none":
         return default
     return str(value)
+
+
+def pss_str_list(value: str, separator: str = ",", default: _Optional[list[str]] = None) -> list[str]:
+    """Parse a comma-separated string into a list of strings."""
+    items: list[str] = default or []
+    if not value:
+        return items
+    return [item.strip() for item in value.split(separator) if item.strip()]

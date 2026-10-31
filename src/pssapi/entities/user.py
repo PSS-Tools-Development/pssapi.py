@@ -1,3 +1,5 @@
+from typing import List as _List
+
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
@@ -22,6 +24,10 @@ class User(_UserRaw, _EntityWithIdBase):
         # self._tutorial_status_enum: _enums. = _parse.pss_int_enum(self.tutorial_status, _enums.)   # enum doesn't exist up to PSS v0.994.1
         self._user_source_ads_platform_type_enum: _enums.PlatformType = _parse.pss_str_enum(self.user_source_ads_platform_type, _enums.PlatformType)
         self._user_type_enum: _enums.UserType = _parse.pss_str_enum(self.user_type, _enums.UserType)
+        self._completed_mission_event_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.completed_mission_event_ids)]
+        self._explored_star_system_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.explored_star_system_ids)]
+        self._unlocked_character_design_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.unlocked_character_design_ids)]
+        self._unlocked_ship_design_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.unlocked_ship_design_ids)]
 
     @property
     def id(self) -> int:
@@ -82,3 +88,19 @@ class User(_UserRaw, _EntityWithIdBase):
     @property
     def user_type_enum(self) -> "_enums.UserType":
         return self._user_type_enum
+
+    @property
+    def completed_mission_event_ids_list(self) -> _List[int]:
+        return self._completed_mission_event_ids_list
+
+    @property
+    def explored_star_system_ids_list(self) -> _List[int]:
+        return self._explored_star_system_ids_list
+
+    @property
+    def unlocked_character_design_ids_list(self) -> _List[int]:
+        return self._unlocked_character_design_ids_list
+
+    @property
+    def unlocked_ship_design_ids_list(self) -> _List[int]:
+        return self._unlocked_ship_design_ids_list

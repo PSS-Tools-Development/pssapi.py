@@ -1,3 +1,5 @@
+from typing import List as _List
+
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
@@ -19,6 +21,7 @@ class Setting(_SettingRaw, _EntityWithIdBase):
         self._production_server_enum: _enums.ProductionServer = _parse.pss_str(self.production_server, _enums.ProductionServer)
         self._sale_item_mask_enum: _enums.SaleItemMask = _parse.pss_int(self.sale_item_mask, _enums.SaleItemMask)
         self._sale_type_enum: _enums.SaleType = _parse.pss_str(self.sale_type, _enums.SaleType)
+        self._alliance_badge_sprite_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.alliance_badge_sprite_ids)]
 
     @property
     def id(self) -> int:
@@ -67,3 +70,7 @@ class Setting(_SettingRaw, _EntityWithIdBase):
     @property
     def sale_type_enum(self) -> "_enums.SaleType":
         return self._sale_type_enum
+
+    @property
+    def alliance_badge_sprite_ids_list(self) -> _List[int]:
+        return self._alliance_badge_sprite_ids_list

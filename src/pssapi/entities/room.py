@@ -1,3 +1,5 @@
+from typing import List as _List
+
 from .. import enums as _enums
 from ..types import EntityInfo as _EntityInfo
 from ..utils import parse as _parse
@@ -9,6 +11,7 @@ class Room(_RoomRaw, _EntityWithIdBase):
     def __init__(self, room_info: _EntityInfo) -> None:
         super().__init__(room_info)
         self._room_status_enum: _enums.RoomStatus = _parse.pss_str_enum(self.room_status, _enums.RoomStatus)
+        self._item_ids_list: _List[int] = [int(x) for x in _parse.pss_str_list(self.item_ids)]
 
     @property
     def id(self) -> int:
@@ -17,3 +20,7 @@ class Room(_RoomRaw, _EntityWithIdBase):
     @property
     def room_status_enum(self) -> "_enums.RoomStatus":
         return self._room_status_enum
+
+    @property
+    def item_ids_list(self) -> _List[int]:
+        return self._item_ids_list

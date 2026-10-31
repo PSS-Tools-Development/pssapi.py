@@ -2,7 +2,7 @@
 ## Updated Library
 The library has not been updated to a more recent version of Pixel Starships.
 ### Docs
-- Added docstrings to all service methods.
+- Added docstrings to most service methods.
 ### Changes to Services
 - Fixed `AllianceService.list_users` return type
 ### Changes to Entities
