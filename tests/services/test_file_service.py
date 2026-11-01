@@ -21,3 +21,13 @@ async def test_list_sprites(client: pssapi.PssApiClient):
     assert isinstance(division_designs, list)
     assert len(division_designs) > 0
     assert isinstance(division_designs[0], pssapi.entities.Sprite)
+
+
+@pytest.mark.asyncio
+@pytest.mark.usefixtures("client")
+@pytest.mark.vcr()
+async def test_get_sprite_url(client: pssapi.PssApiClient):
+    url = await client.file_service.get_sprite_url(16632)
+    assert isinstance(url, str)
+    assert url.startswith("https://pixelstarships.s3.amazonaws.com/")
+    assert url.endswith(".png")

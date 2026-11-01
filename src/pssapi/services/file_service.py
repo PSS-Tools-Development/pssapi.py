@@ -21,3 +21,22 @@ class FileService(_service_base.CacheableServiceBase):
         production_server = await self.get_production_server()
         result = await _FileServiceRaw.list_sprites_2(production_server, design_version, self.language_key)
         return result
+
+    async def get_sprite_url(self, sprite_id: int) -> str:
+        """Return the download URL for the sprite with the given ID.
+
+        Resolves the sprite through ListSprites2 → ListFiles4 → AWS S3 URL.
+        The FileService/DownloadSprite endpoint is server-side broken, so sprites
+        are served from https://pixelstarships.s3.amazonaws.com/{AwsFilename}.
+        """
+        sprites = await self.list_sprites()
+        sprite = next((s for s in sprites if s.sprite_id == sprite_id), None)
+        if sprite is None:
+            raise ValueError(f"No sprite found with ID {sprite_id}")
+
+        files = await self.list_files()
+        file = next((f for f in files if f.id == sprite.image_file_id), None)
+        if file is None:
+            raise ValueError(f"No file found with ID {sprite.image_file_id} for sprite {sprite_id}")
+
+        return f"https://pixelstarships.s3.amazonaws.com/{file.aws_filename}"
