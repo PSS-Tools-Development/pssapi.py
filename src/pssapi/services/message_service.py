@@ -27,7 +27,7 @@ class MessageService(_service_base.ServiceBase):
         result = await _MessageServiceRaw.list_private_messages(production_server, access_token)
         return result
 
-    async def send_private_message(self, access_token: str, message: str, to_user_id: int) -> _List[_Message]:
+    async def send_private_message(self, access_token: str, message: str, to_user_id: int) -> _Message:
         """Send a private (direct) message to a user and return the created message."""
         production_server = await self.get_production_server()
         result = await _MessageServiceRaw.send_private_message_3(production_server, access_token, message, to_user_id)
